@@ -28,3 +28,14 @@ describe('미용사(일반) 콘텐츠', () => {
         expect(beautyGeneralTerms).toHaveLength(40);
     });
 });
+
+describe('미용일반 다국어 필드 (M1.5)', () => {
+    it.skip('아직 미작성 — Task M1.5-3 이후 활성화', () => {
+        // 다국어 번역 완료 후 활성화:
+        // for (const q of beautyGeneralQuestions) {
+        //     expect(q.translations).toBeDefined();
+        //     expect(q.translations.vi.question).toBeTruthy();
+        //     ...
+        // }
+    });
+});

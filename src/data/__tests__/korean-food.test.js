@@ -43,3 +43,14 @@ describe('한식조리기능사 콘텐츠', () => {
         }
     });
 });
+
+describe('한식조리 다국어 필드 (M1.5)', () => {
+    it.skip('아직 미작성 — Task M1.5-2 이후 활성화', () => {
+        // 다국어 번역 완료 후 활성화:
+        // for (const q of koreanFoodQuestions) {
+        //     expect(q.translations).toBeDefined();
+        //     expect(q.translations.vi.question).toBeTruthy();
+        //     ...
+        // }
+    });
+});

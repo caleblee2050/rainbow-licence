@@ -28,3 +28,14 @@ describe('제과기능사 콘텐츠', () => {
         expect(pastryTerms).toHaveLength(40);
     });
 });
+
+describe('제과 다국어 필드 (M1.5)', () => {
+    it.skip('아직 미작성 — Task M1.5-4 이후 활성화', () => {
+        // 다국어 번역 완료 후 활성화:
+        // for (const q of pastryQuestions) {
+        //     expect(q.translations).toBeDefined();
+        //     expect(q.translations.vi.question).toBeTruthy();
+        //     ...
+        // }
+    });
+});

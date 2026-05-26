@@ -27,5 +27,5 @@ export function isLanguageVerified(langCode) {
 }
 
 export function getLanguageStatus(langCode) {
-    return VERIFIED_LANGS.includes(langCode) ? 'verified' : 'preview';
+    return VERIFIED_LANGS.includes(langCode) ? 'verified' : 'ai-translation';
 }
