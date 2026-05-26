@@ -11,6 +11,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
         <script src="https://code.iconify.design/3/3.1.0/iconify.min.js" defer></script>
       </head>
       <body>{children}</body>

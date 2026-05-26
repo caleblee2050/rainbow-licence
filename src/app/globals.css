@@ -3,143 +3,161 @@
    다문화 가정 자격증 취득 지원 앱
    ======================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Geist:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /* CSS Variables */
 :root {
-  /* Rainbow Colors */
-  --rainbow-red: #FF6B6B;
-  --rainbow-orange: #FFA94D;
-  --rainbow-yellow: #FFD43B;
-  --rainbow-green: #51CF66;
-  --rainbow-blue: #339AF0;
-  --rainbow-indigo: #5C7CFA;
-  --rainbow-violet: #CC5DE8;
+    /* === V3 Design Tokens — Deep Teal + Terracotta === */
 
-  /* Primary Brand */
-  --primary: #5C7CFA;
-  --primary-light: #748FFC;
-  --primary-dark: #4263EB;
-  --primary-50: rgba(92, 124, 250, 0.05);
-  --primary-100: rgba(92, 124, 250, 0.1);
-  --primary-200: rgba(92, 124, 250, 0.2);
+    /* Primary (Deep Teal) */
+    --primary: #0B5563;
+    --primary-light: #16798C;
+    --primary-dark: #073F4A;
+    --primary-soft: rgba(11, 85, 99, 0.08);
+    --primary-50: rgba(11, 85, 99, 0.05);
+    --primary-100: rgba(11, 85, 99, 0.10);
+    --primary-200: rgba(11, 85, 99, 0.20);
 
-  /* Accent */
-  --accent: #FF6B9D;
-  --accent-light: #FF8FB3;
+    /* Accent (Warm Terracotta) */
+    --accent: #C25A3F;
+    --accent-light: #D9785E;
+    --accent-soft: #E8C4B5;
 
-  /* Gradients */
-  --gradient-rainbow: linear-gradient(135deg,
-      var(--rainbow-red) 0%,
-      var(--rainbow-orange) 16%,
-      var(--rainbow-yellow) 33%,
-      var(--rainbow-green) 50%,
-      var(--rainbow-blue) 66%,
-      var(--rainbow-indigo) 83%,
-      var(--rainbow-violet) 100%);
-  --gradient-primary: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
-  --gradient-warm: linear-gradient(135deg, #F093FB 0%, #F5576C 100%);
-  --gradient-cool: linear-gradient(135deg, #4FACFE 0%, #00F2FE 100%);
-  --gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
+    /* Background / Surface */
+    --bg-main: #F5EFE6;
+    --bg-card: #FFFFFF;
+    --bg-elevated: #FFFFFF;
+    --bg-overlay: rgba(30, 30, 30, 0.5);
 
-  /* Semantic Colors */
-  --success: #51CF66;
-  --success-bg: rgba(81, 207, 102, 0.1);
-  --warning: #FFA94D;
-  --warning-bg: rgba(255, 169, 77, 0.1);
-  --error: #FF6B6B;
-  --error-bg: rgba(255, 107, 107, 0.1);
-  --info: #339AF0;
-  --info-bg: rgba(51, 154, 240, 0.1);
+    /* Border */
+    --border: #E5DED2;
+    --border-strong: #C9BFB0;
 
-  /* Neutrals */
-  --white: #FFFFFF;
-  --gray-50: #F8FAFC;
-  --gray-100: #F1F5F9;
-  --gray-200: #E2E8F0;
-  --gray-300: #CBD5E1;
-  --gray-400: #94A3B8;
-  --gray-500: #64748B;
-  --gray-600: #475569;
-  --gray-700: #334155;
-  --gray-800: #1E293B;
-  --gray-900: #0F172A;
+    /* Text */
+    --text-primary: #1E1E1E;
+    --text-secondary: #5A5048;
+    --text-muted: #8A7E70;
+    --text-inverse: #FFFFFF;
 
-  /* Background */
-  --bg-main: #F0F2FF;
-  --bg-card: #FFFFFF;
-  --bg-elevated: #FFFFFF;
-  --bg-overlay: rgba(15, 23, 42, 0.5);
+    /* Semantic */
+    --success: #2D7A39;
+    --success-bg: rgba(45, 122, 57, 0.08);
+    --warning: #C77700;
+    --warning-bg: rgba(199, 119, 0, 0.10);
+    --error: #B23A2E;
+    --error-bg: rgba(178, 58, 46, 0.08);
+    --info: #1565C0;
+    --info-bg: rgba(21, 101, 192, 0.08);
 
-  /* Text */
-  --text-primary: #1E293B;
-  --text-secondary: #64748B;
-  --text-muted: #94A3B8;
-  --text-inverse: #FFFFFF;
+    /* Neutrals (호환용 — 점진 제거 가능) */
+    --white: #FFFFFF;
+    --gray-50: #FAF6EF;
+    --gray-100: #F1ECE2;
+    --gray-200: #E5DED2;
+    --gray-300: #C9BFB0;
+    --gray-400: #A99E8E;
+    --gray-500: #8A7E70;
+    --gray-600: #6B6055;
+    --gray-700: #4A4239;
+    --gray-800: #2D2820;
+    --gray-900: #1E1E1E;
 
-  /* Shadows */
-  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
-  --shadow-glow: 0 0 20px rgba(92, 124, 250, 0.15);
-  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04), 0 0 1px rgba(0, 0, 0, 0.06);
-  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.08), 0 0 1px rgba(0, 0, 0, 0.08);
+    /* Shadows (warm-toned) */
+    --shadow-xs: 0 1px 2px rgba(30, 30, 30, 0.04);
+    --shadow-sm: 0 2px 4px rgba(30, 30, 30, 0.06), 0 1px 2px rgba(30, 30, 30, 0.04);
+    --shadow-md: 0 4px 12px rgba(30, 30, 30, 0.08), 0 2px 4px rgba(30, 30, 30, 0.04);
+    --shadow-lg: 0 8px 20px rgba(30, 30, 30, 0.10), 0 4px 8px rgba(30, 30, 30, 0.04);
+    --shadow-card: 0 2px 6px rgba(30, 30, 30, 0.05), 0 0 1px rgba(30, 30, 30, 0.08);
+    --shadow-card-hover: 0 6px 16px rgba(30, 30, 30, 0.10), 0 0 1px rgba(30, 30, 30, 0.10);
 
-  /* Border Radius */
-  --radius-xs: 4px;
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
-  --radius-2xl: 32px;
-  --radius-full: 9999px;
+    /* Radius (V2 24-32px → V3 8-12px) */
+    --radius-xs: 4px;
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-full: 9999px;
 
-  /* Typography */
-  --font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-xs: 0.75rem;
-  --font-sm: 0.875rem;
-  --font-base: 1rem;
-  --font-lg: 1.125rem;
-  --font-xl: 1.25rem;
-  --font-2xl: 1.5rem;
-  --font-3xl: 1.875rem;
-  --font-4xl: 2.25rem;
-  --font-5xl: 3rem;
+    /* Spacing — 8px base */
+    --space-2xs: 2px;
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+    --space-3xl: 64px;
 
-  /* Spacing */
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-5: 1.25rem;
-  --space-6: 1.5rem;
-  --space-8: 2rem;
-  --space-10: 2.5rem;
-  --space-12: 3rem;
-  --space-16: 4rem;
+    /* Legacy spacing aliases (호환용) */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
 
-  /* Layout */
-  --nav-height: 64px;
-  --bottom-nav-height: 72px;
-  --max-width: 480px;
-  --content-padding: var(--space-5);
+    /* Typography */
+    --font-display: 'Fraunces', 'Pretendard Variable', Georgia, serif;
+    --font-body: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-data: 'Geist', 'Pretendard Variable', monospace;
+    --font-mono: 'JetBrains Mono', 'Geist Mono', monospace;
+    --font-family: var(--font-body); /* 호환 */
+    --font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-base: 1rem;
+    --font-lg: 1.125rem;
+    --font-xl: 1.25rem;
+    --font-2xl: 1.5rem;
+    --font-3xl: 1.875rem;
+    --font-4xl: 2.25rem;
+    --font-5xl: 3rem;
 
-  /* Transitions */
-  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-  --transition-fast: 150ms var(--ease-out);
-  --transition-normal: 250ms var(--ease-out);
-  --transition-slow: 400ms var(--ease-out);
+    /* Motion */
+    --easing-enter: cubic-bezier(0, 0, 0.2, 1);
+    --easing-exit: cubic-bezier(0.4, 0, 1, 1);
+    --easing-move: cubic-bezier(0.4, 0, 0.2, 1);
+    --dur-micro: 120ms;
+    --dur-short: 220ms;
+    --dur-medium: 320ms;
 
-  /* Study Mode Colors */
-  --step1-color: #51CF66;
-  --step1-bg: rgba(81, 207, 102, 0.08);
-  --step2-color: #339AF0;
-  --step2-bg: rgba(51, 154, 240, 0.08);
-  --step3-color: #FF6B6B;
-  --step3-bg: rgba(255, 107, 107, 0.08);
+    /* Legacy transition aliases (호환용) */
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+    --transition-fast: 150ms var(--ease-out);
+    --transition-normal: 250ms var(--ease-out);
+    --transition-slow: 400ms var(--ease-out);
+
+    /* Layout */
+    --nav-height: 64px;
+    --bottom-nav-height: 72px;
+    --max-width: 480px;
+    --content-padding: var(--space-5);
+
+    /* V3 Gradients — restrained */
+    --gradient-primary: linear-gradient(135deg, #0B5563 0%, #073F4A 100%);
+    --gradient-accent: linear-gradient(135deg, #C25A3F 0%, #A04A30 100%);
+    --gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.85) 100%);
+    /* --gradient-rainbow, --gradient-warm, --gradient-cool 완전 제거 */
+
+    /* 5-Language Identity (디테일용, 풀그라데이션 ❌) */
+    --lang-vi: #C25A3F;
+    --lang-zh: #B91C1C;
+    --lang-th: #1F6F8B;
+    --lang-tl: #2D7A39;
+    --lang-my: #6B4226;
+
+    /* Study Mode Colors */
+    --step1-color: #2D7A39;
+    --step1-bg: rgba(45, 122, 57, 0.08);
+    --step2-color: #1565C0;
+    --step2-bg: rgba(21, 101, 192, 0.08);
+    --step3-color: #B23A2E;
+    --step3-bg: rgba(178, 58, 46, 0.08);
 }
 
 /* Reset */
@@ -158,11 +176,11 @@ html {
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-body);
   font-size: var(--font-base);
   line-height: 1.6;
   color: var(--text-primary);
-  background-color: var(--bg-main);
+  background: var(--bg-main);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -339,12 +357,12 @@ body {
 .btn--primary {
   background: var(--gradient-primary);
   color: var(--text-inverse);
-  box-shadow: 0 4px 12px rgba(92, 124, 250, 0.3);
+  box-shadow: 0 4px 12px rgba(11, 85, 99, 0.3);
 }
 
 .btn--primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(92, 124, 250, 0.4);
+  box-shadow: 0 6px 20px rgba(11, 85, 99, 0.4);
 }
 
 .btn--primary:active {
@@ -662,14 +680,14 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 24px;
-  box-shadow: 0 4px 16px rgba(92, 124, 250, 0.4);
+  box-shadow: 0 4px 16px rgba(11, 85, 99, 0.4);
   transition: all var(--transition-fast);
   z-index: 50;
 }
 
 .fab:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 24px rgba(92, 124, 250, 0.5);
+  box-shadow: 0 6px 24px rgba(11, 85, 99, 0.5);
 }
 
 /* Modal/Overlay */
@@ -924,7 +942,7 @@ body {
   /* Buttons: allow hover effects on desktop */
   .btn--primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(92, 124, 250, 0.35);
+    box-shadow: 0 8px 24px rgba(11, 85, 99, 0.35);
   }
 
   /* Modal: center on desktop instead of bottom sheet */
