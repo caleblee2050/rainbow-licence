@@ -6,14 +6,31 @@ import { getSchoolName } from '@/lib/demoMode';
 
 export default function TopNav({ selectedLanguage, onLanguageChange }) {
     const [showLangPicker, setShowLangPicker] = useState(false);
+    const [logoClicks, setLogoClicks] = useState(0);
+    const [clickTimer, setClickTimer] = useState(null);
     const currentLang = supportedLanguages.find(l => l.code === selectedLanguage);
     const schoolName = getSchoolName();
+
+    function handleLogoClick() {
+        const newCount = logoClicks + 1;
+        setLogoClicks(newCount);
+        if (clickTimer) clearTimeout(clickTimer);
+        setClickTimer(setTimeout(() => setLogoClicks(0), 1500));
+
+        if (newCount >= 5) {
+            if (confirm('데모 초기화하시겠어요? 모든 학습 데이터가 지워집니다.')) {
+                localStorage.removeItem('rainbow_study');
+                location.reload();
+            }
+            setLogoClicks(0);
+        }
+    }
 
     return (
         <>
             <nav className="top-nav">
                 <div className="top-nav__brand">
-                    <h1 className="top-nav__title">🌈 레인보우 자격증</h1>
+                    <h1 className="top-nav__title" onClick={handleLogoClick} style={{ cursor: 'default', userSelect: 'none' }}>🌈 레인보우 자격증</h1>
                     {schoolName && <span className="top-nav__school">{schoolName}</span>}
                 </div>
                 <div className="top-nav__lang-wrap">

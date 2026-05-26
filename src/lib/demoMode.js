@@ -18,3 +18,14 @@ export function isPremiumGateUnlocked() {
     // DEMO 모드에선 모든 프리미엄 기능 잠금 해제
     return isDemoMode();
 }
+
+// 검수 완료된 언어
+const VERIFIED_LANGS = ['vi', 'zh'];
+
+export function isLanguageVerified(langCode) {
+    return VERIFIED_LANGS.includes(langCode);
+}
+
+export function getLanguageStatus(langCode) {
+    return VERIFIED_LANGS.includes(langCode) ? 'verified' : 'preview';
+}

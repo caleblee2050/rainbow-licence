@@ -1,8 +1,23 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "레인보우 자격증 | 다문화 가정 자격증 합격 도우미",
-  description: "한국어가 서툰 다문화 가정 학생들을 위한 자격증 시험 준비 앱. AI 번역, 단계별 학습, 기출문제 CBT 제공.",
+    title: 'Rainbow Licence — 다문화 학생을 위한 한국 자격증 학습',
+    description: '한식조리·미용·제과 등 한국 국가기술자격증을 5개 언어로 학습. 다문화 학교 NEXT SCHOOL과 함께.',
+    openGraph: {
+        title: 'Rainbow Licence',
+        description: '다문화 학생을 위한 한국 자격증 학습 도구',
+        type: 'website',
+        locale: 'ko_KR',
+        siteName: 'Rainbow Licence',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Rainbow Licence',
+        description: '다문화 학생을 위한 한국 자격증 학습 도구',
+    },
+    icons: {
+        icon: '/favicon.ico',
+    },
 };
 
 export default function RootLayout({ children }) {

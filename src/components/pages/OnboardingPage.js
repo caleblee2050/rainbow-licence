@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { supportedLanguages, licences } from '@/data/licences';
 import { completeOnboarding } from '@/lib/studyEngine';
+import { isLanguageVerified } from '@/lib/demoMode';
 
 const STEPS = ['language', 'level', 'licence', 'goal'];
 
@@ -147,7 +148,7 @@ export default function OnboardingPage({ onComplete }) {
                                 <button
                                     key={lang.code}
                                     onClick={() => setLanguage(lang.code)}
-                                    style={langCardStyle(language === lang.code)}
+                                    style={{ ...langCardStyle(language === lang.code), position: 'relative' }}
                                     onMouseEnter={(e) => {
                                         e.currentTarget.style.transform = 'translateY(-1px)';
                                         e.currentTarget.style.boxShadow = 'var(--shadow-md)';
@@ -157,6 +158,17 @@ export default function OnboardingPage({ onComplete }) {
                                         e.currentTarget.style.boxShadow = 'var(--shadow-card)';
                                     }}
                                 >
+                                    {!isLanguageVerified(lang.code) && (
+                                        <span style={{
+                                            position: 'absolute', top: 8, right: 8,
+                                            background: 'var(--accent-soft)',
+                                            color: 'var(--text-secondary)',
+                                            fontSize: 10,
+                                            padding: '2px 6px',
+                                            borderRadius: 'var(--radius-full)',
+                                            pointerEvents: 'none',
+                                        }}>Coming soon</span>
+                                    )}
                                     <span style={{ fontSize: 32 }}>{lang.flag}</span>
                                     <div style={{ flex: 1 }}>
                                         <div style={{ fontWeight: 600, fontSize: 'var(--font-base)' }}>{lang.nativeName}</div>

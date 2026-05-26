@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react';
 import { getAllTerms, getTermsByLicence, getCategories, searchTerms } from '@/data/terms';
 import { licences } from '@/data/licences';
+import { isLanguageVerified } from '@/lib/demoMode';
 
 const LANG_LABELS = {
     vi: '🇻🇳 베트남어',
@@ -179,12 +180,22 @@ export default function DictionaryPage({ language, licenceId }) {
                                     }}>
                                         {LANG_LABELS[lang]}
                                     </span>
-                                    <span style={{
-                                        color: term[lang] ? 'var(--text-primary)' : 'var(--text-muted)',
-                                        fontStyle: term[lang] ? 'normal' : 'italic',
-                                    }}>
-                                        {term[lang] || '준비 중'}
-                                    </span>
+                                    {isLanguageVerified(lang) ? (
+                                        <span style={{
+                                            color: term[lang] ? 'var(--text-primary)' : 'var(--text-muted)',
+                                            fontStyle: term[lang] ? 'normal' : 'italic',
+                                        }}>
+                                            {term[lang] || '준비 중'}
+                                        </span>
+                                    ) : (
+                                        <span style={{
+                                            color: 'var(--text-muted)',
+                                            fontStyle: 'italic',
+                                            fontSize: 12,
+                                        }}>
+                                            🚧 준비 중
+                                        </span>
+                                    )}
                                 </div>
                             ))}
                         </div>
