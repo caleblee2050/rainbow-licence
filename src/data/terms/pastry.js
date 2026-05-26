@@ -1,2 +1,48 @@
 // 제과기능사 용어 사전 (Task 11에서 채움)
-export const pastryTerms = [];
+export const pastryTerms = [
+    // ===== 과자류 재료 (목표: 14개) =====
+    { korean: '박력분', pronunciation: 'bak-ryeok-bun', category: '과자류 재료', vi: 'Bột mì yếu (bột mì số 8)', zh: '低筋面粉', th: 'แป้งอ่อน (แป้งเค้ก)', tl: 'Cake flour (soft flour)', my: 'ကိတ်မုန့်ဂျုံမှုန့် (အားနည်း)' },
+    { korean: '강력분', pronunciation: 'gang-ryeok-bun', category: '과자류 재료', vi: 'Bột mì mạnh (bột mì số 11)', zh: '高筋面粉', th: 'แป้งแข็ง (แป้งขนมปัง)', tl: 'Bread flour (strong flour)', my: 'ပေါင်မုန့်ဂျုံမှုန့် (အားကောင်း)' },
+    { korean: '글루텐', pronunciation: 'geul-lu-ten', category: '과자류 재료', vi: 'Gluten (protein lúa mì)', zh: '面筋/谷蛋白', th: 'กลูเตน', tl: 'Gluten', my: 'ဂလူတင်' },
+    { korean: '쇼트닝', pronunciation: 'syo-teu-ning', category: '과자류 재료', vi: 'Mỡ shortening (dầu rắn)', zh: '起酥油', th: 'ชอร์ตเทนนิง', tl: 'Shortening', my: 'ရှော်တနင်း (အဆီ)' },
+    { korean: '베이킹파우더', pronunciation: 'be-i-king-pa-u-deo', category: '과자류 재료', vi: 'Bột nở (baking powder)', zh: '泡打粉', th: 'ผงฟู', tl: 'Baking powder', my: 'ဘေကင်းပရောင်ဒါ' },
+    { korean: '베이킹소다', pronunciation: 'be-i-king-so-da', category: '과자류 재료', vi: 'Muối nở (baking soda)', zh: '小苏打/碳酸氢钠', th: 'เบกกิ้งโซดา', tl: 'Baking soda (sodium bicarbonate)', my: 'ဘေကင်းဆိုဒါ' },
+    { korean: '전화당', pronunciation: 'jeon-hwa-dang', category: '과자류 재료', vi: 'Đường nghịch chuyển (trimoline)', zh: '转化糖 (果葡糖浆)', th: 'น้ำตาลอินเวิร์ต (ทริมโมลีน)', tl: 'Invert sugar (trimoline)', my: 'ကောင်းထားသောသကြား (Trimoline)' },
+    { korean: '카카오버터', pronunciation: 'ka-ka-o-beo-teo', category: '과자류 재료', vi: 'Bơ ca cao (cocoa butter)', zh: '可可脂', th: 'เนยโกโก้', tl: 'Cocoa butter', my: 'ကိုကိုးဆီ' },
+    { korean: '커버추어', pronunciation: 'keo-beo-chu-eo', category: '과자류 재료', vi: 'Socola phủ (couverture)', zh: '涂层巧克力 (高可可脂)', th: 'คูเวอร์เจอร์ช็อกโกแลต', tl: 'Couverture chocolate', my: 'ကာဗာချာချောကလက်' },
+    { korean: '유당', pronunciation: 'yu-dang', category: '과자류 재료', vi: 'Đường sữa (lactose)', zh: '乳糖 (乳糖)', th: 'แลคโตส (น้ำตาลนม)', tl: 'Lactose (milk sugar)', my: 'နို့သကြား (လက်တိုစ်)' },
+    { korean: '이스트', pronunciation: 'i-seu-teu', category: '과자류 재료', vi: 'Men (nấm men/yeast)', zh: '酵母', th: 'ยีสต์', tl: 'Yeast', my: 'မုန့်ဖောင်းဆေး (ယီစ်)' },
+    { korean: '물엿', pronunciation: 'mul-yeot', category: '과자류 재료', vi: 'Mạch nha (glucose syrup)', zh: '麦芽糖浆/淀粉糖浆', th: 'กลูโคสไซรัป (น้ำเชื่อมข้าวโพด)', tl: 'Glucose syrup (corn syrup)', my: 'ဂလူးကိုးဆိရပ် (ဆပ်ချောဆီ)' },
+    { korean: '바닐라', pronunciation: 'ba-nil-la', category: '과자류 재료', vi: 'Vani (vanilla)', zh: '香草 (香兰素)', th: 'วานิลลา', tl: 'Vanilla', my: 'ဘာနီလာ' },
+    { korean: '생크림', pronunciation: 'saeng-keu-rim', category: '과자류 재료', vi: 'Kem tươi (heavy cream)', zh: '鲜奶油 (淡奶油)', th: 'ครีมสด (วิปปิ้งครีม)', tl: 'Fresh cream (heavy cream)', my: 'နို့ဆီဆမ်းမှုန့် (ဖရက်ရှ်ကရင်)' },
+    { korean: '중력분', pronunciation: 'jung-ryeok-bun', category: '과자류 재료', vi: 'Bột mì đa dụng (all-purpose flour)', zh: '中筋面粉', th: 'แป้งสาลีอเนกประสงค์', tl: 'All-purpose flour', my: 'ရောင်ရောင်ကျပ်ကျပ်ဂျုံမှုန့် (All-purpose)' },
+
+    // ===== 과자류 제조 (목표: 14개) =====
+    { korean: '크림법', pronunciation: 'keu-rim-beop', category: '과자류 제조', vi: 'Phương pháp đánh bơ (cream method)', zh: '奶油法 (搅拌法)', th: 'วิธีครีม (ตีเนย)', tl: 'Cream method', my: 'ကရင်နည်းလမ်း' },
+    { korean: '블렌딩법', pronunciation: 'beul-len-ding-beop', category: '과자류 제조', vi: 'Phương pháp trộn bơ (blending method)', zh: '混合法 (搓粉法)', th: 'วิธีบลอนดิง (ผสมเนยกับแป้ง)', tl: 'Blending method', my: 'ဘလင်ဒင်နည်းလမ်း' },
+    { korean: '머랭', pronunciation: 'meo-raeng', category: '과자류 제조', vi: 'Bánh trứng trắng (meringue)', zh: '蛋白霜', th: 'เมอแรง (ไข่ขาวตีฟู)', tl: 'Meringue', my: 'မယ်ရိန် (ဥဖြူခဲ)' },
+    { korean: '별립법', pronunciation: 'byeol-lip-beop', category: '과자류 제조', vi: 'Phương pháp tách trứng (separated method)', zh: '分蛋法', th: 'วิธีแยกไข่', tl: 'Separated egg method', my: 'ဥခွဲနည်းလမ်း' },
+    { korean: '템퍼링', pronunciation: 'tem-peo-ring', category: '과자류 제조', vi: 'Điều nhiệt socola (tempering)', zh: '调温 (巧克力调温)', th: 'เทมเปอร์ริ่ง (ปรับอุณหภูมิช็อกโกแลต)', tl: 'Chocolate tempering', my: 'ချောကလက်အပူချိန်ညှိခြင်း' },
+    { korean: '글레이즈', pronunciation: 'geul-le-i-jeu', category: '과자류 제조', vi: 'Lớp phủ bóng (glaze)', zh: '镜面果冻/光泽糖衣', th: 'กลาซ (เคลือบหน้า)', tl: 'Glaze', my: 'ဂလေဇ် (မျက်နှာပြင်ဖုံးခြင်း)' },
+    { korean: '아이싱', pronunciation: 'a-i-sing', category: '과자류 제조', vi: 'Kem đường phủ (icing)', zh: '糖霜', th: 'ไอซิ่ง (ครีมน้ำตาล)', tl: 'Icing', my: 'အိုင်ဆင် (သကြားမှုန့်ဖုံးခြင်း)' },
+    { korean: '라미네이션', pronunciation: 'ra-mi-ne-i-syon', category: '과자류 제조', vi: 'Gấp bơ vào bột (lamination)', zh: '折叠法 (千层酥)', th: 'ลามิเนชัน (การพับชั้นแป้ง)', tl: 'Lamination (layering technique)', my: 'လာမင်နေးရှင်း (ခေါက်ခြင်း)' },
+    { korean: '유산지', pronunciation: 'yu-san-ji', category: '과자류 제조', vi: 'Giấy nướng (parchment paper)', zh: '烤箱纸/烘焙纸', th: 'กระดาษรองอบ', tl: 'Parchment paper (baking paper)', my: 'မုန့်ဖုတ်ကာဂိုင်' },
+    { korean: '스펀지케이크', pronunciation: 'seu-peon-ji-ke-i-keu', category: '과자류 제조', vi: 'Bánh bông lan (sponge cake)', zh: '海绵蛋糕', th: 'เค้กสปันจ์', tl: 'Sponge cake', my: 'ဝတ်မုန့်ကိတ်' },
+    { korean: '퍼프 페이스트리', pronunciation: 'peo-peu pe-i-seu-teu-ri', category: '과자류 제조', vi: 'Bánh ngàn lớp (puff pastry)', zh: '千层酥 (松化千层饼)', th: 'พัฟเพสตรี (แผ่นพายพอง)', tl: 'Puff pastry', my: 'ပတ်ဖ်ပေသတ်ရီ (အလွှာများသောမုန့်)' },
+    { korean: '버터크림', pronunciation: 'beo-teo-keu-rim', category: '과자류 제조', vi: 'Kem bơ (buttercream)', zh: '奶油霜 (黄油奶油)', th: 'บัตเตอร์ครีม', tl: 'Buttercream', my: 'ဘတာကရင် (ကြာဆီကရင်)' },
+    { korean: '도넛', pronunciation: 'do-neot', category: '과자류 제조', vi: 'Bánh rán donut', zh: '甜甜圈 (多拿滋)', th: 'โดนัท', tl: 'Donut (doughnut)', my: 'ဒိုးနပ် (ကြော်မုန့်ဝိုင်း)' },
+
+    // ===== 식품위생 (목표: 12개) =====
+    { korean: '살모넬라', pronunciation: 'sal-mo-nel-la', category: '식품위생', vi: 'Vi khuẩn Salmonella', zh: '沙门氏菌', th: 'ซัลโมเนลลา', tl: 'Salmonella bacteria', my: 'ဆာလမိုနဲလာပိုး' },
+    { korean: '황색포도상구균', pronunciation: 'hwang-saek-po-do-sang-gu-gyun', category: '식품위생', vi: 'Tụ cầu vàng (Staphylococcus aureus)', zh: '金黄色葡萄球菌', th: 'สแตฟิโลค็อกคัส ออเรียส', tl: 'Staphylococcus aureus', my: 'ရွှေရောင်ပိုးကြောင်ပိုး' },
+    { korean: '교차오염', pronunciation: 'gyo-cha-o-yeom', category: '식품위생', vi: 'Ô nhiễm chéo (cross contamination)', zh: '交叉污染', th: 'การปนเปื้อนข้าม', tl: 'Cross contamination', my: 'အပြန်အလှန်ညစ်ညမ်းခြင်း' },
+    { korean: '알레르기 유발물질', pronunciation: 'al-le-reu-gi yu-bal-mul-jil', category: '식품위생', vi: 'Chất gây dị ứng thực phẩm', zh: '食物过敏原', th: 'สารก่อภูมิแพ้ในอาหาร', tl: 'Food allergen', my: 'အစားအစာအာလာဂျီဖြစ်စေသောပစ္စည်း' },
+    { korean: '엔테로톡신', pronunciation: 'en-te-ro-tok-sin', category: '식품위생', vi: 'Độc tố ruột (enterotoxin)', zh: '肠毒素', th: 'เอนเทอโรทอกซิน (สารพิษจากแบคทีเรีย)', tl: 'Enterotoxin', my: 'အူမှတဆင့်ဆိပ်ကပ်ဆေး' },
+    { korean: '산화방지제', pronunciation: 'san-hwa-bang-ji-je', category: '식품위생', vi: 'Chất chống oxy hóa (antioxidant)', zh: '抗氧化剂', th: 'สารต้านออกซิเดชัน', tl: 'Antioxidant', my: 'ဓာတ်ဆိပ်တားဆေး' },
+    { korean: '한계기준', pronunciation: 'han-gye-gi-jun', category: '식품위생', vi: 'Ngưỡng giới hạn tới hạn (critical limit)', zh: '关键限值 (临界限)', th: 'ขีดจำกัดวิกฤต (Critical Limit)', tl: 'Critical limit (HACCP)', my: 'အရေးကြီးသောကန့်သတ်ချက်' },
+    { korean: '수분활성도', pronunciation: 'su-bun-hwal-seong-do', category: '식품위생', vi: 'Hoạt độ nước (Aw)', zh: '水分活度 (Aw)', th: 'ค่าวอเตอร์แอคติวิตี้ (Aw)', tl: 'Water activity (Aw)', my: 'ရေဓာတ်လုပ်ဆောင်မှု (Aw)' },
+    { korean: '냉장보관', pronunciation: 'naeng-jang-bo-gwan', category: '식품위생', vi: 'Bảo quản lạnh (0–10°C)', zh: '冷藏 (0–10°C)', th: 'การเก็บรักษาในตู้เย็น (0–10°C)', tl: 'Refrigerated storage (0–10°C)', my: 'အေးချိန်သိုလှောင်ခြင်း (0–10°C)' },
+    { korean: '냉동보관', pronunciation: 'naeng-dong-bo-gwan', category: '식품위생', vi: 'Bảo quản đông lạnh (dưới -18°C)', zh: '冷冻保存 (-18°C以下)', th: 'การแช่แข็ง (ต่ำกว่า -18°C)', tl: 'Frozen storage (below -18°C)', my: 'ခဲအောင်သိုလှောင်ခြင်း (-18°C အောက်)' },
+    { korean: '위생교육', pronunciation: 'wi-saeng-gyo-yuk', category: '식품위생', vi: 'Giáo dục vệ sinh an toàn thực phẩm', zh: '卫生教育 (食品安全培训)', th: 'การศึกษาด้านสุขอนามัย', tl: 'Food hygiene education', my: 'အစားအစာသန့်ရှင်းရေးပညာရေး' },
+    { korean: '보존료', pronunciation: 'bo-jon-ryo', category: '식품위생', vi: 'Chất bảo quản thực phẩm', zh: '防腐剂 (食品保存剂)', th: 'สารกันบูด (สารเก็บรักษาอาหาร)', tl: 'Food preservative', my: 'အစားအစာထိန်းသိမ်းဆေး' },
+];
