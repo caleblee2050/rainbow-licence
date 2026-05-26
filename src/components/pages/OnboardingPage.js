@@ -12,6 +12,42 @@ const levelQuestions = [
     { question: '"갈변 현상"이란?', options: ['음식이 갈색으로 변하는 것', '음식이 차가워지는 것', '음식에 소금을 넣는 것', '음식을 포장하는 것'], answer: 0 },
 ];
 
+// 언어 카드 호버 효과를 위한 inline style helper
+const langCardStyle = (isSelected) => ({
+    padding: 'var(--space-4)',
+    display: 'flex',
+    alignItems: 'center',
+    gap: 'var(--space-4)',
+    border: isSelected ? '2px solid var(--primary)' : '1px solid var(--border)',
+    borderRadius: 'var(--radius-md)',
+    fontFamily: 'inherit',
+    cursor: 'pointer',
+    background: isSelected ? 'var(--primary-soft)' : 'var(--bg-card)',
+    width: '100%',
+    textAlign: 'left',
+    boxShadow: 'var(--shadow-card)',
+    transition: 'transform var(--dur-micro) var(--easing-move), box-shadow var(--dur-micro) var(--easing-move), border-color var(--dur-micro) var(--easing-move)',
+    outline: 'none',
+});
+
+// 자격증 카드 스타일
+const licenceCardStyle = (isSelected) => ({
+    padding: 'var(--space-4)',
+    display: 'flex',
+    alignItems: 'center',
+    gap: 'var(--space-3)',
+    border: isSelected ? '2px solid var(--primary)' : '1px solid var(--border)',
+    borderRadius: 'var(--radius-md)',
+    fontFamily: 'inherit',
+    cursor: 'pointer',
+    background: isSelected ? 'var(--primary-soft)' : 'var(--bg-card)',
+    width: '100%',
+    textAlign: 'left',
+    boxShadow: 'var(--shadow-card)',
+    transition: 'transform var(--dur-micro) var(--easing-move), box-shadow var(--dur-micro) var(--easing-move), border-color var(--dur-micro) var(--easing-move)',
+    outline: 'none',
+});
+
 export default function OnboardingPage({ onComplete }) {
     const [step, setStep] = useState(0);
     const [language, setLanguage] = useState('vi');
@@ -93,7 +129,7 @@ export default function OnboardingPage({ onComplete }) {
                 display: 'flex',
                 flexDirection: 'column',
             }}>
-                {/* Step 1: Language */}
+                {/* Step 1: Language — 5개 언어 카드 동등 크기·동등 무게 */}
                 {currentStep === 'language' && (
                     <div className="animate-fadeIn">
                         <div style={{ textAlign: 'center', marginBottom: 'var(--space-8)' }}>
@@ -110,28 +146,24 @@ export default function OnboardingPage({ onComplete }) {
                             {supportedLanguages.map((lang) => (
                                 <button
                                     key={lang.code}
-                                    className="card card--interactive"
                                     onClick={() => setLanguage(lang.code)}
-                                    style={{
-                                        padding: 'var(--space-4)',
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        gap: 'var(--space-4)',
-                                        border: language === lang.code ? '2px solid var(--primary)' : '2px solid transparent',
-                                        fontFamily: 'inherit',
-                                        cursor: 'pointer',
-                                        background: language === lang.code ? 'var(--primary-50)' : 'var(--bg-card)',
-                                        width: '100%',
-                                        textAlign: 'left',
+                                    style={langCardStyle(language === lang.code)}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(-1px)';
+                                        e.currentTarget.style.boxShadow = 'var(--shadow-md)';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(0)';
+                                        e.currentTarget.style.boxShadow = 'var(--shadow-card)';
                                     }}
                                 >
                                     <span style={{ fontSize: 32 }}>{lang.flag}</span>
-                                    <div>
+                                    <div style={{ flex: 1 }}>
                                         <div style={{ fontWeight: 600, fontSize: 'var(--font-base)' }}>{lang.nativeName}</div>
                                         <div style={{ fontSize: 'var(--font-sm)', color: 'var(--text-secondary)' }}>{lang.name}</div>
                                     </div>
                                     {language === lang.code && (
-                                        <span className="iconify" data-icon="mdi:check-circle" style={{ marginLeft: 'auto', fontSize: 22, color: 'var(--primary)' }}></span>
+                                        <span className="iconify" data-icon="mdi:check-circle" style={{ fontSize: 22, color: 'var(--primary)' }}></span>
                                     )}
                                 </button>
                             ))}
@@ -164,11 +196,14 @@ export default function OnboardingPage({ onComplete }) {
                             <span className="badge badge--primary" style={{ marginBottom: 'var(--space-3)', display: 'inline-flex' }}>
                                 문제 {levelIndex + 1} / {levelQuestions.length}
                             </span>
+                            {/* 문제 헤딩: Fraunces 디스플레이 폰트 */}
                             <h3 style={{
                                 fontSize: 'var(--font-base)',
+                                fontFamily: 'var(--font-display)',
                                 fontWeight: 600,
                                 lineHeight: 1.6,
                                 marginBottom: 'var(--space-4)',
+                                color: 'var(--text-primary)',
                             }}>
                                 {levelQuestions[levelIndex].question}
                             </h3>
@@ -177,13 +212,37 @@ export default function OnboardingPage({ onComplete }) {
                                 {levelQuestions[levelIndex].options.map((opt, idx) => (
                                     <button
                                         key={idx}
-                                        className="btn btn--outline btn--full"
                                         onClick={() => handleLevelAnswer(idx)}
-                                        style={{ justifyContent: 'flex-start', textAlign: 'left' }}
+                                        style={{
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            gap: 'var(--space-3)',
+                                            padding: 'var(--space-3) var(--space-4)',
+                                            background: 'var(--bg-card)',
+                                            border: '1px solid var(--border)',
+                                            borderRadius: 'var(--radius-md)',
+                                            fontFamily: 'inherit',
+                                            fontSize: 'var(--font-sm)',
+                                            color: 'var(--text-primary)',
+                                            textAlign: 'left',
+                                            cursor: 'pointer',
+                                            width: '100%',
+                                            transition: 'border-color var(--dur-micro) var(--easing-move), box-shadow var(--dur-micro) var(--easing-move)',
+                                        }}
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.borderColor = 'var(--primary-light)';
+                                            e.currentTarget.style.boxShadow = 'var(--shadow-sm)';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.borderColor = 'var(--border)';
+                                            e.currentTarget.style.boxShadow = 'none';
+                                        }}
                                     >
                                         <span style={{
-                                            width: 24, height: 24, borderRadius: '50%', background: 'var(--primary-100)',
+                                            width: 28, height: 28, borderRadius: '50%',
+                                            background: 'var(--primary-soft)',
                                             display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                            flexShrink: 0,
                                             fontSize: 'var(--font-xs)', fontWeight: 600, color: 'var(--primary)',
                                         }}>
                                             {idx + 1}
@@ -209,7 +268,7 @@ export default function OnboardingPage({ onComplete }) {
                                 padding: 'var(--space-2) var(--space-3)', borderRadius: 'var(--radius-full)',
                                 background: levelScore >= 2 ? 'var(--success-bg)' : 'var(--warning-bg)',
                                 fontSize: 'var(--font-xs)', fontWeight: 600,
-                                color: levelScore >= 2 ? 'var(--success)' : '#B45309',
+                                color: levelScore >= 2 ? 'var(--success)' : 'var(--warning)',
                             }}>
                                 한국어 수준: {determineLevel(levelScore) === 'advanced' ? '고급 🌟' : determineLevel(levelScore) === 'intermediate' ? '중급 🌿' : '초급 🌱'}
                             </div>
@@ -219,26 +278,32 @@ export default function OnboardingPage({ onComplete }) {
                             {licences.map((l) => (
                                 <button
                                     key={l.id}
-                                    className="card card--interactive"
                                     onClick={() => setSelectedLicence(l.id)}
-                                    style={{
-                                        padding: 'var(--space-4)',
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        gap: 'var(--space-3)',
-                                        border: selectedLicence === l.id ? '2px solid var(--primary)' : '2px solid transparent',
-                                        fontFamily: 'inherit',
-                                        cursor: 'pointer',
-                                        background: selectedLicence === l.id ? 'var(--primary-50)' : 'var(--bg-card)',
-                                        width: '100%',
-                                        textAlign: 'left',
+                                    style={licenceCardStyle(selectedLicence === l.id)}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(-1px)';
+                                        e.currentTarget.style.boxShadow = 'var(--shadow-md)';
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.transform = 'translateY(0)';
+                                        e.currentTarget.style.boxShadow = 'var(--shadow-card)';
                                     }}
                                 >
                                     <span style={{ fontSize: 28 }}>{l.icon}</span>
                                     <div style={{ flex: 1 }}>
                                         <div style={{ fontWeight: 600, fontSize: 'var(--font-sm)' }}>{l.name}</div>
                                         {l.multiLangExam && (
-                                            <span style={{ fontSize: 11, color: 'var(--success)' }}>🌐 다국어 시험 가능</span>
+                                            <span style={{
+                                                display: 'inline-flex',
+                                                alignItems: 'center',
+                                                marginTop: 4,
+                                                padding: '2px 8px',
+                                                background: 'var(--accent)',
+                                                color: '#ffffff',
+                                                borderRadius: 'var(--radius-full)',
+                                                fontSize: 11,
+                                                fontWeight: 600,
+                                            }}>🌐 다국어 시험 가능</span>
                                         )}
                                     </div>
                                     {selectedLicence === l.id && (
@@ -287,23 +352,26 @@ export default function OnboardingPage({ onComplete }) {
                                 style={{
                                     width: '100%',
                                     padding: 'var(--space-3) var(--space-4)',
-                                    border: '2px solid var(--gray-200)',
+                                    border: '1px solid var(--border)',
                                     borderRadius: 'var(--radius-md)',
                                     fontSize: 'var(--font-base)',
                                     fontFamily: 'inherit',
                                     color: 'var(--text-primary)',
                                     outline: 'none',
+                                    background: 'var(--bg-card)',
                                 }}
                             />
                         </div>
 
-                        {/* Summary */}
-                        <div className="card" style={{
+                        {/* Summary — var(--primary-soft) 배경 + accent 보더 */}
+                        <div style={{
+                            background: 'var(--primary-soft)',
+                            border: '1px solid var(--accent-soft)',
+                            borderRadius: 'var(--radius-md)',
                             padding: 'var(--space-5)',
-                            background: 'linear-gradient(135deg, #F0F2FF 0%, #FFF0F6 100%)',
                             marginBottom: 'var(--space-6)',
                         }}>
-                            <h3 style={{ fontWeight: 700, marginBottom: 'var(--space-3)' }}>🎉 학습 플랜 요약</h3>
+                            <h3 style={{ fontWeight: 700, marginBottom: 'var(--space-3)', color: 'var(--text-primary)' }}>🎉 학습 플랜 요약</h3>
                             <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)', fontSize: 'var(--font-sm)' }}>
                                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                                     <span style={{ color: 'var(--text-secondary)' }}>언어</span>
@@ -327,6 +395,7 @@ export default function OnboardingPage({ onComplete }) {
                             </div>
                         </div>
 
+                        {/* CTA — var(--primary) 솔리드 */}
                         <button
                             className="btn btn--primary btn--full btn--lg"
                             onClick={handleComplete}
