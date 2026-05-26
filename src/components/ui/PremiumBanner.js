@@ -1,10 +1,15 @@
 'use client';
+import { shouldHidePremium } from '@/lib/demoMode';
 
 export default function PremiumBanner({ onUpgrade }) {
+    if (shouldHidePremium()) {
+        return <InstitutionInquiryCard />;
+    }
+
     return (
         <div style={{
-            background: 'linear-gradient(135deg, #667EEA 0%, #764BA2 100%)',
-            borderRadius: 'var(--radius-xl)',
+            background: 'var(--gradient-primary)',
+            borderRadius: 'var(--radius-md)',
             padding: 'var(--space-5)',
             color: 'white',
             position: 'relative',
@@ -53,6 +58,35 @@ export default function PremiumBanner({ onUpgrade }) {
                 >
                     7일 무료 체험 시작 ✨
                 </button>
+            </div>
+        </div>
+    );
+}
+
+export function InstitutionInquiryCard() {
+    return (
+        <div style={{
+            background: 'var(--bg-card)',
+            border: '1px solid var(--border)',
+            borderRadius: 'var(--radius-md)',
+            padding: 'var(--space-lg)',
+            marginBottom: 'var(--space-lg)',
+        }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-sm)' }}>
+                <span style={{ fontSize: 28 }}>📋</span>
+                <div>
+                    <h3 style={{
+                        margin: 0,
+                        fontFamily: 'var(--font-display)',
+                        fontSize: 18,
+                        color: 'var(--text-primary)',
+                    }}>기관 도입 문의</h3>
+                    <p style={{
+                        margin: '4px 0 0',
+                        fontSize: 13,
+                        color: 'var(--text-secondary)',
+                    }}>학교·다문화센터·공공기관용 도입 상담</p>
+                </div>
             </div>
         </div>
     );

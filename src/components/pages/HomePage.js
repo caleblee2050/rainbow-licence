@@ -5,6 +5,7 @@ import { licences } from '@/data/licences';
 import { questions } from '@/data/questions';
 import { getStreak, getWeeklyStats, getDday, getAccuracyRate, getStats, getDueCards, getLicenceStats } from '@/lib/studyEngine';
 import PremiumBanner from '@/components/ui/PremiumBanner';
+import { isPremiumGateUnlocked } from '@/lib/demoMode';
 
 const greetings = {
     vi: 'Xin chào! 👋', zh: '你好！👋', th: 'สวัสดี! 👋',
@@ -120,14 +121,14 @@ export default function HomePage({ language, licenceId, onSelectLicence, isPremi
                     marginBottom: 'var(--space-5)',
                 }}>
                     {[
-                        { label: '풀이 수', value: stats.totalAnswered, icon: '📝', color: 'var(--primary)' },
-                        { label: '정답률', value: `${stats.totalAnswered > 0 ? Math.round((stats.totalCorrect / stats.totalAnswered) * 100) : 0}%`, icon: '✅', color: 'var(--success)' },
-                        { label: '복습', value: dueCount, icon: '🔄', color: 'var(--warning)' },
-                        { label: '스트릭', value: streak.current, icon: '🔥', color: 'var(--error)' },
+                        { label: '풀이 수', value: stats.totalAnswered, icon: '📝' },
+                        { label: '정답률', value: `${stats.totalAnswered > 0 ? Math.round((stats.totalCorrect / stats.totalAnswered) * 100) : 0}%`, icon: '✅' },
+                        { label: '복습', value: dueCount, icon: '🔄' },
+                        { label: '스트릭', value: streak.current, icon: '🔥' },
                     ].map((stat, i) => (
-                        <div key={i} className="card" style={{ padding: 'var(--space-3)', textAlign: 'center' }}>
-                            <div style={{ fontSize: 18, marginBottom: 2 }}>{stat.icon}</div>
-                            <div style={{ fontSize: 'var(--font-base)', fontWeight: 700, color: stat.color }}>{stat.value}</div>
+                        <div key={i} className="card" style={{ padding: 'var(--space-3)', textAlign: 'center', background: 'var(--bg-card)' }}>
+                            <div style={{ fontSize: 16, marginBottom: 2, color: 'var(--accent)' }}>{stat.icon}</div>
+                            <div style={{ fontSize: 'var(--font-base)', fontWeight: 700, color: 'var(--text-primary)' }}>{stat.value}</div>
                             <div style={{ fontSize: 10, color: 'var(--text-muted)' }}>{stat.label}</div>
                         </div>
                     ))}
@@ -218,11 +219,12 @@ export default function HomePage({ language, licenceId, onSelectLicence, isPremi
                             display: 'flex',
                             alignItems: 'center',
                             gap: 'var(--space-4)',
+                            borderLeft: '4px solid var(--accent)',
                         }}
                     >
                         <div style={{
                             width: 48, height: 48, borderRadius: 'var(--radius-md)',
-                            background: licence.gradient,
+                            background: 'var(--primary-soft)',
                             display: 'flex', alignItems: 'center', justifyContent: 'center',
                             fontSize: 24, flexShrink: 0,
                         }}>
@@ -251,21 +253,23 @@ export default function HomePage({ language, licenceId, onSelectLicence, isPremi
 
             <div className="responsive-grid" style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-3)' }}>
                 {[
-                    { step: '0', title: '용어 사전 학습', desc: '시험에 나오는 핵심 단어 먼저 익히기', color: '#845EF7', icon: '📚' },
-                    { step: '1', title: '완전 번역 모드', desc: '문제를 모국어로 완전히 이해하기', color: 'var(--step1-color)', icon: '🌱' },
-                    { step: '2', title: '키워드 힌트', desc: '핵심 키워드만 모국어로 보기', color: 'var(--step2-color)', icon: '🌿' },
-                    { step: '3', title: '실전 한국어', desc: '실제 시험처럼 한국어로만', color: 'var(--step3-color)', icon: '🌳' },
-                    { step: '4', title: '실전 모의고사', desc: '60문제/60분 실전 시뮬레이션', color: '#E03131', icon: '🎯' },
+                    { step: '0', title: '용어 사전 학습', desc: '시험에 나오는 핵심 단어 먼저 익히기', icon: '📚', accent: true },
+                    { step: '1', title: '완전 번역 모드', desc: '문제를 모국어로 완전히 이해하기', icon: '🌱', accent: false },
+                    { step: '2', title: '키워드 힌트', desc: '핵심 키워드만 모국어로 보기', icon: '🌿', accent: false },
+                    { step: '3', title: '실전 한국어', desc: '실제 시험처럼 한국어로만', icon: '🌳', accent: false },
+                    { step: '4', title: '실전 모의고사', desc: '60문제/60분 실전 시뮬레이션', icon: '🎯', accent: true },
                 ].map((mode, i) => (
                     <div key={i} className="card" style={{
                         padding: 'var(--space-3) var(--space-4)',
-                        borderLeft: `4px solid ${mode.color}`,
+                        borderLeft: `4px solid ${mode.accent ? 'var(--accent)' : 'var(--primary)'}`,
                         display: 'flex', gap: 'var(--space-3)', alignItems: 'center',
+                        background: 'var(--bg-card)',
                     }}>
                         <span style={{ fontSize: 22 }}>{mode.icon}</span>
                         <div style={{ flex: 1 }}>
                             <span style={{
-                                fontSize: 10, fontWeight: 600, color: mode.color,
+                                fontSize: 10, fontWeight: 600,
+                                color: mode.accent ? 'var(--accent)' : 'var(--primary)',
                                 display: 'block', marginBottom: 1,
                             }}>
                                 STEP {mode.step}
@@ -273,7 +277,7 @@ export default function HomePage({ language, licenceId, onSelectLicence, isPremi
                             <h4 style={{ fontSize: 'var(--font-sm)', fontWeight: 600 }}>{mode.title}</h4>
                             <p style={{ fontSize: 11, color: 'var(--text-secondary)' }}>{mode.desc}</p>
                         </div>
-                        {(mode.step === '4' || mode.step === '0') && !isPremium && (
+                        {(mode.step === '4' || mode.step === '0') && !isPremium && !isPremiumGateUnlocked() && (
                             <span style={{ fontSize: 14, color: 'var(--text-muted)' }}>🔒</span>
                         )}
                     </div>
