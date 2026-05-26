@@ -4,10 +4,19 @@ import { useState, useMemo } from 'react';
 import { getAllTerms, getTermsByLicence, getCategories, searchTerms } from '@/data/terms';
 import { licences } from '@/data/licences';
 
+const LANG_LABELS = {
+    vi: '🇻🇳 베트남어',
+    zh: '🇨🇳 중국어',
+    th: '🇹🇭 태국어',
+    tl: '🇵🇭 필리핀어',
+    my: '🇲🇲 미얀마어',
+};
+
 export default function DictionaryPage({ language, licenceId }) {
     const [search, setSearch] = useState('');
     const [selectedLicence, setSelectedLicence] = useState(licenceId || null);
     const [selectedCategory, setSelectedCategory] = useState(null);
+    const [focusedSearch, setFocusedSearch] = useState(false);
 
     const filteredTerms = useMemo(() => {
         if (search) {
@@ -45,14 +54,17 @@ export default function DictionaryPage({ language, licenceId }) {
                     placeholder="한국어 또는 모국어로 검색..."
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
+                    onFocus={() => setFocusedSearch(true)}
+                    onBlur={() => setFocusedSearch(false)}
                     style={{
                         width: '100%', padding: 'var(--space-3) var(--space-4)', paddingLeft: 42,
-                        border: '2px solid var(--gray-200)', borderRadius: 'var(--radius-lg)',
+                        border: focusedSearch ? '2px solid var(--primary)' : '1px solid var(--border)',
+                        borderRadius: 'var(--radius-sm)',
                         fontSize: 'var(--font-sm)', fontFamily: 'inherit', outline: 'none',
                         background: 'var(--bg-card)', color: 'var(--text-primary)',
+                        boxShadow: focusedSearch ? '0 0 0 3px var(--primary-soft)' : 'none',
+                        transition: 'border var(--dur-micro), box-shadow var(--dur-micro)',
                     }}
-                    onFocus={(e) => e.target.style.borderColor = 'var(--primary)'}
-                    onBlur={(e) => e.target.style.borderColor = 'var(--gray-200)'}
                 />
             </div>
 
@@ -110,26 +122,71 @@ export default function DictionaryPage({ language, licenceId }) {
             </p>
 
             {/* Terms */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-3)' }}>
                 {filteredTerms.map((term, i) => (
-                    <div key={`${term.korean}-${i}`} className="card" style={{ padding: 'var(--space-3) var(--space-4)' }}>
-                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 'var(--space-1)' }}>
+                    <div
+                        key={`${term.korean}-${i}`}
+                        style={{
+                            background: 'var(--bg-card)',
+                            border: '1px solid var(--border)',
+                            borderRadius: 'var(--radius-md)',
+                            padding: 'var(--space-4)',
+                        }}
+                    >
+                        {/* Korean word + pronunciation + category */}
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 'var(--space-2)' }}>
                             <div>
-                                <span style={{ fontWeight: 700, fontSize: 'var(--font-base)' }}>{term.korean}</span>
+                                <span style={{
+                                    fontFamily: 'var(--font-display)',
+                                    fontWeight: 700,
+                                    fontSize: 'var(--font-lg, 18px)',
+                                    color: 'var(--text-primary)',
+                                }}>
+                                    {term.korean}
+                                </span>
                                 {term.pronunciation && (
-                                    <span style={{ fontSize: 'var(--font-xs)', color: 'var(--text-muted)', marginLeft: 'var(--space-2)' }}>
+                                    <span style={{
+                                        fontFamily: 'var(--font-mono)',
+                                        fontSize: 'var(--font-xs)',
+                                        color: 'var(--text-muted)',
+                                        marginLeft: 'var(--space-2)',
+                                    }}>
                                         [{term.pronunciation}]
                                     </span>
                                 )}
                             </div>
                             <span className="badge badge--info" style={{ fontSize: 10, flexShrink: 0 }}>{term.category}</span>
                         </div>
-                        <div style={{
-                            fontSize: 'var(--font-sm)', color: 'var(--primary)', fontWeight: 500,
-                            background: 'var(--primary-50)', padding: 'var(--space-1) var(--space-2)',
-                            borderRadius: 'var(--radius-xs)', display: 'inline-block',
-                        }}>
-                            {term[language] || term.vi || '번역 준비 중'}
+
+                        {/* 5-language translations */}
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-1)' }}>
+                            {(['vi', 'zh', 'th', 'tl', 'my']).map(lang => (
+                                <div
+                                    key={lang}
+                                    style={{
+                                        display: 'flex',
+                                        alignItems: 'baseline',
+                                        gap: 'var(--space-2)',
+                                        fontSize: 'var(--font-sm)',
+                                    }}
+                                >
+                                    <span style={{
+                                        fontSize: 10,
+                                        color: 'var(--text-muted)',
+                                        fontWeight: 500,
+                                        minWidth: 64,
+                                        flexShrink: 0,
+                                    }}>
+                                        {LANG_LABELS[lang]}
+                                    </span>
+                                    <span style={{
+                                        color: term[lang] ? 'var(--text-primary)' : 'var(--text-muted)',
+                                        fontStyle: term[lang] ? 'normal' : 'italic',
+                                    }}>
+                                        {term[lang] || '준비 중'}
+                                    </span>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 ))}

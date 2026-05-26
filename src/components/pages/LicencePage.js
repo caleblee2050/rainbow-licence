@@ -46,28 +46,32 @@ export default function LicencePage({ language, onSelectLicence }) {
                                 padding: 0,
                                 animationDelay: `${index * 60}ms`,
                                 animationFillMode: 'both',
+                                background: 'var(--bg-card)',
+                                overflow: 'hidden',
                             }}
                         >
-                            {/* Card Header */}
+                            {/* Card Header — white bg + left accent bar */}
                             <div style={{
-                                background: licence.gradient,
+                                background: 'var(--bg-card)',
+                                borderBottom: '1px solid var(--border)',
                                 padding: 'var(--space-4) var(--space-5)',
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'space-between',
+                                borderLeft: '4px solid var(--accent)',
                             }}>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-3)' }}>
                                     <span style={{ fontSize: 32 }}>{licence.icon}</span>
                                     <div>
                                         <h3 style={{
-                                            color: 'white',
+                                            color: 'var(--text-primary)',
                                             fontWeight: 700,
                                             fontSize: 'var(--font-base)',
                                         }}>
                                             {licence.name}
                                         </h3>
                                         <span style={{
-                                            color: 'rgba(255,255,255,0.85)',
+                                            color: 'var(--text-muted)',
                                             fontSize: 'var(--font-xs)',
                                         }}>
                                             {licence.category}
@@ -76,15 +80,15 @@ export default function LicencePage({ language, onSelectLicence }) {
                                 </div>
                                 {licence.multiLangExam && (
                                     <span style={{
-                                        background: 'rgba(255,255,255,0.25)',
-                                        backdropFilter: 'blur(4px)',
+                                        background: 'var(--accent)',
                                         color: 'white',
                                         padding: '3px 10px',
                                         borderRadius: 'var(--radius-full)',
                                         fontSize: 11,
                                         fontWeight: 600,
+                                        flexShrink: 0,
                                     }}>
-                                        🌐 다국어
+                                        🌐 다국어 시험 가능
                                     </span>
                                 )}
                             </div>

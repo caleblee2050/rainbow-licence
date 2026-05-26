@@ -110,8 +110,11 @@ export default function CommunityPage({ language }) {
                 {successStories.map((story, index) => (
                     <div
                         key={story.id}
-                        className="card animate-slideUp"
+                        className="animate-slideUp"
                         style={{
+                            background: 'var(--bg-card)',
+                            border: '1px solid var(--border)',
+                            borderRadius: 'var(--radius-md)',
                             padding: 'var(--space-5)',
                             animationDelay: `${index * 80}ms`,
                             animationFillMode: 'both',
@@ -155,7 +158,7 @@ export default function CommunityPage({ language }) {
                             </span>
                         </div>
 
-                        {/* Message */}
+                        {/* Quote with left accent bar */}
                         <p style={{
                             fontSize: 'var(--font-sm)',
                             lineHeight: 1.7,
@@ -164,7 +167,7 @@ export default function CommunityPage({ language }) {
                             background: 'var(--gray-50)',
                             padding: 'var(--space-3)',
                             borderRadius: 'var(--radius-sm)',
-                            borderLeft: '3px solid var(--primary-200)',
+                            borderLeft: '3px solid var(--accent)',
                         }}>
                             "{story.message}"
                         </p>
@@ -211,8 +214,10 @@ export default function CommunityPage({ language }) {
                 {studyTips.map((tip, i) => (
                     <div
                         key={i}
-                        className="card"
                         style={{
+                            background: 'var(--bg-card)',
+                            border: '1px solid var(--border)',
+                            borderRadius: 'var(--radius-md)',
                             padding: 'var(--space-4)',
                             textAlign: 'center',
                         }}
@@ -222,6 +227,7 @@ export default function CommunityPage({ language }) {
                             fontSize: 'var(--font-sm)',
                             fontWeight: 600,
                             marginBottom: 'var(--space-1)',
+                            color: 'var(--text-primary)',
                         }}>
                             {tip.title}
                         </h4>
@@ -253,18 +259,33 @@ export default function CommunityPage({ language }) {
                             href={link.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="card card--interactive"
                             style={{
+                                background: 'var(--bg-card)',
+                                border: '1px solid var(--border)',
+                                borderRadius: 'var(--radius-md)',
                                 padding: 'var(--space-3) var(--space-4)',
                                 display: 'flex',
                                 alignItems: 'center',
                                 gap: 'var(--space-3)',
                                 textDecoration: 'none',
                                 color: 'inherit',
+                                transition: 'box-shadow var(--dur-micro)',
                             }}
+                            onMouseEnter={e => e.currentTarget.style.boxShadow = 'var(--shadow-sm)'}
+                            onMouseLeave={e => e.currentTarget.style.boxShadow = 'none'}
                         >
                             <span className="iconify" data-icon={link.icon} style={{ fontSize: 20, color: 'var(--primary)' }}></span>
                             <span style={{ flex: 1, fontSize: 'var(--font-sm)', fontWeight: 500 }}>{link.name}</span>
+                            <span style={{
+                                fontSize: 11,
+                                color: 'var(--text-muted)',
+                                background: 'var(--gray-100)',
+                                padding: '2px 8px',
+                                borderRadius: 'var(--radius-full)',
+                                fontWeight: 500,
+                            }}>
+                                외부 링크
+                            </span>
                             <span className="iconify" data-icon="mdi:open-in-new" style={{ fontSize: 16, color: 'var(--text-muted)' }}></span>
                         </a>
                     ))}
