@@ -215,13 +215,34 @@ body {
   padding: 0 var(--content-padding);
 }
 
+.top-nav__brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .top-nav__title {
   font-size: var(--font-lg);
   font-weight: 700;
-  background: var(--gradient-rainbow);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-family: var(--font-display);
+  color: var(--primary);
+}
+
+.top-nav__school {
+  display: block;
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 1px;
+  font-family: var(--font-body);
+}
+
+.top-nav__lang-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
 }
 
 .top-nav__lang {
@@ -243,6 +264,20 @@ body {
   background: var(--gray-200);
 }
 
+.lang-dots {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.lang-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  opacity: 0.7;
+  display: inline-block;
+}
+
 /* Main Content */
 .main-content {
   padding-top: calc(var(--nav-height) + var(--space-4));
@@ -261,10 +296,10 @@ body {
   width: 100%;
   max-width: var(--max-width);
   height: var(--bottom-nav-height);
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--bg-card);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  border-top: 1px solid var(--border);
   z-index: 100;
   display: flex;
   align-items: center;
@@ -309,6 +344,14 @@ body {
   border-radius: var(--radius-full);
   font-size: 20px;
   transition: all var(--transition-fast);
+}
+
+.bottom-nav__dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-top: 1px;
 }
 
 /* Cards */
@@ -756,7 +799,7 @@ body {
 
 /* Utility */
 .text-gradient {
-  background: var(--gradient-rainbow);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

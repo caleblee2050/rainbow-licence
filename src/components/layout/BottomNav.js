@@ -21,6 +21,7 @@ export default function BottomNav({ activeTab, onTabChange }) {
                         <span className="iconify" data-icon={tab.icon}></span>
                     </div>
                     <span>{tab.label}</span>
+                    {activeTab === tab.id && <span className="bottom-nav__dot" aria-hidden="true" />}
                 </button>
             ))}
         </nav>

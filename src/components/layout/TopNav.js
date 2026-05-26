@@ -2,23 +2,37 @@
 
 import { useState } from 'react';
 import { supportedLanguages } from '@/data/licences';
+import { getSchoolName } from '@/lib/demoMode';
 
 export default function TopNav({ selectedLanguage, onLanguageChange }) {
     const [showLangPicker, setShowLangPicker] = useState(false);
     const currentLang = supportedLanguages.find(l => l.code === selectedLanguage);
+    const schoolName = getSchoolName();
 
     return (
         <>
             <nav className="top-nav">
-                <h1 className="top-nav__title">🌈 레인보우 자격증</h1>
-                <button
-                    className="top-nav__lang"
-                    onClick={() => setShowLangPicker(true)}
-                >
-                    <span>{currentLang?.flag}</span>
-                    <span>{currentLang?.nativeName}</span>
-                    <span className="iconify" data-icon="mdi:chevron-down" style={{ fontSize: 16 }}></span>
-                </button>
+                <div className="top-nav__brand">
+                    <h1 className="top-nav__title">🌈 레인보우 자격증</h1>
+                    {schoolName && <span className="top-nav__school">{schoolName}</span>}
+                </div>
+                <div className="top-nav__lang-wrap">
+                    <button
+                        className="top-nav__lang"
+                        onClick={() => setShowLangPicker(true)}
+                    >
+                        <span>{currentLang?.flag}</span>
+                        <span>{currentLang?.nativeName}</span>
+                        <span className="iconify" data-icon="mdi:chevron-down" style={{ fontSize: 16 }}></span>
+                    </button>
+                    <div className="lang-dots" aria-hidden="true">
+                        <span style={{ background: 'var(--lang-vi)' }} />
+                        <span style={{ background: 'var(--lang-zh)' }} />
+                        <span style={{ background: 'var(--lang-th)' }} />
+                        <span style={{ background: 'var(--lang-tl)' }} />
+                        <span style={{ background: 'var(--lang-my)' }} />
+                    </div>
+                </div>
             </nav>
 
             {showLangPicker && (
