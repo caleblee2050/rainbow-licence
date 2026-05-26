@@ -144,8 +144,22 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
 
             {/* Header */}
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 'var(--space-3)' }}>
-                <button className="btn btn--ghost btn--sm" onClick={() => onSelectLicence(null)} style={{ gap: 'var(--space-1)' }}>
-                    <span className="iconify" data-icon="mdi:arrow-left" style={{ fontSize: 18 }}></span> 목록
+                <button
+                    onClick={() => onSelectLicence(null)}
+                    style={{
+                        display: 'inline-flex', alignItems: 'center', gap: 'var(--space-1)',
+                        padding: 'var(--space-2) var(--space-3)',
+                        background: 'transparent', border: '1px solid var(--border)',
+                        borderRadius: 'var(--radius-sm)', color: 'var(--text-secondary)',
+                        fontSize: 'var(--font-xs)', fontWeight: 500,
+                        cursor: 'pointer', fontFamily: 'inherit',
+                        transition: 'background var(--transition-fast), border-color var(--transition-fast)',
+                    }}
+                    onMouseEnter={e => { e.currentTarget.style.background = 'var(--gray-100)'; e.currentTarget.style.borderColor = 'var(--border-strong)'; }}
+                    onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.borderColor = 'var(--border)'; }}
+                >
+                    <span className="iconify" data-icon="mdi:arrow-left" style={{ fontSize: 16 }}></span>
+                    📚 목록
                 </button>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-2)' }}>
                     <span style={{ fontSize: 18 }}>{licence?.icon}</span>
@@ -153,34 +167,50 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
                 </div>
             </div>
 
-            {/* Progress */}
+            {/* Progress — Step 1: fill with primary or gradient */}
             <div style={{ marginBottom: 'var(--space-2)' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 'var(--space-1)', fontSize: 'var(--font-xs)', color: 'var(--text-muted)' }}>
                     <span>{currentIndex + 1} / {totalQ}</span>
                     <span>정답률 {score.total > 0 ? Math.round((score.correct / score.total) * 100) : 0}%</span>
                 </div>
-                <div className="progress progress--sm">
-                    <div className="progress__fill" style={{ width: `${progressPct}%` }} />
+                <div style={{
+                    width: '100%', height: 4,
+                    background: 'var(--gray-200)',
+                    borderRadius: 'var(--radius-full)',
+                    overflow: 'hidden',
+                }}>
+                    <div style={{
+                        height: '100%',
+                        width: `${progressPct}%`,
+                        background: 'linear-gradient(90deg, var(--primary), var(--accent))',
+                        borderRadius: 'var(--radius-full)',
+                        transition: 'width var(--transition-slow)',
+                    }} />
                 </div>
             </div>
 
-            {/* Mode Toggle */}
+            {/* Mode Toggle — Step 2: V3 tab style */}
             <div style={{
-                display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-4)',
+                display: 'flex', gap: 4, marginBottom: 'var(--space-4)',
                 background: 'var(--gray-100)', borderRadius: 'var(--radius-md)', padding: 3,
             }}>
-                {Object.entries(modeLabels).map(([key, mode]) => (
-                    <button key={key} onClick={() => onStudyModeChange(key)} style={{
-                        flex: 1, padding: 'var(--space-2)', border: 'none', borderRadius: 'var(--radius-sm)',
-                        background: studyMode === key ? 'var(--bg-card)' : 'transparent',
-                        boxShadow: studyMode === key ? 'var(--shadow-sm)' : 'none',
-                        color: studyMode === key ? mode.color : 'var(--text-muted)',
-                        fontWeight: studyMode === key ? 600 : 400, fontSize: 11,
-                        cursor: 'pointer', fontFamily: 'inherit', transition: 'all var(--transition-fast)',
-                    }}>
-                        {key === 'step1' ? '🌱 번역' : key === 'step2' ? '🌿 힌트' : '🌳 실전'}
-                    </button>
-                ))}
+                {Object.entries(modeLabels).map(([key]) => {
+                    const isActive = studyMode === key;
+                    return (
+                        <button key={key} onClick={() => onStudyModeChange(key)} style={{
+                            flex: 1, padding: 'var(--space-2)', border: 'none',
+                            borderBottom: isActive ? '2px solid var(--primary)' : '2px solid transparent',
+                            borderRadius: 'var(--radius-sm)',
+                            background: isActive ? 'var(--primary-soft)' : 'transparent',
+                            color: isActive ? 'var(--primary)' : 'var(--text-secondary)',
+                            fontWeight: isActive ? 600 : 400, fontSize: 11,
+                            cursor: 'pointer', fontFamily: 'inherit',
+                            transition: 'all var(--transition-fast)',
+                        }}>
+                            {key === 'step1' ? '🌱 번역' : key === 'step2' ? '🌿 힌트' : '🌳 실전'}
+                        </button>
+                    );
+                })}
             </div>
 
             {/* Question Card */}
@@ -193,11 +223,29 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
             ) : (
                 <>
                     <div className="card" style={{ marginBottom: 'var(--space-4)' }}>
+                        {/* Step 3: question heading with Fraunces */}
                         <div style={{ padding: 'var(--space-4)', borderBottom: '1px solid var(--gray-100)' }}>
-                            <span className="badge" style={{ background: currentMode.bg, color: currentMode.color, marginBottom: 'var(--space-2)' }}>
+                            <span style={{
+                                display: 'inline-block',
+                                background: 'var(--primary-soft)',
+                                color: 'var(--primary)',
+                                borderRadius: 'var(--radius-full)',
+                                padding: '3px 10px',
+                                fontSize: 11,
+                                fontWeight: 600,
+                                marginBottom: 'var(--space-2)',
+                                letterSpacing: '0.3px',
+                            }}>
                                 {currentMode.label}
                             </span>
-                            <h3 style={{ fontSize: 'var(--font-base)', fontWeight: 600, lineHeight: 1.6, marginBottom: 'var(--space-2)' }}>
+                            <h3 style={{
+                                fontFamily: 'var(--font-display)',
+                                fontSize: 'clamp(20px, 4vw, 26px)',
+                                fontWeight: 600,
+                                lineHeight: 1.4,
+                                color: 'var(--text-primary)',
+                                marginBottom: 'var(--space-2)',
+                            }}>
                                 Q{currentIndex + 1}. {currentQ.question}
                             </h3>
                             {studyMode !== 'step3' && (
@@ -211,32 +259,76 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
                             )}
                         </div>
 
+                        {/* Step 4: Option cards — 4 states */}
                         <div style={{ padding: 'var(--space-4)' }}>
                             <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2)' }}>
                                 {currentQ.options.map((option, idx) => {
                                     const isSelected = selectedAnswer === idx;
                                     const isCorrect = idx === currentQ.correctAnswer;
-                                    let borderColor = 'var(--gray-200)', bgColor = 'transparent';
-                                    if (showResult && isCorrect) { borderColor = 'var(--success)'; bgColor = 'var(--success-bg)'; }
-                                    else if (showResult && isSelected && !isCorrect) { borderColor = 'var(--error)'; bgColor = 'var(--error-bg)'; }
-                                    else if (isSelected) { borderColor = 'var(--primary)'; bgColor = 'var(--primary-50)'; }
+
+                                    let borderStyle = '1px solid var(--border)';
+                                    let bgColor = 'var(--bg-card)';
+                                    let numberBg = 'var(--primary-soft)';
+                                    let numberColor = 'var(--primary)';
+                                    let numberContent = String(idx + 1);
+
+                                    if (showResult && isCorrect) {
+                                        borderStyle = '2px solid var(--success)';
+                                        bgColor = 'var(--success-bg)';
+                                        numberBg = 'var(--success)';
+                                        numberColor = '#fff';
+                                        numberContent = '✓';
+                                    } else if (showResult && isSelected && !isCorrect) {
+                                        borderStyle = '2px solid var(--error)';
+                                        bgColor = 'var(--error-bg)';
+                                        numberBg = 'var(--error)';
+                                        numberColor = '#fff';
+                                    } else if (isSelected) {
+                                        borderStyle = '2px solid var(--primary)';
+                                        bgColor = 'var(--primary-soft)';
+                                        numberBg = 'var(--primary)';
+                                        numberColor = '#fff';
+                                    }
+
                                     return (
-                                        <button key={idx} onClick={() => handleAnswer(idx)} style={{
-                                            display: 'flex', alignItems: 'center', gap: 'var(--space-3)',
-                                            padding: 'var(--space-3) var(--space-4)', borderRadius: 'var(--radius-md)',
-                                            border: `2px solid ${borderColor}`, background: bgColor,
-                                            cursor: showResult ? 'default' : 'pointer', fontFamily: 'inherit',
-                                            fontSize: 'var(--font-sm)', textAlign: 'left', width: '100%',
-                                            color: 'var(--text-primary)', transition: 'all var(--transition-fast)',
-                                        }}>
+                                        <button
+                                            key={idx}
+                                            onClick={() => handleAnswer(idx)}
+                                            style={{
+                                                display: 'flex', alignItems: 'center', gap: 'var(--space-3)',
+                                                padding: '16px 20px',
+                                                borderRadius: 'var(--radius-md)',
+                                                border: borderStyle,
+                                                background: bgColor,
+                                                cursor: showResult ? 'default' : 'pointer',
+                                                fontFamily: 'inherit',
+                                                fontSize: 'var(--font-sm)', textAlign: 'left', width: '100%',
+                                                color: 'var(--text-primary)',
+                                                transition: 'all var(--transition-fast)',
+                                            }}
+                                            onMouseEnter={e => {
+                                                if (!showResult) {
+                                                    e.currentTarget.style.borderColor = 'var(--primary-light)';
+                                                    e.currentTarget.style.transform = 'translateY(-1px)';
+                                                    e.currentTarget.style.boxShadow = 'var(--shadow-sm)';
+                                                }
+                                            }}
+                                            onMouseLeave={e => {
+                                                if (!showResult) {
+                                                    e.currentTarget.style.borderColor = isSelected ? 'var(--primary)' : 'var(--border)';
+                                                    e.currentTarget.style.transform = 'none';
+                                                    e.currentTarget.style.boxShadow = 'none';
+                                                }
+                                            }}
+                                        >
                                             <span style={{
                                                 width: 28, height: 28, borderRadius: '50%',
-                                                background: isSelected ? borderColor : 'var(--gray-100)',
-                                                color: isSelected ? 'white' : 'var(--text-secondary)',
+                                                background: numberBg,
+                                                color: numberColor,
                                                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                                                 fontSize: 'var(--font-xs)', fontWeight: 600, flexShrink: 0,
                                             }}>
-                                                {showResult && isCorrect ? '✓' : (idx + 1)}
+                                                {numberContent}
                                             </span>
                                             <span style={{ flex: 1 }}>{option}</span>
                                         </button>
@@ -245,6 +337,7 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
                             </div>
                         </div>
 
+                        {/* Step 6: Answer explanation box */}
                         {showResult && (
                             <div style={{
                                 padding: 'var(--space-4)', borderTop: '1px solid var(--gray-100)',
@@ -252,15 +345,19 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
                             }}>
                                 <div style={{
                                     background: selectedAnswer === currentQ.correctAnswer ? 'var(--success-bg)' : 'var(--error-bg)',
-                                    borderRadius: 'var(--radius-md)', padding: 'var(--space-4)',
+                                    border: `1px solid ${selectedAnswer === currentQ.correctAnswer ? 'var(--success)' : 'var(--error)'}`,
+                                    borderRadius: 'var(--radius-md)',
+                                    padding: 'var(--space-md)',
                                 }}>
-                                    <div style={{
-                                        fontWeight: 700, marginBottom: 'var(--space-2)',
+                                    <h3 style={{
+                                        margin: 0, fontSize: 14,
+                                        fontWeight: 700,
                                         color: selectedAnswer === currentQ.correctAnswer ? 'var(--success)' : 'var(--error)',
+                                        marginBottom: 'var(--space-2)',
                                     }}>
                                         {selectedAnswer === currentQ.correctAnswer ? '🎉 정답이에요!' : '😢 틀렸어요'}
-                                    </div>
-                                    <p style={{ fontSize: 'var(--font-sm)', lineHeight: 1.6, color: 'var(--text-primary)' }}>
+                                    </h3>
+                                    <p style={{ margin: '8px 0 0', fontSize: 14, lineHeight: 1.6, color: 'var(--text-primary)' }}>
                                         {studyMode === 'step1' ? currentQ.simpleExplanation : currentQ.explanation}
                                     </p>
                                     {currentQ.keywords && (
@@ -275,24 +372,74 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
                         )}
                     </div>
 
-                    {/* Action Buttons */}
-                    <div style={{ display: 'flex', gap: 'var(--space-3)' }}>
+                    {/* Action Buttons — Steps 5 & 7 */}
+                    <div style={{ display: 'flex', gap: 'var(--space-3)', justifyContent: 'center' }}>
                         {!showResult ? (
-                            <button className="btn btn--primary btn--full btn--lg" onClick={handleSubmit} disabled={selectedAnswer === null}>
-                                정답 확인 ✓
+                            <button
+                                onClick={handleSubmit}
+                                disabled={selectedAnswer === null}
+                                style={{
+                                    background: 'var(--primary)',
+                                    color: '#fff',
+                                    padding: '14px 24px',
+                                    border: 'none',
+                                    borderRadius: 'var(--radius-md)',
+                                    fontFamily: 'var(--font-body)',
+                                    fontSize: 16,
+                                    fontWeight: 600,
+                                    width: '100%',
+                                    maxWidth: 320,
+                                    cursor: selectedAnswer === null ? 'not-allowed' : 'pointer',
+                                    opacity: selectedAnswer === null ? 0.5 : 1,
+                                    transition: 'transform var(--dur-micro) var(--easing-move), background var(--dur-micro) var(--easing-move)',
+                                }}
+                                onMouseEnter={e => { if (selectedAnswer !== null) e.currentTarget.style.background = 'var(--primary-light)'; }}
+                                onMouseLeave={e => { e.currentTarget.style.background = 'var(--primary)'; }}
+                                onMouseDown={e => { if (selectedAnswer !== null) e.currentTarget.style.transform = 'translateY(1px)'; }}
+                                onMouseUp={e => { e.currentTarget.style.transform = 'none'; }}
+                            >
+                                정답 확인 →
                             </button>
                         ) : currentIndex < totalQ - 1 ? (
-                            <button className="btn btn--primary btn--full btn--lg" onClick={handleNext}>다음 문제 →</button>
+                            <button
+                                onClick={handleNext}
+                                style={{
+                                    background: 'transparent',
+                                    color: 'var(--primary)',
+                                    padding: '14px 24px',
+                                    border: '2px solid var(--primary)',
+                                    borderRadius: 'var(--radius-md)',
+                                    fontFamily: 'var(--font-body)',
+                                    fontSize: 16,
+                                    fontWeight: 600,
+                                    width: '100%',
+                                    maxWidth: 320,
+                                    cursor: 'pointer',
+                                    transition: 'transform var(--dur-micro) var(--easing-move), background var(--dur-micro) var(--easing-move)',
+                                }}
+                                onMouseEnter={e => { e.currentTarget.style.background = 'var(--primary-soft)'; }}
+                                onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; }}
+                                onMouseDown={e => { e.currentTarget.style.transform = 'translateY(1px)'; }}
+                                onMouseUp={e => { e.currentTarget.style.transform = 'none'; }}
+                            >
+                                다음 문제 →
+                            </button>
                         ) : (
                             <div style={{ width: '100%' }}>
                                 <div className="card" style={{
                                     padding: 'var(--space-6)', textAlign: 'center', marginBottom: 'var(--space-3)',
-                                    background: 'linear-gradient(135deg, #F0F2FF 0%, #FFF0F6 100%)',
+                                    background: 'var(--primary-soft)',
+                                    border: '1px solid var(--border)',
                                 }}>
                                     <div style={{ fontSize: 48, marginBottom: 'var(--space-3)' }}>
                                         {score.correct / score.total >= 0.6 ? '🎉' : '💪'}
                                     </div>
-                                    <h3 style={{ fontSize: 'var(--font-2xl)', fontWeight: 800, marginBottom: 'var(--space-2)' }}>
+                                    <h3 style={{
+                                        fontFamily: 'var(--font-display)',
+                                        fontSize: 'var(--font-2xl)', fontWeight: 700,
+                                        marginBottom: 'var(--space-2)',
+                                        color: 'var(--text-primary)',
+                                    }}>
                                         {Math.round((score.correct / score.total) * 100)}점
                                     </h3>
                                     <p style={{ color: 'var(--text-secondary)', marginBottom: 'var(--space-2)', fontSize: 'var(--font-sm)' }}>
@@ -302,9 +449,35 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
                                         {score.correct / score.total >= 0.6 ? '합격 기준 통과! 🏆' : '조금 더 노력해봐요!'}
                                     </p>
                                 </div>
-                                <button className="btn btn--primary btn--full btn--lg" onClick={handleRestart}>
-                                    <span className="iconify" data-icon="mdi:refresh" style={{ fontSize: 18 }}></span> 다시 풀기
-                                </button>
+                                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                    <button
+                                        onClick={handleRestart}
+                                        style={{
+                                            background: 'var(--primary)',
+                                            color: '#fff',
+                                            padding: '14px 24px',
+                                            border: 'none',
+                                            borderRadius: 'var(--radius-md)',
+                                            fontFamily: 'var(--font-body)',
+                                            fontSize: 16,
+                                            fontWeight: 600,
+                                            width: '100%',
+                                            maxWidth: 320,
+                                            cursor: 'pointer',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            gap: 'var(--space-2)',
+                                            transition: 'transform var(--dur-micro) var(--easing-move), background var(--dur-micro) var(--easing-move)',
+                                        }}
+                                        onMouseEnter={e => { e.currentTarget.style.background = 'var(--primary-light)'; }}
+                                        onMouseLeave={e => { e.currentTarget.style.background = 'var(--primary)'; }}
+                                        onMouseDown={e => { e.currentTarget.style.transform = 'translateY(1px)'; }}
+                                        onMouseUp={e => { e.currentTarget.style.transform = 'none'; }}
+                                    >
+                                        <span className="iconify" data-icon="mdi:refresh" style={{ fontSize: 18 }}></span> 다시 풀기
+                                    </button>
+                                </div>
                             </div>
                         )}
                     </div>
