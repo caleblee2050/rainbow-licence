@@ -36,11 +36,34 @@ export function calculateNextReview(card, quality) {
 }
 
 // ===== 학습 데이터 관리 =====
+function deepMerge(target, source) {
+    // 단순 deep merge: target에 source의 누락된 키를 채워넣음
+    const result = { ...target };
+    for (const key of Object.keys(target)) {
+        if (
+            target[key] !== null &&
+            typeof target[key] === 'object' &&
+            !Array.isArray(target[key]) &&
+            source[key] !== null &&
+            typeof source[key] === 'object' &&
+            !Array.isArray(source[key])
+        ) {
+            result[key] = deepMerge(target[key], source[key]);
+        } else if (source[key] !== undefined) {
+            result[key] = source[key];
+        }
+    }
+    return result;
+}
+
 function getStudyData() {
     if (typeof window === 'undefined') return getDefaultData();
     try {
-        const data = localStorage.getItem(STORAGE_KEY);
-        return data ? JSON.parse(data) : getDefaultData();
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return getDefaultData();
+        const stored = JSON.parse(raw);
+        // Migration: 누락된 키를 default에서 채움 (기존 데이터는 유지)
+        return deepMerge(getDefaultData(), stored);
     } catch {
         return getDefaultData();
     }
