@@ -29,9 +29,12 @@ describe('Turso DB', () => {
 
   it('마이그레이션 멱등성', async () => {
     await runMigrations();
-    await runMigrations();
     const db = getDb();
-    const res = await db.execute(`SELECT COUNT(*) as c FROM _migrations`);
-    expect(Number(res.rows[0].c)).toBe(1);
+    const res1 = await db.execute(`SELECT COUNT(*) as c FROM _migrations`);
+    const count1 = Number(res1.rows[0].c);
+    await runMigrations();
+    const res2 = await db.execute(`SELECT COUNT(*) as c FROM _migrations`);
+    const count2 = Number(res2.rows[0].c);
+    expect(count2).toBe(count1); // 중복 실행해도 행 수 변화 없음
   });
 });
