@@ -12,6 +12,67 @@ export const pastryQuestions = [
         explanation: '박력분은 단백질 함량이 7~9%로 낮아 글루텐 형성이 약하므로 부드러운 케이크 제조에 적합합니다.',
         simpleExplanation: '박력분은 단백질이 적어 케이크를 부드럽게 만들어요.',
         keywords: ['박력분', '밀가루', '단백질', '케이크'],
+        translations: {
+            vi: {
+                question: `Loại bột mì nào phù hợp nhất để làm bánh ngọt (cake)?`,
+                options: [`Bột mì mạnh (강력분)`, `Bột mì trung bình (중력분)`, `Bột mì yếu (박력분)`, `Bột semolina (듀럼밀가루)`],
+                explanation: `Bột mì yếu (박력분) có hàm lượng protein thấp 7~9%, tạo ít gluten nên phù hợp để làm bánh ngọt mềm mại.`,
+            },
+            zh: {
+                question: `制作蛋糕最适合的面粉是哪种？`,
+                options: [`高筋面粉`, `中筋面粉`, `低筋面粉`, `杜兰小麦粉`],
+                explanation: `低筋面粉蛋白质含量低（7~9%），形成的面筋少，适合制作松软的蛋糕。`,
+            },
+            th: {
+                question: `แป้งชนิดใดเหมาะสมที่สุดสำหรับทำเค้ก?`,
+                options: [`แป้งสาลีแข็ง (강력분)`, `แป้งสาลีกลาง (중력분)`, `แป้งสาลีอ่อน (박력분)`, `แป้งดูรัม (듀럼밀가루)`],
+                explanation: `แป้งสาลีอ่อนมีโปรตีนต่ำ 7~9% ทำให้เกิดกลูเตนน้อย เหมาะสำหรับทำเค้กที่นุ่ม`,
+            },
+            tl: {
+                question: `Anong harina ang pinaka-angkop para gumawa ng cake?`,
+                options: [`Bread flour (강력분)`, `All-purpose flour (중력분)`, `Cake flour (박력분)`, `Durum flour (듀럼밀가루)`],
+                explanation: `Ang cake flour ay may mababang protina (7~9%) kaya't kaunting gluten ang nalilikha, angkop para sa malambot na cake.`,
+            },
+            my: {
+                question: `ကိတ်မုန့်ပြုလုပ်ရန် အသင့်တော်ဆုံးသော ဂျုံမှုန့်မှာ မည်သည်နည်း?`,
+                options: [`မာသောဂျုံမှုန့် (강력분)`, `အလယ်အလတ်ဂျုံမှုန့် (중력분)`, `ပါးပါးဂျုံမှုန့် (박력분)`, `ဒူရမ်ဂျုံမှုန့် (듀럼밀가루)`],
+                explanation: `ပါးပါးဂျုံမှုန့်သည် ပရိုတင်းဓာတ် 7~9% နိမ့်သောကြောင့် ဂလူတင်နည်းပြီး နူးညံ့သောကိတ်မုန့်ပြုလုပ်ရန် သင့်တော်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `케이크`, native: `bánh ngọt / cake` },
+                { korean: `밀가루`, native: `bột mì` },
+                { korean: `박력분`, native: `bột mì yếu` },
+                { korean: `강력분`, native: `bột mì mạnh` },
+                { korean: `중력분`, native: `bột mì trung bình` },
+            ],
+            zh: [
+                { korean: `케이크`, native: `蛋糕` },
+                { korean: `밀가루`, native: `面粉` },
+                { korean: `박력분`, native: `低筋面粉` },
+                { korean: `강력분`, native: `高筋面粉` },
+                { korean: `중력분`, native: `中筋面粉` },
+            ],
+            th: [
+                { korean: `케이크`, native: `เค้ก` },
+                { korean: `밀가루`, native: `แป้งสาลี` },
+                { korean: `박력분`, native: `แป้งสาลีอ่อน` },
+                { korean: `강력분`, native: `แป้งสาลีแข็ง` },
+            ],
+            tl: [
+                { korean: `케이크`, native: `cake` },
+                { korean: `밀가루`, native: `harina` },
+                { korean: `박력분`, native: `cake flour` },
+                { korean: `강력분`, native: `bread flour` },
+            ],
+            my: [
+                { korean: `케이크`, native: `ကိတ်မုန့်` },
+                { korean: `밀가루`, native: `ဂျုံမှုန့်` },
+                { korean: `박력분`, native: `ပါးပါးဂျုံမှုန့်` },
+                { korean: `강력분`, native: `မာသောဂျုံမှုန့်` },
+            ],
+        },
     },
     {
         id: 'ps-02',
@@ -24,6 +85,67 @@ export const pastryQuestions = [
         explanation: '강력분은 단백질 함량이 11% 이상으로 높아 글루텐 형성이 강하며 식빵, 피자 도우 등에 사용됩니다.',
         simpleExplanation: '강력분은 단백질이 11%보다 많아요. 빵 만드는 데 써요.',
         keywords: ['강력분', '단백질', '글루텐'],
+        translations: {
+            vi: {
+                question: `Phạm vi hàm lượng protein của bột mì mạnh (강력분) là bao nhiêu?`,
+                options: [`7% trở xuống`, `7~9%`, `9~11%`, `11% trở lên`],
+                explanation: `Bột mì mạnh có hàm lượng protein từ 11% trở lên, tạo gluten mạnh, dùng làm bánh mì sandwich, đế pizza, v.v.`,
+            },
+            zh: {
+                question: `高筋面粉的蛋白质含量范围是多少？`,
+                options: [`7%以下`, `7~9%`, `9~11%`, `11%以上`],
+                explanation: `高筋面粉蛋白质含量在11%以上，面筋形成强，用于制作吐司、披萨饼底等。`,
+            },
+            th: {
+                question: `ปริมาณโปรตีนของแป้งสาลีแข็ง (강력분) อยู่ในช่วงใด?`,
+                options: [`7% หรือต่ำกว่า`, `7~9%`, `9~11%`, `11% ขึ้นไป`],
+                explanation: `แป้งสาลีแข็งมีโปรตีน 11% ขึ้นไป ทำให้เกิดกลูเตนมาก ใช้ทำขนมปัง พิซซ่า เป็นต้น`,
+            },
+            tl: {
+                question: `Ano ang tamang hanay ng protina ng bread flour (강력분)?`,
+                options: [`7% pababa`, `7~9%`, `9~11%`, `11% pataas`],
+                explanation: `Ang bread flour ay may protina na 11% pataas, lumilikha ng malakas na gluten, ginagamit para sa tinapay at pizza dough.`,
+            },
+            my: {
+                question: `မာသောဂျုံမှုန့် (강력분) ၏ ပရိုတင်းပမာဏ အပိုင်းအခြားမှာ မည်မျှနည်း?`,
+                options: [`7% နှင့်အောက်`, `7~9%`, `9~11%`, `11% နှင့်အထက်`],
+                explanation: `မာသောဂျုံမှုန့်သည် ပရိုတင်းဓာတ် 11% နှင့်အထက်ရှိပြီး ဂလူတင်များများဖြစ်ပေါ်စေကာ အပေါင်းမုန့်နှင့် ပီဇာဒိုတို့ပြုလုပ်ရာတွင် အသုံးပြုသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `강력분`, native: `bột mì mạnh` },
+                { korean: `단백질`, native: `protein` },
+                { korean: `함량`, native: `hàm lượng / tỷ lệ` },
+                { korean: `범위`, native: `phạm vi` },
+                { korean: `이상`, native: `trở lên` },
+            ],
+            zh: [
+                { korean: `강력분`, native: `高筋面粉` },
+                { korean: `단백질`, native: `蛋白质` },
+                { korean: `함량`, native: `含量` },
+                { korean: `범위`, native: `范围` },
+                { korean: `이상`, native: `以上` },
+            ],
+            th: [
+                { korean: `강력분`, native: `แป้งสาลีแข็ง` },
+                { korean: `단백질`, native: `โปรตีน` },
+                { korean: `함량`, native: `ปริมาณ` },
+                { korean: `범위`, native: `ช่วง` },
+            ],
+            tl: [
+                { korean: `강력분`, native: `bread flour` },
+                { korean: `단백질`, native: `protina` },
+                { korean: `함량`, native: `nilalaman` },
+                { korean: `범위`, native: `saklaw` },
+            ],
+            my: [
+                { korean: `강력분`, native: `မာသောဂျုံမှုန့်` },
+                { korean: `단백질`, native: `ပရိုတင်း` },
+                { korean: `함량`, native: `ပါဝင်မှုပမာဏ` },
+                { korean: `범위`, native: `အပိုင်းအခြား` },
+            ],
+        },
     },
     {
         id: 'ps-03',
@@ -36,6 +158,67 @@ export const pastryQuestions = [
         explanation: '버터와 마가린 모두 가소성 유지로 반죽에 유연성을 주며, 제과에 널리 사용됩니다. 버터는 동물성, 마가린은 식물성 유지를 원료로 합니다.',
         simpleExplanation: '버터와 마가린 모두 반죽을 부드럽게 하는 가소성 유지예요.',
         keywords: ['버터', '마가린', '가소성', '유지'],
+        translations: {
+            vi: {
+                question: `Điểm chung đúng giữa bơ (버터) và bơ thực vật (마가린) là gì?`,
+                options: [`Nguyên liệu là chất béo động vật`, `Là chất béo dẻo có chứa chất nhũ hóa`, `Không có chất béo trans`, `Hàm lượng cholesterol như nhau`],
+                explanation: `Cả bơ và bơ thực vật đều là chất béo dẻo, giúp tạo độ mềm mại cho bột nhào và được dùng rộng rãi trong làm bánh. Bơ từ nguyên liệu động vật, bơ thực vật từ nguyên liệu thực vật.`,
+            },
+            zh: {
+                question: `关于黄油（버터）和人造黄油（마가린）的共同点，以下哪项正确？`,
+                options: [`原料均为动物性油脂`, `均为含乳化剂的可塑性油脂`, `均不含反式脂肪`, `胆固醇含量相同`],
+                explanation: `黄油和人造黄油都是可塑性油脂，能增加面团的柔韧性，广泛用于烘焙。黄油以动物性油脂为原料，人造黄油以植物性油脂为原料。`,
+            },
+            th: {
+                question: `ข้อใดเป็นจุดร่วมที่ถูกต้องระหว่างเนย (버터) และมาร์การีน (마가린)?`,
+                options: [`วัตถุดิบเป็นไขมันจากสัตว์`, `เป็นไขมันที่มีความยืดหยุ่นและมีอิมัลซิไฟเออร์`, `ไม่มีไขมันทรานส์`, `มีปริมาณคอเลสเตอรอลเท่ากัน`],
+                explanation: `เนยและมาร์การีนต่างเป็นไขมันที่มีความยืดหยุ่น ช่วยให้แป้งนุ่ม ใช้กันอย่างแพร่หลายในการทำขนม เนยมาจากไขมันสัตว์ ส่วนมาร์การีนมาจากพืช`,
+            },
+            tl: {
+                question: `Ano ang tamang pagkakatulad ng butter (버터) at margarine (마가린)?`,
+                options: [`Ang hilaw na materyales ay taba ng hayop`, `Parehong plastik na taba na may emulsifier`, `Wala silang trans fat`, `Parehong dami ng cholesterol`],
+                explanation: `Ang butter at margarine ay parehong plastic fat na nagbibigay ng lambot sa masa at malawakang ginagamit sa pagluluto ng pastry. Ang butter ay gawa sa taba ng hayop, ang margarine ay gawa sa taba ng halaman.`,
+            },
+            my: {
+                question: `ထောပတ် (버터) နှင့် မာဂျရင်း (마가린) ၏ ဘုံသဘောတူညီချက်မှာ မည်သည်နည်း?`,
+                options: [`အကြမ်းဝတ်ပစ္စည်းသည် တိရစ္ဆာန်ဆီဖြစ်သည်`, `အီမာဆီဖိုင်ယာပါဝင်သော ပလပ်စတစ်ဆီဖြစ်သည်`, `ထရန်းချပ်ဆီမပါ`, `ကိုလက်စထရောပမာဏ တူညီသည်`],
+                explanation: `ထောပတ်နှင့် မာဂျရင်းနှစ်ခုလုံးသည် ပလပ်စတစ်ဆီဖြစ်ပြီး မုန့်ပျော်ကို နူးညံ့စေကာ မုန့်ပြုလုပ်ရာတွင် တွင်ကျယ်စွာအသုံးပြုသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `버터`, native: `bơ` },
+                { korean: `마가린`, native: `bơ thực vật / margarine` },
+                { korean: `가소성`, native: `tính dẻo / plasticity` },
+                { korean: `유지`, native: `chất béo` },
+                { korean: `유화제`, native: `chất nhũ hóa` },
+            ],
+            zh: [
+                { korean: `버터`, native: `黄油` },
+                { korean: `마가린`, native: `人造黄油` },
+                { korean: `가소성`, native: `可塑性` },
+                { korean: `유지`, native: `油脂` },
+                { korean: `유화제`, native: `乳化剂` },
+            ],
+            th: [
+                { korean: `버터`, native: `เนย` },
+                { korean: `마가린`, native: `มาร์การีน` },
+                { korean: `가소성`, native: `ความยืดหยุ่น` },
+                { korean: `유지`, native: `ไขมัน` },
+            ],
+            tl: [
+                { korean: `버터`, native: `butter` },
+                { korean: `마가린`, native: `margarine` },
+                { korean: `가소성`, native: `pagkamayumo` },
+                { korean: `유지`, native: `taba` },
+            ],
+            my: [
+                { korean: `버터`, native: `ထောပတ်` },
+                { korean: `마가린`, native: `မာဂျရင်း` },
+                { korean: `가소성`, native: `ပလပ်စတစ်သဘောမျိုး` },
+                { korean: `유지`, native: `ဆီ/ဖတ်` },
+            ],
+        },
     },
     {
         id: 'ps-04',
@@ -48,6 +231,67 @@ export const pastryQuestions = [
         explanation: '쇼트닝은 글루텐 실을 끊어 제품을 바삭하고 부서지기 쉽게 하는 쇼트닝성(shortening power)을 가집니다.',
         simpleExplanation: '쇼트닝은 과자를 바삭바삭하게 해줘요.',
         keywords: ['쇼트닝', '쇼트닝성', '바삭함', '유지'],
+        translations: {
+            vi: {
+                question: `Chức năng chính phù hợp nhất của shortening (쇼트닝) là gì?`,
+                options: [`Tạo màu nâu cho bột nhào`, `Thúc đẩy hình thành gluten`, `Làm cho sản phẩm giòn và dễ vỡ`, `Tăng tốc quá trình lên men`],
+                explanation: `Shortening có tính chất cắt đứt sợi gluten (shortening power), làm cho sản phẩm giòn và dễ vỡ.`,
+            },
+            zh: {
+                question: `起酥油（쇼트닝）的主要功能是什么？`,
+                options: [`使面团变成棕色`, `促进面筋形成`, `使产品酥脆易碎`, `加速发酵`],
+                explanation: `起酥油能切断面筋，使产品酥脆易碎，具有起酥性（shortening power）。`,
+            },
+            th: {
+                question: `หน้าที่หลักของชอร์ตเทนนิ่ง (쇼트닝) ที่เหมาะสมที่สุดคืออะไร?`,
+                options: [`ทำให้แป้งเป็นสีน้ำตาล`, `ส่งเสริมการก่อตัวของกลูเตน`, `ทำให้ผลิตภัณฑ์กรอบและแตกง่าย`, `เร่งการหมัก`],
+                explanation: `ชอร์ตเทนนิ่งตัดสายกลูเตนทำให้ผลิตภัณฑ์กรอบและแตกง่าย มีคุณสมบัติที่เรียกว่า shortening power`,
+            },
+            tl: {
+                question: `Ano ang pangunahing tungkulin ng shortening (쇼트닝)?`,
+                options: [`Nagbibigay ng kulay kayumanggi sa masa`, `Nagtataguyod ng pagbuo ng gluten`, `Ginagawang malutong at madaling madurog ang produkto`, `Nagpapabilis ng pagbuburo`],
+                explanation: `Ang shortening ay pumutol ng gluten strands upang gawing malutong at madaling madurog ang produkto, tinatawag itong shortening power.`,
+            },
+            my: {
+                question: `ရှော့တနင်း (쇼트닝) ၏ အဓိကလုပ်ဆောင်ချက်မှာ မည်သည်နည်း?`,
+                options: [`မုန့်ပျော်ကို အညိုရောင်ဖြစ်စေသည်`, `ဂလူတင်ဖြစ်ပေါ်မှုကို မြှင့်တင်သည်`, `ထုတ်ကုန်ကို ကြွပ်ဆတ်ပြီး ကွဲပဲသည်`, `ချဉ်ခြင်းကို မြန်ဆန်စေသည်`],
+                explanation: `ရှော့တနင်းသည် ဂလူတင်ကို ဖြတ်ပြီး ထုတ်ကုန်ကို ကြွပ်ဆတ်ကွဲပဲစေသော သဘောရှိသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `쇼트닝`, native: `shortening` },
+                { korean: `글루텐`, native: `gluten` },
+                { korean: `바삭`, native: `giòn` },
+                { korean: `반죽`, native: `bột nhào` },
+                { korean: `발효`, native: `lên men` },
+            ],
+            zh: [
+                { korean: `쇼트닝`, native: `起酥油` },
+                { korean: `글루텐`, native: `面筋` },
+                { korean: `바삭`, native: `酥脆` },
+                { korean: `반죽`, native: `面团` },
+                { korean: `발효`, native: `发酵` },
+            ],
+            th: [
+                { korean: `쇼트닝`, native: `ชอร์ตเทนนิ่ง` },
+                { korean: `글루텐`, native: `กลูเตน` },
+                { korean: `바삭`, native: `กรอบ` },
+                { korean: `반죽`, native: `แป้งนวด` },
+            ],
+            tl: [
+                { korean: `쇼트닝`, native: `shortening` },
+                { korean: `글루텐`, native: `gluten` },
+                { korean: `바삭`, native: `malutong` },
+                { korean: `반죽`, native: `masa` },
+            ],
+            my: [
+                { korean: `쇼트닝`, native: `ရှော့တနင်း` },
+                { korean: `글루텐`, native: `ဂလူတင်` },
+                { korean: `바삭`, native: `ကြွပ်ဆတ်` },
+                { korean: `반죽`, native: `မုန့်ပျော်` },
+            ],
+        },
     },
     {
         id: 'ps-05',
@@ -60,6 +304,67 @@ export const pastryQuestions = [
         explanation: '설탕은 단맛, 수분 보유력, 보존성, 갈변 반응, 발효 촉진 등의 역할을 하지만 글루텐을 강화하지는 않습니다.',
         simpleExplanation: '설탕은 단맛과 보존에 도움이 되지만 글루텐을 강하게 만들지는 않아요.',
         keywords: ['설탕', '자당', '보존성', '글루텐'],
+        translations: {
+            vi: {
+                question: `Chức năng nào KHÔNG phải của đường (설탕/자당) trong làm bánh?`,
+                options: [`Tạo vị ngọt`, `Giữ ẩm để bánh촉촉`, `Tăng khả năng bảo quản`, `Tăng cường gluten`],
+                explanation: `Đường có vai trò tạo vị ngọt, giữ ẩm, bảo quản, phản ứng caramel hóa và thúc đẩy lên men — nhưng KHÔNG tăng cường gluten.`,
+            },
+            zh: {
+                question: `砂糖（설탕/자당）在烘焙中不具有哪种作用？`,
+                options: [`赋予甜味`, `保持水分保湿`, `提高保存性`, `强化面筋`],
+                explanation: `砂糖有赋予甜味、保水、保存、褐变反应、促进发酵等作用，但不具有强化面筋的功能。`,
+            },
+            th: {
+                question: `น้ำตาล (설탕/자당) ไม่ได้ทำหน้าที่ใดในการทำขนม?`,
+                options: [`ให้รสหวาน`, `กักเก็บความชื้น`, `เพิ่มความสามารถในการเก็บรักษา`, `เสริมความแข็งแรงของกลูเตน`],
+                explanation: `น้ำตาลมีบทบาทในการให้รสหวาน กักเก็บความชื้น เพิ่มการเก็บรักษา ปฏิกิริยาสีน้ำตาล และส่งเสริมการหมัก แต่ไม่ได้เสริมกลูเตน`,
+            },
+            tl: {
+                question: `Alin ang HINDI ginagawa ng asukal (설탕/자당) sa pagluluto ng pastry?`,
+                options: [`Nagbibigay ng tamis`, `Nagpapanatili ng kahalumigmigan`, `Nagpapabuti ng pag-iingat`, `Nagpapatibay ng gluten`],
+                explanation: `Ang asukal ay nagbibigay ng tamis, nagpapanatili ng kahalumigmigan, nagpapabuti ng pag-iingat at nagtataguyod ng pagbuburo — ngunit HINDI nagpapatibay ng gluten.`,
+            },
+            my: {
+                question: `သကြား (설탕/자당) သည် မုန့်ပြုလုပ်ရာတွင် မည်သည့်အခန်းကဏ္ဍမပြုဆောင်ဆောင်ရွက်ဘူးနည်း?`,
+                options: [`ချိုမြိန်မှုပေးသည်`, `အစိုဓာတ်ထိန်းသည်`, `သိုလှောင်မှုကောင်းစေသည်`, `ဂလူတင်ကို အားကောင်းစေသည်`],
+                explanation: `သကြားသည် ချိုမြိန်မှု၊ အစိုဓာတ်ထိန်းခြင်း၊ သိုလှောင်မှုမြင့်တင်ခြင်း၊ ညိုမြဲမြဲပြောင်းလဲမှု၊ ချဉ်ခြင်းမြင့်တင်ခြင်း တို့ပြုလုပ်သော်လည်း ဂလူတင်ကိုသော် မအားကောင်းစေပါ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `설탕`, native: `đường` },
+                { korean: `자당`, native: `sucrose` },
+                { korean: `보존성`, native: `khả năng bảo quản` },
+                { korean: `글루텐`, native: `gluten` },
+                { korean: `수분`, native: `độ ẩm` },
+            ],
+            zh: [
+                { korean: `설탕`, native: `砂糖` },
+                { korean: `자당`, native: `蔗糖` },
+                { korean: `보존성`, native: `保存性` },
+                { korean: `글루텐`, native: `面筋` },
+                { korean: `수분`, native: `水分` },
+            ],
+            th: [
+                { korean: `설탕`, native: `น้ำตาล` },
+                { korean: `보존성`, native: `การเก็บรักษา` },
+                { korean: `글루텐`, native: `กลูเตน` },
+                { korean: `수분`, native: `ความชื้น` },
+            ],
+            tl: [
+                { korean: `설탕`, native: `asukal` },
+                { korean: `보존성`, native: `pag-iingat` },
+                { korean: `글루텐`, native: `gluten` },
+                { korean: `수분`, native: `kahalumigmigan` },
+            ],
+            my: [
+                { korean: `설탕`, native: `သကြား` },
+                { korean: `보존성`, native: `သိုလှောင်မှု` },
+                { korean: `글루텐`, native: `ဂလူတင်` },
+                { korean: `수분`, native: `အစိုဓာတ်` },
+            ],
+        },
     },
     {
         id: 'ps-06',
@@ -72,6 +377,67 @@ export const pastryQuestions = [
         explanation: '전화당(트리몰린)은 포도당과 과당의 혼합물로 설탕보다 단맛이 강하고 흡습성이 높아 제품의 보습성을 높입니다.',
         simpleExplanation: '전화당은 습기를 잘 흡수해서 과자가 촉촉하게 오래 유지돼요.',
         keywords: ['전화당', '트리몰린', '흡습성', '보습'],
+        translations: {
+            vi: {
+                question: `Đặc tính đúng của đường invert (전화당/트리몰린) là gì?`,
+                options: [`Không hút ẩm, ngăn khô`, `Ngọt hơn đường`, `Hút ẩm cao, giữ sản phẩm촉촉`, `Ức chế lên men của men nở`],
+                explanation: `Đường invert (trimoline) là hỗn hợp glucose và fructose, ngọt hơn đường và có tính hút ẩm cao, giúp sản phẩm ẩm hơn.`,
+            },
+            zh: {
+                question: `关于转化糖（전화당/트리몰린）的特性，以下哪项正确？`,
+                options: [`不吸收水分，防止干燥`, `甜度比砂糖弱`, `吸湿性高，保持产品湿润`, `抑制酵母发酵`],
+                explanation: `转化糖（trimoline）是葡萄糖和果糖的混合物，甜度比砂糖高，吸湿性强，能提高产品的保湿性。`,
+            },
+            th: {
+                question: `คุณสมบัติที่ถูกต้องของน้ำตาลอินเวิร์ต (전화당/트리몰린) คืออะไร?`,
+                options: [`ไม่ดูดซับความชื้น ป้องกันการแห้ง`, `หวานน้อยกว่าน้ำตาล`, `มีความดูดชื้นสูง รักษาความชื้น`, `ยับยั้งการหมักของยีสต์`],
+                explanation: `น้ำตาลอินเวิร์ต (trimoline) เป็นส่วนผสมของกลูโคสและฟรุกโตส มีความหวานมากกว่าน้ำตาลและดูดชื้นสูง ช่วยให้ผลิตภัณฑ์촉촉`,
+            },
+            tl: {
+                question: `Ano ang tamang katangian ng invert sugar (전화당/트리몰린)?`,
+                options: [`Hindi sumasipsip ng kahalumigmigan`, `Mas mababa ang tamis kaysa asukal`, `Mataas na hygroscopicity, nagpapanatiling basa ang produkto`, `Pinipigilan ang pagbuburo ng yeast`],
+                explanation: `Ang invert sugar (trimoline) ay halo ng glucose at fructose, mas matamis kaysa asukal at may mataas na hygroscopicity para panatilihing basa ang produkto.`,
+            },
+            my: {
+                question: `အင်ဗတ်သကြား (전화당/트리몰린) ၏ မှန်ကန်သောသဘောတူမှာ မည်သည်နည်း?`,
+                options: [`အစိုဓာတ်မစုပ်ယူ၊ ခြောက်ခြင်းကိုတားဆီးသည်`, `သကြားထက်ချိုမှုနည်းသည်`, `အစိုဓာတ်စုပ်ယူမှုမြင့်ပြီး ထုတ်ကုန်ကိုစိုစေသည်`, `တဆေးချဉ်ခြင်းကိုတားဆီးသည်`],
+                explanation: `အင်ဗတ်သကြားသည် ဂလူးကို့စ်နှင့် ဖရပ်တိုးစ်ရောစပ်ထားပြီး သကြားထက်ချိုပြီး အစိုဓာတ်ကောင်းစွာစုပ်ယူကာ ထုတ်ကုန်ကိုစိုစိုထိန်းသိမ်းသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `전화당`, native: `đường invert` },
+                { korean: `트리몰린`, native: `trimoline` },
+                { korean: `흡습성`, native: `tính hút ẩm / hygroscopic` },
+                { korean: `설탕`, native: `đường` },
+                { korean: `이스트`, native: `men nở` },
+            ],
+            zh: [
+                { korean: `전화당`, native: `转化糖` },
+                { korean: `트리몰린`, native: `trimoline` },
+                { korean: `흡습성`, native: `吸湿性` },
+                { korean: `설탕`, native: `砂糖` },
+                { korean: `이스트`, native: `酵母` },
+            ],
+            th: [
+                { korean: `전화당`, native: `น้ำตาลอินเวิร์ต` },
+                { korean: `흡습성`, native: `ความดูดชื้น` },
+                { korean: `설탕`, native: `น้ำตาล` },
+                { korean: `이스트`, native: `ยีสต์` },
+            ],
+            tl: [
+                { korean: `전화당`, native: `invert sugar` },
+                { korean: `흡습성`, native: `hygroscopicity` },
+                { korean: `설탕`, native: `asukal` },
+                { korean: `이스트`, native: `yeast` },
+            ],
+            my: [
+                { korean: `전화당`, native: `အင်ဗတ်သကြား` },
+                { korean: `흡습성`, native: `အစိုဓာတ်စုပ်ယူနိုင်မှု` },
+                { korean: `설탕`, native: `သကြား` },
+                { korean: `이스트`, native: `တဆေး` },
+            ],
+        },
     },
     {
         id: 'ps-07',
@@ -84,6 +450,67 @@ export const pastryQuestions = [
         explanation: '신선한 달걀은 흔들어도 소리가 나지 않습니다. 흔들었을 때 소리가 나면 내부 공기실이 커진 오래된 달걀입니다.',
         simpleExplanation: '신선한 달걀은 흔들어도 소리가 안 나요. 소리가 나면 오래된 거예요.',
         keywords: ['달걀', '신선도', '검사', '공기실'],
+        translations: {
+            vi: {
+                question: `Phương pháp kiểm tra độ tươi của trứng nào là KHÔNG đúng?`,
+                options: [`Nếu chìm xuống nước muối thì tươi`, `Nếu có tiếng khi lắc thì tươi`, `Nếu lòng đỏ nổi lên khi đập ra thì tươi`, `Nếu trong khi soi đèn thì tươi`],
+                explanation: `Trứng tươi không có tiếng khi lắc. Nếu lắc có tiếng nghĩa là buồng khí bên trong đã lớn, là trứng cũ.`,
+            },
+            zh: {
+                question: `关于鸡蛋新鲜度检测方法，以下哪项是错误的？`,
+                options: [`放入盐水中下沉说明新鲜`, `摇晃时有声音说明新鲜`, `打开后蛋黄隆起说明新鲜`, `透光看时内部清澈说明新鲜`],
+                explanation: `新鲜鸡蛋摇晃时没有声音。摇晃有声音说明内部气室已变大，是陈旧的鸡蛋。`,
+            },
+            th: {
+                question: `วิธีใดในการตรวจสอบความสดของไข่ที่ไม่ถูกต้อง?`,
+                options: [`จมน้ำเกลือแสดงว่าสด`, `มีเสียงเมื่อเขย่าแสดงว่าสด`, `ไข่แดงนูนเมื่อแตกแสดงว่าสด`, `ภายในใสเมื่อส่องไฟแสดงว่าสด`],
+                explanation: `ไข่สดจะไม่มีเสียงเมื่อเขย่า ถ้าเขย่าแล้วมีเสียงแสดงว่าช่องอากาศภายในใหญ่ขึ้น เป็นไข่เก่า`,
+            },
+            tl: {
+                question: `Alin ang HINDI tamang paraan ng pagsuri ng kasariwaan ng itlog?`,
+                options: [`Kung lumubog sa alat na tubig ay sariwa`, `Kung may tunog kapag inugoy ay sariwa`, `Kung nakataas ang pula kapag binasag ay sariwa`, `Kung malinaw ang loob kapag sinilaw ay sariwa`],
+                explanation: `Ang sariwang itlog ay walang tunog kapag inugoy. Kung may tunog, nangangahulugang lumaki na ang air cell sa loob, kaya malamang matanda na ang itlog.`,
+            },
+            my: {
+                question: `ဥ၏ သစ်ဆင်းမှုစစ်ဆေးနည်းနှင့် မမှန်ကန်သည့်နည်းလမ်းမှာ မည်သည်နည်း?`,
+                options: [`ဆားရေတွင် နစ်မြုပ်လျှင်သစ်ဆင်းသည်`, `ယောင်ချဲ့သောအခါ အသံကြားလျှင်သစ်ဆင်းသည်`, `ကွဲသောအခါ ဥအနှစ်ကောင်းမြင့်နေလျှင်သစ်ဆင်းသည်`, `မီးရောင်ဖြင့်ကြည့်သောအခါ အတွင်းကြည်လင်လျှင်သစ်ဆင်းသည်`],
+                explanation: `သစ်ဆင်းသောဥသည် ယောင်ချဲ့သော်လည်းအသံမကြားပါ။ အသံကြားလျှင်အတွင်းလေကွက်ကြီးပြီး ဟောင်းသောဥဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `달걀`, native: `trứng` },
+                { korean: `신선도`, native: `độ tươi` },
+                { korean: `검사`, native: `kiểm tra` },
+                { korean: `노른자`, native: `lòng đỏ trứng` },
+                { korean: `소금물`, native: `nước muối` },
+            ],
+            zh: [
+                { korean: `달걀`, native: `鸡蛋` },
+                { korean: `신선도`, native: `新鲜度` },
+                { korean: `검사`, native: `检测` },
+                { korean: `노른자`, native: `蛋黄` },
+                { korean: `소금물`, native: `盐水` },
+            ],
+            th: [
+                { korean: `달걀`, native: `ไข่` },
+                { korean: `신선도`, native: `ความสด` },
+                { korean: `노른자`, native: `ไข่แดง` },
+                { korean: `소금물`, native: `น้ำเกลือ` },
+            ],
+            tl: [
+                { korean: `달걀`, native: `itlog` },
+                { korean: `신선도`, native: `kasariwaan` },
+                { korean: `노른자`, native: `pula ng itlog` },
+                { korean: `소금물`, native: `alat na tubig` },
+            ],
+            my: [
+                { korean: `달걀`, native: `ဥ` },
+                { korean: `신선도`, native: `သစ်ဆင်းမှု` },
+                { korean: `노른자`, native: `ဥအနှစ်` },
+                { korean: `소금물`, native: `ဆားရေ` },
+            ],
+        },
     },
     {
         id: 'ps-08',
@@ -96,6 +523,67 @@ export const pastryQuestions = [
         explanation: '달걀 흰자의 거품 형성에는 온도(실온이 최적), 노른자 혼입(지방이 거품을 방해), 설탕 첨가량(안정성 향상)이 영향을 미칩니다. 노른자의 색상은 영향을 주지 않습니다.',
         simpleExplanation: '흰자 거품은 온도, 노른자 섞임, 설탕 양에 영향 받아요. 색깔은 관계없어요.',
         keywords: ['달걀', '흰자', '거품', '머랭'],
+        translations: {
+            vi: {
+                question: `Yếu tố nào KHÔNG ảnh hưởng đến sự hình thành bọt của lòng trắng trứng?`,
+                options: [`Nhiệt độ`, `Có lẫn lòng đỏ hay không`, `Lượng đường thêm vào`, `Màu sắc của lòng đỏ`],
+                explanation: `Sự hình thành bọt lòng trắng trứng bị ảnh hưởng bởi nhiệt độ (nhiệt độ phòng là tốt nhất), lẫn lòng đỏ (chất béo cản trở bọt) và lượng đường (tăng độ ổn định). Màu sắc của lòng đỏ không ảnh hưởng.`,
+            },
+            zh: {
+                question: `哪项因素不会影响蛋清泡沫的形成？`,
+                options: [`温度`, `是否混入蛋黄`, `糖的添加量`, `蛋黄的颜色`],
+                explanation: `蛋清泡沫受温度（室温最佳）、蛋黄混入（油脂妨碍起泡）、糖的添加量（提高稳定性）的影响。蛋黄颜色不影响泡沫形成。`,
+            },
+            th: {
+                question: `ปัจจัยใดไม่ส่งผลต่อการเกิดฟองของไข่ขาว?`,
+                options: [`อุณหภูมิ`, `การปนของไข่แดง`, `ปริมาณน้ำตาลที่เติม`, `สีของไข่แดง`],
+                explanation: `การเกิดฟองของไข่ขาวได้รับผลจากอุณหภูมิ การปนของไข่แดง และปริมาณน้ำตาล แต่สีของไข่แดงไม่มีผล`,
+            },
+            tl: {
+                question: `Alin ang HINDI nakakaapekto sa pagbuo ng bula ng puti ng itlog?`,
+                options: [`Temperatura`, `Paghahaluin ng pula`, `Dami ng asukal`, `Kulay ng pula ng itlog`],
+                explanation: `Ang pagbuo ng bula ng puti ng itlog ay naaapektuhan ng temperatura, paghahaluin ng pula, at dami ng asukal. Ang kulay ng pula ay hindi nakakaapekto.`,
+            },
+            my: {
+                question: `ဥအဖြူ၏ ပွတ်ဖြစ်ပေါ်မှုကို မထိခိုက်သောအချက်မှာ မည်သည်နည်း?`,
+                options: [`အပူချိန်`, `ဥအနှစ်ရောပြောင်းမှု`, `သကြားထည့်ပမာဏ`, `ဥအနှစ်၏ အရောင်`],
+                explanation: `ဥအဖြူပွတ်ဖြစ်ပေါ်မှုကို အပူချိန်၊ ဥအနှစ်ရောပြောင်းမှုနှင့် သကြားပမာဏတို့က သက်ရောက်သော်လည်း ဥအနှစ်၏ အရောင်သည် မသက်ရောက်ပါ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `달걀`, native: `trứng` },
+                { korean: `흰자`, native: `lòng trắng trứng` },
+                { korean: `거품`, native: `bọt` },
+                { korean: `노른자`, native: `lòng đỏ trứng` },
+                { korean: `설탕`, native: `đường` },
+            ],
+            zh: [
+                { korean: `달걀`, native: `鸡蛋` },
+                { korean: `흰자`, native: `蛋清` },
+                { korean: `거품`, native: `泡沫` },
+                { korean: `노른자`, native: `蛋黄` },
+                { korean: `설탕`, native: `糖` },
+            ],
+            th: [
+                { korean: `달걀`, native: `ไข่` },
+                { korean: `흰자`, native: `ไข่ขาว` },
+                { korean: `거품`, native: `ฟอง` },
+                { korean: `노른자`, native: `ไข่แดง` },
+            ],
+            tl: [
+                { korean: `달걀`, native: `itlog` },
+                { korean: `흰자`, native: `puti ng itlog` },
+                { korean: `거품`, native: `bula` },
+                { korean: `노른자`, native: `pula ng itlog` },
+            ],
+            my: [
+                { korean: `달걀`, native: `ဥ` },
+                { korean: `흰자`, native: `ဥအဖြူ` },
+                { korean: `거품`, native: `ပွတ်` },
+                { korean: `노른자`, native: `ဥအနှစ်` },
+            ],
+        },
     },
     {
         id: 'ps-09',
@@ -108,6 +596,67 @@ export const pastryQuestions = [
         explanation: '베이킹파우더는 중탄산나트륨이 산성 물질과 반응하여 이산화탄소(CO₂)를 발생시켜 제품을 팽창시킵니다.',
         simpleExplanation: '베이킹파우더는 이산화탄소를 만들어 반죽을 부풀려요.',
         keywords: ['베이킹파우더', '이산화탄소', '팽창제', 'CO2'],
+        translations: {
+            vi: {
+                question: `Khí nở chính của bột nở (베이킹파우더) là gì?`,
+                options: [`Oxy`, `Nitơ`, `Cacbon dioxide`, `Hydro`],
+                explanation: `Bột nở có natri bicarbonate phản ứng với chất acid tạo ra khí cacbon dioxide (CO₂) làm nở sản phẩm.`,
+            },
+            zh: {
+                question: `泡打粉（베이킹파우더）的主要膨胀气体是什么？`,
+                options: [`氧气`, `氮气`, `二氧化碳`, `氢气`],
+                explanation: `泡打粉中的碳酸氢钠与酸性物质反应，产生二氧化碳（CO₂），使产品膨胀。`,
+            },
+            th: {
+                question: `แก๊สขยายตัวหลักของผงฟู (베이킹파우더) คืออะไร?`,
+                options: [`ออกซิเจน`, `ไนโตรเจน`, `คาร์บอนไดออกไซด์`, `ไฮโดรเจน`],
+                explanation: `ผงฟูมีโซเดียมไบคาร์บอเนตทำปฏิกิริยากับกรด ทำให้เกิดคาร์บอนไดออกไซด์ (CO₂) ที่ทำให้ผลิตภัณฑ์ขยายตัว`,
+            },
+            tl: {
+                question: `Ano ang pangunahing gas ng baking powder (베이킹파우더)?`,
+                options: [`Oxygen`, `Nitrogen`, `Carbon dioxide`, `Hydrogen`],
+                explanation: `Ang baking powder ay may sodium bicarbonate na nagre-react sa acid upang maglabas ng carbon dioxide (CO₂) na nagpapalaki ng produkto.`,
+            },
+            my: {
+                question: `ဘေကင်းပေါင်ဒါ (베이킹파우더) ၏ အဓိကဖောင်းပွမှုဂတ်စ်မှာ မည်သည်နည်း?`,
+                options: [`အောက်ဆီဂျင်`, `နိုက်ထရိုဂျင်`, `ကာဗွန်ဒိုင်အောက်ဆိုဒ်`, `ဟိုက်ဒရိုဂျင်`],
+                explanation: `ဘေကင်းပေါင်ဒါသည် ဆိုဒီယမ်ဘိုင်ကာဘိုနိတ်ကို အက်ဆစ်နှင့်တုံ့ပြန်ကာ ကာဗွန်ဒိုင်အောက်ဆိုဒ် (CO₂) ကိုထုတ်ပေးပြီး ထုတ်ကုန်ကိုဖောင်းပွစေသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `베이킹파우더`, native: `bột nở` },
+                { korean: `이산화탄소`, native: `cacbon dioxide / CO₂` },
+                { korean: `팽창`, native: `nở / phồng` },
+                { korean: `산소`, native: `oxy` },
+                { korean: `질소`, native: `nitơ` },
+            ],
+            zh: [
+                { korean: `베이킹파우더`, native: `泡打粉` },
+                { korean: `이산화탄소`, native: `二氧化碳` },
+                { korean: `팽창`, native: `膨胀` },
+                { korean: `산소`, native: `氧气` },
+                { korean: `질소`, native: `氮气` },
+            ],
+            th: [
+                { korean: `베이킹파우더`, native: `ผงฟู` },
+                { korean: `이산화탄소`, native: `คาร์บอนไดออกไซด์` },
+                { korean: `팽창`, native: `การขยายตัว` },
+                { korean: `산소`, native: `ออกซิเจน` },
+            ],
+            tl: [
+                { korean: `베이킹파우더`, native: `baking powder` },
+                { korean: `이산화탄소`, native: `carbon dioxide` },
+                { korean: `팽창`, native: `paglaki / expansion` },
+                { korean: `산소`, native: `oxygen` },
+            ],
+            my: [
+                { korean: `베이킹파우더`, native: `ဘေကင်းပေါင်ဒါ` },
+                { korean: `이산화탄소`, native: `ကာဗွန်ဒိုင်အောက်ဆိုဒ်` },
+                { korean: `팽창`, native: `ဖောင်းပွမှု` },
+                { korean: `산소`, native: `အောက်ဆီဂျင်` },
+            ],
+        },
     },
     {
         id: 'ps-10',
@@ -120,6 +669,67 @@ export const pastryQuestions = [
         explanation: '베이킹소다(중탄산나트륨)만 사용하면 반응 후 탄산나트륨이 남아 쓴맛과 노란 변색이 생길 수 있습니다.',
         simpleExplanation: '베이킹소다만 쓰면 쓴맛이 나고 노란색이 될 수 있어요.',
         keywords: ['베이킹소다', '중탄산나트륨', '쓴맛', '변색'],
+        translations: {
+            vi: {
+                question: `Vấn đề nào có thể xảy ra khi chỉ dùng baking soda (베이킹소다/중탄산나트륨)?`,
+                options: [`Sản phẩm không nở`, `Sản phẩm có thể bị đắng và ngả vàng`, `Sản phẩm quá cứng`, `Mất nhiều thời gian nướng hơn`],
+                explanation: `Khi chỉ dùng baking soda, sau phản ứng còn lại natri carbonate gây vị đắng và làm sản phẩm bị vàng.`,
+            },
+            zh: {
+                question: `只使用小苏打（베이킹소다/중탄산나트륨）时，产品可能出现什么问题？`,
+                options: [`产品不会膨胀`, `产品可能产生苦味并泛黄`, `产品过于坚硬`, `烘烤时间延长`],
+                explanation: `只使用小苏打时，反应后残留碳酸钠，可能产生苦味并出现黄色变色。`,
+            },
+            th: {
+                question: `ปัญหาใดที่อาจเกิดขึ้นเมื่อใช้แค่เบกกิ้งโซดา (베이킹소다/중탄산나트륨)?`,
+                options: [`ผลิตภัณฑ์ไม่ฟู`, `ผลิตภัณฑ์อาจมีรสขมและเป็นสีเหลือง`, `ผลิตภัณฑ์แข็งเกินไป`, `ใช้เวลาอบนานขึ้น`],
+                explanation: `เมื่อใช้แค่เบกกิ้งโซดา หลังจากทำปฏิกิริยาจะเหลือโซเดียมคาร์บอเนต ทำให้เกิดรสขมและสีเหลือง`,
+            },
+            tl: {
+                question: `Anong problema ang maaaring lumabas kapag baking soda (베이킹소다) lang ang ginamit?`,
+                options: [`Hindi lalaki ang produkto`, `Maaaring magkaroon ng mapait na lasa at dilaw na kulay`, `Magiging masyadong matigas ang produkto`, `Mas matagal ang pagluluto`],
+                explanation: `Kapag baking soda lang ang ginamit, nananatili ang sodium carbonate pagkatapos ng reaksyon na nagdudulot ng mapait na lasa at pagdidilaw.`,
+            },
+            my: {
+                question: `ဘေကင်းဆိုဒါ (베이킹소다/중탄산나트륨) တစ်ခုတည်းသုံးလျှင် ဘာပြဿနာဖြစ်နိုင်သနည်း?`,
+                options: [`ထုတ်ကုန်မဖောင်းပွ`, `ထုတ်ကုန်ကဆတ်ကနဲကြမ်းတမ်းပြီး ဝါနိုင်သည်`, `ထုတ်ကုန်မာလွန်းသည်`, `ဖုတ်ချိန်ကြာသည်`],
+                explanation: `ဘေကင်းဆိုဒါတစ်ခုတည်းသုံးလျှင် တုံ့ပြန်မှုပြီးနောက် ဆိုဒီယမ်ကာဘိုနိတ်ကျန်ရှိပြီး ကြမ်းသောအရသာနှင့် ဝါရောင်ပြောင်းလဲမှုဖြစ်နိုင်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `베이킹소다`, native: `baking soda` },
+                { korean: `중탄산나트륨`, native: `natri bicarbonate` },
+                { korean: `쓴맛`, native: `vị đắng` },
+                { korean: `부풀`, native: `nở / phồng` },
+                { korean: `제품`, native: `sản phẩm` },
+            ],
+            zh: [
+                { korean: `베이킹소다`, native: `小苏打` },
+                { korean: `중탄산나트륨`, native: `碳酸氢钠` },
+                { korean: `쓴맛`, native: `苦味` },
+                { korean: `부풀`, native: `膨胀 / 发起` },
+                { korean: `제품`, native: `产品` },
+            ],
+            th: [
+                { korean: `베이킹소다`, native: `เบกกิ้งโซดา` },
+                { korean: `쓴맛`, native: `รสขม` },
+                { korean: `부풀`, native: `ฟู / พอง` },
+                { korean: `제품`, native: `ผลิตภัณฑ์` },
+            ],
+            tl: [
+                { korean: `베이킹소다`, native: `baking soda` },
+                { korean: `쓴맛`, native: `mapait` },
+                { korean: `부풀`, native: `lumaki / mag-rise` },
+                { korean: `제품`, native: `produkto` },
+            ],
+            my: [
+                { korean: `베이킹소다`, native: `ဘေကင်းဆိုဒါ` },
+                { korean: `쓴맛`, native: `ကြမ်းသောအရသာ` },
+                { korean: `부풀`, native: `ဖောင်းပွ` },
+                { korean: `제품`, native: `ထုတ်ကုန်` },
+            ],
+        },
     },
     {
         id: 'ps-11',
@@ -132,6 +742,67 @@ export const pastryQuestions = [
         explanation: '우유의 주요 탄수화물은 유당(락토스)으로, 갈변 반응에 관여하고 제과제빵에 사용됩니다.',
         simpleExplanation: '우유의 탄수화물은 "유당(락토스)"이에요.',
         keywords: ['우유', '유당', '락토스', '탄수화물'],
+        translations: {
+            vi: {
+                question: `Thành phần carbohydrate chủ yếu trong sữa là gì?`,
+                options: [`Glucose (포도당)`, `Fructose (과당)`, `Lactose (유당/락토스)`, `Maltose (맥아당)`],
+                explanation: `Carbohydrate chính trong sữa là lactose (유당), tham gia phản ứng caramel hóa và được dùng trong làm bánh.`,
+            },
+            zh: {
+                question: `牛奶中碳水化合物的主要成分是什么？`,
+                options: [`葡萄糖`, `果糖`, `乳糖（락토스）`, `麦芽糖`],
+                explanation: `牛奶中主要的碳水化合物是乳糖（lactose），参与褐变反应，广泛用于烘焙。`,
+            },
+            th: {
+                question: `คาร์โบไฮเดรตหลักในนมคืออะไร?`,
+                options: [`กลูโคส (포도당)`, `ฟรุกโตส (과당)`, `แลคโตส (유당/락토스)`, `มอลโทส (맥아당)`],
+                explanation: `คาร์โบไฮเดรตหลักในนมคือแลคโตส ซึ่งมีส่วนร่วมในปฏิกิริยาสีน้ำตาลและใช้ในการทำขนม`,
+            },
+            tl: {
+                question: `Ano ang pangunahing carbohydrate ng gatas?`,
+                options: [`Glucose (포도당)`, `Fructose (과당)`, `Lactose (유당/락토스)`, `Maltose (맥아당)`],
+                explanation: `Ang pangunahing carbohydrate ng gatas ay lactose, kasangkot sa browning reaction at ginagamit sa pagluluto ng pastry.`,
+            },
+            my: {
+                question: `နွားနို့တွင်ပါဝင်သော ကာဗိုဟိုက်ဒရိတ်၏ အဓိကဒြပ်ပေါင်းမှာ မည်သည်နည်း?`,
+                options: [`ဂလူးကို့စ် (포도당)`, `ဖရပ်တိုးစ် (과당)`, `လက်တိုစ် (유당/락토스)`, `မော်တိုစ် (맥아당)`],
+                explanation: `နွားနို့၏ အဓိကကာဗိုဟိုက်ဒရိတ်မှာ လက်တိုစ်ဖြစ်ပြီး ညိုမြဲမြဲပြောင်းလဲမှုနှင့်ဆက်နွှယ်ကာ မုန့်ပြုလုပ်မှုတွင်အသုံးပြုသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `우유`, native: `sữa` },
+                { korean: `유당`, native: `lactose / đường sữa` },
+                { korean: `탄수화물`, native: `carbohydrate` },
+                { korean: `포도당`, native: `glucose` },
+                { korean: `과당`, native: `fructose` },
+            ],
+            zh: [
+                { korean: `우유`, native: `牛奶` },
+                { korean: `유당`, native: `乳糖` },
+                { korean: `탄수화물`, native: `碳水化合物` },
+                { korean: `포도당`, native: `葡萄糖` },
+                { korean: `과당`, native: `果糖` },
+            ],
+            th: [
+                { korean: `우유`, native: `นม` },
+                { korean: `유당`, native: `แลคโตส` },
+                { korean: `탄수화물`, native: `คาร์โบไฮเดรต` },
+                { korean: `포도당`, native: `กลูโคส` },
+            ],
+            tl: [
+                { korean: `우유`, native: `gatas` },
+                { korean: `유당`, native: `lactose` },
+                { korean: `탄수화물`, native: `carbohydrate` },
+                { korean: `포도당`, native: `glucose` },
+            ],
+            my: [
+                { korean: `우유`, native: `နွားနို့` },
+                { korean: `유당`, native: `လက်တိုစ်` },
+                { korean: `탄수화물`, native: `ကာဗိုဟိုက်ဒရိတ်` },
+                { korean: `포도당`, native: `ဂလူးကို့စ်` },
+            ],
+        },
     },
     {
         id: 'ps-12',
@@ -144,6 +815,67 @@ export const pastryQuestions = [
         explanation: '생크림은 유지방 함량이 30% 이상이어야 휘핑이 가능하며, 35~40%가 제과에 많이 사용됩니다.',
         simpleExplanation: '생크림은 지방이 30% 이상 있어야 잘 휘핑돼요.',
         keywords: ['생크림', '휘핑크림', '지방', '유지방'],
+        translations: {
+            vi: {
+                question: `Tiêu chuẩn hàm lượng chất béo đúng của kem tươi (생크림/휘핑크림) là bao nhiêu?`,
+                options: [`Từ 10% trở lên`, `Từ 18% trở lên`, `Từ 30% trở lên`, `Từ 50% trở lên`],
+                explanation: `Kem tươi phải có hàm lượng chất béo từ sữa từ 30% trở lên mới có thể đánh bông. Trong làm bánh thường dùng loại 35~40%.`,
+            },
+            zh: {
+                question: `鲜奶油（생크림/휘핑크림）的脂肪含量标准是多少？`,
+                options: [`10%以上`, `18%以上`, `30%以上`, `50%以上`],
+                explanation: `鲜奶油的乳脂含量需达30%以上才能打发，烘焙中多使用35~40%的鲜奶油。`,
+            },
+            th: {
+                question: `มาตรฐานปริมาณไขมันของวิปปิ้งครีม (생크림/휘핑크림) คือเท่าไร?`,
+                options: [`10% ขึ้นไป`, `18% ขึ้นไป`, `30% ขึ้นไป`, `50% ขึ้นไป`],
+                explanation: `วิปปิ้งครีมต้องมีไขมันนม 30% ขึ้นไปจึงจะตีฟูได้ ในการทำขนมนิยมใช้ 35~40%`,
+            },
+            tl: {
+                question: `Ano ang tamang pamantayan ng taba ng fresh cream (생크림/휘핑크림)?`,
+                options: [`10% pataas`, `18% pataas`, `30% pataas`, `50% pataas`],
+                explanation: `Ang fresh cream ay kailangan ng 30% taba ng gatas pataas para mawhip. Sa pastry, karaniwang ginagamit ang 35~40%.`,
+            },
+            my: {
+                question: `ဖရက်ရှ်ကရင်မ် (생크림/휘핑크림) ၏ အဆီပမာဏစံချိန်မှာ မည်မျှနည်း?`,
+                options: [`10% နှင့်အထက်`, `18% နှင့်အထက်`, `30% နှင့်အထက်`, `50% နှင့်အထက်`],
+                explanation: `ဖရက်ရှ်ကရင်မ်သည် နွားနို့ဆီ 30% နှင့်အထက်ရှိမှ ဝှစ်ပ်နိုင်ပြီး မုန့်ပြုလုပ်ရာတွင် 35~40% ကိုများသောအားဖြင့်အသုံးပြုသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `생크림`, native: `kem tươi` },
+                { korean: `휘핑크림`, native: `whipping cream` },
+                { korean: `지방`, native: `chất béo` },
+                { korean: `함량`, native: `hàm lượng` },
+                { korean: `기준`, native: `tiêu chuẩn` },
+            ],
+            zh: [
+                { korean: `생크림`, native: `鲜奶油` },
+                { korean: `휘핑크림`, native: `打发奶油` },
+                { korean: `지방`, native: `脂肪` },
+                { korean: `함량`, native: `含量` },
+                { korean: `기준`, native: `标准` },
+            ],
+            th: [
+                { korean: `생크림`, native: `ครีมสด` },
+                { korean: `휘핑크림`, native: `วิปปิ้งครีม` },
+                { korean: `지방`, native: `ไขมัน` },
+                { korean: `함량`, native: `ปริมาณ` },
+            ],
+            tl: [
+                { korean: `생크림`, native: `fresh cream` },
+                { korean: `휘핑크림`, native: `whipping cream` },
+                { korean: `지방`, native: `taba` },
+                { korean: `함량`, native: `nilalaman` },
+            ],
+            my: [
+                { korean: `생크림`, native: `ဖရက်ရှ်ကရင်မ်` },
+                { korean: `지방`, native: `အဆီ` },
+                { korean: `함량`, native: `ပါဝင်မှုပမာဏ` },
+                { korean: `기준`, native: `စံချိန်` },
+            ],
+        },
     },
     {
         id: 'ps-13',
@@ -156,6 +888,67 @@ export const pastryQuestions = [
         explanation: '커버추어 초콜릿은 카카오버터 함량이 높아(31% 이상) 작업성이 좋고 코팅용으로 많이 사용됩니다.',
         simpleExplanation: '커버추어 초콜릿은 카카오버터가 많이 들어있어 잘 녹고 코팅하기 좋아요.',
         keywords: ['커버추어', '초콜릿', '카카오버터', '코팅'],
+        translations: {
+            vi: {
+                question: `Thành phần nhiều nhất trong couverture chocolate (커버추어 초콜릿) là gì?`,
+                options: [`Bơ cacao`, `Đường`, `Khối cacao`, `Sữa bột`],
+                explanation: `Couverture chocolate có hàm lượng bơ cacao cao (từ 31% trở lên), dễ làm việc và thường dùng để phủ (coating).`,
+            },
+            zh: {
+                question: `可可脂覆盖巧克力（커버추어 초콜릿）中含量最多的成分是什么？`,
+                options: [`可可脂`, `砂糖`, `可可液块`, `奶粉`],
+                explanation: `覆盖巧克力可可脂含量高（31%以上），操作性好，多用于涂层。`,
+            },
+            th: {
+                question: `ส่วนผสมที่มีมากที่สุดในคูเวอร์เจอร์ช็อกโกแลต (커버추어 초콜릿) คืออะไร?`,
+                options: [`เนยโกโก้`, `น้ำตาล`, `มวลโกโก้`, `นมผง`],
+                explanation: `คูเวอร์เจอร์ช็อกโกแลตมีเนยโกโก้สูง (31% ขึ้นไป) ทำให้ทำงานง่ายและนิยมใช้เป็นโค้ตติ้ง`,
+            },
+            tl: {
+                question: `Ano ang pinakamaraming sangkap sa couverture chocolate (커버추어 초콜릿)?`,
+                options: [`Cacao butter (카카오버터)`, `Asukal`, `Cacao mass (카카오매스)`, `Powdered milk`],
+                explanation: `Ang couverture chocolate ay may mataas na cacao butter content (31% pataas), madaling gamitin at madalas gamitin para sa coating.`,
+            },
+            my: {
+                question: `ကူဗာကြာ ချောကလတ် (커버추어 초콜릿) တွင် အများဆုံးပါဝင်သောဒြပ်ပေါင်းမှာ မည်သည်နည်း?`,
+                options: [`ကာကာအိုဆီ (카카오버터)`, `သကြား`, `ကာကာအိုမာစ် (카카오매스)`, `နွားနို့မှုန့်`],
+                explanation: `ကူဗာကြာချောကလတ်သည် ကာကာအိုဆီပမာဏမြင့်ပြီး (31% နှင့်အထက်) လုပ်ရလွယ်ကူကာ ကိုတင်ရာတွင်တွင်ကျယ်စွာအသုံးပြုသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `초콜릿`, native: `chocolate` },
+                { korean: `카카오버터`, native: `bơ cacao` },
+                { korean: `설탕`, native: `đường` },
+                { korean: `분유`, native: `sữa bột` },
+                { korean: `카카오매스`, native: `khối cacao` },
+            ],
+            zh: [
+                { korean: `초콜릿`, native: `巧克力` },
+                { korean: `카카오버터`, native: `可可脂` },
+                { korean: `설탕`, native: `砂糖` },
+                { korean: `분유`, native: `奶粉` },
+                { korean: `카카오매스`, native: `可可液块` },
+            ],
+            th: [
+                { korean: `초콜릿`, native: `ช็อกโกแลต` },
+                { korean: `카카오버터`, native: `เนยโกโก้` },
+                { korean: `설탕`, native: `น้ำตาล` },
+                { korean: `분유`, native: `นมผง` },
+            ],
+            tl: [
+                { korean: `초콜릿`, native: `chocolate` },
+                { korean: `카카오버터`, native: `cacao butter` },
+                { korean: `설탕`, native: `asukal` },
+                { korean: `분유`, native: `powdered milk` },
+            ],
+            my: [
+                { korean: `초콜릿`, native: `ချောကလတ်` },
+                { korean: `카카오버터`, native: `ကာကာအိုဆီ` },
+                { korean: `설탕`, native: `သကြား` },
+                { korean: `분유`, native: `နွားနို့မှုန့်` },
+            ],
+        },
     },
     {
         id: 'ps-14',
@@ -168,6 +961,67 @@ export const pastryQuestions = [
         explanation: '템퍼링은 카카오버터의 결정형을 안정적인 V형으로 만들어 광택 있고 잘 부러지는 초콜릿을 만들기 위한 온도 조절 과정입니다.',
         simpleExplanation: '템퍼링은 초콜릿이 반짝이고 딱 끊어지게 하는 온도 조절 과정이에요.',
         keywords: ['템퍼링', '초콜릿', '카카오버터', '결정'],
+        translations: {
+            vi: {
+                question: `Mục đích chính của tempering chocolate (템퍼링) là gì?`,
+                options: [`Để tăng độ ngọt của chocolate`, `Để ổn định tinh thể bơ cacao`, `Để làm màu chocolate đậm hơn`, `Để kéo dài thời hạn bảo quản`],
+                explanation: `Tempering là quá trình điều chỉnh nhiệt độ để tạo dạng tinh thể V ổn định của bơ cacao, giúp chocolate bóng và giòn đẹp.`,
+            },
+            zh: {
+                question: `巧克力调温（템퍼링）的主要目的是什么？`,
+                options: [`提高巧克力甜度`, `稳定可可脂的结晶`, `使巧克力颜色更深`, `延长保质期`],
+                explanation: `调温是通过温度调控，将可可脂结晶形态调整为稳定的V型，制作出有光泽、易折断的巧克力的过程。`,
+            },
+            th: {
+                question: `จุดประสงค์หลักของการเทมเปอริ่งช็อกโกแลต (템퍼링) คืออะไร?`,
+                options: [`เพื่อเพิ่มความหวานของช็อกโกแลต`, `เพื่อทำให้ผลึกเนยโกโก้มีเสถียรภาพ`, `เพื่อทำให้สีช็อกโกแลตเข้มขึ้น`, `เพื่อยืดอายุการเก็บรักษา`],
+                explanation: `การเทมเปอริ่งเป็นกระบวนการควบคุมอุณหภูมิเพื่อสร้างผลึกเนยโกโก้รูปแบบ V ที่เสถียร ทำให้ช็อกโกแลตมีความมันวาวและแตกง่าย`,
+            },
+            tl: {
+                question: `Ano ang pangunahing layunin ng tempering ng chocolate (템퍼링)?`,
+                options: [`Para pataasin ang tamis ng chocolate`, `Para palakasin ang kristal ng cacao butter`, `Para palalimin ang kulay ng chocolate`, `Para pahabain ang buhay ng produkto`],
+                explanation: `Ang tempering ay proseso ng pag-aayos ng temperatura upang gawing matatag ang V-form na kristal ng cacao butter, na gumagawa ng makintab at madaling mabasag na chocolate.`,
+            },
+            my: {
+                question: `ချောကလတ် တမ်ပါရင်း (템퍼링) ၏ အဓိကရည်ရွယ်ချက်မှာ မည်သည်နည်း?`,
+                options: [`ချောကလတ်၏ ချိုမှုမြင့်တင်ရန်`, `ကာကာအိုဆီ၏ ကြက်ရိုးကို တည်ငြိမ်စေရန်`, `ချောကလတ်အရောင်ရင့်စေရန်`, `သိုလှောင်ကာလတိုးမြင့်ရန်`],
+                explanation: `တမ်ပါရင်းသည် ကာကာအိုဆီ၏ ကြက်ရိုးပုံပြင်ကို တည်ငြိမ်သော V-form ဖြစ်ပေါ်စေကာ တောက်ပြောင်ပြီး ကြွပ်ဆတ်သောချောကလတ်ပြုလုပ်ရန် အပူချိန်ထိန်းသိမ်းသောလုပ်ငန်းစဉ်ဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `템퍼링`, native: `tempering` },
+                { korean: `초콜릿`, native: `chocolate` },
+                { korean: `카카오버터`, native: `bơ cacao` },
+                { korean: `결정`, native: `tinh thể` },
+                { korean: `보존기간`, native: `thời hạn bảo quản` },
+            ],
+            zh: [
+                { korean: `템퍼링`, native: `调温` },
+                { korean: `초콜릿`, native: `巧克力` },
+                { korean: `카카오버터`, native: `可可脂` },
+                { korean: `결정`, native: `结晶` },
+                { korean: `보존기간`, native: `保质期` },
+            ],
+            th: [
+                { korean: `템퍼링`, native: `เทมเปอริ่ง` },
+                { korean: `초콜릿`, native: `ช็อกโกแลต` },
+                { korean: `카카오버터`, native: `เนยโกโก้` },
+                { korean: `결정`, native: `ผลึก` },
+            ],
+            tl: [
+                { korean: `템퍼링`, native: `tempering` },
+                { korean: `초콜릿`, native: `chocolate` },
+                { korean: `카카오버터`, native: `cacao butter` },
+                { korean: `결정`, native: `kristal` },
+            ],
+            my: [
+                { korean: `템퍼링`, native: `တမ်ပါရင်း` },
+                { korean: `초콜릿`, native: `ချောကလတ်` },
+                { korean: `카카오버터`, native: `ကာကာအိုဆီ` },
+                { korean: `결정`, native: `ကြက်ရိုး` },
+            ],
+        },
     },
     {
         id: 'ps-15',
@@ -180,6 +1034,67 @@ export const pastryQuestions = [
         explanation: '물엿은 보습성, 결정화 방지, 광택 부여, 단맛 조절의 역할을 하지만 단백질을 강화하지는 않습니다.',
         simpleExplanation: '물엿은 촉촉함, 결정 방지, 광택에 도움이 돼요. 단백질을 강하게 하지는 않아요.',
         keywords: ['물엿', '보습', '결정화', '광택'],
+        translations: {
+            vi: {
+                question: `Vai trò nào KHÔNG phải của mạch nha (물엿) trong làm bánh?`,
+                options: [`Duy trì độ ẩm`, `Ngăn kết tinh`, `Tạo bóng`, `Tăng cường protein`],
+                explanation: `Mạch nha có vai trò duy trì độ ẩm, ngăn kết tinh, tạo bóng và điều chỉnh độ ngọt, nhưng KHÔNG tăng cường protein.`,
+            },
+            zh: {
+                question: `以下哪项不是麦芽糖浆（물엿）在烘焙中的作用？`,
+                options: [`保持湿润性`, `防止结晶`, `赋予光泽`, `强化蛋白质`],
+                explanation: `麦芽糖浆有保湿、防止结晶、赋予光泽、调节甜度等作用，但不具有强化蛋白质的功能。`,
+            },
+            th: {
+                question: `ข้อใดไม่ใช่บทบาทของน้ำเชื่อม (물엿) ในการทำขนม?`,
+                options: [`รักษาความชื้น`, `ป้องกันการตกผลึก`, `ให้ความมันวาว`, `เสริมโปรตีน`],
+                explanation: `น้ำเชื่อมมีบทบาทในการรักษาความชื้น ป้องกันการตกผลึก ให้ความมันวาว และปรับความหวาน แต่ไม่ได้เสริมโปรตีน`,
+            },
+            tl: {
+                question: `Alin ang HINDI papel ng corn syrup/starch syrup (물엿) sa pagluluto ng pastry?`,
+                options: [`Pagpapanatili ng kahalumigmigan`, `Pag-iwas sa crystallization`, `Pagbibigay ng kinang`, `Pagpapalakas ng protina`],
+                explanation: `Ang starch syrup ay nagpapanatili ng kahalumigmigan, pumipigil sa crystallization, nagbibigay ng kinang at nagre-regulate ng tamis — ngunit HINDI nagpapatibay ng protina.`,
+            },
+            my: {
+                question: `မုန့်ပြုလုပ်ရာတွင် ကော်ပျားရည် (물엿) ၏ မမှန်ကန်သောအခန်းကဏ္ဍမှာ မည်သည်နည်း?`,
+                options: [`အစိုဓာတ်ထိန်းသည်`, `ကြက်ရိုးဖြစ်ခြင်းကိုတားသည်`, `တောက်ပြောင်မှုပေးသည်`, `ပရိုတင်းကိုအားကောင်းစေသည်`],
+                explanation: `ကော်ပျားရည်သည် အစိုဓာတ်ထိန်းခြင်း၊ ကြက်ရိုးဖြစ်ခြင်းတားဆီးခြင်း၊ တောက်ပြောင်မှုပေးခြင်း၊ ချိုမှုညှိနှိုင်းခြင်း တို့ပြုလုပ်သော်လည်း ပရိုတင်းကိုသော် မအားကောင်းစေပါ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `물엿`, native: `mạch nha / corn syrup` },
+                { korean: `보습`, native: `giữ ẩm` },
+                { korean: `결정화`, native: `kết tinh` },
+                { korean: `광택`, native: `bóng / luster` },
+                { korean: `단백질`, native: `protein` },
+            ],
+            zh: [
+                { korean: `물엿`, native: `麦芽糖浆` },
+                { korean: `보습`, native: `保湿` },
+                { korean: `결정화`, native: `结晶` },
+                { korean: `광택`, native: `光泽` },
+                { korean: `단백질`, native: `蛋白质` },
+            ],
+            th: [
+                { korean: `물엿`, native: `น้ำเชื่อม` },
+                { korean: `결정화`, native: `การตกผลึก` },
+                { korean: `광택`, native: `ความมันวาว` },
+                { korean: `단백질`, native: `โปรตีน` },
+            ],
+            tl: [
+                { korean: `물엿`, native: `starch syrup` },
+                { korean: `결정화`, native: `crystallization` },
+                { korean: `광택`, native: `kinang` },
+                { korean: `단백질`, native: `protina` },
+            ],
+            my: [
+                { korean: `물엿`, native: `ကော်ပျားရည်` },
+                { korean: `결정화`, native: `ကြက်ရိုးဖြစ်ခြင်း` },
+                { korean: `광택`, native: `တောက်ပြောင်မှု` },
+                { korean: `단백질`, native: `ပရိုတင်း` },
+            ],
+        },
     },
     {
         id: 'ps-16',
@@ -192,6 +1107,67 @@ export const pastryQuestions = [
         explanation: '이스트는 당을 발효시켜 이산화탄소(CO₂)와 에탄올(알코올)을 생성합니다. CO₂가 반죽을 부풀게 합니다.',
         simpleExplanation: '이스트는 설탕을 먹고 이산화탄소와 알코올을 만들어요. 이산화탄소가 반죽을 부풀려요.',
         keywords: ['이스트', '효모', '발효', '이산화탄소', '에탄올'],
+        translations: {
+            vi: {
+                question: `Sản phẩm phụ chính được tạo ra khi men nở (이스트/효모) lên men là gì?`,
+                options: [`Oxy và nước`, `Cacbon dioxide và ethanol`, `Hydro và cacbon dioxide`, `Axit lactic và axit acetic`],
+                explanation: `Men nở lên men đường tạo ra cacbon dioxide (CO₂) và ethanol (rượu). CO₂ làm bột nhào nở phồng.`,
+            },
+            zh: {
+                question: `酵母（이스트/효모）通过发酵产生的主要副产物是什么？`,
+                options: [`氧气和水`, `二氧化碳和乙醇`, `氢气和二氧化碳`, `乳酸和醋酸`],
+                explanation: `酵母发酵糖分产生二氧化碳（CO₂）和乙醇（酒精）。CO₂使面团膨胀。`,
+            },
+            th: {
+                question: `ผลพลอยได้หลักจากการหมักของยีสต์ (이스트/효모) คืออะไร?`,
+                options: [`ออกซิเจนและน้ำ`, `คาร์บอนไดออกไซด์และเอทานอล`, `ไฮโดรเจนและคาร์บอนไดออกไซด์`, `กรดแลคติกและกรดอะซิติก`],
+                explanation: `ยีสต์หมักน้ำตาลทำให้เกิดคาร์บอนไดออกไซด์ (CO₂) และเอทานอล CO₂ ทำให้แป้งนวดฟู`,
+            },
+            tl: {
+                question: `Ano ang pangunahing by-product na ginagawa ng yeast (이스트/효모) sa pamamagitan ng fermentation?`,
+                options: [`Oxygen at tubig`, `Carbon dioxide at ethanol`, `Hydrogen at carbon dioxide`, `Lactic acid at acetic acid`],
+                explanation: `Ang yeast ay nag-fe-ferment ng asukal upang makagawa ng carbon dioxide (CO₂) at ethanol. Ang CO₂ ang nagpapalaki ng masa.`,
+            },
+            my: {
+                question: `တဆေး (이스트/효모) သည် ချဉ်ခြင်းမှတဆင့် ထုတ်လုပ်သော အဓိကနောက်ထပ်ထုတ်ကုန်မှာ မည်သည်နည်း?`,
+                options: [`အောက်ဆီဂျင်နှင့်ရေ`, `ကာဗွန်ဒိုင်အောက်ဆိုဒ်နှင့် အီသနော်`, `ဟိုက်ဒရိုဂျင်နှင့် ကာဗွန်ဒိုင်အောက်ဆိုဒ်`, `နို့ဆီနှင့် အက်ဆီ`],
+                explanation: `တဆေးသည် သကြားကိုချဉ်ပေးပြီး ကာဗွန်ဒိုင်အောက်ဆိုဒ်နှင့် အီသနော်ကို ထုတ်လုပ်သည်။ CO₂ သည် မုန့်ပျော်ကိုဖောင်းပွစေသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `이스트`, native: `men nở` },
+                { korean: `효모`, native: `nấm men / yeast` },
+                { korean: `발효`, native: `lên men` },
+                { korean: `이산화탄소`, native: `cacbon dioxide` },
+                { korean: `에탄올`, native: `ethanol` },
+            ],
+            zh: [
+                { korean: `이스트`, native: `酵母` },
+                { korean: `효모`, native: `酵母` },
+                { korean: `발효`, native: `发酵` },
+                { korean: `이산화탄소`, native: `二氧化碳` },
+                { korean: `에탄올`, native: `乙醇` },
+            ],
+            th: [
+                { korean: `이스트`, native: `ยีสต์` },
+                { korean: `발효`, native: `การหมัก` },
+                { korean: `이산화탄소`, native: `คาร์บอนไดออกไซด์` },
+                { korean: `에탄올`, native: `เอทานอล` },
+            ],
+            tl: [
+                { korean: `이스트`, native: `yeast` },
+                { korean: `발효`, native: `fermentation` },
+                { korean: `이산화탄소`, native: `carbon dioxide` },
+                { korean: `에탄올`, native: `ethanol` },
+            ],
+            my: [
+                { korean: `이스트`, native: `တဆေး` },
+                { korean: `발효`, native: `ချဉ်ခြင်း` },
+                { korean: `이산화탄소`, native: `ကာဗွန်ဒိုင်အောက်ဆိုဒ်` },
+                { korean: `에탄올`, native: `အီသနော်` },
+            ],
+        },
     },
     {
         id: 'ps-17',
@@ -204,6 +1180,67 @@ export const pastryQuestions = [
         explanation: '바닐라 향은 바닐라 식물의 열매(꼬투리, bean)에서 추출하며, 주성분은 바닐린(vanillin)입니다.',
         simpleExplanation: '바닐라 향은 바닐라 열매에서 나와요.',
         keywords: ['바닐라', '향료', '바닐린', '열매'],
+        translations: {
+            vi: {
+                question: `Bộ phận thực vật nào được dùng làm nguyên liệu hương vanilla (바닐라)?`,
+                options: [`Cánh hoa`, `Rễ`, `Quả (vỏ quả)`, `Lá`],
+                explanation: `Hương vanilla được chiết xuất từ quả (vỏ quả, bean) của cây vanilla, thành phần chính là vanillin.`,
+            },
+            zh: {
+                question: `香草香料（바닐라）的原料来自植物的哪个部位？`,
+                options: [`花瓣`, `根`, `果实（豆荚）`, `叶子`],
+                explanation: `香草香料从香草植物的果实（豆荚，bean）中提取，主要成分是香草醛（vanillin）。`,
+            },
+            th: {
+                question: `ส่วนใดของพืชที่ใช้เป็นวัตถุดิบสำหรับกลิ่นวานิลลา (바닐라)?`,
+                options: [`กลีบดอก`, `ราก`, `ผล (ฝัก)`, `ใบ`],
+                explanation: `กลิ่นวานิลลาสกัดจากผล (ฝัก, bean) ของต้นวานิลลา โดยมีวานิลลิน (vanillin) เป็นส่วนประกอบหลัก`,
+            },
+            tl: {
+                question: `Anong bahagi ng halaman ang ginagamit bilang hilaw na materyales ng vanilla (바닐라) flavor?`,
+                options: [`Petals ng bulaklak`, `Ugat`, `Bunga (pod)`, `Dahon`],
+                explanation: `Ang vanilla flavor ay kinukuha mula sa bunga (pod, bean) ng vanilla plant. Ang pangunahing sangkap ay vanillin.`,
+            },
+            my: {
+                question: `ဗနီလာ (바닐라) အနံ့အတွက် ဘယ်အပင်အစိတ်အပိုင်းကိုသုံးသနည်း?`,
+                options: [`ပန်းဖူးကြွက်သား`, `အမြစ်`, `သီး(ပလောင်)`, `ရွက်`],
+                explanation: `ဗနီလာအနံ့သည် ဗနီလာအပင်၏ သီး(ပလောင်၊ bean)မှ ထုတ်ကုက်ပြီး အဓိကဒြပ်ပေါင်းမှာ ဗနီလင် (vanillin) ဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `바닐라`, native: `vanilla` },
+                { korean: `향`, native: `hương thơm` },
+                { korean: `열매`, native: `quả / vỏ quả` },
+                { korean: `꽃잎`, native: `cánh hoa` },
+                { korean: `뿌리`, native: `rễ` },
+            ],
+            zh: [
+                { korean: `바닐라`, native: `香草` },
+                { korean: `향`, native: `香气` },
+                { korean: `열매`, native: `果实` },
+                { korean: `꽃잎`, native: `花瓣` },
+                { korean: `뿌리`, native: `根` },
+            ],
+            th: [
+                { korean: `바닐라`, native: `วานิลลา` },
+                { korean: `향`, native: `กลิ่น` },
+                { korean: `열매`, native: `ผล` },
+                { korean: `꽃잎`, native: `กลีบดอก` },
+            ],
+            tl: [
+                { korean: `바닐라`, native: `vanilla` },
+                { korean: `향`, native: `aroma / halimuyak` },
+                { korean: `열매`, native: `bunga / pod` },
+                { korean: `꽃잎`, native: `petals` },
+            ],
+            my: [
+                { korean: `바닐라`, native: `ဗနီလာ` },
+                { korean: `향`, native: `အနံ့` },
+                { korean: `열매`, native: `သီး` },
+                { korean: `꽃잎`, native: `ပန်းဖူးကြွက်သား` },
+            ],
+        },
     },
     {
         id: 'ps-18',
@@ -216,6 +1253,67 @@ export const pastryQuestions = [
         explanation: '밀가루의 글루텐은 글리아딘(gliadin)과 글루테닌(glutenin)이 물과 결합하고 반죽되면서 형성됩니다.',
         simpleExplanation: '밀가루의 글리아딘과 글루테닌이 물과 만나 글루텐을 만들어요.',
         keywords: ['글루텐', '글리아딘', '글루테닌', '밀가루'],
+        translations: {
+            vi: {
+                question: `Protein nào tham gia vào sự hình thành gluten trong bột mì?`,
+                options: [`Casein và lactalbumin`, `Gliadin và glutenin`, `Albumin và globulin`, `Collagen và elastin`],
+                explanation: `Gluten trong bột mì được hình thành khi gliadin và glutenin kết hợp với nước và được nhào trộn.`,
+            },
+            zh: {
+                question: `参与面粉面筋形成的蛋白质是什么？`,
+                options: [`酪蛋白和乳白蛋白`, `麦醇溶蛋白和麦谷蛋白`, `白蛋白和球蛋白`, `胶原蛋白和弹性蛋白`],
+                explanation: `面粉中的面筋由麦醇溶蛋白（gliadin）和麦谷蛋白（glutenin）与水结合揉制而成。`,
+            },
+            th: {
+                question: `โปรตีนใดมีส่วนร่วมในการสร้างกลูเตนในแป้งสาลี?`,
+                options: [`เคซีนและแลคตัลบูมิน`, `ไกลอาดินและกลูเทนิน`, `อัลบูมินและโกลบูลิน`, `คอลลาเจนและอีลาสติน`],
+                explanation: `กลูเตนในแป้งสาลีเกิดจากไกลอาดินและกลูเทนินที่รวมตัวกับน้ำและการนวด`,
+            },
+            tl: {
+                question: `Anong protina ang kasangkot sa pagbuo ng gluten sa harina?`,
+                options: [`Casein at lactalbumin`, `Gliadin at glutenin`, `Albumin at globulin`, `Collagen at elastin`],
+                explanation: `Ang gluten ng harina ay nabubuo kapag ang gliadin at glutenin ay pinagsama sa tubig at minasa.`,
+            },
+            my: {
+                question: `ဂျုံမှုန့်တွင် ဂလူတင်ဖြစ်ပေါ်မှုနှင့်ဆက်နွှယ်သော ပရိုတင်းမှာ မည်သည်နည်း?`,
+                options: [`ကေဆင်နှင့် လက်တ်အယ်လ်ဘူမင်`, `ဂလိုင်အာဒင်နှင့် ဂလူတင်နင်`, `အယ်လ်ဘူမင်နှင့် ဂလိုဘူလင်`, `ကိုလာဂျင်နှင့် အီလာစတင်`],
+                explanation: `ဂျုံမှုန့်၏ ဂလူတင်သည် ဂလိုင်အာဒင်နှင့် ဂလူတင်နင်တို့ကို ရေနှင့်ပေါင်းပြီး မုန့်ပျော်ကြသောအခါ ဖြစ်ပေါ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `밀가루`, native: `bột mì` },
+                { korean: `글루텐`, native: `gluten` },
+                { korean: `글리아딘`, native: `gliadin` },
+                { korean: `글루테닌`, native: `glutenin` },
+                { korean: `단백질`, native: `protein` },
+            ],
+            zh: [
+                { korean: `밀가루`, native: `面粉` },
+                { korean: `글루텐`, native: `面筋` },
+                { korean: `글리아딘`, native: `麦醇溶蛋白` },
+                { korean: `글루테닌`, native: `麦谷蛋白` },
+                { korean: `단백질`, native: `蛋白质` },
+            ],
+            th: [
+                { korean: `밀가루`, native: `แป้งสาลี` },
+                { korean: `글루텐`, native: `กลูเตน` },
+                { korean: `글리아딘`, native: `ไกลอาดิน` },
+                { korean: `글루테닌`, native: `กลูเทนิน` },
+            ],
+            tl: [
+                { korean: `밀가루`, native: `harina` },
+                { korean: `글루텐`, native: `gluten` },
+                { korean: `글리아딘`, native: `gliadin` },
+                { korean: `글루테닌`, native: `glutenin` },
+            ],
+            my: [
+                { korean: `밀가루`, native: `ဂျုံမှုန့်` },
+                { korean: `글루텐`, native: `ဂလူတင်` },
+                { korean: `글리아딘`, native: `ဂလိုင်အာဒင်` },
+                { korean: `글루테닌`, native: `ဂလူတင်နင်` },
+            ],
+        },
     },
     {
         id: 'ps-19',
@@ -228,6 +1326,67 @@ export const pastryQuestions = [
         explanation: '꿀은 포도당과 과당이 전체의 70~80%를 차지하며, 흡습성이 높아 제과 제품의 보습에 도움이 됩니다.',
         simpleExplanation: '꿀에는 포도당과 과당이 많이 들어있어요.',
         keywords: ['꿀', '포도당', '과당', '흡습성'],
+        translations: {
+            vi: {
+                question: `Thành phần chính đúng của mật ong (꿀) là gì?`,
+                options: [`Sucrose (자당/설탕) 70% trở lên`, `Glucose (포도당) và fructose (과당) 70~80%`, `Maltose (맥아당) 60% trở lên`, `Lactose (유당) 50% trở lên`],
+                explanation: `Mật ong có glucose và fructose chiếm 70~80% tổng thành phần, có tính hút ẩm cao giúp giữ ẩm cho sản phẩm làm bánh.`,
+            },
+            zh: {
+                question: `蜂蜜（꿀）的主要成分正确的是？`,
+                options: [`蔗糖（자당/설탕）70%以上`, `葡萄糖（포도당）和果糖（과당）70~80%`, `麦芽糖（맥아당）60%以上`, `乳糖（유당）50%以上`],
+                explanation: `蜂蜜中葡萄糖和果糖占总量的70~80%，吸湿性高，有助于烘焙产品保湿。`,
+            },
+            th: {
+                question: `ส่วนประกอบหลักของน้ำผึ้ง (꿀) ที่ถูกต้องคืออะไร?`,
+                options: [`ซูโครส (자당/설탕) 70% ขึ้นไป`, `กลูโคส (포도당) และฟรุกโตส (과당) 70~80%`, `มอลโทส (맥아당) 60% ขึ้นไป`, `แลคโตส (유당) 50% ขึ้นไป`],
+                explanation: `น้ำผึ้งมีกลูโคสและฟรุกโตส 70~80% ของทั้งหมด มีความดูดชื้นสูงช่วยรักษาความชื้นในผลิตภัณฑ์ขนม`,
+            },
+            tl: {
+                question: `Ano ang tamang pangunahing sangkap ng pulot-pukyutan (꿀)?`,
+                options: [`Sucrose (자당/설탕) 70% pataas`, `Glucose (포도당) at fructose (과당) 70~80%`, `Maltose (맥아당) 60% pataas`, `Lactose (유당) 50% pataas`],
+                explanation: `Ang pulot-pukyutan ay may glucose at fructose na 70~80% ng kabuuan, may mataas na hygroscopicity na tumutulong sa pagpapanatili ng kahalumigmigan ng pastry.`,
+            },
+            my: {
+                question: `ပျားရည် (꿀) ၏ မှန်ကန်သောအဓိကဒြပ်ပေါင်းမှာ မည်သည်နည်း?`,
+                options: [`ဆူကရိုစ် (자당/설탕) 70% နှင့်အထက်`, `ဂလူးကို့စ် (포도당) နှင့် ဖရပ်တိုးစ် (과당) 70~80%`, `မော်တိုစ် (맥아당) 60% နှင့်အထက်`, `လက်တိုစ် (유당) 50% နှင့်အထက်`],
+                explanation: `ပျားရည်တွင် ဂလူးကို့စ်နှင့် ဖရပ်တိုးစ်သည် စုစုပေါင်း 70~80% ရှိပြီး အစိုဓာတ်စုပ်ယူနိုင်မှုမြင့်ကာ မုန့်ထုတ်ကုန်တွင် အစိုဓာတ်ထိန်းသိမ်းရာ အသုံးဝင်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `꿀`, native: `mật ong` },
+                { korean: `포도당`, native: `glucose` },
+                { korean: `과당`, native: `fructose` },
+                { korean: `자당`, native: `sucrose` },
+                { korean: `맥아당`, native: `maltose` },
+            ],
+            zh: [
+                { korean: `꿀`, native: `蜂蜜` },
+                { korean: `포도당`, native: `葡萄糖` },
+                { korean: `과당`, native: `果糖` },
+                { korean: `자당`, native: `蔗糖` },
+                { korean: `맥아당`, native: `麦芽糖` },
+            ],
+            th: [
+                { korean: `꿀`, native: `น้ำผึ้ง` },
+                { korean: `포도당`, native: `กลูโคส` },
+                { korean: `과당`, native: `ฟรุกโตส` },
+                { korean: `맥아당`, native: `มอลโทส` },
+            ],
+            tl: [
+                { korean: `꿀`, native: `pulot-pukyutan / honey` },
+                { korean: `포도당`, native: `glucose` },
+                { korean: `과당`, native: `fructose` },
+                { korean: `맥아당`, native: `maltose` },
+            ],
+            my: [
+                { korean: `꿀`, native: `ပျားရည်` },
+                { korean: `포도당`, native: `ဂလူးကို့စ်` },
+                { korean: `과당`, native: `ဖရပ်တိုးစ်` },
+                { korean: `맥아당`, native: `မော်တိုစ်` },
+            ],
+        },
     },
     {
         id: 'ps-20',
@@ -240,6 +1399,67 @@ export const pastryQuestions = [
         explanation: '분유는 향미 향상, 유당에 의한 갈변 촉진, 수분 흡수력 향상 등의 효과가 있지만 글루텐 형성을 억제하지는 않습니다.',
         simpleExplanation: '분유는 향과 색을 좋게 해요. 글루텐을 억제하지는 않아요.',
         keywords: ['분유', '유제품', '갈변', '풍미'],
+        translations: {
+            vi: {
+                question: `Hiệu quả nào KHÔNG đạt được khi dùng sữa bột (분유)?`,
+                options: [`Cải thiện hương thơm và vị`, `Cải thiện màu vỏ (caramel hóa)`, `Tăng khả năng hấp thụ nước`, `Ức chế hình thành gluten`],
+                explanation: `Sữa bột có tác dụng cải thiện hương vị, thúc đẩy caramel hóa nhờ lactose, tăng hấp thụ nước — nhưng KHÔNG ức chế hình thành gluten.`,
+            },
+            zh: {
+                question: `使用奶粉（분유）不能获得哪种效果？`,
+                options: [`改善香气和风味`, `改善外皮颜色（褐变）`, `提高吸水力`, `抑制面筋形成`],
+                explanation: `奶粉有改善香味、利用乳糖促进褐变、提高吸水力等效果，但不具有抑制面筋形成的功能。`,
+            },
+            th: {
+                question: `ผลลัพธ์ใดที่ไม่สามารถรับได้จากการใช้นมผง (분유)?`,
+                options: [`ปรับปรุงกลิ่นและรสชาติ`, `ปรับปรุงสีเปลือก (การเกิดสีน้ำตาล)`, `เพิ่มความสามารถในการดูดซับน้ำ`, `ยับยั้งการสร้างกลูเตน`],
+                explanation: `นมผงมีประสิทธิผลในการปรับปรุงกลิ่น ส่งเสริมการเกิดสีน้ำตาลด้วยแลคโตส และเพิ่มการดูดซับน้ำ แต่ไม่ยับยั้งกลูเตน`,
+            },
+            tl: {
+                question: `Anong epekto ang HINDI maaaring makuha sa paggamit ng powdered milk (분유)?`,
+                options: [`Pagpapabuti ng aroma at lasa`, `Pagpapabuti ng kulay ng crust (browning)`, `Pagpapabuti ng kakayahang sumipsip ng tubig`, `Pagpigil sa pagbuo ng gluten`],
+                explanation: `Ang powdered milk ay nagpapabuti ng lasa, nagtataguyod ng browning sa pamamagitan ng lactose at nagpapabuti ng pagsipsip ng tubig — ngunit HINDI pumipigil sa pagbuo ng gluten.`,
+            },
+            my: {
+                question: `နွားနို့မှုန့် (분유) သုံးသောအခါ မရနိုင်သောသက်ရောက်မှုမှာ မည်သည်နည်း?`,
+                options: [`အနံ့နှင့် အရသာတိုးတက်မှု`, `အခွံအရောင် (ညိုမြဲမြဲပြောင်းလဲမှု) တိုးတက်မှု`, `ရေစုပ်ယူနိုင်မှုတိုးတက်မှု`, `ဂလူတင်ဖြစ်ပေါ်မှုကိုတားဆီးခြင်း`],
+                explanation: `နွားနို့မှုန့်သည် အနံ့အရသာတိုးတက်မှု၊ လက်တိုစ်ကြောင့် ညိုမြဲမြဲမြင့်တင်မှု၊ ရေစုပ်ယူနိုင်မှုတိုးတက်မှု တို့ရှိသော်လည်း ဂလူတင်ဖြစ်ပေါ်မှုကိုသော် မတားဆီးပါ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `분유`, native: `sữa bột` },
+                { korean: `풍미`, native: `hương vị` },
+                { korean: `갈변`, native: `caramel hóa / nâu hóa` },
+                { korean: `수분`, native: `nước / độ ẩm` },
+                { korean: `글루텐`, native: `gluten` },
+            ],
+            zh: [
+                { korean: `분유`, native: `奶粉` },
+                { korean: `풍미`, native: `风味` },
+                { korean: `갈변`, native: `褐变` },
+                { korean: `수분`, native: `水分` },
+                { korean: `글루텐`, native: `面筋` },
+            ],
+            th: [
+                { korean: `분유`, native: `นมผง` },
+                { korean: `풍미`, native: `รสชาติ / กลิ่น` },
+                { korean: `갈변`, native: `การเกิดสีน้ำตาล` },
+                { korean: `글루텐`, native: `กลูเตน` },
+            ],
+            tl: [
+                { korean: `분유`, native: `powdered milk` },
+                { korean: `풍미`, native: `lasa / aroma` },
+                { korean: `갈변`, native: `browning` },
+                { korean: `글루텐`, native: `gluten` },
+            ],
+            my: [
+                { korean: `분유`, native: `နွားနို့မှုန့်` },
+                { korean: `풍미`, native: `အနံ့အရသာ` },
+                { korean: `갈변`, native: `ညိုမြဲမြဲပြောင်းလဲမှု` },
+                { korean: `글루텐`, native: `ဂလူတင်` },
+            ],
+        },
     },
 
     // ===== 과자류 제조 (pastry-process) 20문제 =====
