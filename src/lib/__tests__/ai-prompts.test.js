@@ -2,6 +2,7 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { classifyDomain } from '../ai/prompts/classify';
 import { summarizeInKorean } from '../ai/prompts/summarize';
+import { extractConcepts } from '../ai/prompts/concepts';
 
 const mockCreate = vi.fn();
 vi.mock('@anthropic-ai/sdk', () => ({
@@ -38,5 +39,31 @@ describe('summarizeInKorean', () => {
         });
         const r = await summarizeInKorean({ rawText: 'x', licenceId: 'korean-food' });
         expect(r.ko).toBe('한식조리 식품위생 핵심 요약');
+    });
+});
+
+describe('extractConcepts', () => {
+    it('정상 응답 정규화', async () => {
+        mockCreate.mockResolvedValueOnce({
+            content: [{ type: 'text', text: JSON.stringify({
+                concepts: [
+                    { korean: '식품위생', korean_definition: '식품의 안전을 지키는 행위', pronunciation: '식품위생', category: '식품위생' },
+                    { korean: 'HACCP', korean_definition: '위해요소중점관리기준', category: '식품위생' },
+                ],
+            }) }],
+        });
+        const r = await extractConcepts({ rawText: 'x', licenceId: 'korean-food' });
+        expect(r).toHaveLength(2);
+        expect(r[0].korean).toBe('식품위생');
+    });
+    it('15개 초과 자르고 누락 필드 제외', async () => {
+        mockCreate.mockResolvedValueOnce({
+            content: [{ type: 'text', text: JSON.stringify({
+                concepts: Array.from({ length: 20 }, (_, i) => ({ korean: `c${i}`, korean_definition: 'd' }))
+                    .concat([{ korean: 'no-def' }]),
+            }) }],
+        });
+        const r = await extractConcepts({ rawText: 'x', licenceId: 'korean-food' });
+        expect(r).toHaveLength(15);
     });
 });
