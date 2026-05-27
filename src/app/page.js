@@ -9,7 +9,9 @@ import StudyPage from '@/components/pages/StudyPage';
 import DictionaryPage from '@/components/pages/DictionaryPage';
 import CommunityPage from '@/components/pages/CommunityPage';
 import OnboardingPage from '@/components/pages/OnboardingPage';
+import AuthPage from '@/components/pages/AuthPage';
 import { isOnboardingComplete, getUserProfile, isPremium as checkPremium, activatePremium } from '@/lib/studyEngine';
+import { api } from '@/lib/api-client';
 
 export default function Home() {
   const [showOnboarding, setShowOnboarding] = useState(false);
@@ -19,8 +21,10 @@ export default function Home() {
   const [studyMode, setStudyMode] = useState('step1');
   const [premium, setPremium] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [authUser, setAuthUser] = useState(null);
+  const [authChecked, setAuthChecked] = useState(false);
 
-  // 초기화: 온보딩 상태, 사용자 프로필 로드
+  // 초기화: 인증 확인, 온보딩 상태, 사용자 프로필 로드
   useEffect(() => {
     setMounted(true);
     if (!isOnboardingComplete()) {
@@ -32,6 +36,11 @@ export default function Home() {
       setStudyMode(profile.studyMode || 'step1');
     }
     setPremium(checkPremium());
+
+    api.me()
+      .then(data => { setAuthUser(data.user); })
+      .catch(() => {})
+      .finally(() => { setAuthChecked(true); });
   }, []);
 
   const handleOnboardingComplete = useCallback((profile) => {
@@ -52,8 +61,8 @@ export default function Home() {
     setPremium(true);
   }, []);
 
-  // SSR 하이드레이션 방어
-  if (!mounted) {
+  // SSR 하이드레이션 방어 / 인증 확인 중
+  if (!mounted || !authChecked) {
     return (
       <div className="app-shell" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }}>
         <div style={{ textAlign: 'center' }}>
@@ -62,6 +71,11 @@ export default function Home() {
         </div>
       </div>
     );
+  }
+
+  // 인증 필요
+  if (!authUser) {
+    return <AuthPage onAuthenticated={u => setAuthUser(u)} />;
   }
 
   // 온보딩
