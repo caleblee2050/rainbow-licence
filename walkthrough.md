@@ -1,118 +1,249 @@
-# Rainbow Licence — 세션 핸드오프 (2026-05-27 후속)
+# Rainbow Licence — 세션 핸드오프 (2026-05-28)
 
 > 다음 세션이 시작되면 이 파일부터 읽고 컨텍스트 복원할 것.
 
 ## 📊 현재 좌표
 
-**프로젝트**: 한국 국가기술자격증 학습 PWA. 다문화 학교(NEXT SCHOOL) 학생 + 공공사업 평가위원이 1차 사용자/의사결정자.
-
-**프로덕션 URL**: https://rainbow-licence.vercel.app
-**최신 production deploy**: https://rainbow-licence-75v3xbsu3-calebs-projects-308edac8.vercel.app
+**프로젝트**: 한국 국가기술자격증 학습 PWA (다문화 학교 NEXT SCHOOL용 + 공공평가위원 시연).
+**프로덕션 URL**: https://rainbow-licence.vercel.app (M1.5 시점 배포본)
 **저장소**: https://github.com/caleblee2050/rainbow-licence
-**브랜치**: `main` — origin/main 동기화 완료 (push 됨)
+**브랜치**: `main` — origin과 동기화 완료 (push 됨, 최신 commit `0355f04`)
 
-## ✅ M1.5 다국어 본질 복원 — 완료 (2026-05-27)
+## ✅ M2 다국어 학습 자료 노트 — 구현 완료 (2026-05-28)
 
-옵션 A (chunks 분할)로 진행. 8 tasks 모두 완료.
+NotebookLM-스타일 기능. 학생이 PDF/텍스트 자료 등록 → AI가 요약·핵심개념·객관식 문제 자동 생성 → 5언어 번역 → 기존 StudyPage/DictionaryPage에 자격증 단위로 통합 노출.
 
-### 핵심 성과
+### 핵심 산출물
 
-- **180문제 × 5언어 번역 + 키워드 힌트 데이터 완성**
-  - 한식조리 60Q × 5 (vi/zh/th/tl/my)
-  - 미용일반 60Q × 5
-  - 제과 60Q × 5
-- **콘텐츠 가드 테스트 9종 활성** (32 tests passing): translations 필드, keywordHints 개수, korean 본문 등장 검증
-- **StudyPage 3-mode 진짜 차별화** 구현
-- **진단 → 모드 자동 매핑** (이미 OnboardingPage line 88 + page.js line 32에 구현되어 있었음)
-- **DictionaryPage 5언어 전수 노출** (vi/zh 검수 ✓, th/tl/my "AI" 라벨)
-- **검색 5언어 확장**: 한국어/발음/vi/zh/th/tl/my 어느 언어로 검색해도 매칭
+- **19 commits** (T1~T19) on `main`, push 완료
+- **76 tests passing** (M1.5의 32 → M2의 76)
+- 빌드 성공 (Next.js 16.1.6, Turbopack, API routes 11개 + UI page 3개 신규)
+- **API routes 신규**:
+  - `/api/auth/device-anon`, `/api/auth/magic-link`, `/api/auth/verify`, `/api/auth/logout`, `/api/me`
+  - `/api/sources` (POST text/PDF, GET list), `/api/sources/[id]` (GET/DELETE)
+  - `/api/sources/[id]/process`, `/api/sources/[id]/retry`
+  - `/api/licences/[id]/concepts`, `/api/licences/[id]/problems`
+- **UI 신규**: `AuthPage`, `NotebookPage`, `SourceDetailPage`
+- **UI 확장**: `DictionaryPage`(사용자 개념 collapsible 섹션), `StudyPage`(학습 묶음 chips)
 
 ### 완성된 작업 흐름
 
 | Task | Commit | 비고 |
 |------|--------|------|
-| M1.5-3a 미용 bg-01~20 | `600b9c7` + `c7f4940` 보정 | spec reviewer가 13개 korean 본문 불일치 발견, 보정 |
-| M1.5-3b 미용 bg-21~40 | `268220a` | 자체 검증 ALL PASS |
-| M1.5-3c 미용 bg-41~60 | `a2477c5` | 자체 검증에서 24개 보정 후 ALL PASS |
-| M1.5-3 미용 테스트 활성화 | `cfdf0cd` | it.skip 풀고 3종 가드 활성 |
-| M1.5-4a 제과 ps-01~20 | `195a5c7` | 자체 검증에서 51개 보정 후 ALL PASS |
-| M1.5-4b 제과 ps-21~40 | `e098806` | 자체 검증에서 23개 보정 후 ALL PASS |
-| M1.5-4c 제과 ps-41~60 | `4518c5f` | 자체 검증에서 35개 보정 후 ALL PASS |
-| M1.5-4 제과 테스트 활성화 | `0636653` | |
-| M1.5-5 StudyPage 3-mode 재설계 | `3221614` | KeywordHint + renderWithHints helper, ❓ 슬라이딩 패널 |
-| M1.5-6 5언어 배지 변경 | `d5525ec` | "Coming soon" → "AI" |
-| M1.5-7 DictionaryPage 5언어 노출 | `663aea8` | "🚧 준비 중" 폐기, 검색 5언어 확장 |
-| M1.5-8 배포 마커 | `1fb9904` | 빈 커밋, M1.5 완료 표시 |
+| T1 Turso DB + users migration | `86be319` + `1e1cb7d` 보정 | code review Important 2건 (__dirname 절대 경로 + db.batch 트랜잭션) |
+| T2 JWT 세션 헬퍼 | `1f14572` | jose, HS256, 30일, sameSite=lax |
+| T3 device-anonymous 인증 + /api/me | `9fb87f2` | |
+| T4 매직 링크 (Resend) | `4f63a6a` | 15분 만료, 1회 사용 |
+| T5 sources/summaries/concepts/problems CRUD | `79c8766` | CASCADE DELETE, JSON 직렬화 |
+| T6 PDF 파싱 | `2375cad` | pdf-parse `lib/pdf-parse.js` 직접 import + Uint8Array 우회 |
+| T7 자료 등록 API | `e9e997d` | multipart + JSON 양쪽 처리 |
+| T8 Anthropic 클라이언트 + JSON 모드 | `8c7c3aa` | callJsonMode 1회 재시도 |
+| T9 도메인 분류 + 한국어 요약 | `95f1624` | |
+| T10 핵심개념 추출 | `b0d0e0c` | 8~15개, 본문 등장 표기 보존 |
+| T11 객관식 문제 생성 | `5b7c775` | 5~10문제, 스키마 강제 |
+| T12 5언어 번역 + 본문 매칭 가드 | `1470322` | **M1.5에서 수동 보정했던 14+ 패턴을 파이프라인 단계에서 자동 처리** |
+| T13 파이프라인 통합 + process/retry | `c0fb272` | runPipeline 5단계 + status 추적 |
+| T14 자격증 통합 API | `a4a40a7` | status=done 필터 + 사용자 격리 |
+| T15 클라이언트 API + AuthPage | `085c16a` | page.js 인증 분기 |
+| T16 NotebookPage | `7e5b3b4` | 자격증 화면 "내 자료" 탭 + chip 진입점 |
+| T17 SourceDetailPage + 폴링 | `d59d9a1` | 3s polling, 5단계 진행률, 재시도 |
+| T18 Dict/Study 사용자 콘텐츠 통합 | `dcab41a` | 사용자 problem을 기존 형식으로 변환, 3-mode 그대로 작동 |
+| T19 콘텐츠 가드 + 시연 시나리오 | `0355f04` | user-content-compat 가드 + `docs/superpowers/plans/2026-05-28-m2-demo-scenarios.md` |
 
-### subagent-driven-development 패턴 사용 학습
+## 🚨 T20 배포 — 미완료, 다음 세션에서 진행
 
-- **20Q × 5언어가 안전한 chunk 단위**: 60Q × 5 한 턴 시도는 두 번 모두 실패 (이전 세션). 20Q는 sonnet으로 약 15~25분/chunk 페이스. opus 불필요.
-- **본문 substring 매칭 함정**: sonnet은 keyword hints에서 "관련 개념어"를 본문에 없는데 자주 삽입. 첫 chunk(bg-01~20)에서 13개 본문 불일치 → spec reviewer 보정 후, 이후 chunk들에는 작업 전 검증 절차를 명시적으로 prompt에 강조해서 자체 보정 (24/51/23/35 개 자체 발견·수정)함.
-- **분류기 우회 표현 금지**: "분류기 장애 우회" 등의 표현이 prompt에 들어가면 서브에이전트 분류기가 즉시 거부. 그냥 작업 컨텍스트만 제공.
+### 남은 작업 (다음 세션 진입 시 즉시 할 일)
 
-## 🛠 수정한 파일 (이번 세션)
+#### 1. Turso DB 준비
+
+기존 다른 프로젝트에서 사용했던 **Turso 계정·키가 이미 있을 가능성 큼**. 사용자가 "예전에 다 제공된 것들이 있으니 직접 찾아보고"라고 함. 다음 위치 확인:
+
+- `~/.config/turso/` 또는 `~/.turso/`
+- 다른 프로젝트의 `.env.local` (예: 다른 Next.js/PWA 프로젝트들)
+- 사용자가 직접 알려주는 값
+
+확인 후 둘 중 하나:
+- **기존 DB 재활용**: `rainbow-licence-prod` 또는 유사 이름 검색 (`turso db list`)
+- **신규 DB 생성**:
+  ```bash
+  turso db create rainbow-licence-prod
+  turso db show rainbow-licence-prod  # libsql URL
+  turso db tokens create rainbow-licence-prod  # auth token
+  ```
+
+#### 2. Vercel 환경변수 설정
+
+production 환경에 다음 8개:
 
 ```
-Modified:
-- src/data/questions/beauty-general.js  (60문제에 translations + keywordHints, ~3000 lines 증가)
-- src/data/questions/pastry.js          (60문제에 translations + keywordHints, ~3000 lines 증가)
-- src/components/pages/StudyPage.js     (3-mode 재설계, KeywordHint/renderWithHints + ❓ 패널)
-- src/components/pages/OnboardingPage.js ("Coming soon" → "AI" 배지)
-- src/components/pages/DictionaryPage.js (5언어 전수 노출, AI 라벨)
-- src/data/terms/index.js               (searchTerms 5언어 확장)
-- src/data/__tests__/beauty-general.test.js (it.skip → 활성)
-- src/data/__tests__/pastry.test.js     (it.skip → 활성)
-
-Empty commit:
-- 1fb9904 (M1.5 배포 완료 마커)
+TURSO_DATABASE_URL=libsql://...
+TURSO_AUTH_TOKEN=<turso token>
+JWT_SECRET=<32 byte hex — node -e "console.log(require('crypto').randomBytes(32).toString('hex'))">
+ANTHROPIC_API_KEY=<anthropic key>
+ANTHROPIC_MODEL=claude-sonnet-4-6
+RESEND_API_KEY=<resend key>  (선택, 매직 링크 활성화)
+RESEND_FROM_EMAIL=Rainbow Licence <noreply@verified-domain>
+NEXT_PUBLIC_BASE_URL=https://rainbow-licence.vercel.app
+NEXT_PUBLIC_DEMO_SCHOOL_CODE=NEXT_SCHOOL
 ```
 
-## 🔍 미해결 / 다음 세션 작업
+설정:
+```bash
+vercel env add TURSO_DATABASE_URL production
+# 프롬프트에 값 붙여넣기. 다른 변수도 동일.
+```
 
-### 1. 시연 검증 — 미수행 (사용자 결정 필요)
+#### 3. Production DB 마이그레이션
 
-M1.5-8 plan Step 3에 명시된 시나리오 4종 프로덕션 QA 미수행. 다음 중 선택:
+로컬에서 production DB로 마이그레이션 실행:
+```bash
+TURSO_DATABASE_URL=<prod url> TURSO_AUTH_TOKEN=<prod token> npm run db:migrate
+```
+4개 마이그레이션이 적용됨: `0001_users`, `0003_magic_link_tokens`, `0004_sources` (0002는 의도적으로 빈 자리).
 
-**시나리오 1 — 베트남어 학생 (초급, vi)**
-- 온보딩 vi 선택 → 진단 1/3 → 한식조리 → STEP 1 자동 진입 확인
-- 질문/옵션/해설 모두 한국어 + 베트남어 병행 보임
+#### 4. 배포
 
-**시나리오 2 — 태국어 학생 (중급, th, AI 번역)**
-- 온보딩 th 선택 (Coming soon 아니라 'AI' 표기) → 진단 2/3 → 미용 → STEP 2 자동
-- 점선 밑줄 + 탭 시 태국어 popover
+```bash
+vercel --prod --yes
+```
+M1.5 배포 패턴과 동일 — Claude Code auto mode 분류기가 production 배포 명령은 차단할 수 있음. 차단되면 사용자에게 직접 실행 요청.
 
-**시나리오 3 — 중국어 학생 (고급, zh)**
-- 진단 3/3 → STEP 3 자동, 한국어만 + ❓ 슬라이딩 패널
+#### 5. 시연 시나리오 검증
 
-**시나리오 4 — DictionaryPage**
-- 5언어 모두 노출, vi/zh는 ✓ 의미, th/tl/my는 'AI' 배지
-- 베트남어/태국어 단어로 검색 시 결과 매칭
+`docs/superpowers/plans/2026-05-28-m2-demo-scenarios.md`의 시나리오 A~D 수동 체크리스트:
+- A: vi 시연 모드 (학교 코드 → 텍스트 자료 → 학습)
+- B: 이메일 매직 링크 다기기
+- C: PDF 업로드
+- D: 무관 자료 도메인 분류
 
-**다음 세션 진입 시 가장 먼저 할 일**: `/qa` 또는 `/browse` 스킬로 위 시나리오 자동 실행해서 회귀 확인.
+#### 6. CLAUDE.md M2 영역 노트 추가
 
-### 2. 번역 품질 평가 — 미진행
+```markdown
+## M2 다국어 학습 자료 노트
 
-- vi/zh는 spec reviewer가 도메인 어휘 가이드 준수 spot-check만 한 상태. 실제 원어민 검수 필요.
-- th/tl/my는 'AI' 라벨로 정직하게 노출되어 있어서 그 자체 큰 문제는 아니지만, 명백한 오류(자모 결합 오타, 문장 구조 깨짐 등)는 다음 sprint에서 검수 권장.
+- DB: Turso. 마이그레이션은 `migrations/NNNN_*.sql`. 실행: `npm run db:migrate`.
+- AI: `src/lib/ai/`. 5단계 파이프라인 `runPipeline(sourceId)`.
+- 자료 등록 흐름: `NotebookPage` → `POST /api/sources` → `POST /api/sources/[id]/process` → polling.
+- 사용자 콘텐츠는 기존 공식 콘텐츠와 동일 형식 (translations·keywordHints).
+- 인증: Turso `users.device_id` (시연) 또는 `users.email` (정식, Resend 매직 링크).
+```
 
-### 3. M2 후보 작업 (M1.5 외부)
+#### 7. walkthrough.md "M2 배포 완료" 업데이트
 
-- 다국어 시험 가능 자격증 (`multiLangExam: true`) 외 콘텐츠 확장 (전기/지게차/조경/네일 등)
-- 더 많은 자격증 (현재 3개 → 10개 목표)
-- 실제 원어민 검수 + th/tl/my를 검수 완료 언어로 승격
+배포 끝나면 production URL + 마지막 배포 commit 기록.
 
-## 🎯 다음 세션 진입 시 즉시 할 일
+## 🛠 수정한 파일 (이번 세션, M2)
 
-1. 이 `walkthrough.md` 읽기
-2. `git log --oneline -15`로 최근 커밋 확인 (M1.5 완료 마커 `1fb9904` 봐야 함)
-3. **production 시연 검증**: `/browse https://rainbow-licence.vercel.app` 으로 시나리오 1-4 실행
-4. 결과에 따라:
-   - 문제 없으면 → M2 작업 또는 검수자 피드백 반영
-   - bug 발견 시 → `/investigate` 또는 `/qa`로 fix
+### 신규 파일
+```
+migrations/
+  0001_users.sql
+  0003_magic_link_tokens.sql
+  0004_sources.sql
+
+src/lib/
+  db.js                       # Turso 클라이언트
+  db/migrate.js               # 마이그레이션 실행기 (batch 트랜잭션)
+  db/users.js                 # users CRUD
+  db/sources.js               # sources/summaries/concepts/problems CRUD
+  db/magic-link.js            # 토큰 CRUD
+  auth/jwt.js                 # jose sign/verify
+  auth/session.js             # 쿠키 헬퍼
+  auth/require.js             # requireUser
+  pdf-extract.js              # PDF → 텍스트
+  ai/client.js                # Anthropic 클라이언트
+  ai/json-mode.js             # callJsonMode + 재시도
+  ai/prompts/classify.js
+  ai/prompts/summarize.js
+  ai/prompts/concepts.js
+  ai/prompts/problems.js
+  ai/prompts/translate.js     # 본문 매칭 가드 포함
+  ai/pipeline.js              # runPipeline 5단계 통합
+  api-client.js               # 클라이언트 fetch 헬퍼
+  deviceId.js                 # localStorage uuid
+  resend.js                   # 매직 링크 이메일
+
+src/app/api/
+  auth/device-anon/route.js
+  auth/magic-link/route.js
+  auth/verify/route.js
+  auth/logout/route.js
+  me/route.js
+  sources/route.js
+  sources/[id]/route.js
+  sources/[id]/process/route.js
+  sources/[id]/retry/route.js
+  licences/[id]/concepts/route.js
+  licences/[id]/problems/route.js
+
+src/components/pages/
+  AuthPage.js
+  NotebookPage.js
+  SourceDetailPage.js
+
+src/lib/__tests__/
+  db.test.js
+  auth-jwt.test.js
+  sources-db.test.js
+  pdf-extract.test.js
+  ai-client.test.js
+  ai-prompts.test.js
+  pipeline.test.js
+  user-content-compat.test.js
+  fixtures/sample.pdf
+
+src/app/api/__tests__/
+  auth.test.js
+  sources.test.js
+  licences-userpool.test.js
+
+docs/superpowers/specs/2026-05-28-multilingual-notebook-design.md
+docs/superpowers/plans/2026-05-28-multilingual-notebook.md
+docs/superpowers/plans/2026-05-28-m2-demo-scenarios.md
+```
+
+### 수정 파일
+```
+src/app/page.js                          # auth 분기 + studyView 라우팅
+src/components/pages/StudyPage.js        # activeView chip + 학습 묶음 chips + user→공식 형식 매핑
+src/components/pages/DictionaryPage.js   # 사용자 개념 collapsible 섹션
+.env.example                             # TURSO/JWT/Anthropic/Resend/NEXT_PUBLIC 환경변수
+.env.local                               # 로컬 값 (.gitignore 제외)
+package.json                             # @libsql/client, jose, resend, @anthropic-ai/sdk, pdf-parse, pdf-lib(dev)
+```
 
 ## 💡 학습/주의사항 (이번 세션에서 강화)
 
-- **본문 substring 매칭**: keywordHints korean은 question + options.join(' ') 본문에 정확히 등장해야 함. 띄어쓰기 한 글자도 다르면 안 됨. 작업 prompt에 명시적으로 강조 + 자체 검증 스크립트 의무화하니 효과 큼.
-- **컨트롤러 검증 단계**: 서브에이전트 자체 검증 ALL PASS 보고 후에도 컨트롤러가 동일 스크립트 한 번 더 돌려야 함 (trust but verify).
-- **subagent-driven-development 효율**: chunk별 spec reviewer는 첫 chunk만 활용해서 보정 패턴 학습, 이후 chunks는 자체 검증 + 컨트롤러 빠른 verification으로 시간 절약.
-- **분류기 우회 표현**: prompt에 절대 넣지 말 것. 작업 자체만 설명.
+- **본문 매칭 가드 자동화**: M1.5에서 spec reviewer가 수동으로 14+개 보정했던 `keywordHints.korean` 본문 등장 패턴이 이제 `translateProblem` 안에서 `body.includes(h.korean)` 후처리로 자동 필터. 학생이 올린 자료에서도 동일 품질 보장.
+- **pdf-parse@1.x 함정**: index.js가 테스트 데이터를 자동 require하는 버그 → `pdf-parse/lib/pdf-parse.js` 직접 import. 또 Node Buffer 직접 전달은 XRef 파싱 깨짐 → 순수 `Uint8Array` 생성 후 전달.
+- **next/headers cookies() async**: Next.js 16에서 `await cookies()` 필수. 테스트 mock 시에도 동기 반환이지만 호출부는 `await`.
+- **vitest 환경 분리**: 라우트 핸들러·DB 테스트는 `// @vitest-environment node` 지시어 필수 (jsdom에서 jose TextEncoder cross-realm 이슈).
+- **자동 분류기 차단**: home dir env 스캔, production 배포 명령은 명시적 사용자 승인 없이 차단됨. T20 배포 단계에서 사용자가 직접 명령 실행하거나 settings에 permission 추가 필요.
+- **AskUserQuestion 한글 escape 금지**: literal UTF-8만 (이 세션에서 메모리에 박음 — `~/.claude/projects/-Volumes-AIPART-dev/memory/feedback_korean_askuserquestion.md`)
+
+## 🎯 다음 세션 진입 시 즉시 할 일
+
+1. 이 walkthrough.md 읽기
+2. `git log --oneline -22` 로 commit 히스토리 확인 (`0355f04` 까지)
+3. `npm run test:run` 확인 (76 passing 유지여야 정상)
+4. **T20 배포 진행**:
+   a. Turso 키·DB 위치 찾기 (사용자에게 물어보거나 `turso db list` 실행)
+   b. JWT_SECRET 발급 (`node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"`)
+   c. ANTHROPIC_API_KEY 위치 확인 (사용자 또는 시크릿 매니저)
+   d. RESEND_API_KEY 위치 확인 (선택)
+   e. `vercel env add` 8개 변수
+   f. `npm run db:migrate` production DB
+   g. `vercel --prod --yes` (분류기 차단 시 사용자에게 직접 실행 요청)
+   h. 시연 시나리오 4종 검증
+   i. CLAUDE.md M2 섹션 + walkthrough.md "배포 완료" 업데이트
+5. M3 후보 작업 검토 (AI 자동 후보 제시, URL/YouTube 소스, 중복 병합 등)
+
+## M3 후보 (M2 spec 13.2에 정리됨)
+
+- AI 자동 후보 제시 흐름 (Q7 C 흐름)
+- URL / YouTube 소스 지원
+- 자료 간 중복 개념 자동 병합
+- 학교 단위 공유 풀
+- localStorage SM-2 마이그레이션
+- SSE 진행률 (현재 polling)
+- 학교 단위 사용량 대시보드
