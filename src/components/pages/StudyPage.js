@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
+import { api } from '@/lib/api-client';
 import { licences } from '@/data/licences';
 import { getQuestionsByLicence } from '@/data/questions';
 import { recordAnswer, getAccuracyRate, getLicenceStats } from '@/lib/studyEngine';
@@ -74,8 +75,41 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
     const [showConfetti, setShowConfetti] = useState(false);
     const [translationOpen, setTranslationOpen] = useState(false);
 
+    const [problemSet, setProblemSet] = useState('official');
+    const [userProblemBundles, setUserProblemBundles] = useState([]);
+
+    useEffect(() => {
+        if (!licenceId) return;
+        api.userProblems(licenceId).then(({ problems }) => {
+            const bySource = new Map();
+            for (const p of problems) {
+                if (!bySource.has(p.source_id)) bySource.set(p.source_id, []);
+                bySource.get(p.source_id).push(p);
+            }
+            setUserProblemBundles(Array.from(bySource.entries()).map(([sid, list]) => ({ sourceId: sid, count: list.length, problems: list })));
+        }).catch(() => {});
+    }, [licenceId]);
+
     const licence = licences.find(l => l.id === licenceId);
-    const licenceQuestions = useMemo(() => getQuestionsByLicence(licenceId || 'korean-food'), [licenceId]);
+    const licenceQuestions = useMemo(() => {
+        if (problemSet === 'official') return getQuestionsByLicence(licenceId || 'korean-food');
+        const bundle = userProblemBundles.find(b => b.sourceId === problemSet);
+        if (!bundle) return [];
+        return bundle.problems.map(p => ({
+            id: p.id,
+            licenceId,
+            subject: 'user',
+            question: p.ko_question,
+            simpleQuestion: p.ko_simple_explanation ?? p.ko_question,
+            options: p.ko_options,
+            correctAnswer: p.correct_answer,
+            explanation: p.ko_explanation,
+            simpleExplanation: p.ko_simple_explanation ?? p.ko_explanation,
+            keywords: [],
+            translations: p.translations ?? {},
+            keywordHints: p.keyword_hints ?? {},
+        }));
+    }, [licenceId, problemSet, userProblemBundles]);
 
     // Licence selector
     if (!licenceId) {
@@ -233,6 +267,20 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
                 <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-3)' }}>
                     <button className={`chip ${activeView === 'study' ? 'active' : ''}`} onClick={() => onChangeView('study')}>학습</button>
                     <button className={`chip ${activeView === 'notebook' ? 'active' : ''}`} onClick={() => onChangeView('notebook')}>내 자료</button>
+                </div>
+            )}
+
+            {/* 학습 묶음 chips */}
+            {userProblemBundles.length > 0 && (
+                <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-3)', overflowX: 'auto' }}>
+                    <button className={`chip ${problemSet === 'official' ? 'active' : ''}`} onClick={() => { setProblemSet('official'); setCurrentIndex(0); setSelectedAnswer(null); setShowResult(false); }}>
+                        공식 {getQuestionsByLicence(licenceId).length}문제
+                    </button>
+                    {userProblemBundles.map((b, i) => (
+                        <button key={b.sourceId} className={`chip ${problemSet === b.sourceId ? 'active' : ''}`} onClick={() => { setProblemSet(b.sourceId); setCurrentIndex(0); setSelectedAnswer(null); setShowResult(false); }}>
+                            내 자료 {i + 1} ({b.count}문제)
+                        </button>
+                    ))}
                 </div>
             )}
 

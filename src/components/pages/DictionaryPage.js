@@ -1,9 +1,10 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { getAllTerms, getTermsByLicence, getCategories, searchTerms } from '@/data/terms';
 import { licences } from '@/data/licences';
 import { isLanguageVerified } from '@/lib/demoMode';
+import { api } from '@/lib/api-client';
 
 const LANG_LABELS = {
     vi: '🇻🇳 베트남어',
@@ -18,6 +19,12 @@ export default function DictionaryPage({ language, licenceId }) {
     const [selectedLicence, setSelectedLicence] = useState(licenceId || null);
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [focusedSearch, setFocusedSearch] = useState(false);
+    const [userConcepts, setUserConcepts] = useState([]);
+
+    useEffect(() => {
+        if (!licenceId) { setUserConcepts([]); return; }
+        api.userConcepts(licenceId).then(({ concepts }) => setUserConcepts(concepts)).catch(() => {});
+    }, [licenceId]);
 
     const filteredTerms = useMemo(() => {
         if (search) {
@@ -115,6 +122,36 @@ export default function DictionaryPage({ language, licenceId }) {
                         </button>
                     ))}
                 </div>
+            )}
+
+            {/* User Concepts Section */}
+            {userConcepts.length > 0 && (
+                <details open style={{ marginTop: 'var(--space-4)', marginBottom: 'var(--space-4)' }}>
+                    <summary style={{ fontWeight: 600, fontSize: 'var(--font-sm)', cursor: 'pointer', padding: 'var(--space-2) 0' }}>
+                        📚 내 자료에서 추가된 개념 ({userConcepts.length})
+                    </summary>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-3)', marginTop: 'var(--space-2)' }}>
+                        {userConcepts.map(c => (
+                            <div key={c.id} style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', padding: 'var(--space-3)' }}>
+                                <div style={{ fontWeight: 700 }}>{c.korean}</div>
+                                <div style={{ fontSize: 'var(--font-sm)', color: 'var(--text-secondary)', marginTop: 4 }}>{c.korean_definition}</div>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: 4, marginTop: 'var(--space-2)' }}>
+                                    {['vi','zh','th','tl','my'].map(lang => c[lang] ? (
+                                        <div key={lang} style={{ display: 'flex', gap: 'var(--space-2)', fontSize: 'var(--font-sm)' }}>
+                                            <span style={{ fontSize: 10, color: 'var(--text-muted)', minWidth: 64, display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+                                                {LANG_LABELS[lang]}
+                                                {!isLanguageVerified(lang) && (
+                                                    <span style={{ fontSize: 9, color: 'var(--text-muted)', fontStyle: 'italic', padding: '0 4px', border: '1px solid var(--border)', borderRadius: 'var(--radius-full)' }}>AI</span>
+                                                )}
+                                            </span>
+                                            <span>{c[lang]}</span>
+                                        </div>
+                                    ) : null)}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </details>
             )}
 
             {/* Count */}
