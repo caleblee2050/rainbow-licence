@@ -135,6 +135,9 @@ export default function Home() {
             <NotebookPage
               licenceId={selectedLicence}
               onOpenSource={(id) => { setOpenSourceId(id); setStudyView('source-detail'); }}
+              activeView={studyView}
+              onChangeView={setStudyView}
+              onStartMockExam={() => setStudyView('mock-exam')}
             />
           );
         }

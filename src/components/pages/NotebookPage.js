@@ -28,7 +28,7 @@ function StatusBadge({ status }) {
     return <span style={{ fontSize: 'var(--font-xs)', color: m.color, fontWeight: 600 }}>{m.label}</span>;
 }
 
-export default function NotebookPage({ licenceId, onOpenSource }) {
+export default function NotebookPage({ licenceId, onOpenSource, activeView, onChangeView, onStartMockExam }) {
     const [sources, setSources] = useState([]);
     const [loading, setLoading] = useState(true);
     const [adding, setAdding] = useState(null);  // null | 'text' | 'pdf'
@@ -78,6 +78,21 @@ export default function NotebookPage({ licenceId, onOpenSource }) {
 
     return (
         <div style={{ padding: 'var(--space-4)' }}>
+            {/* 탭 chip: 학습 / 내 자료 / 모의고사 — StudyPage와 일관 */}
+            {onChangeView && (
+                <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-3)', overflowX: 'auto' }}>
+                    <button className={`chip ${activeView === 'study' ? 'active' : ''}`} onClick={() => onChangeView('study')}>학습</button>
+                    <button className={`chip ${activeView === 'notebook' ? 'active' : ''}`} onClick={() => onChangeView('notebook')}>내 자료</button>
+                    {onStartMockExam && (
+                        <button
+                            className="chip"
+                            onClick={onStartMockExam}
+                            style={{ background: 'var(--accent)', color: '#fff', borderColor: 'var(--accent)' }}
+                        >🎯 모의고사</button>
+                    )}
+                </div>
+            )}
+
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--space-4)' }}>
                 <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'var(--font-2xl)' }}>📚 내 자료</h2>
                 <button onClick={() => setAdding('text')} className="btn btn--primary">+ 자료 추가</button>
