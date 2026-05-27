@@ -4,6 +4,7 @@ import { classifyDomain } from '../ai/prompts/classify';
 import { summarizeInKorean } from '../ai/prompts/summarize';
 import { extractConcepts } from '../ai/prompts/concepts';
 import { generateProblems } from '../ai/prompts/problems';
+import { translateProblem, translateSummary } from '../ai/prompts/translate';
 
 const mockCreate = vi.fn();
 vi.mock('@anthropic-ai/sdk', () => ({
@@ -85,5 +86,36 @@ describe('generateProblems', () => {
         expect(r).toHaveLength(1);
         expect(r[0].ko_question).toBe('Q1?');
         expect(r[0].correct_answer).toBe(1);
+    });
+});
+
+describe('translateSummary', () => {
+    it('5언어 모두 반환', async () => {
+        mockCreate.mockResolvedValueOnce({ content: [{ type: 'text', text: JSON.stringify({
+            vi: 'V', zh: 'Z', th: 'T', tl: 'L', my: 'M',
+        }) }] });
+        const r = await translateSummary({ koText: '요약' });
+        expect(r.vi).toBe('V');
+        expect(r.my).toBe('M');
+    });
+});
+
+describe('translateProblem 본문 매칭 가드', () => {
+    it('본문에 없는 keyword.korean 제거', async () => {
+        mockCreate.mockResolvedValueOnce({ content: [{ type: 'text', text: JSON.stringify({
+            translations: { vi: { question: 'Qv', options: ['a','b','c','d'], explanation: 'E' } },
+            keyword_hints: {
+                vi: [
+                    { korean: '식품', native: 'thực phẩm' },          // 본문 등장
+                    { korean: '없는단어', native: 'X' },              // 본문 없음 — 제거되어야 함
+                ],
+                zh: [], th: [], tl: [], my: [],
+            },
+        }) }] });
+        const r = await translateProblem({
+            problem: { ko_question: '식품 위생 관리는?', ko_options: ['청결','보관','조리','전체'], correct_answer: 3, ko_explanation: '...' },
+        });
+        expect(r.keyword_hints.vi).toHaveLength(1);
+        expect(r.keyword_hints.vi[0].korean).toBe('식품');
     });
 });
