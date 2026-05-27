@@ -2936,6 +2936,67 @@ export const pastryQuestions = [
         explanation: '식품위생법에서 "식품"은 의약으로 섭취하는 것을 제외한 모든 음식물을 말합니다. 의약품은 식품에 해당하지 않습니다.',
         simpleExplanation: '식품위생법에서 의약품은 "식품"이 아니에요.',
         keywords: ['식품위생법', '식품', '정의', '의약품'],
+        translations: {
+            vi: {
+                question: `Theo Luật vệ sinh thực phẩm, thứ nào sau đây KHÔNG được định nghĩa là "thực phẩm"?`,
+                options: [`Thức ăn`, `Đồ uống`, `Thuốc`, `Bánh kẹo`],
+                explanation: `Theo Luật vệ sinh thực phẩm, "thực phẩm" là tất cả thực phẩm dùng để ăn uống trừ những thứ dùng làm thuốc. Thuốc không được coi là thực phẩm.`,
+            },
+            zh: {
+                question: `根据《食品卫生法》，以下哪项不属于"食品"的定义？`,
+                options: [`食物`, `饮料`, `药品`, `糕点`],
+                explanation: `根据《食品卫生法》，"食品"是指除以药品形式摄取的物品之外的所有饮食物。药品不属于食品。`,
+            },
+            th: {
+                question: `ตามกฎหมายสุขอนามัยอาหาร สิ่งใดต่อไปนี้ไม่ถูกนิยามว่าเป็น "อาหาร"?`,
+                options: [`อาหาร`, `เครื่องดื่ม`, `ยา`, `ขนม`],
+                explanation: `ตามกฎหมายสุขอนามัยอาหาร "อาหาร" หมายถึงสิ่งที่รับประทานได้ทั้งหมด ยกเว้นสิ่งที่บริโภคในฐานะยา ยาไม่ถือเป็นอาหาร`,
+            },
+            tl: {
+                question: `Ayon sa Batas ng Kalinisan ng Pagkain, alin sa mga sumusunod ang hindi tinutukoy bilang "pagkain"?`,
+                options: [`Pagkain`, `Inumin`, `Gamot`, `Tinapay at pastry`],
+                explanation: `Ayon sa Batas ng Kalinisan ng Pagkain, ang "pagkain" ay lahat ng kinakain maliban sa mga inumin bilang gamot. Ang gamot ay hindi pagkain.`,
+            },
+            my: {
+                question: `အစားအသောက်သန့်ရှင်းရေးဥပဒေအရ "အစားအသောက်" ဟု မသတ်မှတ်သောအရာမှာ ဘာလဲ?`,
+                options: [`အစားအစာ`, `အဖျော်ယမကာ`, `ဆေးဝါး`, `မုန့်များ`],
+                explanation: `အစားအသောက်သန့်ရှင်းရေးဥပဒေအရ "အစားအသောက်" ဆိုသည်မှာ ဆေးအဖြစ်သောက်သည့်အရာများမှ လွဲ၍ အစားအသောက်များအားလုံးကို ဆိုသည်။ ဆေးဝါးများသည် အစားအသောက်မဟုတ်ပါ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `식품위생법`, native: `Luật vệ sinh thực phẩm` },
+                { korean: `식품`, native: `thực phẩm` },
+                { korean: `의약품`, native: `thuốc` },
+                { korean: `음식`, native: `thức ăn` },
+                { korean: `음료`, native: `đồ uống` },
+            ],
+            zh: [
+                { korean: `식품위생법`, native: `食品卫生法` },
+                { korean: `식품`, native: `食品` },
+                { korean: `의약품`, native: `药品` },
+                { korean: `음식`, native: `食物` },
+                { korean: `음료`, native: `饮料` },
+            ],
+            th: [
+                { korean: `식품위생법`, native: `กฎหมายสุขอนามัยอาหาร` },
+                { korean: `식품`, native: `อาหาร` },
+                { korean: `의약품`, native: `ยา` },
+                { korean: `음식`, native: `อาหาร` },
+            ],
+            tl: [
+                { korean: `식품위생법`, native: `Batas ng Kalinisan ng Pagkain` },
+                { korean: `식품`, native: `pagkain` },
+                { korean: `의약품`, native: `gamot` },
+                { korean: `음식`, native: `pagkain` },
+            ],
+            my: [
+                { korean: `식품위생법`, native: `အစားအသောက်သန့်ရှင်းရေးဥပဒေ` },
+                { korean: `식품`, native: `အစားအသောက်` },
+                { korean: `의약품`, native: `ဆေးဝါး` },
+                { korean: `음식`, native: `အစားအစာ` },
+            ],
+        },
     },
     {
         id: 'ps-42',
@@ -2948,6 +3009,67 @@ export const pastryQuestions = [
         explanation: '살모넬라균은 달걀과 가금류에 많이 오염되어 있습니다. 제과에서 달걀을 충분히 가열하거나 위생적으로 취급해야 합니다.',
         simpleExplanation: '달걀에 살모넬라균이 있을 수 있어요. 제대로 가열해서 사용해야 해요.',
         keywords: ['살모넬라', '달걀', '식중독', '제과'],
+        translations: {
+            vi: {
+                question: `Liên quan đến ngộ độc thực phẩm do Salmonella, nguyên liệu nào nguy hiểm nhất trong làm bánh?`,
+                options: [`Bột mì`, `Trứng`, `Bơ`, `Đường`],
+                explanation: `Vi khuẩn Salmonella thường hiện diện trong trứng và gia cầm. Trong làm bánh, trứng cần được gia nhiệt đủ hoặc xử lý vệ sinh đúng cách.`,
+            },
+            zh: {
+                question: `与沙门氏菌食物中毒有关，制糕点中最危险的食材是什么？`,
+                options: [`面粉`, `鸡蛋`, `黄油`, `糖`],
+                explanation: `沙门氏菌大量存在于鸡蛋和禽类中。在制作糕点时，鸡蛋需充分加热或进行卫生处理。`,
+            },
+            th: {
+                question: `เกี่ยวกับการเป็นพิษอาหารจาก Salmonella วัตถุดิบใดอันตรายที่สุดในการทำขนม?`,
+                options: [`แป้งสาลี`, `ไข่`, `เนย`, `น้ำตาล`],
+                explanation: `แบคทีเรีย Salmonella พบมากในไข่และสัตว์ปีก การทำขนมต้องให้ความร้อนไข่อย่างเพียงพอหรือจัดการด้วยสุขอนามัยที่ถูกต้อง`,
+            },
+            tl: {
+                question: `Kaugnay ng pagkalason ng pagkain mula sa Salmonella, aling sangkap ang pinaka-mapanganib sa paggawa ng pastry?`,
+                options: [`Harina`, `Itlog`, `Mantikilya`, `Asukal`],
+                explanation: `Ang bakteryang Salmonella ay matatagpuan sa mga itlog at manok. Sa paggawa ng pastry, ang mga itlog ay dapat na sapat na painitiin o pangasiwaan nang maayos para sa kalinisan.`,
+            },
+            my: {
+                question: `Salmonella ဘက်တီးရီးယားကြောင့် အစားအသောက်အဆိပ်သင့်ခြင်းနှင့် ပတ်သတ်၍ မုန့်ဖုတ်ရာတွင် အန္တရာယ်အများဆုံးသော ပါဝင်ပစ္စည်းမှာ ဘာလဲ?`,
+                options: [`ဂျုံမှုန့်`, `ဥ`, `ထောပတ်`, `သကြား`],
+                explanation: `Salmonella ဘက်တီးရီးယားသည် ဥနှင့် ကြက်ခြင်းများတွင် များစွာတွေ့ရသည်။ မုန့်ဖုတ်ရာတွင် ဥများကို လုံလောက်စွာ အပူပေး၍ တွင်ကျယ်စွာ ကိုင်တွယ်ရမည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `살모넬라`, native: `Salmonella` },
+                { korean: `달걀`, native: `trứng` },
+                { korean: `식중독`, native: `ngộ độc thực phẩm` },
+                { korean: `밀가루`, native: `bột mì` },
+                { korean: `버터`, native: `bơ` },
+            ],
+            zh: [
+                { korean: `살모넬라`, native: `沙门氏菌` },
+                { korean: `달걀`, native: `鸡蛋` },
+                { korean: `식중독`, native: `食物中毒` },
+                { korean: `밀가루`, native: `面粉` },
+                { korean: `설탕`, native: `糖` },
+            ],
+            th: [
+                { korean: `살모넬라`, native: `Salmonella` },
+                { korean: `달걀`, native: `ไข่` },
+                { korean: `식중독`, native: `การเป็นพิษอาหาร` },
+                { korean: `밀가루`, native: `แป้งสาลี` },
+            ],
+            tl: [
+                { korean: `살모넬라`, native: `Salmonella` },
+                { korean: `달걀`, native: `itlog` },
+                { korean: `식중독`, native: `pagkalason ng pagkain` },
+                { korean: `밀가루`, native: `harina` },
+            ],
+            my: [
+                { korean: `살모넬라`, native: `Salmonella` },
+                { korean: `달걀`, native: `ဥ` },
+                { korean: `식중독`, native: `အဆိပ်သင့်ခြင်း` },
+                { korean: `밀가루`, native: `ဂျုံမှုန့်` },
+            ],
+        },
     },
     {
         id: 'ps-43',
@@ -2960,6 +3082,67 @@ export const pastryQuestions = [
         explanation: '황색포도상구균이 생성하는 엔테로톡신(enterotoxin)은 내열성이 있어 100°C에서 30분 가열해도 파괴되지 않습니다.',
         simpleExplanation: '황색포도상구균이 만드는 독소는 열에 강해서 가열해도 없어지지 않아요.',
         keywords: ['황색포도상구균', '엔테로톡신', '독소', '식중독'],
+        translations: {
+            vi: {
+                question: `Đặc tính nào của ngộ độc thực phẩm do Staphylococcus aureus là đúng?`,
+                options: [`Thời gian ủ bệnh rất dài (trên 24 giờ)`, `Độc tố (enterotoxin) bền nhiệt, không bị phá hủy khi đun nấu`, `Đun nóng đủ sẽ phá hủy hoàn toàn độc tố`, `Thực phẩm có mùi tươi ngon`],
+                explanation: `Enterotoxin do Staphylococcus aureus tạo ra có tính bền nhiệt, không bị phá hủy kể cả khi đun ở 100°C trong 30 phút.`,
+            },
+            zh: {
+                question: `关于金黄色葡萄球菌食物中毒的特性，正确的是哪一项？`,
+                options: [`潜伏期很长（24小时以上）`, `毒素（肠毒素）耐热，加热也不会被破坏`, `充分加热后毒素会完全被破坏`, `食物会散发新鲜的气味`],
+                explanation: `金黄色葡萄球菌产生的肠毒素（enterotoxin）具有耐热性，即使在100°C下加热30分钟也不会被破坏。`,
+            },
+            th: {
+                question: `ลักษณะใดของการเป็นพิษอาหารจาก Staphylococcus aureus ที่ถูกต้อง?`,
+                options: [`ระยะฟักตัวนานมาก (มากกว่า 24 ชั่วโมง)`, `สารพิษ (enterotoxin) ทนความร้อน ไม่ถูกทำลายแม้ให้ความร้อน`, `การให้ความร้อนเพียงพอจะทำลายสารพิษได้ทั้งหมด`, `อาหารจะมีกลิ่นสดใหม่`],
+                explanation: `Enterotoxin ที่ผลิตโดย Staphylococcus aureus มีความทนต่อความร้อน ไม่ถูกทำลายแม้จะให้ความร้อนที่ 100°C นาน 30 นาที`,
+            },
+            tl: {
+                question: `Alin sa mga sumusunod ang tamang katangian ng pagkalason ng pagkain mula sa Staphylococcus aureus?`,
+                options: [`Napakatagal ng panahon ng pagpapapisa (higit sa 24 oras)`, `Ang lason (enterotoxin) ay matibay sa init, hindi nasisira kahit lutuin`, `Ang sapat na pagpapalit ng init ay ganap na sisira sa lason`, `Ang pagkain ay magbibigay ng sariwang amoy`],
+                explanation: `Ang enterotoxin na ginawa ng Staphylococcus aureus ay matibay sa init at hindi nasisira kahit na pagainit ng 100°C sa loob ng 30 minuto.`,
+            },
+            my: {
+                question: `Staphylococcus aureus ကြောင့် အဆိပ်သင့်ခြင်း၏ ဂုဏ်သတ္တိမှာ မည်သည့်အချက် မှန်ကန်သနည်း?`,
+                options: [`ဖျားနာချိန်ကာလ အလွန်ကြာသည် (၂၄ နာရီထက် ပို)`, `အဆိပ် (enterotoxin) သည် အပူခံနိုင်ပြီး ဆူပူအပ်ပင် မပျက်စီး`, `လုံလောက်စွာ အပူပေးပါက အဆိပ် ပြည့်ဝစွာ ပျက်စီးမည်`, `အစားအစာမှ လန်းဆန်းသော အနံ့ထွက်မည်`],
+                explanation: `Staphylococcus aureus မှ ထုတ်လုပ်သော enterotoxin သည် အပူခံနိုင်စွမ်းရှိ၍ 100°C တွင် မိနစ် ၃၀ ကြာ အပူပေးသော်လည်း မပျက်စီးပါ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `황색포도상구균`, native: `Staphylococcus aureus` },
+                { korean: `독소`, native: `độc tố` },
+                { korean: `잠복기`, native: `thời gian ủ bệnh` },
+                { korean: `식중독`, native: `ngộ độc thực phẩm` },
+                { korean: `가열`, native: `đun nấu` },
+            ],
+            zh: [
+                { korean: `황색포도상구균`, native: `金黄色葡萄球菌` },
+                { korean: `독소`, native: `毒素` },
+                { korean: `잠복기`, native: `潜伏期` },
+                { korean: `식중독`, native: `食物中毒` },
+                { korean: `가열`, native: `加热` },
+            ],
+            th: [
+                { korean: `황색포도상구균`, native: `Staphylococcus aureus` },
+                { korean: `독소`, native: `สารพิษ` },
+                { korean: `잠복기`, native: `ระยะฟักตัว` },
+                { korean: `가열`, native: `ให้ความร้อน` },
+            ],
+            tl: [
+                { korean: `황색포도상구균`, native: `Staphylococcus aureus` },
+                { korean: `독소`, native: `lason` },
+                { korean: `잠복기`, native: `panahon ng pagpapapisa` },
+                { korean: `가열`, native: `pagpapalit ng init` },
+            ],
+            my: [
+                { korean: `황색포도상구균`, native: `Staphylococcus aureus` },
+                { korean: `독소`, native: `အဆိပ်` },
+                { korean: `잠복기`, native: `ဖျားနာချိန်ကာလ` },
+                { korean: `가열`, native: `အပူပေးခြင်း` },
+            ],
+        },
     },
     {
         id: 'ps-44',
@@ -2972,6 +3155,67 @@ export const pastryQuestions = [
         explanation: '반지, 시계 등 장신구는 이물질이 식품에 들어가거나 미생물 오염의 원인이 될 수 있으므로 착용하면 안 됩니다.',
         simpleExplanation: '반지나 시계를 끼고 반죽하면 이물질이 들어갈 수 있어요. 벗어야 해요.',
         keywords: ['개인위생', '장신구', '작업장', '위생'],
+        translations: {
+            vi: {
+                question: `Điều nào sau đây là SAI về quản lý vệ sinh cá nhân tại xưởng làm bánh?`,
+                options: [`Rửa tay trước khi làm việc`, `Che hoàn toàn đầu bằng mũ vệ sinh`, `Nhào bột trong khi đeo nhẫn hoặc đồng hồ`, `Cắt móng tay dài`],
+                explanation: `Đồ trang sức như nhẫn và đồng hồ có thể gây dị vật lọt vào thực phẩm hoặc gây ô nhiễm vi sinh vật, do đó không được đeo khi làm việc.`,
+            },
+            zh: {
+                question: `在糕点工作场所，以下哪项个人卫生管理是错误的？`,
+                options: [`工作前洗手`, `用卫生帽完全遮住头发`, `戴戒指或手表揉面团`, `剪去过长的指甲`],
+                explanation: `戒指、手表等饰品可能导致异物混入食品或成为微生物污染源，因此不得佩戴。`,
+            },
+            th: {
+                question: `ข้อใดเป็นการจัดการสุขอนามัยส่วนบุคคลที่ผิดในโรงงานทำขนม?`,
+                options: [`ล้างมือก่อนทำงาน`, `สวมหมวกสุขอนามัยปิดศีรษะให้มิดชิด`, `นวดแป้งในขณะสวมแหวนหรือนาฬิกา`, `ตัดเล็บที่ยาวออก`],
+                explanation: `เครื่องประดับอย่างแหวนและนาฬิกาอาจทำให้สิ่งแปลกปลอมเข้าไปในอาหารหรือเป็นแหล่งปนเปื้อนจุลินทรีย์ จึงห้ามสวมใส่`,
+            },
+            tl: {
+                question: `Alin sa mga sumusunod ang MALI sa pamamahala ng personal na kalinisan sa lugar ng paggawa ng pastry?`,
+                options: [`Maghugas ng kamay bago magtrabaho`, `Ganap na takpan ang ulo ng cap na pangkalinisan`, `Magnasa ng masa habang nagsusuot ng singsing o relo`, `Gupitin ang mahabang kuko`],
+                explanation: `Ang mga alahas tulad ng singsing at relo ay maaaring magdulot ng dayuhang bagay na pumasok sa pagkain o maging sanhi ng kontaminasyon ng mikrobyo, kaya hindi dapat isuot.`,
+            },
+            my: {
+                question: `မုန့်ဖုတ်ဆိုင်တွင် ကိုယ်ရေးကိုယ်တာ သန့်ရှင်းရေး စီမံခန့်ခွဲမှုတွင် မမှန်ကန်သောအချက်မှာ ဘာလဲ?`,
+                options: [`အလုပ်မလုပ်မီ လက်ဆေးပါ`, `ဦးထုပ်ဖြင့် ဆံပင်ကို လုံးဝ ဖုံးအုပ်ပါ`, `လက်စွပ် သို့ နာရီကို ဆက်တပ်ကာ မုန့်ပျော်ရသည်`, `ရှည်သောလက်သည်းများကို ဖြတ်ပါ`],
+                explanation: `လက်စွပ်၊ နာရီ ကဲ့သို့သော လက်ဝတ်ရတနာများသည် အစားအသောက်တွင် ပစ္စည်းများ ကျရောက်ခြင်း သို့မဟုတ် ဘက်တီးရီးယား ညစ်ညမ်းမှု ဖြစ်နိုင်သောကြောင့် မတပ်ရပါ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `작업 전 손을 씻는다`, native: `rửa tay trước khi làm việc` },
+                { korean: `위생모`, native: `mũ vệ sinh` },
+                { korean: `반지나 시계를 착용한 채로 반죽한다`, native: `đeo nhẫn hoặc đồng hồ khi nhào bột` },
+                { korean: `손톱`, native: `móng tay` },
+                { korean: `작업장`, native: `xưởng` },
+            ],
+            zh: [
+                { korean: `작업 전 손을 씻는다`, native: `工作前洗手` },
+                { korean: `위생모`, native: `卫生帽` },
+                { korean: `반지나 시계를 착용한 채로 반죽한다`, native: `戴戒指或手表揉面团` },
+                { korean: `손톱`, native: `指甲` },
+                { korean: `작업장`, native: `工作场所` },
+            ],
+            th: [
+                { korean: `작업 전 손을 씻는다`, native: `ล้างมือก่อนทำงาน` },
+                { korean: `위생모`, native: `หมวกสุขอนามัย` },
+                { korean: `반죽`, native: `นวดแป้ง` },
+                { korean: `손톱`, native: `เล็บ` },
+            ],
+            tl: [
+                { korean: `작업 전 손을 씻는다`, native: `maghugas ng kamay bago magtrabaho` },
+                { korean: `위생모`, native: `cap na pangkalinisan` },
+                { korean: `반죽`, native: `masa` },
+                { korean: `손톱`, native: `kuko` },
+            ],
+            my: [
+                { korean: `위생모`, native: `ဦးထုပ်` },
+                { korean: `반지나 시계를 착용한 채로 반죽한다`, native: `လက်စွပ် သို့ နာရီကို တပ်ကာ မုန့်ပျော်ရသည်` },
+                { korean: `손톱`, native: `လက်သည်း` },
+                { korean: `작업장`, native: `အလုပ်ဆိုင်` },
+            ],
+        },
     },
     {
         id: 'ps-45',
@@ -2984,6 +3228,67 @@ export const pastryQuestions = [
         explanation: '중요관리점(CCP, Critical Control Point)은 위해요소를 예방하거나 허용 수준 이하로 감소시킬 수 있는 단계입니다.',
         simpleExplanation: 'CCP는 식품의 위험을 없애거나 줄일 수 있는 가장 중요한 단계예요.',
         keywords: ['HACCP', 'CCP', '중요관리점', '위해요소'],
+        translations: {
+            vi: {
+                question: `Trong 7 nguyên tắc của HACCP, điểm kiểm soát tới hạn (CCP) là gì?`,
+                options: [`Điểm quản lý để tăng doanh thu`, `Giai đoạn có thể ngăn ngừa, loại bỏ hoặc giảm mối nguy xuống mức cho phép`, `Giai đoạn giảm chi phí`, `Giai đoạn quản lý đóng gói`],
+                explanation: `Điểm kiểm soát tới hạn (CCP - Critical Control Point) là giai đoạn có thể ngăn ngừa mối nguy hoặc giảm xuống mức chấp nhận được.`,
+            },
+            zh: {
+                question: `在HACCP的7项原则中，关键控制点（CCP）是什么？`,
+                options: [`提高销售额的管理点`, `可以预防、消除或将危害降至允许水平的阶段`, `降低成本的阶段`, `管理包装的阶段`],
+                explanation: `关键控制点（CCP，Critical Control Point）是可以预防危害或将其降至允许水平以下的阶段。`,
+            },
+            th: {
+                question: `ในหลักการ 7 ข้อของ HACCP จุดควบคุมวิกฤต (CCP) คืออะไร?`,
+                options: [`จุดบริหารเพื่อเพิ่มยอดขาย`, `ขั้นตอนที่สามารถป้องกัน กำจัด หรือลดอันตรายลงสู่ระดับที่ยอมรับได้`, `ขั้นตอนลดต้นทุน`, `ขั้นตอนจัดการบรรจุภัณฑ์`],
+                explanation: `จุดควบคุมวิกฤต (CCP, Critical Control Point) คือขั้นตอนที่สามารถป้องกันอันตรายหรือลดลงต่ำกว่าระดับที่ยอมรับได้`,
+            },
+            tl: {
+                question: `Sa 7 prinsipyo ng HACCP, ano ang Critical Control Point (CCP)?`,
+                options: [`Punto ng pamamahala para sa pagpapalaki ng kita`, `Yugto na maaaring maiwasan, maalis, o mabawasan ang panganib sa katanggap-tanggap na antas`, `Yugto ng pagbabawas ng gastos`, `Yugto ng pamamahala ng packaging`],
+                explanation: `Ang Critical Control Point (CCP) ay isang yugto na maaaring maiwasan ang panganib o mabawasan ito sa katanggap-tanggap na antas.`,
+            },
+            my: {
+                question: `HACCP ၏ မူဝါဒ ၇ ခုတွင် အရေးကြီးသော ထိန်းချုပ်အမှတ် (CCP) ဆိုသည်မှာ ဘာလဲ?`,
+                options: [`ရောင်းအားမြင့်ရန် စီမံခန့်ခွဲသည့် အမှတ်`, `အန္တရာယ်ကို ကာကွယ်၊ ဖယ်ရှား သို့ ခွင့်ပြုနိုင်သောအဆင့်သို့ လျှော့ချနိုင်သည့် အဆင့်`, `ကုန်ကျစရိတ် လျှော့ချသည့် အဆင့်`, `ထုပ်ပိုးမှု စီမံခန့်ခွဲသည့် အဆင့်`],
+                explanation: `အရေးကြီးသော ထိန်းချုပ်အမှတ် (CCP, Critical Control Point) သည် အန္တရာယ်ကို ကာကွယ် သို့မဟုတ် ခွင့်ပြုနိုင်သောအဆင့်အောက်သို့ လျှော့ချနိုင်သည့် အဆင့်ဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `HACCP`, native: `HACCP` },
+                { korean: `중요관리점`, native: `điểm kiểm soát tới hạn` },
+                { korean: `위해요소`, native: `mối nguy` },
+                { korean: `식품 안전`, native: `an toàn thực phẩm` },
+                { korean: `허용 수준`, native: `mức cho phép` },
+            ],
+            zh: [
+                { korean: `HACCP`, native: `HACCP` },
+                { korean: `중요관리점`, native: `关键控制点` },
+                { korean: `위해요소`, native: `危害` },
+                { korean: `식품 안전`, native: `食品安全` },
+                { korean: `허용 수준`, native: `允许水平` },
+            ],
+            th: [
+                { korean: `HACCP`, native: `HACCP` },
+                { korean: `중요관리점`, native: `จุดควบคุมวิกฤต` },
+                { korean: `위해요소`, native: `อันตราย` },
+                { korean: `허용 수준`, native: `ระดับที่ยอมรับได้` },
+            ],
+            tl: [
+                { korean: `HACCP`, native: `HACCP` },
+                { korean: `중요관리점`, native: `Critical Control Point` },
+                { korean: `위해요소`, native: `panganib` },
+                { korean: `허용 수준`, native: `katanggap-tanggap na antas` },
+            ],
+            my: [
+                { korean: `HACCP`, native: `HACCP` },
+                { korean: `중요관리점`, native: `အရေးကြီးသော ထိန်းချုပ်အမှတ်` },
+                { korean: `위해요소`, native: `အန္တရာယ်` },
+                { korean: `허용 수준`, native: `ခွင့်ပြုနိုင်သောအဆင့်` },
+            ],
+        },
     },
     {
         id: 'ps-46',
@@ -2996,6 +3301,67 @@ export const pastryQuestions = [
         explanation: '굽기 공정은 내부 온도를 충분히 올려(예: 74°C 이상) 살모넬라, 대장균 등 병원성 미생물을 사멸시키기 때문에 CCP입니다.',
         simpleExplanation: '굽기는 세균을 죽이는 중요한 단계라 CCP예요.',
         keywords: ['굽기', 'CCP', 'HACCP', '미생물'],
+        translations: {
+            vi: {
+                question: `Lý do chính để thiết lập công đoạn nướng trong làm bánh là CCP của HACCP là gì?`,
+                options: [`Để tạo hương vị ổn định`, `Để tiêu diệt vi sinh vật gây bệnh bằng cách gia nhiệt đủ nhiệt độ`, `Để có màu sắc sản phẩm đẹp`, `Để giảm chi phí`],
+                explanation: `Công đoạn nướng được đặt là CCP vì nó nâng nhiệt độ bên trong đủ cao (ví dụ: trên 74°C) để tiêu diệt vi sinh vật gây bệnh như Salmonella và E. coli.`,
+            },
+            zh: {
+                question: `在糕点制作中，将烘烤工序设定为HACCP关键控制点（CCP）的主要原因是什么？`,
+                options: [`为了使口味一致`, `通过充分加热杀灭病原性微生物`, `为了使产品颜色好看`, `为了降低成本`],
+                explanation: `烘烤工序被设定为CCP，是因为它能将内部温度升至足够高（如74°C以上），杀灭沙门氏菌、大肠杆菌等病原性微生物。`,
+            },
+            th: {
+                question: `เหตุผลหลักในการกำหนดขั้นตอนการอบขนมเป็น CCP ของ HACCP คืออะไร?`,
+                options: [`เพื่อให้รสชาติสม่ำเสมอ`, `เพื่อฆ่าเชื้อจุลินทรีย์ก่อโรคด้วยการให้ความร้อนเพียงพอ`, `เพื่อให้สีผลิตภัณฑ์สวยงาม`, `เพื่อลดต้นทุน`],
+                explanation: `ขั้นตอนการอบถูกกำหนดเป็น CCP เพราะสามารถยกอุณหภูมิภายในให้สูงเพียงพอ (เช่น เกิน 74°C) เพื่อฆ่าเชื้อจุลินทรีย์ก่อโรค เช่น Salmonella และ E. coli`,
+            },
+            tl: {
+                question: `Ano ang pangunahing dahilan ng pagtakda sa proseso ng pagluluto sa oven bilang CCP ng HACCP sa paggawa ng pastry?`,
+                options: [`Para gawing pare-pareho ang lasa`, `Para patayin ang mga pathogenic na mikrobyo sa pamamagitan ng sapat na pagpainit`, `Para gawing maganda ang kulay ng produkto`, `Para mabawasan ang gastos`],
+                explanation: `Ang proseso ng pagluluto sa oven ay tinutukoy bilang CCP dahil iniangat nito ang panloob na temperatura nang sapat (hal. higit sa 74°C) upang patayin ang mga pathogenic na mikrobyo tulad ng Salmonella at E. coli.`,
+            },
+            my: {
+                question: `မုန့်ဖုတ်ခြင်းလုပ်ငန်းကို HACCP ၏ CCP အဖြစ် သတ်မှတ်သည့် အဓိကအကြောင်းရင်းမှာ ဘာလဲ?`,
+                options: [`အရသာကို တသမတ်တည်း ဖြစ်စေရန်`, `လုံလောက်သော အပူချိန်ဖြင့် အပူပေး၍ ရောဂါဖြစ်စေသော ဘက်တီးရီးယားများကို သတ်ဖျက်ရန်`, `ထုတ်ကုန်အရောင် ကောင်းမွန်ရန်`, `ကုန်ကျစရိတ် လျှော့ချရန်`],
+                explanation: `မုန့်ဖုတ်ခြင်းအဆင့်ကို CCP အဖြစ် သတ်မှတ်ခြင်းမှာ အတွင်းအပူချိန်ကို လုံလောက်စွာ (ဉပမာ 74°C ထက်ပိုသော) မြင့်တင်၍ Salmonella၊ E. coli ကဲ့သို့ ရောဂါဖြစ်စေသော ဘက်တီးရီးယားများကို သတ်ဖျက်နိုင်သောကြောင့်ဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `굽기`, native: `nướng` },
+                { korean: `HACCP`, native: `HACCP` },
+                { korean: `병원성 미생물`, native: `vi sinh vật gây bệnh` },
+                { korean: `가열`, native: `gia nhiệt` },
+                { korean: `원가를 절감하기 위해`, native: `giảm chi phí` },
+            ],
+            zh: [
+                { korean: `굽기`, native: `烘烤` },
+                { korean: `HACCP`, native: `HACCP` },
+                { korean: `병원성 미생물`, native: `病原性微生物` },
+                { korean: `가열`, native: `加热` },
+                { korean: `원가를 절감하기 위해`, native: `降低成本` },
+            ],
+            th: [
+                { korean: `굽기`, native: `การอบ` },
+                { korean: `HACCP`, native: `HACCP` },
+                { korean: `병원성 미생물`, native: `จุลินทรีย์ก่อโรค` },
+                { korean: `가열`, native: `ให้ความร้อน` },
+            ],
+            tl: [
+                { korean: `굽기`, native: `pagluluto sa oven` },
+                { korean: `HACCP`, native: `HACCP` },
+                { korean: `병원성 미생물`, native: `pathogenic na mikrobyo` },
+                { korean: `가열`, native: `pagpainit` },
+            ],
+            my: [
+                { korean: `굽기`, native: `မုန့်ဖုတ်ခြင်း` },
+                { korean: `HACCP`, native: `HACCP` },
+                { korean: `병원성 미생물`, native: `ရောဂါဖြစ်စေသော ဘက်တီးရီးယား` },
+                { korean: `가열`, native: `အပူပေးခြင်း` },
+            ],
+        },
     },
     {
         id: 'ps-47',
@@ -3008,6 +3374,67 @@ export const pastryQuestions = [
         explanation: '냉장 보관은 0~10°C(일반적으로 4°C 이하 권장)에서 식품을 보관하여 미생물 증식을 억제합니다.',
         simpleExplanation: '냉장 보관은 0~10도에서 해야 해요.',
         keywords: ['냉장', '보관 온도', '미생물', '식품 안전'],
+        translations: {
+            vi: {
+                question: `Nhiệt độ tiêu chuẩn để bảo quản lạnh thực phẩm là bao nhiêu?`,
+                options: [`Dưới -18°C`, `0~10°C`, `15~20°C`, `Dưới 25°C`],
+                explanation: `Bảo quản lạnh là giữ thực phẩm ở 0~10°C (thường khuyến nghị dưới 4°C) để ức chế sự phát triển của vi sinh vật.`,
+            },
+            zh: {
+                question: `食品冷藏保存的标准温度是多少？`,
+                options: [`-18°C以下`, `0~10°C`, `15~20°C`, `25°C以下`],
+                explanation: `冷藏保存是在0~10°C（一般建议4°C以下）条件下存放食品，以抑制微生物增殖。`,
+            },
+            th: {
+                question: `อุณหภูมิมาตรฐานสำหรับการเก็บรักษาอาหารในตู้เย็นคือเท่าไร?`,
+                options: [`ต่ำกว่า -18°C`, `0~10°C`, `15~20°C`, `ต่ำกว่า 25°C`],
+                explanation: `การเก็บรักษาในตู้เย็นคือการเก็บอาหารที่อุณหภูมิ 0~10°C (แนะนำต่ำกว่า 4°C) เพื่อยับยั้งการเจริญเติบโตของจุลินทรีย์`,
+            },
+            tl: {
+                question: `Ano ang tamang pamantayang temperatura para sa pag-iimbak ng pagkain sa ref?`,
+                options: [`Mas mababa sa -18°C`, `0~10°C`, `15~20°C`, `Mas mababa sa 25°C`],
+                explanation: `Ang pag-iimbak sa ref ay pag-iingat ng pagkain sa 0~10°C (karaniwang inirerekomendang mas mababa sa 4°C) upang pigilan ang paglago ng mga mikrobyo.`,
+            },
+            my: {
+                question: `အစားအသောက် ရေခဲမုန့်ထဲ သိမ်းဆည်းရာတွင် မှန်ကန်သော အပူချိန်မှာ ဘာလဲ?`,
+                options: [`-18°C အောက်`, `0~10°C`, `15~20°C`, `25°C အောက်`],
+                explanation: `ရေခဲမုန့်သိမ်းဆည်းခြင်းမှာ ဘက်တီးရီးယား ကြီးထွားမှုကို တားဆီးရန် 0~10°C (ယေဘုယျအားဖြင့် 4°C အောက် အကြံပြု) တွင် အစားအသောက်ကို သိမ်းဆည်းခြင်းဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `냉장`, native: `bảo quản lạnh` },
+                { korean: `기준 온도`, native: `nhiệt độ tiêu chuẩn` },
+                { korean: `0~10°C`, native: `0~10°C` },
+                { korean: `-18°C 이하`, native: `dưới -18°C` },
+                { korean: `25°C 이하`, native: `dưới 25°C` },
+            ],
+            zh: [
+                { korean: `냉장`, native: `冷藏` },
+                { korean: `기준 온도`, native: `标准温度` },
+                { korean: `0~10°C`, native: `0~10°C` },
+                { korean: `-18°C 이하`, native: `-18°C以下` },
+                { korean: `25°C 이하`, native: `25°C以下` },
+            ],
+            th: [
+                { korean: `냉장`, native: `ตู้เย็น` },
+                { korean: `기준 온도`, native: `อุณหภูมิมาตรฐาน` },
+                { korean: `0~10°C`, native: `0~10°C` },
+                { korean: `25°C 이하`, native: `ต่ำกว่า 25°C` },
+            ],
+            tl: [
+                { korean: `냉장`, native: `pag-iimbak sa ref` },
+                { korean: `기준 온도`, native: `pamantayang temperatura` },
+                { korean: `0~10°C`, native: `0~10°C` },
+                { korean: `25°C 이하`, native: `mas mababa sa 25°C` },
+            ],
+            my: [
+                { korean: `냉장`, native: `ရေခဲမုန့်သိမ်းဆည်း` },
+                { korean: `기준 온도`, native: `မှန်ကန်သောအပူချိန်` },
+                { korean: `0~10°C`, native: `0~10°C` },
+                { korean: `25°C 이하`, native: `25°C အောက်` },
+            ],
+        },
     },
     {
         id: 'ps-48',
@@ -3020,6 +3447,67 @@ export const pastryQuestions = [
         explanation: '식품 냉동 보관은 -18°C 이하를 유지해야 하며, 이 온도에서는 대부분의 미생물 활동이 정지됩니다.',
         simpleExplanation: '냉동 보관은 영하 18도보다 낮아야 해요.',
         keywords: ['냉동', '보관 온도', '-18°C', '미생물'],
+        translations: {
+            vi: {
+                question: `Nhiệt độ tiêu chuẩn để bảo quản đông lạnh thực phẩm là bao nhiêu?`,
+                options: [`Dưới -5°C`, `Dưới -10°C`, `Dưới -18°C`, `Dưới -30°C`],
+                explanation: `Bảo quản đông lạnh thực phẩm phải duy trì dưới -18°C, ở nhiệt độ này hầu hết hoạt động của vi sinh vật bị ngừng lại.`,
+            },
+            zh: {
+                question: `食品冷冻保存的标准温度是多少？`,
+                options: [`-5°C以下`, `-10°C以下`, `-18°C以下`, `-30°C以下`],
+                explanation: `食品冷冻保存需维持在-18°C以下，在此温度下大多数微生物活动停止。`,
+            },
+            th: {
+                question: `อุณหภูมิมาตรฐานสำหรับการแช่แข็งอาหารคือเท่าไร?`,
+                options: [`ต่ำกว่า -5°C`, `ต่ำกว่า -10°C`, `ต่ำกว่า -18°C`, `ต่ำกว่า -30°C`],
+                explanation: `การแช่แข็งอาหารต้องรักษาอุณหภูมิต่ำกว่า -18°C ซึ่งที่อุณหภูมินี้กิจกรรมของจุลินทรีย์ส่วนใหญ่จะหยุดลง`,
+            },
+            tl: {
+                question: `Ano ang tamang pamantayang temperatura para sa pag-iimbak ng frozen na pagkain?`,
+                options: [`Mas mababa sa -5°C`, `Mas mababa sa -10°C`, `Mas mababa sa -18°C`, `Mas mababa sa -30°C`],
+                explanation: `Ang pag-iimbak ng frozen na pagkain ay dapat mapanatili sa ibaba ng -18°C, at sa temperaturang ito, karamihan sa aktibidad ng mikrobyo ay humihinto.`,
+            },
+            my: {
+                question: `အစားအသောက် အေးခဲ သိမ်းဆည်းရာတွင် မှန်ကန်သော အပူချိန်မှာ ဘာလဲ?`,
+                options: [`-5°C အောက်`, `-10°C အောက်`, `-18°C အောက်`, `-30°C အောက်`],
+                explanation: `အစားအသောက် အေးခဲသိမ်းဆည်းခြင်းမှာ -18°C အောက် ထိန်းသိမ်းရမည်ဖြစ်ပြီး ဤအပူချိန်တွင် ဘက်တီးရီးယားအများစု၏ လုပ်ဆောင်မှုများ ရပ်တန့်သွားသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `냉동`, native: `đông lạnh` },
+                { korean: `기준 온도`, native: `nhiệt độ tiêu chuẩn` },
+                { korean: `-18°C 이하`, native: `dưới -18°C` },
+                { korean: `-5°C 이하`, native: `dưới -5°C` },
+                { korean: `-10°C 이하`, native: `dưới -10°C` },
+            ],
+            zh: [
+                { korean: `냉동`, native: `冷冻` },
+                { korean: `기준 온도`, native: `标准温度` },
+                { korean: `-18°C 이하`, native: `-18°C以下` },
+                { korean: `-5°C 이하`, native: `-5°C以下` },
+                { korean: `-10°C 이하`, native: `-10°C以下` },
+            ],
+            th: [
+                { korean: `냉동`, native: `การแช่แข็ง` },
+                { korean: `기준 온도`, native: `อุณหภูมิมาตรฐาน` },
+                { korean: `-18°C 이하`, native: `ต่ำกว่า -18°C` },
+                { korean: `-5°C 이하`, native: `ต่ำกว่า -5°C` },
+            ],
+            tl: [
+                { korean: `냉동`, native: `frozen` },
+                { korean: `기준 온도`, native: `pamantayang temperatura` },
+                { korean: `-18°C 이하`, native: `mas mababa sa -18°C` },
+                { korean: `-5°C 이하`, native: `mas mababa sa -5°C` },
+            ],
+            my: [
+                { korean: `냉동`, native: `အေးခဲ သိမ်းဆည်း` },
+                { korean: `기준 온도`, native: `မှန်ကန်သောအပူချိန်` },
+                { korean: `-18°C 이하`, native: `-18°C အောက်` },
+                { korean: `-5°C 이하`, native: `-5°C အောက်` },
+            ],
+        },
     },
     {
         id: 'ps-49',
@@ -3032,6 +3520,67 @@ export const pastryQuestions = [
         explanation: '식품 알레르기 의무 표시 성분에는 밀, 달걀, 우유, 견과류 등이 포함되지만 설탕은 알레르기 유발물질 의무 표시 대상이 아닙니다.',
         simpleExplanation: '밀, 달걀, 우유는 알레르기 표시를 해야 해요. 설탕은 안 해도 돼요.',
         keywords: ['알레르기', '표시', '밀', '달걀', '우유'],
+        translations: {
+            vi: {
+                question: `Trong các chất gây dị ứng thực phẩm, thành phần nào KHÔNG bắt buộc phải ghi nhãn trong bánh kẹo?`,
+                options: [`Lúa mì`, `Trứng`, `Sữa`, `Đường`],
+                explanation: `Các thành phần bắt buộc ghi nhãn dị ứng bao gồm lúa mì, trứng, sữa, hạt cứng... nhưng đường không phải là đối tượng bắt buộc ghi nhãn chất gây dị ứng.`,
+            },
+            zh: {
+                question: `在食品过敏原中，哪种成分在糕点制作中不是必须标注的？`,
+                options: [`小麦`, `鸡蛋`, `牛奶`, `糖`],
+                explanation: `食品过敏强制标注成分包括小麦、鸡蛋、牛奶、坚果等，但糖不是强制标注过敏原的对象。`,
+            },
+            th: {
+                question: `ในบรรดาสารก่อภูมิแพ้อาหาร ส่วนประกอบใดที่ไม่จำเป็นต้องระบุในขนมอบ?`,
+                options: [`ข้าวสาลี`, `ไข่`, `นม`, `น้ำตาล`],
+                explanation: `ส่วนประกอบที่ต้องระบุอาการแพ้ได้แก่ ข้าวสาลี ไข่ นม ถั่ว ฯลฯ แต่น้ำตาลไม่ใช่ส่วนประกอบที่ต้องระบุภาคบังคับ`,
+            },
+            tl: {
+                question: `Sa mga sangkap na nagdudulot ng allergy sa pagkain, alin ang HINDI kailangang ipakita sa label sa paggawa ng pastry?`,
+                options: [`Trigo`, `Itlog`, `Gatas`, `Asukal`],
+                explanation: `Ang mga sangkap na kailangang ipakita sa label ng allergy ay kinabibilangan ng trigo, itlog, gatas, mani... ngunit ang asukal ay hindi kabilang sa mga mandatory na allergy label.`,
+            },
+            my: {
+                question: `အစားအသောက် ဓာတ်မတည့်မှု ဖြစ်စေသော ပစ္စည်းများတွင် မုန့်ဖုတ်ရာတွင် မဖြစ်မနေ ဖော်ပြရမည်မဟုတ်သော ပါဝင်ပစ္စည်းမှာ ဘာလဲ?`,
+                options: [`ဂျုံ`, `ဥ`, `နွားနို့`, `သကြား`],
+                explanation: `ဓာတ်မတည့်မှု မဖြစ်မနေ ဖော်ပြရမည့် ပါဝင်ပစ္စည်းများတွင် ဂျုံ၊ ဥ၊ နွားနို့၊ သီဟိုဠ်သီး ဆိုသည့်အရာများ ပါဝင်သော်လည်း သကြားသည် ဓာတ်မတည့်မှု မဖြစ်မနေ ဖော်ပြရမည့် အရာများတွင် မပါဝင်ပါ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `알레르기`, native: `dị ứng` },
+                { korean: `밀`, native: `lúa mì` },
+                { korean: `달걀`, native: `trứng` },
+                { korean: `우유`, native: `sữa` },
+                { korean: `설탕`, native: `đường` },
+            ],
+            zh: [
+                { korean: `알레르기`, native: `过敏` },
+                { korean: `밀`, native: `小麦` },
+                { korean: `달걀`, native: `鸡蛋` },
+                { korean: `우유`, native: `牛奶` },
+                { korean: `설탕`, native: `糖` },
+            ],
+            th: [
+                { korean: `알레르기`, native: `ภูมิแพ้` },
+                { korean: `밀`, native: `ข้าวสาลี` },
+                { korean: `달걀`, native: `ไข่` },
+                { korean: `설탕`, native: `น้ำตาล` },
+            ],
+            tl: [
+                { korean: `알레르기`, native: `allergy` },
+                { korean: `밀`, native: `trigo` },
+                { korean: `달걀`, native: `itlog` },
+                { korean: `설탕`, native: `asukal` },
+            ],
+            my: [
+                { korean: `알레르기`, native: `ဓာတ်မတည့်မှု` },
+                { korean: `밀`, native: `ဂျုံ` },
+                { korean: `달걀`, native: `ဥ` },
+                { korean: `설탕`, native: `သကြား` },
+            ],
+        },
     },
     {
         id: 'ps-50',
@@ -3044,6 +3593,67 @@ export const pastryQuestions = [
         explanation: '소브산은 제과류, 음료 등에 사용되는 식품 보존료로 곰팡이, 효모, 세균의 증식을 억제합니다.',
         simpleExplanation: '소브산은 곰팡이와 세균이 자라지 못하게 하는 보존료예요.',
         keywords: ['소브산', '보존료', '첨가물', '미생물'],
+        translations: {
+            vi: {
+                question: `Vai trò của axit sorbic (sorbic acid) khi được sử dụng trong thực phẩm là gì?`,
+                options: [`Làm đậm màu thực phẩm`, `Ngăn ngừa oxy hóa`, `Chất bảo quản ức chế sự phát triển của vi sinh vật`, `Chất điều vị cải thiện hương vị`],
+                explanation: `Axit sorbic là chất bảo quản thực phẩm được dùng trong bánh kẹo, đồ uống... ức chế sự phát triển của nấm mốc, nấm men và vi khuẩn.`,
+            },
+            zh: {
+                question: `山梨酸（sorbic acid）在食品中使用时的作用是什么？`,
+                options: [`使颜色变深`, `防止氧化`, `抑制微生物增殖的防腐剂`, `改善口味的调味料`],
+                explanation: `山梨酸是用于糕点、饮料等的食品防腐剂，能抑制霉菌、酵母和细菌的增殖。`,
+            },
+            th: {
+                question: `บทบาทของ sorbic acid เมื่อใช้ในอาหารคืออะไร?`,
+                options: [`ทำให้สีเข้มขึ้น`, `ป้องกันการออกซิเดชัน`, `สารกันเสียที่ยับยั้งการเจริญเติบโตของจุลินทรีย์`, `สารปรุงแต่งรสที่ช่วยพัฒนารสชาติ`],
+                explanation: `Sorbic acid เป็นสารกันเสียอาหารที่ใช้ในขนมและเครื่องดื่ม ยับยั้งการเจริญเติบโตของเชื้อรา ยีสต์ และแบคทีเรีย`,
+            },
+            tl: {
+                question: `Ano ang papel ng sorbic acid kapag ginagamit sa pagkain?`,
+                options: [`Pinapalalim ang kulay ng pagkain`, `Pinipigilan ang oksidasyon`, `Preservative na pumipigil sa paglago ng mga mikrobyo`, `Seasoning na nagpapabuti ng lasa`],
+                explanation: `Ang sorbic acid ay isang food preservative na ginagamit sa pastry, inumin at iba pa na pumipigil sa paglago ng amag, lebadura, at bakterya.`,
+            },
+            my: {
+                question: `Sorbic acid ကို အစားအသောက်တွင် အသုံးပြုသောအခါ ၎င်း၏ အခန်းကဏ္ဍမှာ ဘာလဲ?`,
+                options: [`အစားအသောက်၏ အရောင်ကို ပိုမှောင်စေသည်`, `ဓာတ်တိုးမှုကို တားဆီးသည်`, `ဘက်တီးရီးယား ကြီးထွားမှုကို ဟန့်တားသော သိမ်းဆည်းမှုပစ္စည်း`, `အရသာ တိုးတက်စေသော အမွှေးအကြိုင်`],
+                explanation: `Sorbic acid သည် မုန့်ဖုတ်ကုန်၊ အဖျော်ယမကာ စသည်တို့တွင် အသုံးပြုသော အစားအသောက် သိမ်းဆည်းပစ္စည်းဖြစ်ပြီး မှိုများ၊ တဆေးနှင့် ဘက်တီးရီးယားများ ကြီးထွားမှုကို ဟန့်တားသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `소브산`, native: `axit sorbic` },
+                { korean: `보존료`, native: `chất bảo quản` },
+                { korean: `미생물 증식을 억제하는 보존료`, native: `chất bảo quản ức chế vi sinh vật` },
+                { korean: `산화를 방지한다`, native: `ngăn ngừa oxy hóa` },
+                { korean: `조미료`, native: `chất điều vị` },
+            ],
+            zh: [
+                { korean: `소브산`, native: `山梨酸` },
+                { korean: `보존료`, native: `防腐剂` },
+                { korean: `미생물 증식을 억제하는 보존료`, native: `抑制微生物增殖的防腐剂` },
+                { korean: `산화를 방지한다`, native: `防止氧化` },
+                { korean: `조미료`, native: `调味料` },
+            ],
+            th: [
+                { korean: `소브산`, native: `sorbic acid` },
+                { korean: `보존료`, native: `สารกันเสีย` },
+                { korean: `미생물`, native: `จุลินทรีย์` },
+                { korean: `산화를 방지한다`, native: `ป้องกันการออกซิเดชัน` },
+            ],
+            tl: [
+                { korean: `소브산`, native: `sorbic acid` },
+                { korean: `보존료`, native: `preservative` },
+                { korean: `미생물`, native: `mikrobyo` },
+                { korean: `산화를 방지한다`, native: `pinipigilan ang oksidasyon` },
+            ],
+            my: [
+                { korean: `소브산`, native: `sorbic acid` },
+                { korean: `보존료`, native: `သိမ်းဆည်းပစ္စည်း` },
+                { korean: `미생물`, native: `ဘက်တီးရီးယား` },
+                { korean: `산화를 방지한다`, native: `ဓာတ်တိုးမှု တားဆီး` },
+            ],
+        },
     },
     {
         id: 'ps-51',
@@ -3056,6 +3666,67 @@ export const pastryQuestions = [
         explanation: '식품접객업(제과점 포함)은 관할 지방자치단체(시군구청)에 영업신고를 해야 합니다.',
         simpleExplanation: '제과점을 열려면 시군구청에 신고해야 해요.',
         keywords: ['영업신고', '제과점', '지방자치단체', '식품위생법'],
+        translations: {
+            vi: {
+                question: `Cơ quan hành chính liên quan đến việc đăng ký kinh doanh tiệm bánh là gì?`,
+                options: [`Cục Thuế Quốc gia`, `Chính quyền địa phương (Văn phòng quận/huyện/thị)`, `Bộ Lao động`, `Ủy ban Thương mại Công bằng`],
+                explanation: `Dịch vụ tiếp khách thực phẩm (bao gồm tiệm bánh) phải đăng ký kinh doanh tại chính quyền địa phương có thẩm quyền (Văn phòng quận/huyện).`,
+            },
+            zh: {
+                question: `与糕点店营业申报（许可）相关的行政机构是什么？`,
+                options: [`国税局`, `地方自治团体（市/郡/区厅）`, `雇用劳动部`, `公正交易委员会`],
+                explanation: `食品接客业（包括糕点店）须向辖区地方自治团体（市/郡/区厅）申报营业。`,
+            },
+            th: {
+                question: `หน่วยงานราชการที่เกี่ยวข้องกับการแจ้งประกอบกิจการร้านขนมคืออะไร?`,
+                options: [`กรมสรรพากร`, `หน่วยงานปกครองส่วนท้องถิ่น (เทศบาล/อำเภอ)`, `กระทรวงแรงงาน`, `คณะกรรมการแข่งขันทางการค้า`],
+                explanation: `ธุรกิจบริการอาหาร (รวมถึงร้านขนม) ต้องแจ้งประกอบกิจการที่หน่วยงานปกครองส่วนท้องถิ่นที่มีอำนาจ`,
+            },
+            tl: {
+                question: `Anong ahensyang pang-administratibo ang may kaugnayan sa pagpaparehistro ng negosyo ng pastry shop?`,
+                options: [`National Tax Service`, `Lokal na pamahalaan (tanggapan ng siyudad/munisipyo/distrito)`, `Kagawaran ng Paggawa`, `Komisyon ng Patas na Kalakalan`],
+                explanation: `Ang mga negosyo sa serbisyo ng pagkain (kasama ang pastry shop) ay kailangang mag-rehistro ng negosyo sa may-katuturang lokal na pamahalaan.`,
+            },
+            my: {
+                question: `မုန့်ဖုတ်ဆိုင် လုပ်ငန်းတင်ပြမှုနှင့် သက်ဆိုင်သော အုပ်ချုပ်ရေး အဖွဲ့အစည်းမှာ ဘာလဲ?`,
+                options: [`အမျိုးသား အခွန်ဘဏ္ဍာ ဦးစီးဌာန`, `ဒေသဆိုင်ရာ အစိုးရ (မြို့နယ် / ချုပ်ငြိမ်းစခန်း)`, `အလုပ်သမားဝန်ကြီးဌာန`, `မြောက်ကူးသန်းရောင်းဝယ်ရေး ကော်မရှင်`],
+                explanation: `အစားအသောက် ဧည့်ခံရေး လုပ်ငန်း (မုန့်ဖုတ်ဆိုင် အပါအဝင်) သည် မြို့နယ်ဆိုင်ရာ ဒေသဆိုင်ရာ အစိုးရ (မြို့နယ် / ချုပ်ငြိမ်းစခန်း) တွင် လုပ်ငန်းတင်ပြမှု ပြုလုပ်ရမည်ဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `영업신고`, native: `đăng ký kinh doanh` },
+                { korean: `제과점`, native: `tiệm bánh` },
+                { korean: `지방자치단체`, native: `chính quyền địa phương` },
+                { korean: `국세청`, native: `Cục Thuế Quốc gia` },
+                { korean: `고용노동부`, native: `Bộ Lao động` },
+            ],
+            zh: [
+                { korean: `영업신고`, native: `营业申报` },
+                { korean: `제과점`, native: `糕点店` },
+                { korean: `지방자치단체`, native: `地方自治团体` },
+                { korean: `국세청`, native: `国税局` },
+                { korean: `고용노동부`, native: `雇用劳动部` },
+            ],
+            th: [
+                { korean: `영업신고`, native: `แจ้งประกอบกิจการ` },
+                { korean: `제과점`, native: `ร้านขนม` },
+                { korean: `지방자치단체`, native: `หน่วยงานปกครองส่วนท้องถิ่น` },
+                { korean: `국세청`, native: `กรมสรรพากร` },
+            ],
+            tl: [
+                { korean: `영업신고`, native: `pagpaparehistro ng negosyo` },
+                { korean: `제과점`, native: `pastry shop` },
+                { korean: `지방자치단체`, native: `lokal na pamahalaan` },
+                { korean: `국세청`, native: `National Tax Service` },
+            ],
+            my: [
+                { korean: `영업신고`, native: `လုပ်ငန်းတင်ပြမှု` },
+                { korean: `제과점`, native: `မုန့်ဖုတ်ဆိုင်` },
+                { korean: `지방자치단체`, native: `ဒေသဆိုင်ရာ အစိုးရ` },
+                { korean: `국세청`, native: `အခွန်ဘဏ္ဍာ ဦးစီးဌာန` },
+            ],
+        },
     },
     {
         id: 'ps-52',
@@ -3068,6 +3739,67 @@ export const pastryQuestions = [
         explanation: '교차오염은 날 식품의 세균이 조리된 식품으로 이동하는 것입니다. 날 달걀 취급 후에는 반드시 손을 씻고 도구를 소독해야 합니다.',
         simpleExplanation: '날 달걀을 다룬 후 손을 씻고 도구를 소독하면 교차오염을 막을 수 있어요.',
         keywords: ['교차오염', '위생', '달걀', '소독'],
+        translations: {
+            vi: {
+                question: `Phương pháp nào đúng để phòng ngừa ô nhiễm chéo (cross contamination)?`,
+                options: [`Dùng cùng một dao và thớt để thái thực phẩm sống và thực phẩm đã nấu`, `Không cần rửa tay sau khi nấu ăn`, `Sau khi xử lý trứng sống, bắt buộc phải rửa tay và khử trùng dụng cụ`, `Có thể để tất cả nguyên liệu ở cùng một không gian bảo quản`],
+                explanation: `Ô nhiễm chéo là vi khuẩn từ thực phẩm sống di chuyển sang thực phẩm đã nấu chín. Sau khi xử lý trứng sống, bắt buộc phải rửa tay và khử trùng dụng cụ.`,
+            },
+            zh: {
+                question: `以下哪种方法能正确预防交叉污染（cross contamination）？`,
+                options: [`用同一把刀和砧板切割生食和熟食`, `烹饪后不需要洗手`, `处理生鸡蛋后必须洗手并对工具消毒`, `所有食材可以放在同一个存放空间`],
+                explanation: `交叉污染是指生食中的细菌转移到熟食上。处理生鸡蛋后必须洗手并对工具进行消毒。`,
+            },
+            th: {
+                question: `วิธีใดถูกต้องในการป้องกันการปนเปื้อนข้าม (cross contamination)?`,
+                options: [`ใช้มีดและเขียงเดียวกันตัดอาหารดิบและอาหารที่ปรุงสุกแล้ว`, `ไม่ต้องล้างมือหลังจากปรุงอาหาร`, `หลังจากจัดการไข่ดิบต้องล้างมือและฆ่าเชื้ออุปกรณ์`, `สามารถวางส่วนผสมทั้งหมดในพื้นที่เก็บรักษาเดียวกันได้`],
+                explanation: `การปนเปื้อนข้ามคือการที่แบคทีเรียจากอาหารดิบย้ายไปยังอาหารที่ปรุงสุกแล้ว หลังจากจัดการไข่ดิบต้องล้างมือและฆ่าเชื้ออุปกรณ์`,
+            },
+            tl: {
+                question: `Alin ang tamang paraan ng pag-iwas sa cross contamination?`,
+                options: [`Gamitin ang parehong kutsilyo at cutting board para sa hilaw at lutong pagkain`, `Hindi na kailangang maghugas ng kamay pagkatapos magluto`, `Pagkatapos hawakan ang hilaw na itlog, kailangang maghugas ng kamay at i-disinfect ang mga kagamitan`, `Maaaring ilagay ang lahat ng sangkap sa parehong espasyo ng imbakan`],
+                explanation: `Ang cross contamination ay ang paglipat ng bakterya mula sa hilaw na pagkain patungo sa lutong pagkain. Pagkatapos hawakan ang hilaw na itlog, kailangang maghugas ng kamay at i-disinfect ang mga kagamitan.`,
+            },
+            my: {
+                question: `ဆင့်ကဲ ညစ်ညမ်းမှု (cross contamination) ကာကွယ်ရန် မည်သည့်နည်းလမ်းမှာ မှန်ကန်သနည်း?`,
+                options: [`မချက်ပြုတ်ရသေးသော အစားအစာနှင့် ချက်ပြုတ်ပြီးသော အစားအစာများကို တူညီသော ဓားနှင့် ဖြတ်ကြောင်းဖြင့် ဖြတ်သည်`, `ချက်ပြုတ်ပြီးနောက် လက်ဆေးရန် မလိုအပ်`, `မချက်ပြုတ်ရသေးသော ဥကို ကိုင်တွယ်ပြီးနောက် မဖြစ်မနေ လက်ဆေးပြီး ကိရိယာများကို သန့်ရှင်းရေးဆေးပြုလုပ်ရမည်`, `ပါဝင်ပစ္စည်းအားလုံးကို တူညီသောနေရာတွင် သိမ်းဆည်းနိုင်သည်`],
+                explanation: `ဆင့်ကဲ ညစ်ညမ်းမှုဆိုသည်မှာ မချက်ပြုတ်ရသေးသော အစားအစာမှ ဘက်တီးရီးယားများ ချက်ပြုတ်ပြီးသော အစားအစာသို့ ရောက်သွားခြင်းဖြစ်သည်။ မချက်ပြုတ်ရသေးသော ဥကို ကိုင်တွယ်ပြီးနောက် မဖြစ်မနေ လက်ဆေးပြီး ကိရိယာများကို သန့်ရှင်းရေးဆေးပြုလုပ်ရမည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `교차오염`, native: `ô nhiễm chéo` },
+                { korean: `날 달걀`, native: `trứng sống` },
+                { korean: `소독`, native: `khử trùng` },
+                { korean: `도마`, native: `thớt` },
+                { korean: `조리 후 손을 씻지 않아도 된다`, native: `không cần rửa tay sau khi nấu` },
+            ],
+            zh: [
+                { korean: `교차오염`, native: `交叉污染` },
+                { korean: `날 달걀`, native: `生鸡蛋` },
+                { korean: `소독`, native: `消毒` },
+                { korean: `도마`, native: `砧板` },
+                { korean: `조리 후 손을 씻지 않아도 된다`, native: `烹饪后不需要洗手` },
+            ],
+            th: [
+                { korean: `교차오염`, native: `การปนเปื้อนข้าม` },
+                { korean: `날 달걀`, native: `ไข่ดิบ` },
+                { korean: `소독`, native: `ฆ่าเชื้อ` },
+                { korean: `도마`, native: `เขียง` },
+            ],
+            tl: [
+                { korean: `교차오염`, native: `cross contamination` },
+                { korean: `날 달걀`, native: `hilaw na itlog` },
+                { korean: `소독`, native: `i-disinfect` },
+                { korean: `도마`, native: `cutting board` },
+            ],
+            my: [
+                { korean: `교차오염`, native: `ဆင့်ကဲ ညစ်ညမ်းမှု` },
+                { korean: `날 달걀`, native: `မချက်ပြုတ်ရသေးသော ဥ` },
+                { korean: `소독`, native: `သန့်ရှင်းရေးဆေး` },
+                { korean: `도마`, native: `ဖြတ်ကြောင်း` },
+            ],
+        },
     },
     {
         id: 'ps-53',
@@ -3080,6 +3812,67 @@ export const pastryQuestions = [
         explanation: '산화방지제는 식품 내 유지가 공기(산소)와 반응하여 산패되는 것을 막아 풍미와 유통기한을 유지합니다.',
         simpleExplanation: '산화방지제는 기름이 산패되지 않게 해서 식품을 오래 보관할 수 있게 해요.',
         keywords: ['산화방지제', '산패', '첨가물', '유통기한'],
+        translations: {
+            vi: {
+                question: `Vai trò của chất chống oxy hóa được sử dụng trong thực phẩm là gì?`,
+                options: [`Làm thay đổi màu sắc`, `Ngăn ngừa sự oxy hóa (hôi dầu) của chất béo để kéo dài thời hạn bảo quản`, `Tăng cường vị ngọt`, `Làm phồng sản phẩm`],
+                explanation: `Chất chống oxy hóa ngăn chất béo trong thực phẩm phản ứng với không khí (oxy) và bị hôi dầu, duy trì hương vị và hạn dùng.`,
+            },
+            zh: {
+                question: `食品中使用的抗氧化剂的作用是什么？`,
+                options: [`改变颜色`, `防止油脂氧化（酸败）以延长保存期`, `增强甜味`, `使产品膨胀`],
+                explanation: `抗氧化剂可防止食品中的油脂与空气（氧气）反应而酸败，从而维持风味和保质期。`,
+            },
+            th: {
+                question: `บทบาทของสารต้านอนุมูลอิสระที่ใช้ในอาหารคืออะไร?`,
+                options: [`เปลี่ยนสีอาหาร`, `ป้องกันการออกซิเดชัน (การเหม็นหืน) ของไขมันเพื่อยืดอายุการเก็บรักษา`, `เพิ่มรสหวาน`, `ทำให้ผลิตภัณฑ์ฟู`],
+                explanation: `สารต้านอนุมูลอิสระป้องกันไม่ให้ไขมันในอาหารทำปฏิกิริยากับอากาศ (ออกซิเจน) และเหม็นหืน รักษากลิ่นและอายุการเก็บ`,
+            },
+            tl: {
+                question: `Ano ang papel ng antioxidant na ginagamit sa pagkain?`,
+                options: [`Binabago ang kulay`, `Pinipigilan ang oksidasyon (pagkasira ng taba) upang palawigin ang panahon ng pag-iimbak`, `Pinapalakas ang tamis`, `Nagpapalaki ng produkto`],
+                explanation: `Ang antioxidant ay pumipigil sa taba sa pagkain na mag-react sa hangin (oxygen) at masira, na nagpapanatili ng lasa at buhay ng produkto.`,
+            },
+            my: {
+                question: `အစားအသောက်တွင် အသုံးပြုသော antioxidant ၏ အခန်းကဏ္ဍမှာ ဘာလဲ?`,
+                options: [`အရောင်ကို ပြောင်းလဲစေသည်`, `ဆီ၏ ဓာတ်တိုးမှု (ဆီဆိုး) ကို ကာကွယ်၍ သိမ်းဆည်းသည့်ကာလ ရှည်ကြာစေသည်`, `ချိုမြိန်မှုကို မြင့်တင်သည်`, `ထုတ်ကုန်ကို ပွောင်းလာစေသည်`],
+                explanation: `Antioxidant သည် အစားအသောက်ရှိ ဆီများကို လေ (အောက်ဆီဂျင်) နှင့် တုံ့ပြန်ကာ ဆိုးဝါးသွားခြင်းကို ကာကွယ်ပြီး အနံ့နှင့် သက်တမ်းကို ထိန်းသိမ်းသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `산화방지제`, native: `chất chống oxy hóa` },
+                { korean: `유지의 산화`, native: `oxy hóa chất béo` },
+                { korean: `산패`, native: `hôi dầu` },
+                { korean: `보존기간`, native: `thời hạn bảo quản` },
+                { korean: `제품을 부풀린다`, native: `làm phồng sản phẩm` },
+            ],
+            zh: [
+                { korean: `산화방지제`, native: `抗氧化剂` },
+                { korean: `유지의 산화`, native: `油脂氧化` },
+                { korean: `산패`, native: `酸败` },
+                { korean: `보존기간`, native: `保存期` },
+                { korean: `제품을 부풀린다`, native: `使产品膨胀` },
+            ],
+            th: [
+                { korean: `산화방지제`, native: `สารต้านอนุมูลอิสระ` },
+                { korean: `산패`, native: `เหม็นหืน` },
+                { korean: `보존기간`, native: `อายุการเก็บรักษา` },
+                { korean: `제품을 부풀린다`, native: `ทำให้ผลิตภัณฑ์ฟู` },
+            ],
+            tl: [
+                { korean: `산화방지제`, native: `antioxidant` },
+                { korean: `산패`, native: `pagkasira ng taba` },
+                { korean: `보존기간`, native: `panahon ng pag-iimbak` },
+                { korean: `제품을 부풀린다`, native: `nagpapalaki ng produkto` },
+            ],
+            my: [
+                { korean: `산화방지제`, native: `antioxidant` },
+                { korean: `산패`, native: `ဆီဆိုး` },
+                { korean: `보존기간`, native: `သိမ်းဆည်းသည့်ကာလ` },
+                { korean: `제품을 부풀린다`, native: `ထုတ်ကုန် ပွောင်းလာ` },
+            ],
+        },
     },
     {
         id: 'ps-54',
@@ -3092,6 +3885,67 @@ export const pastryQuestions = [
         explanation: '도마는 사용 후 세척과 소독을 실시하고 충분히 건조시켜야 미생물 증식을 막을 수 있습니다.',
         simpleExplanation: '도마는 쓰고 나서 씻고 소독하고 잘 말려야 해요.',
         keywords: ['도마', '소독', '위생관리', '건조'],
+        translations: {
+            vi: {
+                question: `Phương pháp vệ sinh thớt đúng cách tại xưởng làm việc là gì?`,
+                options: [`Chỉ cần rửa bằng nước là đủ`, `Dùng cho tất cả nguyên liệu thực phẩm không phân biệt màu`, `Sau khi sử dụng, rửa và khử trùng rồi làm khô hoàn toàn`, `Không cần thay khi có vết xước`],
+                explanation: `Thớt sau khi dùng cần được rửa, khử trùng và làm khô hoàn toàn để ngăn chặn vi sinh vật phát triển.`,
+            },
+            zh: {
+                question: `工作场所砧板的正确卫生管理方法是什么？`,
+                options: [`只用水清洗就足够了`, `不区分颜色地用于所有食材`, `使用后清洗消毒并充分晾干`, `有划伤不需要更换`],
+                explanation: `砧板使用后需进行清洗和消毒，并充分晾干，才能防止微生物增殖。`,
+            },
+            th: {
+                question: `วิธีจัดการสุขอนามัยของเขียงในสถานที่ทำงานอย่างถูกต้องคืออะไร?`,
+                options: [`เพียงล้างด้วยน้ำก็เพียงพอ`, `ใช้กับวัตถุดิบทั้งหมดโดยไม่แยกสี`, `หลังจากใช้ ล้างและฆ่าเชื้อ แล้วทำให้แห้งสนิท`, `ไม่จำเป็นต้องเปลี่ยนเมื่อมีรอยขีดข่วน`],
+                explanation: `เขียงต้องทำความสะอาด ฆ่าเชื้อ และทำให้แห้งสนิทหลังใช้ จึงจะป้องกันการเจริญเติบโตของจุลินทรีย์ได้`,
+            },
+            tl: {
+                question: `Ano ang tamang paraan ng pamamahala ng kalinisan ng cutting board sa lugar ng trabaho?`,
+                options: [`Sapat na ang hugasan lamang ng tubig`, `Gamitin para sa lahat ng sangkap nang walang pagkakaiba ng kulay`, `Pagkatapos gumamit, hugasan at i-disinfect pagkatapos ay tuyo nang ganap`, `Hindi kailangang palitan kapag may gasgas`],
+                explanation: `Ang cutting board ay kailangang hugasan, i-disinfect, at tuuyin nang ganap pagkatapos gamitin upang maiwasan ang paglago ng mga mikrobyo.`,
+            },
+            my: {
+                question: `အလုပ်ခွင် ဖြတ်ကြောင်း၏ မှန်ကန်သော သန့်ရှင်းရေး စီမံခန့်ခွဲနည်းမှာ ဘာလဲ?`,
+                options: [`ရေဖြင့်သာ ဆေးကြောပါက လုံလောက်သည်`, `အရောင်ခွဲခြားခြင်းမရှိဘဲ ပါဝင်ပစ္စည်းအားလုံးတွင် အသုံးပြုသည်`, `အသုံးပြုပြီးနောက် ဆေးကြောပြီး သန့်ရှင်းရေးပြုလုပ်ကာ လုံလောက်စွာ အခြောက်ခံပါ`, `ဒဏ်ရာ ရပါက အစားထိုးရန် မလိုအပ်`],
+                explanation: `ဖြတ်ကြောင်းကို အသုံးပြုပြီးနောက် ဆေးကြောပြီး သန့်ရှင်းရေးဆေးပြုလုပ်ကာ လုံလောက်စွာ အခြောက်ခံမှ ဘက်တီးရီးယား ကြီးထွားမှုကို တားဆီးနိုင်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `도마`, native: `thớt` },
+                { korean: `소독`, native: `khử trùng` },
+                { korean: `건조`, native: `làm khô` },
+                { korean: `사용 후 세척 및 소독하고 충분히 건조시킨다`, native: `rửa và khử trùng rồi làm khô hoàn toàn` },
+                { korean: `물로만 씻으면 충분하다`, native: `chỉ cần rửa bằng nước` },
+            ],
+            zh: [
+                { korean: `도마`, native: `砧板` },
+                { korean: `소독`, native: `消毒` },
+                { korean: `건조`, native: `晾干` },
+                { korean: `사용 후 세척 및 소독하고 충분히 건조시킨다`, native: `使用后清洗消毒并充分晾干` },
+                { korean: `물로만 씻으면 충분하다`, native: `只用水清洗就足够了` },
+            ],
+            th: [
+                { korean: `도마`, native: `เขียง` },
+                { korean: `소독`, native: `ฆ่าเชื้อ` },
+                { korean: `건조`, native: `ทำให้แห้ง` },
+                { korean: `물로만 씻으면 충분하다`, native: `ล้างด้วยน้ำเพียงอย่างเดียว` },
+            ],
+            tl: [
+                { korean: `도마`, native: `cutting board` },
+                { korean: `소독`, native: `i-disinfect` },
+                { korean: `건조`, native: `tuyo` },
+                { korean: `물로만 씻으면 충분하다`, native: `hugasan lamang ng tubig` },
+            ],
+            my: [
+                { korean: `도마`, native: `ဖြတ်ကြောင်း` },
+                { korean: `소독`, native: `သန့်ရှင်းရေး` },
+                { korean: `건조`, native: `အခြောက်ခံ` },
+                { korean: `물로만 씻으면 충분하다`, native: `ရေဖြင့်သာ ဆေးကြော` },
+            ],
+        },
     },
     {
         id: 'ps-55',
@@ -3104,6 +3958,67 @@ export const pastryQuestions = [
         explanation: '병원성 대장균은 오염된 식품(특히 날 고기, 채소 등), 물, 위생 관리가 부실한 취급자를 통해 전파됩니다.',
         simpleExplanation: '병원성 대장균은 오염된 음식이나 불위생적인 취급으로 전파돼요.',
         keywords: ['대장균', 'O157', '식중독', '전파'],
+        translations: {
+            vi: {
+                question: `Con đường lây truyền chính của ngộ độc do vi khuẩn E. coli gây bệnh như O157:H7 là gì?`,
+                options: [`Lây qua không khí là con đường chính`, `Lây qua thực phẩm, nước bị ô nhiễm hoặc người xử lý thiếu vệ sinh`, `Tồn tại trong tất cả các loại thực phẩm`, `Luôn tăng lên khi đun nóng`],
+                explanation: `Vi khuẩn E. coli gây bệnh lây qua thực phẩm bị ô nhiễm (đặc biệt là thịt sống, rau...), nước và người xử lý thiếu vệ sinh.`,
+            },
+            zh: {
+                question: `O157:H7等病原性大肠杆菌食物中毒的主要传播途径是什么？`,
+                options: [`空气传播是主要途径`, `通过受污染的食物、水或卫生管理不当的操作人员传播`, `存在于所有食物中`, `加热后总是增加`],
+                explanation: `病原性大肠杆菌通过受污染的食品（特别是生肉、蔬菜等）、水及卫生管理不当的操作人员传播。`,
+            },
+            th: {
+                question: `เส้นทางการแพร่กระจายหลักของการเป็นพิษอาหารจากเชื้อ E. coli ก่อโรค เช่น O157:H7 คืออะไร?`,
+                options: [`การแพร่กระจายทางอากาศเป็นเส้นทางหลัก`, `แพร่กระจายผ่านอาหาร น้ำที่ปนเปื้อน หรือผู้ที่จัดการอาหารด้วยสุขอนามัยที่ไม่ดี`, `มีอยู่ในอาหารทุกชนิด`, `เมื่อให้ความร้อนจะเพิ่มขึ้นเสมอ`],
+                explanation: `เชื้อ E. coli ก่อโรคแพร่กระจายผ่านอาหาร (โดยเฉพาะเนื้อดิบ ผัก) น้ำที่ปนเปื้อน และผู้ที่จัดการด้วยสุขอนามัยที่ไม่ดี`,
+            },
+            tl: {
+                question: `Ano ang pangunahing landas ng pagkalat ng pagkalason mula sa pathogenic E. coli tulad ng O157:H7?`,
+                options: [`Ang pagkalat sa hangin ang pangunahing landas`, `Kumakalat sa pamamagitan ng kontaminadong pagkain, tubig, o mga handler na may masamang kalinisan`, `Naroroon sa lahat ng pagkain`, `Palaging dumarami kapag inainitan`],
+                explanation: `Ang pathogenic E. coli ay kumakalat sa pamamagitan ng kontaminadong pagkain (lalo na hilaw na karne, gulay), tubig, at mga handler na may masamang pamamahala ng kalinisan.`,
+            },
+            my: {
+                question: `O157:H7 ကဲ့သို့သော ရောဂါဖြစ်စေသော E. coli ၏ အဓိက ပျံ့နှံ့ကြောင်းမှာ ဘာလဲ?`,
+                options: [`လေကြောင်း ပျံ့နှံ့မှုသည် အဓိကကြောင်းဖြစ်သည်`, `ညစ်ညမ်းသော အစားအသောက်၊ ရေ သို့မဟုတ် သန့်ရှင်းမှုညံ့ဖျင်းသော ကိုင်တွယ်သူမှတဆင့် ပျံ့နှံ့သည်`, `အစားအသောက်အားလုံးတွင် ရှိသည်`, `အပူပေးသောအခါ အမြဲတမ်း တိုးပွားသည်`],
+                explanation: `ရောဂါဖြစ်စေသော E. coli သည် ညစ်ညမ်းသော အစားအသောက် (အထူးသဖြင့် မချက်ပြုတ်ရသေးသော အသား၊ ဟင်းသီးဟင်းရွက်)၊ ရေနှင့် သန့်ရှင်းမှုညံ့ဖျင်းသော ကိုင်တွယ်သူမှတဆင့် ပျံ့နှံ့သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `대장균`, native: `E. coli` },
+                { korean: `식중독`, native: `ngộ độc thực phẩm` },
+                { korean: `오염된 음식`, native: `thực phẩm bị ô nhiễm` },
+                { korean: `공기 전파가 주된 경로이다`, native: `lây qua không khí là chính` },
+                { korean: `열을 가하면 항상 증가한다`, native: `tăng khi đun nóng` },
+            ],
+            zh: [
+                { korean: `대장균`, native: `大肠杆菌` },
+                { korean: `식중독`, native: `食物中毒` },
+                { korean: `오염된 음식`, native: `受污染的食物` },
+                { korean: `공기 전파가 주된 경로이다`, native: `空气传播是主要途径` },
+                { korean: `열을 가하면 항상 증가한다`, native: `加热后总是增加` },
+            ],
+            th: [
+                { korean: `대장균`, native: `E. coli` },
+                { korean: `식중독`, native: `การเป็นพิษอาหาร` },
+                { korean: `오염된 음식`, native: `อาหารที่ปนเปื้อน` },
+                { korean: `공기 전파가 주된 경로이다`, native: `แพร่ทางอากาศ` },
+            ],
+            tl: [
+                { korean: `대장균`, native: `E. coli` },
+                { korean: `식중독`, native: `pagkalason` },
+                { korean: `오염된 음식`, native: `kontaminadong pagkain` },
+                { korean: `공기 전파가 주된 경로이다`, native: `pagkalat sa hangin` },
+            ],
+            my: [
+                { korean: `대장균`, native: `E. coli` },
+                { korean: `식중독`, native: `အဆိပ်သင့်ခြင်း` },
+                { korean: `오염된 음식`, native: `ညစ်ညမ်းသော အစားအသောက်` },
+                { korean: `공기 전파가 주된 경로이다`, native: `လေကြောင်း ပျံ့နှံ့မှု` },
+            ],
+        },
     },
     {
         id: 'ps-56',
@@ -3116,6 +4031,67 @@ export const pastryQuestions = [
         explanation: 'HACCP 12절차의 준비 단계는 팀 구성, 제품 설명서, 용도 확인, 공정흐름도 작성, 현장 확인의 5단계입니다. 위해요소 분석은 7원칙(본 구현 단계)의 첫 번째입니다.',
         simpleExplanation: '위해요소 분석은 HACCP 7원칙의 첫 번째 단계예요. 준비 단계가 아니에요.',
         keywords: ['HACCP', '12절차', '준비단계', '위해요소'],
+        translations: {
+            vi: {
+                question: `Trong 12 thủ tục của HACCP, thủ tục nào KHÔNG nằm trong giai đoạn chuẩn bị?`,
+                options: [`Thành lập nhóm HACCP`, `Viết mô tả sản phẩm`, `Phân tích mối nguy`, `Lập lưu đồ quy trình`],
+                explanation: `Giai đoạn chuẩn bị của 12 thủ tục HACCP gồm 5 bước: thành lập nhóm, mô tả sản phẩm, xác định mục đích, lập lưu đồ và xác nhận thực địa. Phân tích mối nguy là bước đầu tiên của 7 nguyên tắc (giai đoạn thực hiện).`,
+            },
+            zh: {
+                question: `在HACCP的12步骤中，哪项不包含在准备阶段？`,
+                options: [`组建HACCP团队`, `编写产品说明书`, `危害分析`, `编制工艺流程图`],
+                explanation: `HACCP 12步骤的准备阶段包含5步：组建团队、产品说明书、用途确认、工艺流程图、现场确认。危害分析是7原则（实施阶段）的第一步。`,
+            },
+            th: {
+                question: `ในขั้นตอน 12 ขั้นของ HACCP ขั้นตอนใดที่ไม่รวมอยู่ในขั้นตอนการเตรียมการ?`,
+                options: [`การจัดตั้งทีม HACCP`, `การเขียนคำอธิบายผลิตภัณฑ์`, `การวิเคราะห์อันตราย`, `การจัดทำแผนผังกระบวนการ`],
+                explanation: `ขั้นตอนการเตรียมการของ HACCP 12 ขั้นประกอบด้วย 5 ขั้น ได้แก่ การจัดตั้งทีม คำอธิบายผลิตภัณฑ์ การยืนยันการใช้งาน แผนผังกระบวนการ และการยืนยันภาคสนาม การวิเคราะห์อันตรายเป็นขั้นแรกของหลักการ 7 ข้อ`,
+            },
+            tl: {
+                question: `Sa 12 hakbang ng HACCP, alin ang HINDI kasama sa yugto ng paghahanda?`,
+                options: [`Pagbuo ng HACCP team`, `Pagsulat ng paglalarawan ng produkto`, `Pagsusuri ng panganib`, `Pagsulat ng diagram ng proseso`],
+                explanation: `Ang yugto ng paghahanda ng 12 hakbang ng HACCP ay binubuo ng 5 hakbang: pagbuo ng team, paglalarawan ng produkto, pagkumpirma ng gamit, diagram ng proseso, at pagkumpirma sa lugar. Ang pagsusuri ng panganib ay ang unang hakbang ng 7 prinsipyo.`,
+            },
+            my: {
+                question: `HACCP ၏ အဆင့် ၁၂ ခုတွင် ပြင်ဆင်ရေးအဆင့်တွင် မပါဝင်သောအရာမှာ ဘာလဲ?`,
+                options: [`HACCP အဖွဲ့ဖွဲ့စည်းခြင်း`, `ထုတ်ကုန်ဖော်ပြချက် ရေးဆွဲခြင်း`, `အန္တရာယ်ဆန်းစစ်ခြင်း`, `လုပ်ငန်းစဉ်ပြ ပုံဆွဲခြင်း`],
+                explanation: `HACCP ၏ ပြင်ဆင်ရေးအဆင့်တွင် အဖွဲ့ဖွဲ့စည်းခြင်း၊ ထုတ်ကုန်ဖော်ပြချက်၊ ရည်ရွယ်ချက်အတည်ပြုခြင်း၊ လုပ်ငန်းစဉ်ပြ ပုံဆွဲခြင်းနှင့် ကွင်းဆင်းစစ်ဆေးခြင်း ၅ ဆင့် ပါဝင်သည်။ အန္တရာယ်ဆန်းစစ်ခြင်းသည် ၇ မူဝါဒ (အကောင်အထည်ဖော်ရေးအဆင့်) ၏ ပထမဆင့်ဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `HACCP`, native: `HACCP` },
+                { korean: `준비 단계`, native: `giai đoạn chuẩn bị` },
+                { korean: `위해요소 분석`, native: `phân tích mối nguy` },
+                { korean: `HACCP 팀 구성`, native: `thành lập nhóm HACCP` },
+                { korean: `공정흐름도 작성`, native: `lập lưu đồ quy trình` },
+            ],
+            zh: [
+                { korean: `HACCP`, native: `HACCP` },
+                { korean: `준비 단계`, native: `准备阶段` },
+                { korean: `위해요소 분석`, native: `危害分析` },
+                { korean: `HACCP 팀 구성`, native: `组建HACCP团队` },
+                { korean: `공정흐름도 작성`, native: `编制工艺流程图` },
+            ],
+            th: [
+                { korean: `HACCP`, native: `HACCP` },
+                { korean: `준비 단계`, native: `ขั้นตอนการเตรียมการ` },
+                { korean: `위해요소 분석`, native: `การวิเคราะห์อันตราย` },
+                { korean: `공정흐름도 작성`, native: `แผนผังกระบวนการ` },
+            ],
+            tl: [
+                { korean: `HACCP`, native: `HACCP` },
+                { korean: `준비 단계`, native: `yugto ng paghahanda` },
+                { korean: `위해요소 분석`, native: `pagsusuri ng panganib` },
+                { korean: `공정흐름도 작성`, native: `diagram ng proseso` },
+            ],
+            my: [
+                { korean: `HACCP`, native: `HACCP` },
+                { korean: `준비 단계`, native: `ပြင်ဆင်ရေးအဆင့်` },
+                { korean: `위해요소 분석`, native: `အန္တရာယ်ဆန်းစစ်ခြင်း` },
+                { korean: `공정흐름도 작성`, native: `လုပ်ငန်းစဉ်ပြ ပုံဆွဲ` },
+            ],
+        },
     },
     {
         id: 'ps-57',
@@ -3128,6 +4104,67 @@ export const pastryQuestions = [
         explanation: '천연물이라도 식품첨가물로 지정·고시된 것만 기준에 따라 사용할 수 있습니다. 천연물이라도 과량 사용 시 독성이 있을 수 있습니다.',
         simpleExplanation: '천연물이라도 정해진 기준대로만 쓸 수 있어요.',
         keywords: ['식품첨가물', '사용기준', '천연물', '식품위생법'],
+        translations: {
+            vi: {
+                question: `Điều nào sau đây SAI về tiêu chuẩn sử dụng phụ gia thực phẩm?`,
+                options: [`Lượng sử dụng không được vượt tiêu chuẩn của Luật vệ sinh thực phẩm`, `Chỉ được sử dụng phụ gia đã được phép`, `Nếu là sản phẩm tự nhiên thì có thể dùng tùy ý không cần theo tiêu chuẩn`, `Phải tuân thủ tiêu chuẩn ghi nhãn khi dùng phụ gia`],
+                explanation: `Ngay cả sản phẩm tự nhiên cũng chỉ được sử dụng theo quy định nếu được chỉ định là phụ gia thực phẩm. Nếu dùng quá liều, sản phẩm tự nhiên cũng có thể gây độc.`,
+            },
+            zh: {
+                question: `以下关于食品添加剂使用标准的说法，哪项是错误的？`,
+                options: [`使用量应在食品卫生法规定标准以下`, `只能使用已许可的添加剂`, `天然物质可以不受限制随意使用`, `使用添加剂时必须遵守标注标准`],
+                explanation: `即使是天然物质，也只能按规定使用已被指定公告为食品添加剂的物质。天然物质过量使用也可能有毒。`,
+            },
+            th: {
+                question: `ข้อใดไม่ถูกต้องเกี่ยวกับมาตรฐานการใช้วัตถุเจือปนอาหาร?`,
+                options: [`ปริมาณที่ใช้ต้องไม่เกินมาตรฐานที่กฎหมายสุขอนามัยอาหารกำหนด`, `ใช้ได้เฉพาะวัตถุเจือปนที่ได้รับอนุญาตเท่านั้น`, `ถ้าเป็นสิ่งจากธรรมชาติสามารถใช้ได้ตามต้องการโดยไม่ต้องตามมาตรฐาน`, `ต้องปฏิบัติตามมาตรฐานการแสดงฉลากเมื่อใช้วัตถุเจือปน`],
+                explanation: `แม้แต่สิ่งจากธรรมชาติ ก็ต้องใช้ตามกฎหมายหากได้รับการกำหนดให้เป็นวัตถุเจือปนอาหาร สิ่งจากธรรมชาติหากใช้มากเกินไปก็อาจเป็นพิษได้`,
+            },
+            tl: {
+                question: `Alin sa mga sumusunod ang MALI tungkol sa pamantayan sa paggamit ng food additives?`,
+                options: [`Ang dami ng paggamit ay hindi dapat lumampas sa pamantayan ng Batas ng Kalinisan ng Pagkain`, `Tanging mga approved na additive lang ang maaaring gamitin`, `Kung natural na produkto, maaaring gamitin nang walang limitasyon`, `Dapat sundin ang pamantayan ng pagtatanda kapag gumagamit ng additive`],
+                explanation: `Kahit natural na produkto, tanging mga itinakda bilang food additive ang maaaring gamitin ayon sa pamantayan. Kahit natural, maaari itong maging nakakalason kung sobra ang gamit.`,
+            },
+            my: {
+                question: `အစားအသောက် ဖြည့်စွက်ပစ္စည်း အသုံးပြုသည့် စံနှုန်းအတွက် မမှန်ကန်သောအချက်မှာ ဘာလဲ?`,
+                options: [`အသုံးပြုသည့်ပမာဏကို အစားအသောက်သန့်ရှင်းရေးဥပဒေ စံနှုန်းအောက် ထားသည်`, `ခွင့်ပြုပြီးသော ဖြည့်စွက်ပစ္စည်းများသာ အသုံးပြုနိုင်သည်`, `သဘာဝပစ္စည်းဆိုပါက စံနှုန်းမရှိဘဲ ကြိုက်သလို အသုံးပြုနိုင်သည်`, `ဖြည့်စွက်ပစ္စည်း အသုံးပြုသောအခါ ဖော်ပြခြင်း စံနှုန်းကို လိုက်နာရမည်`],
+                explanation: `သဘာဝပစ္စည်းဆိုသော်လည်း အစားအသောက် ဖြည့်စွက်ပစ္စည်းအဖြစ် သတ်မှတ်ထားသောအရာများသာ စံနှုန်းနှင့်အညီ အသုံးပြုနိုင်သည်။ သဘာဝပစ္စည်းဆိုသော်လည်း လွန်ကဲစွာ အသုံးပြုပါက အဆိပ်ဖြစ်နိုင်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `식품첨가물`, native: `phụ gia thực phẩm` },
+                { korean: `사용 기준`, native: `tiêu chuẩn sử dụng` },
+                { korean: `천연물이면 기준 없이 마음대로 사용해도 된다`, native: `sản phẩm tự nhiên dùng tùy ý` },
+                { korean: `허가된 첨가물만 사용할 수 있다`, native: `chỉ dùng phụ gia đã được phép` },
+                { korean: `표시 기준`, native: `tiêu chuẩn ghi nhãn` },
+            ],
+            zh: [
+                { korean: `식품첨가물`, native: `食品添加剂` },
+                { korean: `사용 기준`, native: `使用标准` },
+                { korean: `천연물이면 기준 없이 마음대로 사용해도 된다`, native: `天然物质随意使用` },
+                { korean: `허가된 첨가물만 사용할 수 있다`, native: `只能使用已许可的添加剂` },
+                { korean: `표시 기준`, native: `标注标准` },
+            ],
+            th: [
+                { korean: `식품첨가물`, native: `วัตถุเจือปนอาหาร` },
+                { korean: `사용 기준`, native: `มาตรฐานการใช้` },
+                { korean: `천연물이면 기준 없이 마음대로 사용해도 된다`, native: `ธรรมชาติใช้ได้ตามต้องการ` },
+                { korean: `허가된 첨가물만 사용할 수 있다`, native: `ใช้เฉพาะที่ได้รับอนุญาต` },
+            ],
+            tl: [
+                { korean: `식품첨가물`, native: `food additive` },
+                { korean: `사용 기준`, native: `pamantayan ng paggamit` },
+                { korean: `천연물이면 기준 없이 마음대로 사용해도 된다`, native: `natural na produkto walang limitasyon` },
+                { korean: `허가된 첨가물만 사용할 수 있다`, native: `approved na additive lang` },
+            ],
+            my: [
+                { korean: `식품첨가물`, native: `ဖြည့်စွက်ပစ္စည်း` },
+                { korean: `사용 기준`, native: `အသုံးပြုသည့် စံနှုန်း` },
+                { korean: `천연물이면 기준 없이 마음대로 사용해도 된다`, native: `သဘာဝပစ္စည်း ကြိုက်သလို သုံး` },
+                { korean: `허가된 첨가물만 사용할 수 있다`, native: `ခွင့်ပြုပြီးသောအရာသာ သုံးနိုင်` },
+            ],
+        },
     },
     {
         id: 'ps-58',
@@ -3140,6 +4177,67 @@ export const pastryQuestions = [
         explanation: '식중독 예방 3원칙은 청결(Clean), 신속(Quick), 냉각 또는 가열(Cool/Heat)입니다. 청결하게 취급하고, 신속히 섭취하며, 적절히 온도를 관리합니다.',
         simpleExplanation: '식중독 예방은 청결, 신속, 냉각(또는 가열)의 3가지 원칙을 지켜야 해요.',
         keywords: ['식중독', '예방', '청결', '신속', '냉각'],
+        translations: {
+            vi: {
+                question: `3 nguyên tắc quản lý thực phẩm để phòng ngừa ngộ độc thực phẩm là gì?`,
+                options: [`Sạch sẽ, nhanh chóng, làm lạnh (hoặc đun nóng)`, `Tiết kiệm, nhanh chóng, làm lạnh`, `Sạch sẽ, lên men, bảo quản`, `Đóng gói, làm lạnh, sấy khô`],
+                explanation: `3 nguyên tắc phòng ngừa ngộ độc thực phẩm là: sạch sẽ (Clean), nhanh chóng (Quick), làm lạnh hoặc đun nóng (Cool/Heat). Xử lý sạch sẽ, tiêu thụ nhanh và quản lý nhiệt độ đúng cách.`,
+            },
+            zh: {
+                question: `预防食物中毒的食品管理3原则是什么？`,
+                options: [`清洁、迅速、冷却（或加热）`, `节约、迅速、冷却`, `清洁、发酵、储存`, `包装、冷却、干燥`],
+                explanation: `食物中毒预防3原则是清洁（Clean）、迅速（Quick）、冷却或加热（Cool/Heat）。清洁处理，迅速食用，并适当管理温度。`,
+            },
+            th: {
+                question: `หลักการจัดการอาหาร 3 ข้อเพื่อป้องกันการเป็นพิษอาหารคืออะไร?`,
+                options: [`สะอาด รวดเร็ว ทำให้เย็น (หรือให้ความร้อน)`, `ประหยัด รวดเร็ว ทำให้เย็น`, `สะอาด หมัก เก็บรักษา`, `บรรจุ ทำให้เย็น ทำให้แห้ง`],
+                explanation: `หลักการป้องกันการเป็นพิษอาหาร 3 ข้อ ได้แก่ สะอาด (Clean) รวดเร็ว (Quick) ทำให้เย็นหรือให้ความร้อน (Cool/Heat) จัดการสะอาด รับประทานเร็ว และควบคุมอุณหภูมิอย่างเหมาะสม`,
+            },
+            tl: {
+                question: `Ano ang 3 prinsipyo ng pamamahala ng pagkain para maiwasan ang pagkalason ng pagkain?`,
+                options: [`Kalinisan, bilis, pagpapalamig (o pagpainit)`, `Pagtitipid, bilis, pagpapalamig`, `Kalinisan, pagpapalasa, pag-iimbak`, `Pagbalot, pagpapalamig, pagpapatuyo`],
+                explanation: `Ang 3 prinsipyo ng pag-iwas sa pagkalason ng pagkain ay: Kalinisan (Clean), Bilis (Quick), Pagpapalamig o Pagpainit (Cool/Heat). Iproseso nang malinis, kainin nang mabilis, at pamahalaan ang temperatura nang tama.`,
+            },
+            my: {
+                question: `အစားအသောက် အဆိပ်သင့်ခြင်း ကာကွယ်ရန် အစားအသောက် စီမံခန့်ခွဲရေး မူဝါဒ ၃ ချက်မှာ ဘာလဲ?`,
+                options: [`သန့်ရှင်းမှု၊ မြန်ဆန်မှု၊ အအေးခံ (သို့ အပူပေး)`, `ချွေတာမှု၊ မြန်ဆန်မှု၊ အအေးခံ`, `သန့်ရှင်းမှု၊ တချစ်ခြင်း၊ သိမ်းဆည်း`, `ထုပ်ပိုး၊ အအေးခံ၊ အခြောက်ခံ`],
+                explanation: `အစားအသောက် အဆိပ်သင့်ခြင်း ကာကွယ်ရေး မူဝါဒ ၃ ချက်မှာ သန့်ရှင်းမှု (Clean)၊ မြန်ဆန်မှု (Quick)၊ အအေးခံ သို့ အပူပေး (Cool/Heat) တို့ဖြစ်သည်။ သန့်ရှင်းစွာ ကိုင်တွယ်ပြီး အမြန်သုံးဆောင်ကာ အပူချိန် မှန်ကန်စွာ ထိန်းချုပ်ပါ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `식중독`, native: `ngộ độc thực phẩm` },
+                { korean: `청결`, native: `sạch sẽ` },
+                { korean: `신속`, native: `nhanh chóng` },
+                { korean: `냉각`, native: `làm lạnh` },
+                { korean: `청결, 신속, 냉각(또는 가열)`, native: `sạch, nhanh, làm lạnh hoặc đun nóng` },
+            ],
+            zh: [
+                { korean: `식중독`, native: `食物中毒` },
+                { korean: `청결`, native: `清洁` },
+                { korean: `신속`, native: `迅速` },
+                { korean: `냉각`, native: `冷却` },
+                { korean: `청결, 신속, 냉각(또는 가열)`, native: `清洁、迅速、冷却（或加热）` },
+            ],
+            th: [
+                { korean: `식중독`, native: `การเป็นพิษอาหาร` },
+                { korean: `청결`, native: `สะอาด` },
+                { korean: `신속`, native: `รวดเร็ว` },
+                { korean: `냉각`, native: `ทำให้เย็น` },
+            ],
+            tl: [
+                { korean: `식중독`, native: `pagkalason ng pagkain` },
+                { korean: `청결`, native: `kalinisan` },
+                { korean: `신속`, native: `bilis` },
+                { korean: `냉각`, native: `pagpapalamig` },
+            ],
+            my: [
+                { korean: `식중독`, native: `အဆိပ်သင့်ခြင်း` },
+                { korean: `청결`, native: `သန့်ရှင်းမှု` },
+                { korean: `신속`, native: `မြန်ဆန်မှု` },
+                { korean: `냉각`, native: `အအေးခံ` },
+            ],
+        },
     },
     {
         id: 'ps-59',
@@ -3152,6 +4250,67 @@ export const pastryQuestions = [
         explanation: '위생교육은 식품 취급자가 식품 관련 위험 요소를 알고 올바른 위생 관리 방법을 실천하여 식품 안전을 확보하기 위해 실시합니다.',
         simpleExplanation: '위생교육은 위험을 알고 안전하게 음식을 만들기 위해서예요.',
         keywords: ['위생교육', '식품 안전', '교육', '위생관리'],
+        translations: {
+            vi: {
+                question: `Mục đích phù hợp nhất của giáo dục vệ sinh trong sản xuất bánh kẹo là gì?`,
+                options: [`Để giảm thuế`, `Để nhận biết rủi ro liên quan đến thực phẩm và tiếp thu kỹ năng phòng ngừa`, `Để học cách vận hành máy móc`, `Để cải thiện công thức`],
+                explanation: `Giáo dục vệ sinh được thực hiện để người xử lý thực phẩm nhận biết các nguy cơ liên quan và thực hành phương pháp quản lý vệ sinh đúng cách, đảm bảo an toàn thực phẩm.`,
+            },
+            zh: {
+                question: `在糕点制作中，卫生教育最合适的目的是什么？`,
+                options: [`为了减少税收`, `认识食品相关风险并掌握预防技术`, `为了学习机器操作方法`, `为了改善配方`],
+                explanation: `卫生教育的目的是使食品从业者了解食品相关危险因素，实践正确的卫生管理方法，确保食品安全。`,
+            },
+            th: {
+                question: `จุดประสงค์ที่เหมาะสมที่สุดของการศึกษาสุขอนามัยในการผลิตขนมคืออะไร?`,
+                options: [`เพื่อลดภาษี`, `เพื่อรับรู้ความเสี่ยงที่เกี่ยวข้องกับอาหารและเรียนรู้ทักษะการป้องกัน`, `เพื่อเรียนรู้วิธีการใช้งานเครื่องจักร`, `เพื่อปรับปรุงสูตร`],
+                explanation: `การศึกษาสุขอนามัยจัดขึ้นเพื่อให้ผู้จัดการอาหารรับรู้ถึงปัจจัยเสี่ยงที่เกี่ยวข้องและปฏิบัติวิธีการจัดการสุขอนามัยที่ถูกต้อง เพื่อรับประกันความปลอดภัยของอาหาร`,
+            },
+            tl: {
+                question: `Ano ang pinakaangkop na layunin ng edukasyon sa kalinisan sa paggawa ng pastry?`,
+                options: [`Para mabawasan ang buwis`, `Para makilala ang mga panganib na may kaugnayan sa pagkain at matuto ng mga kasanayan sa pag-iwas`, `Para matuto ng paraan ng pagpapatakbo ng makinarya`, `Para mapabuti ang recipe`],
+                explanation: `Ang edukasyon sa kalinisan ay isinasagawa upang ang mga handler ng pagkain ay makilala ang mga mapanganib na salik at magsagawa ng tamang pamamahala ng kalinisan, na tinitiyak ang kaligtasan ng pagkain.`,
+            },
+            my: {
+                question: `မုန့်ဖုတ်ထုတ်လုပ်ရာတွင် သန့်ရှင်းရေး ပညာရေး၏ ရည်ရွယ်ချက်အနှင့် အသင့်တော်ဆုံးမှာ ဘာလဲ?`,
+                options: [`အခွန် လျှော့ချရန်`, `အစားအသောက်နှင့် သက်ဆိုင်သော အန္တရာယ်ကို သိရှိပြီး ကာကွယ်ရေး နည်းပညာ ရှာဖွေတွေ့ရှိရန်`, `စက်ပစ္စည်း ထိန်းချုပ်နည်း သင်ယူရန်`, `ချက်ပြုတ်နည်း တိုးတက်စေရန်`],
+                explanation: `သန့်ရှင်းရေး ပညာရေးသည် အစားအသောက် ကိုင်တွယ်သူများ အစားအသောက်နှင့် သက်ဆိုင်သော အန္တရာယ်ဆိုင်ရာ အချက်များကို သိရှိပြီး မှန်ကန်သော သန့်ရှင်းရေး စီမံခန့်ခွဲမှုနည်းကို ကျင့်သုံးကာ အစားအသောက် ဘေးကင်းရေးကို အာမခံနိုင်ရန် ဆောင်ရွက်ခြင်းဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `위생교육`, native: `giáo dục vệ sinh` },
+                { korean: `식품 관련 위험을 인식하고 예방 기술을 습득하기 위해`, native: `nhận biết rủi ro và tiếp thu kỹ năng phòng ngừa` },
+                { korean: `세금을 절감하기 위해`, native: `giảm thuế` },
+                { korean: `레시피를 개선하기 위해`, native: `cải thiện công thức` },
+                { korean: `기계 조작 방법을 배우기 위해`, native: `học vận hành máy móc` },
+            ],
+            zh: [
+                { korean: `위생교육`, native: `卫生教育` },
+                { korean: `식품 관련 위험을 인식하고 예방 기술을 습득하기 위해`, native: `认识风险并掌握预防技术` },
+                { korean: `세금을 절감하기 위해`, native: `减少税收` },
+                { korean: `레시피를 개선하기 위해`, native: `改善配方` },
+                { korean: `기계 조작 방법을 배우기 위해`, native: `学习机器操作` },
+            ],
+            th: [
+                { korean: `위생교육`, native: `การศึกษาสุขอนามัย` },
+                { korean: `세금을 절감하기 위해`, native: `ลดภาษี` },
+                { korean: `레시피를 개선하기 위해`, native: `ปรับปรุงสูตร` },
+                { korean: `기계 조작 방법을 배우기 위해`, native: `เรียนรู้วิธีการใช้เครื่องจักร` },
+            ],
+            tl: [
+                { korean: `위생교육`, native: `edukasyon sa kalinisan` },
+                { korean: `세금을 절감하기 위해`, native: `mabawasan ang buwis` },
+                { korean: `레시피를 개선하기 위해`, native: `mapabuti ang recipe` },
+                { korean: `기계 조작 방법을 배우기 위해`, native: `matuto ng pagpapatakbo ng makinarya` },
+            ],
+            my: [
+                { korean: `위생교육`, native: `သန့်ရှင်းရေး ပညာရေး` },
+                { korean: `세금을 절감하기 위해`, native: `အခွန် လျှော့ချ` },
+                { korean: `레시피를 개선하기 위해`, native: `ချက်ပြုတ်နည်း တိုးတက်` },
+                { korean: `기계 조작 방법을 배우기 위해`, native: `စက်ပစ္စည်း ထိန်းချုပ်နည်း သင်ယူ` },
+            ],
+        },
     },
     {
         id: 'ps-60',
@@ -3164,5 +4323,66 @@ export const pastryQuestions = [
         explanation: '식품위생법에서 식품영업자의 의무에는 위생교육 이수, 위생관리 기준 준수, 종업원 건강진단 관리 등이 포함됩니다. 제품 가격 결정은 식품위생법의 의무 사항이 아닙니다.',
         simpleExplanation: '식품 사업자는 위생교육, 위생관리, 건강진단을 해야 해요. 가격 결정은 법적 의무가 아니에요.',
         keywords: ['식품위생법', '영업자', '의무', '위생교육'],
+        translations: {
+            vi: {
+                question: `Theo Luật vệ sinh thực phẩm, điều nào KHÔNG phải là nghĩa vụ của nhà kinh doanh thực phẩm?`,
+                options: [`Hoàn thành giáo dục vệ sinh`, `Tuân thủ tiêu chuẩn quản lý vệ sinh`, `Quản lý kiểm tra sức khỏe nhân viên`, `Quyết định giá sản phẩm trong phạm vi luật quy định`],
+                explanation: `Nghĩa vụ của nhà kinh doanh thực phẩm theo Luật vệ sinh thực phẩm bao gồm: hoàn thành giáo dục vệ sinh, tuân thủ tiêu chuẩn vệ sinh, quản lý kiểm tra sức khỏe nhân viên... Quyết định giá sản phẩm không phải nghĩa vụ theo Luật vệ sinh thực phẩm.`,
+            },
+            zh: {
+                question: `根据《食品卫生法》，以下哪项不是食品经营者的义务？`,
+                options: [`完成卫生教育`, `遵守卫生管理标准`, `管理员工健康检查`, `在法律规定范围内决定产品价格`],
+                explanation: `食品卫生法规定食品经营者的义务包括：完成卫生教育、遵守卫生管理标准、管理员工健康检查等。决定产品价格不是食品卫生法的义务事项。`,
+            },
+            th: {
+                question: `ตามกฎหมายสุขอนามัยอาหาร ข้อใดไม่ใช่หน้าที่ของผู้ประกอบการอาหาร?`,
+                options: [`ผ่านการศึกษาสุขอนามัย`, `ปฏิบัติตามมาตรฐานการจัดการสุขอนามัย`, `จัดการตรวจสุขภาพพนักงาน`, `กำหนดราคาสินค้าในขอบเขตที่กฎหมายกำหนด`],
+                explanation: `หน้าที่ของผู้ประกอบการอาหารตามกฎหมายสุขอนามัยอาหาร ได้แก่ การศึกษาสุขอนามัย การปฏิบัติตามมาตรฐานสุขอนามัย การตรวจสุขภาพพนักงาน ฯลฯ การกำหนดราคาสินค้าไม่ใช่หน้าที่ตามกฎหมายนี้`,
+            },
+            tl: {
+                question: `Ayon sa Batas ng Kalinisan ng Pagkain, alin ang HINDI obligasyon ng mga negosyante ng pagkain?`,
+                options: [`Kumpletuhin ang edukasyon sa kalinisan`, `Sundin ang pamantayan ng pamamahala ng kalinisan`, `Pamahalaan ang medikal na pagsusuri ng mga empleyado`, `Tukuyin ang presyo ng produkto sa loob ng hangganan na itinakda ng batas`],
+                explanation: `Ang mga obligasyon ng mga negosyante ng pagkain sa ilalim ng Batas ng Kalinisan ng Pagkain ay kinabibilangan ng: pagkumpleto ng edukasyon sa kalinisan, pagsunod sa pamantayan ng kalinisan, pamamahala ng medikal na pagsusuri ng mga empleyado at iba pa. Ang pagtukoy sa presyo ng produkto ay hindi obligasyon ng batas na ito.`,
+            },
+            my: {
+                question: `အစားအသောက်သန့်ရှင်းရေးဥပဒေအရ အစားအသောက် လုပ်ငန်းရှင်၏ တာဝန် မဟုတ်သောအရာမှာ ဘာလဲ?`,
+                options: [`သန့်ရှင်းရေး ပညာရေး ပြီးမြောက်ခြင်း`, `သန့်ရှင်းရေး စီမံခန့်ခွဲမှု စံနှုန်း လိုက်နာခြင်း`, `ဝန်ထမ်း ကျန်းမာရေး စစ်ဆေးမှု စီမံခန့်ခွဲခြင်း`, `ဥပဒေကာကွယ်သော နယ်ပယ်တွင် ထုတ်ကုန်စျေးနှုန်း ဆုံးဖြတ်ခြင်း`],
+                explanation: `အစားအသောက်သန့်ရှင်းရေးဥပဒေအရ အစားအသောက် လုပ်ငန်းရှင်၏ တာဝန်များတွင် သန့်ရှင်းရေး ပညာရေး ပြီးမြောက်ခြင်း၊ သန့်ရှင်းရေး စံနှုန်း လိုက်နာခြင်း၊ ဝန်ထမ်း ကျန်းမာရေး စစ်ဆေးမှု စီမံခန့်ခွဲခြင်း စသည်တို့ ပါဝင်သည်။ ထုတ်ကုန်စျေးနှုန်း ဆုံးဖြတ်ခြင်းသည် ဤဥပဒေ၏ တာဝန်မဟုတ်ပါ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `식품위생법`, native: `Luật vệ sinh thực phẩm` },
+                { korean: `위생교육 이수`, native: `hoàn thành giáo dục vệ sinh` },
+                { korean: `위생관리 기준 준수`, native: `tuân thủ tiêu chuẩn quản lý vệ sinh` },
+                { korean: `종업원 건강 진단 관리`, native: `quản lý kiểm tra sức khỏe nhân viên` },
+                { korean: `제품 가격을 법으로 정해진 범위 내에서 결정`, native: `quyết định giá sản phẩm theo luật` },
+            ],
+            zh: [
+                { korean: `식품위생법`, native: `食品卫生法` },
+                { korean: `위생교육 이수`, native: `完成卫生教育` },
+                { korean: `위생관리 기준 준수`, native: `遵守卫生管理标准` },
+                { korean: `종업원 건강 진단 관리`, native: `管理员工健康检查` },
+                { korean: `제품 가격을 법으로 정해진 범위 내에서 결정`, native: `法律范围内决定价格` },
+            ],
+            th: [
+                { korean: `식품위생법`, native: `กฎหมายสุขอนามัยอาหาร` },
+                { korean: `위생교육 이수`, native: `ผ่านการศึกษาสุขอนามัย` },
+                { korean: `위생관리 기준 준수`, native: `ปฏิบัติตามมาตรฐานสุขอนามัย` },
+                { korean: `제품 가격을 법으로 정해진 범위 내에서 결정`, native: `กำหนดราคาตามกฎหมาย` },
+            ],
+            tl: [
+                { korean: `식품위생법`, native: `Batas ng Kalinisan ng Pagkain` },
+                { korean: `위생교육 이수`, native: `kumpletuhin ang edukasyon sa kalinisan` },
+                { korean: `위생관리 기준 준수`, native: `sundin ang pamantayan ng kalinisan` },
+                { korean: `제품 가격을 법으로 정해진 범위 내에서 결정`, native: `tukuyin ang presyo ng produkto sa batas` },
+            ],
+            my: [
+                { korean: `식품위생법`, native: `အစားအသောက်သန့်ရှင်းရေးဥပဒေ` },
+                { korean: `위생교육 이수`, native: `သန့်ရှင်းရေး ပညာရေး ပြီးမြောက်` },
+                { korean: `위생관리 기준 준수`, native: `သန့်ရှင်းရေး စံနှုန်း လိုက်နာ` },
+                { korean: `제품 가격을 법으로 정해진 범위 내에서 결정`, native: `ဥပဒေနှင့်အညီ စျေးနှုန်း ဆုံးဖြတ်` },
+            ],
+        },
     },
 ];
