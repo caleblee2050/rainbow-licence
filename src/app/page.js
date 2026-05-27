@@ -11,6 +11,7 @@ import CommunityPage from '@/components/pages/CommunityPage';
 import OnboardingPage from '@/components/pages/OnboardingPage';
 import AuthPage from '@/components/pages/AuthPage';
 import NotebookPage from '@/components/pages/NotebookPage';
+import SourceDetailPage from '@/components/pages/SourceDetailPage';
 import { isOnboardingComplete, getUserProfile, isPremium as checkPremium, activatePremium } from '@/lib/studyEngine';
 import { api } from '@/lib/api-client';
 
@@ -119,12 +120,12 @@ export default function Home() {
           );
         }
         if (studyView === 'source-detail' && openSourceId) {
-          // T17에서 SourceDetailPage 추가 후 활성화. 이번 task에서는 임시로 뒤로가기만:
           return (
-            <div style={{ padding: 'var(--space-4)' }}>
-              <button onClick={() => setStudyView('notebook')} className="btn btn--ghost">← 목록</button>
-              <p style={{ marginTop: 'var(--space-3)' }}>자료 상세 보기 (T17에서 구현 예정). 자료 ID: {openSourceId}</p>
-            </div>
+            <SourceDetailPage
+              sourceId={openSourceId}
+              language={selectedLanguage}
+              onBack={() => { setStudyView('notebook'); setOpenSourceId(null); }}
+            />
           );
         }
         return (
