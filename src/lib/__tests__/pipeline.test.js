@@ -13,7 +13,7 @@ vi.mock('@anthropic-ai/sdk', () => ({
 
 beforeAll(async () => {
     process.env.TURSO_DATABASE_URL = 'file::memory:';
-    process.env.ANTHROPIC_API_KEY = 'test-key';
+    process.env.KIE_API_KEY = 'test-key';
     _resetDb();
     await runMigrations();
 });

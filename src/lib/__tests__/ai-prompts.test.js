@@ -12,7 +12,7 @@ vi.mock('@anthropic-ai/sdk', () => ({
 }));
 
 beforeEach(() => {
-    process.env.ANTHROPIC_API_KEY = 'test-key';
+    process.env.KIE_API_KEY = 'test-key';
     mockCreate.mockReset();
 });
 

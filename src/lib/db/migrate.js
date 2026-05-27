@@ -1,7 +1,7 @@
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import { readFile, readdir } from 'node:fs/promises';
-import { getDb } from '../db';
+import { getDb } from '../db.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
