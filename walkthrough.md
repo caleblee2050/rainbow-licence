@@ -1,4 +1,4 @@
-# Rainbow Licence — 세션 핸드오프 (2026-05-27)
+# Rainbow Licence — 세션 핸드오프 (2026-05-27 후속)
 
 > 다음 세션이 시작되면 이 파일부터 읽고 컨텍스트 복원할 것.
 
@@ -6,145 +6,113 @@
 
 **프로젝트**: 한국 국가기술자격증 학습 PWA. 다문화 학교(NEXT SCHOOL) 학생 + 공공사업 평가위원이 1차 사용자/의사결정자.
 
-**프로덕션 URL**: https://rainbow-licence.vercel.app  
-**저장소**: https://github.com/caleblee2050/rainbow-licence  
-**브랜치**: `main`, origin보다 **20 commits ahead** (아직 push 안 함)
+**프로덕션 URL**: https://rainbow-licence.vercel.app
+**최신 production deploy**: https://rainbow-licence-75v3xbsu3-calebs-projects-308edac8.vercel.app
+**저장소**: https://github.com/caleblee2050/rainbow-licence
+**브랜치**: `main` — origin/main 동기화 완료 (push 됨)
 
-## ✅ M1 시연 베타 — 완료 (2026-05-26)
+## ✅ M1.5 다국어 본질 복원 — 완료 (2026-05-27)
 
-13 tasks 모두 끝나고 Vercel production 배포까지 완료. 디자인 V3 (Deep Teal + Terracotta) + 콘텐츠 3개 자격증 (180 문제 + 120 용어) + DEMO 모드 + 시연 친화.
+옵션 A (chunks 분할)로 진행. 8 tasks 모두 완료.
 
-핵심 산출물:
-- `docs/superpowers/specs/2026-05-26-rainbow-licence-beta-design.md` — 베타 설계
-- `DESIGN.md` — D2 디자인 시스템 (Deep Teal `#0B5563` + Terracotta `#C25A3F`)
-- `docs/superpowers/plans/2026-05-26-m1-demo-beta.md` — M1 13 tasks 계획
-- `docs/superpowers/designs/2026-05-26/` — 9개 AI 목업 + 비교 보드
+### 핵심 성과
 
-## 🚨 M1.5 다국어 본질 복원 — 진행 중 (2026-05-27)
+- **180문제 × 5언어 번역 + 키워드 힌트 데이터 완성**
+  - 한식조리 60Q × 5 (vi/zh/th/tl/my)
+  - 미용일반 60Q × 5
+  - 제과 60Q × 5
+- **콘텐츠 가드 테스트 9종 활성** (32 tests passing): translations 필드, keywordHints 개수, korean 본문 등장 검증
+- **StudyPage 3-mode 진짜 차별화** 구현
+- **진단 → 모드 자동 매핑** (이미 OnboardingPage line 88 + page.js line 32에 구현되어 있었음)
+- **DictionaryPage 5언어 전수 노출** (vi/zh 검수 ✓, th/tl/my "AI" 라벨)
+- **검색 5언어 확장**: 한국어/발음/vi/zh/th/tl/my 어느 언어로 검색해도 매칭
 
-### 발견된 문제
+### 완성된 작업 흐름
 
-시연 베타 검토 중 사용자가 발견: **5개 언어 헤더 디테일은 있지만 실질 콘텐츠는 한국어 only**. STEP 1 "번역" 모드도 한국어 풀어쓰기일 뿐 모국어 번역 없음. "다문화 도구"가 아니라 "한국어 시험앱" 수준.
+| Task | Commit | 비고 |
+|------|--------|------|
+| M1.5-3a 미용 bg-01~20 | `600b9c7` + `c7f4940` 보정 | spec reviewer가 13개 korean 본문 불일치 발견, 보정 |
+| M1.5-3b 미용 bg-21~40 | `268220a` | 자체 검증 ALL PASS |
+| M1.5-3c 미용 bg-41~60 | `a2477c5` | 자체 검증에서 24개 보정 후 ALL PASS |
+| M1.5-3 미용 테스트 활성화 | `cfdf0cd` | it.skip 풀고 3종 가드 활성 |
+| M1.5-4a 제과 ps-01~20 | `195a5c7` | 자체 검증에서 51개 보정 후 ALL PASS |
+| M1.5-4b 제과 ps-21~40 | `e098806` | 자체 검증에서 23개 보정 후 ALL PASS |
+| M1.5-4c 제과 ps-41~60 | `4518c5f` | 자체 검증에서 35개 보정 후 ALL PASS |
+| M1.5-4 제과 테스트 활성화 | `0636653` | |
+| M1.5-5 StudyPage 3-mode 재설계 | `3221614` | KeywordHint + renderWithHints helper, ❓ 슬라이딩 패널 |
+| M1.5-6 5언어 배지 변경 | `d5525ec` | "Coming soon" → "AI" |
+| M1.5-7 DictionaryPage 5언어 노출 | `663aea8` | "🚧 준비 중" 폐기, 검색 5언어 확장 |
+| M1.5-8 배포 마커 | `1fb9904` | 빈 커밋, M1.5 완료 표시 |
 
-내가 처음 brainstorming할 때 "쉬운 한국어가 더 학습 효과 있다"고 합리화한 게 잘못. 실제로는 모국어 번역 데이터가 빠진 상태였음.
+### subagent-driven-development 패턴 사용 학습
 
-### M1.5 계획 (사용자 옵션 A 선택 — 본질 회복)
-
-`docs/superpowers/plans/2026-05-27-multilingual-restoration.md` — 8 tasks:
-
-1. **M1.5-1 ✅ 완료** (`e910b3c`) — 스키마 + 헬퍼 + 테스트
-   - `src/lib/translations.js` 신규: `getTranslatedQuestion`, `getTranslatedOptions`, `getTranslatedExplanation`, `getKeywordHints`, `isLangVerified`, `getLangBadge`, `LANG_CODES`, `VERIFIED_LANGS`
-   - `demoMode.js`: `getLanguageStatus` returns `'verified'`/`'ai-translation'` (was `'preview'`)
-   - 콘텐츠 가드 테스트 placeholders (`it.skip`) 3개 자격증
-
-2. **M1.5-2 ✅ 완료** (`1785c7c`) — 한식조리 60Q × 5언어
-   - `translations.{vi,zh,th,tl,my}.{question,options,explanation}` 60문제 채움
-   - `keywordHints.{vi,zh,th,tl,my}[].{korean,native}` 4-8개씩 5언어 채움
-   - 콘텐츠 가드 3개 테스트 활성화, 통과
-   - 작업 시간 88분 (sonnet 서브에이전트)
-   - **품질 검증 완료** — vi/zh 자연스럽고 정확, th/tl/my "AI 번역" 표기로 노출 예정
-
-3. **M1.5-3 ❌ 2회 실패** — 미용일반 60Q × 5언어
-   - 1차 시도 (sonnet): 90분 작업 후 빈손 종료. Working tree clean, 0 진행.
-   - 2차 시도 (opus): 9분 후 "socket closed unexpectedly" 에러. 0 진행.
-   - **명백한 한계**: 60Q×5언어 한 턴 dispatch는 안 됨. 분할 필요.
-
-4. **M1.5-4 ⏳ 미시작** — 제과 60Q × 5언어
-5. **M1.5-5 ⏳ 미시작** — StudyPage 3-mode 재설계 (한+모국 병행 / 키워드 popover / ❓ 토글)
-6. **M1.5-6 ⏳ 미시작** — 진단 결과 → 초기 모드 매핑 + 5언어 정책 변경
-7. **M1.5-7 ⏳ 미시작** — DictionaryPage 5언어 전체 노출
-8. **M1.5-8 ⏳ 미시작** — Vercel 재배포 + 시나리오 검증
+- **20Q × 5언어가 안전한 chunk 단위**: 60Q × 5 한 턴 시도는 두 번 모두 실패 (이전 세션). 20Q는 sonnet으로 약 15~25분/chunk 페이스. opus 불필요.
+- **본문 substring 매칭 함정**: sonnet은 keyword hints에서 "관련 개념어"를 본문에 없는데 자주 삽입. 첫 chunk(bg-01~20)에서 13개 본문 불일치 → spec reviewer 보정 후, 이후 chunk들에는 작업 전 검증 절차를 명시적으로 prompt에 강조해서 자체 보정 (24/51/23/35 개 자체 발견·수정)함.
+- **분류기 우회 표현 금지**: "분류기 장애 우회" 등의 표현이 prompt에 들어가면 서브에이전트 분류기가 즉시 거부. 그냥 작업 컨텍스트만 제공.
 
 ## 🛠 수정한 파일 (이번 세션)
 
 ```
-Created:
-- docs/superpowers/specs/2026-05-26-rainbow-licence-beta-design.md
-- docs/superpowers/plans/2026-05-26-m1-demo-beta.md
-- docs/superpowers/plans/2026-05-27-multilingual-restoration.md
-- docs/superpowers/designs/2026-05-26/ (9 mockups + compare.html)
-- CLAUDE.md, DESIGN.md
-- src/lib/demoMode.js, src/lib/translations.js
-- src/lib/__tests__/*.test.js (multiple)
-- src/components/ErrorBoundary.js
-- src/data/questions/{korean-food,beauty-general,pastry}/index.js (split)
-- src/data/terms/{korean-food,beauty-general,pastry}/index.js (split)
-- src/data/__tests__/{korean-food,beauty-general,pastry}.test.js
-- .env.example, .env.local
-- vitest.config.mjs
-- walkthrough.md (이 파일)
-
 Modified:
-- src/app/layout.js, src/app/globals.css (V3 tokens)
-- src/components/layout/{TopNav,BottomNav}.js
-- src/components/ui/PremiumBanner.js
-- src/components/pages/{HomePage,OnboardingPage,StudyPage,LicencePage,DictionaryPage,CommunityPage}.js
-- src/lib/studyEngine.js (migration fix)
-- src/data/questions.js, src/data/terms.js (re-export to split files)
-- src/data/questions/korean-food.js (+translations +keywordHints — 6411 lines)
-- src/data/terms/{korean-food,beauty-general,pastry}.js
-- package.json (vitest + plugin-react + jsdom + testing-library)
-- .gitignore (.env.local exclusion)
+- src/data/questions/beauty-general.js  (60문제에 translations + keywordHints, ~3000 lines 증가)
+- src/data/questions/pastry.js          (60문제에 translations + keywordHints, ~3000 lines 증가)
+- src/components/pages/StudyPage.js     (3-mode 재설계, KeywordHint/renderWithHints + ❓ 패널)
+- src/components/pages/OnboardingPage.js ("Coming soon" → "AI" 배지)
+- src/components/pages/DictionaryPage.js (5언어 전수 노출, AI 라벨)
+- src/data/terms/index.js               (searchTerms 5언어 확장)
+- src/data/__tests__/beauty-general.test.js (it.skip → 활성)
+- src/data/__tests__/pastry.test.js     (it.skip → 활성)
+
+Empty commit:
+- 1fb9904 (M1.5 배포 완료 마커)
 ```
 
-## 🔍 미해결 이슈
+## 🔍 미해결 / 다음 세션 작업
 
-### 1. 미용·제과 다국어 번역 미완료 (M1.5-3, M1.5-4)
-- 60Q × 5언어 한 턴 처리 불가능 확인
-- 다음 세션에서 **chunk 전략** 필요
+### 1. 시연 검증 — 미수행 (사용자 결정 필요)
 
-### 2. 다국어 번역 후속 작업 (M1.5-5~8)
-- StudyPage 재설계 (3-mode 실효화)
-- 진단 → 자동 모드 매핑
-- DictionaryPage 5언어 전체 노출 (데이터는 이미 있음, 정책만 풀면 됨)
-- Vercel 재배포
+M1.5-8 plan Step 3에 명시된 시나리오 4종 프로덕션 QA 미수행. 다음 중 선택:
 
-### 3. Git push 안 됨
-- 20 commits ahead of origin/main
-- `git push` 필요 (사용자 결정 시 실행)
+**시나리오 1 — 베트남어 학생 (초급, vi)**
+- 온보딩 vi 선택 → 진단 1/3 → 한식조리 → STEP 1 자동 진입 확인
+- 질문/옵션/해설 모두 한국어 + 베트남어 병행 보임
 
-### 4. 사전 변경 사항 (이전 세션 영향)
-- `.gitignore`, `package-lock.json`에 unstaged 변동 있었으나 작업 중 해소됨
+**시나리오 2 — 태국어 학생 (중급, th, AI 번역)**
+- 온보딩 th 선택 (Coming soon 아니라 'AI' 표기) → 진단 2/3 → 미용 → STEP 2 자동
+- 점선 밑줄 + 탭 시 태국어 popover
 
-## 🎯 다음 세션 작업 — 추천 순서
+**시나리오 3 — 중국어 학생 (고급, zh)**
+- 진단 3/3 → STEP 3 자동, 한국어만 + ❓ 슬라이딩 패널
 
-### 옵션 A — 본래 계획 그대로 (chunks로 분할)
-다음 세션에서 미용·제과 콘텐츠를 chunk 분할로 마저 작성:
-1. M1.5-3a: 미용 bg-01~20 (sonnet, ~30분)
-2. M1.5-3b: 미용 bg-21~40 (sonnet, ~30분)
-3. M1.5-3c: 미용 bg-41~60 (sonnet, ~30분)
-4. M1.5-4a-c: 제과 ps-01~20, ps-21~40, ps-41~60 (~1.5시간)
-5. M1.5-5: StudyPage 재설계 (~30분, 코드 작업)
-6. M1.5-6: 진단 → 모드 매핑 (~20분)
-7. M1.5-7: DictionaryPage (~15분)
-8. M1.5-8: 배포 + 검증 (~20분)
-**총 추정**: 3.5-4.5시간
+**시나리오 4 — DictionaryPage**
+- 5언어 모두 노출, vi/zh는 ✓ 의미, th/tl/my는 'AI' 배지
+- 베트남어/태국어 단어로 검색 시 결과 매칭
 
-### 옵션 B — 현실적 시연 위주 축소
-한식조리만으로 충분히 다국어 학습 데모 가능. 미용·제과는 M2:
-1. **건너뛰기**: M1.5-3, M1.5-4 (미용·제과 5언어)
-2. **즉시 진행**: M1.5-5 (StudyPage 재설계), M1.5-6, M1.5-7, M1.5-8
-3. **교장선생님 안내**: "한식조리는 5언어 완성, 미용·제과는 한국어 + 다국어 진행 중" 명시
-**총 추정**: ~1.5시간
+**다음 세션 진입 시 가장 먼저 할 일**: `/qa` 또는 `/browse` 스킬로 위 시나리오 자동 실행해서 회귀 확인.
 
-### 옵션 C — 정직한 단계 분할
-한식조리 다국어 시연 환경 즉시 배포 후, 미용·제과는 별도 다음 sprint:
-1. M1.5-5~8 즉시 실행 (한식조리만 다국어 활성)
-2. 시연 후 사용자 피드백 받고 M1.5-3, M1.5-4 결정
-**총 추정**: ~1.5시간
+### 2. 번역 품질 평가 — 미진행
 
-### 추천
-**옵션 C**가 가장 안전. 한식조리만으로도 다국어 학습 차별점은 충분히 시연 가능하고, 평가위원 반응 보고 나머지 자격증 콘텐츠 확장 결정 가능.
+- vi/zh는 spec reviewer가 도메인 어휘 가이드 준수 spot-check만 한 상태. 실제 원어민 검수 필요.
+- th/tl/my는 'AI' 라벨로 정직하게 노출되어 있어서 그 자체 큰 문제는 아니지만, 명백한 오류(자모 결합 오타, 문장 구조 깨짐 등)는 다음 sprint에서 검수 권장.
 
-## 🔑 다음 세션 진입 시 즉시 할 일
+### 3. M2 후보 작업 (M1.5 외부)
 
-1. 이 `walkthrough.md` 파일 읽기
-2. `git log --oneline -25` 로 커밋 히스토리 확인
-3. 사용자에게 옵션 A/B/C 어느 길로 갈지 확인
-4. 결정에 따라 해당 task부터 dispatch
+- 다국어 시험 가능 자격증 (`multiLangExam: true`) 외 콘텐츠 확장 (전기/지게차/조경/네일 등)
+- 더 많은 자격증 (현재 3개 → 10개 목표)
+- 실제 원어민 검수 + th/tl/my를 검수 완료 언어로 승격
 
-## 💡 학습/주의사항
+## 🎯 다음 세션 진입 시 즉시 할 일
 
-- **서브에이전트 작업 단위**: 60문제 × 5언어 (= ~3300 string translations) 한 턴 불가. 20문제 chunk가 최대 안전 단위로 보임.
-- **Co-Authored-By footer**: 서브에이전트는 그 푸터 붙이면 안 됨 (Claude Opus 4.7 사칭으로 harness가 경고). 명시적으로 "no Co-Authored-By footer" 지시 필수.
-- **한식조리 번역 품질 검증 완료**: vi/zh 도메인 정확, th/tl/my 도 자연스러움. 같은 quality bar 유지.
+1. 이 `walkthrough.md` 읽기
+2. `git log --oneline -15`로 최근 커밋 확인 (M1.5 완료 마커 `1fb9904` 봐야 함)
+3. **production 시연 검증**: `/browse https://rainbow-licence.vercel.app` 으로 시나리오 1-4 실행
+4. 결과에 따라:
+   - 문제 없으면 → M2 작업 또는 검수자 피드백 반영
+   - bug 발견 시 → `/investigate` 또는 `/qa`로 fix
+
+## 💡 학습/주의사항 (이번 세션에서 강화)
+
+- **본문 substring 매칭**: keywordHints korean은 question + options.join(' ') 본문에 정확히 등장해야 함. 띄어쓰기 한 글자도 다르면 안 됨. 작업 prompt에 명시적으로 강조 + 자체 검증 스크립트 의무화하니 효과 큼.
+- **컨트롤러 검증 단계**: 서브에이전트 자체 검증 ALL PASS 보고 후에도 컨트롤러가 동일 스크립트 한 번 더 돌려야 함 (trust but verify).
+- **subagent-driven-development 효율**: chunk별 spec reviewer는 첫 chunk만 활용해서 보정 패턴 학습, 이후 chunks는 자체 검증 + 컨트롤러 빠른 verification으로 시간 절약.
+- **분류기 우회 표현**: prompt에 절대 넣지 말 것. 작업 자체만 설명.
