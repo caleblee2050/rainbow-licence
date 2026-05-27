@@ -28,15 +28,19 @@ export function getCategories(licenceId) {
     return [...new Set(termList.map(t => t.category))];
 }
 
-// 검색
+// 검색 — 한국어/발음 + 5개 언어 모두 매칭
+const SEARCH_LANGS = ['vi', 'zh', 'th', 'tl', 'my'];
+
 export function searchTerms(query, language, licenceId) {
     const source = licenceId ? (terms[licenceId] || []) : getAllTerms();
     const q = query.toLowerCase();
 
     return source.filter(t => {
-        const matchKorean = t.korean.toLowerCase().includes(q);
-        const matchTranslation = t[language]?.toLowerCase().includes(q);
-        const matchPronunciation = t.pronunciation?.toLowerCase().includes(q);
-        return matchKorean || matchTranslation || matchPronunciation;
+        if (t.korean.toLowerCase().includes(q)) return true;
+        if (t.pronunciation?.toLowerCase().includes(q)) return true;
+        for (const lang of SEARCH_LANGS) {
+            if (t[lang]?.toLowerCase().includes(q)) return true;
+        }
+        return false;
     });
 }

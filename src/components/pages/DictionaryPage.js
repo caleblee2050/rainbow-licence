@@ -177,25 +177,28 @@ export default function DictionaryPage({ language, licenceId }) {
                                         fontWeight: 500,
                                         minWidth: 64,
                                         flexShrink: 0,
+                                        display: 'inline-flex',
+                                        alignItems: 'center',
+                                        gap: 4,
                                     }}>
                                         {LANG_LABELS[lang]}
+                                        {!isLanguageVerified(lang) && (
+                                            <span style={{
+                                                fontSize: 9,
+                                                color: 'var(--text-muted)',
+                                                fontStyle: 'italic',
+                                                padding: '0 4px',
+                                                border: '1px solid var(--border)',
+                                                borderRadius: 'var(--radius-full)',
+                                            }}>AI</span>
+                                        )}
                                     </span>
-                                    {isLanguageVerified(lang) ? (
-                                        <span style={{
-                                            color: term[lang] ? 'var(--text-primary)' : 'var(--text-muted)',
-                                            fontStyle: term[lang] ? 'normal' : 'italic',
-                                        }}>
-                                            {term[lang] || '준비 중'}
-                                        </span>
-                                    ) : (
-                                        <span style={{
-                                            color: 'var(--text-muted)',
-                                            fontStyle: 'italic',
-                                            fontSize: 12,
-                                        }}>
-                                            🚧 준비 중
-                                        </span>
-                                    )}
+                                    <span style={{
+                                        color: term[lang] ? 'var(--text-primary)' : 'var(--text-muted)',
+                                        fontStyle: term[lang] ? 'normal' : 'italic',
+                                    }}>
+                                        {term[lang] || '—'}
+                                    </span>
                                 </div>
                             ))}
                         </div>
