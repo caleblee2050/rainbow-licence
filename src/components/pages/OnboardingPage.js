@@ -161,13 +161,14 @@ export default function OnboardingPage({ onComplete }) {
                                     {!isLanguageVerified(lang.code) && (
                                         <span style={{
                                             position: 'absolute', top: 8, right: 8,
-                                            background: 'var(--accent-soft)',
-                                            color: 'var(--text-secondary)',
+                                            background: 'transparent',
+                                            color: 'var(--text-muted)',
                                             fontSize: 10,
                                             padding: '2px 6px',
                                             borderRadius: 'var(--radius-full)',
+                                            border: '1px solid var(--border)',
                                             pointerEvents: 'none',
-                                        }}>Coming soon</span>
+                                        }}>AI</span>
                                     )}
                                     <span style={{ fontSize: 32 }}>{lang.flag}</span>
                                     <div style={{ flex: 1 }}>
