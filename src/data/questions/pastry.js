@@ -1474,6 +1474,67 @@ export const pastryQuestions = [
         explanation: '크림법은 유지와 설탕을 먼저 크림 상태로 만든 후 달걀, 밀가루 순으로 혼합하는 방법입니다.',
         simpleExplanation: '크림법은 버터와 설탕을 먼저 크림처럼 만들고 다른 재료를 섞어요.',
         keywords: ['크림법', '반죽법', '유지', '설탕'],
+        translations: {
+            vi: {
+                question: `Khi trộn bột theo phương pháp cream (cream method), nguyên liệu nào được cream hóa đầu tiên?`,
+                options: [`Bột mì và nước`, `Chất béo và đường`, `Trứng và đường`, `Chất béo và bột mì`],
+                explanation: `Phương pháp cream là trộn chất béo và đường thành dạng kem trước, sau đó lần lượt thêm trứng và bột mì.`,
+            },
+            zh: {
+                question: `用奶油法（cream method）揉面时，最先进行奶油化处理的材料是哪个？`,
+                options: [`面粉和水`, `油脂和糖`, `鸡蛋和糖`, `油脂和面粉`],
+                explanation: `奶油法是先将油脂和糖打成奶油状，然后依次加入鸡蛋和面粉混合的方法。`,
+            },
+            th: {
+                question: `เมื่อนวดแป้งด้วยวิธีครีม (cream method) ส่วนผสมใดถูกทำให้เป็นครีมก่อน?`,
+                options: [`แป้งสาลีและน้ำ`, `ไขมันและน้ำตาล`, `ไข่และน้ำตาล`, `ไขมันและแป้งสาลี`],
+                explanation: `วิธีครีมคือการตีไขมันและน้ำตาลให้เป็นครีมก่อน จากนั้นจึงผสมไข่และแป้งตามลำดับ`,
+            },
+            tl: {
+                question: `Sa paggawa ng masa gamit ang cream method, anong sangkap ang pinagkukream muna?`,
+                options: [`Harina at tubig`, `Taba at asukal`, `Itlog at asukal`, `Taba at harina`],
+                explanation: `Ang cream method ay ang pagkream muna ng taba at asukal bago idagdag ang itlog at harina ayon sa pagkakasunod.`,
+            },
+            my: {
+                question: `Cream method ဖြင့် မုန့်ညက်ဆမ်းသောအခါ အရင်ဆုံး cream ပြုလုပ်သည့် ပစ္စည်းမှာ မည်သည်နည်း?`,
+                options: [`ဂျုံမှုန့်နှင့် ရေ`, `အဆီနှင့် သကြား`, `ဥနှင့် သကြား`, `အဆီနှင့် ဂျုံမှုန့်`],
+                explanation: `Cream method သည် အဆီနှင့်သကြားကို cream အဖြစ်ပြုလုပ်ပြီးနောက် ဥနှင့် ဂျုံမှုန့်ကို အစဉ်လိုက် ရောနှောသည့် နည်းလမ်းဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `크림법`, native: `phương pháp cream` },
+                { korean: `유지`, native: `chất béo` },
+                { korean: `설탕`, native: `đường` },
+                { korean: `달걀`, native: `trứng` },
+                { korean: `밀가루`, native: `bột mì` },
+            ],
+            zh: [
+                { korean: `크림법`, native: `奶油法` },
+                { korean: `유지`, native: `油脂` },
+                { korean: `설탕`, native: `糖` },
+                { korean: `달걀`, native: `鸡蛋` },
+                { korean: `밀가루`, native: `面粉` },
+            ],
+            th: [
+                { korean: `크림법`, native: `วิธีครีม` },
+                { korean: `유지`, native: `ไขมัน` },
+                { korean: `설탕`, native: `น้ำตาล` },
+                { korean: `달걀`, native: `ไข่` },
+            ],
+            tl: [
+                { korean: `크림법`, native: `cream method` },
+                { korean: `유지`, native: `taba` },
+                { korean: `설탕`, native: `asukal` },
+                { korean: `달걀`, native: `itlog` },
+            ],
+            my: [
+                { korean: `크림법`, native: `cream method` },
+                { korean: `유지`, native: `အဆီ` },
+                { korean: `설탕`, native: `သကြား` },
+                { korean: `달걀`, native: `ဥ` },
+            ],
+        },
     },
     {
         id: 'ps-22',
@@ -1486,6 +1547,67 @@ export const pastryQuestions = [
         explanation: '블렌딩법은 유지를 밀가루에 먼저 혼합하여 유지가 글루텐 형성을 억제하게 만들어 부드럽고 바삭한 제품을 만드는 방법입니다.',
         simpleExplanation: '블렌딩법은 밀가루에 버터를 먼저 섞어 바삭하게 만들어요.',
         keywords: ['블렌딩법', '반죽법', '글루텐', '밀가루'],
+        translations: {
+            vi: {
+                question: `Đặc điểm đúng của phương pháp blending (blending method) là gì?`,
+                options: [`Làm chảy chất béo và cho vào sau cùng`, `Trộn chất béo với bột mì trước để ức chế hình thành gluten`, `Đánh bông trứng trước rồi cho vào`, `Trộn tất cả nguyên liệu cùng một lúc`],
+                explanation: `Phương pháp blending là trộn chất béo vào bột mì trước để chất béo ức chế sự hình thành gluten, tạo ra sản phẩm mềm và giòn.`,
+            },
+            zh: {
+                question: `关于混合法（blending method）的特征，以下哪项正确？`,
+                options: [`将油脂融化后最后加入`, `先将油脂与面粉混合以抑制面筋形成`, `先将鸡蛋打发后加入`, `将所有材料一次性混合`],
+                explanation: `混合法是先将油脂与面粉混合，使油脂抑制面筋形成，从而制作出松软酥脆产品的方法。`,
+            },
+            th: {
+                question: `ลักษณะที่ถูกต้องของวิธีผสม (blending method) คืออะไร?`,
+                options: [`ละลายไขมันแล้วใส่ทีหลัง`, `ผสมไขมันกับแป้งสาลีก่อนเพื่อยับยั้งการเกิดกลูเตน`, `ตีไข่ให้ฟูก่อนแล้วใส่`, `ผสมส่วนผสมทั้งหมดพร้อมกัน`],
+                explanation: `วิธีผสมคือการผสมไขมันกับแป้งก่อน เพื่อให้ไขมันยับยั้งการเกิดกลูเตน ทำให้ได้ผลิตภัณฑ์ที่นุ่มและกรอบ`,
+            },
+            tl: {
+                question: `Alin ang tamang katangian ng blending method?`,
+                options: [`Tinutunaw ang taba at inilalagay sa huli`, `Inihahalo muna ang taba sa harina para pigilan ang pagbuo ng gluten`, `Tinatalo muna ang itlog bago ilagay`, `Inihahalo ang lahat ng sangkap nang sabay`],
+                explanation: `Ang blending method ay ang paghalo muna ng taba sa harina para mapigilan ang pagbuo ng gluten, na nagbibigay ng malambot at malutong na produkto.`,
+            },
+            my: {
+                question: `Blending method ၏ သင့်လျော်သောလက္ခဏာမှာ မည်သည်နည်း?`,
+                options: [`အဆီကို အရည်ကျိုပြီး နောက်မှ ထည့်သည်`, `ဂလူတင်ဖြစ်ပေါ်မှုကို တားဆီးရန် ဂျုံမှုန့်နှင့် အဆီကို အရင်ရောနှောသည်`, `ဥကို အရင်မြှုပ်ပြီး ထည့်သည်`, `ပစ္စည်းအားလုံးကို တစ်ပြိုင်နက် ရောနှောသည်`],
+                explanation: `Blending method သည် ဂလူတင်ဖြစ်ပေါ်မှုကို တားဆီးရန် ဂျုံမှုန့်တွင် အဆီကို အရင်ရောနှောပြီး နူးညံ့ပြီး ကြွပ်ကြမ်းသောထုတ်ကုန်ပြုလုပ်သည့် နည်းလမ်းဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `블렌딩법`, native: `phương pháp blending` },
+                { korean: `유지`, native: `chất béo` },
+                { korean: `밀가루`, native: `bột mì` },
+                { korean: `글루텐`, native: `gluten` },
+                { korean: `달걀`, native: `trứng` },
+            ],
+            zh: [
+                { korean: `블렌딩법`, native: `混合法` },
+                { korean: `유지`, native: `油脂` },
+                { korean: `밀가루`, native: `面粉` },
+                { korean: `글루텐`, native: `面筋` },
+                { korean: `달걀`, native: `鸡蛋` },
+            ],
+            th: [
+                { korean: `블렌딩법`, native: `วิธีผสม` },
+                { korean: `유지`, native: `ไขมัน` },
+                { korean: `밀가루`, native: `แป้งสาลี` },
+                { korean: `글루텐`, native: `กลูเตน` },
+            ],
+            tl: [
+                { korean: `블렌딩법`, native: `blending method` },
+                { korean: `유지`, native: `taba` },
+                { korean: `밀가루`, native: `harina` },
+                { korean: `글루텐`, native: `gluten` },
+            ],
+            my: [
+                { korean: `블렌딩법`, native: `blending method` },
+                { korean: `유지`, native: `အဆီ` },
+                { korean: `밀가루`, native: `ဂျုံမှုန့်` },
+                { korean: `글루텐`, native: `ဂလူတင်` },
+            ],
+        },
     },
     {
         id: 'ps-23',
@@ -1498,6 +1620,67 @@ export const pastryQuestions = [
         explanation: '1단계법은 모든 재료를 한꺼번에 넣고 믹싱하는 방법으로 작업이 간편하고 빠르지만, 크림법보다 부피와 기포가 적을 수 있습니다.',
         simpleExplanation: '1단계법은 재료를 한 번에 넣어 빠르게 만들 수 있어요.',
         keywords: ['1단계법', 'All-in-one', '반죽법', '간편'],
+        translations: {
+            vi: {
+                question: `Ưu điểm của phương pháp một bước (All-in-one method) là gì?`,
+                options: [`Có thể làm ra sản phẩm mềm nhất`, `Trộn tất cả nguyên liệu cùng một lúc nên làm việc nhanh hơn`, `Tạo ra nhiều bọt khí nhất`, `Có thể rút ngắn thời gian lên men`],
+                explanation: `Phương pháp một bước là cho tất cả nguyên liệu vào cùng lúc và trộn, đơn giản và nhanh chóng, nhưng có thể ít bọt khí và thể tích hơn phương pháp cream.`,
+            },
+            zh: {
+                question: `一步法（All-in-one method）的优点是什么？`,
+                options: [`可以制作出最松软的产品`, `将所有材料一次性混合，操作快速`, `形成最多气泡`, `可以缩短发酵时间`],
+                explanation: `一步法是将所有材料一次性放入混合的方法，操作简便快速，但与奶油法相比，体积和气泡可能较少。`,
+            },
+            th: {
+                question: `ข้อดีของวิธีหนึ่งขั้นตอน (All-in-one method) คืออะไร?`,
+                options: [`สามารถทำผลิตภัณฑ์ที่นุ่มที่สุดได้`, `ผสมส่วนผสมทั้งหมดพร้อมกันทำให้ทำงานได้รวดเร็ว`, `เกิดฟองอากาศมากที่สุด`, `สามารถย่นเวลาการหมักได้`],
+                explanation: `วิธีหนึ่งขั้นตอนคือการใส่ส่วนผสมทั้งหมดพร้อมกันแล้วผสม ง่ายและรวดเร็ว แต่ปริมาตรและฟองอากาศอาจน้อยกว่าวิธีครีม`,
+            },
+            tl: {
+                question: `Ano ang kalamangan ng All-in-one method?`,
+                options: [`Makakagawa ng pinaka-malambot na produkto`, `Inihahalo ang lahat ng sangkap nang sabay kaya mas mabilis ang trabaho`, `Pinakamaraming bula ang nabubuo`, `Mapapaikli ang oras ng pagpapaalsa`],
+                explanation: `Ang All-in-one method ay ang paglalagay ng lahat ng sangkap nang sabay at paghahalo, simple at mabilis, ngunit maaaring mas kaunti ang bula at dami kaysa sa cream method.`,
+            },
+            my: {
+                question: `1단계법 (All-in-one method) ၏ အကျိုးကျေးဇူးမှာ မည်သည်နည်း?`,
+                options: [`အနူးညံ့ဆုံးသော ထုတ်ကုန်ပြုလုပ်နိုင်သည်`, `ပစ္စည်းအားလုံးကို တစ်ပြိုင်နက်ရောနှောသောကြောင့် အလုပ်မြန်သည်`, `လေဖုပ်များ အများဆုံးဖြစ်ပေါ်သည်`, `တချစ်ကြာချိန်ကို လျှော့ချနိုင်သည်`],
+                explanation: `1단계법 သည် ပစ္စည်းအားလုံးကို တစ်ပြိုင်နက် ထည့်ပြီး ရောနှောသည့် နည်းလမ်းဖြစ်ပြီး လွယ်ကူမြန်ဆန်သော်လည်း cream method ထက် ထုထည်နှင့် လေဖုပ်နည်းနိုင်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `1단계법`, native: `phương pháp một bước` },
+                { korean: `재료`, native: `nguyên liệu` },
+                { korean: `발효`, native: `lên men` },
+                { korean: `기포`, native: `bọt khí` },
+                { korean: `작업`, native: `làm việc / thao tác` },
+            ],
+            zh: [
+                { korean: `1단계법`, native: `一步法` },
+                { korean: `재료`, native: `材料` },
+                { korean: `발효`, native: `发酵` },
+                { korean: `기포`, native: `气泡` },
+                { korean: `작업`, native: `操作` },
+            ],
+            th: [
+                { korean: `1단계법`, native: `วิธีหนึ่งขั้นตอน` },
+                { korean: `재료`, native: `ส่วนผสม` },
+                { korean: `발효`, native: `การหมัก` },
+                { korean: `기포`, native: `ฟองอากาศ` },
+            ],
+            tl: [
+                { korean: `1단계법`, native: `All-in-one method` },
+                { korean: `재료`, native: `sangkap` },
+                { korean: `발효`, native: `pagpapaalsa` },
+                { korean: `기포`, native: `bula` },
+            ],
+            my: [
+                { korean: `1단계법`, native: `All-in-one method` },
+                { korean: `재료`, native: `ပစ္စည်း` },
+                { korean: `발효`, native: `တချစ်` },
+                { korean: `기포`, native: `လေဖုပ်` },
+            ],
+        },
     },
     {
         id: 'ps-24',
@@ -1510,6 +1693,67 @@ export const pastryQuestions = [
         explanation: '달걀 흰자 거품을 낼 때 용기나 거품기에 기름기나 노른자가 조금이라도 들어가면 거품이 형성되지 않습니다.',
         simpleExplanation: '흰자 거품 낼 때 용기에 기름기나 노른자가 있으면 안 돼요.',
         keywords: ['별립법', '흰자', '거품', '머랭'],
+        translations: {
+            vi: {
+                question: `Trong phương pháp tách trứng (Separated method), điều cần lưu ý khi đánh bông lòng trắng trứng là gì?`,
+                options: [`Sử dụng trứng bảo quản lạnh ngay lập tức`, `Không được có dầu mỡ hay lòng đỏ trong dụng cụ`, `Cần cho nhiều muối vào`, `Chỉ dùng tốc độ cao liên tục`],
+                explanation: `Khi đánh bông lòng trắng trứng, nếu có chút dầu mỡ hay lòng đỏ vào dụng cụ hoặc máy đánh thì bọt sẽ không hình thành được.`,
+            },
+            zh: {
+                question: `分蛋法（Separated method）中，打发蛋白时需要注意的是什么？`,
+                options: [`直接使用冷藏的鸡蛋`, `容器中不得有油脂或蛋黄`, `需要加入大量盐`, `只用高速持续搅打`],
+                explanation: `打发蛋白时，容器或打蛋器中如果混入一点油脂或蛋黄，就无法形成泡沫。`,
+            },
+            th: {
+                question: `ในวิธีแยกไข่ (Separated method) สิ่งที่ต้องระวังเมื่อตีไข่ขาวให้ฟูคืออะไร?`,
+                options: [`ใช้ไข่ที่เก็บในตู้เย็นทันที`, `ภาชนะต้องไม่มีไขมันหรือไข่แดง`, `ต้องใส่เกลือมาก`, `ใช้ความเร็วสูงตลอดเวลา`],
+                explanation: `เมื่อตีไข่ขาว หากมีน้ำมันหรือไข่แดงปนในภาชนะหรือที่ตีแม้แต่นิดเดียว ก็จะไม่สามารถเกิดฟองได้`,
+            },
+            tl: {
+                question: `Sa Separated method, ano ang dapat ingatan kapag tinatalo ang puting itlog?`,
+                options: [`Gamitin kaagad ang itlog mula sa refrigerator`, `Walang dapat na mantika o pula ng itlog sa lalagyan`, `Kailangan ng maraming asin`, `Palaging gumamit ng mataas na bilis`],
+                explanation: `Kapag tinatalo ang puting itlog, kung may kahit konting mantika o pula ng itlog sa lalagyan o beater, hindi mabubuo ang bula.`,
+            },
+            my: {
+                question: `별립법 (Separated method) တွင် ဥအဖြူကို မြှုပ်သောအခါ သတိပြုရမည့်အချက်မှာ မည်သည်နည်း?`,
+                options: [`အအေးခန်းမှ ဥကို ချက်ချင်းအသုံးပြုသည်`, `ပန်းကန်တွင် အဆီဓာတ် သို့မဟုတ် ဥအဝါ မပါရ`, `ဆားများများ ထည့်ရမည်`, `အမြင့်ဆုံးအမြန်နှုန်းဖြင့်သာ ဆက်တိုက်လှည့်သည်`],
+                explanation: `ဥအဖြူမြှုပ်သောအခါ ပန်းကန် သို့မဟုတ် မြှုပ်တံတွင် အဆီ သို့မဟုတ် ဥအဝါ နည်းနည်းမျှပင် ရောနှောပါက မြှုပ်မပေါ်နိုင်ပါ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `별립법`, native: `phương pháp tách trứng` },
+                { korean: `흰자`, native: `lòng trắng trứng` },
+                { korean: `거품`, native: `bọt / đánh bông` },
+                { korean: `노른자`, native: `lòng đỏ trứng` },
+                { korean: `용기`, native: `dụng cụ / bát` },
+            ],
+            zh: [
+                { korean: `별립법`, native: `分蛋法` },
+                { korean: `흰자`, native: `蛋白` },
+                { korean: `거품`, native: `泡沫` },
+                { korean: `노른자`, native: `蛋黄` },
+                { korean: `용기`, native: `容器` },
+            ],
+            th: [
+                { korean: `별립법`, native: `วิธีแยกไข่` },
+                { korean: `흰자`, native: `ไข่ขาว` },
+                { korean: `거품`, native: `ฟอง` },
+                { korean: `노른자`, native: `ไข่แดง` },
+            ],
+            tl: [
+                { korean: `별립법`, native: `separated method` },
+                { korean: `흰자`, native: `puting itlog` },
+                { korean: `거품`, native: `bula` },
+                { korean: `노른자`, native: `pula ng itlog` },
+            ],
+            my: [
+                { korean: `별립법`, native: `separated method` },
+                { korean: `흰자`, native: `ဥအဖြူ` },
+                { korean: `거품`, native: `မြှုပ်` },
+                { korean: `노른자`, native: `ဥအဝါ` },
+            ],
+        },
     },
     {
         id: 'ps-25',
@@ -1522,6 +1766,67 @@ export const pastryQuestions = [
         explanation: '케이크의 오븐 온도는 일반적으로 175~220°C 범위에서 굽습니다. 제품 종류와 크기에 따라 조정합니다.',
         simpleExplanation: '케이크는 보통 175~220도에서 구워요.',
         keywords: ['케이크', '오븐', '온도', '굽기'],
+        translations: {
+            vi: {
+                question: `Phạm vi nhiệt độ lò nướng thích hợp để nướng bánh cake thông thường là bao nhiêu?`,
+                options: [`100~130°C`, `150~170°C`, `175~220°C`, `250°C trở lên`],
+                explanation: `Nhiệt độ lò nướng bánh cake thường là 175~220°C. Điều chỉnh tùy theo loại sản phẩm và kích thước.`,
+            },
+            zh: {
+                question: `一般蛋糕烘烤的适当烤箱温度范围是多少？`,
+                options: [`100~130°C`, `150~170°C`, `175~220°C`, `250°C以上`],
+                explanation: `蛋糕的烤箱温度一般在175~220°C范围内烘烤。根据产品种类和大小进行调整。`,
+            },
+            th: {
+                question: `ช่วงอุณหภูมิเตาอบที่เหมาะสมสำหรับการอบเค้กทั่วไปคือเท่าไร?`,
+                options: [`100~130°C`, `150~170°C`, `175~220°C`, `250°C ขึ้นไป`],
+                explanation: `อุณหภูมิเตาอบสำหรับเค้กโดยทั่วไปอยู่ในช่วง 175~220°C ปรับตามชนิดและขนาดของผลิตภัณฑ์`,
+            },
+            tl: {
+                question: `Ano ang tamang hanay ng temperatura ng oven para sa pangkalahatang pagluluto ng cake?`,
+                options: [`100~130°C`, `150~170°C`, `175~220°C`, `250°C pataas`],
+                explanation: `Ang temperatura ng oven para sa cake ay karaniwang 175~220°C. Inaayos ayon sa uri at laki ng produkto.`,
+            },
+            my: {
+                question: `ကိတ်မုန့်ဖုတ်ရာတွင် သင့်တော်သောမီးဖိုအပူချိန်အပိုင်းအခြားမှာ မည်မျှနည်း?`,
+                options: [`100~130°C`, `150~170°C`, `175~220°C`, `250°C နှင့်အထက်`],
+                explanation: `ကိတ်မုန့်၏ မီးဖိုအပူချိန်မှာ ယေဘုယျအားဖြင့် 175~220°C အပိုင်းအခြားတွင် ဖုတ်သည်။ ထုတ်ကုန်အမျိုးအစားနှင့် အရွယ်အစားအလိုက် ချိန်ညှိသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `케이크`, native: `bánh cake` },
+                { korean: `굽기`, native: `nướng` },
+                { korean: `오븐`, native: `lò nướng` },
+                { korean: `온도`, native: `nhiệt độ` },
+                { korean: `범위`, native: `phạm vi` },
+            ],
+            zh: [
+                { korean: `케이크`, native: `蛋糕` },
+                { korean: `굽기`, native: `烘烤` },
+                { korean: `오븐`, native: `烤箱` },
+                { korean: `온도`, native: `温度` },
+                { korean: `범위`, native: `范围` },
+            ],
+            th: [
+                { korean: `케이크`, native: `เค้ก` },
+                { korean: `굽기`, native: `อบ` },
+                { korean: `오븐`, native: `เตาอบ` },
+                { korean: `온도`, native: `อุณหภูมิ` },
+            ],
+            tl: [
+                { korean: `케이크`, native: `cake` },
+                { korean: `굽기`, native: `pagluluto sa oven` },
+                { korean: `오븐`, native: `oven` },
+                { korean: `온도`, native: `temperatura` },
+            ],
+            my: [
+                { korean: `케이크`, native: `ကိတ်မုန့်` },
+                { korean: `굽기`, native: `ဖုတ်ခြင်း` },
+                { korean: `오븐`, native: `မီးဖို` },
+                { korean: `온도`, native: `အပူချိန်` },
+            ],
+        },
     },
     {
         id: 'ps-26',
@@ -1534,6 +1839,67 @@ export const pastryQuestions = [
         explanation: '케이크 윗면의 균열은 오븐 온도가 너무 높거나 팽창제(베이킹파우더)가 과다하게 사용되었을 때 발생합니다.',
         simpleExplanation: '케이크 윗면이 갈라지면 오븐이 너무 뜨겁거나 팽창제가 많이 들어간 거예요.',
         keywords: ['케이크', '균열', '갈라짐', '오븐'],
+        translations: {
+            vi: {
+                question: `Nguyên nhân đúng của lỗi nứt mặt trên của bánh cake là gì?`,
+                options: [`Nhiệt độ lò nướng quá thấp`, `Chất nở ít`, `Nhiệt độ lò quá cao hoặc dùng quá nhiều chất nở`, `Độ ẩm quá nhiều`],
+                explanation: `Vết nứt trên mặt bánh cake xảy ra khi nhiệt độ lò nướng quá cao hoặc bột nở (baking powder) được dùng quá nhiều.`,
+            },
+            zh: {
+                question: `蛋糕表面开裂这一缺陷的原因是什么？`,
+                options: [`烤箱温度太低`, `膨松剂太少`, `烤箱温度太高或膨松剂过多`, `水分太多`],
+                explanation: `蛋糕表面裂纹是在烤箱温度过高或泡打粉（膨松剂）使用过多时发生的。`,
+            },
+            th: {
+                question: `สาเหตุที่ถูกต้องของการแตกบนหน้าเค้กคืออะไร?`,
+                options: [`อุณหภูมิเตาอบต่ำเกินไป`, `ผงฟูน้อยเกินไป`, `อุณหภูมิเตาอบสูงเกินไปหรือใช้ผงฟูมากเกินไป`, `มีความชื้นมากเกินไป`],
+                explanation: `รอยแตกบนหน้าเค้กเกิดขึ้นเมื่ออุณหภูมิเตาอบสูงเกินไปหรือใช้ผงฟู (baking powder) มากเกินไป`,
+            },
+            tl: {
+                question: `Ano ang tamang dahilan ng pagkabiyak ng itaas ng cake?`,
+                options: [`Masyadong mababang temperatura ng oven`, `Kaunting pampaalsa`, `Masyadong mataas na temperatura o sobrang daming pampaalsa`, `Sobrang daming tubig`],
+                explanation: `Ang pagkabiyak ng itaas ng cake ay nangyayari kapag masyadong mataas ang temperatura ng oven o labis na ginamit ang baking powder.`,
+            },
+            my: {
+                question: `ကိတ်မုန့်၏ အပေါ်မျက်နှာပြင် ကွဲသွားသောချို့ယွင်းချက်၏ အကြောင်းရင်းမှာ မည်သည်နည်း?`,
+                options: [`မီးဖိုအပူချိန် နိမ့်လွန်းသည်`, `ပွောက်ဆေး နည်းလွန်းသည်`, `မီးဖိုအပူချိန် မြင့်လွန်းသည် သို့မဟုတ် ပွောက်ဆေး အလွန်များသည်`, `အစိုဓာတ် များလွန်းသည်`],
+                explanation: `ကိတ်မုန့်အပေါ်မျက်နှာပြင်ကွဲသည်မှာ မီးဖိုအပူချိန် မြင့်လွန်းသောအခါ သို့မဟုတ် baking powder ပွောက်ဆေး အလွန်မြောက်မြားစွာ သုံးသောအခါ ဖြစ်ပေါ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `케이크`, native: `bánh cake` },
+                { korean: `오븐`, native: `lò nướng` },
+                { korean: `온도`, native: `nhiệt độ` },
+                { korean: `팽창제`, native: `chất nở / bột nở` },
+                { korean: `결함`, native: `lỗi / khuyết tật` },
+            ],
+            zh: [
+                { korean: `케이크`, native: `蛋糕` },
+                { korean: `오븐`, native: `烤箱` },
+                { korean: `온도`, native: `温度` },
+                { korean: `팽창제`, native: `膨松剂` },
+                { korean: `결함`, native: `缺陷` },
+            ],
+            th: [
+                { korean: `케이크`, native: `เค้ก` },
+                { korean: `오븐`, native: `เตาอบ` },
+                { korean: `팽창제`, native: `ผงฟู` },
+                { korean: `결함`, native: `ข้อบกพร่อง` },
+            ],
+            tl: [
+                { korean: `케이크`, native: `cake` },
+                { korean: `오븐`, native: `oven` },
+                { korean: `팽창제`, native: `pampaalsa` },
+                { korean: `결함`, native: `depekto` },
+            ],
+            my: [
+                { korean: `케이크`, native: `ကိတ်မုန့်` },
+                { korean: `오븐`, native: `မီးဖို` },
+                { korean: `팽창제`, native: `ပွောက်ဆေး` },
+                { korean: `결함`, native: `ချို့ယွင်းချက်` },
+            ],
+        },
     },
     {
         id: 'ps-27',
@@ -1546,6 +1912,67 @@ export const pastryQuestions = [
         explanation: '쿠키는 수분 함량이 적을수록 구운 후 바삭바삭(crispy)한 식감이 됩니다.',
         simpleExplanation: '쿠키는 수분이 적을수록 바삭해요.',
         keywords: ['쿠키', '수분', '바삭', '식감'],
+        translations: {
+            vi: {
+                question: `Đặc tính xuất hiện khi lượng ẩm trong bột bánh quy ít là gì?`,
+                options: [`Có độ dai (쫄깃)`, `Có độ giòn`, `Mềm và ẩm`, `Bột quá nhão`],
+                explanation: `Bánh quy càng ít độ ẩm thì sau khi nướng sẽ có độ giòn (crispy) hơn.`,
+            },
+            zh: {
+                question: `饼干面团水分含量少时，表现出的特性是什么？`,
+                options: [`有嚼劲的口感`, `酥脆的口感`, `松软湿润`, `面团太稀`],
+                explanation: `饼干水分含量越少，烘烤后口感越酥脆（crispy）。`,
+            },
+            th: {
+                question: `ลักษณะที่ปรากฏเมื่อปริมาณความชื้นในแป้งคุกกี้น้อยคืออะไร?`,
+                options: [`มีเนื้อสัมผัสเหนียวนุ่ม`, `มีเนื้อสัมผัสกรอบ`, `นุ่มและชุ่มชื้น`, `แป้งเหลวเกินไป`],
+                explanation: `คุกกี้ยิ่งมีความชื้นน้อย หลังอบก็ยิ่งมีเนื้อสัมผัสกรอบ (crispy)`,
+            },
+            tl: {
+                question: `Anong katangian ang lumalabas kapag mababa ang kahalumigmigan ng masa ng cookie?`,
+                options: [`Nagiging makunat ang texture`, `Nagiging malutong ang texture`, `Malambot at ma촉촉`, `Masyadong malapot ang masa`],
+                explanation: `Habang mas kaunti ang kahalumigmigan ng cookie, mas malutong (crispy) ang magiging texture pagkatapos lutuin.`,
+            },
+            my: {
+                question: `ကွတ်ကီးမုန့်ပျော်တွင် အစိုဓာတ်နည်းသောအခါ ပေါ်ပေါက်သောလက္ခဏာမှာ မည်သည်နည်း?`,
+                options: [`ကြွပ်ကြမ်းသောအစာစားခံ`, `ကြွပ်ရွသောအစာစားခံ`, `နူးညံ့ပြီး ဆတ်ဆတ်ထိုးသော`, `မုန့်ပျော် လွန်ကဲစွာ ပျော့သည်`],
+                explanation: `ကွတ်ကီးသည် အစိုဓာတ်နည်းလေ ဖုတ်ပြီးနောက် ကြွပ်ရွ (crispy) သောအစာစားခံ ရရှိလေဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `쿠키`, native: `bánh quy` },
+                { korean: `반죽`, native: `bột nhào` },
+                { korean: `수분`, native: `độ ẩm` },
+                { korean: `식감`, native: `độ giòn / kết cấu` },
+                { korean: `바삭`, native: `giòn / crispy` },
+            ],
+            zh: [
+                { korean: `쿠키`, native: `饼干` },
+                { korean: `반죽`, native: `面团` },
+                { korean: `수분`, native: `水分` },
+                { korean: `식감`, native: `口感` },
+                { korean: `바삭`, native: `酥脆` },
+            ],
+            th: [
+                { korean: `쿠키`, native: `คุกกี้` },
+                { korean: `반죽`, native: `แป้งนวด` },
+                { korean: `수분`, native: `ความชื้น` },
+                { korean: `바삭`, native: `กรอบ` },
+            ],
+            tl: [
+                { korean: `쿠키`, native: `cookie` },
+                { korean: `반죽`, native: `masa` },
+                { korean: `수분`, native: `kahalumigmigan` },
+                { korean: `바삭`, native: `malutong` },
+            ],
+            my: [
+                { korean: `쿠키`, native: `ကွတ်ကီး` },
+                { korean: `반죽`, native: `မုန့်ပျော်` },
+                { korean: `수분`, native: `အစိုဓာတ်` },
+                { korean: `바삭`, native: `ကြွပ်ရွ` },
+            ],
+        },
     },
     {
         id: 'ps-28',
@@ -1558,6 +1985,67 @@ export const pastryQuestions = [
         explanation: '도넛 튀김 온도는 160~180°C가 적합합니다. 너무 낮으면 기름 흡수가 많고, 너무 높으면 겉만 타고 속이 익지 않습니다.',
         simpleExplanation: '도넛은 160~180도에서 튀겨요. 너무 낮으면 기름이 많이 배고, 너무 높으면 타요.',
         keywords: ['도넛', '튀기기', '온도', '유지'],
+        translations: {
+            vi: {
+                question: `Nhiệt độ dầu (chất béo) thích hợp để chiên bánh donut là bao nhiêu?`,
+                options: [`130~150°C`, `160~180°C`, `195~210°C`, `220°C trở lên`],
+                explanation: `Nhiệt độ chiên donut thích hợp là 160~180°C. Nếu quá thấp thì thấm nhiều dầu, nếu quá cao thì bên ngoài cháy nhưng bên trong không chín.`,
+            },
+            zh: {
+                question: `适合炸甜甜圈的油脂温度是多少？`,
+                options: [`130~150°C`, `160~180°C`, `195~210°C`, `220°C以上`],
+                explanation: `甜甜圈的炸制温度以160~180°C为宜。温度太低会吸收很多油，温度太高则外面焦了里面还没熟。`,
+            },
+            th: {
+                question: `อุณหภูมิน้ำมันที่เหมาะสมสำหรับทอดโดนัทคือเท่าไร?`,
+                options: [`130~150°C`, `160~180°C`, `195~210°C`, `220°C ขึ้นไป`],
+                explanation: `อุณหภูมิทอดโดนัทที่เหมาะสมคือ 160~180°C หากต่ำเกินไปจะดูดซับน้ำมันมาก หากสูงเกินไปด้านนอกจะไหม้แต่ข้างในไม่สุก`,
+            },
+            tl: {
+                question: `Anong temperatura ng mantika ang angkop para magprito ng donut?`,
+                options: [`130~150°C`, `160~180°C`, `195~210°C`, `220°C pataas`],
+                explanation: `Ang angkop na temperatura ng pagpiprito ng donut ay 160~180°C. Kung masyadong mababa, maraming mantika ang masasipsip; kung masyadong mataas, masusunog ang labas habang hindi pa luto ang loob.`,
+            },
+            my: {
+                question: `ဒိုနပ်မုန့်ကြော်ရန် သင့်တော်သောအဆီ အပူချိန်မှာ မည်မျှနည်း?`,
+                options: [`130~150°C`, `160~180°C`, `195~210°C`, `220°C နှင့်အထက်`],
+                explanation: `ဒိုနပ်ကြော်ရန် သင့်တော်သောအပူချိန်မှာ 160~180°C ဖြစ်သည်။ နိမ့်လွန်းပါက ဆီများစွာ စိမ့်ဝင်ပြီး မြင့်လွန်းပါက အပြင်ကျောက်ပြီး အတွင်းမချက်ပြန်ပါ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `도넛`, native: `bánh donut` },
+                { korean: `튀기기`, native: `chiên` },
+                { korean: `유지`, native: `dầu / chất béo` },
+                { korean: `온도`, native: `nhiệt độ` },
+                { korean: `적합`, native: `thích hợp` },
+            ],
+            zh: [
+                { korean: `도넛`, native: `甜甜圈` },
+                { korean: `튀기기`, native: `油炸` },
+                { korean: `유지`, native: `油脂` },
+                { korean: `온도`, native: `温度` },
+                { korean: `적합`, native: `适合` },
+            ],
+            th: [
+                { korean: `도넛`, native: `โดนัท` },
+                { korean: `튀기기`, native: `ทอด` },
+                { korean: `유지`, native: `ไขมัน` },
+                { korean: `온도`, native: `อุณหภูมิ` },
+            ],
+            tl: [
+                { korean: `도넛`, native: `donut` },
+                { korean: `튀기기`, native: `pagpiprito` },
+                { korean: `유지`, native: `mantika` },
+                { korean: `온도`, native: `temperatura` },
+            ],
+            my: [
+                { korean: `도넛`, native: `ဒိုနပ်` },
+                { korean: `튀기기`, native: `ကြော်ခြင်း` },
+                { korean: `유지`, native: `အဆီ` },
+                { korean: `온도`, native: `အပူချိန်` },
+            ],
+        },
     },
     {
         id: 'ps-29',
@@ -1570,6 +2058,67 @@ export const pastryQuestions = [
         explanation: '퍼프 페이스트리(puff pastry) 등 파이 반죽의 층을 만들기 위해 반죽에 버터를 넣고 여러 번 접는 라미네이션(lamination) 기법을 사용합니다.',
         simpleExplanation: '파이 반죽은 버터를 넣고 여러 번 접어서 층을 만들어요.',
         keywords: ['파이', '라미네이션', '결층', '퍼프 페이스트리'],
+        translations: {
+            vi: {
+                question: `Kỹ thuật nào được sử dụng để tạo lớp (kết cấu bong tróc theo lớp) trong bột bánh pie?`,
+                options: [`Phương pháp cream`, `Kỹ thuật lamination (gập bột)`, `Phương pháp một bước`, `Phương pháp blending`],
+                explanation: `Để tạo lớp cho bột bánh pie như puff pastry, người ta sử dụng kỹ thuật lamination — cho bơ vào bột rồi gập nhiều lần.`,
+            },
+            zh: {
+                question: `为了使派面团形成分层（层层剥落的结构），使用什么技法？`,
+                options: [`奶油法`, `叠层（折叠）技法`, `一步法`, `混合法`],
+                explanation: `为了制作如酥皮点心（puff pastry）等派面团的层次，使用在面团中放入黄油后多次折叠的叠层（lamination）技法。`,
+            },
+            th: {
+                question: `เทคนิคใดที่ใช้เพื่อสร้างชั้น (โครงสร้างที่แยกเป็นชั้น) ในแป้งพาย?`,
+                options: [`วิธีครีม`, `เทคนิคการพับ (lamination)`, `วิธีหนึ่งขั้นตอน`, `วิธีผสม`],
+                explanation: `เพื่อสร้างชั้นในแป้งพาย เช่น พัฟเพสตรี ใช้เทคนิค lamination โดยใส่เนยในแป้งแล้วพับหลายครั้ง`,
+            },
+            tl: {
+                question: `Anong teknik ang ginagamit para lumikha ng mga layer (istrukturang nababalatan sa bawat antas) sa masa ng pie?`,
+                options: [`Cream method`, `Lamination (folding) technique`, `All-in-one method`, `Blending method`],
+                explanation: `Para lumikha ng mga layer sa masa ng pie tulad ng puff pastry, ginagamit ang lamination technique — paglalagay ng mantikilya sa masa at paulit-ulit na pagtupi.`,
+            },
+            my: {
+                question: `ပိုင်မုန့်ပျော်တွင် အလွှာ (အလွှာချင်းကွာကွာ ဖွဲ့စည်းမှု) ဖန်တီးရန် အသုံးပြုသောနည်းလမ်းမှာ မည်သည်နည်း?`,
+                options: [`Cream method`, `Lamination (ခေါက်ခြင်း) နည်းလမ်း`, `1단계법`, `Blending method`],
+                explanation: `Puff pastry ကဲ့သို့သောပိုင်မုန့်ပျော်တွင် အလွှာဖန်တီးရန် မုန့်ပျော်တွင် ထောပတ်ထည့်ပြီး အကြိမ်ကြိမ်ခေါက်သောlamination နည်းလမ်းကိုအသုံးပြုသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `파이`, native: `bánh pie` },
+                { korean: `반죽`, native: `bột nhào` },
+                { korean: `라미네이션`, native: `lamination` },
+                { korean: `결층`, native: `phân lớp` },
+                { korean: `크림법`, native: `phương pháp cream` },
+            ],
+            zh: [
+                { korean: `파이`, native: `派` },
+                { korean: `반죽`, native: `面团` },
+                { korean: `라미네이션`, native: `叠层` },
+                { korean: `결층`, native: `分层` },
+                { korean: `크림법`, native: `奶油法` },
+            ],
+            th: [
+                { korean: `파이`, native: `พาย` },
+                { korean: `반죽`, native: `แป้งนวด` },
+                { korean: `라미네이션`, native: `lamination` },
+                { korean: `결층`, native: `ชั้นแป้ง` },
+            ],
+            tl: [
+                { korean: `파이`, native: `pie` },
+                { korean: `반죽`, native: `masa` },
+                { korean: `라미네이션`, native: `lamination` },
+                { korean: `결층`, native: `mga layer` },
+            ],
+            my: [
+                { korean: `파이`, native: `ပိုင်မုန့်` },
+                { korean: `반죽`, native: `မုန့်ပျော်` },
+                { korean: `라미네이션`, native: `lamination` },
+                { korean: `결층`, native: `အလွှာ` },
+            ],
+        },
     },
     {
         id: 'ps-30',
@@ -1582,6 +2131,67 @@ export const pastryQuestions = [
         explanation: '로얄 아이싱은 슈거파우더(분당)와 달걀 흰자를 섞어 만들며 건조 후 딱딱하게 굳어 케이크 장식에 사용됩니다.',
         simpleExplanation: '로얄 아이싱은 슈거파우더와 달걀 흰자로 만들어요.',
         keywords: ['로얄 아이싱', '아이싱', '슈거파우더', '달걀 흰자'],
+        translations: {
+            vi: {
+                question: `Nguyên liệu chính của Royal Icing dùng để trang trí bánh cake là gì?`,
+                options: [`Bơ và kem tươi`, `Đường bột và lòng trắng trứng`, `Đường và bơ`, `Gelatin và đường`],
+                explanation: `Royal Icing được làm bằng cách trộn đường bột (icing sugar) và lòng trắng trứng, sau khi khô sẽ đông cứng và dùng để trang trí bánh cake.`,
+            },
+            zh: {
+                question: `用于蛋糕装饰的皇家糖霜（Royal Icing）的主要原料是什么？`,
+                options: [`黄油和生奶油`, `糖粉和蛋白`, `糖和黄油`, `明胶和糖`],
+                explanation: `皇家糖霜是将糖粉（细砂糖粉）和蛋白混合制成的，干燥后变硬，用于蛋糕装饰。`,
+            },
+            th: {
+                question: `ส่วนผสมหลักของ Royal Icing ที่ใช้ตกแต่งเค้กคืออะไร?`,
+                options: [`เนยและวิปปิ้งครีม`, `น้ำตาลไอซิ่งและไข่ขาว`, `น้ำตาลและเนย`, `เจลาตินและน้ำตาล`],
+                explanation: `Royal Icing ทำจากน้ำตาลไอซิ่งและไข่ขาวผสมกัน เมื่อแห้งจะแข็งตัวและใช้ตกแต่งเค้ก`,
+            },
+            tl: {
+                question: `Ano ang pangunahing sangkap ng Royal Icing na ginagamit para palamutian ang cake?`,
+                options: [`Mantikilya at fresh cream`, `Powdered sugar at puting itlog`, `Asukal at mantikilya`, `Gelatin at asukal`],
+                explanation: `Ang Royal Icing ay gawa sa paghaluin ng powdered sugar at puting itlog. Kapag natuyo ay tumitigas at ginagamit sa dekorasyon ng cake.`,
+            },
+            my: {
+                question: `ကိတ်မုန့်အလှဆင်ရာတွင် အသုံးပြုသော Royal Icing ၏ အဓိကပစ္စည်းမှာ မည်သည်နည်း?`,
+                options: [`ထောပတ်နှင့် fresh cream`, `သကြားမှုန့်နှင့် ဥအဖြူ`, `သကြားနှင့် ထောပတ်`, `ဂျယ်လတင်နှင့် သကြား`],
+                explanation: `Royal Icing သည် သကြားမှုန့်နှင့် ဥအဖြူကိုရောနှောပြုလုပ်ပြီး ပြောင်းပြောင်တင်းတင်းဖြစ်သွားပြီးနောက် ကိတ်မုန့်အလှဆင်ရာတွင် အသုံးပြုသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `로얄 아이싱`, native: `Royal Icing` },
+                { korean: `슈거파우더`, native: `đường bột` },
+                { korean: `달걀 흰자`, native: `lòng trắng trứng` },
+                { korean: `케이크`, native: `bánh cake` },
+                { korean: `장식`, native: `trang trí` },
+            ],
+            zh: [
+                { korean: `로얄 아이싱`, native: `皇家糖霜` },
+                { korean: `슈거파우더`, native: `糖粉` },
+                { korean: `달걀 흰자`, native: `蛋白` },
+                { korean: `케이크`, native: `蛋糕` },
+                { korean: `장식`, native: `装饰` },
+            ],
+            th: [
+                { korean: `로얄 아이싱`, native: `Royal Icing` },
+                { korean: `슈거파우더`, native: `น้ำตาลไอซิ่ง` },
+                { korean: `달걀 흰자`, native: `ไข่ขาว` },
+                { korean: `케이크`, native: `เค้ก` },
+            ],
+            tl: [
+                { korean: `로얄 아이싱`, native: `Royal Icing` },
+                { korean: `슈거파우더`, native: `powdered sugar` },
+                { korean: `달걀 흰자`, native: `puting itlog` },
+                { korean: `케이크`, native: `cake` },
+            ],
+            my: [
+                { korean: `로얄 아이싱`, native: `Royal Icing` },
+                { korean: `슈거파우더`, native: `သကြားမှုန့်` },
+                { korean: `달걀 흰자`, native: `ဥအဖြူ` },
+                { korean: `케이크`, native: `ကိတ်မုန့်` },
+            ],
+        },
     },
     {
         id: 'ps-31',
@@ -1594,6 +2204,67 @@ export const pastryQuestions = [
         explanation: '머랭에서 설탕은 거품을 안정시켜 꺼지지 않게 하고 광택 있는 표면을 만들어줍니다.',
         simpleExplanation: '머랭에 설탕을 넣으면 거품이 안정되고 반짝반짝해요.',
         keywords: ['머랭', '설탕', '거품', '안정화'],
+        translations: {
+            vi: {
+                question: `Mục đích đúng của việc cho đường vào khi làm meringue là gì?`,
+                options: [`Để giảm vị ngọt`, `Để ổn định bọt và tạo độ bóng`, `Để làm màu trắng hơn`, `Để thúc đẩy lên men`],
+                explanation: `Trong meringue, đường ổn định bọt khí không để tan vỡ và tạo bề mặt bóng sáng.`,
+            },
+            zh: {
+                question: `制作蛋白霜（meringue）时加入糖的正确目的是什么？`,
+                options: [`为了减少甜味`, `为了稳定泡沫并赋予光泽`, `为了使颜色变白`, `为了促进发酵`],
+                explanation: `蛋白霜中的糖可以稳定泡沫使其不消散，并形成有光泽的表面。`,
+            },
+            th: {
+                question: `วัตถุประสงค์ที่ถูกต้องในการใส่น้ำตาลเมื่อทำเมอแรงค์ (meringue) คืออะไร?`,
+                options: [`เพื่อลดความหวาน`, `เพื่อทำให้ฟองคงตัวและให้ความมันวาว`, `เพื่อทำให้สีขาวขึ้น`, `เพื่อกระตุ้นการหมัก`],
+                explanation: `น้ำตาลในเมอแรงค์ช่วยทำให้ฟองคงตัวไม่แตก และสร้างพื้นผิวที่มันวาว`,
+            },
+            tl: {
+                question: `Ano ang tamang layunin ng paglalagay ng asukal kapag gumagawa ng meringue?`,
+                options: [`Para bawasan ang tamis`, `Para patatagin ang bula at magbigay ng kinang`, `Para gawing mas puti ang kulay`, `Para isulong ang pagpapaalsa`],
+                explanation: `Ang asukal sa meringue ay nagpapatibay ng bula para hindi masira at lumilikha ng makintab na ibabaw.`,
+            },
+            my: {
+                question: `Meringue ပြုလုပ်သောအခါ သကြားထည့်သည့် ရည်ရွယ်ချက်မှာ မည်သည်နည်း?`,
+                options: [`ချိုသောရသကို လျှော့ချရန်`, `မြှုပ်ကို တည်ငြိမ်အောင်ပြုလုပ်ပြီး ထိတ်ပြောင်မှုပေးရန်`, `အရောင်ကို ဖြူစင်ရန်`, `တချစ်ကို မြှင့်တင်ရန်`],
+                explanation: `Meringue တွင် သကြားသည် မြှုပ်ကို တည်ငြိမ်အောင်ပြုပြီး မချိုးကြိုးမပြတ်အောင်ထိန်းကာ ထိတ်ပြောင်သောမျက်နှာပြင်ဖန်တီးပေးသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `머랭`, native: `meringue` },
+                { korean: `설탕`, native: `đường` },
+                { korean: `거품`, native: `bọt` },
+                { korean: `광택`, native: `độ bóng` },
+                { korean: `발효`, native: `lên men` },
+            ],
+            zh: [
+                { korean: `머랭`, native: `蛋白霜` },
+                { korean: `설탕`, native: `糖` },
+                { korean: `거품`, native: `泡沫` },
+                { korean: `광택`, native: `光泽` },
+                { korean: `발효`, native: `发酵` },
+            ],
+            th: [
+                { korean: `머랭`, native: `เมอแรงค์` },
+                { korean: `설탕`, native: `น้ำตาล` },
+                { korean: `거품`, native: `ฟอง` },
+                { korean: `발효`, native: `การหมัก` },
+            ],
+            tl: [
+                { korean: `머랭`, native: `meringue` },
+                { korean: `설탕`, native: `asukal` },
+                { korean: `거품`, native: `bula` },
+                { korean: `발효`, native: `pagpapaalsa` },
+            ],
+            my: [
+                { korean: `머랭`, native: `meringue` },
+                { korean: `설탕`, native: `သကြား` },
+                { korean: `거품`, native: `မြှုပ်` },
+                { korean: `발효`, native: `တချစ်` },
+            ],
+        },
     },
     {
         id: 'ps-32',
@@ -1606,6 +2277,67 @@ export const pastryQuestions = [
         explanation: '스펀지케이크는 달걀의 기포 형성 능력을 이용하여 부피를 만드는 제품으로, 달걀이 주요 팽창원입니다.',
         simpleExplanation: '스펀지케이크는 달걀의 거품으로 부풀어요.',
         keywords: ['스펀지케이크', '달걀', '기포', '팽창'],
+        translations: {
+            vi: {
+                question: `Nguyên liệu chính tạo bọt khí trong bột bánh sponge cake là gì?`,
+                options: [`Bột mì`, `Trứng`, `Bơ`, `Đường`],
+                explanation: `Bánh sponge cake là sản phẩm tạo thể tích bằng khả năng tạo bọt khí của trứng, vì vậy trứng là nguồn nở chính.`,
+            },
+            zh: {
+                question: `在海绵蛋糕（sponge cake）面糊中，形成气泡的主要原料是什么？`,
+                options: [`面粉`, `鸡蛋`, `黄油`, `糖`],
+                explanation: `海绵蛋糕是利用鸡蛋的起泡能力来创造体积的产品，鸡蛋是主要的膨发来源。`,
+            },
+            th: {
+                question: `ส่วนผสมหลักที่ทำให้เกิดฟองอากาศในแป้งสปันจ์เค้ก (sponge cake) คืออะไร?`,
+                options: [`แป้งสาลี`, `ไข่`, `เนย`, `น้ำตาล`],
+                explanation: `สปันจ์เค้กเป็นผลิตภัณฑ์ที่ใช้ความสามารถในการสร้างฟองของไข่เพื่อสร้างปริมาตร ดังนั้นไข่จึงเป็นแหล่งขยายตัวหลัก`,
+            },
+            tl: {
+                question: `Ano ang pangunahing sangkap na lumilikha ng bula sa masa ng sponge cake?`,
+                options: [`Harina`, `Itlog`, `Mantikilya`, `Asukal`],
+                explanation: `Ang sponge cake ay produktong gumagamit ng kakayahan ng itlog na lumikha ng bula para gumawa ng dami, kaya ang itlog ang pangunahing pinagmumulan ng pagpalaki.`,
+            },
+            my: {
+                question: `Sponge cake မုန့်ပျော်တွင် လေဖုပ်ဖြစ်ပေါ်ရာတွင် အဓိကပစ္စည်းမှာ မည်သည်နည်း?`,
+                options: [`ဂျုံမှုန့်`, `ဥ`, `ထောပတ်`, `သကြား`],
+                explanation: `Sponge cake သည် ဥ၏ လေဖုပ်ဖြစ်ပေါ်နိုင်သော စွမ်းရည်ကိုအသုံးပြုပြီး ထုထည်ဖန်တီးသောထုတ်ကုန်ဖြစ်ပြီး ဥသည် အဓိကပွင့်ချဲ့ပေးသောရင်းမြစ်ဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `스펀지케이크`, native: `sponge cake` },
+                { korean: `달걀`, native: `trứng` },
+                { korean: `기포`, native: `bọt khí` },
+                { korean: `반죽`, native: `bột nhào` },
+                { korean: `밀가루`, native: `bột mì` },
+            ],
+            zh: [
+                { korean: `스펀지케이크`, native: `海绵蛋糕` },
+                { korean: `달걀`, native: `鸡蛋` },
+                { korean: `기포`, native: `气泡` },
+                { korean: `반죽`, native: `面糊` },
+                { korean: `밀가루`, native: `面粉` },
+            ],
+            th: [
+                { korean: `스펀지케이크`, native: `สปันจ์เค้ก` },
+                { korean: `달걀`, native: `ไข่` },
+                { korean: `기포`, native: `ฟองอากาศ` },
+                { korean: `밀가루`, native: `แป้งสาลี` },
+            ],
+            tl: [
+                { korean: `스펀지케이크`, native: `sponge cake` },
+                { korean: `달걀`, native: `itlog` },
+                { korean: `기포`, native: `bula` },
+                { korean: `밀가루`, native: `harina` },
+            ],
+            my: [
+                { korean: `스펀지케이크`, native: `sponge cake` },
+                { korean: `달걀`, native: `ဥ` },
+                { korean: `기포`, native: `လေဖုပ်` },
+                { korean: `밀가루`, native: `ဂျုံမှုန့်` },
+            ],
+        },
     },
     {
         id: 'ps-33',
@@ -1618,6 +2350,67 @@ export const pastryQuestions = [
         explanation: '케이크 내부가 함몰되는 주요 원인은 팽창제 부족, 오븐 온도가 너무 높아 표면이 먼저 굳거나, 굽기 중 오븐 문을 자주 열어 온도가 낮아지는 것입니다. 팽창제 부족도 주요 원인입니다.',
         simpleExplanation: '케이크가 꺼지면 팽창제가 부족하거나 굽는 중 오븐 문을 열었기 때문이에요.',
         keywords: ['케이크', '함몰', '팽창제', '결함'],
+        translations: {
+            vi: {
+                question: `Nguyên nhân đúng của lỗi lõm bên trong (xẹp xuống) của bánh cake là gì?`,
+                options: [`Nhiệt độ lò quá cao`, `Độ ẩm quá ít`, `Chất nở không đủ`, `Nướng quá lâu (over-baking)`],
+                explanation: `Nguyên nhân chính khiến bên trong bánh cake bị lõm là thiếu chất nở, nhiệt độ lò quá cao làm bề mặt đông cứng trước, hoặc mở cửa lò thường xuyên làm nhiệt độ giảm.`,
+            },
+            zh: {
+                question: `蛋糕内部发生凹陷（塌陷）这一缺陷的原因是什么？`,
+                options: [`烤箱温度太高`, `水分太少`, `膨松剂不足`, `过度烘烤`],
+                explanation: `蛋糕内部凹陷的主要原因是膨松剂不足、烤箱温度过高导致表面先凝固，或者烘烤中频繁打开烤箱门导致温度降低。`,
+            },
+            th: {
+                question: `สาเหตุที่ถูกต้องของการยุบตัวภายในของเค้กคืออะไร?`,
+                options: [`อุณหภูมิเตาอบสูงเกินไป`, `ความชื้นน้อยเกินไป`, `ผงฟูไม่เพียงพอ`, `อบนานเกินไป (over-baking)`],
+                explanation: `สาเหตุหลักที่ทำให้ภายในเค้กยุบตัวคือผงฟูไม่เพียงพอ อุณหภูมิเตาอบสูงเกินไปทำให้ผิวหน้าแข็งตัวก่อน หรือเปิดประตูเตาอบบ่อยทำให้อุณหภูมิลดลง`,
+            },
+            tl: {
+                question: `Ano ang tamang dahilan ng pag-lubog ng loob ng cake?`,
+                options: [`Masyadong mataas ang temperatura ng oven`, `Masyadong kaunting kahalumigmigan`, `Kulang sa pampaalsa`, `Over-baking (sobrang luto)`],
+                explanation: `Ang pangunahing dahilan ng paglubog ng loob ng cake ay kulang na pampaalsa, masyadong mataas na temperatura ng oven na nagpapatiggas sa ibabaw nang mas maaga, o madalas na pagbubukas ng pinto ng oven.`,
+            },
+            my: {
+                question: `ကိတ်မုန့်၏ အတွင်းပိုင်း ဆင်းသက်သောချို့ယွင်းချက်၏ အကြောင်းရင်းမှာ မည်သည်နည်း?`,
+                options: [`မီးဖိုအပူချိန် မြင့်လွန်းသည်`, `အစိုဓာတ် နည်းလွန်းသည်`, `ပွောက်ဆေး မလုံလောက်ပါ`, `Over-baking (အလွန်ကြာ ဖုတ်ခြင်း)`],
+                explanation: `ကိတ်မုန့်အတွင်းဆင်းသက်ခြင်းအကြောင်းရင်း အဓိကမှာ ပွောက်ဆေးမလုံလောက်ခြင်း၊ မီးဖိုအပူချိန်မြင့်လွန်းပြီး မျက်နှာပြင်ကြိုဖြစ်ခြင်း သို့မဟုတ် မီးဖိုတံခါး မကြာမကြာဖွင့်ပြီး အပူချိန်ကျဆင်းခြင်း တို့ဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `케이크`, native: `bánh cake` },
+                { korean: `함몰`, native: `lõm / xẹp` },
+                { korean: `팽창제`, native: `chất nở` },
+                { korean: `오븐`, native: `lò nướng` },
+                { korean: `온도`, native: `nhiệt độ` },
+            ],
+            zh: [
+                { korean: `케이크`, native: `蛋糕` },
+                { korean: `함몰`, native: `凹陷` },
+                { korean: `팽창제`, native: `膨松剂` },
+                { korean: `오븐`, native: `烤箱` },
+                { korean: `온도`, native: `温度` },
+            ],
+            th: [
+                { korean: `케이크`, native: `เค้ก` },
+                { korean: `함몰`, native: `การยุบตัว` },
+                { korean: `팽창제`, native: `ผงฟู` },
+                { korean: `오븐`, native: `เตาอบ` },
+            ],
+            tl: [
+                { korean: `케이크`, native: `cake` },
+                { korean: `함몰`, native: `paglubog` },
+                { korean: `팽창제`, native: `pampaalsa` },
+                { korean: `오븐`, native: `oven` },
+            ],
+            my: [
+                { korean: `케이크`, native: `ကိတ်မုန့်` },
+                { korean: `함몰`, native: `ဆင်းသက်ခြင်း` },
+                { korean: `팽창제`, native: `ပွောက်ဆေး` },
+                { korean: `오븐`, native: `မီးဖို` },
+            ],
+        },
     },
     {
         id: 'ps-34',
@@ -1630,6 +2423,67 @@ export const pastryQuestions = [
         explanation: '글레이즈는 케이크나 페이스트리 표면에 발라 건조를 막고 광택 있는 마감을 제공합니다.',
         simpleExplanation: '글레이즈는 케이크 표면을 보호하고 반짝이게 해요.',
         keywords: ['글레이즈', '데코레이션', '광택', '코팅'],
+        translations: {
+            vi: {
+                question: `Tác dụng chính khi phết glaze lên bánh cake là gì?`,
+                options: [`Bánh nở tốt hơn`, `Bảo vệ bề mặt và tạo độ bóng`, `Bánh trở nên giòn hơn`, `Hỗ trợ lên men`],
+                explanation: `Glaze được phết lên bề mặt bánh cake hoặc pastry để ngăn khô và tạo lớp hoàn thiện bóng sáng.`,
+            },
+            zh: {
+                question: `在蛋糕上涂抹淋面（glaze）的主要效果是什么？`,
+                options: [`蛋糕膨胀得更好`, `保护表面并赋予光泽`, `蛋糕变得更酥脆`, `帮助发酵`],
+                explanation: `淋面涂抹在蛋糕或点心表面，防止干燥并提供有光泽的外观。`,
+            },
+            th: {
+                question: `ผลหลักเมื่อทาเคลือบ (glaze) บนเค้กคืออะไร?`,
+                options: [`เค้กพองตัวได้ดีขึ้น`, `ปกป้องพื้นผิวและให้ความมันวาว`, `เค้กกรอบขึ้น`, `ช่วยในการหมัก`],
+                explanation: `Glaze ทาบนพื้นผิวเค้กหรือเพสตรีเพื่อป้องกันการแห้งและให้ผิวสำเร็จที่มันวาว`,
+            },
+            tl: {
+                question: `Ano ang pangunahing epekto ng paglalagay ng glaze sa cake?`,
+                options: [`Mas lalo pang lalaki ang cake`, `Pinoprotektahan ang ibabaw at nagbibigay ng kinang`, `Nagiging mas malutong ang cake`, `Tinutulungan ang pagpapaalsa`],
+                explanation: `Ang glaze ay ipinapatong sa ibabaw ng cake o pastry para maiwasan ang pagpapatuyo at magbigay ng makintab na kahulugan.`,
+            },
+            my: {
+                question: `ကိတ်မုန့်တွင် glaze ကို လိမ်းသောအခါ အဓိကအကျိုးသက်ရောက်မှုမှာ မည်သည်နည်း?`,
+                options: [`ကိတ်မုန့် ပိုမိုပွင့်ချဲ့သည်`, `မျက်နှာပြင်ကို ကာကွယ်ပြီး ထိတ်ပြောင်မှုပေးသည်`, `ကိတ်မုန့် ပိုကြွပ်ကြမ်းလာသည်`, `တချစ်ကို ကူညီသည်`],
+                explanation: `Glaze သည် ကိတ်မုန့် သို့မဟုတ် pastry မျက်နှာပြင်တွင် လိမ်းပြီး ခြောက်သွေ့မှုကိုတားဆီးကာ ထိတ်ပြောင်သောဖြေးဆုံးကိုပေးသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `글레이즈`, native: `glaze` },
+                { korean: `케이크`, native: `bánh cake` },
+                { korean: `광택`, native: `độ bóng` },
+                { korean: `표면`, native: `bề mặt` },
+                { korean: `발효`, native: `lên men` },
+            ],
+            zh: [
+                { korean: `글레이즈`, native: `淋面` },
+                { korean: `케이크`, native: `蛋糕` },
+                { korean: `광택`, native: `光泽` },
+                { korean: `표면`, native: `表面` },
+                { korean: `발효`, native: `发酵` },
+            ],
+            th: [
+                { korean: `글레이즈`, native: `glaze` },
+                { korean: `케이크`, native: `เค้ก` },
+                { korean: `광택`, native: `ความมันวาว` },
+                { korean: `표면`, native: `พื้นผิว` },
+            ],
+            tl: [
+                { korean: `글레이즈`, native: `glaze` },
+                { korean: `케이크`, native: `cake` },
+                { korean: `광택`, native: `kinang` },
+                { korean: `표면`, native: `ibabaw` },
+            ],
+            my: [
+                { korean: `글레이즈`, native: `glaze` },
+                { korean: `케이크`, native: `ကိတ်မုန့်` },
+                { korean: `광택`, native: `ထိတ်ပြောင်မှု` },
+                { korean: `표면`, native: `မျက်နှာပြင်` },
+            ],
+        },
     },
     {
         id: 'ps-35',
@@ -1642,6 +2496,67 @@ export const pastryQuestions = [
         explanation: '크림 케이크는 생크림 등 유제품이 들어있어 미생물 번식을 억제하기 위해 0~5°C 냉장 보관해야 합니다.',
         simpleExplanation: '크림 케이크는 0~5도 냉장 보관이 필요해요.',
         keywords: ['크림 케이크', '냉장', '보관', '온도'],
+        translations: {
+            vi: {
+                question: `Nhiệt độ bảo quản lạnh thích hợp nhất cho bánh cream cake là bao nhiêu?`,
+                options: [`0~5°C`, `10~15°C`, `15~18°C`, `20~25°C`],
+                explanation: `Bánh cream cake chứa các sản phẩm từ sữa như whipping cream, cần bảo quản lạnh ở 0~5°C để ức chế sự phát triển của vi khuẩn.`,
+            },
+            zh: {
+                question: `奶油蛋糕最适合的冷藏保存温度是多少？`,
+                options: [`0~5°C`, `10~15°C`, `15~18°C`, `20~25°C`],
+                explanation: `奶油蛋糕含有淡奶油等乳制品，为抑制微生物繁殖，需在0~5°C冷藏保存。`,
+            },
+            th: {
+                question: `อุณหภูมิการเก็บรักษาความเย็นที่เหมาะสมที่สุดสำหรับเค้กครีมคือเท่าไร?`,
+                options: [`0~5°C`, `10~15°C`, `15~18°C`, `20~25°C`],
+                explanation: `เค้กครีมมีผลิตภัณฑ์นมเช่นวิปปิ้งครีม ต้องเก็บในตู้เย็น 0~5°C เพื่อยับยั้งการเจริญเติบโตของจุลินทรีย์`,
+            },
+            tl: {
+                question: `Ano ang pinaka-angkop na temperatura ng pagpapalamig para sa cream cake?`,
+                options: [`0~5°C`, `10~15°C`, `15~18°C`, `20~25°C`],
+                explanation: `Ang cream cake ay may mga produktong gatas tulad ng whipping cream, kaya kailangang itago sa 0~5°C sa refrigerator para mapigilan ang pagpapalaki ng mikrobyo.`,
+            },
+            my: {
+                question: `Cream cake ကို အအေးခန်းထိန်းသိမ်းရန် အသင့်တော်ဆုံးသောအပူချိန်မှာ မည်မျှနည်း?`,
+                options: [`0~5°C`, `10~15°C`, `15~18°C`, `20~25°C`],
+                explanation: `Cream cake တွင် whipping cream ကဲ့သို့သောနွားနို့ထုတ်ကုန်ပါဝင်သောကြောင့် ပိုးမွှားများ ပျိုးနှောင်မှုကိုတားဆီးရန် 0~5°C တွင် အအေးခန်းသိမ်းရမည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `크림 케이크`, native: `bánh cream cake` },
+                { korean: `냉장`, native: `bảo quản lạnh` },
+                { korean: `보관`, native: `bảo quản` },
+                { korean: `온도`, native: `nhiệt độ` },
+                { korean: `적합`, native: `thích hợp` },
+            ],
+            zh: [
+                { korean: `크림 케이크`, native: `奶油蛋糕` },
+                { korean: `냉장`, native: `冷藏` },
+                { korean: `보관`, native: `保存` },
+                { korean: `온도`, native: `温度` },
+                { korean: `적합`, native: `适合` },
+            ],
+            th: [
+                { korean: `크림 케이크`, native: `เค้กครีม` },
+                { korean: `냉장`, native: `ตู้เย็น` },
+                { korean: `보관`, native: `การเก็บรักษา` },
+                { korean: `온도`, native: `อุณหภูมิ` },
+            ],
+            tl: [
+                { korean: `크림 케이크`, native: `cream cake` },
+                { korean: `냉장`, native: `pagpapalamig` },
+                { korean: `보관`, native: `pag-iimbak` },
+                { korean: `온도`, native: `temperatura` },
+            ],
+            my: [
+                { korean: `크림 케이크`, native: `cream cake` },
+                { korean: `냉장`, native: `အအေးခန်း` },
+                { korean: `보관`, native: `သိမ်းဆည်းခြင်း` },
+                { korean: `온도`, native: `အပူချိန်` },
+            ],
+        },
     },
     {
         id: 'ps-36',
@@ -1654,6 +2569,67 @@ export const pastryQuestions = [
         explanation: '냉동 반죽은 미리 준비해두고 필요할 때 해동하여 사용할 수 있어 작업의 효율성이 높아집니다.',
         simpleExplanation: '냉동 반죽은 미리 만들어 두고 필요할 때 꺼내 구울 수 있어요.',
         keywords: ['냉동 반죽', '보관', '효율', '작업성'],
+        translations: {
+            vi: {
+                question: `Ưu điểm chính của việc sử dụng bột đông lạnh là gì?`,
+                options: [`Gluten trong bột trở nên mạnh hơn`, `Tiện lợi vì có thể làm trước và nướng khi cần`, `Thời gian nướng được rút ngắn`, `Nở tốt dù không có chất nở`],
+                explanation: `Bột đông lạnh có thể chuẩn bị trước và rã đông sử dụng khi cần, nâng cao hiệu quả làm việc.`,
+            },
+            zh: {
+                question: `使用冷冻面团的主要优点是什么？`,
+                options: [`面团中的面筋变得更强`, `提前做好，需要时随时可以烘烤，非常方便`, `烘烤时间缩短`, `即使没有膨松剂也能很好地膨胀`],
+                explanation: `冷冻面团可以提前准备好，需要时解冻使用，提高了工作效率。`,
+            },
+            th: {
+                question: `ข้อดีหลักของการใช้แป้งแช่แข็งคืออะไร?`,
+                options: [`กลูเตนในแป้งแข็งแกร่งขึ้น`, `สะดวกเพราะสามารถทำล่วงหน้าและอบได้เมื่อต้องการ`, `เวลาการอบลดลง`, `พองตัวได้ดีแม้ไม่มีผงฟู`],
+                explanation: `แป้งแช่แข็งสามารถเตรียมไว้ล่วงหน้าและนำไปละลายน้ำแข็งใช้เมื่อต้องการ ช่วยเพิ่มประสิทธิภาพการทำงาน`,
+            },
+            tl: {
+                question: `Ano ang pangunahing kalamangan ng paggamit ng frozen dough?`,
+                options: [`Nagiging mas malakas ang gluten ng masa`, `Maginhawa dahil maaaring gawin nang maaga at lutuin kapag kailangan`, `Napapaikli ang oras ng pagluluto`, `Lumalaki kahit walang pampaalsa`],
+                explanation: `Ang frozen dough ay maaaring ihanda nang maaga at i-defrost kapag kailangan, na nagpapataas ng kahusayan sa trabaho.`,
+            },
+            my: {
+                question: `အေးခဲသောမုန့်ပျော်ကိုအသုံးပြုသည့် အဓိကအကျိုးကျေးဇူးမှာ မည်သည်နည်း?`,
+                options: [`မုန့်ပျော်တွင် ဂလူတင် ပိုမိုမာတင်းလာသည်`, `ကြိုတင်ပြုလုပ်ထားပြီး လိုအပ်သောအခါ ဖုတ်နိုင်သောကြောင့် အဆင်ပြေသည်`, `ဖုတ်ချိန် ကျဉ်းမြောင်းသည်`, `ပွောက်ဆေးမပါဘဲ ကောင်းစွာ ပွင့်ချဲ့သည်`],
+                explanation: `အေးခဲသောမုန့်ပျော်ကို ကြိုတင်ပြင်ဆင်ထားပြီး လိုအပ်သောအခါ ပျော်ကျပြီး အသုံးပြုနိုင်သောကြောင့် အလုပ်ထိရောက်မှုကို မြင့်တင်ပေးသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `냉동 반죽`, native: `bột đông lạnh` },
+                { korean: `장점`, native: `ưu điểm` },
+                { korean: `글루텐`, native: `gluten` },
+                { korean: `팽창제`, native: `chất nở` },
+                { korean: `굽는`, native: `nướng` },
+            ],
+            zh: [
+                { korean: `냉동 반죽`, native: `冷冻面团` },
+                { korean: `장점`, native: `优点` },
+                { korean: `글루텐`, native: `面筋` },
+                { korean: `팽창제`, native: `膨松剂` },
+                { korean: `굽는`, native: `烘烤` },
+            ],
+            th: [
+                { korean: `냉동 반죽`, native: `แป้งแช่แข็ง` },
+                { korean: `장점`, native: `ข้อดี` },
+                { korean: `글루텐`, native: `กลูเตน` },
+                { korean: `팽창제`, native: `ผงฟู` },
+            ],
+            tl: [
+                { korean: `냉동 반죽`, native: `frozen dough` },
+                { korean: `장점`, native: `kalamangan` },
+                { korean: `글루텐`, native: `gluten` },
+                { korean: `팽창제`, native: `pampaalsa` },
+            ],
+            my: [
+                { korean: `냉동 반죽`, native: `အေးခဲသောမုန့်ပျော်` },
+                { korean: `장점`, native: `အကျိုးကျေးဇူး` },
+                { korean: `글루텐`, native: `ဂလူတင်` },
+                { korean: `팽창제`, native: `ပွောက်ဆေး` },
+            ],
+        },
     },
     {
         id: 'ps-37',
@@ -1666,6 +2642,67 @@ export const pastryQuestions = [
         explanation: '베이킹파우더는 화학반응으로 즉시 이산화탄소를 발생시키지만, 이스트는 당을 발효하는 생물학적 과정으로 수 시간의 발효 시간이 필요합니다.',
         simpleExplanation: '베이킹파우더는 바로 가스가 나오고, 이스트는 발효 시간이 필요해요.',
         keywords: ['베이킹파우더', '이스트', '화학팽창', '발효'],
+        translations: {
+            vi: {
+                question: `Điểm khác biệt đúng giữa sản phẩm dùng chất nở hóa học (baking powder) và sản phẩm dùng men nở (yeast) là gì?`,
+                options: [`Baking powder cần thời gian lên men`, `Yeast tạo khí ngay lập tức bằng nhiệt`, `Baking powder tạo khí ngay không cần thời gian lên men`, `Dùng yeast sẽ làm sản phẩm giòn hơn`],
+                explanation: `Baking powder tạo khí CO2 ngay lập tức bằng phản ứng hóa học, trong khi yeast cần vài giờ lên men vì là quá trình sinh học phân hủy đường.`,
+            },
+            zh: {
+                question: `使用化学膨松剂（泡打粉）的产品与使用酵母的产品的正确区别是什么？`,
+                options: [`泡打粉需要发酵时间`, `酵母通过热量立即产生气体`, `泡打粉无需发酵时间，直接产生气体`, `使用酵母使产品更酥脆`],
+                explanation: `泡打粉通过化学反应立即产生二氧化碳，而酵母是发酵糖的生物学过程，需要数小时的发酵时间。`,
+            },
+            th: {
+                question: `ความแตกต่างที่ถูกต้องระหว่างผลิตภัณฑ์ที่ใช้สารเคมีขยายตัว (ผงฟู) และผลิตภัณฑ์ที่ใช้ยีสต์คืออะไร?`,
+                options: [`ผงฟูต้องการเวลาการหมัก`, `ยีสต์สร้างก๊าซทันทีจากความร้อน`, `ผงฟูสร้างก๊าซทันทีโดยไม่ต้องการเวลาการหมัก`, `การใช้ยีสต์ทำให้ผลิตภัณฑ์กรอบขึ้น`],
+                explanation: `ผงฟูสร้าง CO2 ทันทีโดยปฏิกิริยาเคมี ในขณะที่ยีสต์เป็นกระบวนการทางชีวภาพในการหมักน้ำตาล ต้องการเวลาหมักหลายชั่วโมง`,
+            },
+            tl: {
+                question: `Ano ang tamang pagkakaiba ng produktong gumagamit ng chemical leavening agent (baking powder) at produktong gumagamit ng yeast?`,
+                options: [`Ang baking powder ay nangangailangan ng oras ng pagpapaalsa`, `Ang yeast ay agad na gumagawa ng gas sa pamamagitan ng init`, `Ang baking powder ay gumagawa ng gas agad nang walang oras ng pagpapaalsa`, `Ang paggamit ng yeast ay nagpapagalos ng produkto`],
+                explanation: `Ang baking powder ay agad na gumagawa ng CO2 sa pamamagitan ng chemical reaction, habang ang yeast ay nangangailangan ng ilang oras ng pagpapaalsa dahil ito ay isang biological na proseso ng pagbuburo ng asukal.`,
+            },
+            my: {
+                question: `ဓာတုပွောက်ဆေး (baking powder) ကိုသုံးသောထုတ်ကုန်နှင့် တချစ်ကိုသုံးသောထုတ်ကုန်၏ ခြားနားချက်မှာ မည်သည်နည်း?`,
+                options: [`베이킹파우더 သည် တချစ်ကြာချိန် လိုအပ်သည်`, `이스트 သည် အပူဖြင့် ချက်ချင်းဓာတ်ငွေ့ဖြစ်ပေါ်သည်`, `베이킹파우더 သည် တချစ်ကြာချိန်မလိုဘဲ ချက်ချင်းဓာတ်ငွေ့ဖြစ်ပေါ်သည်`, `이스트 ကိုသုံးပါကထုတ်ကုန် ကြွပ်ကြမ်းသည်`],
+                explanation: `베이킹파우더 သည် ဓာတုဓာတ်ပြုမှုဖြင့် ချက်ချင်း CO2 ဓာတ်ငွေ့ဖြစ်ပေါ်သော်လည်း 이스트 သည် သကြားကိုတချစ်ကြောင်းသောဇီဝဆိုင်ရာဖြစ်စဉ်ကြောင့် နာရီများစွာ တချစ်ကြာချိန်လိုအပ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `베이킹파우더`, native: `bột nở / baking powder` },
+                { korean: `이스트`, native: `men nở / yeast` },
+                { korean: `발효`, native: `lên men` },
+                { korean: `화학팽창`, native: `chất nở hóa học` },
+                { korean: `가스`, native: `khí / gas` },
+            ],
+            zh: [
+                { korean: `베이킹파우더`, native: `泡打粉` },
+                { korean: `이스트`, native: `酵母` },
+                { korean: `발효`, native: `发酵` },
+                { korean: `화학팽창`, native: `化学膨松` },
+                { korean: `가스`, native: `气体` },
+            ],
+            th: [
+                { korean: `베이킹파우더`, native: `ผงฟู` },
+                { korean: `이스트`, native: `ยีสต์` },
+                { korean: `발효`, native: `การหมัก` },
+                { korean: `가스`, native: `ก๊าซ` },
+            ],
+            tl: [
+                { korean: `베이킹파우더`, native: `baking powder` },
+                { korean: `이스트`, native: `yeast` },
+                { korean: `발효`, native: `pagpapaalsa` },
+                { korean: `가스`, native: `gas` },
+            ],
+            my: [
+                { korean: `베이킹파우더`, native: `ဘေကင်းပေါင်ဒါ` },
+                { korean: `이스트`, native: `တဆေး` },
+                { korean: `발효`, native: `တချစ်` },
+                { korean: `가스`, native: `ဓာတ်ငွေ့` },
+            ],
+        },
     },
     {
         id: 'ps-38',
@@ -1678,6 +2715,67 @@ export const pastryQuestions = [
         explanation: '쿠키 퍼짐이 과도한 원인은 오븐 온도가 너무 낮아 반죽이 퍼지기 전에 굳지 않거나, 유지 함량이 너무 많은 경우입니다.',
         simpleExplanation: '쿠키가 너무 퍼지면 오븐이 너무 낮은 온도거나 버터가 너무 많은 거예요.',
         keywords: ['쿠키', '퍼짐', '오븐 온도', '유지'],
+        translations: {
+            vi: {
+                question: `Nguyên nhân đúng khiến bánh quy bị xẹp quá mức (spreading) khi làm là gì?`,
+                options: [`Lượng đường quá ít`, `Nhiệt độ lò quá thấp hoặc chất béo quá nhiều`, `Độ ẩm trong bột quá ít`, `Chất nở quá nhiều`],
+                explanation: `Nguyên nhân bánh quy bị dàn mỏng quá mức là nhiệt độ lò quá thấp khiến bột không đông cứng trước khi dàn ra, hoặc hàm lượng chất béo quá cao.`,
+            },
+            zh: {
+                question: `制作饼干时过度摊开（spreading）的原因是什么？`,
+                options: [`糖的用量太少`, `烤箱温度太低或油脂太多`, `面团中水分太少`, `膨松剂太多`],
+                explanation: `饼干过度摊开的原因是烤箱温度太低导致面团在摊开前未能凝固，或者油脂含量过多。`,
+            },
+            th: {
+                question: `สาเหตุที่ถูกต้องของการแผ่ขยายมากเกินไป (spreading) ของคุกกี้เมื่อทำคืออะไร?`,
+                options: [`ปริมาณน้ำตาลน้อยเกินไป`, `อุณหภูมิเตาอบต่ำเกินไปหรือมีไขมันมากเกินไป`, `ความชื้นในแป้งน้อยเกินไป`, `ผงฟูมากเกินไป`],
+                explanation: `สาเหตุที่คุกกี้แผ่ขยายมากเกินไปคืออุณหภูมิเตาอบต่ำเกินไปทำให้แป้งไม่แข็งตัวก่อนแผ่ขยาย หรือมีปริมาณไขมันมากเกินไป`,
+            },
+            tl: {
+                question: `Ano ang tamang dahilan ng labis na pagkalat (spreading) ng cookie sa paggawa?`,
+                options: [`Masyadong kaunting asukal`, `Masyadong mababang temperatura ng oven o masyadong maraming taba`, `Masyadong kaunting kahalumigmigan sa masa`, `Masyadong maraming pampaalsa`],
+                explanation: `Ang dahilan ng labis na pagkalat ng cookie ay masyadong mababang temperatura ng oven na nagpapahintulot sa masa na kumalat bago matigasan, o masyadong mataas na nilalaman ng taba.`,
+            },
+            my: {
+                question: `ကွတ်ကီးပြုလုပ်သောအခါ အလွန်ကျယ်ပြန့်ခြင်း (spreading) ဖြစ်ပေါ်ရသောအကြောင်းရင်းမှာ မည်သည်နည်း?`,
+                options: [`သကြားပမာဏ နည်းလွန်းသည်`, `မီးဖိုအပူချိန် နိမ့်လွန်းသည် သို့မဟုတ် အဆီ များလွန်းသည်`, `မုန့်ပျော်တွင် အစိုဓာတ် နည်းလွန်းသည်`, `ပွောက်ဆေး များလွန်းသည်`],
+                explanation: `ကွတ်ကီးအလွန်ကျယ်ပြန့်ခြင်းအကြောင်းရင်းမှာ မီးဖိုအပူချိန်နိမ့်လွန်းပြီး မုန့်ပျော်ကျယ်မပြန့်ခင် မာမတင်းနိုင်ခြင်းမရှိသည် သို့မဟုတ် အဆီပါဝင်မှု မြင့်မားလွန်းခြင်း တို့ဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `쿠키`, native: `bánh quy` },
+                { korean: `퍼짐`, native: `spreading / dàn mỏng` },
+                { korean: `오븐 온도`, native: `nhiệt độ lò nướng` },
+                { korean: `유지`, native: `chất béo` },
+                { korean: `설탕`, native: `đường` },
+            ],
+            zh: [
+                { korean: `쿠키`, native: `饼干` },
+                { korean: `퍼짐`, native: `摊开` },
+                { korean: `오븐 온도`, native: `烤箱温度` },
+                { korean: `유지`, native: `油脂` },
+                { korean: `설탕`, native: `糖` },
+            ],
+            th: [
+                { korean: `쿠키`, native: `คุกกี้` },
+                { korean: `퍼짐`, native: `การแผ่ขยาย` },
+                { korean: `오븐 온도`, native: `อุณหภูมิเตาอบ` },
+                { korean: `유지`, native: `ไขมัน` },
+            ],
+            tl: [
+                { korean: `쿠키`, native: `cookie` },
+                { korean: `퍼짐`, native: `spreading` },
+                { korean: `오븐 온도`, native: `temperatura ng oven` },
+                { korean: `유지`, native: `taba` },
+            ],
+            my: [
+                { korean: `쿠키`, native: `ကွတ်ကီး` },
+                { korean: `퍼짐`, native: `ကျယ်ပြန့်ခြင်း` },
+                { korean: `오븐 온도`, native: `မီးဖိုအပူချိန်` },
+                { korean: `유지`, native: `အဆီ` },
+            ],
+        },
     },
     {
         id: 'ps-39',
@@ -1690,6 +2788,67 @@ export const pastryQuestions = [
         explanation: '버터크림 제조 시에는 버터를 실온(18~22°C)으로 부드럽게 하여 크림화가 잘 되도록 해야 합니다.',
         simpleExplanation: '버터크림은 버터를 실온에 꺼내 부드럽게 만든 후 사용해요.',
         keywords: ['버터크림', '버터', '실온', '크림화'],
+        translations: {
+            vi: {
+                question: `Trạng thái thích hợp của bơ khi làm buttercream là gì?`,
+                options: [`Trạng thái lạnh ngay sau khi lấy ra khỏi tủ lạnh (5°C)`, `Trạng thái mềm ở nhiệt độ phòng (18~22°C)`, `Trạng thái lỏng hoàn toàn đã tan chảy`, `Trạng thái đông lạnh`],
+                explanation: `Khi làm buttercream, cần làm mềm bơ ở nhiệt độ phòng (18~22°C) để quá trình cream hóa được tốt.`,
+            },
+            zh: {
+                question: `制作黄油奶油（buttercream）时，黄油的适当状态是什么？`,
+                options: [`刚从冰箱取出时（5°C）的冰凉状态`, `室温（18~22°C）下变软的状态`, `完全融化的液态`, `冷冻状态`],
+                explanation: `制作黄油奶油时，需要将黄油在室温（18~22°C）下软化，使奶油化过程顺利进行。`,
+            },
+            th: {
+                question: `สถานะที่เหมาะสมของเนยเมื่อทำบัตเตอร์ครีม (buttercream) คืออะไร?`,
+                options: [`สถานะเย็นทันทีหลังนำออกจากตู้เย็น (5°C)`, `สถานะนุ่มที่อุณหภูมิห้อง (18~22°C)`, `สถานะของเหลวที่ละลายจนหมด`, `สถานะแช่แข็ง`],
+                explanation: `เมื่อทำบัตเตอร์ครีม ต้องทำให้เนยนุ่มที่อุณหภูมิห้อง (18~22°C) เพื่อให้กระบวนการทำครีมเป็นไปด้วยดี`,
+            },
+            tl: {
+                question: `Ano ang angkop na kondisyon ng mantikilya kapag gumagawa ng buttercream?`,
+                options: [`Malamig na kondisyon kaagad pagkatapos ilabas mula sa refrigerator (5°C)`, `Malambot na kondisyon sa room temperature (18~22°C)`, `Ganap na natunaw na likidong kondisyon`, `Frozen na kondisyon`],
+                explanation: `Kapag gumagawa ng buttercream, kailangan i-soften ang mantikilya sa room temperature (18~22°C) para maayos na mangyari ang proseso ng pagkream.`,
+            },
+            my: {
+                question: `Buttercream ပြုလုပ်သောအခါ ထောပတ်၏ သင့်တော်သောအခြေအနေမှာ မည်သည်နည်း?`,
+                options: [`အအေးခန်းမှ ချက်ချင်းထုတ်ပြီးနောက် (5°C) အအေးအခြေအနေ`, `အခန်းအပူချိန် (18~22°C) တွင် နူးညံ့သောအခြေအနေ`, `လုံးဝကျိုပြီး အရည်အခြေအနေ`, `အေးခဲသောအခြေအနေ`],
+                explanation: `Buttercream ပြုလုပ်သောအခါ ထောပတ်ကို အခန်းအပူချိန် (18~22°C) တွင် နူးညံ့အောင်ပြုပြီး cream ပြုလုပ်မှု ကောင်းစွာဖြစ်ပေါ်ရန် ပြုလုပ်ရမည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `버터크림`, native: `buttercream` },
+                { korean: `버터`, native: `bơ` },
+                { korean: `실온`, native: `nhiệt độ phòng` },
+                { korean: `제조`, native: `chế tác / làm` },
+                { korean: `냉장`, native: `tủ lạnh` },
+            ],
+            zh: [
+                { korean: `버터크림`, native: `黄油奶油` },
+                { korean: `버터`, native: `黄油` },
+                { korean: `실온`, native: `室温` },
+                { korean: `제조`, native: `制作` },
+                { korean: `냉장`, native: `冰箱` },
+            ],
+            th: [
+                { korean: `버터크림`, native: `บัตเตอร์ครีม` },
+                { korean: `버터`, native: `เนย` },
+                { korean: `실온`, native: `อุณหภูมิห้อง` },
+                { korean: `냉장`, native: `ตู้เย็น` },
+            ],
+            tl: [
+                { korean: `버터크림`, native: `buttercream` },
+                { korean: `버터`, native: `mantikilya` },
+                { korean: `실온`, native: `room temperature` },
+                { korean: `냉장`, native: `refrigerator` },
+            ],
+            my: [
+                { korean: `버터크림`, native: `buttercream` },
+                { korean: `버터`, native: `ထောပတ်` },
+                { korean: `실온`, native: `အခန်းအပူချိန်` },
+                { korean: `냉장`, native: `အအေးခန်း` },
+            ],
+        },
     },
     {
         id: 'ps-40',
@@ -1702,6 +2861,67 @@ export const pastryQuestions = [
         explanation: '케이크가 틀에 달라붙는 것을 방지하기 위해 팬에 기름칠(버터·쇼트닝)을 하거나 유산지(parchment paper)를 깔아 사용합니다.',
         simpleExplanation: '케이크가 틀에 안 달라붙게 팬에 버터를 바르거나 유산지를 깔아요.',
         keywords: ['케이크', '팬', '유산지', '기름칠'],
+        translations: {
+            vi: {
+                question: `Phương pháp ngăn bánh cake dính vào khuôn khi lấy ra là gì?`,
+                options: [`Cho nhiều đường vào bột`, `Bôi dầu mỡ lên khuôn hoặc lót giấy nến`, `Hạ nhiệt độ lò nướng`, `Bảo quản lạnh trước khi nướng`],
+                explanation: `Để ngăn bánh cake dính vào khuôn, người ta bôi dầu mỡ (bơ, shortening) lên khuôn hoặc lót giấy nến (parchment paper).`,
+            },
+            zh: {
+                question: `防止蛋糕从模具（烤盘）中取出时粘连的方法是什么？`,
+                options: [`在面团中加入大量糖`, `在烤盘上涂抹油脂或铺烘焙纸`, `降低烤箱温度`, `烘烤前冷藏保存`],
+                explanation: `为防止蛋糕粘在模具上，在烤盘上涂抹油脂（黄油、起酥油）或铺上烘焙纸（parchment paper）。`,
+            },
+            th: {
+                question: `วิธีป้องกันไม่ให้เค้กติดกับพิมพ์เมื่อนำออกคืออะไร?`,
+                options: [`ใส่น้ำตาลมากในแป้ง`, `ทาน้ำมันที่ถาดหรือรองกระดาษรองอบ`, `ลดอุณหภูมิเตาอบ`, `เก็บในตู้เย็นก่อนอบ`],
+                explanation: `เพื่อป้องกันไม่ให้เค้กติดพิมพ์ จะทาน้ำมัน (เนย ชอร์ตเทนนิ่ง) ที่ถาดหรือรองกระดาษรองอบ (parchment paper)`,
+            },
+            tl: {
+                question: `Ano ang paraan para maiwasan ang pagdikit ng cake sa molde kapag inilalabas?`,
+                options: [`Maglagay ng maraming asukal sa masa`, `Maglagay ng mantika sa kawali o gumamit ng parchment paper`, `Bawasan ang temperatura ng oven`, `Mag-refrigerate bago lutuin`],
+                explanation: `Para maiwasan ang pagdikit ng cake sa molde, naglalagay ng mantika (mantikilya, shortening) sa kawali o naglalatag ng parchment paper.`,
+            },
+            my: {
+                question: `ကိတ်မုန့်ကို ပုံသွင်း (ဘောင်) မှ ထုတ်သောအခါ ကပ်ငြိမှုကို ကာကွယ်သောနည်းလမ်းမှာ မည်သည်နည်း?`,
+                options: [`မုန့်ပျော်တွင် သကြားများများ ထည့်သည်`, `ပန်းကန်တွင် ဆီလိမ်းပေးသည် သို့မဟုတ် 유산지 ခင်းသည်`, `မီးဖိုအပူချိန်ကို နိမ့်ချသည်`, `ဖုတ်မီ အအေးခန်းသိမ်းသည်`],
+                explanation: `ကိတ်မုန့်ကပ်ငြိမှုကိုတားဆီးရန် ပန်းကန်တွင် ဆီ (ထောပတ်၊ shortening) လိမ်းပေးသည် သို့မဟုတ် parchment paper (유산지) ကို ခင်းသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `케이크`, native: `bánh cake` },
+                { korean: `팬`, native: `khuôn / chảo` },
+                { korean: `유산지`, native: `giấy nến / parchment paper` },
+                { korean: `기름칠`, native: `bôi dầu` },
+                { korean: `설탕`, native: `đường` },
+            ],
+            zh: [
+                { korean: `케이크`, native: `蛋糕` },
+                { korean: `팬`, native: `烤盘` },
+                { korean: `유산지`, native: `烘焙纸` },
+                { korean: `기름칠`, native: `涂油` },
+                { korean: `설탕`, native: `糖` },
+            ],
+            th: [
+                { korean: `케이크`, native: `เค้ก` },
+                { korean: `팬`, native: `ถาด` },
+                { korean: `유산지`, native: `กระดาษรองอบ` },
+                { korean: `기름칠`, native: `ทาน้ำมัน` },
+            ],
+            tl: [
+                { korean: `케이크`, native: `cake` },
+                { korean: `팬`, native: `kawali` },
+                { korean: `유산지`, native: `parchment paper` },
+                { korean: `기름칠`, native: `paglalagay ng mantika` },
+            ],
+            my: [
+                { korean: `케이크`, native: `ကိတ်မုန့်` },
+                { korean: `팬`, native: `ပန်းကန်` },
+                { korean: `유산지`, native: `parchment paper` },
+                { korean: `기름칠`, native: `ဆီလိမ်းခြင်း` },
+            ],
+        },
     },
 
     // ===== 식품위생학 (pastry-hygiene) 20문제 =====
