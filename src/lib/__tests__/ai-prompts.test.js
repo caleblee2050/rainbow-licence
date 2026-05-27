@@ -3,6 +3,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { classifyDomain } from '../ai/prompts/classify';
 import { summarizeInKorean } from '../ai/prompts/summarize';
 import { extractConcepts } from '../ai/prompts/concepts';
+import { generateProblems } from '../ai/prompts/problems';
 
 const mockCreate = vi.fn();
 vi.mock('@anthropic-ai/sdk', () => ({
@@ -65,5 +66,24 @@ describe('extractConcepts', () => {
         });
         const r = await extractConcepts({ rawText: 'x', licenceId: 'korean-food' });
         expect(r).toHaveLength(15);
+    });
+});
+
+describe('generateProblems', () => {
+    it('스키마 어긋난 항목 제외', async () => {
+        mockCreate.mockResolvedValueOnce({
+            content: [{ type: 'text', text: JSON.stringify({
+                problems: [
+                    { ko_question: 'Q1?', ko_options: ['a','b','c','d'], correct_answer: 1, ko_explanation: 'E1' },
+                    { ko_question: 'no options' },
+                    { ko_question: 'Q3?', ko_options: ['a','b'], correct_answer: 0, ko_explanation: 'E3' }, // 옵션 2개
+                    { ko_question: 'Q4?', ko_options: ['a','b','c','d'], correct_answer: 5, ko_explanation: 'E4' }, // 인덱스 범위 외
+                ],
+            }) }],
+        });
+        const r = await generateProblems({ rawText: 'x', concepts: [], licenceId: 'korean-food' });
+        expect(r).toHaveLength(1);
+        expect(r[0].ko_question).toBe('Q1?');
+        expect(r[0].correct_answer).toBe(1);
     });
 });
