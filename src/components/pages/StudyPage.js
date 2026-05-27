@@ -66,7 +66,7 @@ function renderWithHints(text, hints) {
     );
 }
 
-export default function StudyPage({ language, licenceId, studyMode, onStudyModeChange, onSelectLicence, isPremium }) {
+export default function StudyPage({ language, licenceId, studyMode, onStudyModeChange, onSelectLicence, isPremium, activeView, onChangeView }) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [showResult, setShowResult] = useState(false);
@@ -227,6 +227,14 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
                     <span style={{ fontWeight: 600, fontSize: 'var(--font-sm)' }}>{licence?.name}</span>
                 </div>
             </div>
+
+            {/* 탭 chip: 학습 / 내 자료 */}
+            {onChangeView && (
+                <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-3)' }}>
+                    <button className={`chip ${activeView === 'study' ? 'active' : ''}`} onClick={() => onChangeView('study')}>학습</button>
+                    <button className={`chip ${activeView === 'notebook' ? 'active' : ''}`} onClick={() => onChangeView('notebook')}>내 자료</button>
+                </div>
+            )}
 
             {/* Progress — Step 1: fill with primary or gradient */}
             <div style={{ marginBottom: 'var(--space-2)' }}>

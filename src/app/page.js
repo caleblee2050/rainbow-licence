@@ -10,6 +10,7 @@ import DictionaryPage from '@/components/pages/DictionaryPage';
 import CommunityPage from '@/components/pages/CommunityPage';
 import OnboardingPage from '@/components/pages/OnboardingPage';
 import AuthPage from '@/components/pages/AuthPage';
+import NotebookPage from '@/components/pages/NotebookPage';
 import { isOnboardingComplete, getUserProfile, isPremium as checkPremium, activatePremium } from '@/lib/studyEngine';
 import { api } from '@/lib/api-client';
 
@@ -19,6 +20,8 @@ export default function Home() {
   const [selectedLanguage, setSelectedLanguage] = useState('vi');
   const [selectedLicence, setSelectedLicence] = useState(null);
   const [studyMode, setStudyMode] = useState('step1');
+  const [studyView, setStudyView] = useState('study');
+  const [openSourceId, setOpenSourceId] = useState(null);
   const [premium, setPremium] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [authUser, setAuthUser] = useState(null);
@@ -107,14 +110,36 @@ export default function Home() {
           />
         );
       case 'study':
+        if (studyView === 'notebook' && selectedLicence) {
+          return (
+            <NotebookPage
+              licenceId={selectedLicence}
+              onOpenSource={(id) => { setOpenSourceId(id); setStudyView('source-detail'); }}
+            />
+          );
+        }
+        if (studyView === 'source-detail' && openSourceId) {
+          // T17에서 SourceDetailPage 추가 후 활성화. 이번 task에서는 임시로 뒤로가기만:
+          return (
+            <div style={{ padding: 'var(--space-4)' }}>
+              <button onClick={() => setStudyView('notebook')} className="btn btn--ghost">← 목록</button>
+              <p style={{ marginTop: 'var(--space-3)' }}>자료 상세 보기 (T17에서 구현 예정). 자료 ID: {openSourceId}</p>
+            </div>
+          );
+        }
         return (
           <StudyPage
             language={selectedLanguage}
             licenceId={selectedLicence}
             studyMode={studyMode}
             onStudyModeChange={setStudyMode}
-            onSelectLicence={setSelectedLicence}
+            onSelectLicence={(licId) => {
+              setSelectedLicence(licId);
+              if (!licId) setStudyView('study');
+            }}
             isPremium={premium}
+            activeView={studyView}
+            onChangeView={setStudyView}
           />
         );
       case 'dictionary':
