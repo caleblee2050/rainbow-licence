@@ -14,7 +14,7 @@ const LANG_LABELS = {
     my: '🇲🇲 미얀마어',
 };
 
-export default function DictionaryPage({ language, licenceId }) {
+export default function DictionaryPage({ language, licenceId, onStartLearn }) {
     const [search, setSearch] = useState('');
     const [selectedLicence, setSelectedLicence] = useState(licenceId || null);
     const [selectedCategory, setSelectedCategory] = useState(null);
@@ -23,7 +23,7 @@ export default function DictionaryPage({ language, licenceId }) {
 
     useEffect(() => {
         if (!licenceId) { setUserConcepts([]); return; }
-        api.userConcepts(licenceId).then(({ concepts }) => setUserConcepts(concepts)).catch(() => {});
+        api.userConcepts(licenceId).then(({ concepts }) => setUserConcepts(concepts)).catch(e => { console.warn('[DictionaryPage] 사용자 개념 로드 실패:', e.message); });
     }, [licenceId]);
 
     const filteredTerms = useMemo(() => {
@@ -50,6 +50,32 @@ export default function DictionaryPage({ language, licenceId }) {
                     시험에 나오는 전문 용어를 5개 언어로 확인하세요
                 </p>
             </div>
+
+            {/* 학습 시작 CTA — 자격증 선택된 경우만 */}
+            {selectedLicence && onStartLearn && (
+                <button
+                    onClick={onStartLearn}
+                    style={{
+                        width: '100%', padding: 'var(--space-4)', marginBottom: 'var(--space-4)',
+                        background: 'linear-gradient(135deg, var(--primary), var(--accent))',
+                        color: '#fff', border: 'none', borderRadius: 'var(--radius-md)',
+                        display: 'flex', alignItems: 'center', gap: 'var(--space-3)',
+                        cursor: 'pointer', fontFamily: 'inherit', textAlign: 'left',
+                        boxShadow: 'var(--shadow-sm)',
+                    }}
+                >
+                    <span style={{ fontSize: 32 }}>📚</span>
+                    <div style={{ flex: 1 }}>
+                        <div style={{ fontWeight: 700, fontSize: 'var(--font-base)', marginBottom: 2 }}>
+                            플래시카드로 학습 시작
+                        </div>
+                        <div style={{ fontSize: 'var(--font-xs)', opacity: 0.9 }}>
+                            {getTermsByLicence(selectedLicence).length}개 용어 · 좌우 스와이프로 빠르게
+                        </div>
+                    </div>
+                    <span className="iconify" data-icon="mdi:chevron-right" style={{ fontSize: 20 }}></span>
+                </button>
+            )}
 
             {/* Search */}
             <div style={{ position: 'relative', marginBottom: 'var(--space-4)' }}>

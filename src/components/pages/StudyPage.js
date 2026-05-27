@@ -5,6 +5,7 @@ import { api } from '@/lib/api-client';
 import { licences } from '@/data/licences';
 import { getQuestionsByLicence } from '@/data/questions';
 import { recordAnswer, getAccuracyRate, getLicenceStats } from '@/lib/studyEngine';
+import { isPremiumGateUnlocked } from '@/lib/demoMode';
 import { PremiumLock } from '@/components/ui/PremiumBanner';
 import {
     getTranslatedQuestion,
@@ -67,7 +68,7 @@ function renderWithHints(text, hints) {
     );
 }
 
-export default function StudyPage({ language, licenceId, studyMode, onStudyModeChange, onSelectLicence, isPremium, activeView, onChangeView }) {
+export default function StudyPage({ language, licenceId, studyMode, onStudyModeChange, onSelectLicence, isPremium, activeView, onChangeView, onStartMockExam }) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [showResult, setShowResult] = useState(false);
@@ -87,7 +88,7 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
                 bySource.get(p.source_id).push(p);
             }
             setUserProblemBundles(Array.from(bySource.entries()).map(([sid, list]) => ({ sourceId: sid, count: list.length, problems: list })));
-        }).catch(() => {});
+        }).catch(e => { console.warn('[StudyPage] 사용자 문제 로드 실패:', e.message); });
     }, [licenceId]);
 
     const licence = licences.find(l => l.id === licenceId);
@@ -221,9 +222,9 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
     };
     const currentMode = modeLabels[studyMode];
 
-    // 무료 사용자 문제 제한 (과목당 5문제)
+    // 무료 사용자 문제 제한 (과목당 5문제). DEMO 모드는 해제.
     const freeLimit = 5;
-    const isLocked = !isPremium && currentIndex >= freeLimit;
+    const isLocked = !isPremium && !isPremiumGateUnlocked() && currentIndex >= freeLimit;
 
     return (
         <div className="animate-fadeIn">
@@ -262,11 +263,18 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
                 </div>
             </div>
 
-            {/* 탭 chip: 학습 / 내 자료 */}
+            {/* 탭 chip: 학습 / 내 자료 / 모의고사 */}
             {onChangeView && (
-                <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-3)' }}>
+                <div style={{ display: 'flex', gap: 'var(--space-2)', marginBottom: 'var(--space-3)', overflowX: 'auto' }}>
                     <button className={`chip ${activeView === 'study' ? 'active' : ''}`} onClick={() => onChangeView('study')}>학습</button>
                     <button className={`chip ${activeView === 'notebook' ? 'active' : ''}`} onClick={() => onChangeView('notebook')}>내 자료</button>
+                    {onStartMockExam && (
+                        <button
+                            className="chip"
+                            onClick={onStartMockExam}
+                            style={{ background: 'var(--accent)', color: '#fff', borderColor: 'var(--accent)' }}
+                        >🎯 모의고사</button>
+                    )}
                 </div>
             )}
 

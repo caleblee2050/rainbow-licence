@@ -16,7 +16,7 @@ const subtitles = {
     tl: 'Ano ang gusto mong pag-aralan?', my: 'ဒီနေ့ ဘာလေ့လာချင်သလဲ?',
 };
 
-export default function HomePage({ language, licenceId, onSelectLicence, isPremium, onUpgrade }) {
+export default function HomePage({ language, licenceId, onSelectLicence, isPremium, onUpgrade, onGoToTermsLearn, onGoToMockExam }) {
     const [streak, setStreak] = useState({ current: 0, longest: 0 });
     const [weeklyData, setWeeklyData] = useState([]);
     const [dday, setDday] = useState(null);
@@ -253,35 +253,54 @@ export default function HomePage({ language, licenceId, onSelectLicence, isPremi
 
             <div className="responsive-grid" style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-3)' }}>
                 {[
-                    { step: '0', title: '용어 사전 학습', desc: '시험에 나오는 핵심 단어 먼저 익히기', icon: '📚', accent: true },
-                    { step: '1', title: '완전 번역 모드', desc: '문제를 모국어로 완전히 이해하기', icon: '🌱', accent: false },
-                    { step: '2', title: '키워드 힌트', desc: '핵심 키워드만 모국어로 보기', icon: '🌿', accent: false },
-                    { step: '3', title: '실전 한국어', desc: '실제 시험처럼 한국어로만', icon: '🌳', accent: false },
-                    { step: '4', title: '실전 모의고사', desc: '60문제/60분 실전 시뮬레이션', icon: '🎯', accent: true },
-                ].map((mode, i) => (
-                    <div key={i} className="card" style={{
-                        padding: 'var(--space-3) var(--space-4)',
-                        borderLeft: `4px solid ${mode.accent ? 'var(--accent)' : 'var(--primary)'}`,
-                        display: 'flex', gap: 'var(--space-3)', alignItems: 'center',
-                        background: 'var(--bg-card)',
-                    }}>
-                        <span style={{ fontSize: 22 }}>{mode.icon}</span>
-                        <div style={{ flex: 1 }}>
-                            <span style={{
-                                fontSize: 10, fontWeight: 600,
-                                color: mode.accent ? 'var(--accent)' : 'var(--primary)',
-                                display: 'block', marginBottom: 1,
-                            }}>
-                                STEP {mode.step}
-                            </span>
-                            <h4 style={{ fontSize: 'var(--font-sm)', fontWeight: 600 }}>{mode.title}</h4>
-                            <p style={{ fontSize: 11, color: 'var(--text-secondary)' }}>{mode.desc}</p>
-                        </div>
-                        {(mode.step === '4' || mode.step === '0') && !isPremium && !isPremiumGateUnlocked() && (
-                            <span style={{ fontSize: 14, color: 'var(--text-muted)' }}>🔒</span>
-                        )}
-                    </div>
-                ))}
+                    { step: '0', title: '용어 사전 학습', desc: '시험에 나오는 핵심 단어 먼저 익히기', icon: '📚', accent: true, onClick: onGoToTermsLearn },
+                    { step: '1', title: '완전 번역 모드', desc: '문제를 모국어로 완전히 이해하기', icon: '🌱', accent: false, onClick: () => onSelectLicence(licenceId || 'korean-food') },
+                    { step: '2', title: '키워드 힌트', desc: '핵심 키워드만 모국어로 보기', icon: '🌿', accent: false, onClick: () => onSelectLicence(licenceId || 'korean-food') },
+                    { step: '3', title: '실전 한국어', desc: '실제 시험처럼 한국어로만', icon: '🌳', accent: false, onClick: () => onSelectLicence(licenceId || 'korean-food') },
+                    { step: '4', title: '실전 모의고사', desc: '60문제/60분 실전 시뮬레이션', icon: '🎯', accent: true, onClick: onGoToMockExam },
+                ].map((mode, i) => {
+                    const locked = (mode.step === '4' || mode.step === '0') && !isPremium && !isPremiumGateUnlocked();
+                    return (
+                        <button
+                            key={i}
+                            className="card card--interactive"
+                            onClick={locked ? undefined : mode.onClick}
+                            disabled={locked}
+                            style={{
+                                padding: 'var(--space-3) var(--space-4)',
+                                borderLeft: `4px solid ${mode.accent ? 'var(--accent)' : 'var(--primary)'}`,
+                                display: 'flex', gap: 'var(--space-3)', alignItems: 'center',
+                                background: 'var(--bg-card)',
+                                border: '1px solid var(--border)',
+                                borderLeftWidth: 4,
+                                borderLeftColor: mode.accent ? 'var(--accent)' : 'var(--primary)',
+                                fontFamily: 'inherit',
+                                textAlign: 'left',
+                                width: '100%',
+                                cursor: locked ? 'not-allowed' : 'pointer',
+                                opacity: locked ? 0.6 : 1,
+                            }}
+                        >
+                            <span style={{ fontSize: 22 }}>{mode.icon}</span>
+                            <div style={{ flex: 1, minWidth: 0 }}>
+                                <span style={{
+                                    fontSize: 10, fontWeight: 600,
+                                    color: mode.accent ? 'var(--accent)' : 'var(--primary)',
+                                    display: 'block', marginBottom: 1,
+                                }}>
+                                    STEP {mode.step}
+                                </span>
+                                <h4 style={{ fontSize: 'var(--font-sm)', fontWeight: 600 }}>{mode.title}</h4>
+                                <p style={{ fontSize: 11, color: 'var(--text-secondary)' }}>{mode.desc}</p>
+                            </div>
+                            {locked ? (
+                                <span style={{ fontSize: 14, color: 'var(--text-muted)' }}>🔒</span>
+                            ) : (
+                                <span className="iconify" data-icon="mdi:chevron-right" style={{ fontSize: 18, color: 'var(--text-muted)' }}></span>
+                            )}
+                        </button>
+                    );
+                })}
             </div>
         </div>
     );

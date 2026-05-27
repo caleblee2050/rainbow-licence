@@ -1,12 +1,17 @@
 async function jsonFetch(url, options = {}) {
-    const res = await fetch(url, {
-        ...options,
-        headers: {
-            'Content-Type': 'application/json',
-            ...(options.headers ?? {}),
-        },
-        credentials: 'same-origin',
-    });
+    let res;
+    try {
+        res = await fetch(url, {
+            ...options,
+            headers: {
+                'Content-Type': 'application/json',
+                ...(options.headers ?? {}),
+            },
+            credentials: 'same-origin',
+        });
+    } catch {
+        throw new Error('네트워크 연결을 확인해주세요');
+    }
     if (!res.ok) {
         const err = await res.json().catch(() => ({ error: res.statusText }));
         throw new Error(err.error || `${res.status}`);
@@ -37,7 +42,12 @@ export const api = {
         form.set('licenceId', licenceId);
         form.set('title', title);
         form.set('file', file);
-        const res = await fetch('/api/sources', { method: 'POST', body: form, credentials: 'same-origin' });
+        let res;
+        try {
+            res = await fetch('/api/sources', { method: 'POST', body: form, credentials: 'same-origin' });
+        } catch {
+            throw new Error('네트워크 연결을 확인해주세요');
+        }
         if (!res.ok) {
             const err = await res.json().catch(() => ({ error: res.statusText }));
             throw new Error(err.error || `${res.status}`);

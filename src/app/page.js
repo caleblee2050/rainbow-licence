@@ -12,6 +12,9 @@ import OnboardingPage from '@/components/pages/OnboardingPage';
 import AuthPage from '@/components/pages/AuthPage';
 import NotebookPage from '@/components/pages/NotebookPage';
 import SourceDetailPage from '@/components/pages/SourceDetailPage';
+import TermsLearnPage from '@/components/pages/TermsLearnPage';
+import MockExamPage from '@/components/pages/MockExamPage';
+import ErrorBoundary from '@/components/ErrorBoundary';
 import { isOnboardingComplete, getUserProfile, isPremium as checkPremium, activatePremium } from '@/lib/studyEngine';
 import { api } from '@/lib/api-client';
 
@@ -22,6 +25,7 @@ export default function Home() {
   const [selectedLicence, setSelectedLicence] = useState(null);
   const [studyMode, setStudyMode] = useState('step1');
   const [studyView, setStudyView] = useState('study');
+  const [dictionaryView, setDictionaryView] = useState('browse');
   const [openSourceId, setOpenSourceId] = useState(null);
   const [premium, setPremium] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -43,7 +47,7 @@ export default function Home() {
 
     api.me()
       .then(data => { setAuthUser(data.user); })
-      .catch(() => {})
+      .catch(e => { console.warn('[page] 인증 확인 실패:', e.message); })
       .finally(() => { setAuthChecked(true); });
   }, []);
 
@@ -57,7 +61,20 @@ export default function Home() {
   const navigateToStudy = useCallback((licenceId) => {
     setSelectedLicence(licenceId);
     setActiveTab('study');
+    setStudyView('study');
   }, []);
+
+  const goToTermsLearn = useCallback(() => {
+    if (!selectedLicence) setSelectedLicence('korean-food');
+    setActiveTab('dictionary');
+    setDictionaryView('learn');
+  }, [selectedLicence]);
+
+  const goToMockExam = useCallback(() => {
+    if (!selectedLicence) setSelectedLicence('korean-food');
+    setActiveTab('study');
+    setStudyView('mock-exam');
+  }, [selectedLicence]);
 
   const handleUpgrade = useCallback(() => {
     // 데모: 7일 무료 체험 활성화
@@ -101,6 +118,8 @@ export default function Home() {
             onSelectLicence={navigateToStudy}
             isPremium={premium}
             onUpgrade={handleUpgrade}
+            onGoToTermsLearn={goToTermsLearn}
+            onGoToMockExam={goToMockExam}
           />
         );
       case 'licence':
@@ -128,6 +147,14 @@ export default function Home() {
             />
           );
         }
+        if (studyView === 'mock-exam' && selectedLicence) {
+          return (
+            <MockExamPage
+              licenceId={selectedLicence}
+              onExit={() => setStudyView('study')}
+            />
+          );
+        }
         return (
           <StudyPage
             language={selectedLanguage}
@@ -141,13 +168,24 @@ export default function Home() {
             isPremium={premium}
             activeView={studyView}
             onChangeView={setStudyView}
+            onStartMockExam={() => setStudyView('mock-exam')}
           />
         );
       case 'dictionary':
+        if (dictionaryView === 'learn' && selectedLicence) {
+          return (
+            <TermsLearnPage
+              language={selectedLanguage}
+              licenceId={selectedLicence}
+              onExit={() => setDictionaryView('browse')}
+            />
+          );
+        }
         return (
           <DictionaryPage
             language={selectedLanguage}
             licenceId={selectedLicence}
+            onStartLearn={() => setDictionaryView('learn')}
           />
         );
       case 'community':
@@ -164,7 +202,9 @@ export default function Home() {
         onLanguageChange={setSelectedLanguage}
       />
       <main className="main-content">
-        {renderPage()}
+        <ErrorBoundary>
+          {renderPage()}
+        </ErrorBoundary>
       </main>
       <BottomNav activeTab={activeTab} onTabChange={setActiveTab} />
     </div>
