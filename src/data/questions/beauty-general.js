@@ -2017,6 +2017,67 @@ export const beautyGeneralQuestions = [
         explanation: '정상 모발의 pH는 약 4.5~5.5의 약산성을 띱니다. 이 범위에서 큐티클이 닫혀 모발이 건강한 상태를 유지합니다.',
         simpleExplanation: '건강한 머리카락은 약산성이에요. pH 4.5~5.5 정도가 가장 좋아요.',
         keywords: ['pH', '약산성', '모발건강'],
+        translations: {
+            vi: {
+                question: `Khoảng pH phù hợp cho mái tóc khỏe mạnh là gì?`,
+                options: [`pH 2~3 (axit mạnh)`, `pH 4.5~5.5 (axit yếu)`, `pH 7 (trung tính)`, `pH 8~9 (kiềm yếu)`],
+                explanation: `pH bình thường của tóc là khoảng 4.5~5.5 (axit yếu). Trong khoảng này, lớp cuticle đóng lại giúp tóc duy trì trạng thái khỏe mạnh.`,
+            },
+            zh: {
+                question: `健康头发的适宜pH范围是多少？`,
+                options: [`pH 2~3（强酸性）`, `pH 4.5~5.5（弱酸性）`, `pH 7（中性）`, `pH 8~9（弱碱性）`],
+                explanation: `正常头发的pH约为4.5~5.5，呈弱酸性。在此范围内，毛鳞片闭合，头发保持健康状态。`,
+            },
+            th: {
+                question: `ช่วง pH ที่เหมาะสมสำหรับเส้นผมที่แข็งแรงคือเท่าไร?`,
+                options: [`pH 2~3 (กรดแก่)`, `pH 4.5~5.5 (กรดอ่อน)`, `pH 7 (กลาง)`, `pH 8~9 (ด่างอ่อน)`],
+                explanation: `pH ปกติของเส้นผมอยู่ที่ประมาณ 4.5~5.5 (กรดอ่อน) ในช่วงนี้ cuticle จะปิดทำให้เส้นผมอยู่ในสภาพแข็งแรง`,
+            },
+            tl: {
+                question: `Ano ang tamang hanay ng pH para sa malusog na buhok?`,
+                options: [`pH 2~3 (malakas na asido)`, `pH 4.5~5.5 (mahinang asido)`, `pH 7 (neutral)`, `pH 8~9 (mahinang alkali)`],
+                explanation: `Ang normal na pH ng buhok ay humigit-kumulang 4.5~5.5 (mahinang asido). Sa hanay na ito, ang cuticle ay nagsasara at nananatiling malusog ang buhok.`,
+            },
+            my: {
+                question: `ကျန်းမာသောဆံပင်အတွက် သင့်တော်သော pH အပိုင်းအခြားမှာ မည်မျှနည်း?`,
+                options: [`pH 2~3 (အက်စစ်ပြင်းပြင်း)`, `pH 4.5~5.5 (အက်စစ်အနည်းငယ်)`, `pH 7 (ကြားနေ)`, `pH 8~9 (အယ်လ်ကာလိုင်းအနည်းငယ်)`],
+                explanation: `ပုံမှန်ဆံပင်၏ pH မှာ ၄.၅~၅.၅ (အက်စစ်အနည်းငယ်) ဖြစ်သည်။ ဤအပိုင်းအခြားတွင် cuticle ပိတ်ကာ ဆံပင်ကျန်းမာသောအခြေအနေကို ထိန်းသိမ်းသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `모발`, native: `tóc / sợi tóc` },
+                { korean: `pH`, native: `pH` },
+                { korean: `약산성`, native: `axit yếu` },
+                { korean: `강산성`, native: `axit mạnh` },
+                { korean: `중성`, native: `trung tính` },
+            ],
+            zh: [
+                { korean: `모발`, native: `头发` },
+                { korean: `pH`, native: `pH值` },
+                { korean: `약산성`, native: `弱酸性` },
+                { korean: `강산성`, native: `强酸性` },
+                { korean: `중성`, native: `中性` },
+            ],
+            th: [
+                { korean: `모발`, native: `เส้นผม` },
+                { korean: `pH`, native: `pH` },
+                { korean: `약산성`, native: `กรดอ่อน` },
+                { korean: `강산성`, native: `กรดแก่` },
+            ],
+            tl: [
+                { korean: `모발`, native: `buhok` },
+                { korean: `pH`, native: `pH` },
+                { korean: `약산성`, native: `mahinang asido` },
+                { korean: `강산성`, native: `malakas na asido` },
+            ],
+            my: [
+                { korean: `모발`, native: `ဆံပင်` },
+                { korean: `pH`, native: `pH` },
+                { korean: `약산성`, native: `အက်စစ်အနည်းငယ်` },
+                { korean: `강산성`, native: `အက်စစ်ပြင်းပြင်း` },
+            ],
+        },
     },
     // ── 화장품학 (cosmetic) bg-22 ~ bg-34 (13문제 추가 → 총 15) ─────
     {
@@ -2035,6 +2096,92 @@ export const beautyGeneralQuestions = [
         explanation: '기초화장품(스킨케어)은 세안 후 피부를 정돈하고 수분과 영양을 공급하여 피부 환경을 최적화하는 역할을 합니다.',
         simpleExplanation: '기초 화장품은 피부를 깨끗하게 하고 수분과 영양을 줘요. 피부 건강을 지켜요.',
         keywords: ['기초화장품', '수분', '영양', '스킨케어'],
+        translations: {
+            vi: {
+                question: `Chức năng chính của mỹ phẩm dưỡng da cơ bản (skincare) là gì?`,
+                options: [
+                    `Tạo màu sắc và che phủ khuyết điểm cho da`,
+                    `Làm sạch da và cung cấp độ ẩm, dưỡng chất`,
+                    `Tạo hương thơm cho cơ thể`,
+                    `Chặn tia UV, bảo vệ da khỏi ánh nắng`,
+                ],
+                explanation: `Mỹ phẩm dưỡng da cơ bản (skincare) có vai trò làm sạch da sau khi rửa mặt, cung cấp độ ẩm và dưỡng chất để tối ưu hóa môi trường da.`,
+            },
+            zh: {
+                question: `基础化妆品（护肤品）的主要功能是什么？`,
+                options: [
+                    `为皮肤着色并遮盖瑕疵`,
+                    `清洁皮肤并补充水分和营养`,
+                    `散发香气使身体芬芳`,
+                    `防止紫外线保护皮肤`,
+                ],
+                explanation: `基础化妆品（护肤品）的作用是洁面后整顿皮肤，补充水分和营养，使皮肤环境达到最佳状态。`,
+            },
+            th: {
+                question: `หน้าที่หลักของเครื่องสำอางบำรุงผิวพื้นฐาน (สกินแคร์) คืออะไร?`,
+                options: [
+                    `ให้สีผิวและปกปิดจุดบกพร่อง`,
+                    `ทำความสะอาดผิวและให้ความชุ่มชื้นและสารอาหาร`,
+                    `สร้างกลิ่นหอมให้ร่างกาย`,
+                    `ป้องกัน UV เพื่อปกป้องผิวจากแสงแดด`,
+                ],
+                explanation: `เครื่องสำอางบำรุงผิวพื้นฐานมีบทบาทในการทำความสะอาดผิวหลังจากล้างหน้า ให้ความชุ่มชื้นและสารอาหาร เพื่อปรับสภาพผิวให้เหมาะสม`,
+            },
+            tl: {
+                question: `Ano ang pangunahing tungkulin ng basic skincare cosmetics?`,
+                options: [
+                    `Magbigay ng kulay sa balat at takpan ang mga depekto`,
+                    `Linisin ang balat at magbigay ng moisture at nutrisyon`,
+                    `Magbigay ng halimuyak sa katawan`,
+                    `Hadangan ang UV para protektahan ang balat sa araw`,
+                ],
+                explanation: `Ang basic skincare cosmetics ay naglilinis ng balat pagkatapos maghugas ng mukha, nagbibigay ng moisture at nutrisyon para ma-optimize ang kondisyon ng balat.`,
+            },
+            my: {
+                question: `အခြေခံ skincare မျက်နှာသုတ်ကုန်၏ အဓိကလုပ်ဆောင်ချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `အရေပြားကို အရောင်ထည့်ကာ အားနည်းချက်များ ဖုံးကွယ်ခြင်း`,
+                    `အရေပြားကို သန့်ရှင်းစေပြီး အစိုဓာတ်နှင့် အာဟာရပေးခြင်း`,
+                    `ခန္ဓာကိုယ်ကို မွှေးကြိုင်စေခြင်း`,
+                    `UV ကြာဆီးကာ နေရောင်မှ အရေပြားကို ကာကွယ်ခြင်း`,
+                ],
+                explanation: `အခြေခံ skincare မျက်နှာသုတ်ကုန်သည် မျက်နှာဆေးပြီးနောက် အရေပြားကို ညှင်နာမွတ်ကာ အစိုဓာတ်နှင့် အာဟာရဖြည့်တင်းပေးကာ အရေပြားအခြေအနေကို အကောင်းဆုံးဖြစ်အောင် ပြုလုပ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `기초화장품`, native: `mỹ phẩm dưỡng da cơ bản` },
+                { korean: `수분`, native: `độ ẩm` },
+                { korean: `영양`, native: `dưỡng chất` },
+                { korean: `피부`, native: `da` },
+                { korean: `청결`, native: `sạch sẽ / làm sạch` },
+            ],
+            zh: [
+                { korean: `기초화장품`, native: `基础化妆品` },
+                { korean: `수분`, native: `水分` },
+                { korean: `영양`, native: `营养` },
+                { korean: `피부`, native: `皮肤` },
+                { korean: `청결`, native: `清洁` },
+            ],
+            th: [
+                { korean: `기초화장품`, native: `เครื่องสำอางบำรุงผิวพื้นฐาน` },
+                { korean: `수분`, native: `ความชุ่มชื้น` },
+                { korean: `영양`, native: `สารอาหาร` },
+                { korean: `피부`, native: `ผิวหนัง` },
+            ],
+            tl: [
+                { korean: `기초화장품`, native: `basic skincare cosmetics` },
+                { korean: `수분`, native: `moisture` },
+                { korean: `영양`, native: `nutrisyon` },
+                { korean: `피부`, native: `balat` },
+            ],
+            my: [
+                { korean: `기초화장품`, native: `အခြေခံ skincare` },
+                { korean: `수분`, native: `အစိုဓာတ်` },
+                { korean: `영양`, native: `အာဟာရ` },
+                { korean: `피부`, native: `အရေပြား` },
+            ],
+        },
     },
     {
         id: 'bg-23',
@@ -2047,6 +2194,67 @@ export const beautyGeneralQuestions = [
         explanation: '글리세린은 대표적인 보습제(humectant)로, 공기 중의 수분을 흡수하여 피부에 수분을 유지시켜 줍니다.',
         simpleExplanation: '글리세린은 대표적인 보습 성분이에요. 공기에서 수분을 끌어당겨 피부에 줘요.',
         keywords: ['보습제', '글리세린', '수분'],
+        translations: {
+            vi: {
+                question: `Thành phần nào trong mỹ phẩm là chất giữ ẩm (Humectant)?`,
+                options: [`Talc (Talc)`, `Glycerin (Glycerin)`, `Vaseline (Vaseline)`, `Zinc Oxide (Zinc Oxide)`],
+                explanation: `Glycerin là chất giữ ẩm (humectant) tiêu biểu, có khả năng hút ẩm từ không khí và giữ nước cho da.`,
+            },
+            zh: {
+                question: `化妆品成分中，属于保湿剂（Humectant）的是哪个？`,
+                options: [`滑石粉 (Talc)`, `甘油 (Glycerin)`, `凡士林 (Vaseline)`, `氧化锌 (Zinc Oxide)`],
+                explanation: `甘油是典型的保湿剂（humectant），能从空气中吸收水分并锁水于皮肤。`,
+            },
+            th: {
+                question: `ส่วนผสมในเครื่องสำอางที่เป็นสารให้ความชุ่มชื้น (Humectant) คือข้อใด?`,
+                options: [`แทลก (Talc)`, `กลีเซอรีน (Glycerin)`, `วาสลีน (Vaseline)`, `ซิงค์ออกไซด์ (Zinc Oxide)`],
+                explanation: `กลีเซอรีนเป็นสารให้ความชุ่มชื้น (humectant) ที่ดีเยี่ยม สามารถดูดซับความชื้นจากอากาศและรักษาความชุ่มชื้นไว้ในผิว`,
+            },
+            tl: {
+                question: `Alin sa mga sangkap ng kosmetiko ang isang humectant (panglagay ng moisture)?`,
+                options: [`Talc (Talc)`, `Glycerin (Glycerin)`, `Vaseline (Vaseline)`, `Zinc Oxide (Zinc Oxide)`],
+                explanation: `Ang Glycerin ay isang tipikal na humectant na kumukuha ng moisture mula sa hangin at nagpapanatili nito sa balat.`,
+            },
+            my: {
+                question: `အလှကုန်ပါဝင်ပစ္စည်းများတွင် Humectant (အစိုဓာတ်ဆွဲဆောင်ပစ္စည်း) မည်သည်နည်း?`,
+                options: [`Talc (တာ့လ်)`, `Glycerin (ဂလိုင်ဆာရင်)`, `Vaseline (ဗေ့ဆလင်)`, `Zinc Oxide (သွပ်အောက်ဆိုဒ်)`],
+                explanation: `Glycerin သည် ထင်ရှားသောhumectant ဖြစ်ပြီး လေထုမှ အစိုဓာတ်ဆွဲဆောင်ကာ အရေပြားတွင် ထိန်းသိမ်းပေးသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `화장품`, native: `mỹ phẩm` },
+                { korean: `성분`, native: `thành phần` },
+                { korean: `보습제`, native: `chất giữ ẩm / humectant` },
+                { korean: `글리세린`, native: `glycerin` },
+                { korean: `탤크`, native: `talc` },
+            ],
+            zh: [
+                { korean: `화장품`, native: `化妆品` },
+                { korean: `성분`, native: `成分` },
+                { korean: `보습제`, native: `保湿剂` },
+                { korean: `글리세린`, native: `甘油` },
+                { korean: `탤크`, native: `滑石粉` },
+            ],
+            th: [
+                { korean: `화장품`, native: `เครื่องสำอาง` },
+                { korean: `보습제`, native: `สารให้ความชุ่มชื้น` },
+                { korean: `글리세린`, native: `กลีเซอรีน` },
+                { korean: `성분`, native: `ส่วนผสม` },
+            ],
+            tl: [
+                { korean: `화장품`, native: `kosmetiko` },
+                { korean: `보습제`, native: `humectant` },
+                { korean: `글리세린`, native: `glycerin` },
+                { korean: `성분`, native: `sangkap` },
+            ],
+            my: [
+                { korean: `화장품`, native: `အလှကုန်` },
+                { korean: `보습제`, native: `humectant` },
+                { korean: `글리세린`, native: `glycerin` },
+                { korean: `성분`, native: `ပါဝင်ပစ္စည်း` },
+            ],
+        },
     },
     {
         id: 'bg-24',
@@ -2064,6 +2272,92 @@ export const beautyGeneralQuestions = [
         explanation: '계면활성제는 물과 기름 사이의 계면장력을 낮춰 두 물질이 잘 섞이게 합니다. 세정, 유화, 가용화, 거품 형성 등의 역할을 합니다.',
         simpleExplanation: '계면활성제는 기름과 물을 섞어줘요. 그래서 세안제가 기름 때를 씻어낼 수 있어요.',
         keywords: ['계면활성제', '세정', '유화'],
+        translations: {
+            vi: {
+                question: `Điều nào mô tả đúng về chất hoạt động bề mặt (Surfactant) trong mỹ phẩm?`,
+                options: [
+                    `Đóng vai trò là chất màu tạo màu sắc cho da`,
+                    `Giúp dầu và nước hòa tan tốt với nhau, tạo hiệu quả làm sạch`,
+                    `Cung cấp độ ẩm cho da (tác dụng giữ ẩm)`,
+                    `Bảo vệ da khỏi tia UV`,
+                ],
+                explanation: `Chất hoạt động bề mặt làm giảm sức căng bề mặt giữa nước và dầu, giúp hai chất này hòa tan tốt. Có tác dụng làm sạch, nhũ hóa, hòa tan và tạo bọt.`,
+            },
+            zh: {
+                question: `关于化妆品中的表面活性剂（Surfactant），描述正确的是？`,
+                options: [
+                    `起色素作用，赋予皮肤颜色`,
+                    `使油脂和水充分混合，产生清洁效果`,
+                    `向皮肤提供水分，起保湿作用`,
+                    `保护皮肤免受紫外线伤害`,
+                ],
+                explanation: `表面活性剂降低水与油之间的界面张力，使两种物质充分混合，具有清洁、乳化、增溶和起泡的作用。`,
+            },
+            th: {
+                question: `คำอธิบายที่ถูกต้องเกี่ยวกับสารลดแรงตึงผิว (Surfactant) ในเครื่องสำอางคืออะไร?`,
+                options: [
+                    `ทำหน้าที่เป็นเม็ดสีที่ให้สีแก่ผิว`,
+                    `ช่วยให้น้ำมันและน้ำผสมกันได้ดี ทำให้เกิดผลการทำความสะอาด`,
+                    `ให้ความชุ่มชื้นแก่ผิว (บทบาทการเพิ่มความชุ่มชื้น)`,
+                    `ปกป้องผิวจาก UV`,
+                ],
+                explanation: `สารลดแรงตึงผิวลดแรงตึงผิวระหว่างน้ำและน้ำมัน ทำให้สองสารผสมกันได้ดี มีบทบาทในการทำความสะอาด การเป็นอิมัลชัน การละลาย และการเกิดฟอง`,
+            },
+            tl: {
+                question: `Alin ang tamang paglalarawan tungkol sa surfactant sa kosmetiko?`,
+                options: [
+                    `Gumaganap bilang pigment na nagbibigay ng kulay sa balat`,
+                    `Nagpapadali ng paghalo ng langis at tubig upang mabigyan ng epekto ng paglilinis`,
+                    `Nagbibigay ng moisture sa balat (papel na panglagay ng moisture)`,
+                    `Nagpoprotekta sa balat mula sa UV`,
+                ],
+                explanation: `Ang surfactant ay nagpapababa ng tensyon sa pagitan ng tubig at langis, na nagpapahintulot sa dalawang sangkap na mahalo nang maayos. Mayroon itong tungkulin sa paglilinis, emulsification, at pagbuo ng bula.`,
+            },
+            my: {
+                question: `အလှကုန်တွင် surfactant (မျက်နှာပြင်တက်ကြွပစ္စည်း) နှင့် ပတ်သက်သော မှန်ကန်သောဖော်ပြချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `အရေပြားကို အရောင်ပေးသော ဆိုးဆေးအဖြစ် ဆောင်ရွက်သည်`,
+                    `ဆီနှင့်ရေ ကောင်းစွာ ပေါင်းစည်းစေပြီး သန့်ရှင်းရေး အကျိုးသက်ရောက်မှုပေးသည်`,
+                    `အရေပြားသို့ အစိုဓာတ်ပေးသည် (အစိုဓာတ်ထိန်းသိမ်းမှု)`,
+                    `UV မှ အရေပြားကို ကာကွယ်သည်`,
+                ],
+                explanation: `Surfactant သည် ရေနှင့်ဆီကြားရှိ မျက်နှာပြင်ဆွဲငင်မှုကို လျော့ချပြီး ပစ္စည်းနှစ်ခု ကောင်းစွာ ပေါင်းစည်းစေသည်။ သန့်ရှင်းရေး၊ emulsification၊ ပျော်ဝင်မှုနှင့် အမြုတ်ဖြစ်ပေါ်မှုတို့ကို ဆောင်ရွက်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `계면활성제`, native: `chất hoạt động bề mặt / surfactant` },
+                { korean: `세정`, native: `làm sạch` },
+                { korean: `기름`, native: `dầu` },
+                { korean: `피부`, native: `da` },
+                { korean: `보습`, native: `giữ ẩm` },
+            ],
+            zh: [
+                { korean: `계면활성제`, native: `表面活性剂` },
+                { korean: `세정`, native: `清洁` },
+                { korean: `기름`, native: `油脂` },
+                { korean: `피부`, native: `皮肤` },
+                { korean: `보습`, native: `保湿` },
+            ],
+            th: [
+                { korean: `계면활성제`, native: `สารลดแรงตึงผิว` },
+                { korean: `세정`, native: `การทำความสะอาด` },
+                { korean: `기름`, native: `น้ำมัน` },
+                { korean: `피부`, native: `ผิวหนัง` },
+            ],
+            tl: [
+                { korean: `계면활성제`, native: `surfactant` },
+                { korean: `세정`, native: `paglilinis` },
+                { korean: `기름`, native: `langis` },
+                { korean: `피부`, native: `balat` },
+            ],
+            my: [
+                { korean: `계면활성제`, native: `surfactant` },
+                { korean: `세정`, native: `သန့်ရှင်းရေး` },
+                { korean: `기름`, native: `ဆီ` },
+                { korean: `피부`, native: `အရေပြား` },
+            ],
+        },
     },
     {
         id: 'bg-25',
@@ -2081,6 +2375,92 @@ export const beautyGeneralQuestions = [
         explanation: '방부제는 세균, 곰팡이 등 미생물의 번식을 막아 화장품이 변질되지 않도록 유효 기간을 연장시키는 역할을 합니다.',
         simpleExplanation: '방부제는 세균이 생기지 않게 해요. 화장품이 오래 사용할 수 있도록 도와줘요.',
         keywords: ['방부제', '미생물', '변질방지'],
+        translations: {
+            vi: {
+                question: `Mục đích của chất bảo quản (Preservative) trong mỹ phẩm là gì?`,
+                options: [
+                    `Để làm trắng da`,
+                    `Để duy trì hương thơm của mỹ phẩm`,
+                    `Để ức chế sự phát triển của vi sinh vật và ngăn ngừa hư hỏng sản phẩm`,
+                    `Để tăng hiệu quả chống nắng`,
+                ],
+                explanation: `Chất bảo quản ngăn chặn sự phát triển của vi khuẩn, nấm mốc và các vi sinh vật khác, kéo dài hạn sử dụng của mỹ phẩm.`,
+            },
+            zh: {
+                question: `化妆品中使用防腐剂（Preservative）的主要目的是什么？`,
+                options: [
+                    `为了美白皮肤`,
+                    `为了保持化妆品的香气`,
+                    `为了抑制微生物繁殖，防止产品变质`,
+                    `为了提高防晒效果`,
+                ],
+                explanation: `防腐剂阻止细菌、霉菌等微生物的繁殖，防止化妆品变质，从而延长有效期。`,
+            },
+            th: {
+                question: `วัตถุประสงค์ของสารกันเสีย (Preservative) ที่ใช้ในเครื่องสำอางคืออะไร?`,
+                options: [
+                    `เพื่อทำให้ผิวขาวขึ้น`,
+                    `เพื่อรักษากลิ่นหอมของเครื่องสำอาง`,
+                    `เพื่อยับยั้งการเจริญของจุลินทรีย์และป้องกันผลิตภัณฑ์เสื่อมคุณภาพ`,
+                    `เพื่อเพิ่มประสิทธิภาพการป้องกันแสงแดด`,
+                ],
+                explanation: `สารกันเสียป้องกันการเจริญของแบคทีเรีย เชื้อรา และจุลินทรีย์อื่นๆ เพื่อป้องกันการเสื่อมของเครื่องสำอาง ช่วยยืดอายุการใช้งาน`,
+            },
+            tl: {
+                question: `Ano ang pangunahing layunin ng preservative (pangontra sa pagkasira) sa kosmetiko?`,
+                options: [
+                    `Para magpaputi ng balat`,
+                    `Para mapanatili ang halimuyak ng kosmetiko`,
+                    `Para pigilan ang pagpapalaki ng mikrobyo at maiwasan ang pagkasira ng produkto`,
+                    `Para mapataas ang bisa ng sunblock`,
+                ],
+                explanation: `Ang preservative ay pumipigil sa paglago ng bakterya, fungi, at iba pang mikrobyo para hindi masira ang kosmetiko at mapahaba ang buhay ng produkto.`,
+            },
+            my: {
+                question: `အလှကုန်တွင် preservative (ထိန်းသိမ်းပစ္စည်း) ၏ ရည်ရွယ်ချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `အရေပြားကို ဖြူစင်အောင်ပြုလုပ်ရန်`,
+                    `အလှကုန်၏ အနံ့ကို ထိန်းသိမ်းရန်`,
+                    `မိုက်ခရိုဘ် ပွားများမှုကို ထိန်းချုပ်ပြီး ကုန်ပစ္စည်း ပျက်စီးမှုကို ကာကွယ်ရန်`,
+                    `နေရောင်ခြည် ကာကွယ်မှုကို မြှင့်တင်ရန်`,
+                ],
+                explanation: `Preservative သည် ဘက်တီးရီးယား၊ မှိုနှင့် အခြား မိုက်ခရိုဘ်များ ပွားများမှုကို တားဆီးပြီး အလှကုန် ပျက်စီးမှုကို ကာကွယ်ကာ သက်တမ်းတိုးပေးသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `화장품`, native: `mỹ phẩm` },
+                { korean: `방부제`, native: `chất bảo quản / preservative` },
+                { korean: `미생물`, native: `vi sinh vật` },
+                { korean: `번식`, native: `sinh sản / phát triển` },
+                { korean: `변질`, native: `hư hỏng / biến chất` },
+            ],
+            zh: [
+                { korean: `화장품`, native: `化妆品` },
+                { korean: `방부제`, native: `防腐剂` },
+                { korean: `미생물`, native: `微生物` },
+                { korean: `번식`, native: `繁殖` },
+                { korean: `변질`, native: `变质` },
+            ],
+            th: [
+                { korean: `화장품`, native: `เครื่องสำอาง` },
+                { korean: `방부제`, native: `สารกันเสีย` },
+                { korean: `미생물`, native: `จุลินทรีย์` },
+                { korean: `변질`, native: `การเสื่อมสภาพ` },
+            ],
+            tl: [
+                { korean: `화장품`, native: `kosmetiko` },
+                { korean: `방부제`, native: `preservative` },
+                { korean: `미생물`, native: `mikrobyo` },
+                { korean: `변질`, native: `pagkasira` },
+            ],
+            my: [
+                { korean: `화장품`, native: `အလှကုန်` },
+                { korean: `방부제`, native: `preservative` },
+                { korean: `미생물`, native: `မိုက်ခရိုဘ်` },
+                { korean: `변질`, native: `ပျက်စီးမှု` },
+            ],
+        },
     },
     {
         id: 'bg-26',
@@ -2093,6 +2473,67 @@ export const beautyGeneralQuestions = [
         explanation: '기능성 화장품은 미백·주름 개선·자외선 차단 등 특정 효능을 표방하는 제품입니다. 일반 세안용 화장품은 기능성 화장품에 해당하지 않습니다.',
         simpleExplanation: '기능성 화장품은 미백, 주름, 자외선 차단 등 특별한 효과가 있는 거예요. 세안제는 아니에요.',
         keywords: ['기능성화장품', '화장품법', '미백', '주름'],
+        translations: {
+            vi: {
+                question: `Theo Luật Mỹ phẩm, sản phẩm nào KHÔNG phải là mỹ phẩm chức năng?`,
+                options: [`Mỹ phẩm làm trắng da`, `Mỹ phẩm cải thiện nếp nhăn`, `Mỹ phẩm chống nắng`, `Mỹ phẩm rửa mặt`],
+                explanation: `Mỹ phẩm chức năng bao gồm các sản phẩm làm trắng, cải thiện nếp nhăn, chống nắng và các công dụng đặc biệt khác. Mỹ phẩm rửa mặt thông thường không thuộc mỹ phẩm chức năng.`,
+            },
+            zh: {
+                question: `根据化妆品法，以下哪项不属于功能性化妆品？`,
+                options: [`美白化妆品`, `改善皱纹化妆品`, `防晒化妆品`, `洁面化妆品`],
+                explanation: `功能性化妆品包括美白、改善皱纹、防晒等特定功效产品。普通洁面化妆品不属于功能性化妆品。`,
+            },
+            th: {
+                question: `ตามกฎหมายเครื่องสำอาง ข้อใดไม่ใช่เครื่องสำอางเชิงหน้าที่?`,
+                options: [`เครื่องสำอางเพื่อการผิวขาว`, `เครื่องสำอางลดริ้วรอย`, `เครื่องสำอางกันแดด`, `เครื่องสำอางล้างหน้า`],
+                explanation: `เครื่องสำอางเชิงหน้าที่ประกอบด้วยผลิตภัณฑ์ที่มีประสิทธิภาพเฉพาะ เช่น การผิวขาว การลดริ้วรอย การกันแดด เครื่องสำอางล้างหน้าทั่วไปไม่ใช่เครื่องสำอางเชิงหน้าที่`,
+            },
+            tl: {
+                question: `Ayon sa Batas ng Kosmetiko, alin ang HINDI functional cosmetic?`,
+                options: [`Kosmetikong pampaputî ng balat`, `Kosmetikong nagpapababa ng kulubot`, `Kosmetikong pang-UV protection`, `Kosmetikong panghugas ng mukha`],
+                explanation: `Ang functional cosmetics ay kasama ang mga produktong pampaputî, nagpapababa ng kulubot, pang-UV protection at iba pang espesyal na bisa. Ang simpleng kosmetikong panghugas ng mukha ay hindi functional cosmetic.`,
+            },
+            my: {
+                question: `အလှကုန်ဥပဒေအရ functional cosmetic (လုပ်ဆောင်ချက်ပါဝင်သောအလှကုန်) မဟုတ်သည်မှာ မည်သည်နည်း?`,
+                options: [`အရေပြားဖြူစင်စေသောအလှကုန်`, `အကြောင်းကြောင်းလျော့နည်းစေသောအလှကုန်`, `UV ကာကွယ်သောအလှကုန်`, `မျက်နှာဆေးသောအလှကုန်`],
+                explanation: `Functional cosmetics တွင် ဖြူစင်မှု၊ အကြောင်းကြောင်းတိုင်းတာမှုနှင့် UV ကာကွယ်မှုစသည့် သီးသန့်လုပ်ဆောင်ချက်ပါသော ထုတ်ကုန်များ ပါဝင်သည်။ ပုံမှန် မျက်နှာဆေးအလှကုန်သည် functional cosmetic မဟုတ်ပါ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `화장품`, native: `mỹ phẩm` },
+                { korean: `기능성`, native: `chức năng / đặc biệt` },
+                { korean: `미백`, native: `làm trắng da` },
+                { korean: `주름`, native: `nếp nhăn` },
+                { korean: `자외선`, native: `tia UV / tia cực tím` },
+            ],
+            zh: [
+                { korean: `화장품`, native: `化妆品` },
+                { korean: `기능성`, native: `功能性` },
+                { korean: `미백`, native: `美白` },
+                { korean: `주름`, native: `皱纹` },
+                { korean: `자외선`, native: `紫外线` },
+            ],
+            th: [
+                { korean: `화장품`, native: `เครื่องสำอาง` },
+                { korean: `미백`, native: `การผิวขาว` },
+                { korean: `주름`, native: `ริ้วรอย` },
+                { korean: `자외선`, native: `UV / รังสีอัลตราไวโอเลต` },
+            ],
+            tl: [
+                { korean: `화장품`, native: `kosmetiko` },
+                { korean: `미백`, native: `pampaputî ng balat` },
+                { korean: `주름`, native: `kulubot` },
+                { korean: `자외선`, native: `UV` },
+            ],
+            my: [
+                { korean: `화장품`, native: `အလှကုန်` },
+                { korean: `미백`, native: `ဖြူစင်မှု` },
+                { korean: `주름`, native: `အကြောင်းကြောင်း` },
+                { korean: `자외선`, native: `UV` },
+            ],
+        },
     },
     {
         id: 'bg-27',
@@ -2110,6 +2551,92 @@ export const beautyGeneralQuestions = [
         explanation: 'PAO(Period After Opening)는 화장품 개봉 후 사용 가능한 기간을 나타내는 기호로, 열린 병 모양의 아이콘에 숫자와 "M"(Month)을 표시합니다.',
         simpleExplanation: 'PAO는 뚜껑을 열고 나서 사용할 수 있는 기간이에요. 예: 12M = 12개월.',
         keywords: ['PAO', '개봉후사용기간', '화장품유통기한'],
+        translations: {
+            vi: {
+                question: `Ký hiệu nào trên mỹ phẩm cho biết thời gian sử dụng sau khi mở nắp?`,
+                options: [
+                    `BBE (Best Before End)`,
+                    `PAO (Period After Opening)`,
+                    `EXP (Expiration Date)`,
+                    `MFD (Manufacturing Date)`,
+                ],
+                explanation: `PAO (Period After Opening) là ký hiệu cho biết thời gian có thể sử dụng sau khi mở nắp mỹ phẩm. Biểu tượng là hình lọ mở với số và chữ "M" (tháng).`,
+            },
+            zh: {
+                question: `化妆品上哪个标识表示开封后的使用期限？`,
+                options: [
+                    `BBE (Best Before End)`,
+                    `PAO (Period After Opening)`,
+                    `EXP (Expiration Date)`,
+                    `MFD (Manufacturing Date)`,
+                ],
+                explanation: `PAO（Period After Opening）是表示化妆品开封后可使用期限的标识，图标为开盖瓶子图案，附有数字和"M"（月）。`,
+            },
+            th: {
+                question: `สัญลักษณ์บนเครื่องสำอางชนิดใดบ่งบอกระยะเวลาการใช้งานหลังจากเปิดฝา?`,
+                options: [
+                    `BBE (Best Before End)`,
+                    `PAO (Period After Opening)`,
+                    `EXP (Expiration Date)`,
+                    `MFD (Manufacturing Date)`,
+                ],
+                explanation: `PAO (Period After Opening) คือสัญลักษณ์ที่บ่งบอกระยะเวลาที่สามารถใช้งานได้หลังจากเปิดฝาเครื่องสำอาง มีสัญลักษณ์เป็นรูปขวดเปิดพร้อมตัวเลขและ "M" (เดือน)`,
+            },
+            tl: {
+                question: `Anong simbolo sa kosmetiko ang nagpapakita ng tagal ng paggamit pagkatapos buksan?`,
+                options: [
+                    `BBE (Best Before End)`,
+                    `PAO (Period After Opening)`,
+                    `EXP (Expiration Date)`,
+                    `MFD (Manufacturing Date)`,
+                ],
+                explanation: `Ang PAO (Period After Opening) ay simbolo na nagpapakita ng tagal ng paggamit ng kosmetiko matapos buksan. Ang icon ay larawan ng bukas na bote na may numero at "M" (buwan).`,
+            },
+            my: {
+                question: `အလှကုန်ပေါ်တွင် ဖွင့်ပြီးနောက် အသုံးပြုနိုင်သောကာလကို ဖော်ပြသောသင်္ကေတမှာ မည်သည်နည်း?`,
+                options: [
+                    `BBE (Best Before End)`,
+                    `PAO (Period After Opening)`,
+                    `EXP (Expiration Date)`,
+                    `MFD (Manufacturing Date)`,
+                ],
+                explanation: `PAO (Period After Opening) သည် အလှကုန်ဖွင့်ပြီးနောက် အသုံးပြုနိုင်သောကာလကို ဖော်ပြသောသင်္ကေတဖြစ်ပြီး ဖွင့်ထားသောဗူးပုံနှင့် ဂဏန်းနှင့် "M" (လ) ဖြင့် ဖော်ပြသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `유통기한`, native: `hạn sử dụng` },
+                { korean: `개봉`, native: `mở nắp` },
+                { korean: `기호`, native: `ký hiệu` },
+                { korean: `PAO`, native: `PAO (Period After Opening)` },
+                { korean: `표시`, native: `nhãn / ký hiệu` },
+            ],
+            zh: [
+                { korean: `유통기한`, native: `保质期` },
+                { korean: `개봉`, native: `开封` },
+                { korean: `기호`, native: `标识` },
+                { korean: `PAO`, native: `PAO (开封后使用期限)` },
+                { korean: `표시`, native: `标示` },
+            ],
+            th: [
+                { korean: `유통기한`, native: `วันหมดอายุ` },
+                { korean: `개봉`, native: `การเปิดฝา` },
+                { korean: `PAO`, native: `PAO (ระยะเวลาหลังเปิด)` },
+                { korean: `기호`, native: `สัญลักษณ์` },
+            ],
+            tl: [
+                { korean: `유통기한`, native: `petsa ng pag-expire` },
+                { korean: `개봉`, native: `pagbukas` },
+                { korean: `PAO`, native: `PAO (Period After Opening)` },
+                { korean: `기호`, native: `simbolo` },
+            ],
+            my: [
+                { korean: `유통기한`, native: `သက်တမ်းကုန်ဆုံးရက်` },
+                { korean: `개봉`, native: `ဖွင့်ခြင်း` },
+                { korean: `PAO`, native: `PAO (ဖွင့်ပြီးနောက် ကာလ)` },
+                { korean: `기호`, native: `သင်္ကေတ` },
+            ],
+        },
     },
     {
         id: 'bg-28',
@@ -2127,6 +2654,92 @@ export const beautyGeneralQuestions = [
         explanation: '화장품법에 따라 전 성분은 함량이 많은 성분부터 순서대로 표시해야 합니다. 다만 1% 이하 성분은 순서에 관계없이 나열할 수 있습니다.',
         simpleExplanation: '화장품 성분은 많이 들어간 순서대로 써야 해요. 첫 번째가 가장 많이 들어있어요.',
         keywords: ['성분표시', '함량순', '전성분표시'],
+        translations: {
+            vi: {
+                question: `Nguyên tắc khi liệt kê tên thành phần trong bảng thành phần mỹ phẩm là gì?`,
+                options: [
+                    `Liệt kê theo thứ tự bảng chữ cái`,
+                    `Liệt kê theo thứ tự từ thành phần có hàm lượng nhiều nhất`,
+                    `Liệt kê tên thành phần theo thứ tự bảng chữ cái Hàn Quốc (ga-na-da)`,
+                    `Nhà sản xuất tự quyết định`,
+                ],
+                explanation: `Theo luật mỹ phẩm, tất cả thành phần phải được ghi theo thứ tự từ thành phần có hàm lượng nhiều nhất. Tuy nhiên, thành phần dưới 1% có thể liệt kê theo bất kỳ thứ tự nào.`,
+            },
+            zh: {
+                question: `化妆品成分标示中，列出成分名称的原则是什么？`,
+                options: [
+                    `按字母顺序排列`,
+                    `按成分含量从多到少的顺序排列`,
+                    `按韩文字母顺序排列`,
+                    `由制造商任意决定`,
+                ],
+                explanation: `根据化妆品法，全成分须按含量由多到少的顺序标示。但含量1%以下的成分可不按顺序排列。`,
+            },
+            th: {
+                question: `หลักการในการระบุชื่อส่วนผสมในฉลากเครื่องสำอางคืออะไร?`,
+                options: [
+                    `เรียงตามลำดับตัวอักษร`,
+                    `เรียงตามลำดับจากส่วนผสมที่มีปริมาณมากที่สุด`,
+                    `เรียงชื่อส่วนผสมตามลำดับตัวอักษรเกาหลี`,
+                    `ผู้ผลิตกำหนดตามดุลพินิจ`,
+                ],
+                explanation: `ตามกฎหมายเครื่องสำอาง ส่วนผสมทั้งหมดต้องระบุตามลำดับจากปริมาณมากที่สุด อย่างไรก็ตาม ส่วนผสมที่มีปริมาณต่ำกว่า 1% สามารถระบุตามลำดับใดก็ได้`,
+            },
+            tl: {
+                question: `Ano ang prinsipyo sa paglilista ng mga pangalan ng sangkap sa label ng kosmetiko?`,
+                options: [
+                    `Ilista ayon sa pagkakasunod-sunod ng alpabeto`,
+                    `Ilista ayon sa pagkakasunod-sunod mula sa sangkap na may pinakamaraming nilalaman`,
+                    `Ilista ang mga sangkap ayon sa Korean alphabetical order`,
+                    `Ang tagagawa ang magpapasya`,
+                ],
+                explanation: `Ayon sa Batas ng Kosmetiko, lahat ng sangkap ay dapat ilista ayon sa pagkakasunod-sunod mula sa pinakamaraming nilalaman. Ngunit ang mga sangkap na wala pang 1% ay maaaring ilista sa anumang pagkakasunod.`,
+            },
+            my: {
+                question: `အလှကုန် ပါဝင်ပစ္စည်း ဖော်ပြချက်တွင် ပါဝင်ပစ္စည်းအမည်များ စာရင်းပြုစုရာတွင် မူဝါဒမှာ မည်သည်နည်း?`,
+                options: [
+                    `အက္ခရာစဉ်အတိုင်း စာရင်းပြုစုသည်`,
+                    `ပါဝင်မှုအများဆုံးသော ပါဝင်ပစ္စည်းမှ အစဉ်အတိုင်း စာရင်းပြုစုသည်`,
+                    `ကိုရီးယားအက္ခရာစဉ်အတိုင်း စာရင်းပြုစုသည်`,
+                    `ထုတ်လုပ်သူ မိမိဆုံးဖြတ်သည်`,
+                ],
+                explanation: `အလှကုန်ဥပဒေအရ ပါဝင်ပစ္စည်းအားလုံးကို ပမာဏ အများဆုံးမှ အနည်းဆုံးသို့ အစဉ်အတိုင်း ဖော်ပြရမည်။ သို့သော် 1% အောက် ပါဝင်ပစ္စည်းများကို မည်သည့်အစဉ်ဖြင့်မဆို ဖော်ပြနိုင်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `화장품`, native: `mỹ phẩm` },
+                { korean: `성분`, native: `thành phần` },
+                { korean: `함량`, native: `hàm lượng` },
+                { korean: `표시`, native: `ghi nhãn / hiển thị` },
+                { korean: `제조사`, native: `nhà sản xuất` },
+            ],
+            zh: [
+                { korean: `화장품`, native: `化妆品` },
+                { korean: `성분`, native: `成分` },
+                { korean: `함량`, native: `含量` },
+                { korean: `표시`, native: `标示` },
+                { korean: `제조사`, native: `制造商` },
+            ],
+            th: [
+                { korean: `화장품`, native: `เครื่องสำอาง` },
+                { korean: `성분`, native: `ส่วนผสม` },
+                { korean: `함량`, native: `ปริมาณ` },
+                { korean: `표시`, native: `การแสดงฉลาก` },
+            ],
+            tl: [
+                { korean: `화장품`, native: `kosmetiko` },
+                { korean: `성분`, native: `sangkap` },
+                { korean: `함량`, native: `nilalaman` },
+                { korean: `표시`, native: `label` },
+            ],
+            my: [
+                { korean: `화장품`, native: `အလှကုန်` },
+                { korean: `성분`, native: `ပါဝင်ပစ္စည်း` },
+                { korean: `함량`, native: `ပမာဏ` },
+                { korean: `표시`, native: `ဖော်ပြချက်` },
+            ],
+        },
     },
     {
         id: 'bg-29',
@@ -2144,6 +2757,92 @@ export const beautyGeneralQuestions = [
         explanation: '헤어 컨디셔너는 샴푸 후 알칼리성이 된 모발의 큐티클을 산성으로 닫아주고 유분과 수분을 공급하여 모발을 부드럽고 윤기 있게 만듭니다.',
         simpleExplanation: '컨디셔너는 머리카락을 부드럽게 해줘요. 큐티클을 정돈해서 윤기도 나게 해요.',
         keywords: ['컨디셔너', '린스', '큐티클', '모발'],
+        translations: {
+            vi: {
+                question: `Vai trò chính của dầu xả tóc (rinse conditioner) là gì?`,
+                options: [
+                    `Loại bỏ tế bào chết trên da đầu`,
+                    `Tẩy màu tóc`,
+                    `Làm phẳng và mềm mại lớp cuticle của tóc`,
+                    `Kích thích tuần hoàn máu da đầu`,
+                ],
+                explanation: `Dầu xả tóc giúp đóng lại lớp cuticle bị kiềm hóa sau khi gội, cung cấp dầu và độ ẩm, làm cho tóc mềm mại và bóng mượt.`,
+            },
+            zh: {
+                question: `护发素（润丝）的主要作用是什么？`,
+                options: [
+                    `去除头皮角质`,
+                    `漂白头发`,
+                    `整顿并柔软头发的毛鳞片`,
+                    `促进头皮血液循环`,
+                ],
+                explanation: `护发素能将洗发后呈碱性的毛鳞片恢复为酸性并闭合，同时补充油分和水分，使头发柔滑有光泽。`,
+            },
+            th: {
+                question: `หน้าที่หลักของครีมนวดผม (rinse conditioner) คืออะไร?`,
+                options: [
+                    `ขจัดเซลล์ผิวหนังตายบนหนังศีรษะ`,
+                    `ฟอกสีผม`,
+                    `จัดระเบียบและทำให้ cuticle ของเส้นผมนุ่มลง`,
+                    `กระตุ้นการไหลเวียนโลหิตของหนังศีรษะ`,
+                ],
+                explanation: `ครีมนวดผมช่วยปิด cuticle ที่เป็นด่างหลังจากสระผม และให้ความชุ่มชื้นและน้ำมัน ทำให้เส้นผมนุ่มและมีประกาย`,
+            },
+            tl: {
+                question: `Ano ang pangunahing papel ng conditioner (rinse) ng buhok?`,
+                options: [
+                    `Tanggalin ang patay na balat sa anit`,
+                    `Ibigay ng kulay sa buhok`,
+                    `Ayusin at palamigin ang cuticle ng buhok`,
+                    `Palakasin ang sirkulasyon ng dugo sa anit`,
+                ],
+                explanation: `Ang conditioner ay nagtatakip ng cuticle na naging alkaline pagkatapos shampoo, nagbibigay ng langis at moisture, at ginagawang malambot at makintab ang buhok.`,
+            },
+            my: {
+                question: `ဆံပင်conditioner (rinse) ၏ အဓိကလုပ်ဆောင်ချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `ဦးရေပြား၏ သေသောဆဲလ်များကို ဖယ်ရှားသည်`,
+                    `ဆံပင်ကို အရောင်ဖျောက်သည်`,
+                    `ဆံပင်၏ cuticle ကို ညှင်နာမွတ်ပြောင်ပြောင်ဖြစ်အောင် ပြုလုပ်သည်`,
+                    `ဦးရေပြားသွေးစီးဆင်းမှုကို ဆောင်ကြဉ်းပေးသည်`,
+                ],
+                explanation: `Conditioner သည် ရေချိုးပြီးနောက် အယ်လ်ကာလိုင်းဖြစ်ဆင်းသော cuticle ကို အက်စစ်ဖြင့် ပိတ်ကာ ဆီဓာတ်နှင့်အစိုဓာတ် ဖြည့်တင်းပြီး ဆံပင်ကို ညှင်နှင်မျမ်မောင်ဖြစ်အောင် ပြုလုပ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `컨디셔너`, native: `dầu xả tóc / conditioner` },
+                { korean: `린스`, native: `rinse` },
+                { korean: `모발`, native: `tóc` },
+                { korean: `큐티클`, native: `cuticle` },
+                { korean: `두피`, native: `da đầu` },
+            ],
+            zh: [
+                { korean: `컨디셔너`, native: `护发素` },
+                { korean: `린스`, native: `润丝` },
+                { korean: `모발`, native: `头发` },
+                { korean: `큐티클`, native: `毛鳞片` },
+                { korean: `두피`, native: `头皮` },
+            ],
+            th: [
+                { korean: `컨디셔너`, native: `ครีมนวดผม` },
+                { korean: `모발`, native: `เส้นผม` },
+                { korean: `큐티클`, native: `cuticle` },
+                { korean: `두피`, native: `หนังศีรษะ` },
+            ],
+            tl: [
+                { korean: `컨디셔너`, native: `conditioner` },
+                { korean: `모발`, native: `buhok` },
+                { korean: `큐티클`, native: `cuticle` },
+                { korean: `두피`, native: `anit` },
+            ],
+            my: [
+                { korean: `컨디셔너`, native: `conditioner` },
+                { korean: `모발`, native: `ဆံပင်` },
+                { korean: `큐티클`, native: `cuticle` },
+                { korean: `두피`, native: `ဦးရေပြား` },
+            ],
+        },
     },
     {
         id: 'bg-30',
@@ -2161,6 +2860,92 @@ export const beautyGeneralQuestions = [
         explanation: '유화는 물과 기름처럼 서로 섞이지 않는 두 물질을 계면활성제의 도움으로 균일하게 혼합한 상태를 말합니다. 로션, 크림이 유화 제형입니다.',
         simpleExplanation: '유화는 물과 기름을 고르게 섞은 거예요. 로션이나 크림이 바로 유화 제형이에요.',
         keywords: ['유화', '에멀전', '계면활성제'],
+        translations: {
+            vi: {
+                question: `Trong mỹ phẩm, nhũ hóa (Emulsion) có nghĩa là gì?`,
+                options: [
+                    `Là quá trình hòa tan hương liệu vào nước`,
+                    `Là trạng thái nước và dầu được trộn đều đồng nhất`,
+                    `Là việc phân tán đều chất màu trong mỹ phẩm`,
+                    `Là quá trình đun nóng mỹ phẩm để đồng nhất hóa`,
+                ],
+                explanation: `Nhũ hóa là trạng thái hai chất không hòa tan như nước và dầu được trộn đều với sự hỗ trợ của chất hoạt động bề mặt. Lotion và kem là các sản phẩm nhũ hóa.`,
+            },
+            zh: {
+                question: `在化妆品中，乳化（Emulsion）是指什么？`,
+                options: [
+                    `是将香料溶于水的过程`,
+                    `是水和油均匀混合的状态`,
+                    `是将化妆品中的色素均匀分散`,
+                    `是将化妆品加热使其均质的过程`,
+                ],
+                explanation: `乳化是指通过表面活性剂将水和油这两种互不相溶的物质均匀混合的状态。乳液、面霜就是乳化剂型。`,
+            },
+            th: {
+                question: `ในเครื่องสำอาง การอิมัลชัน (Emulsion) หมายความว่าอะไร?`,
+                options: [
+                    `คือกระบวนการละลายน้ำหอมในน้ำ`,
+                    `คือสภาวะที่น้ำและน้ำมันผสมกันอย่างสม่ำเสมอ`,
+                    `คือการกระจายเม็ดสีในเครื่องสำอางอย่างสม่ำเสมอ`,
+                    `คือกระบวนการทำให้เครื่องสำอางเป็นเนื้อเดียวกันโดยการให้ความร้อน`,
+                ],
+                explanation: `การอิมัลชันคือสภาวะที่สารสองชนิดที่ไม่ผสมกัน เช่น น้ำและน้ำมัน ผสมกันอย่างสม่ำเสมอด้วยความช่วยเหลือของสารลดแรงตึงผิว โลชั่นและครีมคือผลิตภัณฑ์อิมัลชัน`,
+            },
+            tl: {
+                question: `Sa kosmetiko, ano ang kahulugan ng emulsification (paghahalo)?`,
+                options: [
+                    `Ito ang proseso ng pagtunaw ng pabango sa tubig`,
+                    `Ito ang estado kung saan ang tubig at langis ay pantay-pantay na naghalo`,
+                    `Ito ang pagkalat ng pigment ng kosmetiko nang pantay-pantay`,
+                    `Ito ang proseso ng pagpainit ng kosmetiko para gawing homogenous`,
+                ],
+                explanation: `Ang emulsification ay ang estado kung saan ang dalawang sangkap na hindi magkasama tulad ng tubig at langis ay naihalo nang pantay-pantay sa tulong ng surfactant. Ang lotion at cream ay mga produktong emulsion.`,
+            },
+            my: {
+                question: `အလှကုန်တွင် emulsification (Emulsion) ဆိုသည်မှာ မည်သည်ကို ဆိုလိုသနည်း?`,
+                options: [
+                    `ရေတွင် နံ့သာဆေးကို ပျော်ဝင်စေသောလုပ်ငန်းစဉ်ဖြစ်သည်`,
+                    `ရေနှင့်ဆီ တည်ညီသောပမာဏဖြင့် ရောနှောထားသောအခြေအနေဖြစ်သည်`,
+                    `အလှကုန်တွင် ဆိုးဆေးများ တည်ညီသောပမာဏဖြင့် ကြဲဆွဲထားသောဖြစ်သည်`,
+                    `အလှကုန်ကို အပူပေးပြီး ညီမျှသောပမာဏဖြစ်အောင် ပြုလုပ်သောလုပ်ငန်းစဉ်ဖြစ်သည်`,
+                ],
+                explanation: `Emulsification သည် ရေနှင့်ဆီကဲ့သို့ ရောနှောမရသောပစ္စည်းနှစ်ခုကို surfactant ၏ အကူအညီဖြင့် တည်ညီသောပမာဏဖြင့် ရောနှောထားသောအခြေအနေဖြစ်သည်။ Lotion နှင့် cream တို့သည် emulsion ပုံစံဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `유화`, native: `nhũ hóa / emulsion` },
+                { korean: `화장품`, native: `mỹ phẩm` },
+                { korean: `기름`, native: `dầu` },
+                { korean: `혼합`, native: `hỗn hợp / trộn lẫn` },
+                { korean: `향료`, native: `hương liệu` },
+            ],
+            zh: [
+                { korean: `유화`, native: `乳化` },
+                { korean: `화장품`, native: `化妆品` },
+                { korean: `기름`, native: `油` },
+                { korean: `혼합`, native: `混合` },
+                { korean: `향료`, native: `香料` },
+            ],
+            th: [
+                { korean: `유화`, native: `การอิมัลชัน` },
+                { korean: `화장품`, native: `เครื่องสำอาง` },
+                { korean: `기름`, native: `น้ำมัน` },
+                { korean: `혼합`, native: `การผสม` },
+            ],
+            tl: [
+                { korean: `유화`, native: `emulsification` },
+                { korean: `화장품`, native: `kosmetiko` },
+                { korean: `기름`, native: `langis` },
+                { korean: `혼합`, native: `paghahalo` },
+            ],
+            my: [
+                { korean: `유화`, native: `emulsification` },
+                { korean: `화장품`, native: `အလှကုန်` },
+                { korean: `기름`, native: `ဆီ` },
+                { korean: `혼합`, native: `ရောနှောခြင်း` },
+            ],
+        },
     },
     {
         id: 'bg-31',
@@ -2178,6 +2963,92 @@ export const beautyGeneralQuestions = [
         explanation: '화장품 광고에서 질병 치료·예방을 표방하는 의약품적 표현은 금지됩니다. 화장품은 피부를 가꾸는 제품이지 치료제가 아닙니다.',
         simpleExplanation: '화장품 광고에서 "병을 고친다"고 하면 안 돼요. 그건 약품에만 쓸 수 있는 표현이에요.',
         keywords: ['화장품광고', '표시광고', '금지표현'],
+        translations: {
+            vi: {
+                question: `Trong các lựa chọn sau, biểu đạt nào KHÔNG được phép trong quảng cáo mỹ phẩm?`,
+                options: [
+                    `"Có hiệu quả dưỡng ẩm"`,
+                    `"Cải thiện kết cấu da"`,
+                    `"Sản phẩm này có thể chữa ung thư da"`,
+                    `"Giúp da ẩm mượt"`,
+                ],
+                explanation: `Trong quảng cáo mỹ phẩm, các biểu đạt mang tính chất chữa bệnh hoặc phòng bệnh của thuốc bị cấm. Mỹ phẩm là sản phẩm chăm sóc da, không phải thuốc điều trị.`,
+            },
+            zh: {
+                question: `以下哪项表达在化妆品广告中是不允许的？`,
+                options: [
+                    `"具有保湿效果"`,
+                    `"改善皮肤纹理"`,
+                    `"此产品可以治疗皮肤癌"`,
+                    `"使皮肤水润"`,
+                ],
+                explanation: `化妆品广告中禁止使用标榜治疗或预防疾病的药品类表达。化妆品是护肤产品，而非治疗药品。`,
+            },
+            th: {
+                question: `ข้อใดในตัวเลือกต่อไปนี้เป็นการแสดงออกที่ไม่อนุญาตในโฆษณาเครื่องสำอาง?`,
+                options: [
+                    `"มีประสิทธิภาพในการให้ความชุ่มชื้น"`,
+                    `"ปรับปรุงเนื้อสัมผัสของผิว"`,
+                    `"ผลิตภัณฑ์นี้สามารถรักษามะเร็งผิวหนัง"`,
+                    `"ทำให้ผิวชุ่มชื้น"`,
+                ],
+                explanation: `ในโฆษณาเครื่องสำอางห้ามใช้การแสดงออกแบบยารักษาหรือป้องกันโรค เครื่องสำอางเป็นผลิตภัณฑ์บำรุงผิว ไม่ใช่ยารักษาโรค`,
+            },
+            tl: {
+                question: `Alin sa mga sumusunod na pagpapahayag ang HINDI pinahihintulutan sa advertising ng kosmetiko?`,
+                options: [
+                    `"Mayroon itong moisturizing effect"`,
+                    `"Nagpapabuti ng texture ng balat"`,
+                    `"Ang produktong ito ay makakalunas ng skin cancer"`,
+                    `"Ginagawang mahalumigmig ang balat"`,
+                ],
+                explanation: `Sa advertising ng kosmetiko, ipinagbabawal ang mga pahayag na nagpapahiwatig ng paggamot o pag-iwas sa sakit tulad ng gamot. Ang kosmetiko ay produkto para sa pag-aalaga ng balat, hindi panlunas.`,
+            },
+            my: {
+                question: `အလှကုန်ကြော်ငြာတွင် ခွင့်မပြုသောဖော်ပြချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `"အစိုဓာတ်ဖြည့်တင်းမှုရှိသည်"`,
+                    `"အရေပြားအရည်အသွေးကို တိုးတက်စေသည်"`,
+                    `"ဤထုတ်ကုန်ဖြင့် အရေပြားကင်ဆာကို ကုသနိုင်သည်"`,
+                    `"အရေပြားကို ဆင်ခြေဆင်ကြောင် ပြုလုပ်ပေးသည်"`,
+                ],
+                explanation: `အလှကုန်ကြော်ငြာတွင် ဆေးဝါးကဲ့သို့ ရောဂါကုသမှုနှင့် ကာကွယ်မှုဖော်ပြချက်များကို တားမြစ်သည်။ အလှကုန်သည် အရေပြားပြုစုစောင့်ရှောက်သောထုတ်ကုန်ဖြစ်ပြီး ကုသဆေးမဟုတ်ပါ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `화장품`, native: `mỹ phẩm` },
+                { korean: `광고`, native: `quảng cáo` },
+                { korean: `허용`, native: `được phép / cho phép` },
+                { korean: `피부`, native: `da` },
+                { korean: `치료`, native: `điều trị / chữa bệnh` },
+            ],
+            zh: [
+                { korean: `화장품`, native: `化妆品` },
+                { korean: `광고`, native: `广告` },
+                { korean: `허용`, native: `允许` },
+                { korean: `피부`, native: `皮肤` },
+                { korean: `치료`, native: `治疗` },
+            ],
+            th: [
+                { korean: `화장품`, native: `เครื่องสำอาง` },
+                { korean: `광고`, native: `โฆษณา` },
+                { korean: `피부`, native: `ผิวหนัง` },
+                { korean: `치료`, native: `การรักษา` },
+            ],
+            tl: [
+                { korean: `화장품`, native: `kosmetiko` },
+                { korean: `광고`, native: `advertising` },
+                { korean: `피부`, native: `balat` },
+                { korean: `치료`, native: `lunas / paggamot` },
+            ],
+            my: [
+                { korean: `화장품`, native: `အလှကုန်` },
+                { korean: `광고`, native: `ကြော်ငြာ` },
+                { korean: `피부`, native: `အရေပြား` },
+                { korean: `치료`, native: `ကုသမှု` },
+            ],
+        },
     },
     {
         id: 'bg-32',
@@ -2195,6 +3066,92 @@ export const beautyGeneralQuestions = [
         explanation: 'PA는 UVA 차단 등급으로, PA+~PA++++로 표시됩니다. UVA는 피부 노화와 색소침착을 유발하는 자외선입니다.',
         simpleExplanation: 'PA는 피부 노화를 일으키는 UVA를 막는 정도예요. +가 많을수록 더 잘 막아요.',
         keywords: ['PA', 'UVA', '자외선차단'],
+        translations: {
+            vi: {
+                question: `Điều nào mô tả đúng về PA (Protection Grade of UVA)?`,
+                options: [
+                    `Biểu thị chỉ số chặn UVB`,
+                    `Biểu thị cấp độ chặn UVA`,
+                    `Biểu thị khả năng chặn toàn bộ tia UV`,
+                    `Biểu thị khả năng bảo quản của mỹ phẩm`,
+                ],
+                explanation: `PA là cấp độ chặn UVA, được biểu thị từ PA+ đến PA++++. UVA gây lão hóa da và tăng sắc tố melanin.`,
+            },
+            zh: {
+                question: `关于PA（Protection Grade of UVA），描述正确的是？`,
+                options: [
+                    `表示UVB防晒指数`,
+                    `表示UVA防护等级`,
+                    `表示对全体紫外线的防护力`,
+                    `表示化妆品的防腐能力`,
+                ],
+                explanation: `PA是UVA防护等级，以PA+~PA++++表示。UVA是导致皮肤老化和色素沉着的紫外线。`,
+            },
+            th: {
+                question: `คำอธิบายที่ถูกต้องเกี่ยวกับ PA (Protection Grade of UVA) คืออะไร?`,
+                options: [
+                    `แสดงถึงดัชนีกันแดด UVB`,
+                    `แสดงถึงระดับการป้องกัน UVA`,
+                    `แสดงถึงความสามารถในการกั้น UV ทั้งหมด`,
+                    `แสดงถึงความสามารถในการกันเสียของเครื่องสำอาง`,
+                ],
+                explanation: `PA คือระดับการป้องกัน UVA แสดงด้วย PA+ ถึง PA++++ UVA คือรังสีที่ทำให้ผิวแก่และเกิดการสะสมของเม็ดสี`,
+            },
+            tl: {
+                question: `Alin ang tamang paglalarawan tungkol sa PA (Protection Grade of UVA)?`,
+                options: [
+                    `Nagpapakita ng index ng pag-block ng UVB`,
+                    `Nagpapakita ng antas ng proteksyon ng UVA`,
+                    `Nagpapakita ng kakayahan ng pag-block ng lahat ng UV`,
+                    `Nagpapakita ng kakayahan ng preservative ng kosmetiko`,
+                ],
+                explanation: `Ang PA ay ang antas ng proteksyon ng UVA, na kinakatawan ng PA+ hanggang PA++++. Ang UVA ay sanhi ng pagtanda ng balat at pagdidilim ng kulay.`,
+            },
+            my: {
+                question: `PA (Protection Grade of UVA) နှင့် ပတ်သက်သော မှန်ကန်သောဖော်ပြချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `UVB ကာကွယ်မှုအညွှန်းကိန်းကို ဖော်ပြသည်`,
+                    `UVA ကာကွယ်မှုအဆင့်ကို ဖော်ပြသည်`,
+                    `UV အားလုံးကာကွယ်မှုကို ဖော်ပြသည်`,
+                    `အလှကုန်ထိန်းသိမ်းမှုစွမ်းရည်ကို ဖော်ပြသည်`,
+                ],
+                explanation: `PA သည် UVA ကာကွယ်မှုအဆင့်ဖြစ်ပြီး PA+ မှ PA++++ ဖြင့် ဖော်ပြသည်။ UVA သည် အရေပြားအိုမင်းမှုနှင့် အရောင်နက်ခြင်းကို ဖြစ်ပေါ်စေသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `PA`, native: `PA (cấp độ chặn UVA)` },
+                { korean: `UVA`, native: `UVA (tia cực tím A)` },
+                { korean: `차단`, native: `chặn / bảo vệ` },
+                { korean: `등급`, native: `cấp độ` },
+                { korean: `자외선`, native: `tia UV / tia cực tím` },
+            ],
+            zh: [
+                { korean: `PA`, native: `PA（UVA防护等级）` },
+                { korean: `UVA`, native: `UVA（长波紫外线）` },
+                { korean: `차단`, native: `防护 / 阻断` },
+                { korean: `등급`, native: `等级` },
+                { korean: `자외선`, native: `紫外线` },
+            ],
+            th: [
+                { korean: `PA`, native: `PA (ระดับการป้องกัน UVA)` },
+                { korean: `UVA`, native: `UVA` },
+                { korean: `차단`, native: `การป้องกัน` },
+                { korean: `등급`, native: `ระดับ` },
+            ],
+            tl: [
+                { korean: `PA`, native: `PA (antas ng proteksyon ng UVA)` },
+                { korean: `UVA`, native: `UVA` },
+                { korean: `차단`, native: `proteksyon` },
+                { korean: `등급`, native: `antas` },
+            ],
+            my: [
+                { korean: `PA`, native: `PA (UVA ကာကွယ်မှုအဆင့်)` },
+                { korean: `UVA`, native: `UVA` },
+                { korean: `차단`, native: `ကာကွယ်မှု` },
+                { korean: `등급`, native: `အဆင့်` },
+            ],
+        },
     },
     {
         id: 'bg-33',
@@ -2212,6 +3169,92 @@ export const beautyGeneralQuestions = [
         explanation: '샴푸는 계면활성제를 주성분으로 하여 두피와 모발의 피지, 먼지, 각질 등 오염물질을 세정하는 두발용 화장품입니다.',
         simpleExplanation: '샴푸는 두피와 머리카락의 더러움을 씻어내는 거예요. 세정이 주된 역할이에요.',
         keywords: ['샴푸', '세정', '두발화장품'],
+        translations: {
+            vi: {
+                question: `Chức năng chính của dầu gội (shampoo) trong mỹ phẩm dưỡng tóc là gì?`,
+                options: [
+                    `Cung cấp dưỡng chất cho tóc, hỗ trợ tăng trưởng`,
+                    `Làm sạch chất bẩn trên da đầu và tóc`,
+                    `Thay đổi màu sắc của tóc`,
+                    `Tạo sóng uốn tóc vĩnh viễn`,
+                ],
+                explanation: `Dầu gội với thành phần chính là chất hoạt động bề mặt, làm sạch bã nhờn, bụi bẩn, tế bào chết và các chất bẩn khác trên da đầu và tóc.`,
+            },
+            zh: {
+                question: `头发用化妆品中，洗发水的主要功能是什么？`,
+                options: [
+                    `为头发提供营养，促进生长`,
+                    `清洁头皮和头发上的污垢`,
+                    `改变头发的颜色`,
+                    `形成永久波浪`,
+                ],
+                explanation: `洗发水以表面活性剂为主要成分，用于清洁头皮和头发上的皮脂、灰尘、角质等污垢，是头发用化妆品。`,
+            },
+            th: {
+                question: `หน้าที่หลักของแชมพู (shampoo) ในเครื่องสำอางสำหรับเส้นผมคืออะไร?`,
+                options: [
+                    `ให้สารอาหารแก่เส้นผม ช่วยในการเจริญเติบโต`,
+                    `ทำความสะอาดสิ่งสกปรกบนหนังศีรษะและเส้นผม`,
+                    `เปลี่ยนสีของเส้นผม`,
+                    `สร้างคลื่นถาวร`,
+                ],
+                explanation: `แชมพูมีสารลดแรงตึงผิวเป็นส่วนประกอบหลัก ทำความสะอาดไขมัน ฝุ่น เซลล์ผิวตาย และสิ่งสกปรกอื่นๆ บนหนังศีรษะและเส้นผม`,
+            },
+            tl: {
+                question: `Ano ang pangunahing tungkulin ng shampoo sa mga kosmetiko para sa buhok?`,
+                options: [
+                    `Magbigay ng nutrisyon sa buhok, tumulong sa paglago`,
+                    `Linisin ang mga dumi sa anit at buhok`,
+                    `Baguhin ang kulay ng buhok`,
+                    `Lumikha ng permanent wave`,
+                ],
+                explanation: `Ang shampoo, na may surfactant bilang pangunahing sangkap, ay naglilinis ng sebum, alikabok, patay na balat at iba pang dumi sa anit at buhok.`,
+            },
+            my: {
+                question: `ဆံပင်အလှကုန်တွင် shampoo ၏ အဓိကလုပ်ဆောင်ချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `ဆံပင်သို့ အာဟာရပေးကာ ကြီးထွားမှုကို ကူညီသည်`,
+                    `ဦးရေပြားနှင့် ဆံပင်ပေါ်မှ ညစ်ညမ်းသောပစ္စည်းများကို သန့်ရှင်းစေသည်`,
+                    `ဆံပင်၏ အရောင်ကို ပြောင်းလဲသည်`,
+                    `အမြဲတမ်းလှိုင်း ဖန်တီးသည်`,
+                ],
+                explanation: `Shampoo သည် surfactant ကို အဓိကပါဝင်ပစ္စည်းအဖြစ် အသုံးပြုကာ ဦးရေပြားနှင့်ဆံပင်ပေါ်ရှိ ဆေးဖတ်၊ ဆုံ၊ သေသောဆဲလ်များနှင့် ညစ်ညမ်းပစ္စည်းများကို သန့်ရှင်းစေသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `샴푸`, native: `dầu gội / shampoo` },
+                { korean: `세정`, native: `làm sạch` },
+                { korean: `두피`, native: `da đầu` },
+                { korean: `모발`, native: `tóc` },
+                { korean: `오염물질`, native: `chất bẩn` },
+            ],
+            zh: [
+                { korean: `샴푸`, native: `洗发水` },
+                { korean: `세정`, native: `清洁` },
+                { korean: `두피`, native: `头皮` },
+                { korean: `모발`, native: `头发` },
+                { korean: `오염물질`, native: `污垢` },
+            ],
+            th: [
+                { korean: `샴푸`, native: `แชมพู` },
+                { korean: `세정`, native: `การทำความสะอาด` },
+                { korean: `두피`, native: `หนังศีรษะ` },
+                { korean: `모발`, native: `เส้นผม` },
+            ],
+            tl: [
+                { korean: `샴푸`, native: `shampoo` },
+                { korean: `세정`, native: `paglilinis` },
+                { korean: `두피`, native: `anit` },
+                { korean: `모발`, native: `buhok` },
+            ],
+            my: [
+                { korean: `샴푸`, native: `shampoo` },
+                { korean: `세정`, native: `သန့်ရှင်းစေခြင်း` },
+                { korean: `두피`, native: `ဦးရေပြား` },
+                { korean: `모발`, native: `ဆံပင်` },
+            ],
+        },
     },
     {
         id: 'bg-34',
@@ -2229,6 +3272,92 @@ export const beautyGeneralQuestions = [
         explanation: '화장품법 제2조에 따르면 화장품은 인체를 청결·미화하거나 피부·모발의 건강을 유지 또는 증진하기 위해 인체에 바르거나 뿌리는 물품으로 정의합니다.',
         simpleExplanation: '화장품은 피부나 모발을 깨끗하게 하거나 아름답게 꾸미기 위한 제품이에요.',
         keywords: ['화장품정의', '화장품법', '화장품분류'],
+        translations: {
+            vi: {
+                question: `Định nghĩa về mỹ phẩm được quy định trong Luật Mỹ phẩm là gì?`,
+                options: [
+                    `Là thuốc bôi lên da để điều trị bệnh`,
+                    `Là sản phẩm bôi hoặc xịt lên cơ thể để tăng thêm vẻ hấp dẫn và giữ cho da và tóc sạch sẽ, đẹp đẽ`,
+                    `Là sản phẩm phi dược phẩm biến đổi da thông qua phản ứng hóa học`,
+                    `Là thực phẩm chức năng để ăn hoặc uống`,
+                ],
+                explanation: `Theo Điều 2 Luật Mỹ phẩm, mỹ phẩm là sản phẩm bôi, xịt lên cơ thể nhằm làm sạch, làm đẹp hoặc duy trì và tăng cường sức khỏe của da và tóc.`,
+            },
+            zh: {
+                question: `化妆品法中规定的化妆品定义是什么？`,
+                options: [
+                    `是为治疗疾病而涂于皮肤的药品`,
+                    `是涂抹或喷洒于人体，以增添魅力并保持皮肤和头发清洁美丽的物品`,
+                    `是通过化学反应改变皮肤的非药物制品`,
+                    `是供食用或饮用的健康功能食品`,
+                ],
+                explanation: `根据化妆品法第2条，化妆品是指涂抹或喷洒于人体，以清洁、美化或维护和促进皮肤及头发健康的物品。`,
+            },
+            th: {
+                question: `คำจำกัดความของเครื่องสำอางตามกฎหมายเครื่องสำอางคืออะไร?`,
+                options: [
+                    `คือยาที่ทาบนผิวเพื่อรักษาโรค`,
+                    `คือสิ่งของที่ทาหรือพ่นลงบนร่างกายเพื่อเพิ่มเสน่ห์และทำให้ผิวหนังและเส้นผมสะอาดสวยงาม`,
+                    `คือผลิตภัณฑ์ที่ไม่ใช่ยาที่เปลี่ยนแปลงผิวผ่านปฏิกิริยาเคมี`,
+                    `คืออาหารเสริมสุขภาพที่รับประทานหรือดื่ม`,
+                ],
+                explanation: `ตามมาตรา 2 ของกฎหมายเครื่องสำอาง เครื่องสำอางหมายถึงสิ่งของที่ทาหรือพ่นลงบนร่างกายเพื่อทำให้สะอาด สวยงาม หรือรักษาและส่งเสริมสุขภาพของผิวหนังและเส้นผม`,
+            },
+            tl: {
+                question: `Ano ang tamang kahulugan ng kosmetiko ayon sa Batas ng Kosmetiko?`,
+                options: [
+                    `Isang gamot na ipinapahid sa balat para gamutin ang sakit`,
+                    `Isang bagay na ipinahid o isinasabog sa katawan upang mapaganda at panatilihing malinis ang balat at buhok`,
+                    `Isang non-pharmaceutical na produkto na nagbabago ng balat sa pamamagitan ng chemical reaction`,
+                    `Isang health functional food na kinakain o iniinom`,
+                ],
+                explanation: `Ayon sa Artikulo 2 ng Batas ng Kosmetiko, ang kosmetiko ay mga bagay na ipinahid o isinasabog sa katawan upang linisin, pagandahin o mapanatili at mapahusay ang kalusugan ng balat at buhok.`,
+            },
+            my: {
+                question: `အလှကုန်ဥပဒေတွင် သတ်မှတ်ထားသော အလှကုန်၏ အဓိပ္ပာယ်ဖွင့်ဆိုချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `ရောဂါကုသရန် အရေပြားပေါ်တွင် ထည့်သောဆေးဝါးဖြစ်သည်`,
+                    `ဆန်ဆာနှင့် လှပမှုကို ပိုမိုတိုးမြှင့်ပြီး အရေပြားနှင့်ဆံပင်ကို သန့်ရှင်း/လှပအောင် ခန္ဓာကိုယ်တွင် သုတ်ကာ/ဖြန်းကာ သုံးသောပစ္စည်းဖြစ်သည်`,
+                    `ဓာတုပြုတ်ဆက်မှုဖြင့် အရေပြားကို ပြောင်းလဲစေသော ဆေးဝါးမဟုတ်သောထုတ်ကုန်ဖြစ်သည်`,
+                    `စားသောက်သောကျန်းမာရေးဆိုင်ရာ အာဟာရဖြည့်ဆေးဖြစ်သည်`,
+                ],
+                explanation: `အလှကုန်ဥပဒေ ပုဒ်မ ၂ အရ အလှကုန်ဆိုသည်မှာ ဆွဲဆောင်မှုတိုးပြီး အရေပြားနှင့်ဆံပင်ကို သန့်ရှင်းလှပအောင် ပြုစုစောင့်ရှောက်ရန် ခန္ဓာကိုယ်တွင် သုတ်ကာ/ဖြန်းကာ သုံးသောပစ္စည်းကို ဆိုသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `화장품`, native: `mỹ phẩm` },
+                { korean: `화장품법`, native: `Luật Mỹ phẩm` },
+                { korean: `피부`, native: `da` },
+                { korean: `인체`, native: `cơ thể người` },
+                { korean: `청결`, native: `sạch sẽ` },
+            ],
+            zh: [
+                { korean: `화장품`, native: `化妆品` },
+                { korean: `화장품법`, native: `化妆品法` },
+                { korean: `피부`, native: `皮肤` },
+                { korean: `인체`, native: `人体` },
+                { korean: `청결`, native: `清洁` },
+            ],
+            th: [
+                { korean: `화장품`, native: `เครื่องสำอาง` },
+                { korean: `피부`, native: `ผิวหนัง` },
+                { korean: `인체`, native: `ร่างกายมนุษย์` },
+                { korean: `청결`, native: `สะอาด` },
+            ],
+            tl: [
+                { korean: `화장품`, native: `kosmetiko` },
+                { korean: `피부`, native: `balat` },
+                { korean: `인체`, native: `katawan ng tao` },
+                { korean: `청결`, native: `malinis` },
+            ],
+            my: [
+                { korean: `화장품`, native: `အလှကုန်` },
+                { korean: `피부`, native: `အရေပြား` },
+                { korean: `인체`, native: `လူ့ခန္ဓာကိုယ်` },
+                { korean: `청결`, native: `သန့်ရှင်းမှု` },
+            ],
+        },
     },
     // ── 공중위생 (beauty-hygiene) bg-35 ~ bg-47 (13문제 추가 → 총 15) ──
     {
@@ -2247,6 +3376,92 @@ export const beautyGeneralQuestions = [
         explanation: '공중위생관리법에 따라 미용업을 하려는 사람은 시장·군수·구청장에게 영업신고를 해야 합니다. 허가제가 아닌 신고제입니다.',
         simpleExplanation: '미용실을 열려면 시청이나 구청에 "신고"를 해야 해요. 허가가 아니라 신고예요!',
         keywords: ['영업신고', '미용업', '시장군수구청장'],
+        translations: {
+            vi: {
+                question: `Để kinh doanh tại cửa hàng làm đẹp, cần phải làm gì với cơ quan có thẩm quyền?`,
+                options: [
+                    `Phải xin phép Bộ Y tế và Phúc lợi`,
+                    `Phải đăng ký kinh doanh với trưởng quận/huyện/phường`,
+                    `Phải đăng ký với Cục An toàn Thực phẩm và Dược phẩm`,
+                    `Phải nộp đơn xin gia nhập Hiệp hội Làm đẹp Hàn Quốc`,
+                ],
+                explanation: `Theo Luật Quản lý Vệ sinh Công cộng, người muốn kinh doanh làm đẹp phải đăng ký kinh doanh với trưởng quận/huyện/phường. Đây là chế độ đăng ký, không phải xin phép.`,
+            },
+            zh: {
+                question: `要在美容院营业，需要向主管机关办理什么手续？`,
+                options: [
+                    `需取得保健福祉部的许可`,
+                    `需向市长·郡守·区厅长进行营业申报`,
+                    `需在食品药品安全处登记`,
+                    `需向韩国美容师协会申请加入`,
+                ],
+                explanation: `根据《公众卫生管理法》，欲从事美容业的人需向市长·郡守·区厅长进行营业申报。采用的是申报制而非许可制。`,
+            },
+            th: {
+                question: `เพื่อประกอบธุรกิจในร้านเสริมสวย จำเป็นต้องทำอะไรกับหน่วยงานที่มีอำนาจ?`,
+                options: [
+                    `ต้องขออนุญาตจากกระทรวงสาธารณสุขและสวัสดิการ`,
+                    `ต้องยื่นแจ้งประกอบธุรกิจต่อนายอำเภอ/ผู้ว่าราชการ`,
+                    `ต้องลงทะเบียนกับสำนักงานอาหารและยา`,
+                    `ต้องยื่นสมัครเข้าร่วมสมาคมช่างเสริมสวยเกาหลี`,
+                ],
+                explanation: `ตามกฎหมายควบคุมสุขลักษณะสาธารณะ ผู้ที่ต้องการประกอบธุรกิจเสริมสวยต้องยื่นแจ้งประกอบธุรกิจต่อนายอำเภอ/เทศมนตรี/ผู้ว่าราชการ ใช้ระบบการแจ้งไม่ใช่ระบบการขออนุญาต`,
+            },
+            tl: {
+                question: `Para makapagnegosyo sa beauty salon, ano ang dapat gawin sa may kapangyarihang ahensya?`,
+                options: [
+                    `Kailangan kumuha ng pahintulot mula sa Kagawaran ng Kalusugan at Kapakanan`,
+                    `Kailangan mag-ulat ng negosyo sa mayor/gobernador/alkalde ng distrito`,
+                    `Kailangan mag-rehistro sa Ahensya ng Kaligtasan ng Pagkain at Gamot`,
+                    `Kailangan mag-apply para sumali sa Korean Beauty Association`,
+                ],
+                explanation: `Ayon sa Batas ng Pamamahala ng Kalinisang-pampubliko, ang mga gustong magtayo ng beauty business ay dapat mag-ulat ng negosyo sa mayor/gobernador/alkalde ng distrito. Ito ay sistema ng pag-uulat, hindi paghingi ng pahintulot.`,
+            },
+            my: {
+                question: `မြင်ကွင်းပြင်ဆိုင်တွင် စီးပွားရေးလုပ်ကိုင်ရန် သက်ဆိုင်ရာအဖွဲ့အစည်းသို့ မည်သည်ကို ပြုလုပ်ရမည်နည်း?`,
+                options: [
+                    `ကျန်းမာရေးနှင့် လူမှုဖူလုံရေးဝန်ကြီးဌာနမှ ခွင့်ပြုချက်ရယူရမည်`,
+                    `မြို့နယ်/ခရိုင်/ရပ်ကွက်ဦးစီးမှူးထံ စီးပွားရေးအကြောင်းကြားရမည်`,
+                    `အစားအစာနှင့်ဆေးဝါးလုံခြုံရေးဌာနတွင် မှတ်ပုံတင်ရမည်`,
+                    `ကိုရီးယားလှပြင်ဝန်ထမ်းအသင်းတွင် အဖွဲ့ဝင်လျှောက်ရမည်`,
+                ],
+                explanation: `ပြည်သူ့ကျန်းမာရေးစီမံခန့်ခွဲမှုဥပဒေအရ မြင်ကွင်းပြင်ဆိုင် စီးပွားရေးလုပ်ကိုင်လိုသူများသည် မြို့နယ်/ခရိုင်/ရပ်ကွက်ဦးစီးမှူးထံ စီးပွားရေးအကြောင်းကြားချက်တင်ရမည်ဖြစ်သည်။ ခွင့်ပြုချက်ဟုမဟုတ် အကြောင်းကြားချက်ဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `미용업소`, native: `cửa hàng làm đẹp` },
+                { korean: `영업신고`, native: `đăng ký kinh doanh` },
+                { korean: `허가`, native: `giấy phép` },
+                { korean: `보건복지부`, native: `Bộ Y tế và Phúc lợi` },
+                { korean: `시장`, native: `thị trưởng` },
+            ],
+            zh: [
+                { korean: `미용업소`, native: `美容院` },
+                { korean: `영업신고`, native: `营业申报` },
+                { korean: `허가`, native: `许可` },
+                { korean: `보건복지부`, native: `保健福祉部` },
+                { korean: `시장`, native: `市长` },
+            ],
+            th: [
+                { korean: `미용업소`, native: `ร้านเสริมสวย` },
+                { korean: `영업신고`, native: `การแจ้งประกอบธุรกิจ` },
+                { korean: `허가`, native: `ใบอนุญาต` },
+                { korean: `시장`, native: `นายกเทศมนตรี` },
+            ],
+            tl: [
+                { korean: `미용업소`, native: `beauty salon` },
+                { korean: `영업신고`, native: `pag-uulat ng negosyo` },
+                { korean: `허가`, native: `pahintulot` },
+                { korean: `시장`, native: `mayor` },
+            ],
+            my: [
+                { korean: `미용업소`, native: `မြင်ကွင်းပြင်ဆိုင်` },
+                { korean: `영업신고`, native: `စီးပွားရေးအကြောင်းကြားချက်` },
+                { korean: `허가`, native: `ခွင့်ပြုချက်` },
+                { korean: `시장`, native: `မြို့နယ်ဦးစီးမှူး` },
+            ],
+        },
     },
     {
         id: 'bg-36',
@@ -2264,6 +3479,92 @@ export const beautyGeneralQuestions = [
         explanation: '자비소독(끓는 물 소독)은 100°C 끓는 물에 10분 이상 가열하는 방법으로, 금속 미용 기구 소독에 활용됩니다.',
         simpleExplanation: '자비소독은 100도 끓는 물에 10분 이상 담그는 거예요. 세균을 없애줘요.',
         keywords: ['자비소독', '금속기구', '미용소독'],
+        translations: {
+            vi: {
+                question: `Tiêu chuẩn khử trùng bằng nước sôi (tự bí khử trùng) khi khử trùng dụng cụ kim loại như kéo, lược tại cửa hàng làm đẹp là gì?`,
+                options: [
+                    `Ít nhất 5 phút ở 60°C`,
+                    `Ít nhất 10 phút ở 100°C`,
+                    `Ít nhất 20 phút ở 80°C`,
+                    `Ít nhất 30 phút ở 100°C`,
+                ],
+                explanation: `Khử trùng bằng nước sôi (đun sôi) là phương pháp đun nóng trong nước sôi 100°C ít nhất 10 phút, được sử dụng để khử trùng dụng cụ làm đẹp kim loại.`,
+            },
+            zh: {
+                question: `在美容院对剪刀、梳子等金属器具进行煮沸消毒时，标准是什么？`,
+                options: [
+                    `在60°C下至少5分钟`,
+                    `在100°C下至少10分钟`,
+                    `在80°C下至少20分钟`,
+                    `在100°C下至少30分钟`,
+                ],
+                explanation: `煮沸消毒是在100°C沸水中加热至少10分钟的方法，用于美容金属器具的消毒。`,
+            },
+            th: {
+                question: `มาตรฐานการฆ่าเชื้อด้วยน้ำเดือด (การต้ม) เมื่อทำความสะอาดเครื่องมือโลหะ เช่น กรรไกร หวี ในร้านเสริมสวยคืออะไร?`,
+                options: [
+                    `อย่างน้อย 5 นาทีที่ 60°C`,
+                    `อย่างน้อย 10 นาทีที่ 100°C`,
+                    `อย่างน้อย 20 นาทีที่ 80°C`,
+                    `อย่างน้อย 30 นาทีที่ 100°C`,
+                ],
+                explanation: `การฆ่าเชื้อด้วยน้ำเดือดคือวิธีการต้มในน้ำเดือด 100°C อย่างน้อย 10 นาที ใช้สำหรับฆ่าเชื้อเครื่องมือโลหะในร้านเสริมสวย`,
+            },
+            tl: {
+                question: `Ano ang pamantayan ng disinfection sa pamamagitan ng kumukulong tubig kapag dinidesinfekto ang mga metal na kagamitan tulad ng gunting at suklay sa beauty salon?`,
+                options: [
+                    `Hindi bababa sa 5 minuto sa 60°C`,
+                    `Hindi bababa sa 10 minuto sa 100°C`,
+                    `Hindi bababa sa 20 minuto sa 80°C`,
+                    `Hindi bababa sa 30 minuto sa 100°C`,
+                ],
+                explanation: `Ang disinfection sa pamamagitan ng kumukulong tubig ay paraan ng pagpapainit sa kumukulong tubig na 100°C nang hindi bababa sa 10 minuto, na ginagamit para sa disinfection ng metal na kagamitan sa beauty.`,
+            },
+            my: {
+                question: `မြင်ကွင်းပြင်ဆိုင်တွင် ကတ်ကြေး၊ ဆံပင်ဖြီးစသည့် သတ္တုပစ္စည်းများကို ဆူပူသောရေဖြင့် ပိုးသတ်ရာတွင် စံနှုန်းမှာ မည်မျှနည်း?`,
+                options: [
+                    `60°C တွင် ၅ မိနစ်အနည်းဆုံး`,
+                    `100°C တွင် ၁၀ မိနစ်အနည်းဆုံး`,
+                    `80°C တွင် ၂၀ မိနစ်အနည်းဆုံး`,
+                    `100°C တွင် ၃၀ မိနစ်အနည်းဆုံး`,
+                ],
+                explanation: `ဆူပူသောရေဖြင့် ပိုးသတ်ခြင်းသည် 100°C ဆူပူသောရေတွင် ၁၀ မိနစ်အနည်းဆုံး အပူပေးသောနည်းဖြစ်ပြီး သတ္တုမြင်ကွင်းပြင်ကိရိယာများကို ပိုးသတ်ရာတွင် အသုံးပြုသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `자비소독`, native: `khử trùng bằng nước sôi` },
+                { korean: `금속`, native: `kim loại` },
+                { korean: `기구`, native: `dụng cụ` },
+                { korean: `소독`, native: `khử trùng` },
+                { korean: `가위`, native: `kéo` },
+            ],
+            zh: [
+                { korean: `자비소독`, native: `煮沸消毒` },
+                { korean: `금속`, native: `金属` },
+                { korean: `기구`, native: `器具` },
+                { korean: `소독`, native: `消毒` },
+                { korean: `가위`, native: `剪刀` },
+            ],
+            th: [
+                { korean: `자비소독`, native: `การฆ่าเชื้อด้วยน้ำเดือด` },
+                { korean: `금속`, native: `โลหะ` },
+                { korean: `소독`, native: `การฆ่าเชื้อ` },
+                { korean: `가위`, native: `กรรไกร` },
+            ],
+            tl: [
+                { korean: `자비소독`, native: `disinfection sa kumukulong tubig` },
+                { korean: `금속`, native: `metal` },
+                { korean: `소독`, native: `disinfection` },
+                { korean: `가위`, native: `gunting` },
+            ],
+            my: [
+                { korean: `자비소독`, native: `ဆူပူသောရေ ပိုးသတ်ခြင်း` },
+                { korean: `금속`, native: `သတ္တု` },
+                { korean: `소독`, native: `ပိုးသတ်ခြင်း` },
+                { korean: `가위`, native: `ကတ်ကြေး` },
+            ],
+        },
     },
     {
         id: 'bg-37',
@@ -2281,6 +3582,92 @@ export const beautyGeneralQuestions = [
         explanation: '자외선 소독은 표면 살균이므로 기구의 모든 면이 자외선에 닿아야 효과가 있습니다. 겹치거나 젖은 상태로 넣으면 소독 효과가 떨어집니다.',
         simpleExplanation: '자외선 소독은 빛이 닿아야 효과가 있어요. 도구가 다 보이게 넣어야 해요.',
         keywords: ['자외선소독', '소독기', '미용기구'],
+        translations: {
+            vi: {
+                question: `Phương pháp đúng khi khử trùng dụng cụ bằng máy khử trùng tia UV là gì?`,
+                options: [
+                    `Xếp chồng nhiều dụng cụ lại và cho vào cùng một lúc`,
+                    `Cho vào sao cho tất cả các mặt của dụng cụ đều tiếp xúc với tia UV`,
+                    `Rửa dụng cụ bằng nước rồi cho vào khi còn ướt`,
+                    `Lấy ra và sử dụng ngay sau khi khử trùng`,
+                ],
+                explanation: `Khử trùng bằng UV là khử trùng bề mặt, vì vậy tất cả các mặt của dụng cụ phải tiếp xúc với tia UV mới có hiệu quả. Xếp chồng hoặc cho vào khi ướt sẽ làm giảm hiệu quả khử trùng.`,
+            },
+            zh: {
+                question: `使用紫外线消毒器对器具进行消毒时，正确的方法是什么？`,
+                options: [
+                    `将器具叠放，一次性放入大量`,
+                    `将器具放入使所有面都暴露在紫外线下`,
+                    `将器具用水洗后在湿润状态下放入`,
+                    `消毒后立即取出使用`,
+                ],
+                explanation: `紫外线消毒是表面杀菌，因此器具的所有面都必须接触到紫外线才有效。叠放或在湿润状态下放入会降低消毒效果。`,
+            },
+            th: {
+                question: `วิธีที่ถูกต้องในการฆ่าเชื้อเครื่องมือด้วยเครื่องฆ่าเชื้อ UV คืออะไร?`,
+                options: [
+                    `วางเครื่องมือซ้อนกันและใส่พร้อมกันหลายๆ ชิ้น`,
+                    `ใส่เครื่องมือเพื่อให้ทุกด้านสัมผัสกับ UV`,
+                    `ล้างเครื่องมือด้วยน้ำแล้วใส่ในสภาพเปียก`,
+                    `นำออกมาใช้ทันทีหลังจากฆ่าเชื้อ`,
+                ],
+                explanation: `การฆ่าเชื้อด้วย UV เป็นการฆ่าเชื้อบนผิว ดังนั้นทุกด้านของเครื่องมือต้องสัมผัสกับ UV จึงจะมีประสิทธิภาพ การวางซ้อนหรือใส่ในสภาพเปียกจะลดประสิทธิภาพการฆ่าเชื้อ`,
+            },
+            tl: {
+                question: `Ano ang tamang paraan ng pag-disinfect ng mga kagamitan gamit ang UV disinfection machine?`,
+                options: [
+                    `I-stack ang mga kagamitan at ilagay nang marami nang sabay-sabay`,
+                    `Ilagay ang mga kagamitan upang lahat ng mukha ay malantad sa UV`,
+                    `Hugasan ang mga kagamitan sa tubig at ilagay habang basa pa`,
+                    `Alisin at gamitin kaagad pagkatapos ng disinfection`,
+                ],
+                explanation: `Ang disinfection ng UV ay isang surface sterilization, kaya ang lahat ng mukha ng kagamitan ay dapat malantad sa UV para maging epektibo. Ang pag-stack o paglagay habang basa ay nagpapababa ng bisa ng disinfection.`,
+            },
+            my: {
+                question: `UV ပိုးသတ်စက်ဖြင့် ကိရိယာများ ပိုးသတ်ရာတွင် မှန်ကန်သောနည်းလမ်းမှာ မည်သည်နည်း?`,
+                options: [
+                    `ကိရိယာများကို တစ်ထပ်ပေါ်တစ်ထပ် ထားကာ တစ်ကြိမ်တည်း များများထည့်သည်`,
+                    `ကိရိယာ၏ ဘက်မျက်နှာအားလုံး UV ကို ထိတွေ့နိုင်အောင် ထည့်သည်`,
+                    `ကိရိယာများကို ရေဆေးပြီး စိုစွတ်နေသောအခြေအနေတွင် ထည့်သည်`,
+                    `ပိုးသတ်ပြီးနောက် ချက်ချင်းထုတ်ကာ သုံးသည်`,
+                ],
+                explanation: `UV ပိုးသတ်ခြင်းသည် မျက်နှာပြင်ပိုးသတ်ဖြစ်သောကြောင့် ကိရိယာ၏ ဘက်မျက်နှာအားလုံး UV ကို ထိတွေ့မှသာ ထိရောက်မှုရှိသည်။ တစ်ထပ်ပေါ်တစ်ထပ်ထားခြင်းသို့မဟုတ် စိုစွတ်နေသောအခြေအနေတွင် ထည့်ခြင်းသည် ထိရောက်မှုကို လျော့ကျစေသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `자외선`, native: `tia UV / tia cực tím` },
+                { korean: `소독기`, native: `máy khử trùng` },
+                { korean: `기구`, native: `dụng cụ` },
+                { korean: `소독`, native: `khử trùng` },
+                { korean: `노출`, native: `tiếp xúc / phơi ra` },
+            ],
+            zh: [
+                { korean: `자외선`, native: `紫外线` },
+                { korean: `소독기`, native: `消毒器` },
+                { korean: `기구`, native: `器具` },
+                { korean: `소독`, native: `消毒` },
+                { korean: `노출`, native: `暴露` },
+            ],
+            th: [
+                { korean: `자외선`, native: `UV / รังสีอัลตราไวโอเลต` },
+                { korean: `소독기`, native: `เครื่องฆ่าเชื้อ` },
+                { korean: `소독`, native: `การฆ่าเชื้อ` },
+                { korean: `노출`, native: `การสัมผัส` },
+            ],
+            tl: [
+                { korean: `자외선`, native: `UV` },
+                { korean: `소독기`, native: `UV disinfection machine` },
+                { korean: `소독`, native: `disinfection` },
+                { korean: `노출`, native: `malantad` },
+            ],
+            my: [
+                { korean: `자외선`, native: `UV` },
+                { korean: `소독기`, native: `ပိုးသတ်စက်` },
+                { korean: `소독`, native: `ပိုးသတ်ခြင်း` },
+                { korean: `노출`, native: `ထိတွေ့မှု` },
+            ],
+        },
     },
     {
         id: 'bg-38',
@@ -2298,6 +3685,92 @@ export const beautyGeneralQuestions = [
         explanation: '공중위생관리법에 따라 미용사 면허는 시·도지사가 발급합니다. 국가기술자격 합격 후 면허를 신청합니다.',
         simpleExplanation: '미용사 면허는 시·도지사에게 받아요. 자격시험 합격 후 신청하면 돼요.',
         keywords: ['미용사면허', '시도지사', '공중위생관리법'],
+        translations: {
+            vi: {
+                question: `Điều nào mô tả đúng về giấy phép thợ làm đẹp?`,
+                options: [
+                    `Được cấp bởi Bộ trưởng Bộ Y tế và Phúc lợi`,
+                    `Được cấp bởi Tập đoàn Nguồn nhân lực Công nghiệp Hàn Quốc`,
+                    `Được cấp bởi Thống đốc tỉnh/thành phố`,
+                    `Được cấp bởi trưởng quận/huyện/phường`,
+                ],
+                explanation: `Theo Luật Quản lý Vệ sinh Công cộng, giấy phép thợ làm đẹp được cấp bởi Thống đốc tỉnh/thành phố. Sau khi đỗ kỳ thi cấp quốc gia sẽ nộp đơn xin giấy phép.`,
+            },
+            zh: {
+                question: `关于美容师执照，描述正确的是什么？`,
+                options: [
+                    `由保健福祉部长官发放`,
+                    `由韩国产业人力公团发放`,
+                    `由市·道知事发放`,
+                    `由市长·郡守·区厅长发放`,
+                ],
+                explanation: `根据《公众卫生管理法》，美容师执照由市·道知事发放。通过国家技术资格考试后申请执照。`,
+            },
+            th: {
+                question: `คำอธิบายที่ถูกต้องเกี่ยวกับใบอนุญาตช่างเสริมสวยคืออะไร?`,
+                options: [
+                    `ออกโดยรัฐมนตรีกระทรวงสาธารณสุขและสวัสดิการ`,
+                    `ออกโดยบรรษัทกำลังคนอุตสาหกรรมเกาหลี`,
+                    `ออกโดยผู้ว่าราชการจังหวัด/เมือง`,
+                    `ออกโดยนายกเทศมนตรี/นายอำเภอ/เทศมนตรีเขต`,
+                ],
+                explanation: `ตามกฎหมายควบคุมสุขลักษณะสาธารณะ ใบอนุญาตช่างเสริมสวยออกโดยผู้ว่าราชการจังหวัด/เมือง หลังจากสอบผ่านใบรับรองวิชาชีพแห่งชาติจึงยื่นขอใบอนุญาต`,
+            },
+            tl: {
+                question: `Alin ang tamang paglalarawan tungkol sa lisensya ng beautician?`,
+                options: [
+                    `Inilalabas ng Ministro ng Kalusugan at Kapakanan`,
+                    `Inilalabas ng Korean Industrial Human Resources Corporation`,
+                    `Inilalabas ng Gobernador ng lungsod/lalawigan`,
+                    `Inilalabas ng mayor/gobernador/alkalde ng distrito`,
+                ],
+                explanation: `Ayon sa Batas ng Pamamahala ng Kalinisang-pampubliko, ang lisensya ng beautician ay inilalabas ng Gobernador ng lungsod/lalawigan. Pagkatapos pumasa sa national skills exam, mag-a-apply para sa lisensya.`,
+            },
+            my: {
+                question: `မြင်ကွင်းပြင်သမားလိုင်စင်နှင့် ပတ်သက်သော မှန်ကန်သောဖော်ပြချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `ကျန်းမာရေးနှင့် လူမှုဖူလုံရေးဝန်ကြီးမှ ထုတ်ပေးသည်`,
+                    `ကိုရီးယား စက်မှုလုပ်ငန်းသားအင်အားကော်ပိုရေးရှင်းမှ ထုတ်ပေးသည်`,
+                    `ပြည်နယ်/တိုင်းဝန်ကြီးချုပ်မှ ထုတ်ပေးသည်`,
+                    `မြို့နယ်/ခရိုင်/ရပ်ကွက်ဦးစီးမှူးမှ ထုတ်ပေးသည်`,
+                ],
+                explanation: `ပြည်သူ့ကျန်းမာရေးစီမံခန့်ခွဲမှုဥပဒေအရ မြင်ကွင်းပြင်သမားလိုင်စင်ကို ပြည်နယ်/တိုင်းဝန်ကြီးချုပ်မှ ထုတ်ပေးသည်။ အမျိုးသားနည်းပညာ အရည်အချင်းစာမေးပွဲ အောင်မြင်ပြီးနောက် လိုင်စင်လျှောက်ထားရသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `미용사`, native: `thợ làm đẹp` },
+                { korean: `면허`, native: `giấy phép` },
+                { korean: `발급`, native: `cấp phát` },
+                { korean: `보건복지부장관`, native: `Bộ trưởng Bộ Y tế và Phúc lợi` },
+                { korean: `시`, native: `tỉnh/thành phố` },
+            ],
+            zh: [
+                { korean: `미용사`, native: `美容师` },
+                { korean: `면허`, native: `执照` },
+                { korean: `발급`, native: `发放` },
+                { korean: `보건복지부장관`, native: `保健福祉部长官` },
+                { korean: `시`, native: `市` },
+            ],
+            th: [
+                { korean: `미용사`, native: `ช่างเสริมสวย` },
+                { korean: `면허`, native: `ใบอนุญาต` },
+                { korean: `발급`, native: `การออก` },
+                { korean: `시`, native: `จังหวัด/เมือง` },
+            ],
+            tl: [
+                { korean: `미용사`, native: `beautician` },
+                { korean: `면허`, native: `lisensya` },
+                { korean: `발급`, native: `paglalabas` },
+                { korean: `시`, native: `lungsod/lalawigan` },
+            ],
+            my: [
+                { korean: `미용사`, native: `မြင်ကွင်းပြင်သမား` },
+                { korean: `면허`, native: `လိုင်စင်` },
+                { korean: `발급`, native: `ထုတ်ပေးခြင်း` },
+                { korean: `시`, native: `ပြည်နယ်/တိုင်း` },
+            ],
+        },
     },
     {
         id: 'bg-39',
@@ -2310,6 +3783,67 @@ export const beautyGeneralQuestions = [
         explanation: '공중위생관리법에 따라 미용업자(영업자)는 매년 3시간의 위생교육을 받아야 합니다.',
         simpleExplanation: '미용실 사장님은 매년 3시간 위생교육을 받아야 해요. 법으로 정해져 있어요.',
         keywords: ['위생교육', '미용업자', '3시간'],
+        translations: {
+            vi: {
+                question: `Theo Luật Quản lý Vệ sinh Công cộng, số giờ giáo dục vệ sinh mà chủ cửa hàng làm đẹp phải tham gia mỗi năm là bao nhiêu?`,
+                options: [`2 giờ`, `3 giờ`, `6 giờ`, `8 giờ`],
+                explanation: `Theo Luật Quản lý Vệ sinh Công cộng, chủ cửa hàng làm đẹp (người kinh doanh) phải tham gia 3 giờ giáo dục vệ sinh mỗi năm.`,
+            },
+            zh: {
+                question: `根据《公众卫生管理法》，美容业者每年须接受的卫生教育时间是多少小时？`,
+                options: [`2小时`, `3小时`, `6小时`, `8小时`],
+                explanation: `根据《公众卫生管理法》，美容业者（营业者）每年须接受3小时的卫生教育。`,
+            },
+            th: {
+                question: `ตามกฎหมายควบคุมสุขลักษณะสาธารณะ จำนวนชั่วโมงการศึกษาสุขอนามัยที่ผู้ประกอบการร้านเสริมสวยต้องเข้ารับต่อปีคือเท่าไร?`,
+                options: [`2 ชั่วโมง`, `3 ชั่วโมง`, `6 ชั่วโมง`, `8 ชั่วโมง`],
+                explanation: `ตามกฎหมายควบคุมสุขลักษณะสาธารณะ ผู้ประกอบการร้านเสริมสวย (ผู้ประกอบธุรกิจ) ต้องเข้ารับการศึกษาสุขอนามัย 3 ชั่วโมงต่อปี`,
+            },
+            tl: {
+                question: `Ayon sa Batas ng Pamamahala ng Kalinisang-pampubliko, ilang oras ng education sa kalinisan ang dapat matanggap ng beauty business owner bawat taon?`,
+                options: [`2 oras`, `3 oras`, `6 oras`, `8 oras`],
+                explanation: `Ayon sa Batas ng Pamamahala ng Kalinisang-pampubliko, ang mga may-ari ng beauty business (negosyante) ay dapat makatanggap ng 3 oras na education sa kalinisan bawat taon.`,
+            },
+            my: {
+                question: `ပြည်သူ့ကျန်းမာရေးစီမံခန့်ခွဲမှုဥပဒေတွင် မြင်ကွင်းပြင်ဆိုင်လုပ်ငန်းရှင်သည် တစ်နှစ်လျှင် ကျန်းမာရေးသင်တန်းကို နှစ်မည်မျှ တက်ရောက်ရမည်နည်း?`,
+                options: [`၂ နာရီ`, `၃ နာရီ`, `၆ နာရီ`, `၈ နာရီ`],
+                explanation: `ပြည်သူ့ကျန်းမာရေးစီမံခန့်ခွဲမှုဥပဒေအရ မြင်ကွင်းပြင်ဆိုင်လုပ်ငန်းရှင်(စီးပွားရေးရှင်)သည် တစ်နှစ်လျှင် ကျန်းမာရေးသင်တန်း ၃ နာရီ တက်ရောက်ရမည်ဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `공중위생관리법`, native: `Luật Quản lý Vệ sinh Công cộng` },
+                { korean: `미용업자`, native: `chủ cửa hàng làm đẹp` },
+                { korean: `위생교육`, native: `giáo dục vệ sinh` },
+                { korean: `시간`, native: `giờ` },
+                { korean: `매년`, native: `mỗi năm` },
+            ],
+            zh: [
+                { korean: `공중위생관리법`, native: `公众卫生管理法` },
+                { korean: `미용업자`, native: `美容业者` },
+                { korean: `위생교육`, native: `卫生教育` },
+                { korean: `시간`, native: `小时` },
+                { korean: `매년`, native: `每年` },
+            ],
+            th: [
+                { korean: `공중위생관리법`, native: `กฎหมายควบคุมสุขลักษณะสาธารณะ` },
+                { korean: `미용업자`, native: `ผู้ประกอบการร้านเสริมสวย` },
+                { korean: `위생교육`, native: `การศึกษาสุขอนามัย` },
+                { korean: `시간`, native: `ชั่วโมง` },
+            ],
+            tl: [
+                { korean: `공중위생관리법`, native: `Batas ng Pamamahala ng Kalinisang-pampubliko` },
+                { korean: `미용업자`, native: `beauty business owner` },
+                { korean: `위생교육`, native: `education sa kalinisan` },
+                { korean: `시간`, native: `oras` },
+            ],
+            my: [
+                { korean: `공중위생관리법`, native: `ပြည်သူ့ကျန်းမာရေးစီမံခန့်ခွဲမှုဥပဒေ` },
+                { korean: `미용업자`, native: `မြင်ကွင်းပြင်ဆိုင်လုပ်ငန်းရှင်` },
+                { korean: `위생교육`, native: `ကျန်းမာရေးသင်တန်း` },
+                { korean: `시간`, native: `နာရီ` },
+            ],
+        },
     },
     {
         id: 'bg-40',
@@ -2327,6 +3861,92 @@ export const beautyGeneralQuestions = [
         explanation: '공중위생관리법에 따라 시장·군수·구청장 또는 그 소속 공무원이 영업소에 출입하여 위생 상태를 검사하고 관련 서류를 열람할 수 있습니다.',
         simpleExplanation: '시청이나 구청 공무원이 미용실 위생 검사를 해요. 법으로 검사할 수 있어요.',
         keywords: ['위생검사', '출입검사', '공중위생관리법'],
+        translations: {
+            vi: {
+                question: `Ai có thể vào cửa hàng làm đẹp để kiểm tra nhằm nâng cao tiêu chuẩn vệ sinh?`,
+                options: [
+                    `Bộ trưởng Bộ Y tế và Phúc lợi`,
+                    `Cục trưởng Cục An toàn Thực phẩm và Dược phẩm`,
+                    `Trưởng quận/huyện/phường hoặc công chức thuộc quyền`,
+                    `Lãnh đạo Hiệp hội Làm đẹp Hàn Quốc`,
+                ],
+                explanation: `Theo Luật Quản lý Vệ sinh Công cộng, trưởng quận/huyện/phường hoặc công chức thuộc quyền có thể vào cơ sở kinh doanh để kiểm tra tình trạng vệ sinh và đọc tài liệu liên quan.`,
+            },
+            zh: {
+                question: `为提高美容业所的卫生水平，谁有权进入营业所进行检查？`,
+                options: [
+                    `保健福祉部长官`,
+                    `食品药品安全处长`,
+                    `市长·郡守·区厅长或其所属公务员`,
+                    `韩国美容师协会干部`,
+                ],
+                explanation: `根据《公众卫生管理法》，市长·郡守·区厅长或其所属公务员有权进入营业所检查卫生状况并查阅相关文件。`,
+            },
+            th: {
+                question: `เพื่อยกระดับมาตรฐานสุขอนามัยของร้านเสริมสวย ใครมีสิทธิ์เข้าไปในสถานประกอบการเพื่อตรวจสอบ?`,
+                options: [
+                    `รัฐมนตรีกระทรวงสาธารณสุขและสวัสดิการ`,
+                    `ผู้อำนวยการสำนักงานอาหารและยา`,
+                    `นายกเทศมนตรี/นายอำเภอ/เทศมนตรีเขตหรือเจ้าหน้าที่ในสังกัด`,
+                    `ผู้บริหารสมาคมช่างเสริมสวยเกาหลี`,
+                ],
+                explanation: `ตามกฎหมายควบคุมสุขลักษณะสาธารณะ นายกเทศมนตรี/นายอำเภอ/เทศมนตรีเขตหรือเจ้าหน้าที่ในสังกัดมีสิทธิ์เข้าไปในสถานประกอบการเพื่อตรวจสอบสุขอนามัยและดูเอกสารที่เกี่ยวข้อง`,
+            },
+            tl: {
+                question: `Para mapataas ang antas ng kalinisan ng beauty salon, sino ang maaaring pumasok at mag-inspeksyon sa lugar ng negosyo?`,
+                options: [
+                    `Ministro ng Kalusugan at Kapakanan`,
+                    `Direktor ng Ahensya ng Kaligtasan ng Pagkain at Gamot`,
+                    `Mayor/gobernador/alkalde ng distrito o mga kasapi ng kawani`,
+                    `Opisyal ng Korean Beauty Association`,
+                ],
+                explanation: `Ayon sa Batas ng Pamamahala ng Kalinisang-pampubliko, ang mayor/gobernador/alkalde ng distrito o mga kasapi ng kawani ay maaaring pumasok sa lugar ng negosyo para sa inspeksyon ng kalinisan at pagbabasa ng mga dokumento.`,
+            },
+            my: {
+                question: `မြင်ကွင်းပြင်ဆိုင်၏ ကျန်းမာရေးစံနှုန်းကို မြှင့်တင်ရန် စီးပွားရေးဌာနကို ဝင်ရောက်စစ်ဆေးနိုင်သောသူမှာ မည်သူနည်း?`,
+                options: [
+                    `ကျန်းမာရေးနှင့် လူမှုဖူလုံရေးဝန်ကြီး`,
+                    `အစားအစာနှင့်ဆေးဝါးလုံခြုံရေးဌာနနှင့် ညှိနှိုင်းမှု`,
+                    `မြို့နယ်/ခရိုင်/ရပ်ကွက်ဦးစီးမှူး သို့မဟုတ် ၎င်းလက်အောက်ရှိ ဝန်ထမ်းများ`,
+                    `ကိုရီးယားမြင်ကွင်းပြင်သမားအသင်း အမှုဆောင်`,
+                ],
+                explanation: `ပြည်သူ့ကျန်းမာရေးစီမံခန့်ခွဲမှုဥပဒေအရ မြို့နယ်/ခရိုင်/ရပ်ကွက်ဦးစီးမှူး သို့မဟုတ် ၎င်းလက်အောက်ရှိ ဝန်ထမ်းများသည် စီးပွားရေးဌာနကို ဝင်ရောက်ကာ ကျန်းမာရေးအခြေအနေ စစ်ဆေးနိုင်ပြီး သက်ဆိုင်ရာစာရွက်စာတမ်းများ စစ်ဆေးနိုင်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `미용업소`, native: `cửa hàng làm đẹp` },
+                { korean: `위생`, native: `vệ sinh` },
+                { korean: `검사`, native: `kiểm tra` },
+                { korean: `공무원`, native: `công chức` },
+                { korean: `출입`, native: `ra vào / vào cửa` },
+            ],
+            zh: [
+                { korean: `미용업소`, native: `美容业所` },
+                { korean: `위생`, native: `卫生` },
+                { korean: `검사`, native: `检查` },
+                { korean: `공무원`, native: `公务员` },
+                { korean: `출입`, native: `出入` },
+            ],
+            th: [
+                { korean: `미용업소`, native: `ร้านเสริมสวย` },
+                { korean: `위생`, native: `สุขอนามัย` },
+                { korean: `검사`, native: `การตรวจสอบ` },
+                { korean: `공무원`, native: `เจ้าหน้าที่รัฐ` },
+            ],
+            tl: [
+                { korean: `미용업소`, native: `beauty salon` },
+                { korean: `위생`, native: `kalinisan` },
+                { korean: `검사`, native: `inspeksyon` },
+                { korean: `공무원`, native: `kawani` },
+            ],
+            my: [
+                { korean: `미용업소`, native: `မြင်ကွင်းပြင်ဆိုင်` },
+                { korean: `위생`, native: `ကျန်းမာရေး` },
+                { korean: `검사`, native: `စစ်ဆေးခြင်း` },
+                { korean: `공무원`, native: `ဝန်ထမ်း` },
+            ],
+        },
     },
     {
         id: 'bg-41',
