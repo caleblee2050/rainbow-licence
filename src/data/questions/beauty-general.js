@@ -16,6 +16,94 @@ export const beautyGeneralQuestions = [
         explanation: '모발의 주성분은 케라틴이라는 단백질입니다. 그래서 단백질을 충분히 섭취해야 건강한 머리카락이 자랍니다.',
         simpleExplanation: '머리카락은 단백질로 만들어져요. 단백질을 많이 먹으면 머리카락이 건강해져요!',
         keywords: ['영양', '단백질', '케라틴'],
+        translations: {
+            vi: {
+                question: `Trong số các chất dinh dưỡng cung cấp cho tóc, đâu là chất quan trọng nhất và cần được cung cấp nhiều nhất?`,
+                options: [
+                    `Carbohydrate`,
+                    `Protein`,
+                    `Chất béo`,
+                    `Vitamin`,
+                ],
+                explanation: `Thành phần chính của tóc là protein keratin. Vì vậy, cần bổ sung đủ protein để tóc phát triển khỏe mạnh.`,
+            },
+            zh: {
+                question: `在头发营养供给中，最重要且需要供给最多的营养素是什么？`,
+                options: [
+                    `碳水化合物`,
+                    `蛋白质`,
+                    `脂肪`,
+                    `维生素`,
+                ],
+                explanation: `头发的主要成分是角蛋白（Keratin），因此需要充分摄入蛋白质才能使头发健康生长。`,
+            },
+            th: {
+                question: `ในบรรดาสารอาหารที่จำเป็นต่อเส้นผม สารอาหารใดสำคัญที่สุดและควรได้รับมากที่สุด?`,
+                options: [
+                    `คาร์โบไฮเดรต`,
+                    `โปรตีน`,
+                    `ไขมัน`,
+                    `วิตามิน`,
+                ],
+                explanation: `ส่วนประกอบหลักของเส้นผมคือโปรตีนเคราติน ดังนั้นจึงต้องได้รับโปรตีนอย่างเพียงพอเพื่อให้เส้นผมแข็งแรง`,
+            },
+            tl: {
+                question: `Sa mga sustansyang nagpapakain sa buhok, alin ang pinaka-mahalaga at kailangang ibigay nang pinaka-marami?`,
+                options: [
+                    `Carbohydrate`,
+                    `Protina`,
+                    `Taba`,
+                    `Bitamina`,
+                ],
+                explanation: `Ang pangunahing sangkap ng buhok ay ang protinang keratin. Kaya naman, kailangan ng sapat na protina para lumago nang malusog ang buhok.`,
+            },
+            my: {
+                question: `ဆံပင်အတွက် အာဟာရဖြည့်တင်းရာတွင် အရေးအကြီးဆုံးဖြစ်ပြီး အများဆုံးဖြည့်တင်းရမည့် အာဟာရဓာတ်မှာ မည်သည်နည်း?`,
+                options: [
+                    `ကာဗိုဟိုက်ဒရိတ်`,
+                    `ပရိုတင်း`,
+                    `အဆီ`,
+                    `ဗိုက်တာမင်`,
+                ],
+                explanation: `ဆံပင်၏ အဓိကအစိတ်အပိုင်းမှာ keratin ပရိုတင်းဖြစ်သည်။ ထို့ကြောင့် ဆံပင်ကျန်းမာစေရန် ပရိုတင်းလုံလောက်စွာ စားသုံးရမည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `두발`, native: `tóc` },
+                { korean: `영양`, native: `dinh dưỡng` },
+                { korean: `단백질`, native: `protein` },
+                { korean: `케라틴`, native: `keratin` },
+                { korean: `탄수화물`, native: `carbohydrate` },
+                { korean: `비타민`, native: `vitamin` },
+            ],
+            zh: [
+                { korean: `두발`, native: `头发` },
+                { korean: `영양`, native: `营养` },
+                { korean: `단백질`, native: `蛋白质` },
+                { korean: `케라틴`, native: `角蛋白` },
+                { korean: `탄수화물`, native: `碳水化合物` },
+                { korean: `비타민`, native: `维生素` },
+            ],
+            th: [
+                { korean: `두발`, native: `เส้นผม` },
+                { korean: `영양`, native: `สารอาหาร` },
+                { korean: `단백질`, native: `โปรตีน` },
+                { korean: `케라틴`, native: `เคราติน` },
+            ],
+            tl: [
+                { korean: `두발`, native: `buhok` },
+                { korean: `영양`, native: `sustansya` },
+                { korean: `단백질`, native: `protina` },
+                { korean: `케라틴`, native: `keratin` },
+            ],
+            my: [
+                { korean: `두발`, native: `ဆံပင်` },
+                { korean: `영양`, native: `အာဟာရ` },
+                { korean: `단백질`, native: `ပရိုတင်း` },
+                { korean: `케라틴`, native: `keratin` },
+            ],
+        },
     },
     {
         id: 'bg-02',
@@ -28,6 +116,94 @@ export const beautyGeneralQuestions = [
         explanation: '표피는 바깥쪽부터 각질층 → 투명층 → 과립층 → 유극층 → 기저층 순서로 구성되어 있습니다.',
         simpleExplanation: '피부의 가장 바깥은 "각질층"이에요. 죽은 세포들이 모여 피부를 보호해요.',
         keywords: ['표피', '각질층', '피부'],
+        translations: {
+            vi: {
+                question: `Trong số các lớp tế bào cấu tạo nên biểu bì da, lớp nào nằm ngoài cùng?`,
+                options: [
+                    `Lớp gai (lớp tế bào gai)`,
+                    `Lớp sừng`,
+                    `Lớp hạt`,
+                    `Lớp trong suốt`,
+                ],
+                explanation: `Biểu bì được cấu tạo từ ngoài vào trong theo thứ tự: lớp sừng → lớp trong suốt → lớp hạt → lớp gai → lớp đáy.`,
+            },
+            zh: {
+                question: `在构成皮肤表皮的细胞层中，位于最外层的是哪一层？`,
+                options: [
+                    `棘层`,
+                    `角质层`,
+                    `颗粒层`,
+                    `透明层`,
+                ],
+                explanation: `表皮由外向内依次为：角质层→透明层→颗粒层→棘层→基底层。`,
+            },
+            th: {
+                question: `ในบรรดาชั้นเซลล์ที่ประกอบเป็นหนังกำพร้า ชั้นใดอยู่ด้านนอกสุด?`,
+                options: [
+                    `ชั้นสไปนัส`,
+                    `ชั้นหนังกำพร้า (ชั้นเคราติน)`,
+                    `ชั้นเม็ด`,
+                    `ชั้นใส`,
+                ],
+                explanation: `หนังกำพร้าประกอบด้วยชั้นต่างๆ จากนอกสุดเข้าข้างใน: ชั้นเคราติน→ชั้นใส→ชั้นเม็ด→ชั้นสไปนัส→ชั้นฐาน`,
+            },
+            tl: {
+                question: `Sa mga layer ng selula na bumubuo sa epidermis ng balat, alin ang pinaka-labas?`,
+                options: [
+                    `Spinous layer`,
+                    `Keratin layer`,
+                    `Granular layer`,
+                    `Transparent layer`,
+                ],
+                explanation: `Ang epidermis ay binubuo mula sa labas papasok: keratin layer → transparent layer → granular layer → spinous layer → basal layer.`,
+            },
+            my: {
+                question: `အရေပြားအပြင်ပိုင်း (epidermis) ကိုဖွဲ့စည်းသော ဆဲလ်အလွှာများတွင် အပြင်ဆုံးရှိသောအလွှာမှာ မည်သည်နည်း?`,
+                options: [
+                    `Spinous layer`,
+                    `အကြေးအလွှာ (Keratin layer)`,
+                    `Granular layer`,
+                    `Transparent layer`,
+                ],
+                explanation: `အပြင်ပိုင်းအရေ (epidermis) မှာ အပြင်မှ အတွင်းသို့ - အကြေးအလွှာ → ထင်သောအလွှာ → အမှုန်အလွှာ → အမျှင်အလွှာ → အမြစ်အလွှာ အဆင့်ဆင့်ဖြင့် ဖွဲ့စည်းသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `피부`, native: `da` },
+                { korean: `표피`, native: `biểu bì` },
+                { korean: `각질층`, native: `lớp sừng` },
+                { korean: `유극층`, native: `lớp gai` },
+                { korean: `과립층`, native: `lớp hạt` },
+                { korean: `투명층`, native: `lớp trong suốt` },
+            ],
+            zh: [
+                { korean: `피부`, native: `皮肤` },
+                { korean: `표피`, native: `表皮` },
+                { korean: `각질층`, native: `角质层` },
+                { korean: `유극층`, native: `棘层` },
+                { korean: `과립층`, native: `颗粒层` },
+                { korean: `투명층`, native: `透明层` },
+            ],
+            th: [
+                { korean: `피부`, native: `ผิวหนัง` },
+                { korean: `표피`, native: `หนังกำพร้า` },
+                { korean: `각질층`, native: `ชั้นหนังกำพร้า` },
+                { korean: `유극층`, native: `ชั้นสไปนัส` },
+            ],
+            tl: [
+                { korean: `피부`, native: `balat` },
+                { korean: `표피`, native: `epidermis` },
+                { korean: `각질층`, native: `keratin layer` },
+                { korean: `유극층`, native: `spinous layer` },
+            ],
+            my: [
+                { korean: `피부`, native: `အရေပြား` },
+                { korean: `표피`, native: `အပြင်ပိုင်းအရေ` },
+                { korean: `각질층`, native: `အကြေးအလွှာ` },
+                { korean: `유극층`, native: `spinous layer` },
+            ],
+        },
     },
     {
         id: 'bg-03',
@@ -40,6 +216,92 @@ export const beautyGeneralQuestions = [
         explanation: '콜드 펌의 1액은 환원제로 티오글리콜산암모늄이 주성분입니다. 이것이 모발의 시스틴 결합을 끊어줍니다.',
         simpleExplanation: '펌 1액은 머리카락을 부드럽게 만드는 약이에요. "티오글리콜산암모늄"이 들어있어요.',
         keywords: ['펌', '1액', '환원제'],
+        translations: {
+            vi: {
+                question: `Thành phần chính của dung dịch số 1 trong uốn tóc lạnh (Cold Permanent Wave) là gì?`,
+                options: [
+                    `Hydrogen peroxide`,
+                    `Ammonium thioglycolate`,
+                    `Sodium bromate`,
+                    `Cystine`,
+                ],
+                explanation: `Dung dịch số 1 của uốn tóc lạnh là chất khử (reducing agent), thành phần chính là ammonium thioglycolate. Chất này phá vỡ liên kết cystine trong tóc.`,
+            },
+            zh: {
+                question: `冷烫（Cold Permanent Wave）一剂的主要成分是什么？`,
+                options: [
+                    `过氧化氢`,
+                    `硫代乙醇酸铵`,
+                    `溴酸钠`,
+                    `胱氨酸`,
+                ],
+                explanation: `冷烫一剂是还原剂，主要成分为硫代乙醇酸铵。它能切断头发中的胱氨酸结合（二硫键）。`,
+            },
+            th: {
+                question: `ส่วนประกอบหลักของน้ำยาเบอร์ 1 ในการดัดผมแบบ Cold Permanent Wave คืออะไร?`,
+                options: [
+                    `ไฮโดรเจนเปอร์ออกไซด์`,
+                    `แอมโมเนียมไทโอไกลโคเลต`,
+                    `โซเดียมโบรเมต`,
+                    `ซิสตีน`,
+                ],
+                explanation: `น้ำยาเบอร์ 1 ของการดัดผมแบบ cold perm คือสารรีดิวซิ่ง มีส่วนประกอบหลักคือ ammonium thioglycolate ซึ่งทำลายพันธะซิสตีนในเส้นผม`,
+            },
+            tl: {
+                question: `Ano ang pangunahing sangkap ng solusyon blg. 1 sa Cold Permanent Wave?`,
+                options: [
+                    `Hydrogen peroxide`,
+                    `Ammonium thioglycolate`,
+                    `Sodium bromate`,
+                    `Cystine`,
+                ],
+                explanation: `Ang solusyon blg. 1 ng cold perm ay reducing agent, at ang pangunahing sangkap nito ay ammonium thioglycolate. Sinisira nito ang cystine bond ng buhok.`,
+            },
+            my: {
+                question: `Cold Permanent Wave တွင် ပထမဆေးရည်၏ အဓိကပါဝင်မှုမှာ မည်သည်နည်း?`,
+                options: [
+                    `Hydrogen peroxide`,
+                    `Ammonium thioglycolate`,
+                    `Sodium bromate`,
+                    `Cystine`,
+                ],
+                explanation: `Cold perm ၏ ပထမဆေးရည်မှာ reducing agent ဖြစ်ပြီး အဓိကပါဝင်မှုမှာ ammonium thioglycolate ဖြစ်သည်။ ၎င်းသည် ဆံပင်ရှိ cystine bond ကို ဖြတ်ပေးသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `퍼머넌트`, native: `uốn tóc` },
+                { korean: `1액`, native: `dung dịch số 1` },
+                { korean: `환원제`, native: `chất khử` },
+                { korean: `시스틴`, native: `cystine` },
+                { korean: `과산화수소`, native: `hydrogen peroxide` },
+            ],
+            zh: [
+                { korean: `퍼머넌트`, native: `烫发` },
+                { korean: `1액`, native: `一剂` },
+                { korean: `환원제`, native: `还原剂` },
+                { korean: `시스틴`, native: `胱氨酸` },
+                { korean: `과산화수소`, native: `过氧化氢` },
+            ],
+            th: [
+                { korean: `퍼머넌트`, native: `การดัดผม` },
+                { korean: `1액`, native: `น้ำยาเบอร์ 1` },
+                { korean: `환원제`, native: `สารรีดิวซิ่ง` },
+                { korean: `시스틴`, native: `ซิสตีน` },
+            ],
+            tl: [
+                { korean: `퍼머넌트`, native: `permanent` },
+                { korean: `1액`, native: `solusyon blg. 1` },
+                { korean: `환원제`, native: `reducing agent` },
+                { korean: `시스틴`, native: `cystine` },
+            ],
+            my: [
+                { korean: `퍼머넌트`, native: `ဆံပင်လိမ်ခြင်း` },
+                { korean: `1액`, native: `ပထမဆေးရည်` },
+                { korean: `환원제`, native: `reducing agent` },
+                { korean: `시스틴`, native: `cystine` },
+            ],
+        },
     },
     {
         id: 'bg-04',
@@ -52,6 +314,92 @@ export const beautyGeneralQuestions = [
         explanation: '아줄렌은 카모마일에서 추출한 성분으로, 피부를 진정시키고 염증을 완화합니다.',
         simpleExplanation: '아줄렌은 피부를 "진정"시켜요. 피부가 빨갛거나 아플 때 도움이 돼요.',
         keywords: ['아줄렌', '진정', '카모마일'],
+        translations: {
+            vi: {
+                question: `Trong các thành phần mỹ phẩm, Azulene có tác dụng gì đối với da?`,
+                options: [
+                    `Làm trắng da`,
+                    `Kích ứng da`,
+                    `Làm dịu da`,
+                    `Gây thâm sắc tố`,
+                ],
+                explanation: `Azulene là thành phần chiết xuất từ cúc la mã (chamomile), có tác dụng làm dịu da và giảm viêm.`,
+            },
+            zh: {
+                question: `化妆品成分中，母菊蓝烃（Azulene）对皮肤有什么作用？`,
+                options: [
+                    `美白`,
+                    `刺激`,
+                    `镇静`,
+                    `色素沉着`,
+                ],
+                explanation: `母菊蓝烃是从洋甘菊中提取的成分，具有镇静皮肤、缓解炎症的作用。`,
+            },
+            th: {
+                question: `ในส่วนประกอบของเครื่องสำอาง อะซูลีน (Azulene) มีผลอย่างไรต่อผิวหนัง?`,
+                options: [
+                    `ทำให้ผิวขาว`,
+                    `ระคายเคือง`,
+                    `ทำให้ผิวสงบ`,
+                    `ทำให้เกิดรอยดำ`,
+                ],
+                explanation: `อะซูลีนเป็นส่วนประกอบที่สกัดจากดอกคาโมมายล์ มีฤทธิ์ทำให้ผิวสงบและลดการอักเสบ`,
+            },
+            tl: {
+                question: `Sa mga sangkap ng kosmetiko, ano ang epekto ng Azulene sa balat?`,
+                options: [
+                    `Pagpapaputi ng balat`,
+                    `Pag-irritate ng balat`,
+                    `Pagpapakalma ng balat`,
+                    `Pagdidilim ng balat`,
+                ],
+                explanation: `Ang Azulene ay sangkap na kinukuha mula sa chamomile, na nagpapakalma ng balat at nagpapababa ng pamamaga.`,
+            },
+            my: {
+                question: `အလှကုန်ပါဝင်မှုများတွင် Azulene သည် အရေပြားအပေါ် မည်သို့သောသက်ရောက်မှုရှိသနည်း?`,
+                options: [
+                    `အဖြူဖောက်ခြင်း`,
+                    `ယားယံနာကျင်ကြောင်း`,
+                    `သက်သာစေခြင်း`,
+                    `အမည်းကွက်ဖြစ်ခြင်း`,
+                ],
+                explanation: `Azulene သည် chamomile မှ ထုတ်ယူသော ပါဝင်မှုဖြစ်ပြီး အရေပြားကို သက်သာစေပြီး ရောင်ရမ်းမှုကို လျော့ပါးစေသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `화장품`, native: `mỹ phẩm` },
+                { korean: `아줄렌`, native: `azulene` },
+                { korean: `진정`, native: `làm dịu` },
+                { korean: `미백`, native: `làm trắng da` },
+                { korean: `색소침착`, native: `thâm sắc tố` },
+            ],
+            zh: [
+                { korean: `화장품`, native: `化妆品` },
+                { korean: `아줄렌`, native: `母菊蓝烃` },
+                { korean: `진정`, native: `镇静` },
+                { korean: `미백`, native: `美白` },
+                { korean: `색소침착`, native: `色素沉着` },
+            ],
+            th: [
+                { korean: `화장품`, native: `เครื่องสำอาง` },
+                { korean: `아줄렌`, native: `อะซูลีน` },
+                { korean: `진정`, native: `ทำให้ผิวสงบ` },
+                { korean: `미백`, native: `ทำให้ผิวขาว` },
+            ],
+            tl: [
+                { korean: `화장품`, native: `kosmetiko` },
+                { korean: `아줄렌`, native: `azulene` },
+                { korean: `진정`, native: `pagpapakalma` },
+                { korean: `미백`, native: `pagpapaputi` },
+            ],
+            my: [
+                { korean: `화장품`, native: `အလှကုန်` },
+                { korean: `아줄렌`, native: `azulene` },
+                { korean: `진정`, native: `သက်သာစေခြင်း` },
+                { korean: `미백`, native: `အဖြူဖောက်ခြင်း` },
+            ],
+        },
     },
     {
         id: 'bg-05',
@@ -64,6 +412,92 @@ export const beautyGeneralQuestions = [
         explanation: 'SPF(Sun Protection Factor)는 UVB(피부 화상 유발)를 차단하는 정도를 나타냅니다.',
         simpleExplanation: 'SPF는 "UVB"를 막아요. UVB는 피부를 빨갛게 태우는 햇빛이에요.',
         keywords: ['SPF', 'UVB', '자외선'],
+        translations: {
+            vi: {
+                question: `Trong kem chống nắng, SPF có nghĩa là gì?`,
+                options: [
+                    `Chặn UVA`,
+                    `Chặn UVB`,
+                    `Chặn ánh sáng nhìn thấy`,
+                    `Chặn tia hồng ngoại`,
+                ],
+                explanation: `SPF (Sun Protection Factor) biểu thị mức độ chặn UVB (tia gây cháy nắng).`,
+            },
+            zh: {
+                question: `防晒霜中SPF代表什么？`,
+                options: [
+                    `阻挡UVA`,
+                    `阻挡UVB`,
+                    `阻挡可见光`,
+                    `阻挡红外线`,
+                ],
+                explanation: `SPF（防晒系数）表示阻挡UVB（导致皮肤晒伤的紫外线）的程度。`,
+            },
+            th: {
+                question: `ในครีมกันแดด SPF หมายความว่าอะไร?`,
+                options: [
+                    `ป้องกัน UVA`,
+                    `ป้องกัน UVB`,
+                    `ป้องกันแสงที่มองเห็น`,
+                    `ป้องกันรังสีอินฟราเรด`,
+                ],
+                explanation: `SPF (Sun Protection Factor) แสดงระดับการป้องกัน UVB ซึ่งเป็นรังสีที่ทำให้ผิวไหม้`,
+            },
+            tl: {
+                question: `Sa sunscreen, ano ang ibig sabihin ng SPF?`,
+                options: [
+                    `Harang sa UVA`,
+                    `Harang sa UVB`,
+                    `Harang sa nakikitang liwanag`,
+                    `Harang sa infrared`,
+                ],
+                explanation: `Ang SPF (Sun Protection Factor) ay nagpapakita ng antas ng proteksyon laban sa UVB (ang sinag na nagdudulot ng sunburn).`,
+            },
+            my: {
+                question: `နေကြာမျက်နှာသုတ်ဆေးတွင် SPF ဆိုသည်မှာ မည်သည်ကို ဆိုလိုသနည်း?`,
+                options: [
+                    `UVA တားဆီးခြင်း`,
+                    `UVB တားဆီးခြင်း`,
+                    `မြင်နိုင်သောအလင်းတားဆီးခြင်း`,
+                    `infrared တားဆီးခြင်း`,
+                ],
+                explanation: `SPF (Sun Protection Factor) သည် အရေပြားကို မီးလောင်စေသော UVB ကို ကာကွယ်နိုင်သော ပမာဏကို ဖော်ပြသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `자외선`, native: `tia cực tím` },
+                { korean: `차단제`, native: `kem chống nắng` },
+                { korean: `SPF`, native: `SPF (chỉ số chống nắng)` },
+                { korean: `UVB`, native: `UVB` },
+                { korean: `UVA`, native: `UVA` },
+            ],
+            zh: [
+                { korean: `자외선`, native: `紫外线` },
+                { korean: `차단제`, native: `防晒霜` },
+                { korean: `SPF`, native: `SPF（防晒系数）` },
+                { korean: `UVB`, native: `UVB` },
+                { korean: `UVA`, native: `UVA` },
+            ],
+            th: [
+                { korean: `자외선`, native: `รังสียูวี` },
+                { korean: `차단제`, native: `ครีมกันแดด` },
+                { korean: `SPF`, native: `SPF` },
+                { korean: `UVB`, native: `UVB` },
+            ],
+            tl: [
+                { korean: `자외선`, native: `ultraviolet` },
+                { korean: `차단제`, native: `sunscreen` },
+                { korean: `SPF`, native: `SPF` },
+                { korean: `UVB`, native: `UVB` },
+            ],
+            my: [
+                { korean: `자외선`, native: `UV အလင်းရောင်` },
+                { korean: `차단제`, native: `နေကြာမျက်နှာသုတ်ဆေး` },
+                { korean: `SPF`, native: `SPF` },
+                { korean: `UVB`, native: `UVB` },
+            ],
+        },
     },
     {
         id: 'bg-06',
@@ -76,6 +510,92 @@ export const beautyGeneralQuestions = [
         explanation: '파라티푸스는 소화기계 전염병입니다. 오염된 음식이나 물로 전파됩니다.',
         simpleExplanation: '파라티푸스는 음식으로 옮는 병이에요. 나머지는 기침할 때 옮는 병이에요.',
         keywords: ['호흡기', '소화기', '전염병'],
+        translations: {
+            vi: {
+                question: `Trong các bệnh dưới đây, bệnh nào KHÔNG thuộc bệnh truyền nhiễm qua đường hô hấp?`,
+                options: [
+                    `Sởi`,
+                    `Paratyphoid (phó thương hàn)`,
+                    `Cúm (Influenza)`,
+                    `Quai bị`,
+                ],
+                explanation: `Paratyphoid là bệnh truyền nhiễm qua đường tiêu hóa, lây qua thực phẩm hoặc nước bị ô nhiễm.`,
+            },
+            zh: {
+                question: `下列疾病中，哪种不属于呼吸道传染病？`,
+                options: [
+                    `麻疹`,
+                    `副伤寒`,
+                    `流感`,
+                    `流行性腮腺炎`,
+                ],
+                explanation: `副伤寒是消化道传染病，通过污染的食物或水传播。`,
+            },
+            th: {
+                question: `ในบรรดาโรคต่อไปนี้ โรคใดไม่ใช่โรคติดต่อทางระบบทางเดินหายใจ?`,
+                options: [
+                    `โรคหัด`,
+                    `ไข้รากสาดน้อย (Paratyphoid)`,
+                    `ไข้หวัดใหญ่`,
+                    `คางทูม`,
+                ],
+                explanation: `ไข้รากสาดน้อยเป็นโรคติดต่อทางระบบทางเดินอาหาร แพร่กระจายผ่านอาหารหรือน้ำที่ปนเปื้อน`,
+            },
+            tl: {
+                question: `Sa mga sakit na ito, alin ang HINDI sakit na nakukuha sa pamamagitan ng paghinga?`,
+                options: [
+                    `Tigdas`,
+                    `Paratyphoid`,
+                    `Trangkaso (Influenza)`,
+                    `Beke`,
+                ],
+                explanation: `Ang Paratyphoid ay sakit na nakukuha sa pamamagitan ng pagkain o tubig na kontaminado.`,
+            },
+            my: {
+                question: `အောက်ပါရောဂါများတွင် အသက်ရှူလမ်းကြောင်းဖြင့် ကူးစက်သည့် ရောဂါမဟုတ်သည်မှာ မည်သည်နည်း?`,
+                options: [
+                    `ဝက်ခြံ (Measles)`,
+                    `Paratyphoid`,
+                    `တုပ်ကွေး (Influenza)`,
+                    `ပါးသီးကပ်ခြင်း (Mumps)`,
+                ],
+                explanation: `Paratyphoid သည် ညစ်ညမ်းသောအစားအစာ သို့မဟုတ် ရေမှတစ်ဆင့် ကူးစက်သည့် အစာခြေလမ်းကြောင်းရောဂါဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `호흡기`, native: `đường hô hấp` },
+                { korean: `소화기`, native: `đường tiêu hóa` },
+                { korean: `전염병`, native: `bệnh truyền nhiễm` },
+                { korean: `파라티푸스`, native: `paratyphoid` },
+                { korean: `인플루엔자`, native: `cúm (influenza)` },
+            ],
+            zh: [
+                { korean: `호흡기`, native: `呼吸道` },
+                { korean: `소화기`, native: `消化道` },
+                { korean: `전염병`, native: `传染病` },
+                { korean: `파라티푸스`, native: `副伤寒` },
+                { korean: `인플루엔자`, native: `流感` },
+            ],
+            th: [
+                { korean: `호흡기`, native: `ระบบทางเดินหายใจ` },
+                { korean: `소화기`, native: `ระบบทางเดินอาหาร` },
+                { korean: `전염병`, native: `โรคติดต่อ` },
+                { korean: `파라티푸스`, native: `ไข้รากสาดน้อย` },
+            ],
+            tl: [
+                { korean: `호흡기`, native: `sistema ng paghinga` },
+                { korean: `소화기`, native: `sistema ng pagkain` },
+                { korean: `전염병`, native: `nakakahawang sakit` },
+                { korean: `파라티푸스`, native: `paratyphoid` },
+            ],
+            my: [
+                { korean: `호흡기`, native: `အသက်ရှူလမ်းကြောင်း` },
+                { korean: `소화기`, native: `အစာခြေလမ်းကြောင်း` },
+                { korean: `전염병`, native: `ကူးစက်ရောဂါ` },
+                { korean: `파라티푸스`, native: `paratyphoid` },
+            ],
+        },
     },
     {
         id: 'bg-07',
@@ -88,6 +608,92 @@ export const beautyGeneralQuestions = [
         explanation: '포자는 열과 화학물질에 강합니다. 121°C 이상의 고압증기 멸균만이 포자를 완전히 죽일 수 있습니다.',
         simpleExplanation: '"고압증기 멸균"은 아주 뜨거운 증기로 세균을 죽여요. 가장 확실한 방법이에요!',
         keywords: ['포자', '멸균', '고압증기'],
+        translations: {
+            vi: {
+                question: `Phương pháp nào phù hợp nhất để tiệt khuẩn vi khuẩn tạo bào tử?`,
+                options: [
+                    `Khử trùng bằng cồn`,
+                    `Khử trùng bằng clo`,
+                    `Hấp áp suất cao (Autoclave)`,
+                    `Khử trùng bằng ánh nắng`,
+                ],
+                explanation: `Bào tử có khả năng chịu nhiệt và hóa chất cao. Chỉ có hấp áp suất cao (121°C trở lên) mới có thể tiêu diệt hoàn toàn bào tử.`,
+            },
+            zh: {
+                question: `对产芽孢细菌进行灭菌，最适合的方法是什么？`,
+                options: [
+                    `酒精消毒`,
+                    `氯气消毒`,
+                    `高压蒸汽灭菌`,
+                    `日晒消毒`,
+                ],
+                explanation: `芽孢对高温和化学物质有强抵抗力。只有121°C以上的高压蒸汽灭菌才能彻底杀灭芽孢。`,
+            },
+            th: {
+                question: `วิธีที่เหมาะสมที่สุดในการฆ่าเชื้อแบคทีเรียที่สร้างสปอร์คืออะไร?`,
+                options: [
+                    `การฆ่าเชื้อด้วยแอลกอฮอล์`,
+                    `การฆ่าเชื้อด้วยคลอรีน`,
+                    `การนึ่งฆ่าเชื้อความดันสูง (Autoclave)`,
+                    `การฆ่าเชื้อด้วยแสงแดด`,
+                ],
+                explanation: `สปอร์มีความทนทานต่อความร้อนและสารเคมีสูง มีเพียงการนึ่งฆ่าเชื้อความดันสูงที่อุณหภูมิ 121°C ขึ้นไปเท่านั้นที่สามารถฆ่าสปอร์ได้อย่างสมบูรณ์`,
+            },
+            tl: {
+                question: `Ano ang pinaka-angkop na paraan ng sterilization para sa bakteryang gumagawa ng spore?`,
+                options: [
+                    `Disinfection gamit ang alkohol`,
+                    `Disinfection gamit ang chlorine`,
+                    `High-pressure steam sterilization (Autoclave)`,
+                    `Disinfection gamit ang sikat ng araw`,
+                ],
+                explanation: `Ang mga spore ay matibay laban sa init at kemikal. Tanging high-pressure steam sterilization (121°C pataas) lang ang makakapatay ng spore nang buo.`,
+            },
+            my: {
+                question: `Spore ဖွဲ့သောဘက်တီးရီးယားကို ပိုးသန့်စင်ရန် အသင့်တော်ဆုံးနည်းလမ်းမှာ မည်သည်နည်း?`,
+                options: [
+                    `အယ်လ်ကိုဟောဖြင့် ပိုးသန့်စင်ခြင်း`,
+                    `ကလိုရင်းဖြင့် ပိုးသန့်စင်ခြင်း`,
+                    `မြင့်မားသောဖိအားရှိသော ရေနွေးငွေ့ဖြင့် ပိုးသတ်ခြင်း (Autoclave)`,
+                    `နေရောင်ဖြင့် ပိုးသန့်စင်ခြင်း`,
+                ],
+                explanation: `Spore များသည် အပူနှင့် ဓာတုပစ္စည်းများကို ခံနိုင်ရည်ကောင်းသည်။ 121°C အထက် မြင့်မားသောဖိအားရှိသော ရေနွေးငွေ့ဖြင့် ပိုးသတ်မှသာ spore ကို လုံးဝသတ်နိုင်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `포자`, native: `bào tử` },
+                { korean: `멸균`, native: `tiệt khuẩn` },
+                { korean: `고압증기`, native: `hấp áp suất cao` },
+                { korean: `소독`, native: `khử trùng` },
+                { korean: `세균`, native: `vi khuẩn` },
+            ],
+            zh: [
+                { korean: `포자`, native: `芽孢 / 孢子` },
+                { korean: `멸균`, native: `灭菌` },
+                { korean: `고압증기`, native: `高压蒸汽` },
+                { korean: `소독`, native: `消毒` },
+                { korean: `세균`, native: `细菌` },
+            ],
+            th: [
+                { korean: `포자`, native: `สปอร์` },
+                { korean: `멸균`, native: `การฆ่าเชื้อ` },
+                { korean: `고압증기`, native: `การนึ่งความดันสูง` },
+                { korean: `소독`, native: `การฆ่าเชื้อ` },
+            ],
+            tl: [
+                { korean: `포자`, native: `spore` },
+                { korean: `멸균`, native: `sterilization` },
+                { korean: `고압증기`, native: `high-pressure steam` },
+                { korean: `소독`, native: `disinfection` },
+            ],
+            my: [
+                { korean: `포자`, native: `spore` },
+                { korean: `멸균`, native: `ပိုးသတ်ခြင်း` },
+                { korean: `고압증기`, native: `မြင့်မားသောဖိအားရှိသောရေနွေးငွေ့` },
+                { korean: `소독`, native: `ပိုးသန့်စင်ခြင်း` },
+            ],
+        },
     },
     {
         id: 'bg-08',
@@ -100,6 +706,92 @@ export const beautyGeneralQuestions = [
         explanation: '미용 과정은 상담 → 디자인 → 시술 → 보정 순서입니다. 보정은 마지막으로 완성도를 높이는 단계입니다.',
         simpleExplanation: '"보정"은 마지막에 살펴보고 고치는 단계예요. 더 예쁘게 만들어요.',
         keywords: ['보정', '미용과정', '마무리'],
+        translations: {
+            vi: {
+                question: `Quan sát tổng thể kiểu tóc và thực hiện chỉnh sửa, bổ sung để hoàn thiện là giai đoạn nào?`,
+                options: [
+                    `Thực hiện kỹ thuật`,
+                    `Thiết kế`,
+                    `Chỉnh sửa hoàn thiện`,
+                    `Tư vấn`,
+                ],
+                explanation: `Quy trình làm tóc gồm: tư vấn → thiết kế → thực hiện kỹ thuật → chỉnh sửa hoàn thiện. Bước chỉnh sửa là bước cuối cùng để nâng cao độ hoàn chỉnh.`,
+            },
+            zh: {
+                question: `综合观察整体发型，修正补充并最终完成的是什么阶段？`,
+                options: [
+                    `施术`,
+                    `设计`,
+                    `修正`,
+                    `咨询`,
+                ],
+                explanation: `美容流程为：咨询→设计→施术→修正。修正是最后提升完成度的阶段。`,
+            },
+            th: {
+                question: `การสังเกตทรงผมโดยรวมแล้วแก้ไขเพิ่มเติมจนสมบูรณ์คือขั้นตอนใด?`,
+                options: [
+                    `การทำ (施術)`,
+                    `การออกแบบ`,
+                    `การแก้ไขให้สมบูรณ์`,
+                    `การให้คำปรึกษา`,
+                ],
+                explanation: `กระบวนการทำผมคือ: ให้คำปรึกษา → ออกแบบ → ทำ → แก้ไขให้สมบูรณ์ การแก้ไขคือขั้นตอนสุดท้ายเพื่อเพิ่มความสมบูรณ์`,
+            },
+            tl: {
+                question: `Ang pangkalahatang pagmamasid sa buhok at pag-aayos para maperpekto ito ay anong yugto?`,
+                options: [
+                    `Pagsasagawa ng teknik`,
+                    `Disenyo`,
+                    `Pagwawasto`,
+                    `Konsultasyon`,
+                ],
+                explanation: `Ang proseso ng beauty ay: konsultasyon → disenyo → pagsasagawa → pagwawasto. Ang pagwawasto ang huling hakbang para maperpekto ang resulta.`,
+            },
+            my: {
+                question: `ဆံပင်ပုံစံကို အလုံးစုံကြည့်ပြီး ပြင်ဆင်ဖြည့်ပေးကာ အပြည့်အဝပြီးမြောက်အောင်လုပ်ခြင်းမှာ မည်သည့်အဆင့်နည်း?`,
+                options: [
+                    `နည်းပညာဆောင်ရွက်ခြင်း`,
+                    `ဒီဇိုင်းဆွဲခြင်း`,
+                    `ပြင်ဆင်မွမ်းမံခြင်း`,
+                    `တိုင်ပင်ဆွေးနွေးခြင်း`,
+                ],
+                explanation: `မြင်လှပရေး (Beauty) လုပ်ငန်းစဉ်မှာ - တိုင်ပင်ဆွေးနွေးခြင်း → ဒီဇိုင်းဆွဲခြင်း → နည်းပညာဆောင်ရွက်ခြင်း → ပြင်ဆင်မွမ်းမံခြင်း ဖြစ်သည်။ ပြင်ဆင်မွမ်းမံခြင်းသည် နောက်ဆုံးအဆင့်ဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `미용`, native: `làm đẹp / thẩm mỹ` },
+                { korean: `보정`, native: `chỉnh sửa hoàn thiện` },
+                { korean: `시술`, native: `thực hiện kỹ thuật` },
+                { korean: `디자인`, native: `thiết kế` },
+                { korean: `상담`, native: `tư vấn` },
+            ],
+            zh: [
+                { korean: `미용`, native: `美容` },
+                { korean: `보정`, native: `修正` },
+                { korean: `시술`, native: `施术` },
+                { korean: `디자인`, native: `设计` },
+                { korean: `상담`, native: `咨询` },
+            ],
+            th: [
+                { korean: `미용`, native: `ความงาม / การทำผม` },
+                { korean: `보정`, native: `การแก้ไขให้สมบูรณ์` },
+                { korean: `시술`, native: `การทำ` },
+                { korean: `상담`, native: `การให้คำปรึกษา` },
+            ],
+            tl: [
+                { korean: `미용`, native: `pagpapaganda` },
+                { korean: `보정`, native: `pagwawasto` },
+                { korean: `시술`, native: `pagsasagawa` },
+                { korean: `상담`, native: `konsultasyon` },
+            ],
+            my: [
+                { korean: `미용`, native: `မြင်လှပရေး` },
+                { korean: `보정`, native: `ပြင်ဆင်မွမ်းမံခြင်း` },
+                { korean: `시술`, native: `နည်းပညာဆောင်ရွက်ခြင်း` },
+                { korean: `상담`, native: `တိုင်ပင်ဆွေးနွေးခြင်း` },
+            ],
+        },
     },
     {
         id: 'bg-09',
@@ -112,6 +804,92 @@ export const beautyGeneralQuestions = [
         explanation: '미용은 외모를 아름답게 가꾸는 것입니다. 질병 치료는 의료 행위로, 미용의 목적이 아닙니다.',
         simpleExplanation: '미용은 예쁘게 만드는 거예요. 병을 고치는 것은 병원에서 해요.',
         keywords: ['미용', '목적', '치료'],
+        translations: {
+            vi: {
+                question: `Trong các lựa chọn dưới đây, đâu là điều xa rời nhất với mục đích của thẩm mỹ?`,
+                options: [
+                    `Làm đẹp diện mạo`,
+                    `Tạo ấn tượng hấp dẫn`,
+                    `Vệ sinh và sức khỏe`,
+                    `Điều trị bệnh`,
+                ],
+                explanation: `Thẩm mỹ là làm đẹp ngoại hình. Điều trị bệnh là hành vi y tế, không phải mục đích của thẩm mỹ.`,
+            },
+            zh: {
+                question: `下列选项中，与美容目的相距最远的是什么？`,
+                options: [
+                    `使容貌变美`,
+                    `给人有魅力的印象`,
+                    `清洁与健康`,
+                    `疾病治疗`,
+                ],
+                explanation: `美容是美化外貌的行为。疾病治疗属于医疗行为，不是美容的目的。`,
+            },
+            th: {
+                question: `ในบรรดาตัวเลือกต่อไปนี้ ข้อใดห่างไกลจากวัตถุประสงค์ของความงามมากที่สุด?`,
+                options: [
+                    `ทำให้รูปลักษณ์สวยงาม`,
+                    `สร้างความประทับใจที่ดึงดูด`,
+                    `ความสะอาดและสุขภาพ`,
+                    `การรักษาโรค`,
+                ],
+                explanation: `ความงาม (beauty) คือการดูแลรูปลักษณ์ภายนอก การรักษาโรคเป็นการกระทำทางการแพทย์ ไม่ใช่วัตถุประสงค์ของความงาม`,
+            },
+            tl: {
+                question: `Sa mga pagpipiliang ito, alin ang pinakamalayo sa layunin ng pagpapaganda?`,
+                options: [
+                    `Pagpapaganda ng hitsura`,
+                    `Paglikha ng kaakit-akit na impresyon`,
+                    `Kalinisan at kalusugan`,
+                    `Paggamot ng sakit`,
+                ],
+                explanation: `Ang pagpapaganda ay ang pagpapaganda ng panlabas na hitsura. Ang paggamot ng sakit ay medikal na gawain, hindi layunin ng pagpapaganda.`,
+            },
+            my: {
+                question: `အောက်ပါတို့တွင် မြင်လှပရေး (미용) ၏ ရည်ရွယ်ချက်နှင့် အဝေးကြီးဆုံးသည့်အရာမှာ မည်သည်နည်း?`,
+                options: [
+                    `အသွင်အပြင်ကို လှပအောင်ပြုလုပ်ခြင်း`,
+                    `ဆွဲဆောင်မှုရှိသောအမှတ်တရ ဖန်တီးခြင်း`,
+                    `သန့်ရှင်းရေးနှင့် ကျန်းမာရေး`,
+                    `ရောဂါကုသခြင်း`,
+                ],
+                explanation: `မြင်လှပရေးသည် အပြင်ပန်းအသွင်အပြင်ကို လှပအောင်ပြုလုပ်ခြင်းဖြစ်သည်။ ရောဂါကုသခြင်းသည် ဆေးပညာဆိုင်ရာ လုပ်ဆောင်ချက်ဖြစ်ပြီး မြင်လှပရေး၏ ရည်ရွယ်ချက်မဟုတ်ပေ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `미용`, native: `thẩm mỹ / làm đẹp` },
+                { korean: `목적`, native: `mục đích` },
+                { korean: `치료`, native: `điều trị` },
+                { korean: `용모`, native: `diện mạo` },
+                { korean: `청결`, native: `vệ sinh` },
+            ],
+            zh: [
+                { korean: `미용`, native: `美容` },
+                { korean: `목적`, native: `目的` },
+                { korean: `치료`, native: `治疗` },
+                { korean: `용모`, native: `容貌` },
+                { korean: `청결`, native: `清洁` },
+            ],
+            th: [
+                { korean: `미용`, native: `ความงาม` },
+                { korean: `목적`, native: `วัตถุประสงค์` },
+                { korean: `치료`, native: `การรักษา` },
+                { korean: `청결`, native: `ความสะอาด` },
+            ],
+            tl: [
+                { korean: `미용`, native: `pagpapaganda` },
+                { korean: `목적`, native: `layunin` },
+                { korean: `치료`, native: `paggamot` },
+                { korean: `청결`, native: `kalinisan` },
+            ],
+            my: [
+                { korean: `미용`, native: `မြင်လှပရေး` },
+                { korean: `목적`, native: `ရည်ရွယ်ချက်` },
+                { korean: `치료`, native: `ကုသခြင်း` },
+                { korean: `청결`, native: `သန့်ရှင်းရေး` },
+            ],
+        },
     },
     {
         id: 'bg-10',
@@ -124,6 +902,94 @@ export const beautyGeneralQuestions = [
         explanation: '모피질(코텍스)은 모발의 90%를 차지하고, 멜라닌 색소가 가장 많아 모발 색을 결정합니다.',
         simpleExplanation: '"모피질"에 멜라닌이 가장 많아요. 모피질이 머리카락 색을 만들어요.',
         keywords: ['모피질', '멜라닌', '색소'],
+        translations: {
+            vi: {
+                question: `Trong các lớp của tóc, lớp nào có sự phân bố nhiều hắc tố melanin nhất?`,
+                options: [
+                    `Lớp biểu bì tóc (Cuticle)`,
+                    `Lớp vỏ tóc (Cortex)`,
+                    `Lớp tủy tóc (Medulla)`,
+                    `Chân tóc (Rễ tóc)`,
+                ],
+                explanation: `Lớp vỏ tóc (cortex) chiếm 90% tóc và có nhiều hắc tố melanin nhất, quyết định màu sắc của tóc.`,
+            },
+            zh: {
+                question: `在头发各层中，黑色素（Melanin）分布最多的层是哪一层？`,
+                options: [
+                    `毛表皮（角质层）`,
+                    `毛皮质（皮质层）`,
+                    `毛髓质`,
+                    `发根`,
+                ],
+                explanation: `毛皮质（皮质层）占头发的90%，含有最多的黑色素，决定头发的颜色。`,
+            },
+            th: {
+                question: `ในชั้นต่างๆ ของเส้นผม ชั้นใดมีการกระจายตัวของเมลานินมากที่สุด?`,
+                options: [
+                    `ชั้นคิวติเคิล (Cuticle)`,
+                    `ชั้นคอร์เทกซ์ (Cortex)`,
+                    `ชั้นเมดัลลา (Medulla)`,
+                    `รากผม`,
+                ],
+                explanation: `ชั้นคอร์เทกซ์ครอบคลุม 90% ของเส้นผม และมีเมลานินมากที่สุด ซึ่งกำหนดสีของเส้นผม`,
+            },
+            tl: {
+                question: `Sa mga layer ng buhok, alin ang may pinaka-maraming melanin?`,
+                options: [
+                    `Cuticle (pinaka-labas na layer)`,
+                    `Cortex`,
+                    `Medulla`,
+                    `Ugat ng buhok`,
+                ],
+                explanation: `Ang cortex ay sumasaklaw ng 90% ng buhok at may pinakamaraming melanin, na nagtatakda ng kulay ng buhok.`,
+            },
+            my: {
+                question: `ဆံပင်၏ အလွှာများတွင် melanin အရောင်ဓာတ် အများဆုံးရှိသောအလွှာမှာ မည်သည်နည်း?`,
+                options: [
+                    `မြတ်ဆံပင်အပြင်ပိုင်း (Cuticle)`,
+                    `မြတ်ဆံပင်အပေါ်ဆုံးအလွှာ (Cortex)`,
+                    `မြတ်ဆံပင်အတွင်းပိုင်း (Medulla)`,
+                    `ဆံပင်အမြစ်`,
+                ],
+                explanation: `Cortex သည် ဆံပင်၏ 90% ကိုကိုယ်စားပြုပြီး melanin အများဆုံးပါဝင်ကာ ဆံပင်အရောင်ကို ဆုံးဖြတ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `모발`, native: `tóc` },
+                { korean: `멜라닌`, native: `melanin / hắc tố` },
+                { korean: `모피질`, native: `lớp vỏ tóc (cortex)` },
+                { korean: `모표피`, native: `lớp biểu bì tóc (cuticle)` },
+                { korean: `모수질`, native: `lớp tủy tóc (medulla)` },
+                { korean: `색소`, native: `sắc tố` },
+            ],
+            zh: [
+                { korean: `모발`, native: `头发` },
+                { korean: `멜라닌`, native: `黑色素` },
+                { korean: `모피질`, native: `毛皮质` },
+                { korean: `모표피`, native: `毛表皮` },
+                { korean: `모수질`, native: `毛髓质` },
+                { korean: `색소`, native: `色素` },
+            ],
+            th: [
+                { korean: `모발`, native: `เส้นผม` },
+                { korean: `멜라닌`, native: `เมลานิน` },
+                { korean: `모피질`, native: `คอร์เทกซ์` },
+                { korean: `색소`, native: `สีผม` },
+            ],
+            tl: [
+                { korean: `모발`, native: `buhok` },
+                { korean: `멜라닌`, native: `melanin` },
+                { korean: `모피질`, native: `cortex` },
+                { korean: `색소`, native: `pigment` },
+            ],
+            my: [
+                { korean: `모발`, native: `ဆံပင်` },
+                { korean: `멜라닌`, native: `melanin` },
+                { korean: `모피질`, native: `cortex` },
+                { korean: `색소`, native: `အရောင်ဓာတ်` },
+            ],
+        },
     },
     // ── 두피·모발 (hair-theory) bg-11 ~ bg-21 (11문제 추가 → 총 15) ──
     {
@@ -142,6 +1008,92 @@ export const beautyGeneralQuestions = [
         explanation: '모발은 바깥쪽부터 모표피(큐티클) → 모피질(코텍스) → 모수질(메듈라) 순서로 구성됩니다.',
         simpleExplanation: '머리카락은 양파처럼 겹겹이 있어요. 바깥→가운데→속: 모표피→모피질→모수질이에요.',
         keywords: ['모표피', '모피질', '모수질', '모발구조'],
+        translations: {
+            vi: {
+                question: `Cấu trúc 3 lớp của tóc từ ngoài vào trong được sắp xếp đúng thứ tự là?`,
+                options: [
+                    `Tủy tóc → Vỏ tóc → Biểu bì tóc`,
+                    `Biểu bì tóc → Vỏ tóc → Tủy tóc`,
+                    `Vỏ tóc → Biểu bì tóc → Tủy tóc`,
+                    `Biểu bì tóc → Tủy tóc → Vỏ tóc`,
+                ],
+                explanation: `Tóc được cấu tạo từ ngoài vào trong theo thứ tự: biểu bì tóc (cuticle) → vỏ tóc (cortex) → tủy tóc (medulla).`,
+            },
+            zh: {
+                question: `头发3层结构从外向内正确排列的是？`,
+                options: [
+                    `毛髓质→毛皮质→毛表皮`,
+                    `毛表皮→毛皮质→毛髓质`,
+                    `毛皮质→毛表皮→毛髓质`,
+                    `毛表皮→毛髓质→毛皮质`,
+                ],
+                explanation: `头发由外向内依次为：毛表皮（角质层）→毛皮质（皮质）→毛髓质（髓质）。`,
+            },
+            th: {
+                question: `โครงสร้าง 3 ชั้นของเส้นผมจากชั้นนอกสุดไปชั้นในสุดเรียงตามลำดับที่ถูกต้องคือ?`,
+                options: [
+                    `เมดัลลา → คอร์เทกซ์ → คิวติเคิล`,
+                    `คิวติเคิล → คอร์เทกซ์ → เมดัลลา`,
+                    `คอร์เทกซ์ → คิวติเคิล → เมดัลลา`,
+                    `คิวติเคิล → เมดัลลา → คอร์เทกซ์`,
+                ],
+                explanation: `เส้นผมประกอบด้วยชั้นจากนอกสุดเข้าใน: คิวติเคิล → คอร์เทกซ์ → เมดัลลา`,
+            },
+            tl: {
+                question: `Ang tamang pagkakasunod ng 3-layer na istraktura ng buhok mula labas hanggang loob ay?`,
+                options: [
+                    `Medulla → Cortex → Cuticle`,
+                    `Cuticle → Cortex → Medulla`,
+                    `Cortex → Cuticle → Medulla`,
+                    `Cuticle → Medulla → Cortex`,
+                ],
+                explanation: `Ang buhok ay binubuo mula labas papasok: cuticle → cortex → medulla.`,
+            },
+            my: {
+                question: `ဆံပင်၏ ၃ အလွှာဖွဲ့စည်းပုံကို အပြင်မှ အတွင်းသို့ မှန်ကန်စွာ စီစဉ်ထားသည်မှာ?`,
+                options: [
+                    `မြတ်ဆံပင်အတွင်း → မြတ်ဆံပင်အပေါ် → မြတ်ဆံပင်အပြင်`,
+                    `မြတ်ဆံပင်အပြင် → မြတ်ဆံပင်အပေါ် → မြတ်ဆံပင်အတွင်း`,
+                    `မြတ်ဆံပင်အပေါ် → မြတ်ဆံပင်အပြင် → မြတ်ဆံပင်အတွင်း`,
+                    `မြတ်ဆံပင်အပြင် → မြတ်ဆံပင်အတွင်း → မြတ်ဆံပင်အပေါ်`,
+                ],
+                explanation: `ဆံပင်မှာ အပြင်မှ အတွင်းသို့ - cuticle (မြတ်ဆံပင်အပြင်) → cortex (မြတ်ဆံပင်အပေါ်) → medulla (မြတ်ဆံပင်အတွင်း) အဆင့်ဆင့်ဖြင့် ဖွဲ့စည်းသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `모발구조`, native: `cấu trúc tóc` },
+                { korean: `모표피`, native: `biểu bì tóc (cuticle)` },
+                { korean: `모피질`, native: `vỏ tóc (cortex)` },
+                { korean: `모수질`, native: `tủy tóc (medulla)` },
+                { korean: `모발`, native: `tóc` },
+            ],
+            zh: [
+                { korean: `모발구조`, native: `头发结构` },
+                { korean: `모표피`, native: `毛表皮` },
+                { korean: `모피질`, native: `毛皮质` },
+                { korean: `모수질`, native: `毛髓质` },
+                { korean: `모발`, native: `头发` },
+            ],
+            th: [
+                { korean: `모발구조`, native: `โครงสร้างเส้นผม` },
+                { korean: `모표피`, native: `คิวติเคิล` },
+                { korean: `모피질`, native: `คอร์เทกซ์` },
+                { korean: `모수질`, native: `เมดัลลา` },
+            ],
+            tl: [
+                { korean: `모발구조`, native: `istraktura ng buhok` },
+                { korean: `모표피`, native: `cuticle` },
+                { korean: `모피질`, native: `cortex` },
+                { korean: `모수질`, native: `medulla` },
+            ],
+            my: [
+                { korean: `모발구조`, native: `ဆံပင်ဖွဲ့စည်းပုံ` },
+                { korean: `모표피`, native: `cuticle` },
+                { korean: `모피질`, native: `cortex` },
+                { korean: `모수질`, native: `medulla` },
+            ],
+        },
     },
     {
         id: 'bg-12',
@@ -154,6 +1106,92 @@ export const beautyGeneralQuestions = [
         explanation: '성장기(Anagen)는 모유두에서 세포 분열이 왕성하게 일어나 모발이 성장하는 단계입니다. 전체 모발의 약 85~90%가 성장기에 있습니다.',
         simpleExplanation: '"성장기"에 머리카락이 자라요. 세포가 계속 나눠지면서 머리가 길어져요.',
         keywords: ['성장기', '모발성장주기', '세포분열'],
+        translations: {
+            vi: {
+                question: `Trong chu kỳ tăng trưởng của tóc, giai đoạn nào là khi tế bào phân chia mạnh mẽ và tóc thực sự phát triển?`,
+                options: [
+                    `Giai đoạn nghỉ ngơi`,
+                    `Giai đoạn tăng trưởng`,
+                    `Giai đoạn thoái hóa`,
+                    `Giai đoạn rụng`,
+                ],
+                explanation: `Giai đoạn tăng trưởng (Anagen) là khi sự phân chia tế bào diễn ra mạnh mẽ ở nhú tóc và tóc phát triển. Khoảng 85~90% số tóc đang ở giai đoạn này.`,
+            },
+            zh: {
+                question: `在毛发生长周期中，细胞分裂活跃、毛发实际生长的阶段是哪个？`,
+                options: [
+                    `休止期`,
+                    `生长期`,
+                    `退行期`,
+                    `脱落期`,
+                ],
+                explanation: `生长期（Anagen）是毛乳头细胞旺盛分裂、毛发生长的阶段。约85~90%的毛发处于生长期。`,
+            },
+            th: {
+                question: `ในวงจรการเจริญเติบโตของเส้นผม ระยะใดที่เซลล์แบ่งตัวอย่างแข็งขันและเส้นผมเติบโตจริง?`,
+                options: [
+                    `ระยะพัก (Telogen)`,
+                    `ระยะเจริญเติบโต (Anagen)`,
+                    `ระยะถดถอย (Catagen)`,
+                    `ระยะหลุดร่วง`,
+                ],
+                explanation: `ระยะ Anagen คือระยะที่เซลล์แบ่งตัวอย่างรวดเร็วที่ papilla และเส้นผมเติบโต ประมาณ 85~90% ของเส้นผมอยู่ในระยะนี้`,
+            },
+            tl: {
+                question: `Sa growth cycle ng buhok, sa anong yugto aktibong naghahatid ng cell division at lumalago ang buhok?`,
+                options: [
+                    `Telogen (pahinga)`,
+                    `Anagen (paglago)`,
+                    `Catagen (pagbabago)`,
+                    `Yugto ng paglalaglag`,
+                ],
+                explanation: `Ang Anagen ay ang yugto na aktibong nagdivide ang mga selula sa hair papilla at lumalago ang buhok. Humigit-kumulang 85~90% ng mga buhok ay nasa yugtong ito.`,
+            },
+            my: {
+                question: `ဆံပင်ကြီးထွားမှုစက်ဝန်းတွင် ဆဲလ်ခွဲခြားမှု ကြွင်းကြွင်းဖြစ်ပြီး ဆံပင်တကယ်ကြီးထွားသောအဆင့်မှာ မည်သည်နည်း?`,
+                options: [
+                    `အနားယူခြင်းအဆင့် (Telogen)`,
+                    `ကြီးထွားသောအဆင့် (Anagen)`,
+                    `ကျဆင်းသောအဆင့် (Catagen)`,
+                    `ကြွေကျသောအဆင့်`,
+                ],
+                explanation: `Anagen (ကြီးထွားအဆင့်) သည် hair papilla တွင် ဆဲလ်ခွဲခြားမှု ကြွင်းကြွင်းဖြစ်ပြီး ဆံပင်ကြီးထွားသောအဆင့်ဖြစ်သည်။ ဆံပင်တစ်ဦးလုံး၏ 85~90% ခန့် ဤအဆင့်တွင် ရှိသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `모발성장주기`, native: `chu kỳ tăng trưởng tóc` },
+                { korean: `성장기`, native: `giai đoạn tăng trưởng` },
+                { korean: `세포분열`, native: `phân chia tế bào` },
+                { korean: `퇴행기`, native: `giai đoạn thoái hóa` },
+                { korean: `휴지기`, native: `giai đoạn nghỉ ngơi` },
+            ],
+            zh: [
+                { korean: `모발성장주기`, native: `毛发生长周期` },
+                { korean: `성장기`, native: `生长期` },
+                { korean: `세포분열`, native: `细胞分裂` },
+                { korean: `퇴행기`, native: `退行期` },
+                { korean: `휴지기`, native: `休止期` },
+            ],
+            th: [
+                { korean: `모발성장주기`, native: `วงจรการเติบโตของเส้นผม` },
+                { korean: `성장기`, native: `ระยะ Anagen` },
+                { korean: `세포분열`, native: `การแบ่งเซลล์` },
+                { korean: `휴지기`, native: `ระยะ Telogen` },
+            ],
+            tl: [
+                { korean: `모발성장주기`, native: `growth cycle ng buhok` },
+                { korean: `성장기`, native: `anagen` },
+                { korean: `세포분열`, native: `cell division` },
+                { korean: `휴지기`, native: `telogen` },
+            ],
+            my: [
+                { korean: `모발성장주기`, native: `ဆံပင်ကြီးထွားမှုစက်ဝန်း` },
+                { korean: `성장기`, native: `anagen (ကြီးထွားအဆင့်)` },
+                { korean: `세포분열`, native: `ဆဲလ်ခွဲခြားမှု` },
+                { korean: `휴지기`, native: `telogen (အနားယူအဆင့်)` },
+            ],
+        },
     },
     {
         id: 'bg-13',
@@ -171,6 +1209,92 @@ export const beautyGeneralQuestions = [
         explanation: '퇴행기(Catagen)는 성장기 후 2~3주 동안 모발 성장이 서서히 멈추는 전환 단계입니다. 전체 모발의 약 1%가 해당됩니다.',
         simpleExplanation: '퇴행기는 성장이 멈추고 쉬어가는 중간 단계예요. 약 2~3주 동안 계속돼요.',
         keywords: ['퇴행기', '모발성장주기', '성장정지'],
+        translations: {
+            vi: {
+                question: `Điều nào đúng về giai đoạn thoái hóa trong chu kỳ tăng trưởng của tóc?`,
+                options: [
+                    `Là giai đoạn phân chia tế bào mạnh mẽ nhất`,
+                    `Là giai đoạn cuối cùng khi tóc rụng`,
+                    `Là giai đoạn chuyển tiếp từ tăng trưởng sang nghỉ ngơi`,
+                    `Là giai đoạn tóc hoàn toàn tách khỏi nang`,
+                ],
+                explanation: `Giai đoạn thoái hóa (Catagen) là giai đoạn chuyển tiếp khoảng 2~3 tuần khi tóc ngừng tăng trưởng dần dần. Khoảng 1% tóc thuộc giai đoạn này.`,
+            },
+            zh: {
+                question: `关于毛发生长周期的退行期，以下描述正确的是？`,
+                options: [
+                    `是细胞分裂最旺盛的阶段`,
+                    `是毛发脱落的最后阶段`,
+                    `是从生长期过渡到休止期的转换阶段`,
+                    `是毛发从毛囊完全分离的阶段`,
+                ],
+                explanation: `退行期（Catagen）是生长期结束后约2~3周内毛发生长逐渐停止的转换阶段，约1%的毛发处于此期。`,
+            },
+            th: {
+                question: `ข้อใดถูกต้องเกี่ยวกับระยะ Catagen ในวงจรการเติบโตของเส้นผม?`,
+                options: [
+                    `เป็นระยะที่เซลล์แบ่งตัวมากที่สุด`,
+                    `เป็นระยะสุดท้ายที่เส้นผมหลุดร่วง`,
+                    `เป็นระยะเปลี่ยนผ่านจากระยะเจริญเติบโตไปสู่ระยะพัก`,
+                    `เป็นระยะที่เส้นผมแยกออกจาก follicle โดยสมบูรณ์`,
+                ],
+                explanation: `ระยะ Catagen คือระยะเปลี่ยนผ่านประมาณ 2~3 สัปดาห์ที่การเติบโตของเส้นผมค่อยๆ หยุด ประมาณ 1% ของเส้นผมอยู่ในระยะนี้`,
+            },
+            tl: {
+                question: `Alin ang tamang paglalarawan sa Catagen sa growth cycle ng buhok?`,
+                options: [
+                    `Ito ang yugtong pinaka-aktibo ang cell division`,
+                    `Ito ang huling yugto bago malaglag ang buhok`,
+                    `Ito ang transition phase mula anagen patungong telogen`,
+                    `Ito ang yugtong ganap na nahihiwalay ang buhok sa follicle`,
+                ],
+                explanation: `Ang Catagen ay isang transition phase na tumatagal ng 2~3 linggo pagkatapos ng anagen, kung saan dahan-dahang tumitigil ang paglago ng buhok. Humigit-kumulang 1% ng buhok ang nasa yugtong ito.`,
+            },
+            my: {
+                question: `ဆံပင်ကြီးထွားမှုစက်ဝန်းတွင် ကျဆင်းမှုအဆင့် (Catagen) အကြောင်း မှန်ကန်သောဖော်ပြချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `ဆဲလ်ခွဲခြားမှု အကြွင်းမဲ့ကြွင်းဖြစ်သောအဆင့်ဖြစ်သည်`,
+                    `ဆံပင်ကြွေကျသော နောက်ဆုံးအဆင့်ဖြစ်သည်`,
+                    `ကြီးထွားအဆင့်မှ အနားယူအဆင့်သို့ ကူးပြောင်းသောအဆင့်ဖြစ်သည်`,
+                    `ဆံပင် follicle မှ လုံးဝကွာဆင်းသောအဆင့်ဖြစ်သည်`,
+                ],
+                explanation: `Catagen သည် ကြီးထွားအဆင့်ပြီးနောက် 2~3 ပတ်ကြာ ဆံပင်ကြီးထွားမှု တဖြည်းဖြည်းရပ်တန့်သော ကူးပြောင်းအဆင့်ဖြစ်သည်။ ဆံပင်တစ်ဦးလုံး၏ 1% ခန့် ဤအဆင့်တွင် ရှိသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `모발성장주기`, native: `chu kỳ tăng trưởng tóc` },
+                { korean: `퇴행기`, native: `giai đoạn thoái hóa (Catagen)` },
+                { korean: `성장기`, native: `giai đoạn tăng trưởng (Anagen)` },
+                { korean: `휴지기`, native: `giai đoạn nghỉ ngơi (Telogen)` },
+                { korean: `성장정지`, native: `ngừng tăng trưởng` },
+            ],
+            zh: [
+                { korean: `모발성장주기`, native: `毛发生长周期` },
+                { korean: `퇴행기`, native: `退行期` },
+                { korean: `성장기`, native: `生长期` },
+                { korean: `휴지기`, native: `休止期` },
+                { korean: `성장정지`, native: `生长停止` },
+            ],
+            th: [
+                { korean: `퇴행기`, native: `ระยะ Catagen` },
+                { korean: `성장기`, native: `ระยะ Anagen` },
+                { korean: `휴지기`, native: `ระยะ Telogen` },
+                { korean: `모발성장주기`, native: `วงจรเส้นผม` },
+            ],
+            tl: [
+                { korean: `퇴행기`, native: `catagen` },
+                { korean: `성장기`, native: `anagen` },
+                { korean: `휴지기`, native: `telogen` },
+                { korean: `모발성장주기`, native: `growth cycle ng buhok` },
+            ],
+            my: [
+                { korean: `퇴행기`, native: `catagen` },
+                { korean: `성장기`, native: `anagen` },
+                { korean: `휴지기`, native: `telogen` },
+                { korean: `모발성장주기`, native: `ဆံပင်ကြီးထွားမှုစက်ဝန်း` },
+            ],
+        },
     },
     {
         id: 'bg-14',
@@ -188,6 +1312,92 @@ export const beautyGeneralQuestions = [
         explanation: '휴지기(Telogen)는 모발의 성장이 완전히 멈추는 단계로, 약 3~4개월 지속됩니다. 이 시기에 머리카락이 자연스럽게 빠지고 새 모발이 성장기를 시작합니다.',
         simpleExplanation: '휴지기는 머리카락이 완전히 쉬는 단계예요. 이때 빠지면서 새 머리카락이 자라기 시작해요.',
         keywords: ['휴지기', '탈모', '모발주기'],
+        translations: {
+            vi: {
+                question: `Điều nào đúng về đặc điểm của giai đoạn nghỉ ngơi (Telogen)?`,
+                options: [
+                    `Là giai đoạn phân chia tế bào mạnh nhất`,
+                    `Là giai đoạn chuyển tiếp từ tăng trưởng sang thoái hóa`,
+                    `Là giai đoạn tóc hoàn toàn ngừng tăng trưởng và chuẩn bị rụng`,
+                    `Là giai đoạn hình thành nang tóc mới`,
+                ],
+                explanation: `Telogen là giai đoạn tăng trưởng tóc hoàn toàn dừng lại, kéo dài khoảng 3~4 tháng. Trong thời gian này, tóc tự nhiên rụng và tóc mới bắt đầu giai đoạn tăng trưởng.`,
+            },
+            zh: {
+                question: `关于休止期（Telogen）的特征，下列哪项正确？`,
+                options: [
+                    `是细胞分裂最旺盛的阶段`,
+                    `是从生长期过渡到退行期的阶段`,
+                    `是毛发完全停止生长并准备脱落的阶段`,
+                    `是新毛囊形成的阶段`,
+                ],
+                explanation: `休止期（Telogen）是毛发完全停止生长的阶段，持续约3~4个月。此期间头发自然脱落，新的毛发开始进入生长期。`,
+            },
+            th: {
+                question: `ข้อใดถูกต้องเกี่ยวกับลักษณะของระยะ Telogen?`,
+                options: [
+                    `เป็นระยะที่เซลล์แบ่งตัวมากที่สุด`,
+                    `เป็นระยะเปลี่ยนผ่านจาก Anagen ไป Catagen`,
+                    `เป็นระยะที่เส้นผมหยุดเติบโตและเตรียมหลุดร่วง`,
+                    `เป็นระยะที่ follicle ใหม่ก่อตัว`,
+                ],
+                explanation: `ระยะ Telogen คือระยะที่การเติบโตของเส้นผมหยุดสนิท กินเวลาประมาณ 3~4 เดือน ในระยะนี้เส้นผมจะหลุดร่วงตามธรรมชาติและเส้นผมใหม่จะเริ่มต้นระยะ Anagen`,
+            },
+            tl: {
+                question: `Alin ang tamang katangian ng Telogen?`,
+                options: [
+                    `Ito ang yugtong pinaka-aktibo ang cell division`,
+                    `Ito ang transition mula anagen patungong catagen`,
+                    `Ito ang yugto na ganap na tumigil ang paglago ng buhok at naghahanda para malaglag`,
+                    `Ito ang yugto ng pagbuo ng bagong follicle`,
+                ],
+                explanation: `Ang Telogen ay ang yugtong ganap na tumitigil ang paglago ng buhok, na tumatagal ng 3~4 buwan. Sa panahong ito, natural na naglalaglag ang buhok at nagsisimulang lumago ang bagong buhok.`,
+            },
+            my: {
+                question: `အနားယူအဆင့် (Telogen) ၏ ဝိသေသများအကြောင်း မှန်ကန်သောဖော်ပြချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `ဆဲလ်ခွဲခြားမှု အကြွင်းမဲ့ကြွင်းဖြစ်သောအဆင့်ဖြစ်သည်`,
+                    `ကြီးထွားအဆင့်မှ ကျဆင်းအဆင့်သို့ ကူးပြောင်းသောအဆင့်ဖြစ်သည်`,
+                    `ဆံပင်ကြီးထွားမှု လုံးဝရပ်တန့်ပြီး ကြွေကျရန် ပြင်ဆင်သောအဆင့်ဖြစ်သည်`,
+                    `ဆံပင်အမြစ်အသစ် ဖြစ်ပေါ်သောအဆင့်ဖြစ်သည်`,
+                ],
+                explanation: `Telogen သည် ဆံပင်ကြီးထွားမှု လုံးဝရပ်တန့်သောအဆင့်ဖြစ်ပြီး 3~4 လကြာသည်။ ဤကာလတွင် ဆံပင်သဘာဝကျကျ ကြွေကျပြီး ဆံပင်သစ်သည် ကြီးထွားအဆင့်ကို စတင်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `휴지기`, native: `giai đoạn nghỉ ngơi (Telogen)` },
+                { korean: `탈모`, native: `rụng tóc` },
+                { korean: `모발주기`, native: `chu kỳ tóc` },
+                { korean: `성장기`, native: `giai đoạn tăng trưởng (Anagen)` },
+                { korean: `퇴행기`, native: `giai đoạn thoái hóa (Catagen)` },
+            ],
+            zh: [
+                { korean: `휴지기`, native: `休止期` },
+                { korean: `탈모`, native: `脱发` },
+                { korean: `모발주기`, native: `毛发周期` },
+                { korean: `성장기`, native: `生长期` },
+                { korean: `퇴행기`, native: `退行期` },
+            ],
+            th: [
+                { korean: `휴지기`, native: `ระยะ Telogen` },
+                { korean: `탈모`, native: `ผมร่วง` },
+                { korean: `모발주기`, native: `วงจรเส้นผม` },
+                { korean: `성장기`, native: `ระยะ Anagen` },
+            ],
+            tl: [
+                { korean: `휴지기`, native: `telogen` },
+                { korean: `탈모`, native: `paglalaglag ng buhok` },
+                { korean: `모발주기`, native: `cycle ng buhok` },
+                { korean: `성장기`, native: `anagen` },
+            ],
+            my: [
+                { korean: `휴지기`, native: `telogen` },
+                { korean: `탈모`, native: `ဆံပင်ကြွေကျခြင်း` },
+                { korean: `모발주기`, native: `ဆံပင်စက်ဝန်း` },
+                { korean: `성장기`, native: `anagen` },
+            ],
+        },
     },
     {
         id: 'bg-15',
@@ -200,6 +1410,92 @@ export const beautyGeneralQuestions = [
         explanation: '지성 두피는 피지 분비가 과잉되어 두피가 번들거리고 기름진 비듬이 생기기 쉽습니다. 세정을 자주 해주는 것이 중요합니다.',
         simpleExplanation: '"지성 두피"는 기름이 많이 나오는 두피예요. 자주 감아줘야 해요.',
         keywords: ['지성두피', '피지', '비듬'],
+        translations: {
+            vi: {
+                question: `Loại da đầu nào có tuyến bã nhờn hoạt động quá mức khiến da đầu bóng nhờn và xuất hiện gàu dạng dầu?`,
+                options: [
+                    `Da đầu khô`,
+                    `Da đầu nhờn`,
+                    `Da đầu nhạy cảm`,
+                    `Da đầu hỗn hợp`,
+                ],
+                explanation: `Da đầu nhờn (da đầu dầu) là loại da đầu bị tiết bã nhờn quá nhiều, khiến da đầu bóng nhờn và dễ xuất hiện gàu dầu. Cần làm sạch thường xuyên.`,
+            },
+            zh: {
+                question: `头皮类型中，皮脂分泌过多导致头皮油腻、出现油性头屑的类型是？`,
+                options: [
+                    `干性头皮`,
+                    `油性头皮`,
+                    `敏感性头皮`,
+                    `混合性头皮`,
+                ],
+                explanation: `油性头皮是皮脂分泌过旺，导致头皮油腻、易产生油性头屑的类型。需要经常清洁。`,
+            },
+            th: {
+                question: `ประเภทหนังศีรษะที่ต่อมไขมันหลั่งมากเกินไป ทำให้หนังศีรษะมัน และมีรังแคแบบมันคือประเภทใด?`,
+                options: [
+                    `หนังศีรษะแห้ง`,
+                    `หนังศีรษะมัน`,
+                    `หนังศีรษะแพ้ง่าย`,
+                    `หนังศีรษะผสม`,
+                ],
+                explanation: `หนังศีรษะมันเป็นประเภทที่ต่อมไขมันหลั่งมากเกิน ทำให้มันและเกิดรังแคแบบมันได้ง่าย ต้องสระบ่อยๆ`,
+            },
+            tl: {
+                question: `Anong uri ng anit ang may labis na produksyon ng sebum, na nagpapamantsa at nagdudulot ng mamantikang balakubak?`,
+                options: [
+                    `Tuyong anit`,
+                    `Mamantikang anit`,
+                    `Sensitibong anit`,
+                    `Kombinadong anit`,
+                ],
+                explanation: `Ang mamantikang anit ay may labis na sebum, kaya malagkit ang anit at madaling magkaroon ng mamantikang balakubak. Kailangan itong madalas hugasan.`,
+            },
+            my: {
+                question: `ဦးရေပြားအမျိုးအစားများတွင် sebum လွန်ကဲစွာ ထွက်ကာ ဦးရေပြားမဆ်ပြီး ဆီဆိုင်သောခေါင်းကွဲ ဖြစ်ပေါ်သောအမျိုးအစားမှာ မည်သည်နည်း?`,
+                options: [
+                    `ခြောက်သွေ့သောဦးရေပြား`,
+                    `ဆီဆိုင်သောဦးရေပြား`,
+                    `အာရုံကြောညင်သာသောဦးရေပြား`,
+                    `ရောနှောဦးရေပြား`,
+                ],
+                explanation: `ဆီဆိုင်သောဦးရေပြားသည် sebum လွန်ကဲစွာ ထွက်ကာ ဦးရေပြားမဆ်ပြီး ဆီဆိုင်သောခေါင်းကွဲ ဖြစ်တတ်သည်။ မကြာမကြာ ဆေးကြောပေးရမည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `두피`, native: `da đầu` },
+                { korean: `지성두피`, native: `da đầu nhờn` },
+                { korean: `피지`, native: `bã nhờn` },
+                { korean: `비듬`, native: `gàu` },
+                { korean: `건성두피`, native: `da đầu khô` },
+            ],
+            zh: [
+                { korean: `두피`, native: `头皮` },
+                { korean: `지성두피`, native: `油性头皮` },
+                { korean: `피지`, native: `皮脂` },
+                { korean: `비듬`, native: `头屑` },
+                { korean: `건성두피`, native: `干性头皮` },
+            ],
+            th: [
+                { korean: `두피`, native: `หนังศีรษะ` },
+                { korean: `지성두피`, native: `หนังศีรษะมัน` },
+                { korean: `피지`, native: `ไขมัน (sebum)` },
+                { korean: `비듬`, native: `รังแค` },
+            ],
+            tl: [
+                { korean: `두피`, native: `anit` },
+                { korean: `지성두피`, native: `mamantikang anit` },
+                { korean: `피지`, native: `sebum` },
+                { korean: `비듬`, native: `balakubak` },
+            ],
+            my: [
+                { korean: `두피`, native: `ဦးရေပြား` },
+                { korean: `지성두피`, native: `ဆီဆိုင်သောဦးရေပြား` },
+                { korean: `피지`, native: `sebum` },
+                { korean: `비듬`, native: `ခေါင်းကွဲ` },
+            ],
+        },
     },
     {
         id: 'bg-16',
@@ -212,6 +1508,92 @@ export const beautyGeneralQuestions = [
         explanation: '모낭은 모발의 뿌리를 감싸는 주머니 모양의 조직으로, 모발이 자라는 통로 역할을 합니다.',
         simpleExplanation: '"모낭"은 머리카락을 보호하는 주머니예요. 모낭 안에서 머리카락이 자라요.',
         keywords: ['모낭', '모근', '모발성장'],
+        translations: {
+            vi: {
+                question: `Mô da bao quanh chân tóc, đóng vai trò là ống dẫn cho tóc phát triển là gì?`,
+                options: [
+                    `Nhú tóc`,
+                    `Nang tóc`,
+                    `Bầu tóc`,
+                    `Tuyến bã nhờn`,
+                ],
+                explanation: `Nang tóc là tổ chức hình túi bao quanh chân tóc, đóng vai trò là ống dẫn cho tóc phát triển.`,
+            },
+            zh: {
+                question: `包绕毛发根部的皮肤组织，起到毛发生长通道作用的是什么？`,
+                options: [
+                    `毛乳头`,
+                    `毛囊`,
+                    `毛球`,
+                    `皮脂腺`,
+                ],
+                explanation: `毛囊是包绕毛发根部的囊状组织，起到毛发生长通道的作用。`,
+            },
+            th: {
+                question: `เนื้อเยื่อผิวหนังที่ห่อหุ้มรากผม ทำหน้าที่เป็นทางผ่านสำหรับการเจริญเติบโตของเส้นผมคืออะไร?`,
+                options: [
+                    `Papilla (ปุ่มผม)`,
+                    `Follicle (ถุงผม)`,
+                    `Bulb (หัวผม)`,
+                    `ต่อมไขมัน`,
+                ],
+                explanation: `Follicle คือเนื้อเยื่อรูปถุงที่ห่อหุ้มรากผม ทำหน้าที่เป็นทางผ่านสำหรับการเจริญเติบโตของเส้นผม`,
+            },
+            tl: {
+                question: `Anong tissue ng balat ang nagbabalot sa ugat ng buhok at nagsisilbing daanan para lumago ang buhok?`,
+                options: [
+                    `Hair papilla`,
+                    `Hair follicle`,
+                    `Hair bulb`,
+                    `Sebaceous gland`,
+                ],
+                explanation: `Ang hair follicle ay isang bag-shaped tissue na nagbabalot sa ugat ng buhok at nagsisilbing daanan para lumago ang buhok.`,
+            },
+            my: {
+                question: `ဆံပင်အမြစ်ကို ဝိုင်းရံထားသော အရေပြားနှင့်ဆက်နွယ်သောသက်ရှိ ကလာပ်နှင့် ဆံပင်ကြီးထွားသောလမ်းကြောင်းဖြစ်သောအရာမှာ မည်သည်နည်း?`,
+                options: [
+                    `Hair papilla (ဆံပင်အချွန်)`,
+                    `Hair follicle (ဆံပင်အိတ်)`,
+                    `Hair bulb (ဆံပင်ဆုံ)`,
+                    `Sebaceous gland (ဆီထုတ်ဂလင်း)`,
+                ],
+                explanation: `Hair follicle သည် ဆံပင်အမြစ်ကို ဝိုင်းရံထားသော အိတ်ပုံသဏ္ဍာန်ကလာပ်ဖြစ်ပြီး ဆံပင်ကြီးထွားသောလမ်းကြောင်းဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `모낭`, native: `nang tóc` },
+                { korean: `모근`, native: `chân tóc / rễ tóc` },
+                { korean: `모발성장`, native: `phát triển tóc` },
+                { korean: `모유두`, native: `nhú tóc` },
+                { korean: `피지선`, native: `tuyến bã nhờn` },
+            ],
+            zh: [
+                { korean: `모낭`, native: `毛囊` },
+                { korean: `모근`, native: `发根` },
+                { korean: `모발성장`, native: `毛发生长` },
+                { korean: `모유두`, native: `毛乳头` },
+                { korean: `피지선`, native: `皮脂腺` },
+            ],
+            th: [
+                { korean: `모낭`, native: `follicle (ถุงผม)` },
+                { korean: `모근`, native: `รากผม` },
+                { korean: `모발성장`, native: `การเติบโตของเส้นผม` },
+                { korean: `모유두`, native: `papilla` },
+            ],
+            tl: [
+                { korean: `모낭`, native: `hair follicle` },
+                { korean: `모근`, native: `ugat ng buhok` },
+                { korean: `모발성장`, native: `paglago ng buhok` },
+                { korean: `모유두`, native: `hair papilla` },
+            ],
+            my: [
+                { korean: `모낭`, native: `hair follicle` },
+                { korean: `모근`, native: `ဆံပင်အမြစ်` },
+                { korean: `모발성장`, native: `ဆံပင်ကြီးထွားခြင်း` },
+                { korean: `모유두`, native: `hair papilla` },
+            ],
+        },
     },
     {
         id: 'bg-17',
@@ -224,6 +1606,92 @@ export const beautyGeneralQuestions = [
         explanation: '시스틴(Cystine)은 황(S)을 포함한 아미노산으로, 케라틴 단백질 구조에서 S-S 결합(이황화 결합)을 형성하여 모발의 강도와 형태를 결정합니다.',
         simpleExplanation: '"시스틴"은 황이 들어있는 특별한 성분이에요. 머리카락을 강하게 만들어요.',
         keywords: ['시스틴', '이황화결합', '케라틴', '아미노산'],
+        translations: {
+            vi: {
+                question: `Trong các thành phần của tóc, axit amin chính cấu thành protein keratin có chứa lưu huỳnh (S) là gì?`,
+                options: [
+                    `Glycine`,
+                    `Cystine`,
+                    `Alanine`,
+                    `Leucine`,
+                ],
+                explanation: `Cystine là axit amin có chứa lưu huỳnh (S), tạo liên kết S-S (liên kết disulfide) trong cấu trúc keratin, quyết định độ bền và hình dạng của tóc.`,
+            },
+            zh: {
+                question: `在毛发成分中，构成角蛋白的主要氨基酸中含有硫（S）的是什么？`,
+                options: [
+                    `甘氨酸`,
+                    `胱氨酸`,
+                    `丙氨酸`,
+                    `亮氨酸`,
+                ],
+                explanation: `胱氨酸是含硫（S）的氨基酸，在角蛋白结构中形成S-S键（二硫键），决定毛发的强度和形态。`,
+            },
+            th: {
+                question: `ในส่วนประกอบของเส้นผม กรดอะมิโนหลักที่ประกอบเป็นโปรตีนเคราติน และมีกำมะถัน (S) อยู่คืออะไร?`,
+                options: [
+                    `ไกลซีน`,
+                    `ซิสตีน`,
+                    `อะลานีน`,
+                    `ลิวซีน`,
+                ],
+                explanation: `ซิสตีนเป็นกรดอะมิโนที่มีกำมะถัน (S) สร้างพันธะ S-S (พันธะไดซัลไฟด์) ในโครงสร้างเคราติน กำหนดความแข็งแรงและรูปร่างของเส้นผม`,
+            },
+            tl: {
+                question: `Sa mga sangkap ng buhok, anong pangunahing amino acid ang bumubuo ng keratin protein na may lamang sulfur (S)?`,
+                options: [
+                    `Glycine`,
+                    `Cystine`,
+                    `Alanine`,
+                    `Leucine`,
+                ],
+                explanation: `Ang Cystine ay amino acid na may sulfur (S), na lumilikha ng S-S bond (disulfide bond) sa keratin structure, na nagtatakda ng lakas at hugis ng buhok.`,
+            },
+            my: {
+                question: `ဆံပင်ပါဝင်မှုများတွင် keratin ပရိုတင်းကို ဖွဲ့စည်းသော အဓိက amino acid ဖြစ်ပြီး ကြောင်ကြိတ် (S) ပါဝင်သောအရာမှာ မည်သည်နည်း?`,
+                options: [
+                    `Glycine`,
+                    `Cystine`,
+                    `Alanine`,
+                    `Leucine`,
+                ],
+                explanation: `Cystine သည် ကြောင်ကြိတ် (S) ပါဝင်သော amino acid ဖြစ်ပြီး keratin ဖွဲ့စည်းပုံတွင် S-S ချိတ်ဆက်မှု (disulfide bond) ဖန်တီးကာ ဆံပင်၏ ခိုင်ခံ့မှုနှင့် ပုံသဏ္ဍာန်ကို ဆုံးဖြတ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `케라틴`, native: `keratin` },
+                { korean: `단백질`, native: `protein` },
+                { korean: `아미노산`, native: `axit amin` },
+                { korean: `시스틴`, native: `cystine` },
+                { korean: `이황화결합`, native: `liên kết disulfide` },
+            ],
+            zh: [
+                { korean: `케라틴`, native: `角蛋白` },
+                { korean: `단백질`, native: `蛋白质` },
+                { korean: `아미노산`, native: `氨基酸` },
+                { korean: `시스틴`, native: `胱氨酸` },
+                { korean: `이황화결합`, native: `二硫键` },
+            ],
+            th: [
+                { korean: `케라틴`, native: `เคราติน` },
+                { korean: `단백질`, native: `โปรตีน` },
+                { korean: `아미노산`, native: `กรดอะมิโน` },
+                { korean: `시스틴`, native: `ซิสตีน` },
+            ],
+            tl: [
+                { korean: `케라틴`, native: `keratin` },
+                { korean: `단백질`, native: `protina` },
+                { korean: `아미노산`, native: `amino acid` },
+                { korean: `시스틴`, native: `cystine` },
+            ],
+            my: [
+                { korean: `케라틴`, native: `keratin` },
+                { korean: `단백질`, native: `ပရိုတင်း` },
+                { korean: `아미노산`, native: `amino acid` },
+                { korean: `시스틴`, native: `cystine` },
+            ],
+        },
     },
     {
         id: 'bg-18',
@@ -241,6 +1709,92 @@ export const beautyGeneralQuestions = [
         explanation: '유멜라닌은 흑색과 갈색 계열의 색소를 만들고, 페오멜라닌은 금발·붉은색 계열을 만듭니다. 두 멜라닌의 비율과 양에 따라 모발 색이 결정됩니다.',
         simpleExplanation: '유멜라닌=검정·갈색, 페오멜라닌=노랑·빨강이에요. 두 가지가 섞여 머리카락 색이 돼요.',
         keywords: ['유멜라닌', '페오멜라닌', '모발색', '멜라닌'],
+        translations: {
+            vi: {
+                question: `Điều nào đúng về Eumelanin và Pheomelanin?`,
+                options: [
+                    `Eumelanin tạo tóc vàng, Pheomelanin tạo tóc đen`,
+                    `Eumelanin tạo tóc đen/nâu, Pheomelanin tạo tóc vàng/đỏ`,
+                    `Cả hai đều là cùng một loại sắc tố, chỉ khác cách phân loại`,
+                    `Khi mất Eumelanin thì tóc bạc, khi mất Pheomelanin thì tóc bị tẩy`,
+                ],
+                explanation: `Eumelanin tạo ra sắc tố đen và nâu, Pheomelanin tạo ra sắc tố vàng và đỏ. Màu tóc được quyết định bởi tỷ lệ và lượng của hai loại melanin này.`,
+            },
+            zh: {
+                question: `关于真黑素（Eumelanin）和褐黑素（Pheomelanin），以下描述正确的是？`,
+                options: [
+                    `真黑素形成金发，褐黑素形成黑发`,
+                    `真黑素形成黑色/棕色，褐黑素形成金色/红色头发`,
+                    `两者是相同的色素，只是分类方法不同`,
+                    `真黑素消失变白发，褐黑素消失变漂白`,
+                ],
+                explanation: `真黑素形成黑色和棕色系色素，褐黑素形成金色和红色系色素。两种黑素的比例和量决定毛发颜色。`,
+            },
+            th: {
+                question: `ข้อใดถูกต้องเกี่ยวกับ Eumelanin และ Pheomelanin?`,
+                options: [
+                    `Eumelanin สร้างสีผมบลอนด์ Pheomelanin สร้างสีดำ`,
+                    `Eumelanin สร้างสีดำ/น้ำตาล Pheomelanin สร้างสีบลอนด์/แดง`,
+                    `ทั้งสองเป็นเม็ดสีเดียวกัน ต่างกันแค่วิธีจำแนก`,
+                    `เมื่อ Eumelanin หายไปผมจะหงอก เมื่อ Pheomelanin หายไปผมจะขาว`,
+                ],
+                explanation: `Eumelanin สร้างเม็ดสีดำและน้ำตาล Pheomelanin สร้างสีบลอนด์และแดง สีผมถูกกำหนดโดยสัดส่วนและปริมาณของ melanin ทั้งสองชนิด`,
+            },
+            tl: {
+                question: `Alin ang tamang paglalarawan sa Eumelanin at Pheomelanin?`,
+                options: [
+                    `Ang Eumelanin ay gumagawa ng blondeng buhok, ang Pheomelanin ay itim`,
+                    `Ang Eumelanin ay gumagawa ng itim/kayumanggi, ang Pheomelanin ay gumagawa ng blondo/pula`,
+                    `Parehong uri ng pigment, nagkakaiba lang ang paraan ng pag-uuri`,
+                    `Kapag nawala ang Eumelanin, puting buhok; kapag nawala ang Pheomelanin, nableach`,
+                ],
+                explanation: `Ang Eumelanin ay gumagawa ng itim at kayumangging pigment, ang Pheomelanin ay gumagawa ng blondo at pulang pigment. Ang kulay ng buhok ay tinatakda ng ratio ng dalawang melanin.`,
+            },
+            my: {
+                question: `Eumelanin နှင့် Pheomelanin အကြောင်း မှန်ကန်သောဖော်ပြချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `Eumelanin သည် ရွှေဖောင်းရောင်ဆံပင်ကို ဖန်တီးပြီး Pheomelanin သည် မည်းသောဆံပင်ကို ဖန်တီးသည်`,
+                    `Eumelanin သည် မည်း/ညိုရောင်ဆံပင်ကို ဖန်တီးပြီး Pheomelanin သည် ရွှေ/နီရောင်ဆံပင်ကို ဖန်တီးသည်`,
+                    `နှစ်ခုလုံး တူညီသောအရောင်ဓာတ်ဖြစ်ပြီး အမျိုးအစားခွဲခြားနည်းသာ ကွဲပြားသည်`,
+                    `Eumelanin ပျောက်သွားလျှင် ဆံပင်ဖြူလာပြီး Pheomelanin ပျောက်သွားလျှင် အရောင်ဖျက်ထားသည့်ပုံ ဖြစ်လာသည်`,
+                ],
+                explanation: `Eumelanin သည် မည်းနှင့် ညိုရောင် အရောင်ဓာတ်ကိုဖန်တီးပြီး Pheomelanin သည် ရွှေနှင့် နီရောင် အရောင်ဓာတ်ကိုဖန်တီးသည်။ ဆံပင်အရောင်သည် melanin နှစ်မျိုး၏ အချိုးအစားနှင့် ပမာဏဖြင့် ဆုံးဖြတ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `멜라닌`, native: `melanin / hắc tố` },
+                { korean: `유멜라닌`, native: `eumelanin` },
+                { korean: `페오멜라닌`, native: `pheomelanin` },
+                { korean: `모발색`, native: `màu tóc` },
+                { korean: `색소`, native: `sắc tố` },
+            ],
+            zh: [
+                { korean: `멜라닌`, native: `黑色素` },
+                { korean: `유멜라닌`, native: `真黑素` },
+                { korean: `페오멜라닌`, native: `褐黑素` },
+                { korean: `모발색`, native: `毛发颜色` },
+                { korean: `색소`, native: `色素` },
+            ],
+            th: [
+                { korean: `멜라닌`, native: `เมลานิน` },
+                { korean: `유멜라닌`, native: `ยูเมลานิน` },
+                { korean: `페오멜라닌`, native: `ฟีโอเมลานิน` },
+                { korean: `모발색`, native: `สีผม` },
+            ],
+            tl: [
+                { korean: `멜라닌`, native: `melanin` },
+                { korean: `유멜라닌`, native: `eumelanin` },
+                { korean: `페오멜라닌`, native: `pheomelanin` },
+                { korean: `모발색`, native: `kulay ng buhok` },
+            ],
+            my: [
+                { korean: `멜라닌`, native: `melanin` },
+                { korean: `유멜라닌`, native: `eumelanin` },
+                { korean: `페오멜라닌`, native: `pheomelanin` },
+                { korean: `모발색`, native: `ဆံပင်အရောင်` },
+            ],
+        },
     },
     {
         id: 'bg-19',
@@ -258,6 +1812,92 @@ export const beautyGeneralQuestions = [
         explanation: '모간은 피부(두피) 밖으로 나와 있는 모발 부분을 말합니다. 반면 피부 속에 있는 부분은 모근이라고 합니다.',
         simpleExplanation: '"모간"은 두피 밖으로 보이는 머리카락이에요. 우리가 직접 볼 수 있는 부분이에요.',
         keywords: ['모간', '모근', '모발구조'],
+        translations: {
+            vi: {
+                question: `Điều nào đúng về thân tóc (Hair Shaft)?`,
+                options: [
+                    `Là phần rễ tóc nằm bên trong da`,
+                    `Là phần tóc nhô ra bên ngoài da`,
+                    `Là tổ chức mạch máu cung cấp dưỡng chất cho tóc`,
+                    `Là tập hợp tế bào tạo ra sắc tố tóc`,
+                ],
+                explanation: `Thân tóc là phần tóc nhô ra bên ngoài da (da đầu). Ngược lại, phần nằm bên trong da gọi là chân tóc (rễ tóc).`,
+            },
+            zh: {
+                question: `关于毛干（Hair Shaft），以下描述正确的是？`,
+                options: [
+                    `是位于皮肤内的毛发根部`,
+                    `是露出皮肤外的毛发部分`,
+                    `是向毛发供给营养的血管组织`,
+                    `是产生毛发色素的细胞集合体`,
+                ],
+                explanation: `毛干是露出皮肤（头皮）外的毛发部分。相对地，位于皮肤内的部分称为毛根。`,
+            },
+            th: {
+                question: `ข้อใดถูกต้องเกี่ยวกับก้านผม (Hair Shaft)?`,
+                options: [
+                    `เป็นส่วนรากของเส้นผมที่อยู่ในผิวหนัง`,
+                    `เป็นส่วนของเส้นผมที่โผล่พ้นผิวหนัง`,
+                    `เป็นเนื้อเยื่อหลอดเลือดที่จัดหาสารอาหารให้เส้นผม`,
+                    `เป็นกลุ่มเซลล์ที่ผลิตสีเส้นผม`,
+                ],
+                explanation: `ก้านผม (Hair Shaft) คือส่วนของเส้นผมที่โผล่พ้นผิวหนัง (หนังศีรษะ) ส่วนที่อยู่ในผิวหนังเรียกว่ารากผม`,
+            },
+            tl: {
+                question: `Alin ang tamang paglalarawan sa hair shaft (tangkay ng buhok)?`,
+                options: [
+                    `Ito ang ugat ng buhok na nasa loob ng balat`,
+                    `Ito ang bahagi ng buhok na lumabas sa balat`,
+                    `Ito ang vascular tissue na nagbibigay ng sustansya sa buhok`,
+                    `Ito ang koleksyon ng mga selula na gumagawa ng pigment ng buhok`,
+                ],
+                explanation: `Ang hair shaft ay ang bahagi ng buhok na lumabas sa balat (anit). Ang bahagi na nasa loob ng balat naman ay tinatawag na ugat ng buhok.`,
+            },
+            my: {
+                question: `ဆံပင်ပင်ပေါ်မှ (Hair Shaft) အကြောင်း မှန်ကန်သောဖော်ပြချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `အရေပြားအတွင်း ရှိသောဆံပင်အမြစ်ပိုင်းဖြစ်သည်`,
+                    `အရေပြားအပြင်ဘက်သို့ ထွက်လာသောဆံပင်အစိတ်အပိုင်းဖြစ်သည်`,
+                    `ဆံပင်သို့ အာဟာရဖြည့်တင်းသောသွေးကြောကလာပ်ဖြစ်သည်`,
+                    `ဆံပင်အရောင်ဓာတ်ထုတ်ပေးသောဆဲလ်များ စုဝေးသောနေရာဖြစ်သည်`,
+                ],
+                explanation: `Hair shaft သည် အရေပြား (ဦးရေပြား) အပြင်ဘက်သို့ ထွက်နေသောဆံပင်အစိတ်အပိုင်းဖြစ်သည်။ အရေပြားအတွင်းရှိသောအစိတ်အပိုင်းကို hair root (ဆံပင်အမြစ်) ဟုခေါ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `모간`, native: `thân tóc (hair shaft)` },
+                { korean: `모근`, native: `chân tóc / rễ tóc` },
+                { korean: `모발구조`, native: `cấu trúc tóc` },
+                { korean: `두피`, native: `da đầu` },
+                { korean: `모발`, native: `tóc` },
+            ],
+            zh: [
+                { korean: `모간`, native: `毛干` },
+                { korean: `모근`, native: `毛根` },
+                { korean: `모발구조`, native: `头发结构` },
+                { korean: `두피`, native: `头皮` },
+                { korean: `모발`, native: `头发` },
+            ],
+            th: [
+                { korean: `모간`, native: `ก้านผม (hair shaft)` },
+                { korean: `모근`, native: `รากผม` },
+                { korean: `두피`, native: `หนังศีรษะ` },
+                { korean: `모발구조`, native: `โครงสร้างเส้นผม` },
+            ],
+            tl: [
+                { korean: `모간`, native: `hair shaft` },
+                { korean: `모근`, native: `ugat ng buhok` },
+                { korean: `두피`, native: `anit` },
+                { korean: `모발구조`, native: `istraktura ng buhok` },
+            ],
+            my: [
+                { korean: `모간`, native: `hair shaft` },
+                { korean: `모근`, native: `ဆံပင်အမြစ်` },
+                { korean: `두피`, native: `ဦးရေပြား` },
+                { korean: `모발구조`, native: `ဆံပင်ဖွဲ့စည်းပုံ` },
+            ],
+        },
     },
     {
         id: 'bg-20',
@@ -275,6 +1915,92 @@ export const beautyGeneralQuestions = [
         explanation: '모표피(큐티클)는 비늘 모양의 세포가 겹쳐 모발 표면을 덮어 내부를 보호하고 수분이 빠져나가지 않도록 막는 역할을 합니다.',
         simpleExplanation: '모표피는 머리카락의 "갑옷"이에요. 내부를 보호하고 수분이 날아가지 않게 막아요.',
         keywords: ['모표피', '큐티클', '보호', '수분'],
+        translations: {
+            vi: {
+                question: `Vai trò chính của lớp biểu bì tóc (Cuticle) bao phủ bề mặt tóc là gì?`,
+                options: [
+                    `Tạo màu sắc cho tóc`,
+                    `Bảo vệ bên trong tóc và ngăn mất độ ẩm`,
+                    `Cung cấp dưỡng chất cho tóc`,
+                    `Quyết định độ dày của tóc`,
+                ],
+                explanation: `Lớp biểu bì tóc (cuticle) gồm các tế bào hình vảy chồng lên nhau bao phủ bề mặt tóc, bảo vệ bên trong và ngăn độ ẩm bay đi.`,
+            },
+            zh: {
+                question: `覆盖毛发表面的毛表皮（角质层）的主要作用是什么？`,
+                options: [
+                    `赋予毛发颜色`,
+                    `保护毛发内部并防止水分流失`,
+                    `为毛发提供营养`,
+                    `决定毛发的粗细`,
+                ],
+                explanation: `毛表皮（角质层）由鳞片状细胞重叠覆盖毛发表面，起到保护内部并防止水分流失的作用。`,
+            },
+            th: {
+                question: `หน้าที่หลักของคิวติเคิล (Cuticle) ที่ปกคลุมผิวเส้นผมคืออะไร?`,
+                options: [
+                    `ให้สีแก่เส้นผม`,
+                    `ปกป้องภายในเส้นผมและป้องกันการสูญเสียความชื้น`,
+                    `จัดหาสารอาหารให้เส้นผม`,
+                    `กำหนดความหนาของเส้นผม`,
+                ],
+                explanation: `คิวติเคิลประกอบด้วยเซลล์รูปเกล็ดที่ซ้อนกันปกคลุมผิวเส้นผม ทำหน้าที่ปกป้องภายในและป้องกันความชื้นระเหย`,
+            },
+            tl: {
+                question: `Ano ang pangunahing papel ng cuticle (balat ng buhok) na sumasaklaw sa ibabaw ng buhok?`,
+                options: [
+                    `Nagbibigay ng kulay sa buhok`,
+                    `Nagpoprotekta sa loob ng buhok at pinipigilan ang pagkawala ng kahalumigmigan`,
+                    `Nagbibigay ng sustansya sa buhok`,
+                    `Nagtatakda ng kapal ng buhok`,
+                ],
+                explanation: `Ang cuticle ay binubuo ng mga scale-shaped cells na nag-o-overlap na sumasaklaw sa ibabaw ng buhok, pinoprotektahan ang loob at pinipigilan ang pagkawala ng kahalumigmigan.`,
+            },
+            my: {
+                question: `ဆံပင်မျက်နှာပြင်ကို ဖုံးအုပ်ထားသော မြတ်ဆံပင်အပြင်ပိုင်း (Cuticle) ၏ အဓိကကျသောလုပ်ဆောင်ချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `ဆံပင်သို့ အရောင်ပေးခြင်း`,
+                    `ဆံပင်အတွင်းပိုင်းကို ကာကွယ်ကာ အစိုဓာတ်ဆုံးရှုံးမှုကို တားဆီးခြင်း`,
+                    `ဆံပင်သို့ အာဟာရဖြည့်တင်းခြင်း`,
+                    `ဆံပင်၏ ချောင်းမှုကို ဆုံးဖြတ်ခြင်း`,
+                ],
+                explanation: `Cuticle (မြတ်ဆံပင်အပြင်ပိုင်း) သည် ခွဲပြားပုံသဏ္ဍာန်ဆဲလ်များ ထပ်နေကာ ဆံပင်မျက်နှာပြင်ကို ဖုံးအုပ်ထားပြီး အတွင်းပိုင်းကို ကာကွယ်ကာ အစိုဓာတ်ထွက်မသွားစေရန် ပိတ်ဆို့ထားသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `모표피`, native: `biểu bì tóc (cuticle)` },
+                { korean: `큐티클`, native: `cuticle` },
+                { korean: `보호`, native: `bảo vệ` },
+                { korean: `수분`, native: `độ ẩm` },
+                { korean: `모발`, native: `tóc` },
+            ],
+            zh: [
+                { korean: `모표피`, native: `毛表皮` },
+                { korean: `큐티클`, native: `角质层` },
+                { korean: `보호`, native: `保护` },
+                { korean: `수분`, native: `水分` },
+                { korean: `모발`, native: `头发` },
+            ],
+            th: [
+                { korean: `모표피`, native: `คิวติเคิล` },
+                { korean: `보호`, native: `การปกป้อง` },
+                { korean: `수분`, native: `ความชื้น` },
+                { korean: `모발`, native: `เส้นผม` },
+            ],
+            tl: [
+                { korean: `모표피`, native: `cuticle` },
+                { korean: `보호`, native: `proteksyon` },
+                { korean: `수분`, native: `kahalumigmigan` },
+                { korean: `모발`, native: `buhok` },
+            ],
+            my: [
+                { korean: `모표피`, native: `cuticle` },
+                { korean: `보호`, native: `ကာကွယ်ခြင်း` },
+                { korean: `수분`, native: `အစိုဓာတ်` },
+                { korean: `모발`, native: `ဆံပင်` },
+            ],
+        },
     },
     {
         id: 'bg-21',
