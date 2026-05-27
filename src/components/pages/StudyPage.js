@@ -5,6 +5,66 @@ import { licences } from '@/data/licences';
 import { getQuestionsByLicence } from '@/data/questions';
 import { recordAnswer, getAccuracyRate, getLicenceStats } from '@/lib/studyEngine';
 import { PremiumLock } from '@/components/ui/PremiumBanner';
+import {
+    getTranslatedQuestion,
+    getTranslatedOptions,
+    getTranslatedExplanation,
+    getKeywordHints,
+    getLangBadge,
+} from '@/lib/translations';
+
+function KeywordHint({ korean, native }) {
+    const [open, setOpen] = useState(false);
+    return (
+        <span style={{ position: 'relative', display: 'inline-block' }}>
+            <span
+                onClick={() => setOpen(o => !o)}
+                style={{
+                    borderBottom: '2px dotted var(--accent)',
+                    color: 'var(--primary)',
+                    cursor: 'pointer',
+                    fontWeight: 500,
+                }}
+            >
+                {korean}
+            </span>
+            {open && (
+                <span style={{
+                    position: 'absolute',
+                    top: '100%', left: 0, marginTop: 4,
+                    background: 'var(--text-primary)', color: 'white',
+                    padding: '6px 10px', borderRadius: 'var(--radius-sm)',
+                    fontSize: 13, whiteSpace: 'nowrap', zIndex: 10,
+                    boxShadow: 'var(--shadow-md)',
+                }}>
+                    {native}
+                </span>
+            )}
+        </span>
+    );
+}
+
+function renderWithHints(text, hints) {
+    if (!hints || hints.length === 0) return text;
+    const sortedHints = [...hints].sort((a, b) => b.korean.length - a.korean.length);
+    const tokens = [{ text, isHint: false }];
+    for (const h of sortedHints) {
+        for (let i = tokens.length - 1; i >= 0; i--) {
+            if (!tokens[i].isHint && tokens[i].text.includes(h.korean)) {
+                const parts = tokens[i].text.split(h.korean);
+                const newTokens = [];
+                for (let j = 0; j < parts.length; j++) {
+                    if (parts[j]) newTokens.push({ text: parts[j], isHint: false });
+                    if (j < parts.length - 1) newTokens.push({ text: h.korean, native: h.native, isHint: true });
+                }
+                tokens.splice(i, 1, ...newTokens);
+            }
+        }
+    }
+    return tokens.map((t, i) =>
+        t.isHint ? <KeywordHint key={i} korean={t.text} native={t.native} /> : <span key={i}>{t.text}</span>
+    );
+}
 
 export default function StudyPage({ language, licenceId, studyMode, onStudyModeChange, onSelectLicence, isPremium }) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -12,6 +72,7 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
     const [showResult, setShowResult] = useState(false);
     const [score, setScore] = useState({ correct: 0, total: 0 });
     const [showConfetti, setShowConfetti] = useState(false);
+    const [translationOpen, setTranslationOpen] = useState(false);
 
     const licence = licences.find(l => l.id === licenceId);
     const licenceQuestions = useMemo(() => getQuestionsByLicence(licenceId || 'korean-food'), [licenceId]);
@@ -246,8 +307,23 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
                                 color: 'var(--text-primary)',
                                 marginBottom: 'var(--space-2)',
                             }}>
-                                Q{currentIndex + 1}. {currentQ.question}
+                                Q{currentIndex + 1}. {studyMode === 'step2'
+                                    ? renderWithHints(currentQ.question, getKeywordHints(currentQ, language))
+                                    : currentQ.question}
                             </h3>
+                            {studyMode === 'step1' && getTranslatedQuestion(currentQ, language) && (
+                                <p style={{
+                                    fontSize: 'var(--font-sm)', color: 'var(--text-secondary)',
+                                    background: 'var(--primary-soft)', borderLeft: '3px solid var(--primary)',
+                                    padding: 'var(--space-2) var(--space-3)', borderRadius: 'var(--radius-sm)',
+                                    lineHeight: 1.6, marginBottom: 'var(--space-2)',
+                                }}>
+                                    <span style={{ fontSize: 11, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 4, display: 'block' }}>
+                                        {getLangBadge(language)}
+                                    </span>
+                                    {getTranslatedQuestion(currentQ, language)}
+                                </p>
+                            )}
                             {studyMode !== 'step3' && (
                                 <p style={{
                                     fontSize: 'var(--font-sm)', color: 'var(--primary)',
@@ -330,7 +406,16 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
                                             }}>
                                                 {numberContent}
                                             </span>
-                                            <span style={{ flex: 1 }}>{option}</span>
+                                            <span style={{ flex: 1 }}>
+                                                {studyMode === 'step2'
+                                                    ? renderWithHints(option, getKeywordHints(currentQ, language))
+                                                    : option}
+                                                {studyMode === 'step1' && getTranslatedOptions(currentQ, language)?.[idx] && (
+                                                    <span style={{ display: 'block', fontSize: 'var(--font-xs)', color: 'var(--text-muted)', marginTop: 2 }}>
+                                                        {getTranslatedOptions(currentQ, language)[idx]}
+                                                    </span>
+                                                )}
+                                            </span>
                                         </button>
                                     );
                                 })}
@@ -360,6 +445,18 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
                                     <p style={{ margin: '8px 0 0', fontSize: 14, lineHeight: 1.6, color: 'var(--text-primary)' }}>
                                         {studyMode === 'step1' ? currentQ.simpleExplanation : currentQ.explanation}
                                     </p>
+                                    {studyMode === 'step1' && getTranslatedExplanation(currentQ, language) && (
+                                        <p style={{
+                                            margin: '8px 0 0', fontSize: 13, lineHeight: 1.6, color: 'var(--text-secondary)',
+                                            padding: 'var(--space-2) var(--space-3)', background: 'var(--primary-soft)',
+                                            borderRadius: 'var(--radius-sm)', borderLeft: '3px solid var(--primary)',
+                                        }}>
+                                            <span style={{ fontSize: 10, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 4, display: 'block' }}>
+                                                {getLangBadge(language)}
+                                            </span>
+                                            {getTranslatedExplanation(currentQ, language)}
+                                        </p>
+                                    )}
                                     {currentQ.keywords && (
                                         <div style={{ display: 'flex', gap: 'var(--space-1)', marginTop: 'var(--space-3)', flexWrap: 'wrap' }}>
                                             {currentQ.keywords.map(kw => (
@@ -481,6 +578,44 @@ export default function StudyPage({ language, licenceId, studyMode, onStudyModeC
                             </div>
                         )}
                     </div>
+
+                    {studyMode === 'step3' && (
+                        <>
+                            <button
+                                onClick={() => setTranslationOpen(o => !o)}
+                                style={{
+                                    position: 'fixed', bottom: 96, right: 16,
+                                    width: 56, height: 56, borderRadius: '50%',
+                                    background: 'var(--accent)', color: 'white',
+                                    border: 'none', fontSize: 20,
+                                    boxShadow: 'var(--shadow-md)',
+                                    cursor: 'pointer', zIndex: 20,
+                                }}
+                                aria-label="번역 보기"
+                            >
+                                ❓
+                            </button>
+                            {translationOpen && (
+                                <div style={{
+                                    position: 'fixed', bottom: 0, left: 0, right: 0,
+                                    background: 'var(--bg-card)', borderTop: '1px solid var(--border)',
+                                    padding: 'var(--space-4)', boxShadow: '0 -4px 12px rgba(0,0,0,0.08)',
+                                    zIndex: 15, maxHeight: '50vh', overflowY: 'auto',
+                                }}>
+                                    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 12 }}>
+                                        <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>{getLangBadge(language)}</span>
+                                        <button onClick={() => setTranslationOpen(false)} style={{ background: 'none', border: 'none', fontSize: 18, cursor: 'pointer' }}>✕</button>
+                                    </div>
+                                    <p style={{ fontSize: 15, color: 'var(--text-primary)', lineHeight: 1.6, margin: '0 0 12px' }}>
+                                        {getTranslatedQuestion(currentQ, language) || '번역 준비 중'}
+                                    </p>
+                                    {getTranslatedOptions(currentQ, language)?.map((opt, i) => (
+                                        <p key={i} style={{ fontSize: 14, color: 'var(--text-secondary)', margin: '4px 0' }}>{i + 1}. {opt}</p>
+                                    ))}
+                                </div>
+                            )}
+                        </>
+                    )}
                 </>
             )}
         </div>
