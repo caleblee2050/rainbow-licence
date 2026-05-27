@@ -3964,6 +3964,92 @@ export const beautyGeneralQuestions = [
         explanation: '면도날은 혈액 매개 감염 예방을 위해 손님 1인이 사용한 후 반드시 폐기해야 합니다. 재사용을 금지합니다.',
         simpleExplanation: '면도날은 한 사람 쓰고 버려야 해요. 혈액으로 병이 옮을 수 있기 때문이에요.',
         keywords: ['면도날', '일회용', '감염예방'],
+        translations: {
+            vi: {
+                question: `Tại tiệm làm đẹp, sau khi sử dụng dao cạo râu cho một khách hàng thì phải xử lý như thế nào?`,
+                options: [
+                    `Khử trùng bằng cồn rồi dùng cho khách tiếp theo`,
+                    `Sau khi sử dụng cho một khách phải vứt bỏ`,
+                    `Có thể tái sử dụng sau khi khử trùng bằng nước sôi`,
+                    `Tái sử dụng cho đến 10 khách sau khi khử trùng bằng tia cực tím`,
+                ],
+                explanation: `Để phòng ngừa lây nhiễm qua đường máu, dao cạo râu phải được vứt bỏ sau khi sử dụng cho một khách. Không được tái sử dụng.`,
+            },
+            zh: {
+                question: `在美容院中，剃刀在为一位顾客使用后应如何处理？`,
+                options: [
+                    `用酒精消毒后再给下一位顾客使用`,
+                    `一位顾客使用后必须废弃`,
+                    `煮沸消毒后可以再次使用`,
+                    `紫外线消毒后可重复使用至多10次`,
+                ],
+                explanation: `为防止血液传播感染，剃刀必须在一位顾客使用后立即丢弃，禁止再次使用。`,
+            },
+            th: {
+                question: `ที่ร้านเสริมสวย หลังจากใช้ใบมีดโกนกับลูกค้า 1 คนแล้วควรทำอย่างไร?`,
+                options: [
+                    `ฆ่าเชื้อด้วยแอลกอฮอล์แล้วใช้กับลูกค้าคนต่อไป`,
+                    `หลังจากใช้กับลูกค้า 1 คนต้องทิ้งทันที`,
+                    `สามารถนำมาใช้ซ้ำได้หลังการต้มฆ่าเชื้อ`,
+                    `ฆ่าเชื้อด้วยรังสี UV แล้วนำมาใช้ซ้ำได้ถึง 10 ครั้ง`,
+                ],
+                explanation: `เพื่อป้องกันการติดเชื้อทางเลือด ใบมีดโกนต้องทิ้งทันทีหลังใช้กับลูกค้า 1 คน ห้ามนำมาใช้ซ้ำ`,
+            },
+            tl: {
+                question: `Sa beauty salon, paano dapat iharap ang labaha pagkatapos gamitin sa isang customer?`,
+                options: [
+                    `I-disinfect ng alkohol tapos gamitin sa susunod na customer`,
+                    `Itapon pagkatapos gamitin sa isang customer`,
+                    `Maaaring gamitin ulit pagkatapos ng boiling disinfection`,
+                    `Maaaring gamitin ulit hanggang 10 beses pagkatapos ng UV disinfection`,
+                ],
+                explanation: `Upang maiwasan ang impeksyon sa pamamagitan ng dugo, ang labaha ay dapat itapon pagkatapos gamitin sa isang customer. Hindi dapat gamitin ulit.`,
+            },
+            my: {
+                question: `အလှပြင်ဆိုင်တွင် ကုတ်ကြေးသုံးပြီးနောက် တစ်ဦးတစ်ယောက်သုံးပြီးလျှင် မည်သို့ပြုလုပ်ရမည်နည်း?`,
+                options: [
+                    `အယ်လ်ကိုဟောဖြင့် ပိုးသန့်စင်ပြီး နောက်ဆောင်ဆောင်ဆောင်ကို သုံးသည်`,
+                    `တစ်ဦးသုံးပြီးနောက် ပစ်ပယ်ရမည်`,
+                    `ရေပွက်ပိုးသန့်စင်ပြီး ပြန်သုံးနိုင်သည်`,
+                    `UV ပိုးသန့်စင်ပြီး ၁၀ ကြိမ်အထိ ပြန်သုံးနိုင်သည်`,
+                ],
+                explanation: `သွေးမှတဆင့် ကူးစက်ခြင်းကို ကာကွယ်ရန် ကုတ်ကြေးကို တစ်ဦးသုံးပြီးနောက် ချက်ချင်းပစ်ပယ်ရမည်။ ပြန်မသုံးရ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `면도날`, native: `dao cạo râu` },
+                { korean: `손님 1인`, native: `một khách hàng` },
+                { korean: `폐기`, native: `vứt bỏ` },
+                { korean: `소독`, native: `khử trùng` },
+                { korean: `재사용`, native: `tái sử dụng` },
+            ],
+            zh: [
+                { korean: `면도날`, native: `剃刀` },
+                { korean: `손님 1인`, native: `一位顾客` },
+                { korean: `폐기`, native: `废弃` },
+                { korean: `소독`, native: `消毒` },
+                { korean: `재사용`, native: `再次使用` },
+            ],
+            th: [
+                { korean: `면도날`, native: `ใบมีดโกน` },
+                { korean: `폐기`, native: `ทิ้ง` },
+                { korean: `소독`, native: `ฆ่าเชื้อ` },
+                { korean: `재사용`, native: `ใช้ซ้ำ` },
+            ],
+            tl: [
+                { korean: `면도날`, native: `labaha` },
+                { korean: `폐기`, native: `itapon` },
+                { korean: `소독`, native: `disinfection` },
+                { korean: `재사용`, native: `gamitin ulit` },
+            ],
+            my: [
+                { korean: `면도날`, native: `ကုတ်ကြေး` },
+                { korean: `폐기`, native: `ပစ်ပယ်ရမည်` },
+                { korean: `소독`, native: `ပိုးသန့်စင်` },
+                { korean: `재사용`, native: `ပြန်သုံး` },
+            ],
+        },
     },
     {
         id: 'bg-42',
@@ -3981,6 +4067,92 @@ export const beautyGeneralQuestions = [
         explanation: '증기 소독은 고압 없이 약 100°C 수증기를 이용한 소독법으로, 일반 세균을 죽이지만 포자는 완전히 사멸하지 못합니다. 포자까지 사멸하려면 고압증기 멸균이 필요합니다.',
         simpleExplanation: '증기 소독은 뜨거운 수증기로 세균을 죽여요. 하지만 아주 강한 포자는 못 죽여요.',
         keywords: ['증기소독', '수증기', '소독방법'],
+        translations: {
+            vi: {
+                question: `Mô tả đúng về khử trùng bằng hơi nước là gì?`,
+                options: [
+                    `Tiêu diệt hoàn toàn cả bào tử, đạt mức độ tiệt trùng`,
+                    `Diệt khuẩn bằng hơi nước 100°C hiệu quả hơn khử trùng bằng đun sôi`,
+                    `Phương pháp khử trùng sử dụng hơi nước khoảng 100°C mà không cần áp suất cao`,
+                    `Phương pháp chỉ áp dụng được cho dụng cụ kim loại`,
+                ],
+                explanation: `Khử trùng bằng hơi nước là phương pháp sử dụng hơi nước khoảng 100°C mà không cần áp suất cao, có thể tiêu diệt vi khuẩn thông thường nhưng không tiêu diệt được bào tử hoàn toàn. Cần hấp tiệt trùng áp suất cao để tiêu diệt bào tử.`,
+            },
+            zh: {
+                question: `关于蒸汽消毒的正确说法是？`,
+                options: [
+                    `可完全杀灭芽孢，达到灭菌水平`,
+                    `用100°C水蒸气杀菌，效果比煮沸消毒更好`,
+                    `不需要高压，利用约100°C水蒸气进行消毒的方法`,
+                    `只能应用于金属器具的消毒方法`,
+                ],
+                explanation: `蒸汽消毒是不需要高压、利用约100°C水蒸气进行消毒的方法，可杀灭普通细菌，但无法完全杀灭芽孢。要彻底杀灭芽孢需要高压蒸汽灭菌。`,
+            },
+            th: {
+                question: `คำอธิบายที่ถูกต้องเกี่ยวกับการฆ่าเชื้อด้วยไอน้ำคืออะไร?`,
+                options: [
+                    `สามารถกำจัดสปอร์ได้ทั้งหมด ถึงระดับปลอดเชื้อ`,
+                    `ฆ่าเชื้อด้วยไอน้ำ 100°C มีประสิทธิภาพมากกว่าการต้มฆ่าเชื้อ`,
+                    `วิธีการฆ่าเชื้อโดยใช้ไอน้ำประมาณ 100°C โดยไม่ต้องใช้ความดันสูง`,
+                    `วิธีที่ใช้ได้เฉพาะกับเครื่องมือโลหะเท่านั้น`,
+                ],
+                explanation: `การฆ่าเชื้อด้วยไอน้ำเป็นวิธีใช้ไอน้ำประมาณ 100°C โดยไม่ต้องใช้ความดันสูง สามารถฆ่าเชื้อแบคทีเรียทั่วไปได้ แต่ไม่สามารถกำจัดสปอร์ได้ทั้งหมด`,
+            },
+            tl: {
+                question: `Ano ang tamang paglalarawan sa steam disinfection?`,
+                options: [
+                    `Lubos na pumapatay ng spore, nakakarating sa antas ng sterilization`,
+                    `Nag-sterilize gamit ang 100°C steam, mas epektibo kaysa boiling disinfection`,
+                    `Paraan ng disinfection gamit ang halos 100°C steam nang walang mataas na presyon`,
+                    `Paraan na naaangkop lamang sa mga kagamitang metal`,
+                ],
+                explanation: `Ang steam disinfection ay paraan na gumagamit ng halos 100°C steam nang walang mataas na presyon, pumapatay ng karaniwang bacteria ngunit hindi lubos na pumapatay ng spore.`,
+            },
+            my: {
+                question: `ရေငွေ့ဖြင့် ပိုးသန့်စင်ခြင်းနှင့်ပတ်သက်သော မှန်ကန်သောဖော်ပြချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `Spore ကိုပါ လုံးဝသတ်နိုင်၍ ပိုးကင်းသောအဆင့်ရှိသည်`,
+                    `100°C ရေငွေ့ဖြင့် ပိုးသတ်ခြင်းသည် ရေပွက်ပိုးသတ်ခြင်းထက် ထိရောက်သည်`,
+                    `ဖိအားမြင့်မရှိဘဲ ၁၀၀°C ရေငွေ့ကို အသုံးပြုသော ပိုးသန့်စင်နည်း`,
+                    `သတ္တုပစ္စည်းများသာ သုံးနိုင်သောနည်း`,
+                ],
+                explanation: `ရေငွေ့ပိုးသန့်စင်ခြင်းသည် ဖိအားမြင့်မရှိဘဲ ၁၀၀°C ရေငွေ့ကို အသုံးပြုသောနည်းဖြစ်ပြီး သာမန်ဘက်တီးရီးယားကို သတ်နိုင်သော်လည်း spore ကို လုံးဝမသတ်နိုင်ပါ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `증기 소독`, native: `khử trùng bằng hơi nước` },
+                { korean: `수증기`, native: `hơi nước` },
+                { korean: `포자`, native: `bào tử` },
+                { korean: `고압`, native: `áp suất cao` },
+                { korean: `금속 기구`, native: `dụng cụ kim loại` },
+            ],
+            zh: [
+                { korean: `증기 소독`, native: `蒸汽消毒` },
+                { korean: `수증기`, native: `水蒸气` },
+                { korean: `포자`, native: `芽孢` },
+                { korean: `고압`, native: `高压` },
+                { korean: `금속 기구`, native: `金属器具` },
+            ],
+            th: [
+                { korean: `증기 소독`, native: `การฆ่าเชื้อด้วยไอน้ำ` },
+                { korean: `수증기`, native: `ไอน้ำ` },
+                { korean: `포자`, native: `สปอร์` },
+                { korean: `고압`, native: `ความดันสูง` },
+            ],
+            tl: [
+                { korean: `증기 소독`, native: `steam disinfection` },
+                { korean: `수증기`, native: `steam` },
+                { korean: `포자`, native: `spore` },
+                { korean: `고압`, native: `mataas na presyon` },
+            ],
+            my: [
+                { korean: `증기 소독`, native: `ရေငွေ့ပိုးသန့်စင်ခြင်း` },
+                { korean: `수증기`, native: `ရေငွေ့` },
+                { korean: `포자`, native: `spore` },
+                { korean: `고압`, native: `ဖိအားမြင့်` },
+            ],
+        },
     },
     {
         id: 'bg-43',
@@ -3993,6 +4165,67 @@ export const beautyGeneralQuestions = [
         explanation: '에탄올 소독은 70~80% 농도가 가장 살균 효과가 높습니다. 너무 높은 농도(100%)는 단백질 응고가 빨라 세균 내부까지 침투하지 못합니다.',
         simpleExplanation: '알코올 소독은 70~80%가 가장 잘 죽여요. 100%는 오히려 효과가 떨어져요!',
         keywords: ['에탄올소독', '알코올농도', '소독방법'],
+        translations: {
+            vi: {
+                question: `Nồng độ đúng khi khử trùng dụng cụ làm đẹp bằng Ethanol là bao nhiêu?`,
+                options: [`30~40%`, `50~60%`, `70~80%`, `95~100%`],
+                explanation: `Nồng độ 70~80% là hiệu quả diệt khuẩn cao nhất khi khử trùng bằng ethanol. Nồng độ quá cao (100%) làm đông đặc protein quá nhanh nên không thể thâm nhập vào bên trong vi khuẩn.`,
+            },
+            zh: {
+                question: `使用乙醇（Ethanol）对美容器具消毒时，正确的浓度是？`,
+                options: [`30~40%`, `50~60%`, `70~80%`, `95~100%`],
+                explanation: `乙醇消毒在70~80%浓度时杀菌效果最高。浓度过高（100%）会使蛋白质凝固过快，无法渗透到细菌内部。`,
+            },
+            th: {
+                question: `เมื่อทำการฆ่าเชื้ออุปกรณ์เสริมสวยด้วยเอทานอล ความเข้มข้นที่ถูกต้องคือเท่าใด?`,
+                options: [`30~40%`, `50~60%`, `70~80%`, `95~100%`],
+                explanation: `ความเข้มข้น 70~80% มีประสิทธิภาพในการฆ่าเชื้อสูงสุด ความเข้มข้นสูงเกินไป (100%) ทำให้โปรตีนจับตัวเร็วเกินไปและไม่สามารถแทรกซึมเข้าไปในแบคทีเรียได้`,
+            },
+            tl: {
+                question: `Ano ang tamang konsentrasyon kapag nag-disinfect ng mga kagamitan sa beauty gamit ang Ethanol?`,
+                options: [`30~40%`, `50~60%`, `70~80%`, `95~100%`],
+                explanation: `Ang 70~80% konsentrasyon ay may pinakamataas na epekto sa disinfection ng ethanol. Ang masyadong mataas na konsentrasyon (100%) ay nagpapabilis ng protein coagulation kaya hindi makakalusot sa loob ng bacteria.`,
+            },
+            my: {
+                question: `Ethanol ဖြင့် အလှပြင်ကိရိယာပိုးသန့်စင်သောအခါ မှန်ကန်သောအာနိသင်မှာ မည်မျှနည်း?`,
+                options: [`30~40%`, `50~60%`, `70~80%`, `95~100%`],
+                explanation: `Ethanol ပိုးသန့်စင်ရာတွင် 70~80% အာနိသင်သည် ပိုးသတ်နိုင်မှု အမြင့်ဆုံးဖြစ်သည်။ အလွန်မြင့်သောအာနိသင် (100%) သည် ပရိုတင်းကို လျင်မြန်စွာ ဆွဲကပ်၍ ဘက်တီးရီးယားထဲသို့ မဝင်နိုင်ပါ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `에탄올`, native: `ethanol` },
+                { korean: `미용 기구`, native: `dụng cụ làm đẹp` },
+                { korean: `소독`, native: `khử trùng` },
+                { korean: `농도`, native: `nồng độ` },
+                { korean: `올바른`, native: `đúng` },
+            ],
+            zh: [
+                { korean: `에탄올`, native: `乙醇` },
+                { korean: `미용 기구`, native: `美容器具` },
+                { korean: `소독`, native: `消毒` },
+                { korean: `농도`, native: `浓度` },
+                { korean: `올바른`, native: `正确的` },
+            ],
+            th: [
+                { korean: `에탄올`, native: `เอทานอล` },
+                { korean: `소독`, native: `ฆ่าเชื้อ` },
+                { korean: `농도`, native: `ความเข้มข้น` },
+                { korean: `올바른`, native: `ถูกต้อง` },
+            ],
+            tl: [
+                { korean: `에탄올`, native: `ethanol` },
+                { korean: `소독`, native: `disinfect` },
+                { korean: `농도`, native: `konsentrasyon` },
+                { korean: `올바른`, native: `tamang` },
+            ],
+            my: [
+                { korean: `에탄올`, native: `ethanol` },
+                { korean: `소독`, native: `ပိုးသန့်စင်` },
+                { korean: `농도`, native: `အာနိသင်` },
+                { korean: `올바른`, native: `မှန်ကန်သော` },
+            ],
+        },
     },
     {
         id: 'bg-44',
@@ -4010,6 +4243,92 @@ export const beautyGeneralQuestions = [
         explanation: '공중위생관리법 시행규칙에 따라 미용업소의 조명은 75럭스(lux) 이상이어야 합니다. 작업 공간의 적절한 밝기를 확보해야 합니다.',
         simpleExplanation: '미용실은 최소 75럭스 이상 밝아야 해요. 법으로 정해진 밝기 기준이에요.',
         keywords: ['조명기준', '럭스', '미용업소'],
+        translations: {
+            vi: {
+                question: `Tiêu chuẩn ánh sáng phù hợp trong tiệm làm đẹp là gì?`,
+                options: [
+                    `Từ 50 lux trở lên`,
+                    `Từ 75 lux trở lên`,
+                    `Từ 100 lux trở lên`,
+                    `Từ 200 lux trở lên`,
+                ],
+                explanation: `Theo Quy tắc thi hành Luật quản lý vệ sinh công cộng, ánh sáng trong tiệm làm đẹp phải đạt từ 75 lux trở lên. Cần đảm bảo độ sáng phù hợp cho không gian làm việc.`,
+            },
+            zh: {
+                question: `美容院内适合的照明标准是什么？`,
+                options: [
+                    `50勒克斯（lux）以上`,
+                    `75勒克斯（lux）以上`,
+                    `100勒克斯（lux）以上`,
+                    `200勒克斯（lux）以上`,
+                ],
+                explanation: `根据《公共卫生管理法》实施规则，美容院的照明需达到75勒克斯以上。必须确保工作空间的适当亮度。`,
+            },
+            th: {
+                question: `มาตรฐานแสงสว่างที่เหมาะสมในร้านเสริมสวยคืออะไร?`,
+                options: [
+                    `50 ลักซ์ขึ้นไป`,
+                    `75 ลักซ์ขึ้นไป`,
+                    `100 ลักซ์ขึ้นไป`,
+                    `200 ลักซ์ขึ้นไป`,
+                ],
+                explanation: `ตามกฎกระทรวงที่ออกตามพระราชบัญญัติสุขาภิบาลสาธารณะ แสงสว่างในร้านเสริมสวยต้องมีความสว่างไม่น้อยกว่า 75 ลักซ์`,
+            },
+            tl: {
+                question: `Ano ang angkop na pamantayan ng ilaw sa beauty salon?`,
+                options: [
+                    `50 lux pataas`,
+                    `75 lux pataas`,
+                    `100 lux pataas`,
+                    `200 lux pataas`,
+                ],
+                explanation: `Ayon sa mga regulasyon ng Batas sa Pamamahala ng Pampublikong Kalinisan, ang ilaw sa beauty salon ay dapat hindi bababa sa 75 lux. Kailangan tiyaking may sapat na liwanag sa lugar ng trabaho.`,
+            },
+            my: {
+                question: `အလှပြင်ဆိုင်တွင် သင့်တော်သော အလင်းရောင်စံနှုန်းမှာ မည်သည်နည်း?`,
+                options: [
+                    `50 လပ်စ် နှင့်အထက်`,
+                    `75 လပ်စ် နှင့်အထက်`,
+                    `100 လပ်စ် နှင့်အထက်`,
+                    `200 လပ်စ် နှင့်အထက်`,
+                ],
+                explanation: `အများသူငှာ သန့်ရှင်းရေးဥပဒေ အကောင်အထည်ဖော်ရေးနည်းဥပဒေ အရ အလှပြင်ဆိုင်တွင် အလင်းရောင်သည် 75 လပ်စ် နှင့်အထက် ဖြစ်ရမည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `미용업소`, native: `tiệm làm đẹp` },
+                { korean: `조명 기준`, native: `tiêu chuẩn ánh sáng` },
+                { korean: `75 럭스(lux) 이상`, native: `75 lux trở lên` },
+                { korean: `적합한`, native: `phù hợp` },
+                { korean: `50 럭스(lux) 이상`, native: `50 lux trở lên` },
+            ],
+            zh: [
+                { korean: `미용업소`, native: `美容院` },
+                { korean: `조명 기준`, native: `照明标准` },
+                { korean: `75 럭스(lux) 이상`, native: `75勒克斯以上` },
+                { korean: `적합한`, native: `适合` },
+                { korean: `50 럭스(lux) 이상`, native: `50勒克斯以上` },
+            ],
+            th: [
+                { korean: `미용업소`, native: `ร้านเสริมสวย` },
+                { korean: `조명 기준`, native: `มาตรฐานแสงสว่าง` },
+                { korean: `75 럭스(lux) 이상`, native: `75 ลักซ์ขึ้นไป` },
+                { korean: `적합한`, native: `เหมาะสม` },
+            ],
+            tl: [
+                { korean: `미용업소`, native: `beauty salon` },
+                { korean: `조명 기준`, native: `pamantayan ng ilaw` },
+                { korean: `75 럭스(lux) 이상`, native: `75 lux pataas` },
+                { korean: `적합한`, native: `angkop` },
+            ],
+            my: [
+                { korean: `미용업소`, native: `အလှပြင်ဆိုင်` },
+                { korean: `조명 기준`, native: `အလင်းရောင်စံနှုန်း` },
+                { korean: `75 럭스(lux) 이상`, native: `75 လပ်စ် နှင့်အထက်` },
+                { korean: `적합한`, native: `သင့်တော်သော` },
+            ],
+        },
     },
     {
         id: 'bg-45',
@@ -4027,6 +4346,92 @@ export const beautyGeneralQuestions = [
         explanation: '공중위생관리법에 따라 미용사 면허 없이 미용 업무를 하면 1년 이하의 징역 또는 1,000만 원 이하의 벌금에 처해집니다.',
         simpleExplanation: '면허 없이 미용을 하면 감옥에 가거나 1,000만 원 이하 벌금을 내야 해요.',
         keywords: ['무면허미용', '처벌', '공중위생관리법'],
+        translations: {
+            vi: {
+                question: `Hình phạt áp dụng khi thợ làm đẹp hành nghề làm đẹp mà không có giấy phép là gì?`,
+                options: [
+                    `Bị cảnh cáo`,
+                    `Bị phạt hành chính từ 1 triệu won trở xuống`,
+                    `Bị phạt tiền từ 3 triệu won trở xuống`,
+                    `Bị phạt tù đến 1 năm hoặc phạt tiền từ 10 triệu won trở xuống`,
+                ],
+                explanation: `Theo Luật quản lý vệ sinh công cộng, hành nghề làm đẹp mà không có giấy phép thợ làm đẹp sẽ bị phạt tù đến 1 năm hoặc phạt tiền từ 10 triệu won trở xuống.`,
+            },
+            zh: {
+                question: `美容师无执照从事美容工作时，应受到的处罚是？`,
+                options: [
+                    `受到警告处分`,
+                    `处以100万韩元以下的罚款`,
+                    `处以300万韩元以下的罚款`,
+                    `处以1年以下有期徒刑或1000万韩元以下的罚款`,
+                ],
+                explanation: `根据《公共卫生管理法》，无美容师执照从事美容工作将被处以1年以下有期徒刑或1000万韩元以下的罚款。`,
+            },
+            th: {
+                question: `บทลงโทษที่ใช้เมื่อช่างทำผมทำงานโดยไม่มีใบอนุญาตคืออะไร?`,
+                options: [
+                    `ได้รับการเตือน`,
+                    `ถูกปรับไม่เกิน 1 ล้านวอน`,
+                    `ถูกปรับไม่เกิน 3 ล้านวอน`,
+                    `จำคุกไม่เกิน 1 ปี หรือปรับไม่เกิน 10 ล้านวอน`,
+                ],
+                explanation: `ตามพระราชบัญญัติสุขาภิบาลสาธารณะ การทำงานโดยไม่มีใบอนุญาตช่างทำผมจะถูกจำคุกไม่เกิน 1 ปี หรือปรับไม่เกิน 10 ล้านวอน`,
+            },
+            tl: {
+                question: `Anong parusa ang inilalapat kapag nag-practice ang isang beauty worker nang walang lisensya?`,
+                options: [
+                    `Tatanggap ng babala`,
+                    `Multahin ng hindi hihigit sa 1 milyong won`,
+                    `Multahin ng hindi hihigit sa 3 milyong won`,
+                    `Pagkabilanggo ng hindi hihigit sa 1 taon o multa ng hindi hihigit sa 10 milyong won`,
+                ],
+                explanation: `Ayon sa Batas sa Pamamahala ng Pampublikong Kalinisan, ang pagsasagawa ng beauty work nang walang lisensya ay parurusahan ng pagkabilanggo ng hindi hihigit sa 1 taon o multa ng hindi hihigit sa 10 milyong won.`,
+            },
+            my: {
+                question: `မြတ်ဆောင်ဆောင်ဆောင်သမားသည် လိုင်စင်မရှိဘဲ လုပ်ငန်းလုပ်ကိုင်သောအခါ ချမှတ်သောဒဏ်ဆိုင်ရာမှာ မည်သည်နည်း?`,
+                options: [
+                    `သတိပေးစာ ချမှတ်သည်`,
+                    `ကျပ် 100 သိန်း အောက် ဒဏ်ကြေးပေးရသည်`,
+                    `ကျပ် 300 သိန်း အောက် ဒဏ်ကြေးပေးရသည်`,
+                    `တစ်နှစ်အောက် ထောင်ဒဏ် သို့မဟုတ် ကျပ် 1000 သိန်း အောက် ဒဏ်ကြေးပေးရသည်`,
+                ],
+                explanation: `အများသူငှာ သန့်ရှင်းရေးဥပဒေ အရ မြတ်ဆောင်လိုင်စင်မရှိဘဲ အလှပြင်ဆောင်ရွက်ပါက တစ်နှစ်အောက် ထောင်ဒဏ် သို့မဟုတ် ကျပ် 1000 သိန်း အောက် ဒဏ်ကြေးချမှတ်ခြင်း ခံရမည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `면허`, native: `giấy phép` },
+                { korean: `미용 업무`, native: `hành nghề làm đẹp` },
+                { korean: `벌금`, native: `phạt tiền` },
+                { korean: `징역`, native: `phạt tù` },
+                { korean: `처벌`, native: `hình phạt` },
+            ],
+            zh: [
+                { korean: `면허`, native: `执照` },
+                { korean: `미용 업무`, native: `美容工作` },
+                { korean: `벌금`, native: `罚款` },
+                { korean: `징역`, native: `有期徒刑` },
+                { korean: `처벌`, native: `处罚` },
+            ],
+            th: [
+                { korean: `면허`, native: `ใบอนุญาต` },
+                { korean: `벌금`, native: `ปรับ` },
+                { korean: `징역`, native: `จำคุก` },
+                { korean: `처벌`, native: `บทลงโทษ` },
+            ],
+            tl: [
+                { korean: `면허`, native: `lisensya` },
+                { korean: `벌금`, native: `multa` },
+                { korean: `징역`, native: `pagkabilanggo` },
+                { korean: `처벌`, native: `parusa` },
+            ],
+            my: [
+                { korean: `면허`, native: `လိုင်စင်` },
+                { korean: `벌금`, native: `ဒဏ်ကြေး` },
+                { korean: `징역`, native: `ထောင်ဒဏ်` },
+                { korean: `처벌`, native: `ဒဏ်ဆိုင်ရာ` },
+            ],
+        },
     },
     {
         id: 'bg-46',
@@ -4044,6 +4449,92 @@ export const beautyGeneralQuestions = [
         explanation: '수건은 세탁 후 충분히 건조하거나 자비소독(끓는 물 소독)으로 소독합니다. 천 재질은 자외선 소독보다 자비소독이 더 효과적입니다.',
         simpleExplanation: '수건은 세탁 후 말리거나 끓는 물로 소독해요. 천에는 자외선 소독이 잘 안 돼요.',
         keywords: ['수건소독', '자비소독', '미용위생'],
+        translations: {
+            vi: {
+                question: `Phương pháp phù hợp nhất để khử trùng khăn tắm trong tiệm làm đẹp là gì?`,
+                options: [
+                    `Ngâm trong nước lạnh hơn 30 phút`,
+                    `Cho vào máy khử trùng bằng tia cực tím`,
+                    `Giặt sạch rồi phơi khô hoặc khử trùng bằng đun sôi`,
+                    `Ngâm trong cồn và bảo quản`,
+                ],
+                explanation: `Khăn tắm được khử trùng bằng cách giặt sạch, phơi khô đầy đủ hoặc đun sôi (khử trùng bằng nước sôi). Đối với vải, đun sôi hiệu quả hơn khử trùng bằng tia cực tím.`,
+            },
+            zh: {
+                question: `美容院中消毒毛巾最合适的方法是什么？`,
+                options: [
+                    `在冷水中浸泡30分钟以上`,
+                    `放入紫外线消毒柜`,
+                    `洗涤后充分晾干或煮沸消毒`,
+                    `浸泡在酒精中保存`,
+                ],
+                explanation: `毛巾通过洗涤后充分晾干或煮沸消毒（沸水消毒）进行消毒。对于布类材质，煮沸消毒比紫外线消毒更有效。`,
+            },
+            th: {
+                question: `วิธีที่เหมาะสมที่สุดในการทำความสะอาดผ้าขนหนูในร้านเสริมสวยคืออะไร?`,
+                options: [
+                    `แช่ในน้ำเย็นมากกว่า 30 นาที`,
+                    `ใส่เครื่องฆ่าเชื้อด้วยรังสี UV`,
+                    `ซักแล้วทำให้แห้งสนิทหรือต้มฆ่าเชื้อ`,
+                    `แช่ในแอลกอฮอล์เก็บไว้`,
+                ],
+                explanation: `ผ้าขนหนูควรซักและตากให้แห้งสนิทหรือต้มฆ่าเชื้อ สำหรับผ้า การต้มฆ่าเชื้อมีประสิทธิภาพมากกว่าการฆ่าเชื้อด้วย UV`,
+            },
+            tl: {
+                question: `Ano ang pinaka-angkop na paraan ng pag-disinfect ng tuwalya sa beauty salon?`,
+                options: [
+                    `Ibabad sa malamig na tubig nang mahigit 30 minuto`,
+                    `Ilagay sa UV disinfection machine`,
+                    `Labhan tapos patuyuin o i-boiling disinfect`,
+                    `Ibabad sa alkohol at itago`,
+                ],
+                explanation: `Ang tuwalya ay dini-disinfect sa pamamagitan ng paglalaba at pagpapatuyo nang maayos o boiling disinfection. Para sa tela, mas epektibo ang boiling kaysa UV disinfection.`,
+            },
+            my: {
+                question: `အလှပြင်ဆိုင်တွင် ပုဝါပိုးသန့်စင်ရာ အသင့်တော်ဆုံးနည်းမှာ မည်သည်နည်း?`,
+                options: [
+                    `အေးသောရေတွင် ၃၀ မိနစ်ကျော် စိမ်သည်`,
+                    `UV ပိုးသတ်စက်ထဲ ထည့်သည်`,
+                    `လျှော်ဖွပ်ပြီး ယိုမြောက်ခြောက်ခြင်း သို့မဟုတ် ရေပွက်ပိုးသတ်ခြင်း`,
+                    `အယ်လ်ကိုဟောတွင် စိမ်ပြီး သိမ်းဆည်းသည်`,
+                ],
+                explanation: `ပုဝါကို လျှော်ဖွပ်ပြီး လုံလောက်စွာ ခြောက်ခြင်း သို့မဟုတ် ရေပွက်ပိုးသတ်ခြင်းဖြင့် ပိုးသန့်စင်သည်။ ပိတ်ပေါ်တွင် UV ထက် ရေပွက်ပိုးသတ်ခြင်းက ပိုထိရောက်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `수건`, native: `khăn tắm` },
+                { korean: `소독`, native: `khử trùng` },
+                { korean: `자비소독`, native: `đun sôi` },
+                { korean: `자외선 소독기`, native: `máy khử trùng tia cực tím` },
+                { korean: `세탁`, native: `giặt sạch` },
+            ],
+            zh: [
+                { korean: `수건`, native: `毛巾` },
+                { korean: `소독`, native: `消毒` },
+                { korean: `자비소독`, native: `煮沸消毒` },
+                { korean: `자외선 소독기`, native: `紫外线消毒柜` },
+                { korean: `세탁`, native: `洗涤` },
+            ],
+            th: [
+                { korean: `수건`, native: `ผ้าขนหนู` },
+                { korean: `소독`, native: `ฆ่าเชื้อ` },
+                { korean: `자비소독`, native: `ต้มฆ่าเชื้อ` },
+                { korean: `세탁`, native: `ซัก` },
+            ],
+            tl: [
+                { korean: `수건`, native: `tuwalya` },
+                { korean: `소독`, native: `disinfect` },
+                { korean: `자비소독`, native: `boiling disinfection` },
+                { korean: `세탁`, native: `labahin` },
+            ],
+            my: [
+                { korean: `수건`, native: `ပုဝါ` },
+                { korean: `소독`, native: `ပိုးသန့်စင်` },
+                { korean: `자비소독`, native: `ရေပွက်ပိုးသတ်ခြင်း` },
+                { korean: `세탁`, native: `လျှော်ဖွပ်` },
+            ],
+        },
     },
     {
         id: 'bg-47',
@@ -4061,6 +4552,92 @@ export const beautyGeneralQuestions = [
         explanation: '영업정지 처분 기간 중 계속 영업하면 영업장 폐쇄 명령 또는 면허취소 처분을 받을 수 있습니다.',
         simpleExplanation: '영업정지 기간에 영업하면 면허가 취소될 수 있어요. 아주 심각한 처벌이에요.',
         keywords: ['영업정지', '면허취소', '행정처분'],
+        translations: {
+            vi: {
+                question: `Hậu quả khi thợ làm đẹp tiếp tục kinh doanh trong thời gian bị đình chỉ kinh doanh là gì?`,
+                options: [
+                    `Bị đình chỉ kinh doanh thêm 1 tháng`,
+                    `Có thể bị thu hồi giấy phép`,
+                    `Chỉ bị phạt hành chính từ 1 triệu won trở xuống`,
+                    `Đăng ký kinh doanh tự động bị hủy bỏ`,
+                ],
+                explanation: `Nếu tiếp tục kinh doanh trong thời gian bị đình chỉ kinh doanh, có thể bị lệnh đóng cửa tiệm hoặc thu hồi giấy phép.`,
+            },
+            zh: {
+                question: `美容师在营业停止处分期间继续营业的后果是什么？`,
+                options: [
+                    `额外受到1个月营业停止处分`,
+                    `可能受到执照吊销处分`,
+                    `只处以100万韩元以下的罚款`,
+                    `营业申报自动被取消`,
+                ],
+                explanation: `在营业停止处分期间继续营业，可能受到营业场所关闭命令或吊销执照的处分。`,
+            },
+            th: {
+                question: `ผลที่เกิดขึ้นเมื่อช่างทำผมยังคงประกอบกิจการในช่วงที่ถูกสั่งพักใบอนุญาตคืออะไร?`,
+                options: [
+                    `ได้รับคำสั่งพักใบอนุญาตเพิ่มอีก 1 เดือน`,
+                    `อาจถูกเพิกถอนใบอนุญาต`,
+                    `ถูกปรับเพียงไม่เกิน 1 ล้านวอน`,
+                    `การแจ้งประกอบกิจการถูกยกเลิกโดยอัตโนมัติ`,
+                ],
+                explanation: `หากยังคงประกอบกิจการในช่วงที่ถูกสั่งพักใบอนุญาต อาจถูกสั่งปิดกิจการหรือเพิกถอนใบอนุญาต`,
+            },
+            tl: {
+                question: `Ano ang mangyayari kapag nagpatuloy ng negosyo ang beauty worker sa panahon ng suspension ng negosyo?`,
+                options: [
+                    `Makakatanggap ng karagdagang 1 buwang suspension ng negosyo`,
+                    `Maaaring mabawi ang lisensya`,
+                    `Multahin lamang ng hindi hihigit sa 1 milyong won`,
+                    `Awtomatikong makakansela ang pagpaparehistro ng negosyo`,
+                ],
+                explanation: `Kung nagpatuloy ng negosyo sa panahon ng suspension, maaaring makatanggap ng utos na isara ang establishment o mabawi ang lisensya.`,
+            },
+            my: {
+                question: `အလှပြင်ဆိုင်ရှင်သည် စီးပွားရေးရပ်ဆိုင်းချိန်တွင် ဆက်လက်ဖွင့်လှစ်ပါက ဖြစ်ပေါ်မည့်အကျိုးဆက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `နောက်ထပ် ၁ လ စီးပွားရေးရပ်ဆိုင်းချိန် ချမှတ်ခြင်းခံရသည်`,
+                    `လိုင်စင်ပယ်ဖျက်ခြင်း ခံရနိုင်သည်`,
+                    `ကျပ် 100 သိန်း အောက် ဒဏ်ကြေးသာ ချမှတ်သည်`,
+                    `စီးပွားရေးမှတ်ပုံတင် အလိုအလျောက် ပယ်ဖျက်သည်`,
+                ],
+                explanation: `စီးပွားရေးရပ်ဆိုင်းချိန်တွင် ဆက်ဖွင့်ပါက ဆိုင်ပိတ်ရန်အမိန့် သို့မဟုတ် လိုင်စင်ပယ်ဖျက်ခြင်း ခံရနိုင်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `영업정지`, native: `đình chỉ kinh doanh` },
+                { korean: `면허취소`, native: `thu hồi giấy phép` },
+                { korean: `영업`, native: `kinh doanh` },
+                { korean: `과태료`, native: `phạt hành chính` },
+                { korean: `영업신고`, native: `đăng ký kinh doanh` },
+            ],
+            zh: [
+                { korean: `영업정지`, native: `营业停止` },
+                { korean: `면허취소`, native: `吊销执照` },
+                { korean: `영업`, native: `营业` },
+                { korean: `과태료`, native: `罚款` },
+                { korean: `영업신고`, native: `营业申报` },
+            ],
+            th: [
+                { korean: `영업정지`, native: `พักใบอนุญาต` },
+                { korean: `면허취소`, native: `เพิกถอนใบอนุญาต` },
+                { korean: `영업`, native: `ประกอบกิจการ` },
+                { korean: `과태료`, native: `ค่าปรับ` },
+            ],
+            tl: [
+                { korean: `영업정지`, native: `suspension ng negosyo` },
+                { korean: `면허취소`, native: `pagbawi ng lisensya` },
+                { korean: `영업`, native: `negosyo` },
+                { korean: `과태료`, native: `multa` },
+            ],
+            my: [
+                { korean: `영업정지`, native: `စီးပွားရေးရပ်ဆိုင်းချိန်` },
+                { korean: `면허취소`, native: `လိုင်စင်ပယ်ဖျက်` },
+                { korean: `영업`, native: `စီးပွားရေး` },
+                { korean: `과태료`, native: `ဒဏ်ကြေး` },
+            ],
+        },
     },
     // ── 미용 이론 (beauty-theory) bg-48 ~ bg-60 (13문제 추가 → 총 15) ──
     {
@@ -4079,6 +4656,92 @@ export const beautyGeneralQuestions = [
         explanation: '헤어 디자인의 4가지 기본 요소는 라인(Line), 형태(Form/Shape), 질감(Texture), 색(Color)입니다.',
         simpleExplanation: '헤어 디자인의 기본 요소는 라인, 형태, 질감, 색이에요. 이 네 가지를 잘 조합해요.',
         keywords: ['헤어디자인', '기본요소', '라인', '형태'],
+        translations: {
+            vi: {
+                question: `Bốn yếu tố cơ bản đúng của thiết kế tóc là gì?`,
+                options: [
+                    `Đường nét, màu sắc, chỉnh sửa, khử trùng`,
+                    `Hình dạng, kết cấu, màu sắc, đường nét`,
+                    `Cắt, uốn, nhuộm, tạo kiểu`,
+                    `Hình dạng, độ dài, trọng lượng, góc độ`,
+                ],
+                explanation: `Bốn yếu tố cơ bản của thiết kế tóc là: Đường nét (Line), Hình dạng (Form/Shape), Kết cấu (Texture), Màu sắc (Color).`,
+            },
+            zh: {
+                question: `发型设计的4个基本要素正确的是？`,
+                options: [
+                    `线条、色彩、修正、消毒`,
+                    `形态、质感、色彩、线条`,
+                    `剪发、烫发、染发、造型`,
+                    `形状、长度、重量、角度`,
+                ],
+                explanation: `发型设计的4个基本要素是：线条（Line）、形态（Form/Shape）、质感（Texture）、色彩（Color）。`,
+            },
+            th: {
+                question: `องค์ประกอบพื้นฐาน 4 ประการของการออกแบบทรงผมที่ถูกต้องคืออะไร?`,
+                options: [
+                    `เส้น สี การแก้ไข การฆ่าเชื้อ`,
+                    `รูปทรง พื้นผิว สี เส้น`,
+                    `ตัดผม ดัดผม ย้อมผม จัดแต่งทรงผม`,
+                    `รูปร่าง ความยาว น้ำหนัก มุม`,
+                ],
+                explanation: `องค์ประกอบพื้นฐาน 4 ประการของการออกแบบทรงผม ได้แก่ เส้น (Line) รูปทรง (Form/Shape) พื้นผิว (Texture) สี (Color)`,
+            },
+            tl: {
+                question: `Ano ang tamang 4 na pangunahing elemento ng hair design?`,
+                options: [
+                    `Linya, kulay, pagwawasto, disinfection`,
+                    `Form, texture, kulay, linya`,
+                    `Gupit, permanent, dye, styling`,
+                    `Hugis, haba, timbang, anggulo`,
+                ],
+                explanation: `Ang 4 na pangunahing elemento ng hair design ay: Linya (Line), Form (Form/Shape), Texture (Texture), Kulay (Color).`,
+            },
+            my: {
+                question: `ဆံပင်ဒီဇိုင်း၏ မူလ အစိတ်အပိုင်း ၄ ခုမှန်ကန်သောအရာမှာ မည်သည်နည်း?`,
+                options: [
+                    `မျဉ်း၊ အရောင်၊ ပြင်ဆင်ခြင်း၊ ပိုးသန့်စင်ခြင်း`,
+                    `ပုံသဏ္ဌာန်၊ ဆင်ခြေ၊ အရောင်၊ မျဉ်း`,
+                    `ဖြတ်ခြင်း၊ ဆံပင်လိမ်ခြင်း၊ ဆိုးခြင်း၊ ပုံဆောင်ခြင်း`,
+                    `ပုံ၊ အရှည်၊ အလေး၊ ထောင့်`,
+                ],
+                explanation: `ဆံပင်ဒီဇိုင်း၏ မူလ အစိတ်အပိုင်း ၄ ခုမှာ မျဉ်း (Line)၊ ပုံသဏ္ဌာန် (Form/Shape)၊ ဆင်ခြေ (Texture)၊ အရောင် (Color) ဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `헤어 디자인`, native: `thiết kế tóc` },
+                { korean: `라인`, native: `đường nét` },
+                { korean: `형태`, native: `hình dạng` },
+                { korean: `질감`, native: `kết cấu` },
+                { korean: `색`, native: `màu sắc` },
+            ],
+            zh: [
+                { korean: `헤어 디자인`, native: `发型设计` },
+                { korean: `라인`, native: `线条` },
+                { korean: `형태`, native: `形态` },
+                { korean: `질감`, native: `质感` },
+                { korean: `색`, native: `色彩` },
+            ],
+            th: [
+                { korean: `헤어 디자인`, native: `การออกแบบทรงผม` },
+                { korean: `라인`, native: `เส้น` },
+                { korean: `형태`, native: `รูปทรง` },
+                { korean: `질감`, native: `พื้นผิว` },
+            ],
+            tl: [
+                { korean: `헤어 디자인`, native: `hair design` },
+                { korean: `라인`, native: `linya` },
+                { korean: `형태`, native: `form` },
+                { korean: `질감`, native: `texture` },
+            ],
+            my: [
+                { korean: `헤어 디자인`, native: `ဆံပင်ဒီဇိုင်း` },
+                { korean: `라인`, native: `မျဉ်း` },
+                { korean: `형태`, native: `ပုံသဏ္ဌာန်` },
+                { korean: `질감`, native: `ဆင်ခြေ` },
+            ],
+        },
     },
     {
         id: 'bg-49',
@@ -4096,6 +4759,92 @@ export const beautyGeneralQuestions = [
         explanation: '손상된 모발은 열에 더 취약하므로 낮은 온도(약 120~150°C)로 신중하게 사용해야 합니다. 젖은 모발에 고온 아이론 사용은 심각한 손상을 유발합니다.',
         simpleExplanation: '손상된 머리카락은 열에 약해요. 낮은 온도로 조심해서 써야 더 손상되지 않아요.',
         keywords: ['헤어아이론', '컬링', '열손상', '모발손상'],
+        translations: {
+            vi: {
+                question: `Lưu ý khi sử dụng Curling Iron trên tóc bị hư tổn là gì?`,
+                options: [
+                    `Luôn sử dụng ở nhiệt độ cao nhất và nhanh`,
+                    `Sử dụng khi tóc còn ẩm sẽ cho hiệu quả tốt hơn`,
+                    `Tóc bị hư tổn phải sử dụng ở nhiệt độ thấp một cách cẩn thận`,
+                    `Tóc càng hư tổn thì tiếp xúc càng lâu để giữ hình dạng`,
+                ],
+                explanation: `Tóc bị hư tổn nhạy cảm hơn với nhiệt, nên phải sử dụng ở nhiệt độ thấp (khoảng 120~150°C) một cách cẩn thận. Sử dụng máy uốn tóc nhiệt độ cao trên tóc ướt gây hư tổn nghiêm trọng.`,
+            },
+            zh: {
+                question: `使用卷发棒（Curling Iron）时，对受损发质的注意事项是什么？`,
+                options: [
+                    `始终用最高温度快速使用`,
+                    `在头发湿润状态下使用效果更好`,
+                    `受损发质应在低温下谨慎使用`,
+                    `头发越受损就越应该长时间接触以固定形态`,
+                ],
+                explanation: `受损发质对热更敏感，应在低温（约120~150°C）下谨慎使用。在湿发上使用高温卷发棒会造成严重损伤。`,
+            },
+            th: {
+                question: `ข้อควรระวังเมื่อใช้ Curling Iron กับเส้นผมที่เสียหายคืออะไร?`,
+                options: [
+                    `ใช้อุณหภูมิสูงสุดเสมอและใช้อย่างรวดเร็ว`,
+                    `การใช้ขณะผมยังเปียกจะให้ผลดีกว่า`,
+                    `ผมที่เสียหายต้องใช้อุณหภูมิต่ำอย่างระมัดระวัง`,
+                    `ผมยิ่งเสียหายยิ่งต้องสัมผัสนานขึ้นเพื่อจัดทรง`,
+                ],
+                explanation: `เส้นผมที่เสียหายมีความไวต่อความร้อนมากขึ้น ควรใช้อุณหภูมิต่ำ (ประมาณ 120~150°C) อย่างระมัดระวัง การใช้ที่หนีบผมร้อนสูงกับผมเปียกจะทำให้เสียหายรุนแรง`,
+            },
+            tl: {
+                question: `Ano ang dapat ingatan kapag gumagamit ng Curling Iron sa nasirang buhok?`,
+                options: [
+                    `Palaging gamitin sa pinakamataas na temperatura nang mabilis`,
+                    `Mas magiging epektibo kung gamitin habang basa ang buhok`,
+                    `Ang nasirang buhok ay dapat gamitin nang maingat sa mababang temperatura`,
+                    `Habang mas nasira ang buhok, mas matagal na hawakan para ayusin ang hugis`,
+                ],
+                explanation: `Ang nasirang buhok ay mas marupok sa init, kaya dapat gamitin sa mababang temperatura (mga 120~150°C) nang maingat. Ang paggamit ng mataas na temperatura curling iron sa basang buhok ay nagdudulot ng malubhang pinsala.`,
+            },
+            my: {
+                question: `ပျက်စီးနေသောဆံပင်တွင် Curling Iron သုံးသောအခါ သတိပြုရမည့်အချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `အမြင့်ဆုံးအပူချိန်ဖြင့် မြန်မြန်သုံးသည်`,
+                    `ဆံပင်စိုနေသောအခါ သုံးလျှင် ပိုထိရောက်သည်`,
+                    `ပျက်စီးနေသောဆံပင်တွင် နိမ့်သောအပူချိန်ဖြင့် သတိပြု၍သုံးရမည်`,
+                    `ဆံပင်ပိုပျက်စီးလျှင် ပုံသဏ္ဌာန်ကောင်းစေရန် ပိုကြာကြာ ထိစေသည်`,
+                ],
+                explanation: `ပျက်စီးနေသောဆံပင်သည် အပူကို ပိုခံချင်းနည်းသောကြောင့် နိမ့်သောအပူချိန် (120~150°C) ဖြင့် သတိပြု၍သုံးရမည်။ စိုနေသောဆံပင်တွင် မြင့်သောအပူဖြင့်သုံးပါက အလွန်ပျက်စီးနိုင်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `손상된 모발`, native: `tóc bị hư tổn` },
+                { korean: `낮은 온도`, native: `nhiệt độ thấp` },
+                { korean: `컬링 아이론`, native: `curling iron` },
+                { korean: `주의 사항`, native: `lưu ý` },
+                { korean: `모발이 습한 상태`, native: `tóc còn ẩm` },
+            ],
+            zh: [
+                { korean: `손상된 모발`, native: `受损发质` },
+                { korean: `낮은 온도`, native: `低温` },
+                { korean: `컬링 아이론`, native: `卷发棒` },
+                { korean: `주의 사항`, native: `注意事项` },
+                { korean: `모발이 습한 상태`, native: `头发湿润状态` },
+            ],
+            th: [
+                { korean: `손상된 모발`, native: `เส้นผมที่เสียหาย` },
+                { korean: `낮은 온도`, native: `อุณหภูมิต่ำ` },
+                { korean: `주의 사항`, native: `ข้อควรระวัง` },
+                { korean: `모발이 습한 상태`, native: `ผมเปียก` },
+            ],
+            tl: [
+                { korean: `손상된 모발`, native: `nasirang buhok` },
+                { korean: `낮은 온도`, native: `mababang temperatura` },
+                { korean: `주의 사항`, native: `babala` },
+                { korean: `모발이 습한 상태`, native: `basang buhok` },
+            ],
+            my: [
+                { korean: `손상된 모발`, native: `ပျက်စီးနေသောဆံပင်` },
+                { korean: `낮은 온도`, native: `နိမ့်သောအပူချိန်` },
+                { korean: `주의 사항`, native: `သတိပြုရမည့်အချက်` },
+                { korean: `모발이 습한 상태`, native: `ဆံပင်စိုနေသည်` },
+            ],
+        },
     },
     {
         id: 'bg-50',
@@ -4113,6 +4862,92 @@ export const beautyGeneralQuestions = [
         explanation: '블로우 드라이는 열로 모발의 수소결합(임시 결합)을 끊은 후 원하는 형태로 냉각하면 수소결합이 재형성되어 스타일이 유지됩니다.',
         simpleExplanation: '드라이기 열로 수소결합을 끊고 모양을 잡은 뒤 식히면 그 모양이 유지돼요.',
         keywords: ['블로우드라이', '수소결합', '열세팅'],
+        translations: {
+            vi: {
+                question: `Giải thích đúng về nguyên lý tạo kiểu Blow Dry là gì?`,
+                options: [
+                    `Thoa hóa chất lên tóc để cố định hình dạng`,
+                    `Dùng nhiệt để phá vỡ liên kết hydrogen của tóc, sau đó làm mát để tái liên kết và cố định hình dạng`,
+                    `Phá vỡ liên kết disulfide của tóc và tái liên kết để tạo hình dạng`,
+                    `Điện làm tan chảy protein trong tóc để thay đổi hình dạng`,
+                ],
+                explanation: `Blow dry dùng nhiệt để phá vỡ liên kết hydrogen (liên kết tạm thời) của tóc, sau đó khi làm mát theo hình dạng mong muốn, liên kết hydrogen tái hình thành và giữ kiểu.`,
+            },
+            zh: {
+                question: `正确解释吹风造型（Blow Dry）原理的是？`,
+                options: [
+                    `在头发上涂抹化学物质以固定形态`,
+                    `用热能切断头发的氢键，冷却时重新结合以固定形态`,
+                    `切断头发的二硫键并重新结合以形成形态`,
+                    `电力融化头发内的蛋白质以改变形态`,
+                ],
+                explanation: `吹风造型是用热能切断头发的氢键（临时键），然后在所需形态下冷却，氢键重新形成，使发型保持。`,
+            },
+            th: {
+                question: `คำอธิบายที่ถูกต้องเกี่ยวกับหลักการของการเซ็ตผมด้วยเครื่องเป่าลม (Blow Dry) คืออะไร?`,
+                options: [
+                    `ทาสารเคมีบนผมเพื่อตรึงรูปทรง`,
+                    `ใช้ความร้อนทำลายพันธะไฮโดรเจนของผม แล้วทำให้เย็นลงเพื่อให้เชื่อมกันใหม่และตรึงรูปทรง`,
+                    `ทำลายพันธะไดซัลไฟด์ของผมแล้วเชื่อมกันใหม่เพื่อสร้างรูปทรง`,
+                    `ไฟฟ้าละลายโปรตีนในผมเพื่อเปลี่ยนรูปทรง`,
+                ],
+                explanation: `การเป่าลมเป่าผมใช้ความร้อนทำลายพันธะไฮโดรเจน (พันธะชั่วคราว) ของผม เมื่อทำให้เย็นลงในรูปทรงที่ต้องการ พันธะไฮโดรเจนจะก่อตัวขึ้นใหม่และรักษารูปทรงไว้`,
+            },
+            tl: {
+                question: `Ano ang tamang paliwanag sa prinsipyo ng Blow Dry setting?`,
+                options: [
+                    `Naglalagay ng kemikal sa buhok para ayusin ang hugis`,
+                    `Gumagamit ng init para putulin ang hydrogen bond ng buhok, tapos palamirin para muling maikonekta at ayusin ang hugis`,
+                    `Pinuputol ang disulfide bond ng buhok at muling ikinokonekta para makagawa ng hugis`,
+                    `Ang kuryente ay nagtatunaw ng protein sa buhok para baguhin ang hugis`,
+                ],
+                explanation: `Ang blow dry ay gumagamit ng init para putulin ang hydrogen bond (pansamantalang koneksyon) ng buhok, tapos kapag pinalamig sa nais na hugis, muling nabubuo ang hydrogen bond at nananatili ang estilo.`,
+            },
+            my: {
+                question: `Blow Dry Setting ၏ မူသဘောကို မှန်ကန်စွာ ရှင်းလင်းဖော်ပြထားသောအရာမှာ မည်သည်နည်း?`,
+                options: [
+                    `ဆံပင်ပေါ် ဓာတုဗေဒပစ္စည်း ပက်ဖြန်း၍ ပုံသဏ္ဌာန် ချုပ်ဆိုသည်`,
+                    `အပူဖြင့် ဆံပင်၏ ဟိုက်ဒရိုဂျင်ချည်နှောင်ကိုဖြုတ်ကာ အေးအောင်လုပ်ပြီး ပြန်ချည်နှောင်၍ ပုံသဏ္ဌာန်ချုပ်ဆိုသည်`,
+                    `ဆံပင်၏ ဒိုင်ဆာဖိုက်ချည်နှောင်ကိုဖြုတ်ကာ ပြန်ချည်နှောင်ပြီး ပုံဆောင်သည်`,
+                    `လျှပ်စစ်ဖြင့် ဆံပင်ထဲ ပရိုတင်းကို ပျော်ကာ ပုံပြောင်းသည်`,
+                ],
+                explanation: `Blow dry သည် အပူဖြင့် ဆံပင်၏ ဟိုက်ဒရိုဂျင်ချည်နှောင် (ယာယီချည်နှောင်) ကိုဖြုတ်ပြီး လိုချင်သောပုံသဏ္ဌာန်ဖြင့် အေးအောင်လုပ်လျှင် ဟိုက်ဒရိုဂျင်ချည်နှောင် ပြန်ဖွဲ့တည်ကာ ဆံပင်ပုံသဏ္ဌာန် ထိန်းသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `블로우 드라이`, native: `blow dry` },
+                { korean: `수소결합`, native: `liên kết hydrogen` },
+                { korean: `열`, native: `nhiệt` },
+                { korean: `냉각`, native: `làm mát` },
+                { korean: `형태`, native: `hình dạng` },
+            ],
+            zh: [
+                { korean: `블로우 드라이`, native: `吹风造型` },
+                { korean: `수소결합`, native: `氢键` },
+                { korean: `열`, native: `热能` },
+                { korean: `냉각`, native: `冷却` },
+                { korean: `형태`, native: `形态` },
+            ],
+            th: [
+                { korean: `블로우 드라이`, native: `blow dry` },
+                { korean: `수소결합`, native: `พันธะไฮโดรเจน` },
+                { korean: `열`, native: `ความร้อน` },
+                { korean: `냉각`, native: `ทำให้เย็น` },
+            ],
+            tl: [
+                { korean: `블로우 드라이`, native: `blow dry` },
+                { korean: `수소결합`, native: `hydrogen bond` },
+                { korean: `열`, native: `init` },
+                { korean: `냉각`, native: `palamigin` },
+            ],
+            my: [
+                { korean: `블로우 드라이`, native: `blow dry` },
+                { korean: `수소결합`, native: `ဟိုက်ဒရိုဂျင်ချည်နှောင်` },
+                { korean: `열`, native: `အပူ` },
+                { korean: `냉각`, native: `အေးသည်` },
+            ],
+        },
     },
     {
         id: 'bg-51',
@@ -4130,6 +4965,92 @@ export const beautyGeneralQuestions = [
         explanation: '헤어 세팅은 롤, 핀컬, 아이론 등을 이용해 모발에 일시적으로 웨이브나 볼륨을 주는 시술입니다. 퍼머와 달리 영구적이지 않습니다.',
         simpleExplanation: '헤어 세팅은 일시적으로 머리에 웨이브나 볼륨을 주는 거예요. 물에 젖으면 풀려요.',
         keywords: ['헤어세팅', '웨이브', '일시적스타일'],
+        translations: {
+            vi: {
+                question: `Mục đích phù hợp nhất của Hair Setting là gì?`,
+                options: [
+                    `Để nhuộm màu vĩnh viễn cho tóc`,
+                    `Để thúc đẩy tuần hoàn máu da đầu`,
+                    `Để tạo sóng hoặc uốn tóc tạm thời cho tóc`,
+                    `Để bổ sung protein bị hư tổn trong tóc`,
+                ],
+                explanation: `Hair setting là kỹ thuật sử dụng lô, kẹp uốn, máy uốn để tạm thời tạo sóng hoặc thêm độ phồng cho tóc. Khác với uốn tóc (perm), không phải vĩnh viễn.`,
+            },
+            zh: {
+                question: `发型定型（Hair Setting）最适合的目的是什么？`,
+                options: [
+                    `为了给头发上永久的颜色`,
+                    `为了促进头皮的血液循环`,
+                    `为了给头发临时的波浪或卷曲等造型`,
+                    `为了补充头发中受损的蛋白质`,
+                ],
+                explanation: `发型定型是利用卷杠、发夹卷、卷发棒等为头发临时创造波浪或增加蓬松感的技术。与烫发不同，不是永久性的。`,
+            },
+            th: {
+                question: `วัตถุประสงค์ที่เหมาะสมที่สุดของการเซ็ตทรงผม (Hair Setting) คืออะไร?`,
+                options: [
+                    `เพื่อย้อมสีถาวรให้กับผม`,
+                    `เพื่อกระตุ้นการไหลเวียนเลือดของหนังศีรษะ`,
+                    `เพื่อสร้างลอนหรือเกลียวชั่วคราวให้กับผม`,
+                    `เพื่อเติมโปรตีนที่เสียหายในผม`,
+                ],
+                explanation: `การเซ็ตทรงผมเป็นเทคนิคใช้ลูกกลิ้ง คลิปหนีบ หรือไม้หนีบผม เพื่อสร้างลอนหรือเพิ่มปริมาตรให้กับผมชั่วคราว ต่างจากการดัดผมถาวร`,
+            },
+            tl: {
+                question: `Ano ang pinaka-angkop na layunin ng Hair Setting?`,
+                options: [
+                    `Para lagyan ng permanenteng kulay ang buhok`,
+                    `Para mapabilis ang daloy ng dugo sa balat ng ulo`,
+                    `Para bigyan ng pansamantalang wave o kulot ang buhok`,
+                    `Para mapunan ang nasirang protina sa buhok`,
+                ],
+                explanation: `Ang hair setting ay teknik na gumagamit ng roller, pin curl, o iron para pansamantalang magbigay ng wave o volume sa buhok. Hindi permanente tulad ng permanent wave.`,
+            },
+            my: {
+                question: `Hair Setting ၏ အသင့်တော်ဆုံး ရည်ရွယ်ချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `ဆံပင်ကို အမြဲတမ်းအရောင်ဆိုးရန်`,
+                    `ဦးရေပြားသွေးစီးဆင်းမှု မြင့်တင်ရန်`,
+                    `ဆံပင်ကို ယာယီ wave သို့မဟုတ် curl ပေးရန်`,
+                    `ဆံပင်ထဲ ပျက်စီးသော ပရိုတင်းဖြည့်တင်းရန်`,
+                ],
+                explanation: `Hair setting သည် roller၊ pin curl၊ iron ကိုသုံး၍ ဆံပင်ကို ယာယီ wave သို့မဟုတ် ထုထည်ပေးသောနည်းဖြစ်သည်။ permanent wave ကဲ့သို့ အမြဲတမ်းမဟုတ်ပါ။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `헤어 세팅`, native: `hair setting` },
+                { korean: `웨이브`, native: `sóng` },
+                { korean: `일시적`, native: `tạm thời` },
+                { korean: `두피`, native: `da đầu` },
+                { korean: `단백질`, native: `protein` },
+            ],
+            zh: [
+                { korean: `헤어 세팅`, native: `发型定型` },
+                { korean: `웨이브`, native: `波浪` },
+                { korean: `일시적`, native: `临时` },
+                { korean: `두피`, native: `头皮` },
+                { korean: `단백질`, native: `蛋白质` },
+            ],
+            th: [
+                { korean: `헤어 세팅`, native: `การเซ็ตทรงผม` },
+                { korean: `웨이브`, native: `ลอน` },
+                { korean: `일시적`, native: `ชั่วคราว` },
+                { korean: `두피`, native: `หนังศีรษะ` },
+            ],
+            tl: [
+                { korean: `헤어 세팅`, native: `hair setting` },
+                { korean: `웨이브`, native: `wave` },
+                { korean: `일시적`, native: `pansamantala` },
+                { korean: `두피`, native: `anit ng ulo` },
+            ],
+            my: [
+                { korean: `헤어 세팅`, native: `hair setting` },
+                { korean: `웨이브`, native: `wave` },
+                { korean: `일시적`, native: `ယာယီ` },
+                { korean: `두피`, native: `ဦးရေပြား` },
+            ],
+        },
     },
     {
         id: 'bg-52',
@@ -4147,6 +5068,92 @@ export const beautyGeneralQuestions = [
         explanation: '화학적 손상은 염색(산화제), 퍼머(환원제·산화제), 탈색 등 화학 약품에 의한 모발 손상입니다.',
         simpleExplanation: '화학적 손상은 약으로 인한 손상이에요. 염색약이나 펌 약품이 머리를 손상시켜요.',
         keywords: ['화학적손상', '염색', '퍼머', '모발손상'],
+        translations: {
+            vi: {
+                question: `Trong các nguyên nhân gây hư tổn tóc, đâu là hư tổn hóa học?`,
+                options: [
+                    `Ma sát do chải tóc quá mức`,
+                    `Hư tổn do tiếp xúc lâu với tia cực tím`,
+                    `Hư tổn do nhuộm tóc và uốn tóc vĩnh viễn`,
+                    `Hư tổn do nhiệt quá mức từ máy sấy tóc`,
+                ],
+                explanation: `Hư tổn hóa học là hư tổn tóc do chất hóa học như nhuộm tóc (chất oxy hóa), uốn tóc (chất khử, chất oxy hóa), tẩy màu,…`,
+            },
+            zh: {
+                question: `在头发损伤的原因中，属于化学性损伤的是？`,
+                options: [
+                    `过度梳理造成的摩擦`,
+                    `长时间暴露在紫外线下造成的损伤`,
+                    `染发和烫发造成的损伤`,
+                    `吹风机过热造成的损伤`,
+                ],
+                explanation: `化学性损伤是由染发（氧化剂）、烫发（还原剂·氧化剂）、脱色等化学药品引起的头发损伤。`,
+            },
+            th: {
+                question: `ในบรรดาสาเหตุที่ทำให้เส้นผมเสียหาย สิ่งใดเป็นความเสียหายทางเคมี?`,
+                options: [
+                    `แรงเสียดทานจากการหวีผมมากเกินไป`,
+                    `ความเสียหายจากการถูกแสงอัลตราไวโอเลตนาน`,
+                    `ความเสียหายจากการย้อมผมและการดัดถาวร`,
+                    `ความเสียหายจากความร้อนของเครื่องเป่าผมที่มากเกินไป`,
+                ],
+                explanation: `ความเสียหายทางเคมีคือความเสียหายของเส้นผมที่เกิดจากสารเคมี เช่น การย้อมผม (สารออกซิไดซ์) การดัดผม (สารรีดิวซิง·สารออกซิไดซ์) การฟอกสีผม`,
+            },
+            tl: {
+                question: `Sa mga dahilan ng pinsala sa buhok, alin ang kemikal na pinsala?`,
+                options: [
+                    `Friction mula sa labis na pag-brush`,
+                    `Pinsala mula sa matagal na pagkakalantad sa UV`,
+                    `Pinsala mula sa pag-dye at permanent wave`,
+                    `Pinsala mula sa labis na init ng blow dryer`,
+                ],
+                explanation: `Ang kemikal na pinsala ay pinsala sa buhok mula sa mga kemikal tulad ng dye (oxidizer), permanent (reducer, oxidizer), bleach, atbp.`,
+            },
+            my: {
+                question: `ဆံပင်ပျက်စီးရသောအကြောင်းများတွင် ဓာတုဗေဒဆိုင်ရာပျက်စီးမှုမှာ မည်သည်နည်း?`,
+                options: [
+                    `အတင်းဖီးသောကြောင့် ပွတ်တိုက်မှုဖြစ်ခြင်း`,
+                    `UV တွင်ကြာမြင့်စွာနေသောကြောင့် ပျက်စီးခြင်း`,
+                    `ဆံပင်ဆိုးသွင်းမှုနှင့် ဆံပင်လိမ်ခြင်းကြောင့် ပျက်စီးခြင်း`,
+                    `ဆံပင်ရိုက်စက်၏ အလွန်အပူကြောင့် ပျက်စီးခြင်း`,
+                ],
+                explanation: `ဓာတုဗေဒဆိုင်ရာပျက်စီးမှုသည် ဆံပင်ဆိုးဆေး (oxidizing agent)၊ ဆံပင်လိမ်ဆေး (reducing agent)၊ ဆေးဖောက်ခြင်း စသောဓာတုဗေဒပစ္စည်းကြောင့် ဆံပင်ပျက်စီးခြင်းဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `화학적 손상`, native: `hư tổn hóa học` },
+                { korean: `염색`, native: `nhuộm tóc` },
+                { korean: `퍼머넌트`, native: `uốn tóc vĩnh viễn` },
+                { korean: `브러싱`, native: `chải tóc` },
+                { korean: `자외선`, native: `tia cực tím` },
+            ],
+            zh: [
+                { korean: `화학적 손상`, native: `化学性损伤` },
+                { korean: `염색`, native: `染发` },
+                { korean: `퍼머넌트`, native: `烫发` },
+                { korean: `브러싱`, native: `梳理` },
+                { korean: `자외선`, native: `紫外线` },
+            ],
+            th: [
+                { korean: `화학적 손상`, native: `ความเสียหายทางเคมี` },
+                { korean: `염색`, native: `ย้อมผม` },
+                { korean: `퍼머넌트`, native: `ดัดถาวร` },
+                { korean: `자외선`, native: `แสงอัลตราไวโอเลต` },
+            ],
+            tl: [
+                { korean: `화학적 손상`, native: `kemikal na pinsala` },
+                { korean: `염색`, native: `pag-dye` },
+                { korean: `퍼머넌트`, native: `permanent wave` },
+                { korean: `자외선`, native: `UV` },
+            ],
+            my: [
+                { korean: `화학적 손상`, native: `ဓာတုဗေဒဆိုင်ရာပျက်စီးမှု` },
+                { korean: `염색`, native: `ဆံပင်ဆိုးသွင်းမှု` },
+                { korean: `퍼머넌트`, native: `ဆံပင်လိမ်ခြင်း` },
+                { korean: `자외선`, native: `UV` },
+            ],
+        },
     },
     {
         id: 'bg-53',
@@ -4164,6 +5171,92 @@ export const beautyGeneralQuestions = [
         explanation: '공중위생관리법에서 미용업이란 손님의 얼굴·머리·피부 등을 손질하여 아름답게 꾸미는 영업을 말합니다.',
         simpleExplanation: '미용은 얼굴·머리·피부를 예쁘게 꾸며주는 일이에요. 법으로도 정해진 정의가 있어요.',
         keywords: ['미용정의', '미용업', '공중위생관리법'],
+        translations: {
+            vi: {
+                question: `Điều nào đúng nhất về định nghĩa của làm đẹp?`,
+                options: [
+                    `Là hành vi sử dụng thiết bị y tế để điều trị bệnh thân thể`,
+                    `Là hành vi kinh doanh làm đẹp khuôn mặt, đầu tóc, da, v.v. của khách hàng`,
+                    `Là việc giữ sức khỏe cơ thể thông qua thực phẩm hoặc thực phẩm chức năng`,
+                    `Là hoạt động thể thao cải thiện vóc dáng thông qua tập luyện`,
+                ],
+                explanation: `Theo Luật quản lý vệ sinh công cộng, ngành làm đẹp là kinh doanh chăm sóc và làm đẹp khuôn mặt, đầu tóc, da, v.v. của khách hàng.`,
+            },
+            zh: {
+                question: `关于美容的定义，最正确的是？`,
+                options: [
+                    `是使用医疗器械治疗身体疾患的行为`,
+                    `是对顾客的脸、头发、皮肤等进行修整美化的营业行为`,
+                    `是通过食品或健康功能食品使身体健康的行为`,
+                    `是通过运动改善体型的体育活动`,
+                ],
+                explanation: `根据《公共卫生管理法》，美容业是指对顾客的脸、头发、皮肤等进行修整美化的营业活动。`,
+            },
+            th: {
+                question: `คำนิยามของความงามที่ถูกต้องที่สุดคืออะไร?`,
+                options: [
+                    `เป็นการใช้อุปกรณ์การแพทย์รักษาโรคทางร่างกาย`,
+                    `เป็นกิจการที่ทำให้ใบหน้า ผม ผิวหนัง ฯลฯ ของลูกค้าสวยงาม`,
+                    `เป็นการดูแลสุขภาพร่างกายผ่านอาหารหรืออาหารเสริม`,
+                    `เป็นกิจกรรมกีฬาที่ปรับปรุงรูปร่างผ่านการออกกำลังกาย`,
+                ],
+                explanation: `ตามพระราชบัญญัติสุขาภิบาลสาธารณะ กิจการความงามคือการประกอบกิจการดูแลและตกแต่งใบหน้า ผม ผิวหนัง ฯลฯ ของลูกค้าให้สวยงาม`,
+            },
+            tl: {
+                question: `Ano ang pinaka-tamang kahulugan ng beauty?`,
+                options: [
+                    `Paggamit ng medical device para gamutin ang sakit ng katawan`,
+                    `Negosyong nagpapaganda ng mukha, buhok, balat, atbp. ng customer`,
+                    `Pagpapanatili ng kalusugan ng katawan sa pamamagitan ng pagkain o health supplements`,
+                    `Aktibidad na pampalakasan na nagpapabuti ng hugis ng katawan sa pamamagitan ng ehersisyo`,
+                ],
+                explanation: `Ayon sa Batas sa Pamamahala ng Pampublikong Kalinisan, ang industriya ng beauty ay negosyo na nag-aalaga at nagpapaganda ng mukha, buhok, balat, atbp. ng customer.`,
+            },
+            my: {
+                question: `အလှပြင်ခြင်း၏ အဓိပ္ပာယ်ဖွင့်ဆိုချက်ကို အမှန်ဆုံး ဖော်ပြထားသောအရာမှာ မည်သည်နည်း?`,
+                options: [
+                    `ဆေးဘက်ဆိုင်ရာ ကိရိယာ သုံးပြီး ခန္ဓာကိုယ်ရောဂါ ကုသသောလုပ်ဆောင်မှု`,
+                    `ဆောင်ဆောင်ဆောင်ပုဂ္ဂိုလ်၏ မျက်နှာ၊ ဆံပင်၊ အရေပြားကို လှပစေသော စီးပွားရေးလုပ်ငန်း`,
+                    `အစားအစာ သို့မဟုတ် ကျန်းမာရေးဖြည့်စွက်ဆေးမှတဆင့် ကျန်းမာစေခြင်း`,
+                    `ကိုယ်လက်လှုပ်ရှားမှုဖြင့် ကိုယ်ပိုင်ပုံသဏ္ဌာန် ပြင်ဆင်သော အားကစားလုပ်ဆောင်မှု`,
+                ],
+                explanation: `အများသူငှာ သန့်ရှင်းရေးဥပဒေ အရ အလှပြင်လုပ်ငန်းဆိုသည်မှာ ဆောင်ဆောင်ဆောင်ပုဂ္ဂိုလ်၏ မျက်နှာ၊ ဆံပင်၊ အရေပြားကို ဆုတ်ဆိုင်ပြင်ဆင်ပြီး လှပစေသော စီးပွားရေးဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `미용`, native: `làm đẹp` },
+                { korean: `손님의 얼굴`, native: `khuôn mặt khách hàng` },
+                { korean: `영업 행위`, native: `hành vi kinh doanh` },
+                { korean: `피부`, native: `da` },
+                { korean: `머리`, native: `đầu tóc` },
+            ],
+            zh: [
+                { korean: `미용`, native: `美容` },
+                { korean: `손님의 얼굴`, native: `顾客的脸` },
+                { korean: `영업 행위`, native: `营业行为` },
+                { korean: `피부`, native: `皮肤` },
+                { korean: `머리`, native: `头发` },
+            ],
+            th: [
+                { korean: `미용`, native: `ความงาม` },
+                { korean: `손님의 얼굴`, native: `ใบหน้าของลูกค้า` },
+                { korean: `영업 행위`, native: `กิจการ` },
+                { korean: `피부`, native: `ผิวหนัง` },
+            ],
+            tl: [
+                { korean: `미용`, native: `beauty` },
+                { korean: `손님의 얼굴`, native: `mukha ng customer` },
+                { korean: `영업 행위`, native: `negosyo` },
+                { korean: `피부`, native: `balat` },
+            ],
+            my: [
+                { korean: `미용`, native: `အလှပြင်ခြင်း` },
+                { korean: `손님의 얼굴`, native: `ဆောင်ဆောင်ဆောင်မျက်နှာ` },
+                { korean: `영업 행위`, native: `စီးပွားရေးလုပ်ငန်း` },
+                { korean: `피부`, native: `အရေပြား` },
+            ],
+        },
     },
     {
         id: 'bg-54',
@@ -4181,6 +5274,92 @@ export const beautyGeneralQuestions = [
         explanation: '원랭스 커트는 모든 모발을 들어올리지 않고 자연 낙하 상태에서 일직선(하나의 선)으로 자르는 방법입니다. 단차 없이 깔끔한 끝선이 특징입니다.',
         simpleExplanation: '원랭스는 머리를 모두 같은 길이로 맞추는 커트예요. 단정하고 깔끔해 보여요.',
         keywords: ['원랭스커트', '헤어커트', '커트기법'],
+        translations: {
+            vi: {
+                question: `Đặc điểm đúng của kỹ thuật cắt tóc One-Length là gì?`,
+                options: [
+                    `Cắt phần trên tóc ngắn, phần dưới dài`,
+                    `Phương pháp nâng tóc lên để tạo bậc thang`,
+                    `Cắt tóc theo một đường thẳng ở trạng thái tự nhiên rơi xuống`,
+                    `Chỉ tỉa nhẹ phần đuôi tóc`,
+                ],
+                explanation: `Kỹ thuật cắt One-Length là cắt tất cả tóc theo một đường thẳng (một đường) ở trạng thái tự nhiên rơi xuống mà không nâng tóc lên. Đặc điểm là đường cuối sạch sẽ, không có bậc thang.`,
+            },
+            zh: {
+                question: `原长（One-Length）剪发的特点正确的是？`,
+                options: [
+                    `将头发上部剪短，下部留长`,
+                    `将头发提起来制造层次的方式`,
+                    `在头发自然下垂状态下沿一条线剪切`,
+                    `只轻轻打薄发梢部分`,
+                ],
+                explanation: `原长剪发是不将所有头发提起，在自然下垂状态下沿一条直线（一条线）剪切的方法。特点是没有层次，末端线条整洁。`,
+            },
+            th: {
+                question: `ลักษณะที่ถูกต้องของการตัดผมแบบ One-Length คืออะไร?`,
+                options: [
+                    `ตัดส่วนบนของผมให้สั้น ส่วนล่างให้ยาว`,
+                    `วิธีที่ยกผมขึ้นเพื่อสร้างขั้น`,
+                    `ตัดผมตามแนวเส้นตรงในสภาวะที่ผมร่วงลงตามธรรมชาติ`,
+                    `เพียงตัดแต่งปลายผมเบาๆ`,
+                ],
+                explanation: `การตัดผมแบบ One-Length คือการไม่ยกผมขึ้นและตัดตามแนวเส้นตรงในสภาวะที่ผมร่วงลงตามธรรมชาติ มีลักษณะเส้นปลายที่ตัดเรียบไม่มีขั้น`,
+            },
+            tl: {
+                question: `Ano ang tamang katangian ng One-Length na haircut?`,
+                options: [
+                    `Pinalit ang itaas ng buhok nang maiksi, ibaba nang mahaba`,
+                    `Paraan na itinataas ang buhok para lumikha ng gradation`,
+                    `Binibigyan ng isang linya ang buhok sa natural na pagkahulog`,
+                    `Bahagyang pinupuputol lang ang dulo ng buhok`,
+                ],
+                explanation: `Ang One-Length na haircut ay paraan na hindi iniaangat ang lahat ng buhok at pinutol sa isang tuwid na linya sa natural na pagkahulog. Katangian nito ay malinis na dulo nang walang gradation.`,
+            },
+            my: {
+                question: `One-Length Cut ၏ မှန်ကန်သောအင်္ဂါရပ်မှာ မည်သည်နည်း?`,
+                options: [
+                    `ဆံပင်အပေါ်ပိုင်းကို တိုစေ၊ အောက်ပိုင်းကို ရှည်စေသည်`,
+                    `ဆံပင်ကိုမြှင့်ကာ အဆင့်ပြုလုပ်သောနည်း`,
+                    `ဆံပင်ကို သဘာဝကျကျ ကျဆင်းနေသောအခြေအနေတွင် တစ်မျဉ်းတည်းဖြင့် ဖြတ်သည်`,
+                    `ဆံပင်ထိပ်ပိုင်းကိုသာ ပေါ့ပေါ့ပါးပါး ဖြတ်သည်`,
+                ],
+                explanation: `One-Length Cut သည် ဆံပင်ကို မြှင့်မတင်ဘဲ သဘာဝကျကျ ကျဆင်းနေသောအခြေအနေတွင် တစ်မျဉ်းတည်းဖြင့် ဖြတ်သောနည်းဖြစ်သည်။ အဆင့်မပါဘဲ ဆံပင်ထိပ်ပိုင်း ရှင်းလင်းသည်ကို အင်္ဂါရပ်ထားသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `원랭스`, native: `One-Length` },
+                { korean: `자연 낙하 상태`, native: `trạng thái tự nhiên rơi xuống` },
+                { korean: `단차`, native: `bậc thang` },
+                { korean: `모발을 들어올려`, native: `nâng tóc lên` },
+                { korean: `커트`, native: `cắt tóc` },
+            ],
+            zh: [
+                { korean: `원랭스`, native: `原长` },
+                { korean: `자연 낙하 상태`, native: `自然下垂状态` },
+                { korean: `단차`, native: `层次` },
+                { korean: `모발을 들어올려`, native: `将头发提起来` },
+                { korean: `커트`, native: `剪发` },
+            ],
+            th: [
+                { korean: `원랭스`, native: `One-Length` },
+                { korean: `자연 낙하 상태`, native: `ผมร่วงตามธรรมชาติ` },
+                { korean: `단차`, native: `ขั้น` },
+                { korean: `커트`, native: `ตัดผม` },
+            ],
+            tl: [
+                { korean: `원랭스`, native: `one-length` },
+                { korean: `자연 낙하 상태`, native: `natural na pagkahulog` },
+                { korean: `단차`, native: `gradation` },
+                { korean: `커트`, native: `haircut` },
+            ],
+            my: [
+                { korean: `원랭스`, native: `one-length` },
+                { korean: `자연 낙하 상태`, native: `သဘာဝကျကျ ကျဆင်းနေသောအခြေအနေ` },
+                { korean: `단차`, native: `အဆင့်` },
+                { korean: `커트`, native: `ဖြတ်ခြင်း` },
+            ],
+        },
     },
     {
         id: 'bg-55',
@@ -4198,6 +5377,92 @@ export const beautyGeneralQuestions = [
         explanation: '헤어 트리트먼트는 염색이나 펌 등으로 손상된 모발에 단백질, 수분, 영양분을 공급하여 모발 상태를 개선하는 두발용 화장품입니다.',
         simpleExplanation: '헤어 트리트먼트는 손상된 머리카락을 건강하게 되살려줘요. 영양을 넣어줘요.',
         keywords: ['헤어트리트먼트', '영양공급', '두발화장품'],
+        translations: {
+            vi: {
+                question: `Mục đích đúng của sản phẩm dưỡng tóc (Hair Treatment) trong số mỹ phẩm dưỡng tóc là gì?`,
+                options: [
+                    `Để rửa sạch bụi bẩn trên da đầu và tóc`,
+                    `Để nhuộm màu cho tóc`,
+                    `Để cung cấp dinh dưỡng cho tóc bị hư tổn và cải thiện tình trạng tóc`,
+                    `Để thay đổi vĩnh viễn hình dạng của tóc`,
+                ],
+                explanation: `Hair treatment là mỹ phẩm dưỡng tóc cung cấp protein, độ ẩm, dinh dưỡng cho tóc bị hư tổn do nhuộm hoặc uốn để cải thiện tình trạng tóc.`,
+            },
+            zh: {
+                question: `在头发用化妆品中，护发素（Hair Treatment）的正确目的是什么？`,
+                options: [
+                    `为了洗去头皮和头发的污垢`,
+                    `为了给头发上色`,
+                    `为了向受损头发补充营养并改善状态`,
+                    `为了永久改变头发的形态`,
+                ],
+                explanation: `护发素是向因染发或烫发而受损的头发补充蛋白质、水分、营养素，以改善头发状态的头发用化妆品。`,
+            },
+            th: {
+                question: `วัตถุประสงค์ที่ถูกต้องของผลิตภัณฑ์บำรุงผม (Hair Treatment) ในบรรดาเครื่องสำอางสำหรับผมคืออะไร?`,
+                options: [
+                    `เพื่อล้างสิ่งสกปรกออกจากหนังศีรษะและผม`,
+                    `เพื่อย้อมสีผม`,
+                    `เพื่อเติมสารอาหารให้กับผมที่เสียหายและปรับปรุงสภาพผม`,
+                    `เพื่อเปลี่ยนรูปทรงของผมอย่างถาวร`,
+                ],
+                explanation: `Hair treatment คือเครื่องสำอางสำหรับผมที่เติมโปรตีน ความชุ่มชื้น และสารอาหารให้กับผมที่เสียหายจากการย้อมหรือดัด เพื่อปรับปรุงสภาพผม`,
+            },
+            tl: {
+                question: `Ano ang tamang layunin ng Hair Treatment sa mga kosmetiko para sa buhok?`,
+                options: [
+                    `Para linisin ang dumi sa anit at buhok`,
+                    `Para lagyan ng kulay ang buhok`,
+                    `Para magbigay ng sustansya sa nasirang buhok at mapabuti ang kondisyon nito`,
+                    `Para permanenteng baguhin ang hugis ng buhok`,
+                ],
+                explanation: `Ang hair treatment ay kosmetiko para sa buhok na nagbibigay ng protina, moisture, at sustansya sa buhok na nasira ng dyeing o perm para mapabuti ang kondisyon ng buhok.`,
+            },
+            my: {
+                question: `ဆံပင်အသုံးအဆောင် မျိုးတွင် Hair Treatment ၏ မှန်ကန်သောရည်ရွယ်ချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `ဦးရေပြားနှင့် ဆံပင်ပေါ် အညစ်အကြေးများ ဆေးကြောရန်`,
+                    `ဆံပင်ကို အရောင်ဆိုးရန်`,
+                    `ပျက်စီးနေသောဆံပင်ကို အာဟာရဖြည့်တင်းပြီး အခြေအနေ တိုးတက်စေရန်`,
+                    `ဆံပင်ပုံသဏ္ဌာန်ကို အမြဲတမ်း ပြောင်းလဲရန်`,
+                ],
+                explanation: `Hair treatment သည် ဆံပင်ဆိုးသွင်းခြင်း သို့မဟုတ် ဆံပင်လိမ်ခြင်းကြောင့် ပျက်စီးသောဆံပင်ကို ပရိုတင်း၊ အစိုဓာတ်၊ အာဟာရ ဖြည့်တင်းပြီး ဆံပင်အခြေအနေ တိုးတက်စေသော ဆံပင်ဆေးဝါးဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `헤어 트리트먼트`, native: `hair treatment` },
+                { korean: `손상된 모발`, native: `tóc bị hư tổn` },
+                { korean: `영양`, native: `dinh dưỡng` },
+                { korean: `두피와 모발`, native: `da đầu và tóc` },
+                { korean: `두발용 화장품`, native: `mỹ phẩm dưỡng tóc` },
+            ],
+            zh: [
+                { korean: `헤어 트리트먼트`, native: `护发素` },
+                { korean: `손상된 모발`, native: `受损头发` },
+                { korean: `영양`, native: `营养` },
+                { korean: `두피와 모발`, native: `头皮和头发` },
+                { korean: `두발용 화장품`, native: `头发用化妆品` },
+            ],
+            th: [
+                { korean: `헤어 트리트먼트`, native: `hair treatment` },
+                { korean: `손상된 모발`, native: `ผมที่เสียหาย` },
+                { korean: `영양`, native: `สารอาหาร` },
+                { korean: `두피와 모발`, native: `หนังศีรษะและผม` },
+            ],
+            tl: [
+                { korean: `헤어 트리트먼트`, native: `hair treatment` },
+                { korean: `손상된 모발`, native: `nasirang buhok` },
+                { korean: `영양`, native: `sustansya` },
+                { korean: `두발용 화장품`, native: `kosmetiko para sa buhok` },
+            ],
+            my: [
+                { korean: `헤어 트리트먼트`, native: `hair treatment` },
+                { korean: `손상된 모발`, native: `ပျက်စီးနေသောဆံပင်` },
+                { korean: `영양`, native: `အာဟာရ` },
+                { korean: `두발용 화장품`, native: `ဆံပင်ဆေးဝါး` },
+            ],
+        },
     },
     {
         id: 'bg-56',
@@ -4215,6 +5480,92 @@ export const beautyGeneralQuestions = [
         explanation: '퍼머 시술 후 48시간 이내에는 웨이브가 완전히 안정되지 않은 상태이므로 샴푸를 자제하고 머리카락을 묶거나 집어 형태가 변형되지 않도록 해야 합니다.',
         simpleExplanation: '펌 후 48시간은 머리를 감지 말고 묶지도 말아야 해요. 모양이 고정되는 시간이에요.',
         keywords: ['퍼머후관리', '웨이브고정', '펌시술'],
+        translations: {
+            vi: {
+                question: `Điều phù hợp nhất cho việc chăm sóc tóc sau khi uốn tóc vĩnh viễn (Permanent Wave) là gì?`,
+                options: [
+                    `Sấy mạnh bằng nhiệt độ cao ngay sau khi uốn để cố định hình dạng`,
+                    `Gội đầu mỗi ngày từ ngày uốn để loại bỏ thuốc còn lại`,
+                    `Kiêng gội đầu trong 48 giờ và không buộc hoặc ép tóc`,
+                    `Rửa bằng dầu gội kiềm mạnh ngay sau khi uốn`,
+                ],
+                explanation: `Trong 48 giờ sau khi uốn, sóng chưa ổn định hoàn toàn, nên kiêng gội đầu và tránh buộc hoặc kẹp tóc để không làm biến dạng hình dạng.`,
+            },
+            zh: {
+                question: `烫发后头发护理最适合的是？`,
+                options: [
+                    `施术后立即用强热吹干以固定形态`,
+                    `从施术当日开始每天洗发以去除残留药品`,
+                    `48小时内避免洗发，不要扎起或夹住头发`,
+                    `施术后立即用强碱性洗发水清洗`,
+                ],
+                explanation: `烫发后48小时内波浪尚未完全稳定，应避免洗发，也不要扎或夹头发，以防形态变形。`,
+            },
+            th: {
+                question: `การดูแลผมหลังการดัดผมถาวร (Permanent Wave) ที่เหมาะสมที่สุดคืออะไร?`,
+                options: [
+                    `หลังทำเสร็จทันทีเป่าลมร้อนอย่างแรงเพื่อตรึงรูปทรง`,
+                    `ตั้งแต่วันที่ทำ สระผมทุกวันเพื่อล้างยาที่เหลืออยู่`,
+                    `งดสระผมภายใน 48 ชั่วโมงและไม่มัดหรือกดผม`,
+                    `ล้างด้วยแชมพูด่างอย่างแรงทันทีหลังทำ`,
+                ],
+                explanation: `ภายใน 48 ชั่วโมงหลังดัดผม ลอนยังไม่เสถียรสมบูรณ์ ควรงดสระผมและหลีกเลี่ยงการมัดหรือหนีบผมเพื่อไม่ให้รูปทรงเปลี่ยนแปลง`,
+            },
+            tl: {
+                question: `Ano ang pinaka-angkop na pag-aalaga ng buhok pagkatapos ng Permanent Wave?`,
+                options: [
+                    `Agad na blow dry nang malakas gamit ang mataas na temperatura para ayusin ang hugis`,
+                    `Simula sa araw ng pagawa, shampooin araw-araw para alisin ang natitirang kemikal`,
+                    `Iwasan ang shampoo sa loob ng 48 oras at huwag itali o pigain ang buhok`,
+                    `Agad na hugasan gamit ang malakas na alkaline shampoo pagkatapos ng pagawa`,
+                ],
+                explanation: `Sa loob ng 48 oras pagkatapos ng permanent wave, hindi pa ganap na naayos ang wave, kaya iwasan ang shampoo at huwag itali o ikuha ng clip ang buhok para hindi mabago ang hugis.`,
+            },
+            my: {
+                question: `Permanent Wave ပြုလုပ်ပြီးနောက် ဆံပင်ထိန်းသိမ်းမှု အသင့်တော်ဆုံးမှာ မည်သည်နည်း?`,
+                options: [
+                    `ပြုလုပ်ပြီးချင်း မြင့်သောအပူဖြင့် ဆံပင်ရိုက်ကာ ပုံသဏ္ဌာန်ချုပ်ဆိုသည်`,
+                    `ပြုလုပ်သောနေ့မှ ကျန်နေသောဆေးကိုဖယ်ရှားရန် နေ့တိုင်း ဆံပင်လျှင်ဆေးသည်`,
+                    `၄၈ နာရီအတွင်း ဆံပင်မလျှော်ဘဲ မစည်းဘဲ မနှိပ်ဘဲ နေသည်`,
+                    `ပြုလုပ်ပြီးချင်း ပြင်းထန်သောတောင်ဆေးဖြင့် ဆေးကြောသည်`,
+                ],
+                explanation: `Permanent wave ပြုလုပ်ပြီး ၄၈ နာရီအတွင်း wave သည် လုံးဝတည်ငြိမ်မသေးသောကြောင့် ဆံပင်လျှင်ဆေးခြင်း ရှောင်ကြဉ်ကာ ဆံပင်မစည်းဘဲ မပုံဟောင်းဖျက်ဘဲ နေရမည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `퍼머넌트 웨이브`, native: `uốn tóc vĩnh viễn` },
+                { korean: `48시간 이내`, native: `trong 48 giờ` },
+                { korean: `샴푸를 자제`, native: `kiêng gội đầu` },
+                { korean: `웨이브`, native: `sóng` },
+                { korean: `시술 직후`, native: `ngay sau khi uốn` },
+            ],
+            zh: [
+                { korean: `퍼머넌트 웨이브`, native: `烫发` },
+                { korean: `48시간 이내`, native: `48小时内` },
+                { korean: `샴푸를 자제`, native: `避免洗发` },
+                { korean: `웨이브`, native: `波浪` },
+                { korean: `시술 직후`, native: `施术后立即` },
+            ],
+            th: [
+                { korean: `퍼머넌트 웨이브`, native: `ดัดผมถาวร` },
+                { korean: `48시간 이내`, native: `ภายใน 48 ชั่วโมง` },
+                { korean: `샴푸를 자제`, native: `งดสระผม` },
+                { korean: `웨이브`, native: `ลอน` },
+            ],
+            tl: [
+                { korean: `퍼머넌트 웨이브`, native: `permanent wave` },
+                { korean: `48시간 이내`, native: `sa loob ng 48 oras` },
+                { korean: `샴푸를 자제`, native: `iwasan ang shampoo` },
+                { korean: `웨이브`, native: `wave` },
+            ],
+            my: [
+                { korean: `퍼머넌트 웨이브`, native: `permanent wave` },
+                { korean: `48시간 이내`, native: `၄၈ နာရီအတွင်း` },
+                { korean: `샴푸를 자제`, native: `ဆံပင်မလျှော်ဘဲ` },
+                { korean: `웨이브`, native: `wave` },
+            ],
+        },
     },
     {
         id: 'bg-57',
@@ -4232,6 +5583,92 @@ export const beautyGeneralQuestions = [
         explanation: '탈색은 과산화수소(산화제)와 탈색제가 반응하여 모발 속 멜라닌 색소를 산화·분해하여 모발을 밝게 만드는 과정입니다.',
         simpleExplanation: '탈색은 약품이 멜라닌을 산화시켜 분해해요. 그래서 머리가 점점 밝아져요.',
         keywords: ['탈색', '멜라닌분해', '과산화수소', '산화'],
+        translations: {
+            vi: {
+                question: `Nguyên lý đúng của tẩy màu tóc (Bleaching) trong tạo màu tóc là gì?`,
+                options: [
+                    `Thêm sắc tố vào tóc để làm sáng`,
+                    `Chất oxy hóa (hydrogen peroxide) phân giải sắc tố melanin trong tóc để làm sáng`,
+                    `Chất khử phá vỡ liên kết trong tóc để lấy màu ra`,
+                    `Sử dụng axit mạnh để loại bỏ tế bào sắc tố`,
+                ],
+                explanation: `Tẩy màu là quá trình hydrogen peroxide (chất oxy hóa) và thuốc tẩy phản ứng, oxy hóa và phân giải sắc tố melanin trong tóc để làm sáng tóc.`,
+            },
+            zh: {
+                question: `在染发中，脱色（Bleaching）的正确原理是什么？`,
+                options: [
+                    `向头发中添加色素使其变亮`,
+                    `氧化剂（过氧化氢）分解头发中的黑色素使其变亮`,
+                    `还原剂切断头发的结合以去除颜色`,
+                    `利用强酸去除色素细胞`,
+                ],
+                explanation: `脱色是过氧化氢（氧化剂）与脱色剂反应，将头发中的黑色素氧化分解，从而使头发变亮的过程。`,
+            },
+            th: {
+                question: `หลักการที่ถูกต้องของการฟอกสี (Bleaching) ในการแต่งสีผมคืออะไร?`,
+                options: [
+                    `เพิ่มสีย้อมลงในผมเพื่อทำให้สว่างขึ้น`,
+                    `สารออกซิไดซ์ (ไฮโดรเจนเปอร์ออกไซด์) สลายสีเมลานินในผมเพื่อทำให้สว่างขึ้น`,
+                    `สารรีดิวซิงทำลายพันธะในผมเพื่อดึงสีออก`,
+                    `ใช้กรดแรงเพื่อกำจัดเซลล์สี`,
+                ],
+                explanation: `การฟอกสีเป็นกระบวนการที่ไฮโดรเจนเปอร์ออกไซด์ (สารออกซิไดซ์) และน้ำยาฟอกสีทำปฏิกิริยา ออกซิไดซ์และสลายสีเมลานินในผมเพื่อทำให้ผมสว่างขึ้น`,
+            },
+            tl: {
+                question: `Ano ang tamang prinsipyo ng Bleaching sa hair coloring?`,
+                options: [
+                    `Nagdadagdag ng pigment sa buhok para gawing mas maliwanag`,
+                    `Ang oxidizing agent (hydrogen peroxide) ay nagtatunaw ng melanin pigment sa buhok para gawing mas maliwanag`,
+                    `Ang reducing agent ay pumuputol ng koneksyon sa buhok para alisin ang kulay`,
+                    `Gumagamit ng malakas na acid para alisin ang pigment cells`,
+                ],
+                explanation: `Ang bleaching ay proseso kung saan ang hydrogen peroxide (oxidizing agent) at bleaching agent ay nagre-react, nag-o-oxidize at nagtatunaw ng melanin pigment sa buhok para gawing mas maliwanag ang buhok.`,
+            },
+            my: {
+                question: `ဆံပင်အရောင်ပြောင်းခြင်းတွင် တဆေးဖောက်ခြင်း (Bleaching) ၏ မှန်ကန်သောနီသဘောမှာ မည်သည်နည်း?`,
+                options: [
+                    `ဆံပင်ထဲ အရောင်ထည့်ပြီး ပိုလင်းစေသည်`,
+                    `Oxidizing agent (ဟိုက်ဒရိုဂျင်ပါဖိုက်ဆိုက်) ဖြင့် ဆံပင်ထဲ မဲလာနင်အရောင်ကို ဖျက်ဆီးပြီး လင်းအောင်လုပ်သည်`,
+                    `Reducing agent ဖြင့် ဆံပင်ချည်နှောင်ကိုဖြုတ်ကာ အရောင်ဖယ်ရှားသည်`,
+                    `ပြင်းထန်သောအက်ဆစ် သုံးပြီး အရောင်ဆဲလ်ဖယ်ရှားသည်`,
+                ],
+                explanation: `တဆေးဖောက်ခြင်းသည် ဟိုက်ဒရိုဂျင်ပါဖိုက်ဆိုက် (oxidizing agent) နှင့် ဆေးဖောက်ဆေးတို့ တုံ့ပြန်ပြီး ဆံပင်ထဲ မဲလာနင်အရောင်ကို ဓာတ်တိုးဖျက်ဆီးကာ ဆံပင်ပိုလင်းစေသောဖြစ်စဉ်ဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `탈색`, native: `tẩy màu tóc` },
+                { korean: `멜라닌 색소`, native: `sắc tố melanin` },
+                { korean: `과산화수소`, native: `hydrogen peroxide` },
+                { korean: `산화제`, native: `chất oxy hóa` },
+                { korean: `산화`, native: `oxy hóa` },
+            ],
+            zh: [
+                { korean: `탈색`, native: `脱色` },
+                { korean: `멜라닌 색소`, native: `黑色素` },
+                { korean: `과산화수소`, native: `过氧化氢` },
+                { korean: `산화제`, native: `氧化剂` },
+                { korean: `산화`, native: `氧化` },
+            ],
+            th: [
+                { korean: `탈색`, native: `การฟอกสี` },
+                { korean: `멜라닌 색소`, native: `สีเมลานิน` },
+                { korean: `과산화수소`, native: `ไฮโดรเจนเปอร์ออกไซด์` },
+                { korean: `산화제`, native: `สารออกซิไดซ์` },
+            ],
+            tl: [
+                { korean: `탈색`, native: `bleaching` },
+                { korean: `멜라닌 색소`, native: `melanin pigment` },
+                { korean: `과산화수소`, native: `hydrogen peroxide` },
+                { korean: `산화제`, native: `oxidizing agent` },
+            ],
+            my: [
+                { korean: `탈색`, native: `ဆေးဖောက်ခြင်း` },
+                { korean: `멜라닌 색소`, native: `မဲလာနင်အရောင်` },
+                { korean: `과산화수소`, native: `ဟိုက်ဒရိုဂျင်ပါဖိုက်ဆိုက်` },
+                { korean: `산화제`, native: `oxidizing agent` },
+            ],
+        },
     },
     {
         id: 'bg-58',
@@ -4249,6 +5686,92 @@ export const beautyGeneralQuestions = [
         explanation: '헤어 라인(Hair Line)은 두피와 피부가 만나는 모발 성장의 경계선입니다. 개인마다 형태가 다르며 헤어 디자인의 기준점이 됩니다.',
         simpleExplanation: '헤어 라인은 두피와 피부가 만나는 선이에요. 이마 위쪽 머리카락이 시작되는 곳이에요.',
         keywords: ['헤어라인', '모발성장경계', '헤어디자인'],
+        translations: {
+            vi: {
+                question: `Mô tả đúng về Đường chân tóc (Hair Line) là gì?`,
+                options: [
+                    `Là đường ranh giới màu sắc của tóc`,
+                    `Là đường ranh giới mọc tóc nơi da đầu và da gặp nhau`,
+                    `Là phần đuôi tóc mái`,
+                    `Là đường cắt khi tạo kiểu tóc`,
+                ],
+                explanation: `Đường chân tóc (Hair Line) là đường ranh giới nơi da đầu và da gặp nhau. Hình dạng khác nhau theo từng người và là điểm chuẩn của thiết kế tóc.`,
+            },
+            zh: {
+                question: `关于发际线（Hair Line）的正确说明是什么？`,
+                options: [
+                    `是指头发的颜色分界线`,
+                    `是头皮与皮肤相交处的头发生长边界线`,
+                    `是指刘海的末端部分`,
+                    `是剪发时剪的线`,
+                ],
+                explanation: `发际线（Hair Line）是头皮与皮肤相交处的头发生长边界线。每个人形态各异，是发型设计的基准点。`,
+            },
+            th: {
+                question: `คำอธิบายที่ถูกต้องเกี่ยวกับเส้นแนวผม (Hair Line) คืออะไร?`,
+                options: [
+                    `หมายถึงเส้นแบ่งสีของผม`,
+                    `เป็นเส้นขอบการเจริญเติบโตของผมที่หนังศีรษะพบกับผิวหนัง`,
+                    `หมายถึงส่วนปลายของผมด้านหน้า`,
+                    `หมายถึงเส้นที่ตัดเมื่อตัดผม`,
+                ],
+                explanation: `เส้นแนวผม (Hair Line) เป็นเส้นขอบการเจริญเติบโตของผมที่หนังศีรษะพบกับผิวหนัง แต่ละคนมีรูปทรงแตกต่างกันและเป็นจุดอ้างอิงของการออกแบบทรงผม`,
+            },
+            tl: {
+                question: `Ano ang tamang paglalarawan sa Hair Line?`,
+                options: [
+                    `Ang hangganan ng kulay ng buhok`,
+                    `Ang hangganan ng paglago ng buhok kung saan nagtatagpo ang anit at balat`,
+                    `Ang dulo ng hairstyle sa harap`,
+                    `Ang linya na pinutol habang gumigipit`,
+                ],
+                explanation: `Ang Hair Line ay ang hangganan ng paglago ng buhok kung saan nagtatagpo ang anit at balat. Iba-iba ang hugis para sa bawat tao at ito ang batayan ng hair design.`,
+            },
+            my: {
+                question: `Hair Line နှင့်ပတ်သက်သော မှန်ကန်သောဖော်ပြချက်မှာ မည်သည်နည်း?`,
+                options: [
+                    `ဆံပင်အရောင်နယ်နမိတ်မျဉ်းကို ဆိုလိုသည်`,
+                    `ဦးရေပြားနှင့် အရေပြားတွေ့ဆုံသောနေရာ ဆံပင်ကြီးထွားမှု နယ်နမိတ်မျဉ်းဖြစ်သည်`,
+                    `ရှေ့ဆံပင်ထိပ်ပိုင်းကို ဆိုလိုသည်`,
+                    `ဆံပင်ဖြတ်သောအခါ ဖြတ်သောမျဉ်းကို ဆိုလိုသည်`,
+                ],
+                explanation: `Hair Line သည် ဦးရေပြားနှင့် အရေပြားတွေ့ဆုံသောနေရာ ဆံပင်ကြီးထွားမှု နယ်နမိတ်မျဉ်းဖြစ်သည်။ လူတစ်ဦးတစ်ယောက်စီပုံသဏ္ဌာန်မတူဘဲ ဆံပင်ဒီဇိုင်း၏ မူလနှိုင်းယှဉ်ချက်ဖြစ်သည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `헤어 라인`, native: `đường chân tóc` },
+                { korean: `두피와 피부`, native: `da đầu và da` },
+                { korean: `모발의 성장 경계선`, native: `đường ranh giới mọc tóc` },
+                { korean: `앞머리의 끝부분`, native: `phần đuôi tóc mái` },
+                { korean: `커트할 때`, native: `khi cắt tóc` },
+            ],
+            zh: [
+                { korean: `헤어 라인`, native: `发际线` },
+                { korean: `두피와 피부`, native: `头皮与皮肤` },
+                { korean: `모발의 성장 경계선`, native: `头发生长边界线` },
+                { korean: `앞머리의 끝부분`, native: `刘海末端` },
+                { korean: `커트할 때`, native: `剪发时` },
+            ],
+            th: [
+                { korean: `헤어 라인`, native: `เส้นแนวผม` },
+                { korean: `두피와 피부`, native: `หนังศีรษะและผิวหนัง` },
+                { korean: `모발의 성장 경계선`, native: `เส้นขอบการเจริญเติบโตของผม` },
+                { korean: `앞머리의 끝부분`, native: `ปลายผมด้านหน้า` },
+            ],
+            tl: [
+                { korean: `헤어 라인`, native: `hair line` },
+                { korean: `두피와 피부`, native: `anit at balat` },
+                { korean: `모발의 성장 경계선`, native: `hangganan ng paglago ng buhok` },
+                { korean: `앞머리의 끝부분`, native: `dulo ng hairstyle sa harap` },
+            ],
+            my: [
+                { korean: `헤어 라인`, native: `hair line` },
+                { korean: `두피와 피부`, native: `ဦးရေပြားနှင့် အရေပြား` },
+                { korean: `모발의 성장 경계선`, native: `ဆံပင်ကြီးထွားမှု နယ်နမိတ်မျဉ်း` },
+                { korean: `앞머리의 끝부분`, native: `ရှေ့ဆံပင်ထိပ်ပိုင်း` },
+            ],
+        },
     },
     {
         id: 'bg-59',
@@ -4266,6 +5789,92 @@ export const beautyGeneralQuestions = [
         explanation: '물리적 손상은 열(드라이기, 아이론), 마찰(빗질, 타올 드라이), 당김(포니테일) 등 물리적 힘에 의한 모발 손상입니다. 화학적 손상과 구별됩니다.',
         simpleExplanation: '물리적 손상은 열이나 마찰로 생겨요. 드라이기나 강한 빗질이 머리를 손상시켜요.',
         keywords: ['물리적손상', '열손상', '마찰', '모발손상'],
+        translations: {
+            vi: {
+                question: `Trong các nguyên nhân gây hư tổn tóc, đâu là hư tổn vật lý?`,
+                options: [
+                    `Hư tổn do thuốc nhuộm tóc`,
+                    `Hư tổn do thuốc uốn tóc`,
+                    `Hư tổn do quá nhiệt từ máy sấy và ma sát chải tóc`,
+                    `Phân giải melanin do thuốc tẩy màu`,
+                ],
+                explanation: `Hư tổn vật lý là hư tổn tóc do lực vật lý như nhiệt (máy sấy, máy uốn), ma sát (chải tóc, khăn lau tóc), kéo (buộc đuôi ngựa). Khác với hư tổn hóa học.`,
+            },
+            zh: {
+                question: `在头发损伤的原因中，属于物理性损伤的是？`,
+                options: [
+                    `染发剂造成的损伤`,
+                    `烫发药品造成的损伤`,
+                    `吹风机过热和梳理摩擦造成的损伤`,
+                    `脱色剂造成的黑色素分解`,
+                ],
+                explanation: `物理性损伤是由热（吹风机、卷发棒）、摩擦（梳发、毛巾擦干）、拉扯（马尾辫）等物理力量引起的头发损伤。与化学性损伤有所区别。`,
+            },
+            th: {
+                question: `ในบรรดาสาเหตุที่ทำให้เส้นผมเสียหาย สิ่งใดเป็นความเสียหายทางกายภาพ?`,
+                options: [
+                    `ความเสียหายจากสีย้อมผม`,
+                    `ความเสียหายจากยาดัดผม`,
+                    `ความเสียหายจากความร้อนของเครื่องเป่าผมมากเกินไปและแรงเสียดทานจากการหวีผม`,
+                    `การสลายเมลานินจากน้ำยาฟอกสี`,
+                ],
+                explanation: `ความเสียหายทางกายภาพคือความเสียหายของเส้นผมที่เกิดจากแรงทางกายภาพ เช่น ความร้อน (เครื่องเป่าผม ที่หนีบผม) แรงเสียดทาน (การหวี การเช็ดด้วยผ้าขนหนู) การดึง (มัดหางม้า) ซึ่งแตกต่างจากความเสียหายทางเคมี`,
+            },
+            tl: {
+                question: `Sa mga dahilan ng pinsala sa buhok, alin ang pisikal na pinsala?`,
+                options: [
+                    `Pinsala mula sa dye ng buhok`,
+                    `Pinsala mula sa gamot sa perm`,
+                    `Pinsala mula sa sobrang init ng blow dryer at friction ng brushing`,
+                    `Pagtatunaw ng melanin mula sa bleaching agent`,
+                ],
+                explanation: `Ang pisikal na pinsala ay pinsala sa buhok mula sa pisikal na puwersa tulad ng init (blow dryer, iron), friction (pag-brush, pagpunas ng tuwalya), paghila (ponytail). Naiiba ito sa kemikal na pinsala.`,
+            },
+            my: {
+                question: `ဆံပင်ပျက်စီးရသောအကြောင်းများတွင် ရုပ်ပိုင်းဆိုင်ရာပျက်စီးမှုမှာ မည်သည်နည်း?`,
+                options: [
+                    `ဆံပင်ဆိုးဆေးကြောင့် ပျက်စီးခြင်း`,
+                    `ဆံပင်လိမ်ဆေးကြောင့် ပျက်စီးခြင်း`,
+                    `ဆံပင်ရိုက်စက်အပူနှင့် ဖီးသောကြောင့် ပွတ်တိုက်မှုဖြင့် ပျက်စီးခြင်း`,
+                    `ဆေးဖောက်ဆေးကြောင့် မဲလာနင် ပျောက်ကွယ်ခြင်း`,
+                ],
+                explanation: `ရုပ်ပိုင်းဆိုင်ရာပျက်စီးမှုသည် အပူ (ဆံပင်ရိုက်စက်၊ iron)၊ ပွတ်တိုက်မှု (ဖီးသော၊ ပုဝါနှင့် ကြမ်းကြမ်းသုတ်သော)၊ ဆွဲငင်ခြင်း (ponytail) တို့ကဲ့သောရုပ်ပိုင်းဆိုင်ရာ အားများကြောင့် ဆံပင်ပျက်စီးခြင်းဖြစ်သည်။ ဓာတုဗေဒဆိုင်ရာပျက်စီးမှုနှင့် ကွာခြားသည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `물리적 손상`, native: `hư tổn vật lý` },
+                { korean: `드라이기 과열`, native: `quá nhiệt từ máy sấy` },
+                { korean: `브러싱 마찰`, native: `ma sát chải tóc` },
+                { korean: `염색약`, native: `thuốc nhuộm tóc` },
+                { korean: `탈색제`, native: `thuốc tẩy màu` },
+            ],
+            zh: [
+                { korean: `물리적 손상`, native: `物理性损伤` },
+                { korean: `드라이기 과열`, native: `吹风机过热` },
+                { korean: `브러싱 마찰`, native: `梳理摩擦` },
+                { korean: `염색약`, native: `染发剂` },
+                { korean: `탈색제`, native: `脱色剂` },
+            ],
+            th: [
+                { korean: `물리적 손상`, native: `ความเสียหายทางกายภาพ` },
+                { korean: `드라이기 과열`, native: `ความร้อนของเครื่องเป่าผมมากเกินไป` },
+                { korean: `브러싱 마찰`, native: `แรงเสียดทานจากการหวีผม` },
+                { korean: `염색약`, native: `สีย้อมผม` },
+            ],
+            tl: [
+                { korean: `물리적 손상`, native: `pisikal na pinsala` },
+                { korean: `드라이기 과열`, native: `sobrang init ng blow dryer` },
+                { korean: `브러싱 마찰`, native: `friction ng brushing` },
+                { korean: `탈색제`, native: `bleaching agent` },
+            ],
+            my: [
+                { korean: `물리적 손상`, native: `ရုပ်ပိုင်းဆိုင်ရာပျက်စီးမှု` },
+                { korean: `드라이기 과열`, native: `ဆံပင်ရိုက်စက်အပူ` },
+                { korean: `브러싱 마찰`, native: `ဖီးသောကြောင့် ပွတ်တိုက်မှု` },
+                { korean: `탈색제`, native: `ဆေးဖောက်ဆေး` },
+            ],
+        },
     },
     {
         id: 'bg-60',
@@ -4283,5 +5892,91 @@ export const beautyGeneralQuestions = [
         explanation: '미용 시술의 첫 단계는 상담입니다. 상담을 통해 손님의 요구, 모발 상태, 생활 습관 등을 파악한 후 적절한 시술을 계획합니다.',
         simpleExplanation: '미용사는 먼저 손님과 상담해야 해요. 무엇을 원하는지 파악한 다음 시작해요.',
         keywords: ['상담', '미용과정', '고객응대'],
+        translations: {
+            vi: {
+                question: `Bước đầu tiên mà thợ làm đẹp cần làm với khách hàng là gì?`,
+                options: [
+                    `Bắt đầu gội đầu ngay`,
+                    `Tư vấn để nắm bắt yêu cầu của khách hàng`,
+                    `Cho khách chọn ảnh kiểu tóc mong muốn`,
+                    `Đo tình trạng tóc trước`,
+                ],
+                explanation: `Bước đầu tiên của kỹ thuật làm đẹp là tư vấn. Qua tư vấn, nắm bắt yêu cầu, tình trạng tóc, thói quen sinh hoạt của khách hàng, sau đó lên kế hoạch kỹ thuật phù hợp.`,
+            },
+            zh: {
+                question: `美容师对顾客应首先进行的步骤是什么？`,
+                options: [
+                    `立即开始洗发`,
+                    `通过咨询了解顾客的需求`,
+                    `让顾客选择想要的发型照片`,
+                    `先测量头发状态`,
+                ],
+                explanation: `美容服务的第一步是咨询。通过咨询了解顾客的需求、头发状态、生活习惯等，然后制定合适的服务计划。`,
+            },
+            th: {
+                question: `ขั้นตอนแรกที่ช่างทำผมควรทำกับลูกค้าคืออะไร?`,
+                options: [
+                    `เริ่มสระผมทันที`,
+                    `ปรึกษาเพื่อทราบความต้องการของลูกค้า`,
+                    `ให้ลูกค้าเลือกรูปทรงผมที่ต้องการ`,
+                    `วัดสภาพผมก่อน`,
+                ],
+                explanation: `ขั้นตอนแรกของการให้บริการเสริมสวยคือการปรึกษา โดยการปรึกษาจะช่วยให้ทราบความต้องการ สภาพผม และนิสัยในชีวิตประจำวันของลูกค้า เพื่อวางแผนการบริการที่เหมาะสม`,
+            },
+            tl: {
+                question: `Ano ang unang hakbang na dapat gawin ng beauty worker sa isang customer?`,
+                options: [
+                    `Magsimulang mag-shampoo agad`,
+                    `Mag-consult para malaman ang pangangailangan ng customer`,
+                    `Papiliin ang customer ng larawan ng gusto nilang hairstyle`,
+                    `Sukatin muna ang kondisyon ng buhok`,
+                ],
+                explanation: `Ang unang hakbang ng beauty service ay ang konsultasyon. Sa pamamagitan ng konsultasyon, malalaman ang pangangailangan ng customer, kondisyon ng buhok, at gawi sa pamumuhay, pagkatapos ay magpaplano ng angkop na serbisyo.`,
+            },
+            my: {
+                question: `အလှပြင်သမားသည် ဆောင်ဆောင်ဆောင်ပုဂ္ဂိုလ်ကို ပထမဆုံး ပြုလုပ်ရမည့်အဆင့်မှာ မည်သည်နည်း?`,
+                options: [
+                    `ချက်ချင်း ဆံပင်လျှင်ဆေးခြင်း စတင်သည်`,
+                    `ဆောင်ဆောင်ဆောင်ပုဂ္ဂိုလ်၏ လိုအပ်ချက်ကို သိရှိရန် တိုင်ပင်ဆွေးနွေးသည်`,
+                    `လိုချင်သောဆံပင်ပုံသဏ္ဌာန်ဓာတ်ပုံ ရွေးချယ်ခိုင်းသည်`,
+                    `ဆံပင်အခြေအနေ ဦးစွာတိုင်းတာသည်`,
+                ],
+                explanation: `အလှပြင်ဆောင်ရွက်ခြင်း၏ ပထမဆုံးအဆင့်မှာ တိုင်ပင်ဆွေးနွေးခြင်းဖြစ်သည်။ တိုင်ပင်မှတဆင့် ဆောင်ဆောင်ဆောင်ပုဂ္ဂိုလ်၏ လိုအပ်ချက်၊ ဆံပင်အခြေအနေ၊ နေ့စဉ်ကျင့်သုံးမှု တို့ကို သိရှိပြီး သင့်တော်သောဆောင်ရွက်မှု စီစဉ်ရမည်။`,
+            },
+        },
+        keywordHints: {
+            vi: [
+                { korean: `상담`, native: `tư vấn` },
+                { korean: `손님의 요구`, native: `yêu cầu của khách hàng` },
+                { korean: `모발 상태`, native: `tình trạng tóc` },
+                { korean: `샴푸`, native: `gội đầu` },
+                { korean: `미용`, native: `làm đẹp` },
+            ],
+            zh: [
+                { korean: `상담`, native: `咨询` },
+                { korean: `손님의 요구`, native: `顾客的需求` },
+                { korean: `모발 상태`, native: `头发状态` },
+                { korean: `샴푸`, native: `洗发` },
+                { korean: `미용`, native: `美容` },
+            ],
+            th: [
+                { korean: `상담`, native: `ปรึกษา` },
+                { korean: `손님의 요구`, native: `ความต้องการของลูกค้า` },
+                { korean: `모발 상태`, native: `สภาพผม` },
+                { korean: `샴푸`, native: `สระผม` },
+            ],
+            tl: [
+                { korean: `상담`, native: `konsultasyon` },
+                { korean: `손님의 요구`, native: `pangangailangan ng customer` },
+                { korean: `모발 상태`, native: `kondisyon ng buhok` },
+                { korean: `샴푸`, native: `shampoo` },
+            ],
+            my: [
+                { korean: `상담`, native: `တိုင်ပင်ဆွေးနွေးခြင်း` },
+                { korean: `손님의 요구`, native: `ဆောင်ဆောင်ဆောင်ပုဂ္ဂိုလ်လိုအပ်ချက်` },
+                { korean: `모발 상태`, native: `ဆံပင်အခြေအနေ` },
+                { korean: `샴푸`, native: `ဆံပင်လျှင်ဆေး` },
+            ],
+        },
     },
 ];
